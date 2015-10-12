@@ -1,0 +1,32 @@
+IF
+AreaCheck("RTF070")
+!Allegiance(Myself,NEUTRAL)
+Delay(2)
+THEN
+RESPONSE #100
+ChangeEnemyAlly(Myself,NEUTRAL)
+END
+
+IF
+!Allegiance(Myself,ENEMY)
+See([ENEMY])
+!Class(LastSeenBy(Myself),INNOCENT)
+!Class(LastSeenBy(Myself),FLAMING_FIST)
+!Range(LastSeenBy(Myself),3)
+THEN
+RESPONSE #100
+EquipRanged()
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+!Allegiance(Myself,ENEMY)
+See([ENEMY])
+!Class(LastSeenBy(Myself),INNOCENT)
+!Class(LastSeenBy(Myself),FLAMING_FIST)	
+Range(LastSeenBy(Myself),3)
+THEN
+RESPONSE #50
+EquipMostDamagingMelee()
+AttackReevaluate(LastSeenBy(Myself),30)
+END

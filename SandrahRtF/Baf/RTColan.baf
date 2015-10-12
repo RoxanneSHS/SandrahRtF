@@ -1,0 +1,23 @@
+IF
+AreaCheck("rtf082")
+NumTimesTalkedTo(0)
+See(Player1)
+See("CVSandr")
+See("RTCandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+OR(2)
+Range(Player1,20)
+Range("CVSandr",20)
+NumTimesTalkedTo(0)
+OR(2)
+See(Player1)
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END

@@ -1,0 +1,69 @@
+IF
+AreaCheck("rtf082")
+Global("Opening","RTF082",7)
+See("RTEdwin")
+!Range("RTEdwin",4)
+THEN
+RESPONSE #100
+MoveToObject("RTEdwin")
+END
+
+IF
+AreaCheck("rtf087")
+Global("SanRTFPlot3","GLOBAL",4)
+See(Player1)
+See("CVSandr")
+Global("SecTalk","RTF087",0)
+THEN
+RESPONSE #100
+SetGlobal("SecTalk","RTF087",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+AreaCheck("rtf109")
+See(Player1)
+See("CVSandr")
+Global("3Talk","RTF109",0)
+THEN
+RESPONSE #100
+SetGlobal("3Talk","RTF109",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+AreaCheck("RTF172")
+Global("Wayout","RTF172",3)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet([PC])
+END
+
+IF
+GlobalGT("CitEntpl","GLOBAL",4)
+InMyArea("RTIltash")
+!Dead("RTIltash")
+THEN
+RESPONSE #100
+Attack("RTIltash")
+END
+
+IF
+See([ENEMY]) 
+OR(2)
+AreaCheck("RTF070")
+AreaCheck("RTF172")
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+

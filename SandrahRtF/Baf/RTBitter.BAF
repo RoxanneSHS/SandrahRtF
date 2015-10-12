@@ -1,0 +1,58 @@
+IF
+See(NearestEnemyOf(Myself))
+!HasItem("solasna1",LastSeenBy(Myself))
+!HasItem("solasna3",LastSeenBy(Myself))
+!HasItem("solasna4",LastSeenBy(Myself))
+Delay(5)
+THEN
+RESPONSE #100
+ReallyForceSpell(LastSeenBy(Myself),PSIONIC_PROJECT_FORCE)
+Continue()
+END
+
+IF
+See(WorstAC)
+!HasItem("solasna1",LastSeenBy(Myself))
+!HasItem("solasna3",LastSeenBy(Myself))
+!HasItem("solasna4",LastSeenBy(Myself))
+THEN
+RESPONSE #100
+AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+OR(4)
+See([GOODCUTOFF.0.0.LONG_BOW])
+See([GOODCUTOFF.0.0.CLERIC_ALL])
+See([GOODCUTOFF.0.0.DRUID_ALL])
+See([GOODCUTOFF.0.0.BARD_ALL])
+!HasItem("solasna1",LastSeenBy(Myself))
+!HasItem("solasna3",LastSeenBy(Myself))
+!HasItem("solasna4",LastSeenBy(Myself))
+THEN
+RESPONSE #100
+AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+See([PC])
+!HasItem("solasna1",LastSeenBy(Myself))
+!HasItem("solasna3",LastSeenBy(Myself))
+!HasItem("solasna4",LastSeenBy(Myself))
+THEN
+RESPONSE #100
+AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+Global("RedBadgeFight","GLOBAL",1)
+See(NearestEnemyOf(Myself))
+!HasItem("solasna1",LastSeenBy(Myself))
+!HasItem("solasna3",LastSeenBy(Myself))
+!HasItem("solasna4",LastSeenBy(Myself))
+THEN
+RESPONSE #100
+AttackOneRound(NearestEnemyOf(Myself))
+END
+
+

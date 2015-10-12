@@ -1,0 +1,8 @@
+IF
+AreaCheck("RTF513")
+Global("RTMaskplot","GLOBAL",8)
+!Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #100
+Enemy()
+END

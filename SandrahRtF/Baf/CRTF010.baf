@@ -1,0 +1,29 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+CreateVisualEffect("ICFIRSDI",[1573.1342])
+CreateVisualEffect("ICFIRSDI",[1514.1491])
+Wait(1)
+CreateCreature("HGWRA03",[1668.1397],0)
+CreateCreature("HGMIS01",[1454.1398],0)
+CreateCreature("HGMIS02",[1454.1398],0)
+CreateCreature("HGWRA03",[1514.1491],0)
+CreateCreature("HGMIS01",[1514.1491],0)
+CreateCreature("HGMIS02",[1514.1491],0)
+EndCutSceneMode()
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("RTInno")
+CreateVisualEffectObject("SPFLESHS",Myself)
+Wait(1)
+Polymorph(SHADOW)
+SetName(@1674)
+ChangeAlignment(Myself,LAWFUL_EVIL)
+Enemy()
+END

@@ -1,0 +1,8 @@
+IF
+Global("RTMeliQuest","GLOBAL",7)
+InParty("RTMeli")
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+SetGlobal("RTMeliQuest","GLOBAL",8)
+END

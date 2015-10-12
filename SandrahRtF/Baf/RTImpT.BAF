@@ -1,0 +1,50 @@
+IF
+AreaCheck("Ar3100")
+Global("RTImpHere","AR3100",3)
+THEN
+RESPONSE #100
+SetGlobal("RTImpHere","AR3100",4)
+DisplayStringHead(Myself,@2036)
+Enemy()
+RunAwayFrom(NearestEnemyOf(Myself),150)
+END
+
+IF
+Global("RTImpHere","AR3100",4)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+Wait(1)
+CreateCreatureObjectOffset("0rc03",Player1,[100.100])
+CreateCreatureObjectDoor("rakmah01",Player2,0,0,0)
+CreateCreatureObjectOffset("0rc02",Player3,[100.-100])
+CreateCreatureObjectOffset("0rc03",Player5,[0.0])
+CreateCreatureObjectOffset("goliro01",Player3,[40.40])
+CreateCreatureObjectOffset("0rc03",Player6,[100.100])
+CreateCreatureObjectDoor("demnab02",Player5,0,0,0)
+CreateCreatureObjectOffset("0rc02",Player4,[100.-100])
+CreateCreatureObjectDoor("orc02",Player4,0,0,0)
+CreateCreatureObjectOffset("goliro01",Player6,[40.40])
+Wait(1)
+EndCutSceneMode()
+SetGlobal("RTImpHere","AR3100",5)
+END
+
+IF
+Global("RTImpHere","AR3100",5)
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+RunAwayFrom(NearestEnemyOf(Myself),150)
+END
+
+IF
+AttackedBy([ANYONE],DEFAULT)
+THEN
+RESPONSE #100
+RunAwayFrom(LastAttackerOf(Myself),150)
+END
+
+
+
+

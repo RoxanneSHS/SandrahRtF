@@ -1,0 +1,17 @@
+IF
+OnCreation()
+AreaCheck("RTF027")
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("CVBanDE1",Myself,[150.100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[100.100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[150.-100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[-150.100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[-150.-100])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[70.10])
+CreateCreatureObjectOffset("CVBanDE1",Myself,[-70.100])
+Wait(2)
+DestroySelf()
+END
+
+

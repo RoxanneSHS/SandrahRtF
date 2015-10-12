@@ -1,0 +1,9 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+OR(2)
+AreaCheck("ar0602")
+AreaCheck("ar0603")
+THEN
+RESPONSE #100
+DestroySelf()
+END

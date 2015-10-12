@@ -1,0 +1,18 @@
+IF
+Global("Opening","RTF082",3)
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("Opening","RTF082",4)
+Global("Gopapa","RTF082",0)
+THEN
+RESPONSE #100
+SetGlobal("Gopapa","RTF082",1)
+MoveToPoint([445.500])
+END
+
+

@@ -1,0 +1,31 @@
+IF
+OnCreation()
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+ActionOverride(Player1,RemoveSpellRES("spin649"))
+ActionOverride(Player1,RemoveSpellRES("spin822"))
+Continue()
+END
+
+IF
+OnCreation()
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("SanRomPath","GLOBAL",1)
+InParty("Leyala")
+THEN
+RESPONSE #100
+ActionOverride("Leyala",ReallyForceSpellRES("CVLenam",Myself))
+Continue()
+END
+
+IF
+OnCreation()
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("SanRomPath","GLOBAL",2)
+InParty("Leyala")
+THEN
+RESPONSE #100
+ActionOverride("Leyala",ReallyForceSpellRES("CVLenaf",Myself))
+Continue()
+END

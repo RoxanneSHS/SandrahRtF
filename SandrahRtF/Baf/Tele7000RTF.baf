@@ -1,0 +1,10 @@
+IF
+Clicked([ANYONE])
+Range(LastTrigger,25)
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("RTOutIr")
+END

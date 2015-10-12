@@ -1,0 +1,11 @@
+IF
+Allegiance(Myself,NEUTRAL)
+OR(2)
+AttackedBy([ANYONE],DEFAULT)
+Global("RTLiztrap","GLOBAL",2)
+THEN
+RESPONSE #100
+Polymorph(LIZARD_KING)
+SetName(@1842)
+Enemy()
+END

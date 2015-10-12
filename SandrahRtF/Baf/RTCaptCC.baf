@@ -1,0 +1,11 @@
+IF
+Global("CCClosed","ar0400",1)
+AreaCheck("ar0400")
+Range([PC],10)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+StartDialogNoSet(Player1)
+END

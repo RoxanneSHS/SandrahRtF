@@ -1,0 +1,151 @@
+IF
+Die()
+THEN
+RESPONSE #100
+SetGlobal("BalBridge","RTF048",2)
+END
+
+IF
+Global("BalBridge","RTF048",1)
+Global("RTBalow","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("BalBridge","RTF048",2)
+DestroySelf()
+END
+
+IF
+Global("RTBalow","GLOBAL",0)
+CombatCounter(0)
+OR(2)
+Range(Player1,12)
+Range("CVSandr",12)
+THEN
+RESPONSE #100
+SetGlobal("RTBalow","GLOBAL",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("BalBridge","RTF048",5)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+AttackedBy([PC],DEFAULT)
+THEN
+RESPONSE #100
+Enemy()
+END
+
+IF
+Allegiance(Myself,ENEMY)
+See([PC])
+Global("Paralyze","LOCALS",0)
+THEN
+RESPONSE #100
+ForceSpell([PC],TANARI_PARALYZE)
+SetGlobal("Paralyze","LOCALS",1)
+END
+
+IF
+Allegiance(Myself,ENEMY)
+OR(6)
+See([PC])
+See([PC.0.0.DRUID_ALL])
+See([PC.0.0.BARD_ALL])
+See([PC.0.0.CLERIC_ALL])
+See([PC.0.0.LONG_BOW])
+See([PC.0.0.SORCERER])
+Global("Silence","LOCALS",0)
+THEN
+RESPONSE #100
+ForceSpell(LastSeenBy(Myself),TANARI_SILENCE)
+SetGlobal("Silence","LOCALS",1)
+END
+
+IF
+Allegiance(Myself,ENEMY)
+See([PC])
+StateCheck([PC],STATE_HELPLESS)
+!GlobalTimerNotExpired("MAULER","LOCALS")
+THEN
+RESPONSE #70
+SetGlobalTimer("MAULER","LOCALS",TWO_ROUNDS)
+ForceSpell(SecondNearestEnemyOf(Myself),TANARI_DEATH_GAZE)
+ForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+AttackOneRound([PC])
+RESPONSE #30
+SetGlobalTimer("MAULER","LOCALS",TWO_ROUNDS)
+ForceSpell(ThirdNearest([PC]),TANARI_DEATH_GAZE)
+ForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+AttackOneRound(NearestEnemyOf(Myself))
+RESPONSE #80
+Continue()
+END
+
+IF
+Allegiance(Myself,ENEMY)
+See([PC.0.0.0.0.FEMALE])
+NotStateCheck([PC.0.0.0.0.FEMALE],STATE_HELPLESS)
+!GlobalTimerNotExpired("MAULER","LOCALS")
+THEN
+RESPONSE #30
+SetGlobalTimer("MAULER","LOCALS",TWO_ROUNDS)
+ForceSpell([PC.0.0.0.0.FEMALE],TANARI_DEATH_GAZE)
+ForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+AttackOneRound([PC.0.0.0.0.FEMALE])
+RESPONSE #70
+END
+
+IF
+Allegiance(Myself,ENEMY)
+See([PC.0.0.0.0.MALE])
+See([PC.0.0.0.0.FEMALE])
+StateCheck([PC.0.0.0.0.FEMALE],STATE_HELPLESS)
+!GlobalTimerNotExpired("MAULER","LOCALS")
+THEN
+RESPONSE #30
+SetGlobalTimer("MAULER","LOCALS",THREE_ROUNDS)
+ForceSpell([PC.0.0.0.0.MALE],TANARI_DEATH_GAZE)
+ForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+AttackOneRound([PC.0.0.0.0.FEMALE])
+AttackOneRound([PC.0.0.0.0.FEMALE])
+RESPONSE #70
+END
+
+IF
+Allegiance(Myself,ENEMY)
+See([PC.0.0.0.0.FEMALE])
+StateCheck([PC.0.0.0.0.FEMALE],STATE_HELPLESS)
+!GlobalTimerNotExpired("MAULER","LOCALS")
+THEN
+RESPONSE #30
+SetGlobalTimer("MAULER","LOCALS",TWO_ROUNDS)
+ForceSpell(FourthNearestEnemyOf(Myself),TANARI_DEATH_GAZE)
+ForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+AttackOneRound([PC.0.0.0.0.FEMALE])
+AttackOneRound(NearestEnemyOf(Myself))
+RESPONSE #70
+END
+
+IF
+Allegiance(Myself,ENEMY)
+See([PC])
+!GlobalTimerNotExpired("MAULER","LOCALS")
+THEN
+RESPONSE #30
+SetGlobalTimer("MAULER","LOCALS",THREE_ROUNDS)
+ForceSpell(SecondNearestEnemyOf(Myself),TANARI_DEATH_GAZE)
+ForceSpell(NearestEnemyOf(Myself),TANARI_VAMPIRIC_TOUCH)
+AttackOneRound([PC])
+AttackOneRound([PC])
+RESPONSE #70
+END
+
+
+
+
+

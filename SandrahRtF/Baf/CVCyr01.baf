@@ -1,0 +1,43 @@
+IF
+AreaCheck("RTF172")
+Range("CVSandr",25)
+Global("mirror","LOCALS",0)
+See("CVSandr")
+Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("mirror","LOCALS",1)
+CreateCreatureObjectDoor("RTSanCop","CVSandr",0,0,0)
+SetInterrupt(TRUE)
+END
+
+IF
+HPPercentLT(Myself,45)
+AreaCheck("RTF172")
+Global("CyrGetMid","GLOBAL",0)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+ClearAllActions()
+SetGlobal("CyrGetMid","GLOBAL",1)
+Dialogue([PC])
+END
+
+IF
+AreaCheck("RTF123")
+Global("Gnollend","RTF123",0)
+See("CVSandr")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("Gnollend","RTF123",1)
+END
+
+IF
+AreaCheck("RTF123")
+Global("Gnollend","RTF123",2)
+THEN
+RESPONSE #100
+Dialogue([PC])
+END

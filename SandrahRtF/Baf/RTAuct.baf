@@ -1,0 +1,8 @@
+IF
+Range([PC],12)
+Global("RTColan","GLOBAL",3)
+See([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END

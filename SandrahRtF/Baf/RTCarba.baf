@@ -1,0 +1,46 @@
+IF
+OR(6)
+See(Player1)
+See(Player2)
+See(Player3)
+See(Player4)
+See(Player5)
+See(Player6)
+Global("BanditEncounter","RTF027",0)
+THEN
+RESPONSE #100
+SetGlobal("BanditEncounter","RTF027",1)
+END
+
+IF
+Global("BanditEncounter","RTF027",1)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END
+
+IF
+OR(2)
+Global("BanditEncounter","RTF027",2)
+AttackedBy([GOODCUTOFF],DEFAULT)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Enemy()
+END
+
+IF
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+AttackedBy([ANYONE],DEFAULT)
+THEN
+RESPONSE #100
+Attack(LastAttackerOf(Myself))
+END
+
+

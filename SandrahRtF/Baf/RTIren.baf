@@ -1,0 +1,73 @@
+IF
+OR(2)
+Global("RTIrenApp","ar0602",1)
+Global("RTIrenApp","ar0602",6)
+THEN
+RESPONSE #100
+ActionOverride(Player1,FaceObject("lrrielev"))
+SmallWait(5)
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("RTIrenApp","ar0602",2)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("LRRielev",Player1,0,0,0)
+ActionOverride("LRRielev",SetGlobal("FirstTimeHere","LOCALS",1) )
+SetGlobal("RTIrenApp","ar0602",3)
+END
+
+IF
+Global("RTIrenApp","ar0602",5)
+Dead("RTYuanL")
+!See([0.0.YUANTI])
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("Y0602","LOCALS",0)
+SetGlobal("RTIrenApp","ar0602",6)
+END
+
+IF
+Global("equip","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("equip","LOCALS",1)
+GiveItemCreate("FINIROBE",Myself,0,0,0)
+FillSlot(SLOT_ARMOR)
+GiveItemCreate("STONSKIN",Myself,0,0,0)
+FillSlot(SLOT_AMULET)
+GiveItemCreate("FINIR0M",Myself,0,0,0)
+FillSlot(SLOT_WEAPON1)
+GiveItemCreate("FINIR0R",Myself,0,0,0)
+FillSlot(SLOT_WEAPON2)
+GiveItemCreate("FINIPOTN",Myself,5,1,1)
+GiveItemCreate("IRENBRCH",Myself,5,1,1)
+GiveItemCreate("IRENPRCE",Myself,5,1,1)
+END
+
+IF
+Global("RTIrenApp","ar0602",5)
+See(Player1)
+CombatCounterGT(0)
+See([0.0.YUANTI])
+Global("Y0602","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Y0602","LOCALS",1)
+END
+
+IF
+Global("Y0602","LOCALS",1)
+See([0.0.YUANTI])
+THEN
+RESPONSE #100
+EquipRanged()
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+

@@ -1,0 +1,124 @@
+IF
+AreaCheck("RTF070")
+Global("GuardOd","RTF070",1)
+Range([PC],12)
+See([PC])
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+SetGlobal("GuardOd","RTF070",2)
+StartDialogueNoSet([PC])
+END
+
+IF
+Die()
+THEN
+RESPONSE #100
+Shout(HELP_ME_GROUP151)
+END
+
+IF
+AttackedBy([GOODCUTOFF],DEFAULT)
+OR(3)
+Allegiance(Myself,GOODBUTBLUE)
+Allegiance(Myself,NEUTRAL)
+Allegiance(Myself,0)
+THEN
+RESPONSE #100
+Shout(HELP_ME_GROUP151)
+Enemy()
+END
+
+IF
+HitBy([GOODCUTOFF],CRUSHING)
+THEN
+RESPONSE #100
+Shout(HELP_ME_GROUP151)
+Continue()
+END
+
+IF	
+See([GOODCUTOFF])
+Allegiance(Myself,ENEMY)
+ActionListEmpty()
+THEN
+RESPONSE #100
+Shout(HELP_ME_GROUP151)
+Continue()
+END
+
+IF
+Heard([ANYONE],HELP_ME_GROUP151)
+InMyGroup(LastHeardBy(Myself))
+!Class(Myself,INNOCENT)
+OR(2)
+Allegiance(Myself,GOODBUTBLUE)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Enemy()
+MoveToObject(LastHeardBy(Myself))
+END
+
+IF
+Heard([ANYONE],HELP_ME_GROUP151)
+InMyGroup(LastHeardBy(Myself))
+OR(2)
+Allegiance(Myself,GOODBUTBLUE)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Enemy()
+END
+
+IF
+Heard([ANYONE],HELP_ME_GROUP151)
+InMyGroup(LastHeardBy(Myself))
+!Class(Myself,INNOCENT)
+!See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+MoveToObject(LastHeardBy(Myself))
+Continue()
+END
+
+IF
+General(Myself,HUMANOID)
+HPPercentLT(Myself,20)
+HPGT(Myself,1)
+Global("Whined","LOCALS",0)
+See(NearestMyGroupOfType)
+Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #50
+SetGlobal("Whined","LOCALS",1)
+Shout(HELP_ME_GROUP153)
+RESPONSE #50
+SetGlobal("Whined","LOCALS",1)
+Shout(HELP_ME_GROUP153)
+RESPONSE #50
+SetGlobal("Whined","LOCALS",1)
+Shout(HELP_ME_GROUP153)
+RESPONSE #50
+SetGlobal("Whined","LOCALS",1)
+Shout(HELP_ME_GROUP153)
+END
+
+IF
+Heard([ANYONE],HELP_ME_GROUP153)
+InMyGroup(LastHeardBy(Myself))
+!HaveAnySpells()
+THEN
+RESPONSE #100
+EquipRanged()
+AttackReevaluate(LastAttackerOf(LastHeardBy(Myself)),30)
+END
+
+IF
+HitBy(Myself,CRUSHING)
+THEN
+RESPONSE #100
+RunAwayFrom(NearestEnemyOf(Myself),15)
+END
+
+

@@ -1,0 +1,42 @@
+IF
+Range([PC],20)
+Global("RTWantMel","RTF074",0)
+InParty("RTMeli")
+InParty("Leyala")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("RTWantMel","RTF074",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+GlobalGT("RTBattlCut1","RTF074",0)
+GlobalLT("RTGiranQuest","GLOBAL",17)
+!See([ENEMY])
+Delay(10)
+THEN
+RESPONSE #100
+MoveToObjectFollow("CVSandr")
+END
+
+IF
+GlobalGT("RTBattlCut1","RTF074",0)
+See([ENEMY])
+Range(LastSeenBy(Myself),12)
+THEN
+RESPONSE #50
+EquipMostDamagingMelee()
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+GlobalGT("RTBattlCut1","RTF074",0)
+See(NearestEnemyOf(Myself))
+!Range(NearestEnemyOf(Myself),12)
+THEN
+RESPONSE #100
+EquipRanged()
+AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+

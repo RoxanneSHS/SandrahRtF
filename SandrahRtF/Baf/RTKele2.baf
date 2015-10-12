@@ -1,0 +1,6 @@
+IF
+Global("Gnollend","RTF123",4)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END

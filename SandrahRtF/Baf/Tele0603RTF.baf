@@ -1,0 +1,16 @@
+IF
+Clicked([ANYONE])
+Global("RTIrenApp","ar0602",7)Range(LastTrigger,9)
+THEN
+RESPONSE #100
+PlaySound("EFF_M28")
+Wait(1)
+SaveGame(0)
+ActionOverride(Player1,LeaveAreaLUAPanic("AR0603","",[516.2929],12))
+ActionOverride(Player1,LeaveAreaLUA("AR0603","",[516.2929],12))
+ActionOverride(Player2,LeaveAreaLUA("AR0603","",[475.2973],12))
+ActionOverride(Player3,LeaveAreaLUA("AR0603","",[415.2953],12))
+ActionOverride(Player4,LeaveAreaLUA("AR0603","",[553.2957],12))
+ActionOverride(Player5,LeaveAreaLUA("AR0603","",[486.2969],12))
+ActionOverride(Player6,LeaveAreaLUA("AR0603","",[430.2984],12))
+END

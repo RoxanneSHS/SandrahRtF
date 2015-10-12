@@ -1,0 +1,35 @@
+IF
+Global("RTGiranQuest","GLOBAL",15)
+See("CVGiran")
+Delay(2)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("RTBattlCut1","RTF074",1)
+Global("JumpFight","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("JumpFight","LOCALS",1)
+JumpToPoint([998.1662])
+END
+
+IF
+Global("RTGiranQuest","GLOBAL",16)
+Global("RTBattlCut1","RTF074",3)
+See("RTHartl")
+See("CVGiran")
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("CVGiran",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("RTGiranQuest","GLOBAL",17)
+ClearAllActions()
+StartDialogueNoSet([PC])
+END

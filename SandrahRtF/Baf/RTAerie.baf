@@ -1,0 +1,35 @@
+IF
+AreaCheck("ar0601")
+NumTimesTalkedTo(0)
+Range([PC],50)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+MoveToObject(Player1)
+Wait(2)
+CreateVisualEffectObject("ICWrati",Myself)
+Wait(4)
+Polymorph(MAGE_FEMALE_ELF)
+Wait(2)
+EndCutSceneMode()
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("AerieCreated","ar0601",2)
+THEN
+RESPONSE #100
+DisplayStringHead(Player1,@1768)
+MoveToPointNoInterrupt([300.500])
+SetGlobal("AerieCreated","ar0601",3)
+EscapeArea()
+END
+
+IF
+AreaCheck("rtf112")
+NumTimesTalkedTo(0)
+Range([PC],12)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END

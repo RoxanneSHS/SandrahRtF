@@ -1,0 +1,17 @@
+IF
+Clicked([ANYONE])
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Range(LastTrigger,9)
+THEN
+RESPONSE #100
+PlaySound("EFF_M28")
+Wait(1)
+SaveGame(0)
+ActionOverride(Player1,LeaveAreaLUAPanic("AR0602","",[3075.644],12))
+ActionOverride(Player1,LeaveAreaLUA("AR0602","",[3075.644],12))
+ActionOverride(Player2,LeaveAreaLUA("AR0602","",[3029.652],12))
+ActionOverride(Player3,LeaveAreaLUA("AR0602","",[2975.670],12))
+ActionOverride(Player4,LeaveAreaLUA("AR0602","",[3114.665],12))
+ActionOverride(Player5,LeaveAreaLUA("AR0602","",[3068.681],12))
+ActionOverride(Player6,LeaveAreaLUA("AR0602","",[3004.704],12))
+END

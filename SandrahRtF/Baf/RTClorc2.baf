@@ -1,0 +1,48 @@
+IF
+OR(2)
+HPPercentLT(Myself,70)
+HPPercentLT("CVGiran",70)
+Global("RTGiranQuest","GLOBAL",13)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobal("RTGiranQuest","GLOBAL",14)
+Dialogue([PC])
+END
+
+IF
+AttackedBy("CVGiran",DEFAULT)
+THEN
+RESPONSE #100
+AttackReevaluate("CVGiran",30)
+END
+
+IF
+GlobalLT("RTGiranQuest","GLOBAL",17)
+GlobalGT("RTBattlCut1","RTF074",0)
+!See([ENEMY])
+Delay(10)
+THEN
+RESPONSE #100
+MoveToObjectFollow("CVSandr")
+END
+
+IF
+GlobalGT("RTBattlCut1","RTF074",0)
+See([ENEMY])
+Range(LastSeenBy(Myself),12)
+THEN
+RESPONSE #50
+EquipMostDamagingMelee()
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+GlobalGT("RTBattlCut1","RTF074",0)
+See(NearestEnemyOf(Myself))
+!Range(NearestEnemyOf(Myself),12)
+THEN
+RESPONSE #100
+EquipRanged()
+AttackReevaluate(NearestEnemyOf(Myself),20)
+END

@@ -1,0 +1,70 @@
+IF
+See([PC])
+Global("RTBegin","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("RTBegin","LOCALS",1)
+ForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+RealSetGlobalTimer("RT0603","LOCALS",ONE_MINUTE)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+RealGlobalTimerExpired("RT0603","LOCALS")
+THEN
+RESPONSE #20
+ForceSpell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+RealSetGlobalTimer("RT0603","LOCALS",THREE_MINUTES)
+RESPONSE #25
+ForceSpell(Myself,WIZARD_SPIRIT_ARMOR)
+RealSetGlobalTimer("RT0603","LOCALS",THREE_MINUTES)
+RESPONSE #15
+ForceSpell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+RealSetGlobalTimer("RT0603","LOCALS",THREE_MINUTES)
+RESPONSE #20
+ForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+RealSetGlobalTimer("RT0603","LOCALS",THREE_MINUTES)
+RESPONSE #15
+ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+RealSetGlobalTimer("RT0603","LOCALS",THREE_MINUTES)
+RESPONSE #5
+ForceSpell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+RealSetGlobalTimer("RT0603","LOCALS",THREE_MINUTES)
+END
+
+IF
+Global("ShoutForHelp","LOCALS",1)
+HPPercentLT(Myself,30)
+HasItem("POTN52",Myself)
+THEN
+RESPONSE #100
+UseItem("Potn52",Myself)
+END
+
+IF
+Global("ShoutForHelp","LOCALS",0)
+HPPercentLT(Myself,30)
+THEN
+RESPONSE #100
+SetGlobal("ShoutForHelp","LOCALS",1)
+RunAwayFromNoInterrupt(LastAttackerOf(Myself),60)
+END
+
+IF
+Global("ZShoutForHelp","LOCALS",1)
+HPPercentGT(Myself,30)
+THEN
+RESPONSE #100
+SetGlobal("ZShoutForHelp","LOCALS",0)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+AttackReevaluate(NearestEnemyOf(Myself),5)
+END
+
+
+

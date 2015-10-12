@@ -1,0 +1,21 @@
+IF
+Global("Narga","rtf045",1)
+AreaCheck("rtf045")
+See("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Narga","rtf045",2)
+StartDialogueNoSet([PC])
+END
+
+IF
+AreaCheck("RTF063")
+Global("NargaR","RTF063",0)
+GlobalGT("RTColan","GLOBAL",16)
+See("CVSandr")
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+SetGlobal("NargaR","RTF063",1)
+StartDialogueNoSet([PC])
+END

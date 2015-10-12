@@ -1,0 +1,7 @@
+IF
+IsOverMe("RTMeli")
+Global("SawMagic","AR0603",0)
+THEN
+RESPONSE #100
+SetGlobal("SawMagic","AR0603",1)
+END

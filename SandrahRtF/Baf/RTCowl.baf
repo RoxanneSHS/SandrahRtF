@@ -1,0 +1,7 @@
+IF
+Global("RTCowlApp","RTF020",1)
+Detect([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet(LastSeenBy(Myself))
+END

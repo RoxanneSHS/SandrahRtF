@@ -1,0 +1,28 @@
+IF
+Global("RTF4Driz","rtf006",1)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Dialogue([PC])
+END
+
+IF
+AreaCheck("RTF123")
+Global("RTF5Driz","rtf123",0)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("RTF5Driz","rtf123",1)
+Dialogue([PC])
+END

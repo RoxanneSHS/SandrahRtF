@@ -1,0 +1,45 @@
+IF
+OR(2)
+Global("RTMelibant","GLOBAL",4)
+GlobalGT("SanRTFPlot1","GLOBAL",4)
+GlobalLT("RTMelibant","GLOBAL",6)
+!AreaType(DUNGEON)
+!AreaType(OUTDOOR)
+See("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("RTMelibant","GLOBAL",5)
+END
+
+IF
+Global("RTMelibant","GLOBAL",6)
+GlobalGT("SanRTFPlot2","GLOBAL",0)
+!AreaType(DUNGEON)
+See("CVSandr")
+See(Player1)
+THEN
+RESPONSE #100
+SetGlobal("RTMelibant","GLOBAL",7)
+END
+
+IF
+Global("RTMelibant","GLOBAL",9)
+!AreaType(DUNGEON)
+See("CVSandr")
+See(Player1)
+THEN
+RESPONSE #100
+IncrementGlobal("RTMelibant","GLOBAL",1)
+RealSetGlobalTimer("RTMeliNB","LOCALS",120)
+END
+
+IF
+Global("RTMelibant","GLOBAL",10)
+RealGlobalTimerExpired("RTMeliNB","LOCALS")
+!AreaType(DUNGEON)
+See("CVSandr")
+See(Player1)
+THEN
+RESPONSE #100
+IncrementGlobal("RTMelibant","GLOBAL",1)
+END

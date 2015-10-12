@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+LeaveAreaLUAPanic("RTF061","",[481.754],5)
+LeaveAreaLUA("RTF061","",[481.754],5)
+ActionOverride(Player2,LeaveAreaLUA("RTF061","",[523.771],5))
+ActionOverride(Player3,LeaveAreaLUA("RTF061","",[528.694],5))
+ActionOverride(Player4,LeaveAreaLUA("RTF061","",[598.698],5))
+ActionOverride(Player5,LeaveAreaLUA("RTF061","",[649.675],5))
+ActionOverride(Player6,LeaveAreaLUA("RTF061","",[620.639],5))
+Wait(3)
+CreateCreature("RTJudge",[396.600],14)
+CreateCreature("RTColan",[505.609],4)
+EndCutSceneMode()
+SetGlobal("RTColan","GLOBAL",12)
+END
+
+

@@ -1,0 +1,56 @@
+IF
+Global("RTCityHost","GLOBAL",2)
+Allegiance(Myself,NEUTRAL)
+See([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("RTCityHost","GLOBAL",3)
+Allegiance(Myself,NEUTRAL)
+See([PC])
+THEN
+RESPONSE #100
+Enemy()
+END
+
+IF
+AreaCheck("RTF910")
+See(Player1)
+Global("In910","RTF910",0)
+THEN
+RESPONSE #100
+SetGlobal("In910","RTF910",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+AreaCheck("RTF908")
+See(Player1)
+Global("In908","RTF908",0)
+THEN
+RESPONSE #100
+SetGlobal("In908","RTF908",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+AreaCheck("RTF091")
+See(Player1)
+Global("In091","RTF091",0)
+THEN
+RESPONSE #100
+SetGlobal("In091","RTF091",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+AreaCheck("RTF061")
+Global("RTInCell","RTF061",7)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+

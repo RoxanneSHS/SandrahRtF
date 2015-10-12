@@ -1,0 +1,9 @@
+IF
+Global("RTCyr1","ar0307",1)
+OR(2)
+See("CVSandr")
+See(Player1)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END

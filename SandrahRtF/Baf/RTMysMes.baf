@@ -1,0 +1,19 @@
+IF
+AreaCheck("RTF070")
+See([PC])
+CombatCounter(0)
+Global("SeenMys","RTF070",1)
+THEN
+RESPONSE #100
+SetGlobal("SeenMys","RTF070",2)
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("SeenMys","RTF070",3)
+THEN
+RESPONSE #100
+MoveToObject("Door 01")
+SetGlobal("SeenMys","RTF070",4)
+EscapeArea()
+END

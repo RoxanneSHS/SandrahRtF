@@ -1,0 +1,7 @@
+IF
+Global("RTFTalAmb","ar7100",1)
+Detect([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet(LastSeenBy(Myself))
+END

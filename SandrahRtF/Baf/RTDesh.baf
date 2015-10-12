@@ -1,0 +1,18 @@
+IF
+Global("RTLeyPlot1","GLOBAL",15)
+OR(3)
+See([PC])
+See("RTShaj")
+See("ppgirl2")
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("RTLeyPlot1","GLOBAL",16)
+!StateCheck(Myself,STATE_STONE_DEATH)
+THEN
+RESPONSE #100
+MoveToObject(LastTalkedToBy(Myself))
+END

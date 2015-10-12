@@ -1,0 +1,14 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+LeaveAreaLUAPanic("RTF143","",[605.2309],0)
+LeaveAreaLUA("RTF143","",[605.2309],0)
+Wait(3)
+SetGlobal("RTSimbul","RTF143",3)
+EndCutSceneMode()
+ActionOverride("RTLarlo",StartDialogueNoSet([PC]))
+END
+

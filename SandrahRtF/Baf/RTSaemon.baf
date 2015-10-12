@@ -1,0 +1,43 @@
+IF
+Global("RTSaem","RTF100",1)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("RTSaeHij","GLOBAL",7)
+See("RTShaj")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+AreaCheck("RTF117")
+Global("SeeMe","RTF117",0)
+THEN
+RESPONSE #100
+SetGlobal("SeeMe","RTF117",1)
+Deactivate(Myself)
+END
+
+IF
+Global("RTSaeHij","GLOBAL",1)
+Dead("RTPrince")
+Dead("RTAqua")
+AreaCheck("RTF117")
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Player2,CD_STATE_NOTVALID)
+!StateCheck(Player3,CD_STATE_NOTVALID)
+!StateCheck(Player4,CD_STATE_NOTVALID)
+!StateCheck(Player6,CD_STATE_NOTVALID)
+!StateCheck(Player5,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+Activate(Myself)
+SetGlobal("RTSaeHij","GLOBAL",2)
+Wait(2)
+MoveToObject(Player1)
+END

@@ -1,0 +1,9 @@
+IF
+AreaCheck("RTF61pb")
+Global("InRTF","ar61pb",2)
+CombatCounter(0)
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
