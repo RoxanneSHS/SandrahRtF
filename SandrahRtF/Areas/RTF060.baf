@@ -1,0 +1,135 @@
+IF
+GlobalLT("RTColan","GLOBAL",13)
+Global("Jail","RTF060",0)
+THEN
+RESPONSE #100
+TriggerActivation("In063",FALSE)
+TriggerActivation("Guild1",FALSE)
+TriggerActivation("Guild2",FALSE)
+TriggerActivation("Guild3",FALSE)
+SetGlobal("Jail","RTF060",1)
+Explore()
+END
+
+IF
+Global("RTColan","GLOBAL",4)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+Wait(1)
+ActionOverride("CVCultgi",MoveToObject("CVSandr"))
+ActionOverride("RTSlav1",MoveToObject("CVSandr"))
+Wait(6)
+SetGlobal("RTColan","GLOBAL",5)
+EndCutSceneMode()
+ActionOverride("RTSlav1",StartDialogueNoSet([PC]))
+END
+
+IF
+Global("RTColan","GLOBAL",6)
+RealGlobalTimerExpired("Colano2","RTF060")
+THEN
+RESPONSE #100
+SetGlobal("RTColan","GLOBAL",7)
+CreateCreatureObjectOffset("RTColan",Player1,[150.100])
+ActionOverride("RTColan",FaceObject(Player1))
+END
+
+IF
+GlobalGT("RTColan","GLOBAL",13)
+Global("Jail","RTF060",1)
+THEN
+RESPONSE #100
+TriggerActivation("In063",TRUE)
+SetGlobal("Jail","RTF060",2)
+END
+
+IF
+Global("SanRTFPlot3","GLOBAL",2)
+Global("Redward","RTF060",0)
+THEN
+RESPONSE #100
+CreateCreature("RTRedwi1",[258.1096],5)
+SetGlobal("Redward","RTF060",1)
+END
+
+IF
+Global("OpenE","RTF060",1)
+THEN
+RESPONSE #100
+TriggerActivation("Guild1",TRUE)
+TriggerActivation("Guild2",TRUE)
+TriggerActivation("Guild3",TRUE)
+SetGlobal("OpenE","RTF060",2)
+END
+
+IF
+Global("RTGetOut","GLOBAL",7)
+Global("RTMetCandre","GLOBAL",4)
+THEN
+RESPONSE #100
+CreateCreature("RTiltash",[1925.1005],4)
+CreateCreature("RTKnihos",[1856.970],5)
+CreateCreature("RTKnihos",[2152.872],4)
+CreateCreature("RTKnihos",[2033.720],6)
+SetGlobal("RTGetOut","GLOBAL",8)
+END
+
+IF
+Global("SanRTFPlot5","GLOBAL",1)
+GlobalLT("CitEntpl","GLOBAL",2)
+Global("Butler","RTF060",0)
+THEN
+RESPONSE #100
+SetGlobal("Butler","RTF060",1)
+CreateCreature("RTODButl",[1060.2444],7)
+END
+
+IF
+GlobalGT("CitEntpl","GLOBAL",1)
+InMyArea("RTODButl")
+THEN
+RESPONSE #100
+ActionOverride("RTODButl",DestroySelf())
+Continue()
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+
+

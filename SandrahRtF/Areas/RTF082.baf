@@ -1,0 +1,115 @@
+IF
+Global("RTFoundBran","GLOBAL",1)
+GlobalGT("SanRTFPlot3","GLOBAL",3)
+Global("Branw","RTF082",0)
+THEN
+RESPONSE #100
+CreateCreature("RTBranw",[2918.2325],4)
+SetGlobal("Branw","RTF082",1)
+END
+
+IF
+InMyArea(Player1)
+Global("Opening","RTF082",0)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+StorePartyLocations()
+Wait(2)
+ActionOverride(Player1,JumpToPoint([1888.2237]))
+MoveViewPoint([1888.2237],STANDARD)
+Wait(2)
+EndCutSceneMode()
+SetGlobal("Opening","RTF082",1)
+END
+
+IF
+Global("Opening","RTF082",2)
+THEN
+RESPONSE #100
+RestorePartyLocations()
+SetGlobal("Opening","RTF082",3)
+END
+
+IF
+Global("Opening","RTF082",4)
+THEN
+RESPONSE #100
+ClearAllActions() 
+Explore()
+StartCutSceneMode() 
+Wait(2) 
+ActionOverride("RTCandre",MoveToPoint([686.2235]) 
+ActionOverride(Player1,MoveToPoint([686.2235])) 
+ActionOverride(Player2,MoveToPoint([686.2235]))
+ActionOverride(Player3,MoveToPoint([686.2235]))
+ActionOverride(Player4,MoveToPoint([686.2235]))
+ActionOverride(Player5,MoveToPoint([686.2235]))
+ActionOverride(Player6,MoveToPoint([686.2235])) 
+SmallWait(2)
+CreateCreature("RTColan",[608.2288],10) 
+MoveViewPoint([686.2235],VERY_FAST) 
+Wait(12)
+EndCutSceneMode()
+SetGlobal("Opening","RTF082",5)
+END
+
+IF
+Global("Opening","RTF082",6)
+THEN
+RESPONSE #100
+SetGlobal("Opening","RTF082",7)
+CreateCreature("RTEdwin",[420.330],5)
+Wait(2)
+ActionOverride("RTCandre",MoveToPoint([445.500]))
+ActionOverride("RTColan",MoveToPoint([445.500]))
+END
+
+IF
+Global("Opening","RTF082",8)
+THEN
+RESPONSE #100
+SetGlobal("Opening","RTF082",7)
+ActionOverride("RTCandre",EscapeArea())
+ActionOverride("RTEdwin",EscapeArea())
+ActionOverride("RTOdLuc",EscapeArea())
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END

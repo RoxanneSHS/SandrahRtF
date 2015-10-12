@@ -1,0 +1,55 @@
+IF
+Global("In091","RTF091",2)
+THEN
+RESPONSE #100
+CreateCreature("RTyuan1",[945.521],5)
+CreateCreature("CVshlic3",[883.365],10)
+CreateCreature("RTyuan2",[1154.696],4)
+CreateCreature("CVVamsh1",[341.582],14)
+CreateCreature("CVVamsh2",[299.614],12)
+CreateCreature("RTKniHos",[579.676],0)
+CreateCreature("RTKniHos",[599.699],0)
+CreateCreature("cowenf3",[688.509],2)
+CreateCreature("skesh202",[543.913],10)
+CreateCreature("skesh203",[555.900],12)
+CreateCreature("cowenf3",[560.529],10)
+SetGlobal("In091","RTF091",3)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END

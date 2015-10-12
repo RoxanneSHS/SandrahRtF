@@ -1,0 +1,62 @@
+IF
+Global("RTGiranQuest","GLOBAL",2)
+InParty("CVGiran")
+THEN
+RESPONSE #100
+SetGlobal("RTGiranQuest","GLOBAL",3)
+CreateCreature("RSlaver1",[565.270],4)
+CreateCreature("RSlaver2",[485.252],12)
+END
+
+IF
+Global("RTGiranQuest","GLOBAL",3)
+InMyArea("CVGiran")
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+ActionOverride("CVGiran",JumpToPoint([649.351]))
+MoveViewPoint([534.277],VERY_FAST)
+SetGlobal("RTGiranQuest","GLOBAL",4)
+Wait(2)
+ActionOverride("RSlaver2",StartDialogueNoSet(Player1))
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

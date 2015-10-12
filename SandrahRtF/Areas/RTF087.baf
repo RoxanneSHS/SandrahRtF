@@ -1,0 +1,104 @@
+IF
+Global("RTOdess","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTOdess","GLOBAL",1)
+END
+
+IF
+Global("SanRTFPlot3","GLOBAL",4)
+Global("EdMove","RTF087",0)
+THEN
+RESPONSE #100
+SetGlobal("EdMove","RTF087",1)
+CreateCreature("RTEdwin",[1947.549],13)
+CreateCreature("RTCandre",[2038.467],14)
+END
+
+IF
+Global("CitEntpl","GLOBAL",8)
+THEN
+RESPONSE #100
+SetGlobal("CitEntpl","GLOBAL",9)
+CreateCreature("RTEdwin",[1244.1589],3)
+CreateCreature("RTCandre",[1231.1503],4)
+CreateCreature("RTOdluc",[1284.1516],6)
+CreateCreature("RTODButl",[1412.1569],6)
+CreateCreature("RTSamas",[1301.1379],0)
+CreateCreature("RTKnired",[931.1435],14)
+CreateCreature("RTKnired",[1471.1496],7)
+ActionOverride("RTOdluc",SetNumTimesTalkedTo(1))
+ActionOverride("RTODButl",SetNumTimesTalkedTo(1))
+END
+
+IF
+Global("CitEntpl","GLOBAL",12)
+!InMyArea("RTSamas")
+THEN
+RESPONSE #100
+SetGlobal("CitEntpl","GLOBAL",13)
+END
+
+IF
+Global("CitEntpl","GLOBAL",13)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+Wait(4)
+FadeToColor([30.0],0)
+ActionOverride(Player1,LeaveAreaLUA("RTF908","",[1357.1080],4))
+ActionOverride(Player2,LeaveAreaLUA("RTF908","",[1103.1250],7))
+ActionOverride(Player3,LeaveAreaLUA("RTF908","",[401.952],11))
+ActionOverride(Player4,LeaveAreaLUA("RTF908","",[828.1362],0))
+ActionOverride(Player5,LeaveAreaLUA("RTF908","",[401.952],8))
+ActionOverride(Player6,LeaveAreaLUA("RTF908","",[1103.1250],5))
+Wait(2)
+ActionOverride("CVSandr",LeaveAreaLUA("RTF908","",[1769.1060],13))
+Wait(2)
+TextScreen("RTSamas")
+Wait(2)
+FadeFromColor([30.0],0)
+Wait(2)
+EndCutSceneMode()
+SetGlobal("CitEntpl","GLOBAL",14)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

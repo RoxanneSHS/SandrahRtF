@@ -1,0 +1,18 @@
+IF
+IsOverMe("RTMeli")
+Global("SawMagic","RTF078",0)
+THEN
+RESPONSE #100
+SetGlobal("SawMagic","RTF078",1)
+END
+
+IF
+OR(2)
+Entered([GOODCUTOFF])
+Entered([NEUTRAL])
+THEN
+RESPONSE #50
+ForceSpell(LastTrigger,TRAP_CLOUDKILL)
+RESPONSE #50
+ForceSpell(LastTrigger,TRAP_FIREBALL)
+END

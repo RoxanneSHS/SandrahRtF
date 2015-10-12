@@ -1,0 +1,73 @@
+IF
+Global("RTColan","GLOBAL",17)
+THEN
+RESPONSE #100
+ActionOverride("RTKniJu",StartDialogueNoSet([PC]))
+END
+
+IF
+Global("NargaR","RTF063",2)
+Dead("CVNarga")
+InMyArea(Player1)
+THEN
+RESPONSE #100
+SetGlobal("NargaR","RTF063",3)
+END
+
+IF
+Global("RTGetOut","GLOBAL",1)
+THEN
+RESPONSE #100
+CreateCreature("CVyuam1",[2091.1018],10)
+CreateCreature("RTKniHos",[2112.1063],10)
+CreateCreature("RTKniHos",[2001.1124],10)
+SetGlobal("RTGetOut","GLOBAL",2)
+END
+
+IF
+Global("RTGetOut","GLOBAL",2)
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("RTGetOut","GLOBAL",3)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

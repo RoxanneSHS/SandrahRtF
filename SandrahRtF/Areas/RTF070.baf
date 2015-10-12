@@ -1,0 +1,165 @@
+IF
+Global("SeenMys","RTF070",0)
+THEN
+RESPONSE #100
+TriggerActivation("Mausoleum",FALSE)
+SetGlobal("SeenMys","RTF070",1)
+END
+
+IF
+Global("SeenMys","RTF070",4)
+Global("SanPlot3","GLOBAL",0)
+!InMyArea("RTMysMes")
+THEN
+RESPONSE #100
+SetGlobal("SeenMys","RTF070",5)
+END
+
+IF
+Global("SeenMys","RTF070",6)
+PartyHasItem("RTMausa")
+THEN
+RESPONSE #100
+TriggerActivation("Mausoleum",TRUE)
+TriggerActivation("MausoDoor",FALSE)
+SetGlobal("SeenMys","RTF070",7)
+END
+
+IF
+Global("SanRTFPlot4","GLOBAL",8)  
+Global("SanRTFPlot5","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanRTFPlot5","GLOBAL",1)
+END
+
+IF
+Global("SanRTFPlot5","GLOBAL",2)
+Global("CitEntpl","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("CitEntpl","GLOBAL",4)
+TriggerActivation("Estate",FALSE)
+CreateCreature("RTEdwin",[4375.1752],10)
+CreateCreature("RTCandre",[3696.2081],11)
+CreateCreature("RTIltash",[4567.1966],7)
+CreateCreature("CVSlaw",[4424.2036],8)
+CreateCreature("Umbhul02",[4293.2202],7)
+CreateCreature("BPLizkng",[4580.2118],7)
+CreateCreature("RTKNiHos",[4893.1736],7)
+END
+
+IF
+Global("CitEntpl","GLOBAL",5)
+THEN
+RESPONSE #100
+SetGlobal("CitEntpl","GLOBAL",6)
+CreateCreature("RTKnired",[5018.1925],3)
+CreateCreature("RTKnired",[5007.2052],3)
+CreateCreature("RTKnired",[4665.2411],7)
+CreateCreature("RTKnired",[4435.2438],7)
+CreateCreature("RTKnired",[3909.2420],12)
+CreateCreature("RTKnired",[3889.2302],13)
+CreateCreature("RTKNiHos",[3895.1935],10)
+CreateCreature("RTKNiHos",[3924.2001],10)
+CreateCreature("RTKNiHos",[4000.2111],9)
+CreateCreature("RTKNiHos",[4169.2011],11)
+CreateCreature("CVSlaw",[4224.2211],7)
+CreateCreature("Umbhul02",[4369.2011],7)
+CreateCreature("BPLizkng",[4473.2027],7)
+CreateCreature("CVSlaw",[3566.1696],13)
+CreateCreature("Umbhul02",[4455.2195],7)
+CreateCreature("BPLizkng",[4455.2295],7)
+END
+
+IF
+Global("SanRTFPlot5","GLOBAL",2)
+Dead("RTIltash")
+THEN
+RESPONSE #100
+SetGlobal("SanRTFPlot5","GLOBAL",3)
+TriggerActivation("Estate",TRUE)
+END
+
+IF
+Global("CitEntpl","GLOBAL",6)
+!InMyArea("RTEDWIN")
+CombatCounter(0)
+THEN
+RESPONSE #100
+CreateCreature("RTEdwin",[4375.1752],10)
+END		
+
+IF
+Global("CitEntpl","GLOBAL",6)
+!InMyArea("RTCandre")
+CombatCounter(0)
+THEN
+RESPONSE #100
+CreateCreature("RTCandre",[3696.2081],11) 
+END
+
+IF
+Global("SanRTFPlot5","GLOBAL",3)
+Global("CitEntpl","GLOBAL",6)
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+ActionOverride("RTCandre",MoveToObject("RTEdwin"))
+SetGlobal("CitEntpl","GLOBAL",7)
+END
+
+IF
+Global("SanRTFPlot5","GLOBAL",4)
+Global("AdmiDefend","RTF070",0)
+THEN
+RESPONSE #100
+SetGlobal("AdmiDefend","RTF070",1)
+CreateCreature("RTAdmi",[4424.2036],8)
+CreateCreature("Umbhul02",[4293.2202],7)
+CreateCreature("BPLizkng",[4580.2118],7)
+CreateCreature("RTKNiHos",[4893.1736],7)
+CreateCreature("RTEdwin",[4375.1752],3)
+CreateCreature("RTCandre",[4496.1781],4)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

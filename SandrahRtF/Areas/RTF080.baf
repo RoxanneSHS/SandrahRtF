@@ -1,0 +1,127 @@
+IF
+Global("Key2","RTF080",0)
+!PartyHasItem("RTMausw")
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("Key2","RTF080",1)
+TriggerActivation("travel01",FALSE)
+END
+
+IF
+Global("StrangeVap","RTF080",0)
+InMyArea(Player1)
+THEN
+RESPONSE #20
+CreateCreature("UMBHUL02",[617.870],0)
+IncrementGlobal("Spawnsum","RTF080",1)
+RealSetGlobalTimer("VapTi","RTF080",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF080",1)
+RESPONSE #20
+CreateCreature("UMBHUL02",[983.1218],0)
+IncrementGlobal("Spawnsum","RTF080",1)
+RealSetGlobalTimer("VapTi","RTF080",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF080",1)
+RESPONSE #20
+CreateCreature("UMBHUL02",[1603.1082],0)
+IncrementGlobal("Spawnsum","RTF080",1)
+RealSetGlobalTimer("VapTi","RTF080",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF080",1)
+RESPONSE #20
+CreateCreature("UMBHUL02",[842.1229],0)
+IncrementGlobal("Spawnsum","RTF080",1)
+RealSetGlobalTimer("VapTi","RTF080",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF080",1)
+RESPONSE #20
+CreateCreature("UMBHUL02",[1539.846],0)
+IncrementGlobal("Spawnsum","RTF080",1)
+RealSetGlobalTimer("VapTi","RTF080",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF080",1)
+END
+
+IF
+Global("StrangeVap","RTF080",1)
+RealGlobalTimerExpired("VapTi","RTF080")
+THEN
+RESPONSE #100
+SetGlobal("StrangeVap","RTF080",0)
+END
+
+IF
+Global("Spawnsum","RTF080",8)
+OR(2)
+Global("StrangeVap","RTF080",0)
+Global("StrangeVap","RTF080",1)
+THEN
+RESPONSE #100
+SetGlobal("StrangeVap","RTF080",2)
+CreateCreature("RtReHod1",[507.1400],10)
+TriggerActivation("travel01",TRUE)
+END
+
+IF
+Global("StrangeVap","RTF080",4)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+Wait(2)
+MoveViewPoint([1254.1196],INSTANT)
+ActionOverride("CVSandr",JumpToPoint([1254.1196]))
+Wait(2)
+ActionOverride("CVSandr",ForceSpell(Myself,WIZARD_CHAOS_VISUALS_ONLY))
+Wait(2)
+CreateVisualEffect("SPCALLLI",[1074.1233])
+CreateVisualEffect("SPCALLLI",[841.1252])
+CreateVisualEffect("SPFSTRMI",[1524.1150])
+CreateVisualEffect("SPCALLLI",[1277.1061])
+Wait(6)
+CreateVisualEffect("SPCALLLI",[1074.1233])
+CreateVisualEffect("SPCALLLI",[841.1252])
+CreateVisualEffect("SPFSTRMI",[1524.1150])
+CreateVisualEffect("SPCALLLI",[1277.1061])
+Wait(4)
+EndCutSceneMode()
+SetGlobal("StrangeVap","RTF080",5)
+ActionOverride("RTReHod1",EscapeArea())
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+
+
