@@ -1,0 +1,64 @@
+IF
+Global("RTSamThrone","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTSamThrone","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("RTMaskplot","GLOBAL",1)
+PartyHasItem("Comc03")
+PartyHasItem("SW1H58")
+THEN
+RESPONSE #100
+SetGlobal("RTMaskplot","GLOBAL",2)
+END
+
+IF
+Global("RTSamThrone","GLOBAL",3)
+THEN
+RESPONSE #100
+ActionOverride("RTSaemon",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("RTSamas",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("RTSamThrone","GLOBAL",4)
+RealSetGlobalTimer("RTCourtT","GLOBAL",1200)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
