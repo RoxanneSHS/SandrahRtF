@@ -1,0 +1,7 @@
+IF
+IsOverMe("CVSandr")
+Global("OpenSeal","RTF045",1)
+THEN
+RESPONSE #100
+SetGlobal("OpenSeal","RTF045",2)
+END

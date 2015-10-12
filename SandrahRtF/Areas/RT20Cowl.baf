@@ -1,0 +1,9 @@
+IF
+IsOverMe([PC])
+Global("RTCowlApp","RTF020",0)
+THEN
+RESPONSE #100
+CreateCreatureDoor("RTCowl1",[1972.1298],7)
+CreateCreatureDoor("RTCowl2",[2060.1234],6)
+SetGlobal("RTCowlApp","RTF020",1)
+END

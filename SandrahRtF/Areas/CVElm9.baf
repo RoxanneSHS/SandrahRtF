@@ -1,0 +1,65 @@
+IF
+Global("RTFoundIce","GLOBAL",6)
+THEN
+RESPONSE #100
+ApplySpellRES("CVSLEEP",Player2)
+ApplySpellRES("BGSLEEP",Player3)
+ApplySpellRES("CVSLEEP",Player4)
+ApplySpellRES("BGSLEEP",Player5)
+ApplySpellRES("CVSLEEP",Player6)
+ApplySpellRES("BGSLEEP",Player1)
+CreateVisualEffect("BLACKFIR",[655.473])
+CreateVisualEffect("BLACKFIR",[833.356])
+CreateVisualEffect("BLACKFIR",[1599.338])
+TriggerActivation("Down",FALSE)
+SetGlobal("RTFoundIce","GLOBAL",7)
+END
+
+IF
+Global("RTFoundIce","GLOBAL",7)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+CreateCreatureDoor("RTMadeen",[813.665],7)
+SetGlobal("RTFoundIce","GLOBAL",8)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

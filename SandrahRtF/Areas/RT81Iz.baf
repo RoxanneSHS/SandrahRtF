@@ -1,0 +1,11 @@
+IF
+Global("RTIzCow","RTF081",0)
+InParty("CVIzzy")
+InParty("CVGiran")
+OR(2)
+IsOverMe("CVIzzy")
+IsOverMe("CVGiran")
+THEN
+RESPONSE #100
+SetGlobal("RTIzCow","RTF081",1)
+END

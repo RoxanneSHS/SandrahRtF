@@ -1,0 +1,54 @@
+IF
+Clicked([ANYONE])
+!PartyHasItem("Misc92")
+Global("Hadlfit","RTF170",0)
+THEN
+RESPONSE #100
+DisplayString(LastTrigger,@1970)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+PartyHasItem("Misc92")
+THEN
+RESPONSE #100
+TakePartyItem("Misc92")
+DestroyItem("Misc92") 
+DisplayString(LastTrigger,@1971)
+SetGlobal("Hadlfit","RTF170",1)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+!PartyHasItem("Misc92")
+OR(2)
+Global("Hadlfit","RTF170",1)
+Global("Hadlfit","RTF170",2)
+GlobalLT("Drilling","RTF170",4)
+THEN
+RESPONSE #100
+DisplayString(LastTrigger,@1972)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+OR(2)
+Global("Hadlfit","RTF170",1)
+Global("Hadlfit","RTF170",2)
+Global("Drilling","RTF170",4)
+THEN
+RESPONSE #100
+DisplayString(LastTrigger,@1973)
+SetGlobal("Drilling","RTF170",5)
+END
+
+IF
+Clicked([ANYONE])
+!Range(LastTrigger,12)
+THEN
+RESPONSE #100
+DisplayString(LastTrigger,@1976)
+END

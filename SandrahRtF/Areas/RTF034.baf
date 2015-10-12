@@ -1,0 +1,74 @@
+IF
+Global("FoundSeal34","RTF034",2)
+THEN
+RESPONSE #100
+SpawnPtDeactivate("Spawn2")
+SpawnPtDeactivate("Spawn4")
+SpawnPtDeactivate("Spawn5")
+SpawnPtDeactivate("Spawn8")
+SpawnPtDeactivate("Invade")
+SetGlobal("FoundSeal34","RTF034",3)
+END
+
+IF
+Global("FoundSeal34","RTF034",3)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+Wait(2)
+MoveViewPoint([2992.2762],INSTANT)
+ActionOverride("CVSandr",JumpToPoint([2877.2715]))
+Wait(2)
+ActionOverride("CVSandr",ForceSpell(Myself,WIZARD_CHAOS_VISUALS_ONLY))
+Wait(2)
+CreateVisualEffect("SPCALLLI",[2877.2715])
+CreateVisualEffect("SPCALLLI",[2990.2730])
+CreateVisualEffect("SPFSTRMI",[2800.2724])
+CreateVisualEffect("SPCALLLI",[2850.2766])
+CreateVisualEffect("SPCALLLI",[2752.2843])
+CreateVisualEffect("SPFSTRMI",[2794.2762])
+CreateVisualEffect("SPFSTRMI",[2825.2782])
+CreateVisualEffect("SPFSTRMI",[2800.2740])
+Wait(4)
+SetGlobal("FoundSeal34","RTF034",4)
+StartCutScene("CVcut401")
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END

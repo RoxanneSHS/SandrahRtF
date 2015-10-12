@@ -1,0 +1,77 @@
+IF
+Global("Attack","RTF032",0)
+THEN
+RESPONSE #100
+TriggerActivation("Down",FALSE)
+SetGlobal("Attack","RTF032",1)
+END
+
+IF
+Global("SanRTFPlot2","GLOBAL",2)
+Global("Attack","RTF032",1)
+THEN
+RESPONSE #100
+CreateCreature("Mindvam",[354.1555],12)
+CreateCreature("skesh201",[921.1098],1)
+CreateCreature("skesh202",[1073.1107],0)
+CreateCreature("skesh203",[656.1120],7)
+CreateCreature("skesh204",[1351.1363],5)
+CreateCreature("Dembal02",[1604.1577],5)
+SetGlobal("Attack","RTF032",2)
+END
+
+IF
+Global("Attack","RTF032",2)
+THEN
+RESPONSE #100
+TriggerActivation("Down",TRUE)
+TriggerActivation("Conf",FALSE)
+SetGlobal("Attack","RTF032",3)
+END
+
+IF
+GlobalGT("SanRTFPlot2","GLOBAL",2)
+Global("Attack","RTF032",3)
+THEN
+RESPONSE #100
+TriggerActivation("Down",FALSE)
+SetGlobal("Attack","RTF032",4)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END

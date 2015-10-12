@@ -1,0 +1,50 @@
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+Global("AmbSeal","RTF046",3)
+PartyHasItem("CVRTFHM")
+THEN
+RESPONSE #100
+StartCutSceneMode()
+DisplayString(Myself,@1778)
+SetGlobal("AmbSeal","RTF046",4)
+AddXP2DA("PLOT5B")
+AmbientActivate("AMB_FinalSeal",TRUE)
+PlaySound("EFF_M38")
+Wait(2)
+SmallWait(5)
+SoundActivate("SndExitPortal",TRUE)
+StaticSequence("AMB_FinalSeal",1)
+EndCutSceneMode()
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+GlobalLT("AmbSeal","RTF046",3)
+Global("RTFindCham","GLOBAL",0)
+THEN
+RESPONSE #100
+DisplayString(Myself,@1779)
+Wait(4)
+SetGlobal("RTFindCham","GLOBAL",1)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+GlobalLT("AmbSeal","RTF046",3)
+THEN
+RESPONSE #100
+DisplayString(Myself,@1779)
+END
+
+IF
+Clicked([ANYONE])
+!Range(LastTrigger,12)
+THEN
+RESPONSE #100
+DisplayString(Myself,@1780)
+END
+
+

@@ -1,0 +1,107 @@
+IF
+Global("RTF030V","GLOBAL",0)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride(Player1,LeaveAreaLUA("RTF036","",[638.786],8))
+ActionOverride(Player2,LeaveAreaLUA("RTF036","",[638.786],3))
+ActionOverride(Player3,LeaveAreaLUA("RTF036","",[638.786],6))
+ActionOverride(Player4,LeaveAreaLUA("RTF036","",[638.786],9))
+ActionOverride(Player5,LeaveAreaLUA("RTF036","",[638.786],12))
+ActionOverride(Player6,LeaveAreaLUA("RTF036","",[638.786],15))
+Wait(1)
+SetGlobal("RTF030V","GLOBAL",1)
+FadeFromColor([20.0],0)
+Wait(3)
+EndCutSceneMode()
+END
+
+IF
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",6)
+Continue()
+END
+
+IF
+Global("SanRTFPlot2","GLOBAL",2)
+Global("Attack","RTF030",0)
+THEN
+RESPONSE #100
+CreateCreature("RTVelsh",[4233.2491],5)
+CreateCreature("CVVambo3",[4874.527],10)
+CreateCreature("CVVambo3",[2599.1747],0)
+CreateCreature("CVVamsh1",[2436.1703],14)
+CreateCreature("CVVamsh2",[2388.2124],12)
+CreateCreature("hgmis01",[2905.1201],4)
+CreateCreature("Mindvam",[2076.1926],10)
+CreateCreature("skesh201",[1678.1303],10)
+CreateCreature("skesh202",[1531.1076],0)
+CreateCreature("skesh203",[1529.1362],7)
+CreateCreature("skesh204",[1633.1383],10)
+SetGlobal("Attack","RTF030",1)
+END
+
+IF
+Global("Attack","RTF030",1)
+THEN
+RESPONSE #100
+ActionOverride("Shaorc1",Attack("skesh201"))
+ActionOverride("Shaorc3",Attack("skesh202"))
+ActionOverride("Shaorc7",Attack("skesh202"))
+ActionOverride("CVWDWat",Attack("skesh203"))
+ActionOverride("CVWDWat",Attack("skesh203"))
+TriggerActivation("InRTF032",FALSE)
+SetGlobal("Attack","RTF030",2)
+END
+
+IF
+Global("Attack","RTF030",4)
+THEN
+RESPONSE #100
+TriggerActivation("InRTF032",TRUE)
+SetGlobal("Attack","RTF030",5)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END

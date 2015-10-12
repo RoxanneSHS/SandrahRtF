@@ -1,0 +1,23 @@
+IF
+Global("SandrahJoined","GLOBAL",60)
+Contains("Simbul","PurpleF")
+OR(2)
+Contains("RTSymmy","BlueF")
+Contains("RTBummy","BlueF")
+OR(2)
+Contains("RTBummy","GreenF")
+Contains("RTSymmy","GreenF")
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("RTMyRetu")
+END
+
+IF
+Global("SanRTFPlot4","GLOBAL",6)
+Contains("Simbul","PurpleF")
+THEN
+RESPONSE #100
+ActionOverride("PurpleF",DestroyItem("Simbul"))
+END

@@ -1,0 +1,74 @@
+IF
+Global("CyricNear","RTF049",0)
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("CyricNear","RTF049",1)
+END
+
+IF
+Global("CyricNear","RTF049",3)
+!Dead("RTBalow")
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("RTBaloc",Player1,0,0,0)
+SetGlobal("CyricNear","RTF049",4)
+Wait(2)
+DisplayStringWait("RTBaloc",@1806)
+END
+
+IF
+Global("SanRTFPlot5","GLOBAL",4)
+Global("Szassretr","RTF049",0)
+THEN
+RESPONSE #100
+SetGlobal("Szassretr","RTF049",1)
+CreateCreature("RTAdmi",[2923.1695],8)
+CreateCreature("Umbhul02",[2943.1665],7)
+CreateCreature("BPLizkng",[2903.1615],7)
+CreateCreature("RTKNiHos",[2883.1725],7)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+
+
+
+
+

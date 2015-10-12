@@ -1,0 +1,7 @@
+IF
+IsOverMe("CVSandr")
+Global("Statue","RTF140",0)
+THEN
+RESPONSE #100
+SetGlobal("Statue","RTF140",1)
+END

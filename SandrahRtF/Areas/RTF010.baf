@@ -1,0 +1,123 @@
+IF
+Global("CVRTF010","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVRTF010","GLOBAL",1)
+TriggerActivation("ExitEast",FALSE)
+Continue()
+END
+
+IF
+Global("CVRTF010","GLOBAL",1)
+Global("CreWave","RTF010",0)
+THEN
+RESPONSE #100
+CreateCreature("F_Deadbo",[3410.286],7)
+CreateCreature("F_Deadhr",[3246.595],7)
+CreateCreature("F_Deadwm",[3659.885],7)
+CreateCreature("Emitar2",[4121.697],7)
+SetGlobal("CreWave","RTF010",1)
+RealSetGlobalTimer("CreWavTi","RTF010",60)
+END
+
+IF
+Global("CreWave","RTF010",1)
+RealGlobalTimerExpired("CreWavTi","RTF010")
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("Gorwowe",Player1,[175.175])
+CreateCreatureObjectOffset("wolfva01",Player1,[75.-175])
+CreateCreatureObjectOffset("wolfva",Player1,[-175.105])
+CreateCreatureObjectOffset("wolfwegr",Player1,[-100.100])
+CreateCreatureObjectOffset("Gorwowe",Player1,[175.175])
+CreateCreatureObjectOffset("wolfgr01",Player1,[-75.75])
+CreateCreatureObjectOffset("wolfgr01",Player1,[75.-75])
+CreateCreatureObjectOffset("Gorwowe",Player1,[175.175])
+SetGlobal("CreWave","RTF010",2)
+RealSetGlobalTimer("CreWavTi","RTF010",80)
+END
+
+IF
+Global("CreWave","RTF010",2)
+THEN
+RESPONSE #100
+CreateCreature("F_Deadbo",[3363.1086],4)
+CreateCreature("F_Deadhr",[4176.1505],3)
+CreateCreature("F_Deadwm",[4200.985],7)
+CreateCreature("Emitar2",[4209.1886],4)
+SetGlobal("CreWave","RTF010",3)
+END
+
+IF
+Global("CreWave","RTF010",3)
+RealGlobalTimerExpired("CreWavTi","RTF010")
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("skellord",Player1,[175.175])
+CreateCreatureObjectOffset("wolfva01",Player1,[75.-175])
+CreateCreatureObjectOffset("wolfva",Player1,[-175.105])
+CreateCreatureObjectOffset("wolfwegr",Player1,[-100.100])
+CreateCreatureObjectOffset("skellord",Player1,[175.175])
+CreateCreatureObjectOffset("wolfgr01",Player1,[-75.75])
+CreateCreatureObjectOffset("wolfgr01",Player1,[75.-75])
+CreateCreatureObjectOffset("skellord",Player1,[175.175])
+SetGlobal("CreWave","RTF010",4)
+RealSetGlobalTimer("CreWavTi","RTF010",100)
+END
+
+IF
+Global("CreWave","RTF010",4)
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("CreWave","RTF010",5)
+END
+
+IF
+Global("CreWave","RTF010",6)
+PartyHasItem("CVRTFHM")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("CreWave","RTF010",7)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

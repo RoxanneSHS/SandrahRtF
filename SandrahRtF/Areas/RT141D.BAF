@@ -1,0 +1,12 @@
+IF
+Clicked([ANYONE])
+!GlobalTimerNotExpired("Triggered","MYAREA")
+Global("Access","rtf141",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobalTimer("Triggered","MYAREA",TWO_MINUTES)
+CreateCreature("RT141DC",[1630.371],0)
+END
+
+

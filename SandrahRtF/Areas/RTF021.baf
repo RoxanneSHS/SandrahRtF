@@ -1,0 +1,59 @@
+IF
+Global("RTFOn","RTF021",0)
+THEN
+RESPONSE #100
+SetGlobal("RTFOn","RTF021",1)
+TriggerActivation("To22a",FALSE)
+TriggerActivation("To22b",FALSE)
+TriggerActivation("InfoDoor",TRUE)
+END
+
+IF
+Global("RTFOn","RTF021",1)
+GlobalGT("RTFoundIce","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("RTFOn","RTF021",2)
+TriggerActivation("To22a",TRUE)
+TriggerActivation("To22b",TRUE)
+TriggerActivation("InfoDoor",FALSE)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

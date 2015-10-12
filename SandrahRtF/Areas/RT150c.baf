@@ -1,0 +1,21 @@
+IF
+GlobalLT("SanRTFPlot4","GLOBAL",1)
+IsOverMe([GOODCUTOFF])
+THEN
+RESPONSE #100
+ActionOverride(Player1,JumpToPoint([532.2132]))
+ActionOverride(Player2,JumpToPoint([532.2132]))
+ActionOverride(Player3,JumpToPoint([532.2132]))
+ActionOverride(Player4,JumpToPoint([532.2132]))
+ActionOverride(Player5,JumpToPoint([532.2132]))
+ActionOverride(Player6,JumpToPoint([532.2132]))
+DisplayStringWait("CVSandr",@1894)
+END
+
+IF
+Global("SanRTFPlot4","GLOBAL",1)
+IsOverMe([GOODCUTOFF])
+THEN
+RESPONSE #100
+DisplayStringWait("CVSandr",@1895)
+END

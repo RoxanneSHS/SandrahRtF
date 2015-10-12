@@ -1,0 +1,9 @@
+IF
+Global("SanFaen","RTF111",0)
+OR(2)
+IsOverMe("CVSandr")
+IsOverMe(Player1)
+THEN
+RESPONSE #100
+SetGlobal("SanFaen","RTF111",1)
+END

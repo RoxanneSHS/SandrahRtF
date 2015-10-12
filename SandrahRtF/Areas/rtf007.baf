@@ -1,0 +1,66 @@
+IF
+Global("Morc","RTF007",0)
+GlobalLT("SanRTFPlot1","GLOBAL",7)
+THEN
+RESPONSE #100
+SetGlobal("Morc","RTF007",1)
+END
+
+IF
+Global("Morc","RTF007",0)
+GlobalGT("SanRTFPlot1","GLOBAL",6)
+THEN
+RESPONSE #100
+SetGlobal("Morc","RTF007",4)
+END
+
+IF
+Global("Morc","RTF007",2)
+THEN
+RESPONSE #100
+ActionOverride("RTF7Monk",MoveToPoint([1360.669]))
+ActionOverride("CVSandr",MoveToPoint([1350.679]))
+SetGlobal("Morc","RTF007",3)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+
+
+
+

@@ -1,0 +1,58 @@
+IF
+Global("SanShauRSure","GLOBAL",3)
+Global("RolfHere","cvrtf9",0)
+THEN
+RESPONSE #100
+SetGlobal("RolfHere","cvrtf9",1)
+CreateCreature("CBRolfSB",[1358.1526],7)
+END
+
+IF 
+Global("JanHere","cvrtf9",0)
+!Dead("Jan")
+!InParty("Jan")
+THEN
+RESPONSE #100
+SetGlobal("JanHere","cvrtf9",1)
+CreateCreature("Jan15",[961.1120],12)
+SetGlobal("JanSummoned","GLOBAL",2)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

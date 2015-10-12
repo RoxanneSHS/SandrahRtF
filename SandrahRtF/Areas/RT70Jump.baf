@@ -1,0 +1,13 @@
+IF
+GlobalLT("GuardOd","RTF070",4)
+!PartyHasItem("RTOdBad")
+IsOverMe([GOODCUTOFF])
+THEN
+RESPONSE #100
+ActionOverride(Player1,JumpToPoint([2729.1860]))
+ActionOverride(Player2,JumpToPoint([2729.1860]))
+ActionOverride(Player3,JumpToPoint([2729.1860]))
+ActionOverride(Player4,JumpToPoint([2729.1860]))
+ActionOverride(Player5,JumpToPoint([2729.1860]))
+ActionOverride(Player6,JumpToPoint([2729.1860]))
+END

@@ -1,0 +1,7 @@
+IF
+Global("CyricNear","RTF049",2)
+Entered([PC])
+THEN
+RESPONSE #100
+SetGlobal("CyricNear","RTF049",3)
+END

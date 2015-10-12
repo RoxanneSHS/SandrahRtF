@@ -1,0 +1,7 @@
+IF
+IsOverMe("CVSandr")
+Global("RTMons1","RTF040",0)
+THEN
+RESPONSE #100
+SetGlobal("RTMons1","RTF040",1)
+END

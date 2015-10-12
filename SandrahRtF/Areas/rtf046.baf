@@ -1,0 +1,75 @@
+IF
+Global("AmbSeal","RTF046",0)
+THEN
+RESPONSE #100
+AmbientActivate("AMB_FinalSeal",FALSE)
+SetGlobal("AmbSeal","RTF046",1)
+END
+
+IF
+Global("RTFindCham","GLOBAL",1)
+Delay(8)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END
+
+IF
+GlobalLT("AmbSeal","RTF046",3)
+PartyHasItem("CVRTFHM")
+THEN
+RESPONSE #100
+SetGlobal("AmbSeal","RTF046",3)
+END
+
+IF
+Global("AmbSeal","RTF046",4)
+THEN
+RESPONSE #100
+DisplayString(Player1,@1781)
+SetGlobal("AmbSeal","RTF046",5)
+CreateCreature("RTSlGol",[477.459],7)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+
+
+
+
+

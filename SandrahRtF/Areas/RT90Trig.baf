@@ -1,0 +1,12 @@
+IF
+Global("SanRTFPlot3","GLOBAL",5)
+Global("RTSaem","RTF090",0)
+OR(2)
+IsOverMe("CVSandr")
+IsOverMe(Player1)
+THEN
+RESPONSE #100
+SetGlobal("RTSaem","RTF090",1)
+CreateCreature("RTSaemon",[3950.2412],4)
+CreateCreature("RTShaj",[3928.2407],5)
+END

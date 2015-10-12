@@ -1,0 +1,78 @@
+IF
+Global("Attack","RTF038",0)
+THEN
+RESPONSE #100
+TriggerActivation("In381",FALSE)
+TriggerActivation("In382",FALSE)
+TriggerActivation("In382b",FALSE)
+TriggerActivation("NewTown",FALSE)
+SetGlobal("Attack","RTF038",1)
+END
+
+IF
+Dead("RT38dog")
+Global("Attack","RTF038",1)
+THEN
+RESPONSE #100
+CreateCreature("rt38inn",[1255.375],14)
+SetGlobal("Attack","RTF038",2)
+END
+
+IF
+Global("Attack","RTF038",2)
+THEN
+RESPONSE #100
+TriggerActivation("In381",TRUE)
+TriggerActivation("In382",TRUE)
+TriggerActivation("In382b",TRUE)
+SetGlobal("Attack","RTF038",3)
+END
+
+IF
+GlobalGT("SanRTFPlot3","GLOBAL",5)
+Global("Restore","RTF038",0)
+THEN
+RESPONSE #100
+SetGlobal("Restore","RTF038",1)
+TriggerActivation("Town",FALSE)
+TriggerActivation("NewTown",TRUE)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

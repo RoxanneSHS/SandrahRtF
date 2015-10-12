@@ -1,0 +1,8 @@
+IF
+Entered([PC])
+Global("SanRTFPlot4","GLOBAL",3)
+Global("Insignia","RTF141",0)
+THEN
+RESPONSE #100
+SetGlobal("Insignia","RTF141",1)
+END

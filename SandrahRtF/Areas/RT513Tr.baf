@@ -1,0 +1,11 @@
+IF
+Entered([GOODCUTOFF])
+Global("RTMaskplot","GLOBAL",7)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("CVassasT",Player1,[50.50])
+CreateCreatureObjectOffset("CVassasV",Player2,[50.50])
+CreateCreatureObjectOffset("CVassasW",Player3,[50.50])
+SetGlobal("RTMaskplot","GLOBAL",8)
+END
+

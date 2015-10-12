@@ -1,0 +1,10 @@
+IF
+Global("BalBridge","RTF048",3)
+OR(2)
+Entered(Player1)
+Entered("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("BalBridge","RTF048",4)
+ActionOverride("RTBalod",DestroySelf())
+END

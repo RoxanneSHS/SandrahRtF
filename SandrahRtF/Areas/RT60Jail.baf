@@ -1,0 +1,12 @@
+IF
+OR(2)
+Entered([PC])
+IsOverMe([PC])
+OR(2)
+Global("RTInCell","RTF061",2)
+Global("RTInCell","RTF061",6)
+THEN
+RESPONSE #100
+SetGlobal("RTInCell","RTF061",7)
+CreateCreature("RTKniJu",[537.735],12)
+END

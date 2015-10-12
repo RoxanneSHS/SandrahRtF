@@ -1,0 +1,9 @@
+IF
+Entered([PC])
+Global("Guard","RTF054",0)
+THEN
+RESPONSE #100
+CreateCreature("Taelite",[609.555],10)
+CreateCreature("Taelite",[590.496],12)
+SetGlobal("Guard","RTF054",1)
+END

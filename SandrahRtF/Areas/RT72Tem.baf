@@ -1,0 +1,9 @@
+IF
+IsOverMe([PC])
+Global("RTBackInUD","GLOBAL",6)
+Global("RTGoTempl","RTF072",0)
+THEN
+RESPONSE #100
+SetGlobal("RTGoTempl","RTF072",1)
+CreateCreature("RTLouFa2",[4186.2426],6)
+END
