@@ -1,0 +1,25 @@
+IF
+Global("SanRTFPlot4","GLOBAL",5)
+Global("RTPriQ2","CVElm4",0)
+THEN 
+RESPONSE #100
+CreateCreature("RTyousha",[1069.954],13)
+CreateCreature("RTmonin2",[1139.968],5)
+SetGlobal("RTPriQ2","CVElm4",1)
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTMapRev","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTMapRev","GLOBAL",1)
+RevealAreaOnMap("AR2000")
+RevealAreaOnMap("AR3597")
+RevealAreaOnMap("AR3000")
+RevealAreaOnMap("AR0900")
+RevealAreaOnMap("AR5500")
+RevealAreaOnMap("AR3520")
+RevealAreaOnMap("AR1700")
+END
+

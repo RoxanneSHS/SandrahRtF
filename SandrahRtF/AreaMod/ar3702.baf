@@ -1,0 +1,9 @@
+IF
+Global("SanRTFPlot4","GLOBAL",5)
+Global("Thamove","ar3702",0)
+THEN 
+RESPONSE #100
+CreateCreature("Thalan",[560.320],6)
+SetGlobal("Thamove","ar3702",1)
+END
+

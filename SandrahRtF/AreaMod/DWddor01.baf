@@ -1,0 +1,24 @@
+IF
+IsOverMe([PC])
+GlobalGT("RTLouPlot","GLOBAL",10)
+GlobalLT("RTBackInUD","GLOBAL",8)
+Global("RTNewUst","GLOBAL",0)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+Wait(3)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride(Player1,LeaveAreaLUA("rtf072","",[998.3655],10))
+ActionOverride(Player2,LeaveAreaLUA("rtf072","",[998.3655],10))
+ActionOverride(Player3,LeaveAreaLUA("rtf072","",[998.3655],10))
+ActionOverride(Player4,LeaveAreaLUA("rtf072","",[998.3655],10))
+ActionOverride(Player5,LeaveAreaLUA("rtf072","",[998.3655],10))
+ActionOverride(Player6,LeaveAreaLUA("rtf072","",[998.3655],10))
+SetGlobal("DrowCityHostile","GLOBAL",0)
+SetGlobal("udDemonHasDoneTheKill","GLOBAL",99)
+SetGlobal("RTNewUst","GLOBAL",1)
+Wait(1)
+FadeFromColor([20.0],0)
+EndCutSceneMode()
+END

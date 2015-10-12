@@ -1,0 +1,7 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTMapRev","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",403)
+END

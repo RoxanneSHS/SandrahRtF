@@ -1,0 +1,37 @@
+IF
+HPPercentLT(Myself,40)
+Global("RTGetOut","GLOBAL",9)
+THEN
+RESPONSE #100
+ReallyForceSpell(Myself,DRYAD_TELEPORT)
+SetGlobal("RTGetOut","GLOBAL",10)
+AddexperienceParty(30000)
+END
+
+IF
+HPPercentLT(Myself,30)
+Global("RTSaeHij","GLOBAL",5)
+THEN
+RESPONSE #100
+ReallyForceSpell(Myself,DRYAD_TELEPORT)
+SetGlobal("RTSaeHij","GLOBAL",6)
+AddexperienceParty(30000)
+END
+
+IF
+GlobalGT("CitEntpl","GLOBAL",1)
+HasItem("invulner",Myself)
+THEN
+RESPONSE #100
+DestroyItem("invulner")
+Continue()
+END
+
+IF
+GlobalGT("CitEntpl","GLOBAL",1)
+HasItem("sureHP1",Myself)
+THEN
+RESPONSE #100
+DestroyItem("sureHP1")
+Continue()
+END

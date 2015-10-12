@@ -1,0 +1,36 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("CVAR6800","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR6800","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SanRTFPlot5","GLOBAL",7)
+Global("RTPellSol","ar6800",0)
+THEN
+RESPONSE #100
+SetGlobal("RTPellSol","ar6800",1)
+CreateCreature("Solar",[3264.2528],5)
+END
+
+IF
+Global("RTPellSol","ar6800",2)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+Wait(2)
+ActionOverride("Pellig",MoveToObject("Solar"))
+Wait(2)
+ActionOverride("Pellig",StartDialogueNoSet([PC]))
+END
+
+IF
+Global("RTPellSol","ar6800",3)
+THEN
+RESPONSE #100
+ActionOverride("Pellig3",StartDialogueNoSet([PC]))
+END

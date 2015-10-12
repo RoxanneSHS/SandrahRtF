@@ -1,0 +1,8 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("Ajantis")
+THEN
+RESPONSE #100
+ActionOverride("Ajantis",DestroySelf())
+Continue()
+END

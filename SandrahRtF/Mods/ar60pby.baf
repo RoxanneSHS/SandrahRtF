@@ -1,0 +1,89 @@
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFY","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("YSSold14",[921.810],5)
+SetGlobal("InRTFY","ar60pb",1)
+END
+
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFM","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("YSogrema",[450.1761],15)
+SetGlobal("InRTFM","ar60pb",1)
+END
+
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFT","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("Tamage",[773.2581],0)
+SetGlobal("InRTFT","ar60pb",1)
+END
+
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFS","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("SLMAge3",[1858.2341],12)
+SetGlobal("InRTFS","ar60pb",1)
+END
+
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFO","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("OenMAge3",[2516.1308],12)
+SetGlobal("InRTFO","ar60pb",1)
+END
+
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFC","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("MAge16c",[4892.2308],10)
+SetGlobal("InRTFC","ar60pb",1)
+END
+
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFK","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("Kuomag01",[4332.2900],1)
+SetGlobal("InRTFK","ar60pb",1)
+END
+
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFF","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("F_Dromag",[3235.3621],11)
+SetGlobal("InRTFF","ar60pb",1)
+END
+
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFB","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("FLamwiz",[1800.3761],8)
+SetGlobal("InRTFB","ar60pb",1)
+END
+
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTFH","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("Hobwiz01",[712.643],9)
+SetGlobal("InRTFH","ar60pb",1)
+END

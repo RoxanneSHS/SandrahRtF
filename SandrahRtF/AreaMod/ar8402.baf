@@ -1,0 +1,18 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("Amaran")
+THEN
+RESPONSE #100
+ActionOverride("Amaran",DestroySelf())
+Continue()
+END
+
+IF
+Global("RTCloakwood","GLOBAL",6)
+THEN
+RESPONSE #100
+CreateCreature("faldor5",[225.260],7)
+SetGlobal("RTCloakwood","GLOBAL",7)
+END
+
+

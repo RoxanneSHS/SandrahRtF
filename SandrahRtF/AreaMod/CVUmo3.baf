@@ -1,0 +1,12 @@
+IF
+Global("SanRTFPlot4","GLOBAL",5)
+Global("RTPriQ2","CVUmo3",0)
+THEN 
+RESPONSE #100
+CreateCreature("RTShama2",[739.769],2)
+CreateCreature("RTSharm5",[570.669],3)
+CreateCreature("RTSamud",[703.778],1)
+CreateCreature("RTSharm5",[675.931],5)
+SetGlobal("RTPriQ2","CVUmo3",1)
+END
+

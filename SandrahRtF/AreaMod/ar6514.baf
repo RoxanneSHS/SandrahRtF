@@ -1,0 +1,8 @@
+IF
+Global("PapInChest","ar6514",0)
+THEN
+RESPONSE #100
+SetGlobal("PapInChest","ar6514",1)
+ActionOverride("Container 5",CreateItem("RTCera",0,0,0)) 
+ActionOverride("Container 5",CreateItem("RTVolo",0,0,0))
+END

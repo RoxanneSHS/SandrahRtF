@@ -1,0 +1,31 @@
+IF
+Global("RTLeyPlot1","GLOBAL",10)
+Global("Shajhere","ar1516",0)
+THEN
+RESPONSE #100
+SetGlobal("Shajhere","ar1516",1)
+CreateCreature("rtshaj",[766.896],14)
+END
+
+IF
+Global("Shajhere","ar1516",1)
+THEN
+RESPONSE #100
+SetGlobal("Shajhere","ar1516",2)
+CreateCreature("ppmag01",[1004.1236],6)
+ActionOverride("ppmag01",Enemy())
+CreateCreature("ppmag01",[1221.1127],4)
+ActionOverride("ppmag01",Enemy())
+CreateCreature("ppmag01",[589.1029],12)
+ActionOverride("ppmag01",Enemy())
+CreateCreature("cvpirc",[1231.1447],11)
+CreateCreature("cvpirc",[1444.1307],11)
+CreateCreature("cvpirc",[1644.1171],6)
+Unlock("Door08")
+OpenDoor("Door08")
+Unlock("Door07")
+OpenDoor("Door07")
+Unlock("Door10")
+OpenDoor("Door10")
+END
+

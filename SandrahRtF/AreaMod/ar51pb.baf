@@ -1,0 +1,18 @@
+IF
+GlobalGT("SanRTFPlot4","GLOBAL",1)
+Global("RTFireW","ar51pb",0)
+AreaCheck("ar51pb")
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player1,LeaveAreaLUA("RTF029","",[472.254],6))
+ActionOverride(Player2,LeaveAreaLUA("RTF029","",[472.254],6))
+ActionOverride(Player3,LeaveAreaLUA("RTF029","",[472.254],6))
+ActionOverride(Player4,LeaveAreaLUA("RTF029","",[472.254],6))
+ActionOverride(Player5,LeaveAreaLUA("RTF029","",[472.254],6))
+ActionOverride(Player6,LeaveAreaLUA("RTF029","",[472.254],6))
+SetGlobal("RTFireW","ar51pb",1)
+END
+
+
+

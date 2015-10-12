@@ -1,0 +1,36 @@
+IF
+GlobalGT("SanRTFPlot1","GLOBAL",2)
+Global("RTGuys","ar6526",0)
+THEN
+RESPONSE #100
+CreateCreature("RTOutwa",[4233.2491],5)
+CreateCreature("Sufinch4",[2943.1833],2)
+ActionOverride("Sufinch",SetDialogue("SufinchP"))
+SetGlobal("RTGuys","ar6526",1)
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("Gorstatue","Ar6526",0)
+THEN
+RESPONSE #100
+SetGlobal("Gorstatue","Ar6526",1)
+CreateCreature("Gorions",[4991.2989],11)
+END
+
+IF
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",6)
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTFBreMove","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTFBreMove","GLOBAL",1)
+CreateCreature("acbre25",[4291.1926],6)
+END

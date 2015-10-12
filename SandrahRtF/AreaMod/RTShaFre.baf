@@ -1,0 +1,24 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("rtshaj")
+CreateVisualEffectObject("icwrati","cvsandr")
+ActionOverride("CVSandr",MoveToObject("RTShaj"))
+Wait(5)
+CreateVisualEffectObject("idestruh","cvsandr")
+Wait(3)
+CreateVisualEffectObject("SPDIMNDR","rtshaj")
+Wait(3)
+LeaveAreaLUAPanic("AR1516","",[1051.1072],3)
+LeaveAreaLUA("AR1516","",[1051.1072],3)
+ActionOverride(Nearest("ppshad01"),LeaveAreaLUA("AR1516","",[1036.1051],4))
+ActionOverride(SecondNearest("ppshad01"),LeaveAreaLUA("AR1516","",[1056.1051],4))
+ActionOverride(ThirdNearest("ppshad01"),LeaveAreaLUA("AR1516","",[1076.1051],4))
+ActionOverride(FourthNearest("ppshad01"),LeaveAreaLUA("AR1516","",[1016.1051],4))
+ActionOverride(FifthNearest("ppshad01"),LeaveAreaLUA("AR1516","",[1096.1051],4))
+Wait(5)
+EndCutSceneMode()
+ActionOverride("rtshaj",MoveToObject("Leyala"))
+ActionOverride("rtshaj",StartDialogueNoSet([PC]))
+END

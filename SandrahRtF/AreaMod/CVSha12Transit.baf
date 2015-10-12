@@ -1,0 +1,18 @@
+IF
+Global("Bridge","CVSH12",1)
+GlobalGT("SanRtFPlot1","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("Bridge","CVSH12",2)
+TriggerActivation("ToBridge",TRUE)
+END
+
+IF
+Global("InRTF","CVSH12",0)
+Global("Bridge","CVSH12",2)
+THEN
+RESPONSE #100
+SetGlobal("InRTF","CVSH12",1)
+CreateCreature("cvzlord",[635.466],8)
+CreateCreature("cvzlord",[1605.1117],3)
+END

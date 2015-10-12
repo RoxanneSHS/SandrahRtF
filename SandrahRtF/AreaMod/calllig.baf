@@ -1,0 +1,14 @@
+IF
+Global("RTTalkedSaem","GLOBAL",9)
+Clicked([ANYONE])
+Range(LastTrigger,15)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player1,LeaveAreaLUA("ar0603","",[796.216],10))
+ActionOverride(Player2,LeaveAreaLUA("ar0603","",[796.216],10))
+ActionOverride(Player3,LeaveAreaLUA("ar0603","",[796.216],10))
+ActionOverride(Player4,LeaveAreaLUA("ar0603","",[796.216],10))
+ActionOverride(Player5,LeaveAreaLUA("ar0603","",[796.216],10))
+ActionOverride(Player6,LeaveAreaLUA("ar0603","",[796.216],10))
+END

@@ -1,0 +1,150 @@
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTF","ar60pb",0)
+THEN
+RESPONSE #100
+CreateCreature("CVyuam1",[2991.2880],5)
+CreateCreature("RTTaram",[4500.1576],10)
+CreateCreature("RTOMG13",[200.3239],4)
+CreateCreature("RTGITHM",[2163.1634],3)
+CreateCreature("RTDuema",[4197.1187],12)
+CreateCreature("RTMag168",[3695.711],1)
+CreateCreature("RTShamag",[1172.2260],10)
+CreateCreature("RTYantim",[400.3600],2)
+CreateCreature("RTDRCTC",[3733.3638],10)
+CreateCreature("Orc04",[2440.570],12)
+CreateCreature("Ogrema_c",[3880.1265],10)
+TriggerActivation("Door61PB",FALSE)
+SetGlobal("InRTF","ar60pb",1)
+END
+
+IF
+Global("StrangeVap","ar60pb",0)
+Global("InRTF","ar60pb",1)
+InMyArea("CVSandr")
+GlobalLT("Magedead","ar60pb",3)
+THEN
+RESPONSE #20
+ApplySpellRES("CVSLEEP","CVSandr")
+RealSetGlobalTimer("VapTi","ar60pb",NINE_MINUTES)
+SetGlobal("StrangeVap","ar60pb",1)
+DisplayStringWait(Player1,@1872)
+END
+
+IF
+Global("StrangeVap","ar60pb",0)
+Global("InRTF","ar60pb",1)
+InMyArea("CVSandr")
+GlobalGT("Magedead","ar60pb",2)
+GlobalLT("Magedead","ar60pb",5)
+THEN
+RESPONSE #20
+ApplySpellRES("CVSLEEP","CVSandr")
+RealSetGlobalTimer("VapTi","ar60pb",TWELVE_MINUTES)
+SetGlobal("StrangeVap","ar60pb",1)
+END
+
+IF
+Global("StrangeVap","ar60pb",0)
+Global("InRTF","ar60pb",1)
+InMyArea("CVSandr")
+GlobalGT("Magedead","ar60pb",4)
+GlobalLT("Magedead","ar60pb",8)
+THEN
+RESPONSE #20
+ApplySpellRES("CVSLEEP","CVSandr")
+RealSetGlobalTimer("VapTi","ar60pb",TWENTY_MINUTES)
+SetGlobal("StrangeVap","ar60pb",1)
+END
+
+IF
+Global("StrangeVap","ar60pb",1)
+GlobalLT("Magedead","ar60pb",8)
+RealGlobalTimerExpired("VapTi","ar60pb")
+THEN
+RESPONSE #100
+SetGlobal("StrangeVap","ar60pb",0)
+END
+
+IF
+Global("Count2","ar60pb",0)
+Dead("RTTaram1")
+THEN
+RESPONSE #100
+SetGlobal("Count2","ar60pb",1)
+IncrementGlobal("Magedead","ar60pb",1)
+END
+
+IF
+Global("Count1","ar60pb",0)
+Dead("RTOMG13")
+THEN
+RESPONSE #100
+SetGlobal("Count1","ar60pb",1)
+IncrementGlobal("Magedead","ar60pb",1)
+END
+
+IF
+Global("Count3","ar60pb",0)
+Dead("RTGITHM")
+THEN
+RESPONSE #100
+SetGlobal("Count3","ar60pb",1)
+IncrementGlobal("Magedead","ar60pb",1)
+END
+
+IF
+Global("Count4","ar60pb",0)
+Dead("RTDuema")
+THEN
+RESPONSE #100
+SetGlobal("Count4","ar60pb",1)
+IncrementGlobal("Magedead","ar60pb",1)
+END
+
+IF
+Global("Count5","ar60pb",0)
+Dead("RTMag168")
+THEN
+RESPONSE #100
+SetGlobal("Count5","ar60pb",1)
+IncrementGlobal("Magedead","ar60pb",1)
+END
+
+IF
+Global("Count6","ar60pb",0)
+Dead("RTShamag")
+THEN
+RESPONSE #100
+SetGlobal("Count6","ar60pb",1)
+IncrementGlobal("Magedead","ar60pb",1)
+END
+
+IF
+Global("Count7","ar60pb",0)
+Dead("RTYantim")
+THEN
+RESPONSE #100
+SetGlobal("Count7","ar60pb",1)
+IncrementGlobal("Magedead","ar60pb",1)
+END
+
+IF
+Global("Count8","ar60pb",0)
+Dead("RTDRCTC1")
+THEN
+RESPONSE #100
+SetGlobal("Count8","ar60pb",1)
+IncrementGlobal("Magedead","ar60pb",1)
+END
+
+IF
+Global("Magedead","ar60pb",8)
+THEN
+RESPONSE #100
+CreateCreature("CVxeph",[3956.991],5)
+SetGlobal("Magedead","ar60pb",9)
+SetGlobal("XSTART","GLOBAL",1)
+ActionOverride("CVxeph",Enemy())
+TriggerActivation("Door61PB",TRUE)
+END

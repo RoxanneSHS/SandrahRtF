@@ -1,0 +1,12 @@
+IF
+OR(2)
+IsOverMe(Player1)
+IsOverMe("CVSandr")
+CombatCounter(0)
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTIrenApp","ar0602",0)
+THEN
+RESPONSE #100
+CreateCreatureDoor("RTIren",[3242.2285],11)
+SetGlobal("RTIrenApp","ar0602",1)
+END

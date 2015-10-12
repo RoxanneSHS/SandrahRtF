@@ -1,0 +1,53 @@
+IF
+GlobalGT("RTBattlCut1","RTF074",0)
+GlobalLT("RTGiranQuest","GLOBAL",17)
+!See([ENEMY])
+Delay(10)
+THEN
+RESPONSE #100
+MoveToObjectFollow("CVSandr")
+END
+
+IF
+GlobalGT("RTBattlCut1","RTF074",0)
+See([ENEMY])
+Range(LastSeenBy(Myself),12)
+THEN
+RESPONSE #50
+EquipMostDamagingMelee()
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+GlobalGT("RTBattlCut1","RTF074",0)
+See(NearestEnemyOf(Myself))
+!Range(NearestEnemyOf(Myself),12)
+THEN
+RESPONSE #100
+EquipRanged()
+AttackReevaluate(NearestEnemyOf(Myself),20)
+END
+
+IF
+Global("RTGiranQuest","GLOBAL",18)
+Global("MoveHome","LOCALS",0)
+THEN
+RESPONSE #10
+SetGlobal("MoveHome","LOCALS",1)
+MoveToPoint([649.1117])
+RESPONSE #20
+SetGlobal("MoveHome","LOCALS",1)
+MoveToPoint([783.686])
+RESPONSE #10
+SetGlobal("MoveHome","LOCALS",1)
+MoveToPoint([1114.739])
+RESPONSE #20
+SetGlobal("MoveHome","LOCALS",1)
+MoveToPoint([1599.1102])
+RESPONSE #20
+SetGlobal("MoveHome","LOCALS",1)
+MoveToPoint([2361.561])
+RESPONSE #20
+SetGlobal("MoveHome","LOCALS",1)
+MoveToPoint([2447.695])
+END

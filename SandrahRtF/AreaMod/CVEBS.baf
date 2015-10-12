@@ -1,0 +1,15 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("Henning2")
+THEN
+RESPONSE #100
+ActionOverride("Henning2",DestroySelf())
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("Imoen2")
+THEN
+RESPONSE #100
+ActionOverride("Imoen2",DestroySelf())
+END

@@ -1,0 +1,13 @@
+IF
+GlobalGT("SanRTFPlot4","GLOBAL",0)
+Global("InRTF","ar2800",0)
+THEN
+RESPONSE #100
+ActionOverride("Suelhan",DestroySelf())
+ActionOverride("Suelf13",DestroySelf())
+CreateCreature("RTElles",[4398.3187],0)
+CreateCreature("RTdeher",[4500.3190],4)
+TriggerActivation("Tran2803",FALSE)
+SetGlobal("InRTF","ar2800",1)
+END
+

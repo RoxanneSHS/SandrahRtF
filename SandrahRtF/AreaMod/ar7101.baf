@@ -1,0 +1,7 @@
+IF
+Global("RTItem","ar7101",1)
+THEN
+RESPONSE #100
+ActionOverride("Container 1",CreateItem("RTSymmy",0,0,0))
+SetGlobal("RTItem","ar7101",2)
+END

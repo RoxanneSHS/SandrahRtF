@@ -1,0 +1,7 @@
+IF
+Global("RTLouPlot","GLOBAL",15)
+THEN
+RESPONSE #100
+SetGlobal("RTLouPlot","GLOBAL",16)
+CreateCreature("Senbeh01",[2528.1897],12)
+END

@@ -1,0 +1,15 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+OR(2)
+InParty("RTMeli")
+InParty("CVGiran")
+Global("RTyuHere","AR9600",0)
+THEN
+RESPONSE #100
+SetGlobal("RTyuHere","AR9600",1)
+CreateCreature("Fyual",[4244.2836],10)
+CreateCreature("Fyuam",[4244.2836],7)
+CreateCreature("Fyuam",[4244.2836],3)
+CreateCreature("rtyuan1",[4244.2836],0)
+CreateCreature("rtyuan1",[4244.2836],0)
+END

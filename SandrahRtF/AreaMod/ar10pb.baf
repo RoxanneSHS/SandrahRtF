@@ -1,0 +1,22 @@
+IF
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",6)
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",0)
+END
+
+IF
+Global("SanRTFPlot1","GLOBAL",8)
+Global("VelshAmb","ar10pb",0)
+THEN
+RESPONSE #100
+CreateCreature("RTVelsh",[4686.635],10) 
+CreateCreature("CVVambo3",[4874.527],10)
+CreateCreature("CVVambo3",[4873.795],9)
+CreateCreature("CVVamsh1",[4307.875],11)
+CreateCreature("CVVamsh2",[4686.635],8)
+CreateCreature("hgmis01",[4617.962],7)
+CreateCreature("Mindvam",[4455.468],10)
+SetGlobal("VelshAmb","ar10pb",1)
+END

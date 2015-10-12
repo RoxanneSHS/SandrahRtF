@@ -1,0 +1,58 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("FiendsRTF","ar0603",0)
+THEN
+RESPONSE #100
+CreateCreature("HGMound",[1332.893],6)
+CreateCreature("HGMound",[1581.1906],9)
+CreateCreature("HGMound",[4068.1420],3)
+CreateCreature("Umbhul02",[1300.788],10)
+CreateCreature("RTYuan2",[1866.393],1)
+CreateCreature("RTYuan1",[1704.686],4)
+CreateCreature("Umbhul02",[1344.445],12)
+CreateCreature("RTYuan2",[1529.448],7)
+SetGlobal("FiendsRTF","ar0603",1)
+SetGlobal("EnterJ","AR0603",1)
+END
+
+IF
+Global("FiendsRTF","ar0603",1)
+THEN
+RESPONSE #100
+CreateCreature("HGMound",[2995.1161],8)
+CreateCreature("RTYuan1",[3567.764],6)
+CreateCreature("RTYuan2",[3421.723],4)
+CreateCreature("RTYuan1",[2439.1296],4)
+CreateCreature("RTYuan2",[2612.1539],10)
+CreateCreature("Umbhul02",[3407.1634],6)
+CreateCreature("RTYuan1",[3338.1853],0)
+CreateCreature("Umbhul02",[1228.2701],3)
+CreateCreature("HGMound",[3312.1716],6)
+SetGlobal("FiendsRTF","ar0603",2)
+END
+
+IF
+Global("FiendsRTF","ar0603",2)
+THEN
+RESPONSE #100
+CreateCreature("HGMound",[705.1318],12)
+CreateCreature("RTYuan1",[634.1334],11)
+CreateCreature("RTYuan2",[1090.27983],8)
+CreateCreature("RTYuan1",[1503.2559],7)
+CreateCreature("RTYuan2",[2612.1539],10)
+CreateCreature("Umbhul02",[3407.1634],6)
+CreateCreature("RTYuan1",[3338.1853],0)
+CreateCreature("Umbhul02",[1228.2701],3)
+CreateCreature("HGMound",[965.1972],6)
+SetGlobal("FiendsRTF","ar0603",3)
+END
+
+IF
+Global("FiendsRTF","ar0603",3)
+THEN
+RESPONSE #100
+TriggerActivation("Khalid Info",FALSE)
+TriggerActivation("Jar 8 broken",FALSE)
+SetGlobal("FiendsRTF","ar0603",4)
+END
+

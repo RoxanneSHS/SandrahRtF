@@ -1,0 +1,8 @@
+IF
+Global("RTFOn","CVElm5",1)
+GlobalGT("SanBeginRtF","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RTFOn","CVElm5",2)
+TriggerActivation("ToRTF",TRUE)
+END

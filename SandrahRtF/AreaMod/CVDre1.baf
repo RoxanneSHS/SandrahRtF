@@ -1,0 +1,7 @@
+IF
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",6)
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",0)
+END

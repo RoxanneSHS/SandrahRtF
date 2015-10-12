@@ -1,0 +1,58 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("kiyone")
+!InParty("kiyone")
+THEN
+RESPONSE #100
+ActionOverride("kiyone",DestroySelf())
+Continue()
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("O#xan")
+!InParty("O#xan")
+THEN
+RESPONSE #100
+ActionOverride("O#xan",DestroySelf())
+Continue()
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("Jan")
+!InParty("Jan")
+THEN
+RESPONSE #100
+ActionOverride("Jan",DestroySelf())
+Continue()
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("J#kelsey")
+!InParty("J#kelsey")
+THEN
+RESPONSE #100
+ActionOverride("J#kelsey",DestroySelf())
+Continue()
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("CBSCCW01")
+THEN
+RESPONSE #100
+ActionOverride("CBSCCW01",DestroySelf())
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("CBSCCW02")
+THEN
+RESPONSE #100
+ActionOverride("CBSCCW02",DestroySelf())
+END
+
+
+

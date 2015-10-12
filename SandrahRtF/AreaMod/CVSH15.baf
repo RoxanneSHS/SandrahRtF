@@ -1,0 +1,13 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTFClean","CVSh15",0)
+THEN
+RESPONSE #100
+SetGlobal("RTFClean","CVSh15",1)
+ActionOverride("CVShauQ",DestroySelf())
+ActionOverride("CVMinsc",DestroySelf())
+ActionOverride("CVghatle",DestroySelf())
+ActionOverride("Sanboy1",DestroySelf())
+ActionOverride("cvorwarl",DestroySelf())
+Continue()
+END

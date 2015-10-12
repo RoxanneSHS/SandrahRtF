@@ -1,0 +1,8 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("Rename","ar6700",0)
+THEN
+RESPONSE #100
+AddMapNote([3643.993],@1788)
+SetGlobal("Rename","ar6700",1)
+END

@@ -1,0 +1,20 @@
+IF
+Global("SanRTFPlot1","GLOBAL",4)
+Global("RTHalSt","ar0300",0)
+THEN
+RESPONSE #100
+CreateCreature("RTHals",[3481.1167],2)
+CreateCreature("amng1",[3451.1157],6)
+TriggerActivation("Tran0332",FALSE)
+TriggerActivation("Tran0333",FALSE)
+SetGlobal("RTHalSt","ar0300",1)
+END
+
+IF
+Global("RTHalSt","ar0300",2)
+THEN
+RESPONSE #100
+TriggerActivation("Tran0332",TRUE)
+TriggerActivation("Tran0333",TRUE)
+SetGlobal("RTHalSt","ar0300",3)
+END

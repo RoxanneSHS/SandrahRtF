@@ -1,0 +1,20 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(3)
+FadeToColor([20.0],0)
+Wait(1)
+LeaveAreaLUAPanic("RTF340","",[504.1276],0)
+LeaveAreaLUA("RTF340","",[504.1276],0)
+ActionOverride(Player2,LeaveAreaLUA("RTF340","",[1613.282],0))
+ActionOverride(Player3,LeaveAreaLUA("RTF340","",[1613.282],0))
+ActionOverride(Player4,LeaveAreaLUA("RTF340","",[1613.282],0))
+ActionOverride(Player5,LeaveAreaLUA("RTF340","",[1613.282],0))
+ActionOverride(Player6,LeaveAreaLUA("RTF340","",[1613.282],0))
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(3)
+EndCutSceneMode()
+END

@@ -1,0 +1,19 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("GirlHere","cvelm7",0)
+THEN
+RESPONSE #100
+SetGlobal("GirlHere","cvelm7",1)
+CreateCreature("Sankab2",[685.667],4)
+END
+
+IF
+Global("SanRTFPlot1","GLOBAL",1)
+Global("RTFShauInfo","GLOBAL",0)
+Global("RTFSharInfo","GLOBAL",2)
+Global("RTFTwoOptionsPlot1","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTFTwoOptionsPlot1","GLOBAL",1)
+END
+

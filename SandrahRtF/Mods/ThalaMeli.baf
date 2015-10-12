@@ -1,0 +1,20 @@
+IF
+OR(3)
+AreaCheck("rtf010")
+AreaCheck("ar5500")
+AreaCheck("ar6800")
+!See([PC])
+Global("RTMeliQuest","GLOBAL",1)
+THEN
+RESPONSE #100
+MoveToObject("RTMeli")
+END
+
+IF
+Global("RTMeliQuest","GLOBAL",1)
+See("RTMeli")
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END
+

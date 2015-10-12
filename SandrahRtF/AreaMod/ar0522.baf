@@ -1,0 +1,8 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("Haerdalis")
+!InParty("Haerdalis")
+THEN
+RESPONSE #100
+ActionOverride("Haerdalis",DestroySelf())
+END

@@ -1,0 +1,9 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("Roadon","CVELM1",0)
+THEN
+RESPONSE #100
+SetGlobal("Roadon","CVELM1",2)
+TriggerActivation("ToRoad",TRUE)
+Continue()
+END

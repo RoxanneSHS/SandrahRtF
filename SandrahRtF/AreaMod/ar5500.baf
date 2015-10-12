@@ -1,0 +1,27 @@
+IF
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",6)
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",0)
+SetGlobal("DMWWVillageAttacked","GLOBAL",3)
+END
+
+IF
+GlobalGT("SanRTFPlot2","GLOBAL",1)
+Global("Guide","ar5500",0)
+THEN
+RESPONSE #100
+SetGlobal("Guide","ar5500",1)
+CreateCreature("RTMoun",[3619.2553],7)
+END
+
+IF
+Global("Guide","ar5500",6)
+THEN
+RESPONSE #100
+SetGlobal("Guide","ar5500",3)
+StartCutSceneMode()
+StartCutScene("CVcut404")
+END
+

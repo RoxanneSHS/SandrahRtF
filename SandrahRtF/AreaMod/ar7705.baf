@@ -1,0 +1,15 @@
+IF
+GlobalGT("SanRaiseMys","GLOBAL",9)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player1,LeaveAreaLUA("RTF028","",[1000.704],6))
+ActionOverride(Player2,LeaveAreaLUA("RTF028","",[1000.704],6))
+ActionOverride(Player3,LeaveAreaLUA("RTF028","",[1000.704],6))
+ActionOverride(Player4,LeaveAreaLUA("RTF028","",[1000.704],6))
+ActionOverride(Player5,LeaveAreaLUA("RTF028","",[1000.704],6))
+ActionOverride(Player6,LeaveAreaLUA("RTF028","",[1000.704],6))
+END
+
+
+

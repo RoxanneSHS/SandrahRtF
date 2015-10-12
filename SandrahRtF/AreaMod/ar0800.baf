@@ -1,0 +1,9 @@
+IF
+Global("SanRTFColl","GLOBAL",1)
+!InMyArea("Sethle")
+Global("RTFSeth","ar0800",0)
+THEN
+RESPONSE #100
+SetGlobal("RTFSeth","ar0800",1)
+CreateCreature("Sethle",[1546.403],0)
+END

@@ -1,0 +1,14 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTMapRev","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTMapRev","GLOBAL",1)
+RevealAreaOnMap("AR2000")
+RevealAreaOnMap("AR3597")
+RevealAreaOnMap("AR3000")
+RevealAreaOnMap("AR0900")
+RevealAreaOnMap("AR5500")
+RevealAreaOnMap("AR3520")
+RevealAreaOnMap("AR1700")
+END

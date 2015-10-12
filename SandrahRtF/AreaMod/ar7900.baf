@@ -1,0 +1,8 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("CVAR7900","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR7900","GLOBAL",1)
+Continue()
+END

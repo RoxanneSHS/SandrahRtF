@@ -1,0 +1,18 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+OR(2)
+InParty("CVSandr")
+InParty("Pellig3")
+IsOverMe([GOODCUTOFF])
+Global("RTGoMid","GLOBAL",0)
+THEN
+RESPONSE #100
+SetMasterArea("cvroa1")
+ActionOverride(Player1,LeaveAreaLUA("rtf017","",[2023.3220],8))
+ActionOverride(Player2,LeaveAreaLUA("rtf017","",[2023.3220],8))
+ActionOverride(Player3,LeaveAreaLUA("rtf017","",[2023.3220],8))
+ActionOverride(Player4,LeaveAreaLUA("rtf017","",[2023.3220],8))
+ActionOverride(Player5,LeaveAreaLUA("rtf017","",[2023.3220],8))
+ActionOverride(Player6,LeaveAreaLUA("rtf017","",[2023.3220],8))
+SetGlobal("RTGoMid","GLOBAL",1)
+END

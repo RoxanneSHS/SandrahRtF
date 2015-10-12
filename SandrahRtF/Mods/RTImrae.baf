@@ -1,0 +1,18 @@
+IF
+Range("CVSandr",20)
+OR(2)
+Global("RTBackInUD","GLOBAL",3)
+Global("RTBackInUD","GLOBAL",5)
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("RTBackInUD","GLOBAL",6)
+AreaCheck("RTF088")
+THEN
+RESPONSE #100
+MoveBetweenAreas("rtf072",[4198.2454],5)
+END

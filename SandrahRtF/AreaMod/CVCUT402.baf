@@ -1,0 +1,26 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+LeaveAreaLUAPanic("CVElm9","",[796.494],0)
+LeaveAreaLUA("CVElm9","",[796.494],0)
+ActionOverride(Player2,LeaveAreaLUA("CVElm9","",[796.494],0))
+ActionOverride(Player3,LeaveAreaLUA("CVElm9","",[796.494],0))
+ActionOverride(Player4,LeaveAreaLUA("CVElm9","",[796.494],0))
+ActionOverride(Player5,LeaveAreaLUA("CVElm9","",[796.494],0))
+ActionOverride(Player6,LeaveAreaLUA("CVElm9","",[796.494],0))
+Wait(1)
+FadeFromColor([30.0],0)
+CreateVisualEffectObject("ICFRACTI",Myself)
+ActionOverride(Player2,CreateVisualEffectObject("ICFRACTI",Myself))
+ActionOverride(Player3,CreateVisualEffectObject("ICFRACTI",Myself))
+ActionOverride(Player4,CreateVisualEffectObject("ICFRACTI",Myself))
+ActionOverride(Player5,CreateVisualEffectObject("ICFRACTI",Myself))
+ActionOverride(Player6,CreateVisualEffectObject("ICFRACTI",Myself))
+Wait(3)
+EndCutSceneMode()
+SetGlobal("RTFoundIce","GLOBAL",6)
+END
+
+

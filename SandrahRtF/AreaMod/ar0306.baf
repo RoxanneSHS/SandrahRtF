@@ -1,0 +1,12 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player1,LeaveAreaLUA("RTF306","",[228.569],12))
+ActionOverride(Player2,LeaveAreaLUA("RTF306","",[228.569],12))
+ActionOverride(Player3,LeaveAreaLUA("RTF306","",[228.569],12))
+ActionOverride(Player4,LeaveAreaLUA("RTF306","",[228.569],12))
+ActionOverride(Player5,LeaveAreaLUA("RTF306","",[228.569],12))
+ActionOverride(Player6,LeaveAreaLUA("RTF306","",[228.569],12))
+END

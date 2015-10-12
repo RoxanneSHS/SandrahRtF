@@ -1,0 +1,67 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTFUmoin","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTFUmoin","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTFVicMove","GLOBAL",0)
+!Dead("Viconia")
+!InMyArea("Viconia")
+Global("ViciHere","CVUMO5",0)
+THEN
+RESPONSE #100
+SetGlobal("ViciHere","CVUMO5",1)
+CreateCreature("Viconi16",[1421.1172],3)
+ActionOverride("Viconia",SetDialogue("Vicon25a"))
+SetGlobal("ViconiaSummoned","GLOBAL",2)
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTFYasMove","GLOBAL",0)
+!Dead("Yasraena")
+!InMyArea("Yasraena")
+Global("YasHere","CVUMO5",0)
+THEN
+RESPONSE #100
+SetGlobal("YasHere","CVUMO5",1)
+CreateCreature("Yasraena",[833.739],12)
+ActionOverride("Yasraena",SetDialog("Yasra25P"))
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+!InParty("Yasraena")
+InMyArea("Yasraena")
+Global("DivalHere","CVUMO5",0)
+THEN
+RESPONSE #100
+SetGlobal("DivalHere","CVUMO5",1)
+CreateCreature("Divalir1",[880.739],4)
+ActionOverride("Divalir1",SetNumTimesTalkedTo(1))
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("QilHere","CVUMO5",0)
+THEN
+RESPONSE #100
+SetGlobal("QilHere","CVUMO5",1)
+CreateCreature("CVQidr",[769.488],2)
+ActionOverride("CVQidr",SetGlobal("SanQuidPC","LOCALS",20))
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("Loureedjoined","GLOBAL",2)
+Global("LoureHere","CVUMO5",0)
+THEN
+RESPONSE #100
+SetGlobal("LoureHere","CVUMO5",1)
+CreateCreature("Loureed",[1772.1363],3)
+END

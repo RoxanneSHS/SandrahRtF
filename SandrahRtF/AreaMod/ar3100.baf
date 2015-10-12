@@ -1,0 +1,8 @@
+IF
+Global("SanRTFPlot1","GLOBAL",3)
+Global("RTImpHere","AR3100",0)
+THEN
+RESPONSE #100
+SetGlobal("RTImpHere","AR3100",1)
+CreateCreature("RTImpT",[2730.1999],10)
+END

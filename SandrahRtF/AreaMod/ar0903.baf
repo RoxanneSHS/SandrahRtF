@@ -1,0 +1,17 @@
+IF
+Global("RTClean","ar0903",0)
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RTClean","ar0903",1)
+ActionOverride("HPrelate",DestroySelf())
+CreateCreature("c#ajan16",[348.587],10)
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("Keldorn")
+THEN
+RESPONSE #100
+ActionOverride("Keldorn",DestroySelf())
+END

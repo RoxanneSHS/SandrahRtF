@@ -1,0 +1,19 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("AerieCreated","ar0601",0)
+THEN
+RESPONSE #100
+CreateCreature("RTAerie",[1455.654],4)
+ActionOverride("Aerie",Polymorph(WYVERN_FAMILIAR))
+SetGlobal("AerieCreated","ar0601",1)
+END
+
+IF
+Global("AerieCreated","ar0601",3)
+InParty("Leyala")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("AerieCreated","ar0601",4)
+END
+

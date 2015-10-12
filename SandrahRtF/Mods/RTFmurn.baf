@@ -1,0 +1,31 @@
+IF
+AreaCheck("CVUmo2")
+See(Player1)
+Global("InRTF","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("InRTF","LOCALS",1)
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("InRTF","LOCALS",2)
+HPPercentGT(Myself,50)
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+Attack(NearestEnemyOf(Myself))
+END
+
+IF
+Global("InRTF","LOCALS",1)
+Global("A#change","LOCALS",0)
+HPPercentLT(Myself,50)
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+ReallyForceSpellRES("A#GHAUN1",Myself)
+SetGlobal("A#change","LOCALS",1)
+Attack(NearestEnemyOf(Myself))
+END
+

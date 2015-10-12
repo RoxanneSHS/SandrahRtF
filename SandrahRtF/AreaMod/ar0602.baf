@@ -1,0 +1,54 @@
+IF
+Global("RTClean","ar0602",0)
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+ActionOverride("Ulene",DestroySelf())
+ActionOverride("Cania",DestroySelf())
+ActionOverride("Elyme",DestroySelf())
+CloseDoor("Door06")
+Lock("Door06")
+CloseDoor("Door12")
+Lock("Door12")
+SetGlobal("RTClean","ar0602",1)
+END
+
+IF
+Global("RTIrenApp","ar0602",4)
+THEN
+RESPONSE #100
+CreateCreature("RTIren",[3348.3220],6)
+CreateCreature("RTYuan1",[3868.2646],6)
+CreateCreature("RTYuan2",[3803.2906],14)
+CreateCreature("RTYuan1",[3656.2816],4)
+CreateCreature("RTYuan2",[3704.2715],10)
+CreateCreature("RTYuanL",[3882.2872],6)
+CreateCreature("RTYuan1",[2922.2627],0)
+CreateCreature("RTYuan1",[2936.2678],3)
+SetGlobal("RTIrenApp","ar0602",5)
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("FiendsRTF","ar0602",0)
+THEN
+RESPONSE #100
+CreateCreature("HGMound",[4138.1369],6)
+CreateCreature("HGMound",[4228.1426],9)
+CreateCreature("HGMound",[4068.1420],3)
+CreateCreature("RTYuan2",[1864.595],10)
+CreateCreature("RTYuan2",[1866.393],1)
+CreateCreature("RTYuan1",[1704.686],4)
+CreateCreature("RTYuan1",[1344.445],12)
+CreateCreature("RTYuan2",[1529.448],7)
+SetGlobal("FiendsRTF","ar0602",1)
+END
+
+IF
+Global("RTIrenApp","ar0602",5)
+Global("LassalRTF","ar0602",0)
+THEN
+RESPONSE #100
+SetGlobal("LassalRTF","ar0602",10)
+CreateCreature("RTLassal",[996.2039],6)
+END

@@ -1,0 +1,40 @@
+IF
+GlobalGT("RTSamThrone","GLOBAL",3)
+Global("InRTF","ar61pb",0)
+THEN
+RESPONSE #100
+CreateCreature("NTHASDAR",[233.268],0)
+CreateCreature("CVTalos",[375.259],13)
+CreateCreature("NTBLHCul",[171.305],4)
+CreateCreature("NTBLHCul",[394.397],3)
+CreateCreature("NTBLHCu1",[427.439],12)
+CreateCreature("CVTalow1",[484.558],1)
+CreateCreature("CVTalow1",[181.430],10)
+CreateCreature("CVTalow1",[155.488],2)
+CreateCreature("CVTalow1",[211.604],10)
+CreateCreature("Orc04",[369.461],12)
+CreateCreature("Ogrema_c",[260.558],10)
+SetGlobal("InRTF","ar61pb",1)
+END
+
+IF
+Global("InRTF","ar61pb",1)
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("InRTF","ar61pb",2)
+END
+
+IF
+Global("InRTF","ar61pb",4)
+THEN
+RESPONSE #100
+TextScreen("RTTaloE")
+AddJournalEntry(@1888,QUEST)
+SetGlobal("InRTF","ar61pb",5)
+AddexperienceParty(134000)
+SetGlobal("SanRTFPlot3","GLOBAL",7)
+END

@@ -1,0 +1,6 @@
+IF
+Global("RTFUmoin","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RTFUmoin","GLOBAL",0)
+END

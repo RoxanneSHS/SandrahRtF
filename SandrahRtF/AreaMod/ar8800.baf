@@ -1,0 +1,7 @@
+IF
+Global("RTCloakwood","GLOBAL",8)
+THEN
+RESPONSE #100
+RevealAreaOnMap("Ar7000")
+SetGlobal("RTCloakwood","GLOBAL",9)
+END

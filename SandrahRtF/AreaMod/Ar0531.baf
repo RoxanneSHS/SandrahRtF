@@ -1,0 +1,7 @@
+IF
+Global("Izzyplot","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("Izzyplot","GLOBAL",3)
+CreateCreature("RTIzPlo1",[473.266],6)
+END

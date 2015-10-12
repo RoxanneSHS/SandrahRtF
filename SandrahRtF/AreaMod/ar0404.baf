@@ -1,0 +1,8 @@
+IF
+Global("CCClosed","ar0404",0)
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("CCClosed","ar0404",1)
+TriggerActivation("Trans0404",FALSE)
+END

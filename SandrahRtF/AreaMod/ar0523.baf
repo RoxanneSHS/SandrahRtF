@@ -1,0 +1,9 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("HearRT","ar0523",0)
+THEN
+RESPONSE #100
+SetGlobal("HearRT","ar0523",1)
+CreateCreature("haer19",[806.775],0)
+SetGlobal("HaerDalisSummoned","GLOBAL",1)
+END

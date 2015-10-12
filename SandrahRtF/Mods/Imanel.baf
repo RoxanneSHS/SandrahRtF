@@ -1,0 +1,11 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Range(Player1,30)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+Global("Needfight","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Needfight","LOCALS",1)
+MoveToObject(Player1)
+StartDialogueNoSet(Player1)
+END

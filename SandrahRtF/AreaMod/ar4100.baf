@@ -1,0 +1,14 @@
+IF
+GlobalGT("SanRTFPlot5","GLOBAL",5)
+Global("RTMoveGnoll","GLOBAL",0)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player1,LeaveAreaLUA("RTF123","",[5006.2621],4))
+ActionOverride(Player2,LeaveAreaLUA("RTF123","",[5006.2621],4))
+ActionOverride(Player3,LeaveAreaLUA("RTF123","",[5006.2621],4))
+ActionOverride(Player4,LeaveAreaLUA("RTF123","",[5006.2621],4))
+ActionOverride(Player5,LeaveAreaLUA("RTF123","",[5006.2621],4))
+ActionOverride(Player6,LeaveAreaLUA("RTF123","",[5006.2621],4))
+SetGlobal("RTMoveGnoll","GLOBAL",1)
+END

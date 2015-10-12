@@ -1,0 +1,10 @@
+IF
+Global("RTFOn","CVROA2",1)
+GlobalGT("SanBeginRtF","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RTFOn","CVROA2",2)
+TriggerActivation("ToRTF",TRUE)
+TriggerActivation("NEInfo1",FALSE)
+TriggerActivation("NEInfo2",FALSE)
+END

@@ -1,0 +1,615 @@
+IF
+Range([PC],12)
+NumTimesTalkedTo(0)
+See([PC])
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("xyxInitialized","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobalTimer("xyxImmunity","LOCALS",ONE_ROUND)
+SetGlobalTimer("xyxManeuver","LOCALS",THREE_ROUNDS)
+SetGlobal("xyxInitialized","LOCALS",1)
+SetGlobal("KRBODBAT","GLOBAL",0)
+Continue()
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	OR(4)
+		CheckStat(LastAttackerOf(Myself),5,SCRIPTINGSTATE4)
+		CheckStat(LastAttackerOf(Myself),4,SCRIPTINGSTATE4)
+		CheckStat(NearestEnemyOf(Myself),5,SCRIPTINGSTATE4)
+		CheckStat(NearestEnemyOf(Myself),4,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("xyxGasseousForm","LOCALS",ONE_ROUND)
+		ForceSpellRES("BODGASF",Myself)
+		RunAwayFrom(NearestEnemyOf(Myself),90)
+END
+
+IF
+	HPPercentLT(Myself,50)
+	CheckStatLT(Myself,100,RESISTSLASHING)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("xyxGasseousForm","LOCALS",ONE_ROUND)
+		ForceSpellRES("BODGASF",Myself)
+		Continue()
+END
+
+IF
+	CheckStat(Myself,100,RESISTSLASHING)
+	OR(2)
+		HPPercentLT(Myself,100)
+		GlobalTimerNotExpired("xyxGasseousForm","LOCALS")
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),45)
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	CheckStat(Myself,100,RESISTSLASHING)
+	OR(2)
+		HPPercentLT(Myself,100)
+		GlobalTimerNotExpired("xyxGasseousForm","LOCALS")
+THEN
+	RESPONSE #100
+		NoAction()
+	RESPONSE #100
+		RandomWalk()
+END
+
+IF
+	GlobalTimerExpired("xyxManeuver","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("xyxManeuver","LOCALS",11)
+		RandomWalkContinuous()
+END
+
+IF
+	StateCheck(Myself,STATE_BLIND)
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+THEN
+	RESPONSE #100
+		ForceSpellRES("SPINKRBT",Myself)
+		Continue()
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	!RandomNumGT(6,1)
+	!GlobalTimerNotExpired("xyxGasseousForm","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	!RandomNumGT(6,2)
+	!GlobalTimerNotExpired("xyxGasseousForm","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	!RandomNumGT(6,3)
+	!GlobalTimerNotExpired("xyxGasseousForm","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	!RandomNumGT(6,4)
+	!GlobalTimerNotExpired("xyxGasseousForm","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	!RandomNumGT(6,5)
+	!GlobalTimerNotExpired("xyxGasseousForm","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	!RandomNumGT(6,6)
+	!GlobalTimerNotExpired("xyxGasseousForm","LOCALS")
+THEN
+	RESPONSE #100
+		MoveToObject(Player6)
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerNotExpired("xyxVampireDomination","LOCALS")
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+	See(NearestEnemyOf(Myself))
+	OR(12)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself))
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself))
+		HasItemEquiped("SHLD25",LastSeenBy(Myself))
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself))
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself))
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself))
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself))
+	See(ThirdNearestEnemyOf(Myself))
+	OR(12)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself))
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself))
+		HasItemEquiped("SHLD25",LastSeenBy(Myself))
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself))
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself))
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself))
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself))
+	See(SixthNearestEnemyOf(Myself))
+	OR(12)
+                StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself))
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself))
+		HasItemEquiped("SHLD25",LastSeenBy(Myself))
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself))
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself))
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself))
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself))
+	See(NearestEnemyOf(Myself))
+	OR(12)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself))
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself))
+		HasItemEquiped("SHLD25",LastSeenBy(Myself))
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself))
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself))
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself))
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself))
+	See(ThirdNearestEnemyOf(Myself))
+	OR(12)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself))
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself))
+		HasItemEquiped("SHLD25",LastSeenBy(Myself))
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself))
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself))
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself))
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself))
+	See(SixthNearestEnemyOf(Myself))
+	OR(12)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself))
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself))
+		HasItemEquiped("SHLD25",LastSeenBy(Myself))
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself))
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself))
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself))
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself))
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself))
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerNotExpired("xyxVampireDomination","LOCALS")
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+	!CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+	!Class(LastSeenBy(Myself),MONK)
+	!HasItemEquiped("HELM06",LastSeenBy(Myself))
+	!HasItemEquiped("NPCHAN",LastSeenBy(Myself))
+	!HasItemEquiped("SHLD25",LastSeenBy(Myself))
+	!HasItemEquipedReal("REAVER",LastSeenBy(Myself))
+	!HasItemEquipedReal("SPER07",LastSeenBy(Myself))
+	!HasItemEquipedReal("STAF11",LastSeenBy(Myself))
+	!HasItemEquipedReal("SW1H35",LastSeenBy(Myself))
+	!HasItemEquipedReal("SW1H54",LastSeenBy(Myself))
+	!HasItemEquipedReal("SW2H14",LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("xyxVampireDomination","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),VAMPIRE_DOMINATION)
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerNotExpired("xyxVampireDomination","LOCALS")
+	GlobalTimerExpired("xyxImmunity","LOCALS")
+	See(NearestEnemyOf(Myself))
+	OR(19)
+		CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+		CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor +3
+		HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver Reaver +5
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi +5
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer +4
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor +3
+		HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor +3
+		Race(LastSeenBy(Myself),PLANATAR)
+		Race(LastSeenBy(Myself),DARKPLANATAR)
+		Race(LastSeenBy(Myself),SOLAR)
+		Race(LastSeenBy(Myself),ANTISOLAR)
+	See(ThirdNearestEnemyOf(Myself))
+	OR(19)
+		CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+		CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor +3
+		HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver Reaver +5
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi +5
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer +4
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor +3
+		HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor +3
+		Race(LastSeenBy(Myself),PLANATAR)
+		Race(LastSeenBy(Myself),DARKPLANATAR)
+		Race(LastSeenBy(Myself),SOLAR)
+		Race(LastSeenBy(Myself),ANTISOLAR)
+	See(SixthNearestEnemyOf(Myself))
+	OR(19)
+		CheckStatLT(LastSeenBy(Myself),4,SAVEVSSPELL)
+		CheckStatGT(LastSeenBy(Myself),25,RESISTMAGIC)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor +3
+		HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver Reaver +5
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi +5
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer +4
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor +3
+		HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor +3
+		Race(LastSeenBy(Myself),PLANATAR)
+		Race(LastSeenBy(Myself),DARKPLANATAR)
+		Race(LastSeenBy(Myself),SOLAR)
+		Race(LastSeenBy(Myself),ANTISOLAR)
+	See(NearestEnemyOf(Myself))
+	OR(19)
+		CheckStatLT(LastSeenBy(Myself),1,SAVEVSSPELL)
+		CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor +3
+		HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver Reaver +5
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi +5
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer +4
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor +3
+		HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor +3
+		Race(LastSeenBy(Myself),PLANATAR)
+		Race(LastSeenBy(Myself),DARKPLANATAR)
+		Race(LastSeenBy(Myself),SOLAR)
+		Race(LastSeenBy(Myself),ANTISOLAR)
+	See(ThirdNearestEnemyOf(Myself))
+	OR(19)
+		CheckStatLT(LastSeenBy(Myself),1,SAVEVSSPELL)
+		CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor +3
+		HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver Reaver +5
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi +5
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer +4
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor +3
+		HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor +3
+		Race(LastSeenBy(Myself),PLANATAR)
+		Race(LastSeenBy(Myself),DARKPLANATAR)
+		Race(LastSeenBy(Myself),SOLAR)
+		Race(LastSeenBy(Myself),ANTISOLAR)
+	See(SixthNearestEnemyOf(Myself))
+	OR(19)
+		CheckStatLT(LastSeenBy(Myself),1,SAVEVSSPELL)
+		CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+		StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+		CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+		Class(LastSeenBy(Myself),MONK)
+		HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+		HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor +3
+		HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+		HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver Reaver +5
+		HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+		HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi +5
+		HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+		HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer +4
+		HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor +3
+		HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor +3
+		Race(LastSeenBy(Myself),PLANATAR)
+		Race(LastSeenBy(Myself),DARKPLANATAR)
+		Race(LastSeenBy(Myself),SOLAR)
+		Race(LastSeenBy(Myself),ANTISOLAR)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerNotExpired("xyxVampireDomination","LOCALS")
+	GlobalTimerExpired("xyxImmunity","LOCALS")
+	!CheckStatLT(LastSeenBy(Myself),1,SAVEVSSPELL)
+	!CheckStatGT(LastSeenBy(Myself),75,RESISTMAGIC)
+	!StateCheck(LastSeenBy(Myself),STATE_BERSERK)
+	!CheckStat(LastSeenBy(Myself),1,SCRIPTINGSTATE3)
+	!Class(LastSeenBy(Myself),MONK)
+	!HasItemEquiped("HELM06",LastSeenBy(Myself)) // Helm of Charm Protection
+	!HasItemEquiped("NPCHAN",LastSeenBy(Myself)) // Corthala Family Armor +3
+	!HasItemEquiped("SHLD25",LastSeenBy(Myself)) // Shield of Harmony +2
+	!HasItemEquipedReal("REAVER",LastSeenBy(Myself)) // Unholy Reaver Reaver +5
+	!HasItemEquipedReal("SPER07",LastSeenBy(Myself)) // Spear of the Unicorn +2
+	!HasItemEquipedReal("STAF11",LastSeenBy(Myself)) // Staff of the Magi +5
+	!HasItemEquipedReal("SW1H35",LastSeenBy(Myself)) // Adjatha The Drinker +2
+	!HasItemEquipedReal("SW1H54",LastSeenBy(Myself)) // The Equalizer +4
+	!HasItemEquipedReal("SW2H14",LastSeenBy(Myself)) // Lilarcor +3
+	!HasItemEquipedReal("MISCBC",LastSeenBy(Myself)) // Blackrazor +3
+	!Race(LastSeenBy(Myself),PLANATAR)
+	!Race(LastSeenBy(Myself),DARKPLANATAR)
+	!Race(LastSeenBy(Myself),SOLAR)
+	!Race(LastSeenBy(Myself),ANTISOLAR)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("xyxVampireDomination","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),VAMPIRE_DOMINATION)
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerNotExpired("xyxVampireFear","LOCALS")
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("xyxVampireFear","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),VAMPIRE_FEAR)
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerNotExpired("xyxVampireFear","LOCALS")
+	GlobalTimerExpired("xyxImmunity","LOCALS")
+	See(SixthNearestEnemyOf(Myself))
+	CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerNotExpired("xyxVampireFear","LOCALS")
+	GlobalTimerExpired("xyxImmunity","LOCALS")
+	!CheckStatLT(LastSeenBy(Myself),6,SAVEVSSPELL)
+	!Range(LastSeenBy(Myself),0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("xyxVampireFear","LOCALS",ONE_ROUND)
+		ForceSpell(LastSeenBy(Myself),VAMPIRE_FEAR)
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+	See(SixthNearestEnemyOf(Myself))
+	OR(7)
+		CheckStatLT(LastSeenBy(Myself),-8,ARMORCLASS)
+		StateCheck(LastSeenBy(Myself),STATE_MIRRORIMAGE)
+		CheckStatGT(LastSeenBy(Myself),0,STONESKINS)
+		HasItemEquiped("AMUL21",LastSeenBy(Myself)) // Amulet of Power
+		HasItemEquipedReal("BLUN25",LastSeenBy(Myself)) // Mace of Disruption +4
+		Gender(LastSeenBy(Myself),SUMMONED)
+	See(SixthNearestEnemyOf(Myself))
+	OR(4)
+		CheckStatLT(LastSeenBy(Myself),-13,ARMORCLASS)
+		StateCheck(LastSeenBy(Myself),STATE_MIRRORIMAGE)
+		HasItemEquiped("AMUL21",LastSeenBy(Myself)) // Amulet of Power
+		HasItemEquipedReal("BLUN25",LastSeenBy(Myself)) // Mace of Disruption +4
+	See(SixthNearestEnemyOf(Myself))
+	CheckStatLT(LastSeenBy(Myself),-18,ARMORCLASS)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	GlobalTimerExpired("xyxImmunity","LOCALS")
+	See(SixthNearestEnemyOf(Myself))
+	OR(12)
+		CheckStatLT(LastSeenBy(Myself),-8,ARMORCLASS)
+		StateCheck(LastSeenBy(Myself),STATE_MIRRORIMAGE)
+		CheckStatGT(LastSeenBy(Myself),0,STONESKINS)
+		CheckStatGT(LastSeenBy(Myself),25,RESISTSLASHING)
+		HasItemEquiped("AMUL21",LastSeenBy(Myself)) // Amulet of Power
+		HasItemEquipedReal("BLUN25",LastSeenBy(Myself)) // Mace of Disruption +4
+		HasItemEquipedReal("DEVA",LastSeenBy(Myself)) // Streitkolben der Zerschlagung
+		HasItemEquipedReal("HAMM10",LastSeenBy(Myself)) // Runehammer +3
+		HasItemEquipedReal("HAMM11",LastSeenBy(Myself)) // Runehammer +4
+		HasItemEquipedReal("SW1H61",LastSeenBy(Myself)) // Angurvadal +5
+		HasItemEquipedReal("SW1H69",LastSeenBy(Myself)) // Spectral Brand +4
+		Gender(LastSeenBy(Myself),SUMMONED)
+	See(SixthNearestEnemyOf(Myself))
+	OR(10)
+		CheckStatLT(LastSeenBy(Myself),-13,ARMORCLASS)
+		StateCheck(LastSeenBy(Myself),STATE_MIRRORIMAGE)
+		CheckStatGT(LastSeenBy(Myself),100,RESISTSLASHING)
+                HasItemEquiped("AMUL21",LastSeenBy(Myself)) // Amulet of Power
+		HasItemEquipedReal("BLUN25",LastSeenBy(Myself)) // Mace of Disruption +4
+		HasItemEquipedReal("DEVA",LastSeenBy(Myself)) // Streitkolben der Zerschlagung
+		HasItemEquipedReal("HAMM10",LastSeenBy(Myself)) // Runehammer +3
+		HasItemEquipedReal("HAMM11",LastSeenBy(Myself)) // Runehammer +4
+		HasItemEquipedReal("SW1H61",LastSeenBy(Myself)) // Angurvadal +5
+		HasItemEquipedReal("SW1H69",LastSeenBy(Myself)) // Spectral Brand +4
+	See(SixthNearestEnemyOf(Myself))
+	CheckStatLT(LastSeenBy(Myself),-18,ARMORCLASS)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+	!Range(LastSeenBy(Myself),20)
+THEN
+	RESPONSE #100
+		ForceSpellRES("SPINKRBT",Myself) // Transform Into Bat
+		MoveToObject(LastSeenBy(Myself))
+		ForceSpellRES("SPINKRVA",Myself) // Lose Strength
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	OR(2)
+		CheckStat(Myself,100,RESISTSLASHING)
+		Global("KRBODBAT","GLOBAL",1)
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+        !Range(LastSeenBy(Myself),4)
+THEN
+	RESPONSE #100
+		MoveToObject(LastSeenBy(Myself))
+		ForceSpellRES("SPINKRVA",Myself)
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	OR(2)
+		CheckStat(Myself,100,RESISTSLASHING)
+		Global("KRBODBAT","GLOBAL",1)
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+THEN
+	RESPONSE #100
+		ForceSpellRES("SPINKRVA",Myself) 
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+
+IF
+	OR(2)
+		CheckStat(Myself,100,RESISTSLASHING)
+		Global("KRBODBAT","GLOBAL",1)
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+THEN
+	RESPONSE #100
+		ForceSpellRES("SPINKRVA",Myself)
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	CheckStatLT(Myself,100,RESISTSLASHING)
+	Global("KRBODBAT","GLOBAL",0)
+	!GlobalTimerExpired("xyxImmunity","LOCALS")
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+

@@ -1,0 +1,24 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(4)
+FadeToColor([30.0],0)
+Wait(2)
+LeaveAreaLUAPanic("ar1500","",[1732.2026],4)
+LeaveAreaLUA("ar1500","",[1732.2026],4)
+ActionOverride(Player2,LeaveAreaLUA("ar1500","",[1732.2026],7))
+ActionOverride(Player3,LeaveAreaLUA("ar1500","",[1732.2026],11))
+ActionOverride(Player4,LeaveAreaLUA("ar1500","",[1732.2026],0))
+ActionOverride(Player5,LeaveAreaLUA("ar1500","",[1732.2026],8))
+ActionOverride(Player6,LeaveAreaLUA("ar1500","",[1732.2026],5))
+Wait(2)
+DayNight(MIDNIGHT)
+Wait(2)
+TakePartyGold(2000)
+SetGlobal("RTLeyPlot1","GLOBAL",8)
+FadeFromColor([30.0],0)
+Wait(2)
+EndCutSceneMode()
+END

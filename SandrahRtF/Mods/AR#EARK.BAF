@@ -1,0 +1,25 @@
+IF
+	See(NearestEnemyOf(Myself))
+	NumInPartyAliveGT(4)
+	Delay(5)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,CLERIC_EARTHQUAKE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ActionOverride(Myself,AttackReevaluate(NearestEnemyOf(Myself),20))
+END
+
+IF
+	HPPercentLT(Myself,50)
+	Delay(10)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_CONJURE_LESSER_EARTH_ELEMENTAL)
+END
+
+

@@ -1,0 +1,25 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("Melicamp")
+THEN
+RESPONSE #100
+ActionOverride("Melicamp",DestroySelf())
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("RTVisitHedge","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTVisitHedge","GLOBAL",1)
+END
+
+IF
+Global("SanRTFPlot4","GLOBAL",5)
+Global("RThintNash","ar7102",0)
+THEN
+RESPONSE #100
+SetGlobal("RThintNash","ar7102",1)
+ActionOverride("Thalantyr",Polymorph(CHICKEN))
+ActionOverride("Thalantyr",SetName(@1932))
+END

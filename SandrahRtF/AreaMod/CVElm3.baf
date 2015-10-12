@@ -1,0 +1,28 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("LeyaHere","cvelm3",0)
+THEN
+RESPONSE #100
+SetGlobal("LeyaHere","cvelm3",1)
+CreateCreature("CVLeyala",[590.532],6)
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Exists("Driz2")
+THEN
+RESPONSE #100
+ActionOverride("Driz2",DestroySelf())
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Exists("Yasraena")
+!InParty("Yasraena")
+THEN
+RESPONSE #100
+ActionOverride("Yasraena",DestroySelf())
+END
+
+
+

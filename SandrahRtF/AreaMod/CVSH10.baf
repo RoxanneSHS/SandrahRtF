@@ -1,0 +1,38 @@
+IF
+Global("SanRTFPlot1","GLOBAL",1)
+Global("RTFShauInfo","GLOBAL",1)
+Global("RTFSharInfo","GLOBAL",0)
+Global("RTFTwoOptionsPlot1","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTFTwoOptionsPlot1","GLOBAL",1)
+END
+
+IF
+GlobalGT("SanBeginRtF","GLOBAL",1)
+GlobalLT("SanRTFPlot1","GLOBAL",3)
+Global("OpenWays","cvsh10",3)
+THEN
+RESPONSE #100
+SetGlobal("OpenWays","cvsh10",4)
+SpawnPtActivate("goblins")
+SpawnPtActivate("werewolfs")
+SpawnPtActivate("Spawn Point 1")
+SpawnPtActivate("Spawn Point 3")
+SpawnPtActivate("Spawn Point 9")
+Continue()
+END
+
+IF
+GlobalGT("SanRTFPlot1","GLOBAL",2)
+Global("OpenWays","cvsh10",4)
+THEN
+RESPONSE #100
+SetGlobal("OpenWays","cvsh10",5)
+SpawnPtDeactivate("goblins")
+SpawnPtDeactivate("werewolfs")
+SpawnPtDeactivate("Spawn Point 1")
+SpawnPtDeactivate("Spawn Point 3")
+SpawnPtDeactivate("Spawn Point 9")
+Continue()
+END

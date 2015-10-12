@@ -1,0 +1,20 @@
+IF
+GlobalGT("SanRaiseMys","GLOBAL",9)
+OR(2)
+Global("InRTFArm","GLOBAL",0)
+Global("InRTFArm","GLOBAL",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobal("InRTFArm","GLOBAL",1)
+SetMasterArea("ar6800")
+ActionOverride(Player1,LeaveAreaLUA("RTF025","",[1018.895],6))
+ActionOverride(Player2,LeaveAreaLUA("RTF025","",[1018.895],6))
+ActionOverride(Player3,LeaveAreaLUA("RTF025","",[1018.895],6))
+ActionOverride(Player4,LeaveAreaLUA("RTF025","",[1018.895],6))
+ActionOverride(Player5,LeaveAreaLUA("RTF025","",[1018.895],6))
+ActionOverride(Player6,LeaveAreaLUA("RTF025","",[1018.895],6))
+END
+
+
+

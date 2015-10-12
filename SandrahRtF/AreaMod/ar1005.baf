@@ -1,0 +1,7 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("sharteel")
+THEN
+RESPONSE #100
+ActionOverride("sharteel",DestroySelf())
+END
