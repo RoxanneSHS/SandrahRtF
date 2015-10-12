@@ -1,0 +1,79 @@
+IF
+Global("RTLarRidl","GLOBAL",1)
+RealGlobalTimerExpired("Riddlrun","RTF151")
+THEN
+RESPONSE #33
+CreateCreature("RTLichle",[1951.812],0)
+IncrementGlobal("Respawn","RTF151",1)
+RealSetGlobalTimer("Riddlrun","RTF151",800)
+RESPONSE #33
+CreateCreature("RTLichle",[582.1476],0)
+IncrementGlobal("Respawn","RTF151",1)
+RealSetGlobalTimer("Riddlrun","RTF151",800)
+RESPONSE #33
+CreateCreature("RTLichle",[2931.997],0)
+IncrementGlobal("Respawn","RTF151",1)
+RealSetGlobalTimer("Riddlrun","RTF151",800)
+END
+
+IF
+Global("Respawn","RTF151",5)
+Global("RTLarRidl","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RTLarRidl","GLOBAL",2)
+END
+
+IF
+Global("RTLarRidl","GLOBAL",4)
+THEN
+RESPONSE #100
+CreateCreature("RTLardra",[3179.700],14)
+SetGlobal("RTLarRidl","GLOBAL",5)
+END
+
+IF
+Global("RTLarRidl","GLOBAL",5)
+Dead("RTLardra")
+THEN
+RESPONSE #100
+SetGlobal("RTLarRidl","GLOBAL",6)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END

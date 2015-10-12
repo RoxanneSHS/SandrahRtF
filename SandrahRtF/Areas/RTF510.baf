@@ -1,0 +1,59 @@
+IF
+Global("RTMaskplot","GLOBAL",0)
+Global("Down","RTF510",0)
+THEN
+RESPONSE #100
+TriggerActivation("Down",FALSE)
+SetGlobal("Down","RTF510",1)
+END
+
+IF
+Global("Down","RTF510",1)
+PartyHasItem("Comc03")
+PartyHasItem("SW1H58")
+THEN
+RESPONSE #100
+CreateCreature("RTBAYLAN",[596.793],14)
+TriggerActivation("Down",TRUE)
+SetGlobal("Down","RTF510",2)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+
+

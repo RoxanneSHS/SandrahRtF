@@ -1,0 +1,8 @@
+IF
+InParty("RTMeli")
+Global("SawMagic","RTF153",0)
+Delay(8)
+THEN
+RESPONSE #100
+SetGlobal("SawMagic","RTF153",1)
+END

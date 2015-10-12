@@ -1,0 +1,86 @@
+IF
+GlobalGT("RTMeliQuest","GLOBAL",8)
+InParty("RTMeli")
+Global("RTLibr","RTF166",0)
+THEN
+RESPONSE #100
+SetGlobal("RTLibr","RTF166",1)
+ActionOverride("Book",CreateItem("RTMels3",0,0,0))
+END
+
+IF
+Global("SpawnStarted","RTF166",0)
+PartyHasItem("Misc92")
+THEN
+RESPONSE #100
+SetGlobal("SpawnStarted","RTF166",1)
+CreateCreature("icsalfir",[1044.1243],11)
+CreateCreature("skelet01",[1379.1508],10)
+CreateCreature("rskel01",[973.785],13)
+CreateCreature("rzomb01",[626.1098],13)
+CreateCreature("rskel01",[889.807],9)
+CreateCreature("rskel01",[446.667],13)
+CreateCreature("rzomb01",[592.745],10)
+CreateCreature("skelwa",[184.840],0)
+END
+
+IF
+Global("SpawnStarted","RTF166",1)
+THEN
+RESPONSE #100
+SetGlobal("SpawnStarted","RTF166",2)
+CreateCreature("icsalfir",[1322.1497],0)
+CreateCreature("wraith01",[760.1557],13)
+CreateCreature("skelwa",[846.1321],5)
+CreateCreature("icsalfir",[276.756],10)
+END
+
+IF
+Global("SpawnStarted","RTF166",2)
+THEN
+RESPONSE #100
+SetGlobal("SpawnStarted","RTF166",3)
+CreateCreature("spectr01",[324.1401],0)
+CreateCreature("demgla01",[171.1116],13)
+CreateCreature("wraith01",[1299.1921],5)
+CreateCreature("spectr01",[276.736],10)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

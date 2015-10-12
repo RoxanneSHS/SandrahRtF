@@ -1,0 +1,116 @@
+IF
+Global("Wayout","RTF172",0)
+THEN
+RESPONSE #100
+SetGlobal("Wayout","RTF172",1)
+TriggerActivation("Direct",FALSE)
+Explore()
+END
+
+IF
+RealGlobalTimerExpired("Reinforce","RTF172")
+Global("NewForces","RTF172",0)
+THEN
+RESPONSE #100
+SetGlobal("NewForces","RTF172",1)
+CreateCreature("RTEdwin",[828.1450],6)
+CreateCreature("RTCandre",[1127.1426],9)
+END
+
+IF
+InMyArea("RTSanCop")
+OR(2)
+HPLT("RTSanCop",50)
+RealGlobalTimerExpired("Clonetime","RTF172")
+THEN
+RESPONSE #100
+DisplayString("RTSanCop",@2021)
+ActionOverride("RTSanCop",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+END
+
+IF
+Global("Wayout","RTF172",1)
+Dead("CVSzass")
+THEN
+RESPONSE #100
+SetGlobal("Wayout","RTF172",2)
+END
+
+IF
+Global("CyrGetMid","GLOBAL",2)
+Global("NoBack","RTF172",0)
+THEN
+RESPONSE #100
+SetGlobal("NoBack","RTF172",1)
+TriggerActivation("Out",FALSE)
+END
+
+IF
+Global("Wayout","RTF172",2)
+THEN
+RESPONSE #100
+SetGlobal("Wayout","RTF172",3)
+TriggerActivation("Direct",TRUE) 
+TriggerActivation("Out",TRUE)
+END
+
+IF
+Global("Wayout","RTF172",4)
+THEN
+RESPONSE #100
+SetGlobal("Wayout","RTF172",5)
+TextScreen("RTSzass")
+AddexperienceParty(145000)
+END
+
+IF
+Global("Wayout","RTF172",5)
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Wayout","RTF172",6)
+ActionOverride("RTCandre",MoveToPoint([947.1133]))
+ActionOverride("RTEdwin",MoveToPoint([947.1133]))
+ActionOverride("RTCandre",EscapeArea())
+ActionOverride("RTEdwin",EscapeArea())
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

@@ -1,0 +1,47 @@
+IF
+OnCreation()
+GlobalLT("RTColan","GLOBAL",15)
+Global("SetTime","RTF163",0)
+THEN
+RESPONSE #100
+DayNight(NOON)
+SetGlobal("SPRITE_IS_DEADCVNarga","GLOBAL",0)
+SetGlobal("SetTime","RTF163",1)
+Explore()
+END
+
+IF
+Global("RTColan","GLOBAL",14)
+Global("NiteMove","RTF163",0)
+InMyArea(Player1)
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+ActionOverride("RTColan",StartDialogueNoSet([PC]))
+END
+
+IF
+Global("RTColan","GLOBAL",14)
+Global("NiteMove","RTF163",1)
+THEN
+RESPONSE #100
+StartCutsceneMode()
+Wait(2)
+ActionOverride("RTKniJu",MoveToPoint([1253.1163]))
+Wait(8)
+EndCutsceneMode()
+SetGlobal("RTColan","GLOBAL",15)
+ActionOverride("RTKniJu",StartDialogueNoSet([PC]))
+END
+
+IF
+Global("RTColan","GLOBAL",16)
+Delay(6)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+Wait(2)
+StartCutScene("RTPris3")
+END
+

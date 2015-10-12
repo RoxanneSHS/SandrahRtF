@@ -1,0 +1,57 @@
+IF
+Global("RTSaeHij","GLOBAL",9)
+OR(2)
+Global("RTLeyPlot1","GLOBAL",0)
+Global("RTLeyPlot1","GLOBAL",16)
+THEN
+RESPONSE #100
+CreateCreature("RTShaj",[783.621],4)
+SetGlobal("RTSaeHij","GLOBAL",10)
+END
+
+IF
+Global("RTLeyPlot1","GLOBAL",3)
+InMyArea("RTShaj")
+THEN
+RESPONSE #100
+ActionOverride("RTShaj",DestroySelf())
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
+

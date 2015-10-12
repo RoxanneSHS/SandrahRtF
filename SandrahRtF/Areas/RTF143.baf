@@ -1,0 +1,51 @@
+IF
+Global("RTSimbul","RTF143",0)
+THEN
+RESPONSE #100
+ApplySpellRES("BGSLEEP",Player2)
+ApplySpellRES("BGSLEEP",Player3)
+ApplySpellRES("BGSLEEP",Player4)
+ApplySpellRES("BGSLEEP",Player5)
+ApplySpellRES("BGSLEEP",Player6)
+ApplySpellRES("CVSLEEP",Player1)
+SetGlobal("RTSimbul","RTF143",1)
+END
+
+IF
+Global("RTSimbul","RTF143",1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+ClearAllActions()
+StorePartyLocations()
+Wait(3)
+StartCutSceneMode()
+SetGlobal("RTSimbul","RTF143",2)
+StartCutscene("RTSanDe1")
+END
+
+IF
+Global("RTSimbul","RTF143",4)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode() 
+Wait(1) 
+ActionOverride("RTLarlo",ReallyForceSpell(Myself,DRYAD_TELEPORT)) 
+ActionOverride("CVSharG",ReallyForceSpell(Myself,DRYAD_TELEPORT)) 
+Wait(6) 
+RestorePartyLocations()
+EndCutSceneMode()
+SetGlobal("RTSimbul","RTF143",5)
+END
+
+IF
+Global("RTSimbul","RTF143",7)
+Delay(6)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobal("RTSimbul","RTF143",8)
+TextScreen("RTSharE")
+AddJournalEntry(@1929,QUEST)
+END

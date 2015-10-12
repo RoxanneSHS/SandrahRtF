@@ -1,0 +1,63 @@
+IF
+Global("SanRTFPlot4","GLOBAL",5)
+Global("CyrChance","RTF140",0)
+THEN 
+RESPONSE #100
+CreateCreature("chalcy01",[1999.2240],6)
+CreateCreature("chalcy02",[1866.2431],7)
+CreateCreature("chalcy02",[2135.2065],14)
+CreateCreature("chalcy02",[2269.2311],4)
+SetGlobal("SPRITE_IS_DEADchalrv01","GLOBAL",0)
+SetGlobal("CyrChance","RTF140",1)
+END
+
+IF
+Global("CyrChance","RTF140",2)
+THEN 
+RESPONSE #100
+CreateVisualEffect("SPGFLSH1",[2338.2499])
+CreateCreature("bonebld",[2338.2499],4)
+CreateVisualEffect("SPGFLSH1",[1852.2776])
+CreateCreature("bonebld",[1852.2776],12)
+CreateVisualEffect("SPGFLSH1",[1315.2618])
+CreateCreature("bonebld",[1315.2618],8)
+SetGlobal("CyrChance","RTF140",3)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
