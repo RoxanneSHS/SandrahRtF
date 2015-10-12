@@ -1,0 +1,30 @@
+IF
+GlobalTimerExpired("RTMaskplotT","GLOBAL")
+GlobalGT("RTMaskplot","GLOBAL",0)
+GlobalLT("RTMaskplot","GLOBAL",5)
+THEN
+RESPONSE #100
+SetGlobal("RTMaskplot","GLOBAL",20)
+RealSetGlobalTimer("RTMaskP","GLOBAL",60)
+END
+
+IF
+Global("RTMaskplot","GLOBAL",20)
+!ActuallyInCombat()
+RealGlobalTimerExpired("RTMaskP","GLOBAL")
+THEN
+RESPONSE #100
+DisplayString(Player1,@1880)
+RealSetGlobalTimer("RTMaskP","GLOBAL",660)
+Wait(1)
+CreateCreatureObjectOffset("CVAssast",Player1,[100.100])
+CreateCreatureObjectOffset("CVAssasv",Player1,[-100.-100])
+CreateCreatureObjectOffset("CVAssasw",Player1,[-100.100])
+CreateCreatureOffScreen("CVAssast",0)
+CreateCreatureOffScreen("CVAssasv",0)
+CreateCreatureOffScreen("CVAssasv",0)
+CreateCreatureOffScreen("Z#Pri2",0)
+CreateCreatureOffScreen("RTShama2",0)
+CreateCreatureOffScreen("RTShama2",0)
+Continue()
+END

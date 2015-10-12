@@ -1,0 +1,9 @@
+IF
+Entered([GOODCUTOFF])
+THEN
+RESPONSE #100
+DisplayString(LastTrigger,@1732)
+CreateCreature("Lavaele1",[2162.1672],1)
+CreateCreature("Lavaele1",[1832.1814],10)
+CreateCreature("RTFIELKI",[2121.1844],7)
+END

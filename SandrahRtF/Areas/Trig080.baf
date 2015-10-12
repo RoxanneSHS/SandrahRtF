@@ -1,0 +1,11 @@
+IF
+Entered([PC])
+Global("GuardOd","RTF070",0)
+THEN
+RESPONSE #100
+CreateCreature("RTTHKN",[2583.1663],0)
+CreateCreature("RTTHKN",[2548.1671],12)
+CreateCreature("RTTHKN",[2523.1709],10)
+CreateCreature("RTTHKN",[2483.1728],14) 
+SetGlobal("GuardOd","RTF070",1)
+END

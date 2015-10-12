@@ -1,0 +1,81 @@
+IF
+Global("StrangeVap","RTF901",0)
+InMyArea(Player1)
+THEN
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player2)
+RealSetGlobalTimer("VapTi","RTF901",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF901",1)
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player1)
+RealSetGlobalTimer("VapTi","RTF901",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF901",1)
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player3)
+RealSetGlobalTimer("VapTi","RTF901",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF901",1)
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player4)
+RealSetGlobalTimer("VapTi","RTF901",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF901",1)
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player6)
+RealSetGlobalTimer("VapTi","RTF901",NINE_MINUTES)
+SetGlobal("StrangeVap","RTF901",1)
+END
+
+IF
+Global("StrangeVap","RTF901",1)
+Global("SanDruids","RTF901",0)
+RealGlobalTimerExpired("VapTi","RTF901")
+THEN
+RESPONSE #100
+SetGlobal("StrangeVap","RTF901",0)
+END
+
+IF
+Global("RTMaskplot","GLOBAL",1)
+PartyHasItem("Comc03")
+PartyHasItem("SW1H58")
+THEN
+RESPONSE #100
+SetGlobal("RTMaskplot","GLOBAL",2)
+END
+
+IF
+	InParty("CVSandr")
+	Global("PelligFollow","GLOBAL",1)
+	!InActiveArea("pellig")
+	!See("pellig")
+	!Dead("pellig") 
+THEN
+	RESPONSE #100
+		MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+	!Allegiance("Pellig",CONTROLLED)
+	Delay(10)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+	Global("HaiassJumpOn","GLOBAL",1)
+	Global("HaiassSeUne","GLOBAL",1)
+	!InActiveArea("haiass")
+	!See("haiass")
+	!Dead("haiass")
+THEN
+	RESPONSE #100
+		MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+	!Allegiance("haiass",CONTROLLED)
+	Delay(12)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly("haiass",CONTROLLED)
+END

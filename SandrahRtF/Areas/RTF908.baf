@@ -1,0 +1,90 @@
+IF
+Global("CitEntpl","GLOBAL",17)
+Global("Szasscut","RTF908",0)
+THEN
+RESPONSE #100
+ClearAllActions() 
+StartCutSceneMode() 
+Wait(3) 
+ScreenShake([1850.1053],30) 
+Wait(2)
+FadeToColor([30.0],0) 
+Wait(4) 
+FadeFromColor([30.0],0) 
+Wait(2)
+CreateVisualEffectObject("SPMETSWA","CVSzass") 
+CreateVisualEffectObject("icspain","Hand") 
+Wait(6) 
+CreateVisualEffectObject("SPFLSRIN","CVSandr") 
+Wait(6) 
+CreateVisualEffectObject("SPPORTAL","CVSzass") 
+Wait(6) 
+ActionOverride("CVSzass",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+Wait(2)
+SetGlobal("Szasscut","RTF908",1)
+EndCutSceneMode()
+END
+
+IF
+Global("NoHand","RTF908",1)
+THEN
+RESPONSE #100
+ActionOverride("Hand",CreateItem("RTSzHand",0,0,0))
+SetGlobal("NoHand","RTF908",2)
+END
+
+IF
+Global("RTKnowDunT","GLOBAL",0)
+PartyHasItem("SW2H07")
+THEN
+RESPONSE #100
+SetGlobal("RTKnowDunT","GLOBAL",1)
+END
+
+IF
+Global("CitEntpl","GLOBAL",14)
+THEN
+RESPONSE #100
+SetGlobal("CitEntpl","GLOBAL",15)
+CreateCreature("RTSamas",[1546.831],14)
+CreateCreature("CVSzass",[1850.1053],3)
+SetGlobal("NoHand","RTF908",1)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END
