@@ -1,7 +1,7 @@
 BACKUP ~SandrahRTF/backup~
 AUTHOR ~Roxanne - Contact Roxanne@shsforums.net~
 
-VERSION ~v1.08.b~
+VERSION ~v1.09.b~
 AUTO_TRA ~SandrahRTF/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~SandrahRTF/TRA/RTF-setup.tra~
@@ -9,8 +9,6 @@ LANGUAGE ~English~ ~english~ ~SandrahRTF/TRA/RTF-setup.tra~
 BEGIN
 ~SandrahRTF Check for required Installation~
 
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~beltbrd.cre~ @002  
-REQUIRE_PREDICATE FILE_EXISTS_IN_GAME ~CVSan25.bcs~ @003
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~beltbrd.cre~ THEN BEGIN
   FAIL  @002
 END
