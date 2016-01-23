@@ -7,7 +7,7 @@ AUTO_TRA ~SandrahRTF/TRA/%s~
 LANGUAGE ~English~ ~english~ ~SandrahRTF/TRA/RTF-setup.tra~
 
 BEGIN
-~SandrahRTF Check for required Installation~
+~SandrahRTF Installation~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~beltbrd.cre~ THEN BEGIN
   FAIL  @002
@@ -35,8 +35,7 @@ COMPILE
 
 PRINT ~Check for required Installation sucessful - Can install SandrahRTF mod~
 
-BEGIN
-~RTF Movies and Sounds~
+//BEGIN ~RTF Movies and Sounds~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVCut402.bcs~ THEN BEGIN
   FAIL  @004
@@ -50,8 +49,7 @@ COPY ~SandrahRTF/mve/RTPL2.Mos~ ~override/RTPL2.Mos~
 PRINT ~Installed RTF Movies~
 
 
-BEGIN
-~Sandrah Return To Faerun Areas~
+//BEGIN ~Sandrah Return To Faerun Areas~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVCut402.bcs~ THEN BEGIN
   FAIL  @004
@@ -1902,8 +1900,7 @@ COPY ~SandrahRTF\Areas/tisunpack.exe~  ~override\tisunpack.exe~
 AT_NOW ~SandrahRTF\Areas/RTFUnpack.bat~
 AT_UNINSTALL ~SandrahRTF/Areas/RTFUninstall.bat~
 
-BEGIN
-~Sandrah Return To Faerun Area Modifications~
+//BEGIN ~Sandrah Return To Faerun Area Modifications~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVCut402.bcs~ THEN BEGIN
   FAIL  @004
@@ -2065,8 +2062,7 @@ EXTEND_BOTTOM
 ~CVRoa2.bcs~ ~SandrahRTF\AreaMod/CVRoa2Transit.baf~
 
 
-BEGIN
-~Sandrah Return To Faerun Creatures~
+//BEGIN ~Sandrah Return To Faerun Creatures~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVCut402.bcs~ THEN BEGIN
   FAIL  @004
@@ -2915,8 +2911,7 @@ COPY ~SandrahRTF/Cre/LeyalE.bmp~ ~override/LeyalE.bmp~
 COPY ~SandrahRTF/Cre/LoureedE.bmp~ ~override/LoureedE.bmp~
 COPY ~SandrahRTF/Cre/PelligE.bmp~ ~override/PelligE.bmp~
 
-BEGIN
-~Sandrah Return To Faerun Items and Stores~
+//BEGIN ~Sandrah Return To Faerun Items and Stores~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVCut402.bcs~ THEN BEGIN
   FAIL  @004
@@ -3171,8 +3166,7 @@ END
 
 
 
-BEGIN
-~Sandrah Return To Faerun Compiles~
+//BEGIN ~Sandrah Return To Faerun Compiles~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVCut402.bcs~ THEN BEGIN
   FAIL  @004
@@ -3458,8 +3452,7 @@ APPEND ~interdia.2da~
 ~Pellig3 *** Pellig ~
 UNLESS ~Pellig3~
 
-BEGIN
-~Sandrah RtF Cross Mod Contents~
+//BEGIN ~Sandrah RtF Cross Mod Contents~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVCut402.bcs~ THEN BEGIN
   FAIL  @004
