@@ -397,23 +397,6 @@ THEN
 		Continue()
 END
 
-IF
-	CheckStatGT(Myself,19,LEVEL)
-	!HasItem("dw#nohla",Myself)
-	OR(2)
-		GlobalGT("Chapter","GLOBAL",7)
-		AmIInWatchersKeepPleaseIgnoreTheLackOfApostophe()
-	!GlobalTimerNotExpired("HLAInitialize","LOCALS")
-	OR(3)
-		Class(Myself,FIGHTER_ALL)
-		Class(Myself,RANGER_ALL)
-		Class(Myself,PALADIN_ALL)
-THEN
-	RESPONSE #100
-		SetGlobalTimer("HLAInitialize","LOCALS",1000)
-		SetGlobal("FighterAbility","LOCALS",2)
-		Continue()
-END
 
 IF
 	HasItem("dw#ptn34",Myself)
@@ -900,7 +883,6 @@ IF
 	!GlobalTimerNotExpired("castspell","LOCALS")
 	!General(Myself,ANIMAL)
 	!General(Myself,MONSTER)
-	!GlobalGT("Chapter","GLOBAL",7)
 	HPPercentLT(Myself,50)
 	!General(Myself,UNDEAD)
 THEN
@@ -914,7 +896,6 @@ IF
 	!GlobalTimerNotExpired("castspell","LOCALS")
 	!General(Myself,ANIMAL)
 	!General(Myself,MONSTER)
-	!GlobalGT("Chapter","GLOBAL",7)
 	HPPercentLT(Myself,50)
 	!General(Myself,UNDEAD)
 THEN

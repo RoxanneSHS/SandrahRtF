@@ -58,8 +58,8 @@ IF
 Global("RTVisitHedge","GLOBAL",1)
 GlobalLT("RTMelibant","GLOBAL",4)
 GlobalLT("SanRTFPlot1","GLOBAL",4)
-!AreaCheck("ar7100")
-!AreaCheck("ar7102")
+!AreaCheck("BG3200")
+!AreaCheck("BG3202")
 InParty(Myself)
 THEN
 RESPONSE #100
@@ -187,7 +187,7 @@ InParty(Myself)
 OR(3)
 AreaCheck("rtf010")
 AreaCheck("ar5500")
-AreaCheck("ar6800")
+AreaCheck("BG2300")
 Global("RTMeliQuest","GLOBAL",0)
 Delay(12)
 THEN

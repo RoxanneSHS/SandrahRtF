@@ -38,7 +38,7 @@ END
 CHAIN
 IF~~ THEN Giran25 Join
 ~My djahemma has thus begun. Thank you, <CHARNAME>.~
-==CVShauq IF~AreaChecK("CVRTF8") Global("Gavebow","LOCALS",0)~THEN~My son, my heart, I will not let you go without a gift to protect you and bring you back unharmed. May your foes fall before you.~
+==CVShauq IF~AreaChecK("CVRTF8") Global("Gavebow","LOCALS",0)~THEN~My son, my heart, I will not let you go without a gift to protect you and bring you back unharmed. May your foe fall before you.~
 ==Giran25 IF~AreaChecK("CVRTF8") Global("Gavebow","LOCALS",0)~THEN~Your famous bow, Mother? But...you may need it...~
 ==CVShauq IF~AreaChecK("CVRTF8") Global("Gavebow","LOCALS",0)~THEN~I have not used it except to hunt deer now for ten summers. It belongs in the hands of a ranger who fights for the Clan. Now move, boy, there are deeds to be done.~
 ==Giran25~Let's go.~ DO~SetGlobal("SanRTFGiranOK","GLOBAL",4) JoinParty()~ EXIT

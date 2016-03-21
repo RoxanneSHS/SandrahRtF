@@ -42,7 +42,7 @@ IF WEIGHT #-3~ Global("RtFThal","LOCALS",1) PartyHasItem("RTTalens")~ THEN Thala
 DO~SetGlobal("RtFThal","LOCALS",2)  SetGlobalTimer("RTThalanStudy","LOCALS",ONE_DAY) TakePartyItem("RTTalens") AddexperienceParty(11000)~
 =~I will need a day for my investigation, Sandrah.~
 END
-++~We will use the time to look for some old friends around Beregost and the Friendly Arm, I guess.~DO~RevealAreaOnMap("ar6800")~EXIT
+++~We will use the time to look for some old friends around Beregost and the Friendly Arm, I guess.~DO~RevealAreaOnMap("BG2300")~EXIT
 ++~We can use a bit of time to relax at Beregost.~EXIT
 
 CHAIN

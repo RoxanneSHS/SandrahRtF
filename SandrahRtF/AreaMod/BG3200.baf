@@ -1,0 +1,67 @@
+IF
+Global("SanRTFPlot1","GLOBAL",3)
+Global("RTFTalAmb","BG3200",0)
+THEN
+RESPONSE #100
+CreateCreature("mepice01",[4447.1245],8)
+CreateCreature("ICBONE01",[4204.1330],10)
+CreateCreature("CVTalop1",[4909.970],11)
+CreateCreature("CVTaloa",[4220.944],13)
+CreateCreature("X#MEPHT2",[4487.1145],8)
+CreateCreature("dsduegsk",[4048.808],9)
+CreateCreature("cvtalow1",[4298.1136],9)
+SetGlobal("RTFTalAmb","BG3200",1)
+END
+
+IF
+Global("RTFTalAmb","BG3200",1)
+Global("Groupjump","BG3200",0)
+THEN
+RESPONSE #100
+ActionOverride(Player1,JumpToPoint([4960.894]))
+ActionOverride(Player2,JumpToPoint([4960.894]))
+ActionOverride(Player3,JumpToPoint([4960.894]))
+ActionOverride(Player4,JumpToPoint([4960.894]))
+ActionOverride(Player5,JumpToPoint([4960.894]))
+ActionOverride(Player6,JumpToPoint([4960.894]))
+SetGlobal("Groupjump","BG3200",1)
+END
+
+IF
+Global("RTFTalAmb","BG3200",2)
+THEN
+RESPONSE #100
+ActionOverride("CVTalop1",Enemy()) 
+CreateCreatureObjectOffset("X#MEPHT1",Player1,[40.-90])
+SetGlobal("RTFTalAmb","BG3200",3)
+RealSetGlobalTimer("RTFTalAmb2","BG3200",55)
+END
+
+IF
+Global("RTFTalAmb","BG3200",3)
+RealGlobalTimerExpired("RTFTalAmb2","BG3200")
+THEN
+RESPONSE #100
+ActionOverride("CVTaloa",Enemy())
+CreateCreatureObjectOffset("ABYDEM01",Player1,[-150.100])
+CreateCreatureObjectOffset("ICBONE01",Player1,[100.100])
+CreateCreatureObjectOffset("X#MEPHT4",Player1,[100.50])
+CreateCreatureObjectOffset("GolemF",Player1,[60.60])
+SetGlobal("RTFTalAmb","BG3200",4)
+END
+
+IF
+Global("RTHunt","BG3200",1)
+Delay(12)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("ABYDEM01",Player1,[-150.100])
+CreateCreatureObjectOffset("ICBONE01",Player1,[100.100])
+CreateCreatureObjectOffset("X#MEPHT4",Player1,[100.50])
+CreateCreatureObjectOffset("GolemF",Player1,[60.60])
+CreateCreatureObjectOffset("RTCYPRI1",Player6,[-150.100])
+CreateCreatureObjectOffset("RTCYPRI2",Player4,[-150.100])
+CreateCreatureObjectOffset("RTCYPRI1",Player2,[150.-100])
+CreateCreatureObjectOffset("RTCYPRI2",Player5,[150.-100])
+SetGlobal("RTHunt","BG3200",2)
+END

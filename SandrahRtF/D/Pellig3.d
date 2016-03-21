@@ -122,9 +122,9 @@ IF~~THEN chalcy01 SanDeCha2
 =~My elites will keep you occupied until I return.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
 CHAIN
-IF WEIGHT #-10~Global("RThintNash","ar7102",1)~THEN Thalan HintNash1
+IF WEIGHT #-10~Global("RThintNash","BG3202",1)~THEN Thalan HintNash1
 ~Gluck, I feel you are whom the master left me here to meet.~
-DO~SetGlobal("RThintNash","ar7102",2)~
+DO~SetGlobal("RThintNash","BG3202",2)~
 ==PelligJ~A talking chicken messenger?~
 ==RTMeli IF~InParty("RTMeli")~THEN~My old master has a strange sense of humour.~
 ==CVIzy25J IF~InParty("RTMeli") InParty("CVIzzy")~THEN~Hihi, we know for sure what has inspired him.~
@@ -151,9 +151,9 @@ IF~~THEN Thalan HintNash3
 ==PelligJ~He would be cautious and avoid to be detected in a big city by those who hate Mystra's followers. ~EXIT
 
 CHAIN
-IF WEIGHT #-10~Global("Thamove","ar3702",1)~THEN Thalan HintNash4
+IF WEIGHT #-10~Global("Thamove","BG4802",1)~THEN Thalan HintNash4
 ~Your presence here confirms that you have the habbit of listening to talking chickens, haha.~
-DO~SetGlobal("Thamove","ar3702",2)~
+DO~SetGlobal("Thamove","BG4802",2)~
 ==PelligJ ~Animals are more at times than meets the eye.~
 ==RTMeli IF~InParty("RTMeli")~THEN~It has paid off before to do so and it does once again, Master Thalantyr.~
 ==Thalan~I decided to act before those who feel strong now take their chance on me.~
@@ -250,17 +250,17 @@ DO~SetGlobal("PellMellB","LOCALS",2)~
 ==RTMeli~It is always with joy and pleasure that I think of her. You are right, Pelligram, I do not wish to loose a bit of those feelings.~ EXIT
 
 CHAIN
-IF WEIGHT #-7~Global("RTPellSol","ar6800",2)~THEN Pellig SolarJ1
+IF WEIGHT #-7~Global("RTPellSol","BG2300",2)~THEN Pellig SolarJ1
 ~Solar!~
 ==Solar~Pelligram!~
 ==Pellig~Solar...Argonsan...~
 ==Solar~The mission is finished, Pelligram.~
-DO~SetGlobal("RTPellSol","ar6800",3) SetGlobal("PelligFollow","GLOBAL",0)  CreateCreature("Pellig3",[3244.2518],13) Wait(2) ActionOverride("Solar",POLYMORPH(FIGHTER_MALE_HUMAN))  ActionOverride("Solar",SetName(@1989)) EndCutSceneMode() ActionOverride("Pellig",DestroySelf()) ~EXIT
+DO~SetGlobal("RTPellSol","BG2300",3) SetGlobal("PelligFollow","GLOBAL",0)  CreateCreature("Pellig3",[3244.2518],13) Wait(2) ActionOverride("Solar",POLYMORPH(FIGHTER_MALE_HUMAN))  ActionOverride("Solar",SetName(@1989)) EndCutSceneMode() ActionOverride("Pellig",DestroySelf()) ~EXIT
 
 CHAIN
-IF WEIGHT #-7~Global("RTPellSol","ar6800",3)~THEN Pellig SolarJ2
+IF WEIGHT #-7~Global("RTPellSol","BG2300",3)~THEN Pellig SolarJ2
 ~I have done all I could do to make Mystra succeed.~
-DO~SetGlobal("RTPellSol","ar6800",4)~
+DO~SetGlobal("RTPellSol","BG2300",4)~
 ==CVSan25J~You have, Pelligram, my Chosen, my comrad, my friend. Do now what your heart demands of you.~
 ==Pellig~You know what that is, my Goddess - you know it too, Argonsan.~
 ==Solar IF~Global("SanRomPath","GLOBAL",1)~THEN~It is the same that my heart tells me, Pelligram. The God of Love and Hope has grown into an authority now. My tutoring is no longer required by him.~

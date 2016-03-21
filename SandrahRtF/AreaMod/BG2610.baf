@@ -1,0 +1,83 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("Clean","BG2610",0)
+InMyArea("Rieltar")
+THEN
+RESPONSE #100
+SetGlobal("Clean","BG2610",1)
+ActionOverride("Rieltar",DestroySelf())
+ActionOverride("Tuth",DestroySelf())
+ActionOverride("Kestor",DestroySelf())
+ActionOverride("Bruno",DestroySelf())
+END
+
+IF
+GlobalGT("RTSarAmb","BG2610",4)
+GlobalLT("RTSarAmb","BG2610",8)
+PartyHasItem("RTVelsym")
+CombatCounter(0)
+Dead("RTSarev")
+THEN
+RESPONSE #100
+SetGlobal("RTSarAmb","BG2610",7)
+TriggerActivation("Door6509",TRUE)
+END
+
+IF
+Global("RTSarAmb","BG2610",0)
+PartyHasItem("RTCera")
+THEN
+RESPONSE #100
+CreateCreature("DSDuerg1",[1920.1084],4)
+CreateCreature("DSDuerg1",[1190.927],8)
+CreateCreature("DSDuerg3",[1675.1287],6)
+CreateCreature("DSDuerg2",[1155.1197],9)
+CreateCreature("DSDuerg2",[1037.1098],12)
+CreateCreature("RTSarev",[1050.790],13)
+SetGlobal("RTSarAmb","BG2610",1)
+TriggerActivation("Door6509",FALSE)
+END
+
+IF
+RealGlobalTimerExpired("RTAmb","BG2610")
+Global("RTSarAmb","BG2610",2)
+THEN
+RESPONSE #60
+SetGlobal("RTSarAmb","BG2610",2)
+CreateCreature("DSDuerg2",[970.860],0)
+CreateCreature("DSDuerg1",[850.890],10)
+CreateCreature("DSDuerg3",[806.614],8)
+CreateCreature("DSDuerg1",[1019.462],0)
+CreateCreature("DSDuerg3",[1000.1000],0)
+IncrementGlobal("RTSarAmb","BG2610",1)
+RealSetGlobalTimer("RTAmb","BG2610",50)
+RESPONSE #40
+SetGlobal("RTSarAmb","BG2610",1)
+CreateCreature("DSDuerg2",[970.860],0)
+CreateCreature("DSDuerg2",[850.890],10)
+CreateCreature("DSDuerg2",[1019.462],0)
+CreateCreature("DSDuerg2",[806.614],8)
+IncrementGlobal("RTSarAmb","BG2610",1)
+RealSetGlobalTimer("RTAmb","BG2610",50)
+END
+
+IF
+RealGlobalTimerExpired("RTAmb","BG2610")
+GlobalLT("RTSarAmb","BG2610",6)
+THEN
+RESPONSE #60
+CreateCreature("DSDuerg1",[970.860],0)
+CreateCreature("DSDuerg2",[850.890],10)
+CreateCreature("DSDuerg3",[1019.462],0)
+CreateCreature("DSDuerg2",[1000.1000],0)
+CreateCreature("DSDuerg2",[806.614],8)
+IncrementGlobal("RTSarAmb","BG2610",1)
+RealSetGlobalTimer("RTAmb","BG2610",51)
+RESPONSE #40
+CreateCreature("DSDuerg1",[970.860],0)
+CreateCreature("DSDuerg2",[850.890],10)
+CreateCreature("DSDuerg2",[1019.462],0)
+CreateCreature("DSDuerg3",[806.614],8)
+IncrementGlobal("RTSarAmb","BG2610",1)
+RealSetGlobalTimer("RTAmb","BG2610",50)
+END

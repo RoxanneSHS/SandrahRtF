@@ -5,9 +5,9 @@ BEGIN RTBodhi
 BEGIN RTVelsh
 
 CHAIN
-IF WEIGHT #-1~Global("RTopen","ar3400",1)~THEN Sankaba Firew
+IF WEIGHT #-1~Global("RTopen","BG4500",1)~THEN Sankaba Firew
 ~Have you come to visit those who have departed?~
-DO~SetGlobal("RTopen","ar3400",2)~
+DO~SetGlobal("RTopen","BG4500",2)~
 ==CVSan25J~Mother, you have never departed me, neither me nor my father.~
 ==Sankaba~I know that, my daughter, you are so full of the love that we had when we seeded you. You were born out of love and inherited it.~
 ==CVSan25J~You know what I did and who I am...I had always wanted to share that with the mother I could not remember but who was always alive for me.~

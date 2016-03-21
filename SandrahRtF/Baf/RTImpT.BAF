@@ -1,16 +1,16 @@
 IF
-AreaCheck("Ar3100")
-Global("RTImpHere","AR3100",3)
+AreaCheck("BG4200")
+Global("RTImpHere","BG4200",3)
 THEN
 RESPONSE #100
-SetGlobal("RTImpHere","AR3100",4)
+SetGlobal("RTImpHere","BG4200",4)
 DisplayStringHead(Myself,@2036)
 Enemy()
 RunAwayFrom(NearestEnemyOf(Myself),150)
 END
 
 IF
-Global("RTImpHere","AR3100",4)
+Global("RTImpHere","BG4200",4)
 THEN
 RESPONSE #100
 StartCutSceneMode()
@@ -27,11 +27,11 @@ CreateCreatureObjectDoor("orc02",Player4,0,0,0)
 CreateCreatureObjectOffset("goliro01",Player6,[40.40])
 Wait(1)
 EndCutSceneMode()
-SetGlobal("RTImpHere","AR3100",5)
+SetGlobal("RTImpHere","BG4200",5)
 END
 
 IF
-Global("RTImpHere","AR3100",5)
+Global("RTImpHere","BG4200",5)
 See(NearestEnemyOf(Myself))
 THEN
 RESPONSE #100

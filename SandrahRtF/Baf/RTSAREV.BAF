@@ -9,7 +9,7 @@ END
 
 IF
 OR(2)
-Global("RTSarAmb","ar6510",1)
+Global("RTSarAmb","BG2610",1)
 Global("SarevT","RTF120",1)
 See([PC])
 THEN

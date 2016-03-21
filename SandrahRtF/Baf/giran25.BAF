@@ -25,7 +25,7 @@ CombatCounter(0)
 !See([ENEMY])
 !AreaCheck("RTF068")
 OR(3)
-Global("RTGiranNash","ar6700",1)
+Global("RTGiranNash","BG3300",1)
 Global("GhotGir","LOCALS",1)
 Global("PellGir","LOCALS",1)
 THEN
@@ -75,12 +75,12 @@ SetGlobal("GhotGir","LOCALS",1)
 END
 
 IF
-Global("RTGiranNash","ar6700",0)
-AreaCheck("ar6700")
+Global("RTGiranNash","BG3300",0)
+AreaCheck("BG3300")
 InParty(Myself)
 THEN
 RESPONSE #100
-SetGlobal("RTGiranNash","ar6700",1)
+SetGlobal("RTGiranNash","BG3300",1)
 END
 
 IF

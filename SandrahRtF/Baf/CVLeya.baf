@@ -167,7 +167,7 @@ END
 
 IF
 Global("SanRTFPlot5","GLOBAL",7)
-AreaCheck("Ar6800")
+AreaCheck("BG2300")
 See(Player1)
 CombatCounter(0)
 Global("SanRompath","GLOBAL",1)

@@ -1,5 +1,5 @@
 IF
-Global("RTopen","ar3400",1)
+Global("RTopen","BG4500",1)
 !See([ENEMY])
 See("CVSandr")
 !StateCheck(Player1,CD_STATE_NOTVALID)
@@ -13,10 +13,10 @@ Dialogue([PC])
 END
 
 IF
-Global("RTopen","ar3400",2)
+Global("RTopen","BG4500",2)
 THEN
 RESPONSE #100
-SetGlobal("RTopen","ar3400",3)
+SetGlobal("RTopen","BG4500",3)
 MoveToPoint([2997.2001])
 Wait(2)
 DestroySelf()

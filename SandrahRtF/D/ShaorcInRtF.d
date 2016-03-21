@@ -46,7 +46,7 @@ END
 
 CHAIN
 IF~~THEN CVShauq InitRtF2
-~The trade route goes south from old Bear Clan Village where we once defeated our foes together. It crosses the newly built bridge and the high fields of the Hornswamp and goes down towards Waterdeep's ancient Sune temple.~
+~The trade route goes south from old Bear Clan Village where we once defeated our foe together. It crosses the newly built bridge and the high fields of the Hornswamp and goes down towards Waterdeep's ancient Sune temple.~
 ==CVSan25J~I know that old place, Shauhana. From there we can travel onwards to the Capitale from the north east.~
 ==CVShauq~I would be more than grateful if you could do that my friends.~
 =~There is another, a more personal wish from a caring mother, <CHARNAME>, if you care to listen.~

@@ -11,12 +11,12 @@ CHAIN
 IF~~THEN Desslo Trap2
 ~All the wisdom of Candlekeep will not help you today, fools that you are and fools that you stay.~
 DO~SetGlobal("RTCloakwood","GLOBAL",2) ClearAllActions() StartCutSceneMode() FadeTOColor([30.0],0)Wait(1)
-ActionOverride(Player1,LeaveAreaLUA("ar8403","",[213.168],0))
-ActionOverride(Player2,LeaveAreaLUA("ar8403","",[213.168],0))
-ActionOverride(Player3,LeaveAreaLUA("ar8403","",[213.168],0))
-ActionOverride(Player4,LeaveAreaLUA("ar8403","",[213.168],0))
-ActionOverride(Player5,LeaveAreaLUA("ar8403","",[213.168],0))
-ActionOverride(Player6,LeaveAreaLUA("ar8403","",[213.168],0))
+ActionOverride(Player1,LeaveAreaLUA("BG1603","",[213.168],0))
+ActionOverride(Player2,LeaveAreaLUA("BG1603","",[213.168],0))
+ActionOverride(Player3,LeaveAreaLUA("BG1603","",[213.168],0))
+ActionOverride(Player4,LeaveAreaLUA("BG1603","",[213.168],0))
+ActionOverride(Player5,LeaveAreaLUA("BG1603","",[213.168],0))
+ActionOverride(Player6,LeaveAreaLUA("BG1603","",[213.168],0))
 Wait(1)
 ApplySpellRES("CVSLEEP",Player2)
 ApplySpellRES("CVSLEEP",Player3)

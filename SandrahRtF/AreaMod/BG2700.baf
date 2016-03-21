@@ -1,0 +1,23 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("NoGrave","BG2700",1)
+THEN
+RESPONSE #100
+SetGlobal("NoGrave","BG2700",2)
+AmbientActivate("Gorgrave",TRUE)
+ActionOverride("gorion",DestroySelf())
+ActionOverride("desslo",DestroySelf())
+AddMapNote([3144.1374],@2026)
+Continue()
+END
+
+IF
+Global("NoGrave","BG2700",2)
+Global("RTCloakwood","GLOBAL",0)
+!InMyArea("Desslo")
+Global("SanRTFPlot1","Global",8)
+THEN
+RESPONSE #100
+CreateCreature("Desslo",[1314.3346],0)
+SetGlobal("RTCloakwood","GLOBAL",1)
+END

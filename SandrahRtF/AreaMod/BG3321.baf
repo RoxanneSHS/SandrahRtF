@@ -1,0 +1,10 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("IzzyHere","BG3321",0)
+THEN
+RESPONSE #100
+SetGlobal("IzzyHere","BG3321",1)
+CreateCreature("RTFImo",[480.368],10)
+CreateCreature("CVHenni",[393.478],13)
+END
+

@@ -1,0 +1,10 @@
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+!Dead("K#Sarah")
+Global("K#SarahHere","BG0401",0)
+THEN
+RESPONSE #100
+CreateCreature("K#SARAH1",[464.307],4)
+SetGlobal("K#SarahHere","BG0401",1)
+END
+

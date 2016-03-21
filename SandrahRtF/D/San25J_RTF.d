@@ -146,8 +146,8 @@ END
 
 IF~~THEN BEGIN IzreplImo
 SAY~Imoen and Henning run the Orphanages of Beregost and Waterdeep with Henning overseeing his trade posts all over the Sword Coast. Imoen is also member of Beregost's Town council. We will find her in their mansion in Beregost~
-IF~~THEN REPLY~ I can't imagine an adventure without the constant remarks from my *little sister*, haha.~DO~RevealAreaOnMap("ar6700")~EXIT
-IF~~THEN REPLY~ Beregost is on the list - anyone else you can propose?~DO~RevealAreaOnMap("ar6700")~GOTO RTFSearchfr2
+IF~~THEN REPLY~ I can't imagine an adventure without the constant remarks from my *little sister*, haha.~DO~RevealAreaOnMap("BG3300")~EXIT
+IF~~THEN REPLY~ Beregost is on the list - anyone else you can propose?~DO~RevealAreaOnMap("BG3300")~GOTO RTFSearchfr2
 END
 
 IF~~THEN BEGIN Yasonly
@@ -762,7 +762,7 @@ SAY~The Lord of the Forsaken crypt, he is called, others say *The Vaunted*. I th
 IF~~THEN REPLY~*You know your beloved well enough not to question her further has her gaze has become absent minded searching her memories and lore for clues and answers.*~EXIT
 END
 
-IF~Global("YourTurf","ar6508",1)~THEN BEGIN SeekBook1
+IF~Global("YourTurf","BG2608",1)~THEN BEGIN SeekBook1
 SAY~So here we are at your terrain, <CHARNAME>. Have you ever seen Cerameon's journal in your days here?~
 IF~~THEN REPLY~I can't recall it.~GOTO SeekBook2
 END
@@ -774,14 +774,14 @@ END
 
 IF~~THEN BEGIN SeekBook3
 SAY~Do you have an idea where the book might be kept?~
-IF~~THEN REPLY~We best ask one of the monks responsible for the level coordination in the library above, they would know.~DO~SetGlobal("YourTurf","ar6508",2)~ EXIT
-IF~~THEN REPLY~The rarer and more valuable a tome is, the higher up in the library it is kept, the most important are up on Ulraunt's level at the top.~DO~SetGlobal("YourTurf","ar6508",2)~EXIT
-IF~~THEN REPLY~I have no idea, we just must search thoroughly.~DO~SetGlobal("YourTurf","ar6508",2)~EXIT
+IF~~THEN REPLY~We best ask one of the monks responsible for the level coordination in the library above, they would know.~DO~SetGlobal("YourTurf","BG2608",2)~ EXIT
+IF~~THEN REPLY~The rarer and more valuable a tome is, the higher up in the library it is kept, the most important are up on Ulraunt's level at the top.~DO~SetGlobal("YourTurf","BG2608",2)~EXIT
+IF~~THEN REPLY~I have no idea, we just must search thoroughly.~DO~SetGlobal("YourTurf","BG2608",2)~EXIT
 END
 
-IF~Global("RTSarAmb","ar6510",7)~THEN BEGIN Sarfool1
+IF~Global("RTSarAmb","BG2610",7)~THEN BEGIN Sarfool1
 SAY~The laughing skull laughs once again over the the death of another fool.~
-IF~~THEN REPLY~Will this really be the last we ever see of my *brother*?~DO~SetGlobal("RTSarAmb","ar6510",8)~GOTO Sarfool2
+IF~~THEN REPLY~Will this really be the last we ever see of my *brother*?~DO~SetGlobal("RTSarAmb","BG2610",8)~GOTO Sarfool2
 END
 
 IF~~THEN BEGIN Sarfool2
@@ -1246,9 +1246,9 @@ END
 ++~They need to preserve those fingers and hair and so on from decay until it's time to make a clone out of it.~EXIT
 
 CHAIN
-IF~Global("RTImpHere","AR3100",2)~THEN CVSan25J SeeTalanImp
+IF~Global("RTImpHere","BG4200",2)~THEN CVSan25J SeeTalanImp
 ~An imp?~
-DO~SetGlobal("RTImpHere","AR3100",3)~
+DO~SetGlobal("RTImpHere","BG4200",3)~
 ==RTMeli IF ~InParty("RTMeli")~THEN~He carries an item I once saw in Thalantyr's laboratory.~
 ==CVGir25J IF~InParty("CVGiran")~THEN~ A ranger's eye clearly detects an item he carries, looks like a mirror.~
 ==CVIzy25J IF~InParty("CVIzzy")~THEN~Trust a most talented mage, that's something magical the little beast carries.~
@@ -1259,9 +1259,9 @@ END
 ++~Quick now, Thalantyr waits for us.~EXIT
 
 CHAIN
-IF~Global("RTyuHere","AR9600",1)~ THEN CVSan25J Juans
+IF~Global("RTyuHere","BG3700",1)~ THEN CVSan25J Juans
 ~Yes?~
-DO~SetGlobal("RTyuHere","AR9600",2)~
+DO~SetGlobal("RTyuHere","BG3700",2)~
 ==RTMeli IF~InParty("RTMeli")~ THEN~ Ehem...we...we should be very careful in this area.~
 ==CVGir25J IF~InParty("CVGiran")!InParty("RTMeli")~ THEN~ We should be very careful in this area.~
 ==CVIzy25J IF~InParty("CVizzy") ~ THEN~Yeah, one can easily be changed into a talking chicken 'round here, right?~

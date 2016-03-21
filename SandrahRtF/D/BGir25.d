@@ -24,9 +24,9 @@ DO~ SetGlobal("GhotGir","LOCALS",2)~
 ==BGir25~Recent events have shown that such a peace is something we can never take for granted. We must even be willing to fight to maintain it.~EXIT
 
 CHAIN
-IF~Global("RTGiranNash","ar6700",1) ~THEN BGir25 Nashrev
+IF~Global("RTGiranNash","BG3300",1) ~THEN BGir25 Nashrev
 ~Old Beregost, it looks like nothing ever changes in these sleepy streets and dormant houses.~
-DO~SetGlobal("RTGiranNash","ar6700",2)~
+DO~SetGlobal("RTGiranNash","BG3300",2)~
 ==BSandr25~The little boy who left here long ago has definitely changed.~
 ==BGir25~Faerun has been through turmoil before and is facing it again but Nashkel and Beregost and their people just remain the villagers they've always been, it seems to me.~
 ==BSandr25~<CHARNAME> and me were roughly your age when we faced this village for the first time. It is hard to believe what we have been through since that day.~

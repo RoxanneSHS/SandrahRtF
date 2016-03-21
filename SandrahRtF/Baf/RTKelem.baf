@@ -36,7 +36,6 @@ RESPONSE #100
 SetGlobalTimer("RANG","LOCALS",THREE_ROUNDS)
 SetGlobalTimer("DemTel","LOCALS",THREE_ROUNDS)
 ActionOverride(LastSeenBy(Myself),ClearActions(Myself))
-ReallyForceSpell(LastSeenBy(Myself),DEMON_ATTRACTION)
 AttackReevaluate(LastSeenBy(Myself),180)
 SetGlobal("Velshen","LOCALS",1)
 END
@@ -54,13 +53,10 @@ SetGlobal("BENEMYHASER","LOCALS",0)
 SetGlobalTimer("RANG","LOCALS",9)
 SetGlobalTimer("DemTel","LOCALS",9)
 ActionOverride(LastSeenBy(Myself),ClearActions(Myself))
-ReallyForceSpell(LastSeenBy(Myself),DEMON_ATTRACTION)
 AttackOneRound(LastSeenBy(Myself))
 RESPONSE #20
 SetGlobal("BENEMYHASER","LOCALS",0)
-ReallyForceSpell(Myself,TELEKINESIS)
 SetGlobal("BP_BehTel","LOCALS",1)
-ChangeSpecifics(Myself,CALLED_FOR_BOULDER)
 FaceObject(LastSeenBy(Myself))
 END
 
@@ -118,8 +114,6 @@ THEN
 		AttackOneRound(LastSeenBy(Myself))
 	RESPONSE #65
 		SetGlobalTimer("BENEMYHASE","LOCALS",TWO_ROUNDS)
-		ReallyForceSpell(LastSeenBy(Myself),DEMON_ATTRACTION)
-		Wait(1)
 		ReallyForceSpell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_STUN)
 		Wait(1)
 		ReallyForceSpell(TenthNearest,WIZARD_DIMENSION_DOOR)
@@ -192,20 +186,10 @@ THEN
 END
 
 IF
-	Global("BP_BehTel","LOCALS",0)
-	See(NearestEnemyOf(Myself))
-THEN
-	RESPONSE #100
-		ForceSpell(Myself,TELEKINESIS)
-		SetGlobal("BP_BehTel","LOCALS",1)
-END
-
-IF
 	Range(NearestEnemyOf(Myself),2)
 THEN
 	RESPONSE #80
 		RunAwayFrom(NearestEnemyOf(Myself),4)
-		ReallyForceSpell(NearestEnemyOf(Myself),DEMON_REPULSION)
 	RESPONSE #20
 		Continue()
 END
@@ -233,10 +217,8 @@ THEN
 	RESPONSE #90
 		SetGlobalTimer("DemTel","LOCALS",THREE_ROUNDS)
 		ActionOverride(LastSeenBy(Myself),ClearActions(Myself))
-		ReallyForceSpell(LastSeenBy(Myself),DEMON_ATTRACTION)
 		AttackReevaluate(LastSeenBy(Myself),180)
 	RESPONSE #40
-		ChangeSpecifics(Myself,CALLED_FOR_BOULDER)
 		FaceObject(LastSeenBy(Myself))
 END
 
@@ -255,10 +237,8 @@ THEN
 		SetGlobalTimer("RANG","LOCALS",THREE_ROUNDS)
 		SetGlobalTimer("DemTel","LOCALS",THREE_ROUNDS)
 		ActionOverride(LastSeenBy(Myself),ClearActions(Myself))
-		ReallyForceSpell(LastSeenBy(Myself),DEMON_ATTRACTION)
 		AttackReevaluate(LastSeenBy(Myself),180)
 	RESPONSE #50
-		ChangeSpecifics(Myself,CALLED_FOR_BOULDER)
 		FaceObject(LastSeenBy(Myself))
 	RESPONSE #20
 		SetGlobalTimer("RANG","LOCALS",ONE_ROUND)
@@ -289,9 +269,8 @@ IF
 		See([0.0.0.0.0.0.LAWFUL_GOOD])
 		See([0.0.0.PALADIN_ALL])
 	RandomNumLT(27,22)
-	OR(3)
+	OR(2)
 		See([ENEMY.0.0.0.0.SUMMONED])
-		See([ENEMY.0.0.0.SIMULACRUM])
 		See([ENEMY.0.0.0.0.ILLUSIONARY])
 	RandomNumLT(29,24)
 	OR(10)

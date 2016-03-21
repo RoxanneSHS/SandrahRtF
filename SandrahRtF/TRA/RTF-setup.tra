@@ -1,5 +1,5 @@
 //RTF
-@002 = ~BGT required for installation!~
+@002 = ~EET required for installation!~
 @003 = ~The complete Sandrah mod must be installed before the extension can be installed.~
 @004 = ~Failed installation check - BGT and the complete Sandrah mod must be installed before the extension can be installed.~
 
@@ -578,3 +578,5 @@ Meanwhile Saemon arranges with the Council of Amn to restore peace on the island
 @2039= ~Velsharoon's Staff~
 @2040= ~Velsharoon's Cloak~
 @2041= ~Velemir Rielev~
+@2042 =~Mystra's Elemental~
+@2043 =~Salamander King~

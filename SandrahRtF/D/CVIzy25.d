@@ -20,10 +20,10 @@ IF~~THEN CVIzy25 FirstSaw2
 ==CVSan25J ~You sound like you prepare yourself for the adventurer's life like you dreamed  already as a child. A mage and lock-picker like any party would need one.~
 ==CVIzy25~That's me!! Fit and ready to go - - but, my, where's my hospitality...you must and must come upstairs with me to see mom and dad. AND don't forget to mention that you are here to seek for companions for your next great adventure...like the besta spellcaster and thief within three days up and down the Sword Coast. Come, slowpokes...~
 END
-++~If that is not our old Imoen mirrored, I don't know .(Laugh and follow her.)~ DO~ClearAllActions() EscapeAreaMove("ar6721",552,407,7)~EXIT
+++~If that is not our old Imoen mirrored, I don't know .(Laugh and follow her.)~ DO~ClearAllActions() EscapeAreaMove("BG3321",552,407,7)~EXIT
 
 CHAIN
-IF~AreaCheck("ar6721")~THEN CVIzy25 GoWith
+IF~AreaCheck("BG3321")~THEN CVIzy25 GoWith
 ~Look, mama, papa, there they are jus' like I told 'n' you wont believe none!~
 ==RTFImo~Really, OH, <CHARNAME>, what a surprise...how are you...how's my besta friend...how's such life as a god...why are you here...????~
 ==Henning2~Oh, Imoen, will you not give our guests a chance to answer at least one of your questions.~

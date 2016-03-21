@@ -2,7 +2,7 @@ IF
 OR(3)
 AreaCheck("rtf010")
 AreaCheck("ar5500")
-AreaCheck("ar6800")
+AreaCheck("BG2300")
 !See([PC])
 Global("RTMeliQuest","GLOBAL",1)
 THEN

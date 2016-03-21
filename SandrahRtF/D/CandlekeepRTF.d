@@ -87,9 +87,9 @@ END
 BEGIN RTSarev
 
 CHAIN
-IF~Global("RTSarAmb","ar6510",1)~THEN RTSarev NewBoss
+IF~Global("RTSarAmb","BG2610",1)~THEN RTSarev NewBoss
 ~My new master will be delighted to learn of your death, my foolish, foolish old friends.~
-DO~SetGlobal("RTSarAmb","ar6510",2)RealSetGlobalTimer("RTAmb","ar6510",30)~
+DO~SetGlobal("RTSarAmb","BG2610",2)RealSetGlobalTimer("RTAmb","BG2610",30)~
 ==CVSan25J~What did this master promise you to make you pick up your weapon once again to fight <CHARNAME> - and me?~
 ==RTSarev~The power and the eternal life that Bhaal had promised but forsaken me, the heritage that has truely be mine all the time.~
 ==CVSan25J~Eternal life? Hm, there may be a price your new master requires for that. Did you take a close look at him to see what that means?~

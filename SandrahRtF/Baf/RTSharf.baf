@@ -3,6 +3,5 @@ Allegiance(Myself,NEUTRAL)
 Dead("RTSharm1")
 THEN
 RESPONSE #100
-Shout(ATTACK1)
 Enemy()
 END

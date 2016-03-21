@@ -1,0 +1,18 @@
+IF
+Global("SanRTFPlot1","GLOBAL",8)
+!PartyHasItem("RTCera")
+Global("YourTurf","BG2608",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("YourTurf","BG2608",1)
+END
+
+IF
+Global("YourTurf","BG2608",2)
+PartyHasItem("RTVelsym")
+Global("SanRTFPlot1","GLOBAL",8)
+THEN
+RESPONSE #100
+SetGlobal("SanRTFPlot1","GLOBAL",9)
+END

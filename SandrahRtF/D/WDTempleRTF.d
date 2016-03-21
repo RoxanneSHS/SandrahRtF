@@ -16,7 +16,7 @@ IF WEIGHT #-2 ~GlobalGT("SanBeginRTF","GLOBAL",1)!InParty("CVSandr")~THEN CVRing
 EXIT
 
 CHAIN
-IF~GlobalGT("SanBeginRTF","GLOBAL",1) Global("GreetRTF","LOCALS",0)~THEN CVRingo RTF1
+IF WEIGHT #-5~GlobalGT("SanBeginRTF","GLOBAL",1) Global("GreetRTF","LOCALS",0)~THEN CVRingo RTF1
 ~My sweet child...ah, yes, I cannot but address you otherwise, my Goddess...~
 DO~ SetGlobal("GreetRTF","LOCALS",1)~
 ==CVSAn25J~You cannot and you shall not, my mentor and teacher! Especially not as me and <CHARNAME> once again roam the Realms in our mortal avatars.~
@@ -115,12 +115,12 @@ SAY~Aye, that can be arranged, 1000GP it costs.~
 IF~~THEN DO~StartCutSceneMode()
 Wait(4)
 FadeToColor([30.0],0)
-ActionOverride(Player1,LeaveAreaLUA("AR8100","",[2089.1995],4))
-ActionOverride(Player2,LeaveAreaLUA("AR8100","",[2089.1995],7))
-ActionOverride(Player3,LeaveAreaLUA("AR8100","",[2089.1995],11))
-ActionOverride(Player4,LeaveAreaLUA("AR8100","",[2089.1995],0))
-ActionOverride(Player5,LeaveAreaLUA("AR8100","",[2089.1995],8))
-ActionOverride(Player6,LeaveAreaLUA("AR8100","",[2089.1995],5))
+ActionOverride(Player1,LeaveAreaLUA("BG1200","",[2089.1995],4))
+ActionOverride(Player2,LeaveAreaLUA("BG1200","",[2089.1995],7))
+ActionOverride(Player3,LeaveAreaLUA("BG1200","",[2089.1995],11))
+ActionOverride(Player4,LeaveAreaLUA("BG1200","",[2089.1995],0))
+ActionOverride(Player5,LeaveAreaLUA("BG1200","",[2089.1995],8))
+ActionOverride(Player6,LeaveAreaLUA("BG1200","",[2089.1995],5))
 DayNight(MIDNIGHT)
 DayNight(NOON)
 DayNight(MIDNIGHT)

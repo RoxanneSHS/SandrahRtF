@@ -30,8 +30,8 @@ Global("RTFoundIce","GLOBAL",1)
 Global("RTFoundIce","GLOBAL",3)
 Global("VelshAmb","ar10pb",2)
 Global("RTMons1","RTF040",1)
-Global("YourTurf","ar6508",1)
-Global("RTSarAmb","ar6510",7)
+Global("YourTurf","BG2608",1)
+Global("RTSarAmb","BG2610",7)
 Global("OpenSeal","RTF045",2)
 Global("AmbSeal","RTF046",2)
 Global("AskedcandV","LOCALS",1)
@@ -62,8 +62,8 @@ IF
 OR(7)
 Global("Duerg","RTF003",2)
 Global("Key2","RTF080",2)
-Global("RTImpHere","AR3100",2)
-Global("RTyuHere","AR9600",1)
+Global("RTImpHere","BG4200",2)
+Global("RTyuHere","BG3700",1)
 Global("RTGotempl","ar0300",1)
 Global("SanAskWind","ar0602",1)
 Global("CyricNear","RTF049",1)
@@ -185,12 +185,12 @@ SetGlobal("SanRTFColl","GLOBAL",3)
 END
 
 IF
-AreaCheck("ar3100")
-Global("RTImpHere","AR3100",1)
+AreaCheck("BG4200")
+Global("RTImpHere","BG4200",1)
 See("RTImpT")
 THEN
 RESPONSE #100
-SetGlobal("RTImpHere","AR3100",2)
+SetGlobal("RTImpHere","BG4200",2)
 END
 
 IF
@@ -259,7 +259,7 @@ END
 IF
 Global("SanRTFPlot1","GLOBAL",8)
 Global("AskedcandV","LOCALS",0)
-AreaCheck("ar6600")
+AreaCheck("BG2700")
 THEN
 RESPONSE #100
 SetGlobal("AskedcandV","LOCALS",1)
@@ -269,7 +269,7 @@ IF
 Global("SanRTFPlot1","GLOBAL",8)
 PartyHasItem("RTVelsym")
 PartyHasItem("RTCera")
-!AreaCheck("ar6510")
+!AreaCheck("BG2610")
 !AreaCheck("RTF018")
 Global("RTGoRaven","LOCALS",0)
 THEN
@@ -400,28 +400,28 @@ IF
 Global("RTMoveGnoll","GLOBAL",1)
 GlobalLT("SanRTFPlot5","GLOBAL",7)
 !AreaCheck("RTF123")
-!AreaCheck("Ar4100")
+!AreaCheck("BG5100")
 THEN
 RESPONSE #100
 SetGlobal("RTMoveGnoll","GLOBAL",0)
 END
 
 IF
-AreaCheck("AR6800")
-Global("RTPellSol","ar6800",1)
+AreaCheck("BG2300")
+Global("RTPellSol","BG2300",1)
 See("Solar")
 THEN
 RESPONSE #100
-SetGlobal("RTPellSol","ar6800",2)
+SetGlobal("RTPellSol","BG2300",2)
 END
 
 IF
 Global("RTBackInUD","GLOBAL",1)
 AreaCheck("RTF072")
 OR(3)
-See("udslv01")
+See("dadrow14")
 See("RTImrae")
-See("cbdrift2")
+See("udspid01")
 CombatCounter(0)
 THEN
 RESPONSE #100

@@ -16,7 +16,7 @@ END
 
 CHAIN
 IF~~THEN RTMeliP GoMH
-~I will travel to the High Hedge now.~DO~ SetGlobal("MeliJoin","LOCALS",0) LeaveParty() EscapeAreaMove("AR7102",180,329,0)~
+~I will travel to the High Hedge now.~DO~ SetGlobal("MeliJoin","LOCALS",0) LeaveParty() EscapeAreaMove("BG3202",180,329,0)~
 EXIT
 
 CHAIN
@@ -40,7 +40,7 @@ END
 CHAIN
 IF~~THEN CVIzy25P GoIR
 ~See ya.~
-DO~SetGlobal("RTFIzyJoin","GLOBAL",0) LeaveParty() EscapeAreaMove("AR6720",466,341,0)~ EXIT
+DO~SetGlobal("RTFIzyJoin","GLOBAL",0) LeaveParty() EscapeAreaMove("BG3320",466,341,0)~ EXIT
 
 CHAIN
 IF~Global("RTFIzyJoin","GLOBAL",0)~THEN CVIzy25P RejoinI

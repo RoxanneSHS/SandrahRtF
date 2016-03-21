@@ -19,11 +19,11 @@ END
 
 IF
 OR(2)
-AreaCheck("ar7102")
-AreaCheck("ar3702")
+AreaCheck("BG3202")
+AreaCheck("BG4802")
 OR(2)
-Global("RThintNash","ar7102",1)
-Global("Thamove","ar3702",1)
+Global("RThintNash","BG3202",1)
+Global("Thamove","BG4802",1)
 See("Thalantyr")
 THEN
 RESPONSE #100
@@ -70,7 +70,7 @@ StartDialogueNoSet([PC])
 END
 
 IF
-Global("Thamove","ar3702",2)
+Global("Thamove","BG4802",2)
 Global("PelItem1","LOCALS",0)
 THEN
 RESPONSE #100
@@ -79,29 +79,29 @@ END
 
 IF
 Global("PelItem1","LOCALS",1)
-AreaCheck("ar3700")
-Global("RTPriQ","ar3700",0)
+AreaCheck("BG4800")
+Global("RTPriQ","BG4800",0)
 THEN
 RESPONSE #100
-SetGlobal("RTPriQ","ar3700",1)
+SetGlobal("RTPriQ","BG4800",1)
 END
 
 IF
 Global("PelItem1","LOCALS",1)
-AreaCheck("ar7101")
-Global("RTItem","ar7101",0)
+AreaCheck("BG3201")
+Global("RTItem","BG3201",0)
 THEN
 RESPONSE #100
-SetGlobal("RTItem","ar7101",1)
+SetGlobal("RTItem","BG3201",1)
 END
 
 IF
 Global("PelItem1","LOCALS",2)
-AreaCheck("ar7100")
-Global("RTHunt","ar7100",0)
+AreaCheck("BG3200")
+Global("RTHunt","BG3200",0)
 THEN
 RESPONSE #100
-SetGlobal("RTHunt","ar7100",1)
+SetGlobal("RTHunt","BG3200",1)
 END
 
 IF

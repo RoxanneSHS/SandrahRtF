@@ -1,0 +1,10 @@
+IF
+Global("SanRTFPlot4","GLOBAL",5)
+Global("RTPriQ","BG4800",1)
+THEN 
+RESPONSE #100
+CreateCreature("RTSPta1",[2349.1290],13)
+CreateCreature("RTSPeil1",[2365.1442],5)
+SetGlobal("RTPriQ","BG4800",2)
+END
+

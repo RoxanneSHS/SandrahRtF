@@ -1,0 +1,10 @@
+IF
+GlobalGT("SanRTFPlot4","GLOBAL",1)
+Global("RTopen","BG4500",0)
+THEN
+RESPONSE #100
+SetGlobal("RTopen","BG4500",1)
+CreateCreature("sankab3",[2498.1382],5)
+END
+
+
