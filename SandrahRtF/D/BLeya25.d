@@ -30,7 +30,7 @@ DO~SetGlobal("RTLeybant","GLOBAL",2)~
 ==BSandr25~ *Sandrah observes the nun's exercise with similar admiration.*~
 ==BLeya25~ Aah, I feel a lot better now with my brain and body refreshed.~
 ==BSandr25~I hope I have not disturbed your concentration, Leyala.~
-==BLeya25~I have noticed your presence but it only added to the value of my eyercise. After all this is a preparation for combat and defence and my foes would do anything to distract me from my attack actions.~
+==BLeya25~I have noticed your presence but it only added to the value of my eyercise. After all this is a preparation for combat and defence and my foe would do anything to distract me from my attack actions.~
 ==BSandr25~It always fascinates me how you monks have this complete control of your body and make it an effective weapon at will.~
 ==BLeya25~(Laughs) Your own behaviour in combat is not so much different according to my observations. Even with your hammer, shield, and armour you are not one to rely on power and melee but on your fast eye and coordinated movements.~
 ==BSandr25~I heard such analysis of my fighting style before and admit it is true. When I discovered that a war hammer is my ultimate weapon I learned as well how I needed to develop a different style from a normal fighter to handle it as I could never rely on strength alone.~

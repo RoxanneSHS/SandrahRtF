@@ -43,7 +43,7 @@ IF~AreaCheck("BG3321")~THEN CVIzy25 GoWith
 ==CVIzy25~It's agreed then, yes and yes, isn't it? Say yes, yes and yes, <CHARNAME>!~
 END
 ++~Yes, yes, and yes.~+Gowith2
-++~No, no, and no. You are too young and like your father said, we will surely be target for the utmost foes of the Realms.~+Gowith3
+++~No, no, and no. You are too young and like your father said, we will surely be target for the utmost foe of the Realms.~+Gowith3
 
 CHAIN
 IF~~THEN CVIzy25 Gowith2

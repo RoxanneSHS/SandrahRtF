@@ -9,8 +9,11 @@ IF
 Global("MaThor","RTF025",0)
 THEN
 RESPONSE #100
-CreateCreature("MATHOREN",[723.403],0)
 SetGlobal("MaThor","RTF025",1)
+CreateCreature("MATHOREN",[723.403],0)
+Wait(1)
+ActionOverride("thorengrim",SetNumTimesTalkedTo(1))
+ActionOverride("jopi",SetNumTimesTalkedTo(1))
 END
 
 IF

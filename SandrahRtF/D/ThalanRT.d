@@ -12,7 +12,7 @@ DO~SetGlobal("RtFThal","LOCALS",1) ~
 ==Thalan IF ~Global("SanRompath","GLOBAL",1)~THEN~Talos dares to stand up against you and the God of Love and Hope?~
 ==Thalan IF ~Global("SanRompath","GLOBAL",2)~THEN~Talos dares to stand up against you and the Goddess of Love and Hope?~
 ==CVSan25J~Obviously he is one of those involved but he is surely not alone.~
-=~While we are back in our mortal avatars our godly powers are reduced significantly. We have found a number of strange machinations of our foes up in the Stormhorns but I have need for your skills to analyse the samples with me.~
+=~While we are back in our mortal avatars our godly powers are reduced significantly. We have found a number of strange machinations of our foe up in the Stormhorns but I have need for your skills to analyse the samples with me.~
 ==Thalan IF~InParty("RTMeli")~THEN~(Laughs) I can imagine that the Permanent Apprentice is no big help on the case.~
 ==RTMeli IF~InParty("RTMeli")~THEN~I have improved quite some, Master Thalantyr, but even Sandrah cannot do the studies we need your help for without the aid of some laboratory like yours.~
 ==CVSan25J IF~InParty("RTMeli")~THEN~ Dealing with magic means constant learning for all of us.~
@@ -85,7 +85,7 @@ IF~~THEN Thalan RTF5
 ==Thalan~As long as you have no trace of the Collector you may want to investigate with Irenicus. Even if he should not be involved directly he may at least know those who deal with such technology and knowledge.~
 ==CVSan25J~He may even know the Collector - someone must once have supplied him for his own experiments.~
 END
-++~Thank you for your help, Thalantyr. You should be once again save here.~ DO~EraseJournalEntry(@1730)~EXIT
+++~Thank you for your help, Thalantyr. You should be once again save here.~ DO~EraseJournalEntry(@1730) AddJournalEntry(@2044,QUEST)~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("RTMeliQuest","GLOBAL",1)~THEN Thalan Melq1

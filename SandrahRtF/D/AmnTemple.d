@@ -8,13 +8,13 @@ IF~~THEN REPLY~Prelate Keldorn - Sir Ajantis...time has moved on and so have peo
 END
 END
 
-APPEND C#Ajan
+BEGIN RTAjan
 
-IF WEIGHT #-17~Global("RTClean","ar0903",1)~THEN BEGIN News2
+IF ~Global("RTClean","ar0903",1)~THEN BEGIN News2
 SAY~It's been a long time but you have returned to Amn. I am deputy of Prelate Keldorn at the moment, can I do anything for you?~
 IF~GlobalGT("RTFSharInfo","GLOBAL",1)~THEN REPLY~We met your prelate at Waterdeep already. We assist him and Shar-Teel in the current problems.~ DO~SetGlobal("RTClean","ar0903",2)~GOTO News4
 IF~~THEN REPLY~ We are again on a crusade against evil, Ajantis. Would you like joining us?~DO~SetGlobal("RTClean","ar0903",2)~GOTO News3
-IF~~THEN REPLY~Something is going on in the Realms and we are here to investigate it.~ DO~SetGlobal("RTClean","ar0903",2)~GOTO News5
+IF~~THEN REPLY~Something is going on in the Realms and we are here to investigate it.~ GOTO News5
 END
 
 IF~~THEN BEGIN News3
@@ -32,10 +32,9 @@ SAY~That is good to hear, friends, it may be the same issue that has called our 
 IF~~THEN EXIT
 END
 
-IF WEIGHT #-17~Global("RTClean","ar0903",2)~THEN BEGIN News6
+IF ~Global("RTClean","ar0903",2)~THEN BEGIN News6
 SAY~I hope you make progress with your quest.~
 IF~~THEN REPLY~ We are again on a crusade against evil, Ajantis. Would you like joining us again?~GOTO News3
-IF~~THEN REPLY~ Thanks for asking, goodbye.~EXIT
-IF~~THEN REPLY~ Useless tinhead.~EXIT
-END
+IF~~THEN REPLY~ Thanks for asking, goodbye.~DO~SetGlobal("RTClean","ar0903",2)~ EXIT
+IF~~THEN REPLY~ Useless tinhead.~DO~SetGlobal("RTClean","ar0903",2)~EXIT
 END

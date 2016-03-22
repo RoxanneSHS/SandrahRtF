@@ -13,7 +13,7 @@ END
 
 IF~~THEN BEGIN RTDead3
 SAY~Your reaction and action was a big part of that plan as well, beloved. YOU had to believe it in order for all others to swallow the bait.~
-IF~~THEN REPLY~But the Weave? It is in the hand of our foes still!~ GOTO RTDead4
+IF~~THEN REPLY~But the Weave? It is in the hand of our foe still!~ GOTO RTDead4
 END
 
 IF~~THEN BEGIN RTDead4
@@ -50,7 +50,7 @@ IF~Global("SanRTFPlot1","GLOBAL",4) Global("RTFIren","GLOBAL",0)~THEN REPLY~How 
 IF~Global("SanRTFColl","GLOBAL",1) Global("Sanfence","LOCALS",0)~THEN REPLY~Where should we start our search for the Collector now, what do you think? ~GOTO FencHint2
 IF~Global("RTFoundIce","GLOBAL",8)~THEN REPLY~Tell me about that Summer Camp and how we can go there, counselor.~GOTO SumCamp1
 IF~GlobalGT("SanRTFPlot1","GLOBAL",8) Global("RTTethRoad","LOCALS",0)~THEN REPLY~Amkethran is quite a journey away without your parcel's aid. Can you suggest something?~DO~SetGlobal("RTTethRoad","LOCALS",1)~GOTO TethRoa
-IF~Global("SanRTFPlot1","GLOBAL",9) Global("RTFWhy1","GLOBAL",0)~THEN REPLY~So, my beloved counselor, who do you think our foes are really targetting - you or me?~ GOTO RTFTargt1
+IF~Global("SanRTFPlot1","GLOBAL",9) Global("RTFWhy1","GLOBAL",0)~THEN REPLY~So, my beloved counselor, who do you think our foe are really targetting - you or me?~ GOTO RTFTargt1
 IF~GlobalGT("SanRTFPlot2","GLOBAL",4) Global("RTFWhy1","GLOBAL",1)~THEN REPLY~ Some time ago you mentioned Karsus, the mighty sorcerer who challenged the ancient Mystril.~GOTO Kars1
 IF~Global("SanRTFPlot2","GLOBAL",4) Global("RoadMorn","LOCALS",0)~THEN REPLY~Any idea how we can best travel to Mornbryn's Shield?~ GOTO MornTrav1
 IF~Global("SanRTFPlot1","GLOBAL",6)~THEN REPLY~What about the graveyards of Waterdeep?~GOTO WDGravey1
@@ -358,9 +358,9 @@ IF~~THEN BEGIN  RTIren6
 SAY~My parcel could take us but I recommend to use it with utmost care this time. Travelling through the intra-plane always leaves our signature that can be traced. You know we face opponents this time that have the godly abilities to see those traces like a ranger sees an animal's trail.~
 =~We have the option to return to Waterdeep and go through the passage once more to Nib's skyship. He can get us to the town with less attention drawn to us.~
 =~We can also find transportation with the harbourmaster in Waterdeep, for a price of course.~
-=~The most secretive way would be to traverse the old orc caves below the Hornswamp to get to Athkatla's gate like on our first travel with Shauhana so long ago.~
+=~The most secretive way would be to travel the roads in the old fashioned way.~
 IF~~THEN REPLY~I would say we use our feet and take the chance to see how the Realms have developped since we last travelled them together.~EXIT
-IF~~THEN REPLY~I would risk the magic despite your warning - we can thus act quicker than our foes may expect us.~EXIT
+IF~~THEN REPLY~I would risk the magic despite your warning - we can thus act quicker than our foe may expect us.~EXIT
 IF~~THEN REPLY~What would be your preference, my counselor?~GOTO RTIren7
 END
 
@@ -479,7 +479,7 @@ IF~~THEN GOTO AfterSam2
 END
 
 IF~~THEN BEGIN  AfterSam2
-SAY~We may not even want to face our foes directly at the moment nor do I think it is wise to enter the Citadel, even if we could.~
+SAY~We may not even want to face our foe directly at the moment nor do I think it is wise to enter the Citadel, even if we could.~
 IF~~THEN REPLY~What do you propose instead?~ GOTO AfterSam3
 END
 
@@ -669,7 +669,7 @@ IF~~THEN REPLY~It's a trap to get us down to the Prime where we are vulnerable. 
 END
 
 IF~~THEN BEGIN WhySent3
-SAY~Hm, our foes are as vulnerable here as we are. And never forget - we are at home and we have a lot of friends and allies among the mortals.~
+SAY~Hm, our foe are as vulnerable here as we are. And never forget - we are at home and we have a lot of friends and allies among the mortals.~
 =~We will know more once we have analysed the samples I took from the dead on the Hornswamp and this strange liquid we found. The glass tubes in the secret laboratory have given me a hint but I want to confirm it with Thalantyr urgently.~
 IF~~THEN DO~SetGlobal("RtFReasonSent","LOCALS",2) AddJournalEntry(@1730,QUEST) EraseJournalEntry(@1721)~EXIT
 END
@@ -749,7 +749,7 @@ IF~~THEN BEGIN Velsh2
 SAY~We saw a crowned laughing skull not so long ago.~
 IF~~THEN REPLY~On those banners in the snake room below the Collector's hideout - what does it mean?~GOTO Velsh3
 IF~~THEN REPLY~A crowned laughing lich skull on a black hexagon - it was in a book I once studied in Candlekeep - if I can only remember the context...~  GOTO Velsh3
-IF~~THEN REPLY~A new face...eh, not really a face actually...a new player or the ally of one of our foes?~ GOTO Velsh3
+IF~~THEN REPLY~A new face...eh, not really a face actually...a new player or the ally of one of our foe?~ GOTO Velsh3
 END
 
 IF~~THEN BEGIN Velsh3
@@ -1054,7 +1054,7 @@ END
 IF~~THEN BEGIN TalosendNosae3
 SAY~Right, all true magic originates from the Weave. There is a limited power provided by Shar from the Shadow Wave, but I will put that aside for the moment. The Weave can only be controlled by Mystra and even if other gods grant powers to their followers they can only do it through Mystra. There is no direct access to the Weave by anyone else, since the day Mystril was killed by Karsus.~
 =~ Afterwards AO gave some of the Weaves energy to Shar, but the majority and the portion used by Faerun's mages, clerics and sorcerers he gave to Mystra.~
-IF~~THEN REPLY~To separate your foes from the source of their magic...we had to eliminate - Mystra.~ GOTO TalosendNosae4
+IF~~THEN REPLY~To separate your foe from the source of their magic...we had to eliminate - Mystra.~ GOTO TalosendNosae4
 END
 
 IF~~THEN BEGIN TalosendNosae4
@@ -1194,7 +1194,7 @@ IF~Global("SanRTFPlot2","GLOBAL",1)~THEN REPLY~Let us go to Amkethran without lo
 IF~Global("SanRTFPlot2","GLOBAL",1)!InParty("Leyala")~THEN REPLY~We should first pick up Leyala then who was so eager to join us and afterwards go to Amkethran.~EXIT
 IF~Global("SanRTFPlot2","GLOBAL",1)!InParty("Leyala")~THEN REPLY~The little nun might be helpful but we have no time to waste and must go directly to Amkethran.~EXIT
 IF~Global("SanRTFPlot2","GLOBAL",1)~THEN REPLY~We cannot afford to waste time to travel over sea to Ravencrest, so I follow your advice to try it via Amkethran.~EXIT
-IF~Global("SanRTFPlot2","GLOBAL",1)~THEN REPLY~Looks like we are still ahead of our foes to reach the ancient seal. Let us keep it that way and move to Amkethran then.~ EXIT
+IF~Global("SanRTFPlot2","GLOBAL",1)~THEN REPLY~Looks like we are still ahead of our foe to reach the ancient seal. Let us keep it that way and move to Amkethran then.~ EXIT
 IF~Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY~We need to consult still with your grandmother before we take the next step.~EXIT
 IF~Global("SanRTFPlot2","GLOBAL",0)!InParty("Leyala")~THEN REPLY~ We need to go to Waterdeep for your grandmother anyway, so we may pick up the little nun by that way as well.~EXIT
 IF~Global("SanRTFPlot2","GLOBAL",0)InParty("Leyala")~THEN REPLY~So let us first consult with your grandmother at Waterdeep and then let Leyala guide us to Ravencrest.~EXIT
@@ -1397,7 +1397,7 @@ END
 
 CHAIN
 IF~~THEN CVSan25J CampRes3
-~Please, friends, let not our foes triumph over us in the end by having separated us in mistrust...~
+~Please, friends, let not our foe triumph over us in the end by having separated us in mistrust...~
 ==CVShauq~Wallrick is my most trusted General beside Minsc. He has served Ghotal, the Clan Orcs and his queen all his life and is beyond any suspicion.~
 ==Thalan~It is sad but true, the only ones who had left the camp and had contact to the outside is your party, <CHARNAME>.~
 ==CVSan25J~I am sure we have left no trace that could be followed.~

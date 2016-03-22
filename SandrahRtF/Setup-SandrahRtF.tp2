@@ -189,7 +189,7 @@ COPY ~SandrahRTF/Areas/RTF008SR.bmp~ ~override/RTF008SR.bmp~
 
 COPY ~SandrahRTF/Areas/RTF009.ARE~ ~override/RTF009.ARE~
 COPY ~SandrahRTF/Areas/RTF009.mos~ ~override/RTF009.mos~
-COPY ~SandrahRTF/Areas/RTF009.tis~ ~override/RTF007.tis~
+COPY ~SandrahRTF/Areas/RTF009.tis~ ~override/RTF009.tis~
 COPY ~SandrahRTF/Areas/RTF009.wed~ ~override/RTF009.wed~
 COPY ~SandrahRTF/Areas/RTF009HT.bmp~ ~override/RTF009HT.bmp~
 COPY ~SandrahRTF/Areas/RTF009LM.bmp~ ~override/RTF009LM.bmp~
@@ -2660,6 +2660,10 @@ COPY ~SandrahRTF/Cre/RTLordao.CRE~ ~override/RTLordao.CRE~
 SAY NAME1 @1948
 SAY NAME2 @1948
 
+COPY ~SandrahRTF/Cre/RTajan.CRE~ ~override/RTajan.CRE~
+SAY NAME1 @2045
+SAY NAME2 @2045
+
 COPY ~SandrahRTF/Cre/RTWelo2.CRE~ ~override/RTWelo2.CRE~
 SAY NAME1 Merchant
 SAY NAME2 Merchant
@@ -2877,10 +2881,6 @@ COPY ~SandrahRTF/Mods/lrrielev.cre~ ~override/lrrielev.cre~
 SAY NAME1 @2041
 SAY NAME2 @2041
 COMPILE ~SandrahRTF/Mods/lrrielev.d~
-END
-
-ACTION_IF NOT FILE_EXISTS_IN_GAME ~c#ajan~ THEN BEGIN
-COMPILE ~SandrahRTF/Mods/c#ajan.d~
 END
 
 COPY ~SandrahRTF/Cre/cvizzyL.BMP~ ~override/cvizzyL.bmp~
@@ -3646,6 +3646,10 @@ COMPILE ~SandrahRTF/D/NextGenNPCPids.d~
 PRINT ~Installed Sandrah RtF Crossmod Contents~
 
 BEGIN ~EET Compliance~
+
+ADD_JOURNAL @1721 @1730 @1764 @1776 @1795 @1888 @1904 @1929 @1940 @1942 @1946 @1988 @2044 @2046 @2047 @2048 USING ~SandrahRTF/TRA/RTF-setup.tra~
+
+COPY  ~SandrahRTF/EET~ ~override~
 
 COPY_EXISTING ~Belt.cre~ ~override/RTBelt.cre~
 WRITE_ASCII 0x248 ~none~ #8

@@ -51,7 +51,7 @@ END
 IF~~THEN BEGIN IzPlotSt5
 SAY~Oh, please and please, <CHARNAME>, I know Mama really cares to know that all is fine with each of us, she cares and cares much. We only just have to drop by Rhobald's mother in the Bridge District and check that all is fine and good and Mama will be sooo happy...and me, too!~
 =~Just say yes and yes.~
-IF~~THEN REPLY~Does not sound like a big effort, it's just around the corner.~DO~SetGlobal("Izzyplot","GLOBAL",2) ~EXIT
+IF~~THEN REPLY~Does not sound like a big effort, it's just around the corner.~DO~SetGlobal("Izzyplot","GLOBAL",2) AddJournalEntry(@2046,QUEST)~EXIT
 END
 
 IF~Global("Izzyplot","GLOBAL",5)~THEN BEGIN IzPlotSt6
@@ -67,7 +67,7 @@ END
 
 IF~~THEN BEGIN IzPlotSt8
 SAY~From what I hear my half-sister and this boy stepped on some toes with their senseless actions...Samas Kul - who's that guy?~
-IF~~THEN REPLY~Someone we will need to face sooner or later anyway.~DO~SetGlobal("Izzyplot","GLOBAL",6)~EXIT
+IF~~THEN REPLY~Someone we will need to face sooner or later anyway.~DO~SetGlobal("Izzyplot","GLOBAL",6) AddJournalEntry(@2048,QUEST)~EXIT
 END
 
 CHAIN
@@ -75,7 +75,7 @@ IF~Global("Izzyplot","GLOBAL",7)~THEN RTSharl MetThay1
 ~Izzy...? IZZY!!~
 DO~SetGlobal("Izzyplot","GLOBAL",8)~ 
 ==CVIzy25J~Sharlenia...? SHARLENIA!!~
-DO~AddXPObject("CVIzzy",26500) AddexperienceParty(10000)~
+DO~AddXPObject("CVIzzy",26500) AddexperienceParty(10000) EraseJournalEntry(@2046)EraseJournalEntry(@2047) EraseJournalEntry(@2048) ~
 ==RTSharl~I would have expected anyone here, but you. Did Mama send you after me?~
 ==CVIzy25J~She was VERY troubled not to hear from you - but she's not as troubled as me when I followed your scent - a real spiral downwards.~
 ==RTSharl~(Sigh) You are SO right, Izzy.~
@@ -100,7 +100,7 @@ DO~SetGlobal("Izzyplot","GLOBAL",4)~
 ==RTIzPlo1~Rhobald always has those ideas of getting bigger and better than all else...Thay sounded like paradise to him. I say - anything east of the Firewine has never brought nothing but trouble to anyone of the Realms...~ DO~EscapeArea()~
 ==CVIzy25J~I ain't sure if Mama likes that or not - but, so what, SHE never stayed at home to be Mrs. Nicegirl, didn't she?~
 END
-++~We will not find out much more about those two, I am afraid, unless for any reason we should ever make it to Thay.~ EXIT
+++~We will not find out much more about those two, I am afraid, unless for any reason we should ever make it to Thay.~DO~AddJournalEntry(@2047,QUEST)~ EXIT
 
 CHAIN
 IF~AreaCheck("RTF098")~THEN RTSharl OutThay1

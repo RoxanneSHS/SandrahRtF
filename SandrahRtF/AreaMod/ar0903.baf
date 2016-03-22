@@ -5,7 +5,7 @@ THEN
 RESPONSE #100
 SetGlobal("RTClean","ar0903",1)
 ActionOverride("HPrelate",DestroySelf())
-CreateCreature("c#ajan16",[348.587],10)
+CreateCreature("RTajan",[2020.587],6)
 END
 
 IF

@@ -8,6 +8,13 @@ CreateCreature("MWarn25",[1168.452],10)
 END
 
 IF
+Global("DrowCityHostile","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("DrowCityHostile","GLOBAL",0)
+END
+
+IF
 InParty("CVSandr")
 Global("PelligFollow","GLOBAL",1)
 !InActiveArea("pellig")
