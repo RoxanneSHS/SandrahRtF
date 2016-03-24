@@ -3,7 +3,7 @@ IsOverMe([PC])
 Global("BalApp","rtf020",0)
 THEN
 RESPONSE #100
-CreateCreatureDoor("Caddem16",[1226.1005],10)
+CreateCreatureDoor("Finbalor",[1226.1005],10)
 SetGlobal("BalApp","rtf020",1)
 END
 

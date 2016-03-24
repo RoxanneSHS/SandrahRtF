@@ -574,7 +574,9 @@ END
 
 IF
 CombatCounter(0)
+OR(2)
 Global("LeyCombat","GLOBAL",1)
+Global("LeyCombat","GLOBAL",0)
 !Detect([EVILCUTOFF])
 OR(2)
 Global("LCActive","GLOBAL",2)

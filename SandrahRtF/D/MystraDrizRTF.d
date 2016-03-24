@@ -1,7 +1,7 @@
 CHAIN
 IF~GlobalGT("SanBeginRTF","GLOBAL",1) Global("MeetRTFM","LOCALS",0) ~THEN SanMyst InitialRTF
 ~Welcome, <CHARNAME>, welcome granddaughter.~
-DO~SetGlobal("MeetRTFM","LOCALS",1) SetName("Midnight") ~
+DO~SetGlobal("MeetRTFM","LOCALS",1) SetName(@2054)~
 ==CVSan25J~Grandmother! Finally we have found a way to address each other as we always should have done.~
 ==SanMyst~Your deeds as Mystra ripple even into this remote corner of the Prime, my dear. You and the true Love and Hope really fulfill the expectations that have been set upon you.~
 =~Maybe a bit more than some can accept...you are not here to visit a happy old couple, arent't you?~
@@ -45,7 +45,7 @@ IF~Global("SanRTFPlot3","GLOBAL",6)~THEN REPLY~Fine. Let us do this step first b
 
 CHAIN
 IF~~THEN SanMyst ThayRepDefTalos2
-~Let us talk about that once you have made that first step. We may gain further insight into our foes' phalanx' structure by the visit to the new academy.~
+~Let us talk about that once you have made that first step. We may gain further insight into our foe's phalanx' structure by the visit to the new academy.~
 END
 ++~We will return soon, do not worry.~EXIT
 
@@ -129,7 +129,7 @@ IF~~THEN SanMyst Velsh7
 
 CHAIN
 IF~~THEN SanMyst Candl1
-~One of Sandrah's ancient ancestors, the Defender of Westgate, a follower of Mystra wielding a most deadly hammer against her foes.~
+~One of Sandrah's ancient ancestors, the Defender of Westgate, a follower of Mystra wielding a most deadly hammer against her enemies.~
 DO~SetGlobal("SanRTFPlot2","GLOBAL",1)~
 ==CVSan25J~Grandmother, in her battle she finally had to cut off her enemies' supplies that appeared to be endless by the sacrifice of just that hammer.~
 ==SanMyst~I see what you mean, my learned child. Thay used a system of magically created tunnels from their base to certain locations in the Western Realms of old. There existed portals here where their magicians and monsters would transport to.~

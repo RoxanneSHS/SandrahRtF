@@ -198,7 +198,7 @@ END
 
 IF~~THEN BEGIN WDGravey2
 SAY~ It is just east of Mystra's temple.~
-IF~~THEN EXIT
+IF~~THEN DO~ AddJournalEntry(@2050,QUEST)~EXIT
 END
 
 IF~~THEN BEGIN WDGravey3
@@ -759,7 +759,7 @@ END
 
 IF~~THEN BEGIN Velsh4
 SAY~The Lord of the Forsaken crypt, he is called, others say *The Vaunted*. I think I made a big mistake back in Celestia not to deal with him while I had the chance...~
-IF~~THEN REPLY~*You know your beloved well enough not to question her further has her gaze has become absent minded searching her memories and lore for clues and answers.*~EXIT
+IF~~THEN REPLY~*You know your beloved well enough not to question her further as her gaze has become absent minded searching her memories and lore for clues and answers.*~EXIT
 END
 
 IF~Global("YourTurf","BG2608",1)~THEN BEGIN SeekBook1
@@ -1302,7 +1302,7 @@ CHAIN
 IF~Global("SanRTFPlot1","GLOBAL",7) AreaCheck("RTF035") ~ THEN CVSan25J CampMeet1
 ~Friends! It is good that peace has been kept between you.~
 DO~SetGlobal("SanRTFPlot1","GLOBAL",8)~
-==CVMinsc~Trust has been in <CHARNAME> and you and it was justified.~
+==CVMinsc~Trust has been set in <CHARNAME> and you and it was justified.~
 ==Thalan~I have given everyone already the facts we had revealed so far, you may want to add what you found out in between.~
 ==CVShauQ~Last time it was undead produced in Sharkta Fai to bring conflict between orc and orc- this time it is clones produces in some secret laboratory to make friends hate each other again.~
 ==CVShabab~You see a relation between the two, Shauhana?~
@@ -1314,7 +1314,7 @@ IF~PartyhasItem("RTSTLet1")~THEN REPLY~We found some hints to them including a l
 CHAIN
 IF~~ THEN CVSan25J CampMeet2
 ~ A number of parties seem to be involved. I am not sure yet whether they are all cooperating or if we have to face more than one front against us.~
-=~It seems that the former cowled wizards expelled from Athkatla are in league with the red wizards. They are directly involved in the clone invasion but we have destroyed their installation in Undermountain and the Hornswamp.~
+=~It seems that the former cowled wizards expelled from Athkatla are in league with the red wizards. They are directly involved in the clone invasion but we have destroyed their installations in Undermountain and the Hornswamp.~
 ==CVSan25J IF~PartyhasItem("RTSTLet1")~THEN~ We found a message from someone with the initials *ST*~
 ==CVShauQ~ Szass Tam.~
 END

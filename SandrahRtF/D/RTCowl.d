@@ -33,7 +33,7 @@ DO~ SetGlobal("RTFoundIce","GLOBAL",5)~
 CHAIN
 IF WEIGHT #-3~Global("RTFoundIce","GLOBAL",8)~ THEN Madeen OutWDGrave
 ~Is it over, are they...dead?~
-DO~SetGlobal("RTFoundIce","GLOBAL",8) SetGlobal("SanRTFPlot1","GLOBAL",7)~
+DO~SetGlobal("RTFoundIce","GLOBAL",8) SetGlobal("SanRTFPlot1","GLOBAL",7)EraseJournalEntry(@2044) EraseJournalEntry(@2049) EraseJournalEntry(@2050)~
 ==CVSan25J~If you talk about your former master then the answer is yes. Those fools destroyed themselves in order to destroy all the evidence for their deeds.~
 ==Madeen~ That is good news, good news...Corneil is my master no more since the cowled wizards had to leave Amn. I am with them no more since that time.~
 ==CVSan25J~Why are you here then?~
@@ -44,8 +44,8 @@ DO~SetGlobal("RTFoundIce","GLOBAL",8) SetGlobal("SanRTFPlot1","GLOBAL",7)~
 ==Madeen~I don't really know - I left the cowls when they started to get involved with the red robed devils. I fled them and they took revenge on my family for it. That is all I know.~ DO~EscapeArea()~
 ==CVSan25J~There is nothing we can do here anymore, <CHARNAME>, the caves behind us have collapsed from the explosion. We will find no further evidence here.~
 END
-++~We should then travel to the Summer Camp to meet the others I propose. Together we should analyse all the facts we have found so far.~EXIT
-++~Shauhana and Shar-Teel should be at this Summer Camp by now, we should join them and discuss our further actions.~EXIT
+++~We should then travel to the Summer Camp to meet the others I propose. Together we should analyse all the facts we have found so far.~DO~AddJournalEntry(@2053,QUEST)~EXIT
+++~Shauhana and Shar-Teel should be at this Summer Camp by now, we should join them and discuss our further actions.~DO~AddJournalEntry(@2053,QUEST)~EXIT
 
 APPEND CVCOLLE
 IF WEIGHT #-7~Global("RTFoundIce","GLOBAL",4)~THEN BEGIN Iceblk1

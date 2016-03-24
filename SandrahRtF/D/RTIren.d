@@ -93,12 +93,12 @@ CHAIN
 IF~~THEN RTIren Colle4
 ~Accepted. (Grumble) They probably thank you for it.~
 =~Well, you will find your way out alone like you did once before already.~
-DO~ TakePartyItem("RTFlui") ReallyForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+DO~ TakePartyItem("RTFlui") AddJournalEntry(@2049,QUEST) ReallyForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 
 CHAIN
 IF~~THEN RTIren Colle3
 ~Well, you will find your way out alone like you did once before already.~
-DO~ TakePartyItem("RTFlui") ReallyForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+DO~ TakePartyItem("RTFlui") AddJournalEntry(@2049,QUEST) ReallyForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 
 CHAIN
 IF WEIGHT #-7~Global("RTIrenApp","ar0602",3)~THEN LRRielev Lassal1

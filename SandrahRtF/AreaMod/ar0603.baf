@@ -53,6 +53,12 @@ THEN
 RESPONSE #100
 TriggerActivation("Khalid Info",FALSE)
 TriggerActivation("Jar 8 broken",FALSE)
+Deactivate("Deadkhalid")
+CreateCreature("Deaddem1",[1358.2457],2)
+CreateCreature("Deaddem1",[1368.2457],6)
+CreateCreature("Deaddem1",[1335.2411],2)
+CreateCreature("Deaddem1",[1341.2390],6)
+CreateCreature("Deaddem1",[1372.2521],8)
 SetGlobal("FiendsRTF","ar0603",4)
 END
 

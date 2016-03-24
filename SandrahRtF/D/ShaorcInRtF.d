@@ -128,8 +128,8 @@ DO~SetGlobal("RTGoRaven","LOCALS",5)SetGlobal("SanRTFPlot2","GLOBAL",2)~
 ==CVOrwarl~That is exactly as I see it as well, Sandrah. This is why I have notified you.~ DO~EscapeArea()~
 ==CVSan25J~We are on our way, Wallrick, let us do as proposed. Right, <CHARNAME>?~
 END
-++~ I heard my buzzword, Sandrah, a small experienced adventurer group clearing out a monster infested dungeon - that's us. Let's go.~ EXIT
-++~ Exactly the task for which we came down to Faerun, isn't it.~EXIT
+++~ I heard my buzzword, Sandrah, a small experienced adventurer group clearing out a monster infested dungeon - that's us. Let's go.~DO~AddJournalEntry(@2055,QUEST)~ EXIT
+++~ Exactly the task for which we came down to Faerun, isn't it.~DO~AddJournalEntry(@2055,QUEST)~EXIT
 
 
 APPEND F_DWSmit

@@ -11,8 +11,9 @@ IF
 Global("RTCloakwood","GLOBAL",6)
 THEN
 RESPONSE #100
-CreateCreature("faldor5",[225.260],7)
+SetGlobal("FaldornPartyBG1","GLOBAL",1)
 SetGlobal("RTCloakwood","GLOBAL",7)
+CreateCreature("faldor5",[225.260],7)
 END
 
 

@@ -7,6 +7,9 @@ CreateCreature("coksmth",[1918.1076],13)
 CreateCreature("Wyvgre01",[2047.1946],0)
 CreateCreature("Wyvgre01",[2090.1133],9)
 CreateCreature("CVLotw2",[1998.1102],13)
+Wait(1)
+ActionOverride("Coksmth",CreateItem("ImoSlHP1",0,0,0))
+ActionOverride("Coksmth",FillSlot(SLOT_AMULET))
 EndCutSceneMode()
 SetGlobal("RTCloakwood","GLOBAL",3)
 END
@@ -24,8 +27,8 @@ IF
 Global("RTCloakwood","GLOBAL",5)
 THEN
 RESPONSE #100
-CreateCreature("bpdru8b",[1073.2522],13)
-CreateCreature("bpdru8a",[624.2069],10)
+CreateCreature("druid8b",[1073.2522],13)
+CreateCreature("druid8a",[624.2069],10)
 CreateCreature("gdruid",[1020.2086],8)
 CreateCreature("CVLotw2",[608.2828],13)
 CreateCreature("gdruid",[695.2717],7)

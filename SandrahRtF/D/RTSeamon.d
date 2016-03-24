@@ -47,7 +47,7 @@ IF~~THEN CVSan25J OutThay4
 ~All true magic originates from the Weave. There is a limited power provided by Shar from the Shadow Weave, but I will put that aside for the moment. The Weave can only be controlled by Mystra and even if other gods grant powers to their followers they can only do it through Mystra. There is no direct access to the Weave by anyone else, since the day Mystril was killed by Karsus.~
 ==RTSaemon~I vaguely remember the story. All magic departed Netheril and the Prime on that day.~
 ==CVSan25J~Correct, Saemon. Afterwards AO gave some of the Weaves energy to Shar, but the majority and the portion used by Faerun's mages, clerics and sorcerers he gave to Mystra.~
-==RTSaemon~To separate your foes from the source of their magic...you had to eliminate - Mystra.~
+==RTSaemon~To separate your foe from the source of their magic...you had to eliminate - Mystra.~
 ==CVSan25J~A solution...it has its price I admit - and it would only work if AO had no possibility to establish another keeper for the Weave.~
 ==RTSaemon~I see no possibility how that could be achieved. It would almost be a destruction of the Realms if not of the multiverse itself.~
 ==CVSan25J~It would be, you are absolutely right, Saemon. If not...(You see her thoughts drift off into possibilities you cannot imagine yourself.)~
@@ -180,7 +180,7 @@ IF~~ THEN Chalcy01 InIrD2
 =~The name of that mortal means nothing to me. Your accusations are as blind as they ever were.~
 ==CVSan25J~The Exile is not working for you - maybe he is in the service of one of your allies. I am sure they will not inform you of their own agenda in this affair.~
 ==Chalcy01~Mystra, you're trying to be clever, he? You are so eager to learn who it is that you have to face. No need to hurry, your doom comes infailably.~
-==CVSan25J~Up to now we have found we are a bit ahead of our foes, *grandfather*. Their design was only half-baked and rushed. Be sure we keep up the pressure. You are known to act weird and weirder when put under stress.~
+==CVSan25J~Up to now we have found we are a bit ahead of our enemies, *grandfather*. Their design was only half-baked and rushed. Be sure we keep up the pressure. You are known to act weird and weirder when put under stress.~
 END
 ++~Whoever your allies are, Cyric, you know as well as we know that they will backstab you as soon as they see the chance for themselves...~+ InIrD3
 
