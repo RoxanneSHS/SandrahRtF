@@ -148,6 +148,15 @@ SetGlobal("Guide","ar5500",2)
 END
 
 IF
+Global("Guide","ar5500",6)
+THEN
+RESPONSE #100
+SetGlobal("Guide","ar5500",3)
+StartCutSceneMode()
+StartCutScene("CVcut404")
+END
+
+IF
 AreaCheck("RTF027")
 See("Marker Post")
 Global("RTRoute","RTF027",0)

@@ -1,4 +1,15 @@
 IF
+Global("HaveHammer","RTF012",0)
+PartyHasItem("CVRtFHm")
+THEN
+RESPONSE #100
+SetGlobal("HaveHammer","RTF012",1)
+AddJournalEntry(@2058,QUEST)
+EraseJournalEntry(@2057)
+EraseJournalEntry(@1795)
+END
+
+IF
 	InParty("CVSandr")
 	Global("PelligFollow","GLOBAL",1)
 	!InActiveArea("pellig")

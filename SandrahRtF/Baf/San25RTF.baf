@@ -187,6 +187,23 @@ HideAreaOnMap("BG2626")
 END
 
 IF
+GlobalGT("RT78BoHi","LOCALS",1)
+AreaChck("RTF078")
+GlobalLT("RT78BoHi","RTF078",2)
+THEN
+RESPONSE #100
+SetGlobal("RT78BoHi","RTF078",2)
+END
+
+IF
+Global("RT78BoHi","LOCALS",2)
+THEN
+RESPONSE #100
+SetGlobal("RT78BoHi","LOCALS",3)
+AddJournalEntry(@2061,QUEST)
+END
+
+IF
 AreaCheck("BG4200")
 Global("RTImpHere","BG4200",1)
 See("RTImpT")

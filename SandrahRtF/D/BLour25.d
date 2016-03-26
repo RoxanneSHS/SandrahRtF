@@ -63,7 +63,7 @@ DO~SetGlobal("RTLouPlot","GLOBAL",8)~
 ==BSandr25~...and like you?~
 ==BLour25~Unlike them I would not replace her by another god or goddess, regardless of alignment. The drow must gain the right to decide for themselves.~
 ==BSandr25~The spider queen has any reason to persue you. You are dangerous - to her.~
-==BLour25~Just like you and <CHARNAME> are dangerous for the rest of the pantheon - I wonder which of them are aware of this danger?~EXIT
+==BLour25~Just like you and <CHARNAME> are dangerous for the rest of the pantheon - I wonder which of them are aware of this danger?~DO~AddJournalEntry(@2059,QUEST)~EXIT
 
 //Giran tested
 CHAIN

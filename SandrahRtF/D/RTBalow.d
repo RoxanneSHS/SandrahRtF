@@ -154,7 +154,7 @@ DO~SetGlobal("RTBalow","GLOBAL",2) SetGlobalTimer("RTWait","RTF048",TWO_HOURS)~
 ==CVSan25J~Why did you not return to where you came from?~
 ==RTBalow~Look behind me, there is no way anymore, the lava has risen meanwhile.~
 ==CVSan25J~But...a creature like you is immune to that heat.~
-==RTBalow~Right, but it is to deep to step inside, I will sink down in it and drown. And the jump is too far.~
+==RTBalow~Right, but it is too deep to step inside, I will sink down in it and drown. And the jump is too far.~
 ==CVSan25J~With some assistance from the other side you could make the step, I guess.~
 ==RTBalow~All that are on the other side are those stinking lizards, only good for food. There is no point in negotiating with those brutes for assistance.~
 ==CVSan25J~We are a different breed - and we have a common interest. It looks like we both can only get across if we cooperate.~
@@ -163,7 +163,7 @@ DO~SetGlobal("RTBalow","GLOBAL",2) SetGlobalTimer("RTWait","RTF048",TWO_HOURS)~
 ==RTBalow~Practical, like I said. It will work. Clever - clever enough to decide you will not need me once you have crossed. I will give my part first and maybe you do yours or maybe you don't.~
 ==CVSan25J~I am no creature like you. I keep my word.~
 ==RTBalow~There are as many of your kin that are honest as there are liars. Like those who once send me down here.~
-==CVSan25J~The red robes are my foes just as they are yours.~
+==CVSan25J~The red robes are my enemies just as they are yours.~
 ==RTBalow~One point in your favour - but not enough. I must test you before I trust you. I must think about it now. Leave me be for a time, come later. We have sooo much time.~EXIT
 
 CHAIN

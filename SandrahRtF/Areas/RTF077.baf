@@ -1,4 +1,13 @@
 IF
+Global("Chapter","Global",26)
+THEN
+RESPONSE #100
+SetGlobal("Chapter","Global",27)
+AddJournalEntry(@2060,QUEST)
+EraseJournalEntry(@2058)
+END
+
+IF
 Global("Bhaal77","rtf077",1)
 InParty("Leyala")
 THEN

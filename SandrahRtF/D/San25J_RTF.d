@@ -58,6 +58,7 @@ IF~Global("SanRTFPlot1","GLOBAL",8)Global("AskedcandV","LOCALS",0)~THEN REPLY~Wh
 IF~Global("RTBalow","GLOBAL",2) Global("BalowolQ","LOCALS",0)~THEN REPLY~Are you earnestly trying to deal with that Balrog in a civilized way?~GOTO Balod1
 IF~Global("SeenMysPid","LOCALS",1)~THEN REPLY~We wanted to talk about Candrella, I propose it's time for that now.~DO~SetGlobal("SeenMysPid","LOCALS",2)~ GOTO Candr2
 IF~Global("RTOdess","GLOBAL",1)GlobalGT("GuardOd","RTF070",1)GlobalLT("SanRTFPlot3","GLOBAL",4)~THEN REPLY~I am pretty unsure which role the Odesseiron family plays in this affair.~GOTO Odedisc1
+IF~Global("RT78BoHi","LOCALS",0) PartyHasItemIdentified("RT78Bok")~THEN REPLY~This book here speaks of *...place the artifact left of you and put your right hand on the scales...*. It must be the scales in that control room where we found the book. Which artifact does it talk of?~GOTO Scales2
 IF~GlobalGT("RTSamThrone","GLOBAL",3)Global("ThayLesson","LOCALS",0)~ THEN REPLY~A sly creature, this Samas Kul, but what did we really learn from him?~GOTO AfterSam1
 IF~GlobalGT("RTColan","GLOBAL",16) GlobalLT("SanRTFPlot3","GLOBAL",3) Global("Colanrole","LOCALS",0)~THEN REPLY~ What role does that Chief-Inquisitor really play here, any idea?~GOTO ColRol1
 IF~Global("SanRTFPlot4","GLOBAL",1) Global("LarlHint","LOCALS",0)~THEN REPLY~You surely have an idea where that Shadow King Larloch and the Warlock's Crypt can be found?~GOTO Larlhint1
@@ -873,7 +874,7 @@ IF~~THEN BEGIN NoFit8
 SAY~There is something in the last section of her journal, maybe. She writes about small town events, nature, the river...~
 =~She returned to the village of her birth and childhood for her last years. It is likely that she died in peace and was buried right there.~
 =~Mornbryn's Shield on the River Surbrin - a small village between Eversuit and Tezzir.~
-IF~~THEN REPLY~We have a new destination then, I presume.~DO~SetGlobal("SanRTFPlot2","GLOBAL",4) RevealAreaOnMap("RTF038") ~EXIT
+IF~~THEN REPLY~We have a new destination then, I presume.~DO~SetGlobal("SanRTFPlot2","GLOBAL",4) RevealAreaOnMap("RTF038") AddJournalEntry(@2057,QUEST)~EXIT
 END
 
 IF~Global("CreWave","RTF010",5)~ THEN BEGIN MornView1
@@ -933,7 +934,7 @@ END
 
 IF~~THEN BEGIN Scales2
 SAY~ The only artifact we found until now that manipulates those gates is the symbol from Sarevok. I am afraid it will be harder to find the hand that is the second ingredient. The owner might not be willing to co-operate with us.~
-IF~~THEN REPLY~ An interesting aspect, my counselor. You have some more ideas about this installation?~DO~SetGlobal("RT78BoHi","RTF078",2)~ GOTO Scales3
+IF~~THEN REPLY~ An interesting aspect, my counselor. You have some more ideas about this installation?~DO~SetGlobal("RT78BoHi","RTF078",2) SetGlobal("RT78BoHi","LOCALS",2)~ GOTO Scales3
 END
 
 IF~~THEN BEGIN Scales3

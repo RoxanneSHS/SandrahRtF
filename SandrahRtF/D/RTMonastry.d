@@ -205,7 +205,7 @@ DO~SetGlobal("RTMissBooks","LOCALS",5)~
 ==RTMonkBo~She did not like that hero worship thing about it and those young adventurers trying to challenge for duels. She retired to her birth place.~
 ==CVSan25J~Mornbryn's Shield on the River Surbrin - a small village between Eversuit and Teziir.~
 END
-++~We have a new destination then, I presume.~DO~SetGlobal("SanRTFPlot2","GLOBAL",4) RevealAreaOnMap("RTF038") ~EXIT
+++~We have a new destination then, I presume.~DO~SetGlobal("SanRTFPlot2","GLOBAL",4) RevealAreaOnMap("RTF038") AddJournalEntry(@2057,QUEST)~EXIT
 
 BEGIN RTMonkSt
 
@@ -235,9 +235,9 @@ IF~GlobalLT("RTMons1","RTF043",3)~THEN RTIYLO Access1
 ==CVSan25J~The deeds of one of my anchestors right here - I mean at this place where later this cloister was erected.~
 ==RTIYLO~Your anchestress? Cerameon - a woman with a hammer, of course...We talk about events very far in the darkness of the past.~
 ==CVSan25J~Still there are those who remember those events - be it for good or for evil.~
-=~It was here as you will know, good abbot, that a portal was sealed that was used by evil eastern forces to help the invasion of the old Realms. We assume that the seal can be opened and the old connection be reestablished.~
+=~It was here as you will know, good abbot, that a portal was sealed that was used by malicious eastern forces to enable the invasion of the old Realms. We assume that the seal can be opened and the old connection be re-established.~
 ==RTIYLO~We have no indication that this has been attempted.~
-==CVSan25J~Maybe not yet, at least not by our foes. If I am correct in my interpretation of my anchestress' journal, the portal and the seal could only be opened from this side of the passage. If our current enemies would attempt to re-use it they would need to open it from here first.~
+==CVSan25J~Maybe not yet, at least not by our enemies. If I am correct in my interpretation of my anchestress' journal, the portal and the seal can only be opened from this side of the passage. If our current enemies would attempt to re-use it, they would need to open it from here first.~
 ==RTIYLO~You come to prevent that?~
 ==CVSan25J~Not just that. We as well intend to use it ourself this time to get to the heart of our enemies' lair.~
 ==CVSan25J~*Sandrah continues to provide Iylos with further details of the recent events.*~
