@@ -39,7 +39,7 @@ END
 IF~~THEN BEGIN MaskKnows7
 SAY~Bah, don't ask me, I'd do it myself if not all of my followers would be immediately discovered when they even come near the Guild's compounds in the Eastern Harbour.~
 =~How you get the things is irrelevant. Get them within a tenday or your little disguise will be revealed and Szass Tam and all of Thay will be on your heels at once.~
-IF~~THEN DO~SetGlobalTimer("RTMaskplotT","GLOBAL",FIVE_DAYS) ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+IF~~THEN DO~SetGlobalTimer("RTMaskplotT","GLOBAL",FIVE_DAYS) AddJournalEntry(@2064,QUEST) ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 END
 
 IF~Global("RTMaskplot","GLOBAL",6) AreaCheck("RTF513") ~THEN BEGIN MaskItms1

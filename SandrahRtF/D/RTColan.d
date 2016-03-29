@@ -333,7 +333,7 @@ DO~ReputationInc(1)~
 ==CVSan25J~We have already received a wardstone for it but it seems a second key is also required.~
 ==RTSlav1~(Sigh) It is currently in our enemy's hands, most likely kept in the treasury chamber of the court building. Autharch Ithrash has confiscated it but to our advantage he does not yet know what he has in his hands.~
 =~We will leave town now and hide near the Odesseiron estate. Our friends will find us. Good luck, my lady.~ DO~EscapeArea()~
-==CVSan25J~Good luck for you, we will see each other in safety, hopefully.~ DO~ActionOverride("CVCultgi",EscapeArea())~EXIT
+==CVSan25J~Good luck for you, we will see each other in safety, hopefully.~ DO~AddJournalEntry(@2069,QUEST) ActionOverride("CVCultgi",EscapeArea())~EXIT
 
 CHAIN
 IF~Global("NargaR","RTF063",3)~THEN RTColan Reveal1

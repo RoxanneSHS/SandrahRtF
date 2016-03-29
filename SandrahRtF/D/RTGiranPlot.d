@@ -43,7 +43,7 @@ END
 IF~~THEN BEGIN OrcHelp7
 SAY~Gathlenk's son, Nildjek, some time ago managed to gather the remainder of the opposition around him.~
 =~Shauhana tried to negotiate with him and to integrate them into the Clans. However, before anything was achieved, Nildjek and his people...well,...they no longer could be found. We suspected they had left to somewhere in the east to seek a new fortune.~
-IF~~THEN REPLY~This fortune may now be to end as Thayan slaves.~ DO~SetGlobal("RTGiranQuest","GLOBAL",6)~GOTO OrcHelp3
+IF~~THEN REPLY~This fortune may now be to end as Thayan slaves.~ GOTO OrcHelp3
 END
 
 IF~~THEN BEGIN OrcHelp3
@@ -66,13 +66,13 @@ END
 
 IF~~THEN BEGIN OrcHelp6
 SAY~The little spy we saw should tell us, don't forget I'm a ranger and can follow his unique trail. He went to the eastern harbour, the Foreign Trade area.~
-IF~~THEN EXIT
+IF~~THEN DO~SetGlobal("RTGiranQuest","GLOBAL",6) AddJournalEntry(@2067,QUEST)~EXIT
 END
 
 IF~Global("RTGiranQuest","GLOBAL",7)~ THEN BEGIN Trail1
 SAY~See, the little footprints lead east, all along the shoreline and harbour and then to the north.~
-IF~~THEN REPLY~Fine, let us follow quickly.~ DO~SetGlobal("RTGiranQuest","GLOBAL",8)~EXIT
-IF~~THEN REPLY~Fine, let us stock up our resources and rest before we follow the trail.~ DO~SetGlobal("RTGiranQuest","GLOBAL",8)~EXIT
+IF~~THEN REPLY~Fine, let us follow quickly.~ DO~SetGlobal("RTGiranQuest","GLOBAL",8)AddJournalEntry(@2068,QUEST)~EXIT
+IF~~THEN REPLY~Fine, let us stock up our resources and rest before we follow the trail.~ DO~SetGlobal("RTGiranQuest","GLOBAL",8)AddJournalEntry(@2068,QUEST)~EXIT
 END
 END
 
@@ -85,7 +85,7 @@ DO~SetGlobal("RTGiranQuest","GLOBAL",5)~
 ==RSlaver1~They say that they come from very far north west, they fought their trail all the way through to the borderland between us and Rashemen, where they now dwell.~
 ==RSlaver2~They had no losses, my contact said, that's how strong they are!~
 ==RSlaver1~Still, our red wizards should be able to disable them long enough for the capture.~
-==RSlaver2~Let us hope for that, otherwise this will end unpretty bloody.~ DO~EndCutSceneMode()EscapeArea()ActionOverride("RSlaver1",EscapeArea())~EXIT
+==RSlaver2~Let us hope for that, otherwise this will end unpretty bloody.~ DO~EndCutSceneMode() AddJournalEntry(@2066,QUEST) ActionOverride("RSlaver1",EscapeArea()) ActionOverride("RSlaver2",EscapeArea())~EXIT
 
 CHAIN
 IF~Global("RTGiranQuest","GLOBAL",9)~THEN CVGir25J Cave1
@@ -181,7 +181,7 @@ DO~SetGlobal("RTGiranQuest","GLOBAL",18)~
 ==RTNild~It is worth a try...and,...Giran...it is good to know we will still have a homeland we might return to if this option fails.~
 ==CVGir25J~You have come a long way and I have seen in our battle today why you have succeeded so far - it's sure you will establish a home for your people soon.~
 =~Let us go, <CHARNAME>. Your task awaits us. The Clans thank you.~
-==RTNild~The Clans thank you.~DO~AddXPObject("CVGiran",28500)~EXIT
+==RTNild~The Clans thank you.~DO~AddXPObject("CVGiran",28500) EraseJournalEntry(@2066) EraseJournalEntry(@2067)EraseJournalEntry(@2068)~EXIT
 
 
 APPEND Shaorc7

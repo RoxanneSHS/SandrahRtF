@@ -188,7 +188,7 @@ END
 
 IF
 GlobalGT("RT78BoHi","LOCALS",1)
-AreaChck("RTF078")
+AreaCheck("RTF078")
 GlobalLT("RT78BoHi","RTF078",2)
 THEN
 RESPONSE #100
@@ -340,6 +340,16 @@ ActionOverride("Thalantyr",MoveToObject("CVMinsc"))
 ActionOverride("Keldorn",MoveToObject("CVMinsc"))
 Wait(4)
 StartDialogNoSet("CVSandr")
+END
+
+IF
+Global("RTColan","GLOBAL",3)
+Global("EdjournEntr","LOCALS",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("EdjournEntr","LOCALS",1)
+AddJournalEntry(@2063,QUEST)
 END
 
 IF

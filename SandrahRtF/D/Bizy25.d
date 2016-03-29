@@ -138,7 +138,7 @@ CHAIN
 IF~Global("Izzypink","RTF057",1)~THEN Bizy25 PinkBoots
 ~WOW, this is THE shop I's waited and waited for since ages...looka here!~
 DO~SetGlobal("Izzypink","RTF057",2)~
-==CVSan25J~One thing about Thay that has to respected is that they know what quality is worth in clothes.~
+==CVSan25J~One thing about Thay that has to be respected is that they know what quality is worth in clothes.~
 ==Bizy25~Watcha think, cleverest Sandrah, can we put dem red robes out in the sun to bleach'em to pink?~
 ==CVSan25J~We probably have not enough time to stay in one place and wait for the miracle to happen...~
 ==Bizy25~THERE!!!! PINK BOOTS!!! (Points exitedly at a store table.)~

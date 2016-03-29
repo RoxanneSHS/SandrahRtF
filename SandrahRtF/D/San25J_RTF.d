@@ -966,7 +966,7 @@ END
 IF~~ THEN BEGIN Candr4
 SAY~The issue will be that we cannot just go to a meeting point and address them. They are a secret organisation, constantly having to conceil identity and location from the red wizards and the authorities controlled by them. ~
 =~They will soon know we are here. They will get it touch with us when they decide it is safe, we need to wait for their move.~
-IF~~THEN REPLY~So let's explore the town and see what we can do on our own until we get a call from the Red Hoods, if that happens at all.~DO~SetGlobal("SanPlot3","GLOBAL",1)~EXIT
+IF~~THEN REPLY~So let's explore the town and see what we can do on our own until we get a call from the Red Hoods, if that happens at all.~DO~SetGlobal("SanPlot3","GLOBAL",1) AddJournalEntry(@2062,QUEST)~EXIT
 END
 
 IF~Global("RTMetCandre","GLOBAL",2)~THEN BEGIN Candrow1
