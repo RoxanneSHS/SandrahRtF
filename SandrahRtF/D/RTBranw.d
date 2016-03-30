@@ -48,7 +48,7 @@ DO~SetGlobal("RTFoundBran","GLOBAL",1)~
 ==CVSan25J~We heard it may be in the Court's treasury but we have not found access to the building yet.~
 ==RTBranw~(Laughs harshly) You may find it sooner or later, I heard of your actions around town already. ~
 ==CVSan25J~Hmmm, I guess I see the point, Branwen. The simplest way to get inside the court building is by being arrested and having to stand trial.~
-==RTBranw~Few could take the risk and hope to come out of it alive. Few - but thou and <CHARNAME> are among 'em.~
+==RTBranw~Few could take the risk and hope to come out of it alive. Few - but thou and <CHARNAME> are among 'em.~ DO~AddJournalEntry(@2069,QUEST)~
 =~May Auril bestow the frost kiss upon our enemies.~
 END
 ++~Will you come with us again, Branwen?~ + Auril2

@@ -1,0 +1,117 @@
+IF
+	HPPercentLT(Myself,50)
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN52",Myself) // Potion of Extra Healing
+THEN
+	RESPONSE #100
+		SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+		UseItem("POTN52",Myself) // Potion of Extra Healing
+END
+
+IF
+	HPPercentLT(Myself,50)
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN08",Myself) // Potion of Healing
+THEN
+	RESPONSE #100
+		SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+		UseItem("POTN08",Myself) // Potion of Healing
+END
+
+IF
+	HitBy([ANYONE],CRUSHING)
+	Global("GiantStrengthPotion","LOCALS",0)
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN05",Myself) // Potion of Fire Giant Strength
+THEN
+	RESPONSE #100
+		SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+		SetGlobal("GiantStrengthPotion","LOCALS",1)
+		UseItem("POTN05",Myself) // Potion of Fire Giant Strength
+END
+
+IF
+	HPPercentLT(Myself,60)
+	Global("InvulnerabilityPotion","LOCALS",0)
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN11",Myself) // Potion of Invulnerability
+THEN
+	RESPONSE #100
+		SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+		SetGlobal("InvulnerabilityPotion","LOCALS",1)
+		UseItem("POTN11",Myself) // Potion of Invulnerability
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	Global("HastePotion","LOCALS",0)
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN14",Myself) // Potion of Speed
+THEN
+	RESPONSE #100
+		SetGlobal("HastePotion","LOCALS",1)
+		SetGlobalTimer("SawEnemy","LOCALS",3)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	Global("HastePotion","LOCALS",1)
+	GlobalTimerExpired("SawEnemy","LOCALS")
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN14",Myself) // Potion of Speed
+THEN
+	RESPONSE #100
+		SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+		SetGlobal("HastePotion","LOCALS",2)
+		UseItem("POTN14",Myself) // Potion of Speed
+END
+
+IF
+	HPPercentLT(Myself,25)
+	HPGT(Myself,1)
+	!StateCheck(Myself,STATE_REALLY_DEAD)
+	Global("Whined","LOCALS",0)
+	See(NearestMyGroupOfType)
+	Allegiance(Myself,ENEMY)
+	!StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("Whined","LOCALS",1)
+		Shout(HELP_ME_GROUP153)
+END
+
+IF
+	Heard([ANYONE],HELP_ME_GROUP153)
+THEN
+	RESPONSE #100
+		RunAwayFrom(NearestEnemyOf(Myself),45)
+END
+
+IF
+	Heard([ANYONE],FLEE_FROM_MAGE)
+THEN
+	RESPONSE #100
+		AttackReevaluate([PC.0.0.MAGE],45)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),7)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),7)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+
+

@@ -1001,8 +1001,8 @@ END
 
 IF~Global("RTMaskplot","GLOBAL",3)~THEN BEGIN HasAllMask1
 SAY~We now have all the items Shabella had required from Mask.~
-IF~~THEN REPLY~I think it's a trap. But we will only find out if we deliver the stuff.~DO~SetGlobal("RTMaskplot","GLOBAL",4)~EXIT
-IF~~THEN REPLY~Let's deliver the things so we have one less threat against us.~ DO~SetGlobal("RTMaskplot","GLOBAL",4)~EXIT
+IF~~THEN REPLY~I think it's a trap. But we will only find out if we deliver the stuff.~DO~SetGlobal("RTMaskplot","GLOBAL",4)AddJournalEntry(@2076,QUEST) EraseJournalEntry(@2074) EraseJournalEntry(@2073)~EXIT
+IF~~THEN REPLY~Let's deliver the things so we have one less threat against us.~ DO~SetGlobal("RTMaskplot","GLOBAL",4) AddJournalEntry(@2076,QUEST) EraseJournalEntry(@2074) EraseJournalEntry(@2073)~EXIT
 END
 
 IF~Global("RTInCell","RTF061",5)~THEN BEGIN SJailbreak1

@@ -17,6 +17,16 @@ SetGlobal("RTMaskplot","GLOBAL",25)
 END
 
 IF
+Global("RTMaskplot","GLOBAL",25)
+Global("Update","RTF513",0)
+THEN
+RESPONSE #100
+SetGlobal("Update","RTF513",1)
+EraseJournalEntry(@2076)
+EraseJournalEntry(@2064)
+END
+
+IF
 InParty("CVSandr")
 Global("PelligFollow","GLOBAL",1)
 !InActiveArea("pellig")

@@ -43,6 +43,17 @@ SetGlobal("RTMaskplot","GLOBAL",2)
 END
 
 IF
+Global("RTMaskplot","GLOBAL",1)
+PartyHasItem("Comc03")
+!PartyHasItem("SW1H58")
+Global("OneItem","RTF901",0)
+THEN
+RESPONSE #100
+SetGlobal("OneItem","RTF901",1)
+AddJournalEntry(@2073,QUEST)
+END
+
+IF
 	InParty("CVSandr")
 	Global("PelligFollow","GLOBAL",1)
 	!InActiveArea("pellig")

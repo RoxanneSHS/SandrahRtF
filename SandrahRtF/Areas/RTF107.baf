@@ -16,6 +16,17 @@ SetGlobal("RTMaskplot","GLOBAL",2)
 END
 
 IF
+Global("RTMaskplot","GLOBAL",1)
+!PartyHasItem("Comc03")
+PartyHasItem("SW1H58")
+Global("OneItem","RTF107",0)
+THEN
+RESPONSE #100
+SetGlobal("OneItem","RTF107",1)
+AddJournalEntry(@2074,QUEST)
+END
+
+IF
 Global("RTSamThrone","GLOBAL",3)
 THEN
 RESPONSE #100

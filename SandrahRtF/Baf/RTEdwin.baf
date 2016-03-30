@@ -1383,7 +1383,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player1,STATE_HELPLESS)
 	!StateCheck(Player1,STATE_INVISIBLE)
 	!StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player1,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1399,7 +1398,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player2,STATE_HELPLESS)
 	!StateCheck(Player2,STATE_INVISIBLE)
 	!StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player2,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1415,7 +1413,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player3,STATE_HELPLESS)
 	!StateCheck(Player3,STATE_INVISIBLE)
 	!StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player3,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1431,7 +1428,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player4,STATE_HELPLESS)
 	!StateCheck(Player4,STATE_INVISIBLE)
 	!StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player4,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1447,7 +1443,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player5,STATE_HELPLESS)
 	!StateCheck(Player5,STATE_INVISIBLE)
 	!StateCheck(Player5,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player5,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1463,7 +1458,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player6,STATE_HELPLESS)
 	!StateCheck(Player6,STATE_INVISIBLE)
 	!StateCheck(Player6,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player6,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1482,7 +1476,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player1,STATE_SLOWED)
 	!StateCheck(Player1,STATE_INVISIBLE)
 	!StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player1,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1501,7 +1494,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player2,STATE_SLOWED)
 	!StateCheck(Player2,STATE_INVISIBLE)
 	!StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player2,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1520,7 +1512,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player3,STATE_SLOWED)
 	!StateCheck(Player3,STATE_INVISIBLE)
 	!StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player3,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1539,7 +1530,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player4,STATE_SLOWED)
 	!StateCheck(Player4,STATE_INVISIBLE)
 	!StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player4,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1558,7 +1548,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player5,STATE_SLOWED)
 	!StateCheck(Player5,STATE_INVISIBLE)
 	!StateCheck(Player5,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player5,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1577,7 +1566,6 @@ Global("EdBattlIt","LOCALS",1)
 		StateCheck(Player6,STATE_SLOWED)
 	!StateCheck(Player6,STATE_INVISIBLE)
 	!StateCheck(Player6,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player6,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1605,7 +1593,6 @@ Global("EdBattlIt","LOCALS",1)
 	See(Player1)
 	!StateCheck(Player1,STATE_INVISIBLE)
 	!StateCheck(Player1,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player1,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1633,7 +1620,6 @@ Global("EdBattlIt","LOCALS",1)
 	See(Player2)
 	!StateCheck(Player2,STATE_INVISIBLE)
 	!StateCheck(Player2,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player2,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1661,7 +1647,6 @@ Global("EdBattlIt","LOCALS",1)
 	See(Player3)
 	!StateCheck(Player3,STATE_INVISIBLE)
 	!StateCheck(Player3,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player3,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1689,7 +1674,6 @@ Global("EdBattlIt","LOCALS",1)
 	See(Player4)
 	!StateCheck(Player4,STATE_INVISIBLE)
 	!StateCheck(Player4,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player4,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1717,7 +1701,6 @@ Global("EdBattlIt","LOCALS",1)
 	See(Player5)
 	!StateCheck(Player5,STATE_INVISIBLE)
 	!StateCheck(Player5,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player5,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100
@@ -1745,7 +1728,6 @@ Global("EdBattlIt","LOCALS",1)
 	See(Player6)
 	!StateCheck(Player6,STATE_INVISIBLE)
 	!StateCheck(Player6,STATE_IMPROVEDINVISIBILITY)
-	!Specifics(Player6,NEEDS_BREACH)
 	CheckStatLT(Myself,36,SPELLFAILUREMAGE)
 THEN
 	RESPONSE #100

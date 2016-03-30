@@ -36,7 +36,7 @@ DO~SetGlobal("RTSamThrone","GLOBAL",3)~
 ==RTSamas~Not to underestimate Szass himself and his buddy from the Academy of Legencase.~
 ==CVSan25J~Xephistagoras?~
 ==RTSamas~He currently builds the New Academy right on the Sword Coast doorstep, hundreds of mages and sorcerers to draw power from the Weave at his command.~
-==CVSan25J~Probably another portal we have not yet found.~ DO~RevealAreaOnMap("ar60pb")~
+==CVSan25J~Probably another portal we have not yet found.~ DO~RevealAreaOnMap("ar60pb") AddJournalEntry(@2075,QUEST)~
 ==RTSamas~An old Bhaal temple in the Wood of Sharp Teeth, a Black Hand to assist him.~
 =~Plan your next steps well, goddess, - and preserve the memory of this day.~
 ==CVSan25J~I never forget the actions of those who oppose me and those who do not, be assured.~EXIT

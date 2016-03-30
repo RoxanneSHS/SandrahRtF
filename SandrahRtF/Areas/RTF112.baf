@@ -150,12 +150,23 @@ END
 
 IF
 GlobalGT("RTWed","RTF112",0)
-Global("AbilMel","RTF112",0)
+Global("AbilIzy","RTF112",0)
 InParty("CVIzzy")
 THEN
 RESPONSE #100
 ActionOverride("CVIzzy",AddSpecialAbility("CVDra26")
-SetGlobal("AbilMel","RTF112",1)
+SetGlobal("AbilIzy","RTF112",1)
+Continue()
+END
+
+IF
+GlobalGT("RTWed","RTF112",0)
+Global("AbilLey","RTF112",0)
+InParty("Leyala")
+THEN
+RESPONSE #100
+AddJournalEntry(@2080,QUEST)
+SetGlobal("AbilLey","RTF112",1)
 Continue()
 END
 

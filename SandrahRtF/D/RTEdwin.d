@@ -9,7 +9,7 @@ IF~~THEN REPLY~Edwin - This is a trap, Candrella, he's a traitor if there ever w
 END
 
 IF~~THEN BEGIN NewEd2
-SAY~A valid observation, <CHARNAME>, Edwin Odesseiron, last of the premier family of Thay (<PRO-HESHE> always had a faible to state the most obvious). Edwin Odesseiron, leader of the Red Hoods and liberator of Thay. (They love such grand titles, I know they do.)~
+SAY~A valid observation, <CHARNAME>, Edwin Odesseiron, last of the premier family of Thay (<PRO_HESHE> always had a faible to state the most obvious). Edwin Odesseiron, leader of the Red Hoods and liberator of Thay. (They love such grand titles, I know they do.)~
 IF~~THEN REPLY~A not so small surprise, Edwin, especially considering you as husband to Candrella and father of her daughter as well. ~DO~SetGlobal("Opening","RTF082",8) SetGlobal("SanRTFPlot3","GLOBAL",4)~ EXTERN RTCandre NewEd3
 END
 
@@ -146,7 +146,7 @@ IF~~THEN RTCandre Plans4
 ==CVSan25J~We cannot face Szass and his allies face to face right now. We already discovered that we need to return to the Sword Coast first to eliminate the new Academy of Xephistagoras there. We also must activate some powerful allies that can neutralise some of Szass Tam's associates so that we can target on him.~
 ==RTEdwin~We will arrange for your return and provide you with some more information. For that purpose we need to meet in Bezantur in a day from now with some of our allies.~
 ==RTCandre~Come to Sharkey's tomorrow, we will meet in the save backroom of the tavern. Ask Sharkey for admission. Try to avoid Ithrash's legions in town, they probably have noticed your escape and theft by now.~
-==CVSan25J~We will be there, Candrella, take care yourself.~EXIT
+==CVSan25J~We will be there, Candrella, take care yourself.~DO~AddJournalEntry(@2077,QUEST) EraseJournalEntry(@2069) EraseJournalEntry(@2063) EraseJournalEntry(@2062) EraseJournalEntry(@2060)~EXIT
 
 CHAIN
 IF~Global("3Talk","RTF109",1)~ THEN RTCandre Plans5
@@ -187,10 +187,10 @@ IF~~THEN RTColan Plans7
 ==CVSan25J~Mmh, you are right...there is an idea I develop for some time now about that. I will need to discuss it with my grandmother at Waterdeep.~
 ==RTColan~Your secret advisor, this grandmother?~
 ==CVSan25J~The best I can imagine on that subject, Colano.~
-==RTColan~We will know within minutes about your return, <CHARNAME>, and we will contact you.~
-==RTEdwin~Thay and the Sword Coast count on you.~
-==RTSamas~Your presence was enjoyable, lady...Sandrah, regardless of your reputation in Thay.~
-==RTCandre~Farewell~EXIT
+==RTColan~We will know within minutes about your return, <CHARNAME>, and we will contact you.~DO~EscapeArea()~
+==RTEdwin~Thay and the Sword Coast count on you.~ DO~EscapeArea()~
+==RTSamas~Your presence was enjoyable, lady...Sandrah, regardless of your reputation in Thay.~DO~EscapeArea()~
+==RTCandre~Farewell~DO~AddJournalEntry(@2078,QUEST) AddJournalEntry(@2079,QUEST)EraseJournalEntry(@2077)~ EXIT
 
 CHAIN
 IF~AreaCheck("RTF082")~THEN RTSlav1 Below

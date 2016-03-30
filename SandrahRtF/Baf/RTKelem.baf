@@ -348,9 +348,8 @@ IF
 THEN
 	RESPONSE #90
 		SetGlobalTimer("DemTel1","LOCALS",THREE_ROUNDS)
-		ReallyForceSpell(LastSeenBy(Myself),DEMON_REPULSION)
+		ReallyForceSpell(LastSeenBy(Myself),DEMON_FEAR)
 	RESPONSE #40
-		ChangeSpecifics(Myself,CALLED_FOR_BOULDER)
 		FaceObject(LastSeenBy(Myself))
 END
 
@@ -361,7 +360,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",3)
-		ReallyForceSpell(LastSeenBy(Myself),INNATE_IMPROVED_GLOBE_OF_DARKNESS)
+		ReallyForceSpell(LastSeenBy(Myself),DEMON_FEAR)
 END
 
 IF
@@ -383,7 +382,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
-		ReallyForceSpell(LastSeenBy(Myself),COM_PRIEST_GREATER_UNDEAD)
+		ReallyForceSpell(LastSeenBy(Myself),DEMON_FEAR)
 END
 
 IF
@@ -394,7 +393,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",3)
-		ReallyForceSpell(LastSeenBy(Myself),SPECTATOR_SUGGESTION)
+		ReallyForceSpell(LastSeenBy(Myself),DEMON_FEAR)
 END
 
 IF
@@ -457,59 +456,7 @@ THEN
 END
 
 
-IF
-	Range(LastSeenBy(Myself),15)
-THEN
-	RESPONSE #60
-		EquipRanged()
-		AttackOneRound(LastSeenBy(Myself))
-	RESPONSE #90
-		ChangeSpecifics(Myself,CALLED_FOR_BOULDER)
-		FaceObject(LastSeenBy(Myself))
-END
 
-IF
-	!Range(LastSeenBy(Myself),5)
-THEN
-	RESPONSE #60
-		EquipRanged()
-		AttackOneRound(LastSeenBy(Myself))
-	RESPONSE #90
-		ChangeSpecifics(Myself,CALLED_FOR_BOULDER)
-		FaceObject(LastSeenBy(Myself))
-END
 
-IF
-	Range(LastSeenBy(Myself),8)
-THEN
-	RESPONSE #25
-		Continue()
-	RESPONSE #75
-		ReallyForceSpell(NearestEnemyOf(Myself),DEMON_REPULSION)
-END
 
-IF
-	!Range(LastSeenBy(Myself),8)
-THEN
-	RESPONSE #50
-		EquipMostDamagingMelee()
-		AttackReevaluate(NearestEnemyOf(Myself),45)
-	RESPONSE #20
-		EquipMostDamagingMelee()
-		AttackReevaluate(LastSeenBy(Myself),75)
-	RESPONSE #30
-		ChangeSpecifics(Myself,CALLED_FOR_BOULDER)
-		FaceObject(LastSeenBy(Myself))
-END
-
-IF
-	True()
-THEN
-	RESPONSE #60
-		AttackReevaluate(LastSeenBy(Myself),45)
-	RESPONSE #60
-		ChangeSpecifics(Myself,CALLED_FOR_BOULDER)
-		FaceObject(LastSeenBy(Myself))
-	RESPONSE #45
-END
 

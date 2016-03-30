@@ -1381,6 +1381,7 @@ COPY ~SandrahRTF/Areas/RTF112LM.bmp~ ~override/RTF112LM.bmp~
 COPY ~SandrahRTF/Areas/RTF112SR.bmp~ ~override/RTF112SR.bmp~
 
 COPY ~SandrahRTF/Areas/RTF113.ARE~ ~override/RTF113.ARE~
+     COMPILE     ~SandrahRTF/Areas/RTF113.baf~
 COPY ~SandrahRTF/Areas/RTF113.mos~ ~override/RTF113.mos~
 COPY ~SandrahRTF/Areas/RTF113.tis~ ~override/RTF113.tis~
 COPY ~SandrahRTF/Areas/RTF113.wed~ ~override/RTF113.wed~
@@ -3327,6 +3328,7 @@ COMPILE
 ~SandrahRTF/Baf/RTClorc2.baf~
 ~SandrahRTF/Baf/RTNild.baf~
 ~SandrahRTF/Baf/RTDesh.baf~
+~SandrahRTF/Baf/Thaypotn.baf~
 ~SandrahRTF/AreaMod/RTShaFre.baf~
 
 EXTEND_TOP
@@ -3651,7 +3653,7 @@ PRINT ~Installed Sandrah RtF Crossmod Contents~
 
 BEGIN ~EET Compliance~
 
-ADD_JOURNAL @1721 @1730 @1764 @1776 @1795 @1888 @1904 @1929 @1940 @1942 @1946 @1988 @2044 @2046 @2047 @2048 @2049 @2050 @2053 @2055 @2056 @2057 @2058 @2059 @2060 @2061 @2062 @2063 @2064 @2066 @2067 @2068 @2069 USING ~SandrahRTF/TRA/RTF-setup.tra~
+ADD_JOURNAL @1721 @1730 @1764 @1776 @1795 @1888 @1904 @1929 @1940 @1942 @1946 @1988 @2044 @2046 @2047 @2048 @2049 @2050 @2053 @2055 @2056 @2057 @2058 @2059 @2060 @2061 @2062 @2063 @2064 @2066 @2067 @2068 @2069 @2073 @2074 @2075 @2076 @2077 @2078 @2079 @2080 USING ~SandrahRTF/TRA/RTF-setup.tra~
 
 COPY  ~SandrahRTF/EET~ ~override~
 
@@ -3692,11 +3694,24 @@ SAY NAME2 @2051
 SAY DESC @2052
 END
 
- ACTION_IF NOT FILE_EXISTS_IN_GAME ~BPLizking.CRE~ THEN BEGIN
- COPY_EXISTING ~OHBLiz01.cre~ ~override/BPLizkng.cre~
- COPY_EXISTING ~OHBLiz02.cre~ ~override/BPLizman.cre~
- COPY_EXISTING ~OHBLiz03.cre~ ~override/BPLizsha.cre~
- END
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~deadkem.cre~ THEN BEGIN
+COPY ~SandrahRTF/cre/deadkem.cre~ ~override~
+     SAY NAME1 Dead
+     SAY NAME2 Dead
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~jellking.cre~ THEN BEGIN
+COPY ~SandrahRTF/cre/jellking.cre~ ~override~
+     SAY NAME1 @2070
+     SAY NAME2 @2070
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~BPLizking.CRE~ THEN BEGIN
+COPY_EXISTING ~OHBLiz01.cre~ ~override/BPLizkng.cre~
+COPY_EXISTING ~OHBLiz02.cre~ ~override/BPLizman.cre~
+COPY_EXISTING ~OHBLiz03.cre~ ~override/BPLizsha.cre~
+COPY_EXISTING ~Bazliz03.cre~ ~override/BPLizgrd.cre~
+END
  
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Taelite.CRE~ THEN BEGIN
 COPY ~SandrahRTF/CRE/Taelite.CRE~ ~override/Taelite.CRE~
@@ -3706,3 +3721,11 @@ END
 
 COPY_EXISTING ~DKhalid.cre~ ~override~
 WRITE_ASCII 0x280 ~Dedkhalid~ #10
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~Comc03.itm~ THEN BEGIN
+COPY ~SandrahRTF/ITM/Comc03.itm~ ~override~
+SAY NAME1 @2072
+SAY NAME2 @2072
+SAY UNIDENTIFIED_DESC Cloak
+SAY DESC @2071
+END
