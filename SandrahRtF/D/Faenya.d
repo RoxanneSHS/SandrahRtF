@@ -103,11 +103,11 @@ DO~SetGlobal("Start112","RTF112",3) SetGlobal("RTSaeHij","GLOBAL",1)~
 ==RTShaj~They have my Saemon, he fought bravely with his sailors to protect my escape from this cave...you must hurry to aid him!~
 ==CVSan25J~We will. Just go a bit to the west, there are friendly elves here who will help you and bring you back to the ship.~
 =~We will meet you there soon - with Saemon.~
-==RTShaj~I hope it, there were so many of them below.~DO~EscapeArea()~EXIT
+==RTShaj~I hope it, there were so many of them below.~DO~MoveToPoint([2577.1522])EscapeAreaDestroy(20)~EXIT
 
 CHAIN
 IF~Global("RTSaeHij","GLOBAL",2)~THEN RTSaemon RescIs2
-~As much as I love the sea I hate the smell of some of its fishy creatures.~
+~As much as I love the sea, I hate the smell of some of its fishy creatures.~
 DO~SetGlobal("RTSaeHij","GLOBAL",3)~
 ==CVSan25J~They killed the men that were with you but they spared you, Saemon.~
 ==RTSaemon~I pity them, they were good men and hard to replace. It seems they had a special intention with me to sacrifice me to that creature you defeated...But, did you find...Shaleij??~

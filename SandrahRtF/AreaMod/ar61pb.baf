@@ -4,7 +4,6 @@ Global("InRTF","ar61pb",0)
 THEN
 RESPONSE #100
 CreateCreature("NTHASDAR",[233.268],0)
-CreateCreature("CVTalos",[375.259],13)
 CreateCreature("NTBLHCul",[171.305],4)
 CreateCreature("NTBLHCul",[394.397],3)
 CreateCreature("NTBLHCu1",[427.439],12)
@@ -22,10 +21,13 @@ Global("InRTF","ar61pb",1)
 CombatCounter(0)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
+InMyArea("CVSandr")
+InMyArea(Player1)
 Delay(6)
 THEN
 RESPONSE #100
 SetGlobal("InRTF","ar61pb",2)
+CreateCreature("CVTalos",[375.259],13)
 END
 
 IF
@@ -37,4 +39,5 @@ AddJournalEntry(@1888,QUEST)
 SetGlobal("InRTF","ar61pb",5)
 AddexperienceParty(134000)
 SetGlobal("SanRTFPlot3","GLOBAL",7)
+SetGlobal("Chapter","Global",28)
 END

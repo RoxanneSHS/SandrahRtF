@@ -16,6 +16,18 @@ SetGlobal("Miston","RTF018",3)
 END
 
 IF
+Global("SanRTFPlot4","Global",1)
+Global("Updates","RTF018",0)
+THEN
+RESPONSE #100
+SetGlobal("Updates","RTF018",1)
+AddJournalEntry(@2081,QUEST)
+ErsaeJournalEntry(@2056)
+ErsaeJournalEntry(@2075)
+ErsaeJournalEntry(@2079)
+END
+
+IF
 InParty("CVSandr")
 Global("PelligFollow","GLOBAL",1)
 !InActiveArea("pellig")

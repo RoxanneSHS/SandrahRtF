@@ -37,6 +37,7 @@ RESPONSE #100
 CreateCreature("RTShaj",[4159.1387],0)
 SetGlobal("Start112","RTF112",2)
 ActionOverride("RTShaj",MoveToObject(Player1))
+ActionOverride("RTShaj",Dialogue(Player1))
 END
 
 IF

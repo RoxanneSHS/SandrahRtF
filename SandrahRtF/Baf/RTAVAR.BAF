@@ -1,0 +1,10 @@
+IF
+Global("RTSaeHij","GLOBAL",5)
+See([ENEMY])
+!Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #100
+AttackReevaluate([ENEMY],15)
+END
+
+
