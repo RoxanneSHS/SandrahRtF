@@ -194,7 +194,7 @@ IF~~THEN CVQidr PelQuidr2
 
 CHAIN
 IF WEIGHT #2~Global("PelItem3","LOCALS",3)~THEN PelligJ PellMys1
-~It is accomplished, my mistress, we have come as the goddess has requested us.~
+~It is accomplished, my mistress, we have come as the goddess has requested us to do.~
 DO~SetGlobal("PelItem3","LOCALS",4)~
 ==SanMyst~You are the truest of all Chosen, Pelligram, it was good to have entrusted you once again with a mission of the highest importance.~
 ==PelligJ~Love and Hope have always been motivation like nothing else can be.~
@@ -219,7 +219,7 @@ END
 
 CHAIN
 IF~~THEN PelligJ PellMys4
-~You have felt her presence even in your despair. Your feelings have not betrayed you. Love and Hope remain victorious. She had to disappear in the full view of your foes and with the expected results.~
+~You have felt her presence even in your despair. Your feelings have not betrayed you. Love and Hope remain victorious. She had to disappear in the full view of your foe and with the expected results.~
 ==SanMyst~What Larloch gave to Shar was just a small portion of the Weave, enough to keep her occupied for some time but not enough to cause massive destruction.~
 ==PelligJ~It is time now to use the artifacts and the Simbul, my mistress.~
 ==SanMyst~I will go upstairs and open the Arboretum for the ritual. Come with the ingrediences to make Mystra return.~
@@ -232,7 +232,7 @@ IF WEIGHT #3~Global("PelItem3","LOCALS",5)~THEN PelligJ PellMys5
 DO~SetGlobal("PelItem3","LOCALS",6)~
 ==SanMyst~This place is shielded from any type of scrutiny. Only those present will ever know what will happen.~
 ==PelligJ~<CHARNAME>, we must place our items in the three chambers under the energy pillars, the Simbul itself should be placed to the purple flame.~
-==SanMyst~This will be a happy event for us - and the beginning of a hard times for those that opposed you.~
+==SanMyst~This will be a happy event for us - and the beginning of a hard times for those who opposed you.~
 ==PelligJ~If Sandrah's large plan evolves, this may as well become the beginning of a new age for Faerun in the long term. But probably it is only us who will ever know this fact.~
 END
 ++~Let us perform the ritual without delay.~EXIT

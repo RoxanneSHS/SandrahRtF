@@ -39,5 +39,5 @@ AddJournalEntry(@1888,QUEST)
 SetGlobal("InRTF","ar61pb",5)
 AddexperienceParty(134000)
 SetGlobal("SanRTFPlot3","GLOBAL",7)
-SetGlobal("Chapter","Global",28)
+SetGlobal("Chapter","Global",26)
 END

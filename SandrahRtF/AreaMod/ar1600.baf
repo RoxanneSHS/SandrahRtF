@@ -53,5 +53,8 @@ Wait(2)
 FadeFromColor([30.0],0)
 Wait(2)
 EndCutSceneMode()
+EraseJournalEntry(@2080)
+EraseJournalEntry(@2082)
+EraseJournalEntry(@2083)
 AddXPObject("Leyala",24500)
 END

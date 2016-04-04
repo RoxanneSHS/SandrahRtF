@@ -30,6 +30,7 @@ THEN
 RESPONSE #100
 SetGlobal("RTLeyPlot1","GLOBAL",1)
 CreateCreatureObjectOffset("rtleythi",Myself,[200.200])
+ActionOverride("rtleythi",MoveToObject("Leyala"))
 END
 
 IF

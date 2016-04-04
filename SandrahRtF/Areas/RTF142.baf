@@ -41,6 +41,7 @@ ActionOverride("Pellig",DestroySelf())
 Wait(2)
 FadeFromColor([20.0],0)
 SetGlobal("SanRTFPlot4","GLOBAL",5)
+SetGlobal("Chapter","Global",27)
 EndCutSceneMode()
 END
 

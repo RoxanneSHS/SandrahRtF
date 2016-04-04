@@ -274,7 +274,7 @@ END
 IF
 Allegiance(Myself,ENEMY)
 Global("TimeToTeleport","LOCALS",1)
-GlobalLT("SendaiTeleport","LOCALS",20)
+GlobalLT("SendaiTeleport","LOCALS",5)
 Global("SendaiTelTrack","LOCALS",3)
 !GlobalTimerNotExpired("SendaiRing","LOCALS")
 THEN
@@ -379,7 +379,7 @@ CheckStatLT(SecondNearestEnemyOf(Myself),5,NUMBEROFATTACKS)
 OR(2)
 !Range(NearestEnemyOf(Myself),8)
 CheckStatLT(NearestEnemyOf(Myself),5,NUMBEROFATTACKS)
-OR(3)
+OR(2)
 Global("CloseCombat","LOCALS",0)
 CheckStatGT(Myself,0,STONESKINS)
 THEN
@@ -454,7 +454,7 @@ END
 IF
 Allegiance(Myself,ENEMY)
 HaveSpell(WIZARD_TRUE_SIGHT)
-OR(8)
+OR(7)
 !See([GOODCUTOFF])
 !See(LastAttackerOf(Myself))
 StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)

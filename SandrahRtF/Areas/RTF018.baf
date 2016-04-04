@@ -22,9 +22,9 @@ THEN
 RESPONSE #100
 SetGlobal("Updates","RTF018",1)
 AddJournalEntry(@2081,QUEST)
-ErsaeJournalEntry(@2056)
-ErsaeJournalEntry(@2075)
-ErsaeJournalEntry(@2079)
+EraseJournalEntry(@2056)
+EraseJournalEntry(@2075)
+EraseJournalEntry(@2079)
 END
 
 IF

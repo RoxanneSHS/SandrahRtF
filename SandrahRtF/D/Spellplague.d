@@ -8,7 +8,7 @@ DO~SetGlobal("RTPriQ","BG4800",3)~
 ==RTSPTa1~Your time is over, you're on the wrong side these days, my dear.~
 ==RTSPEil1~You're judging prematurely, it is your god who has lost the powers that the Weave and Mystra had to let him participate in.~
 ==RTSPTa1~Your Eilistraee was just a dark copy of the defeated Mystra, you and all her followers will bow before the Chaos!~
-==RTSPEil1~Haven't you noticed yet that your spells fail and your god looses followers daily. Even in death Mystra triumphs over her foes.~
+==RTSPEil1~Haven't you noticed yet that your spells fail and your god looses followers daily. Even in death Mystra triumphs over her opponents.~
 ==RTSPTa1~Bow or die~DO~Enemy() Attack("RTSPTal1") ActionOverride("Pellig3",Attack("RTSPTal1")~EXIT
 
 CHAIN
@@ -29,6 +29,6 @@ DO~SetGlobal("RTPriQ2","CVElm4",2) ~
 ==RTMoninj~I have had long talks with the priests here just as Sandrah advised and I believe in what Mystra stands for.~ DO~EscapeArea()~
 ==PelligJ~If this is so, then Mystra is alive.~
 ==RTYouSha~Your priestess is no longer travelling with you?~DO~EscapeArea()~
-==PelligJ~She went ahead to prepare for our next move against <CHARNAME>'s and Mystra's foes.~
+==PelligJ~She went ahead to prepare for our next move against <CHARNAME>'s and Mystra's enemies.~
 END
 ++~*Pelligram's words are expressed with such confidence that for a moment you are persuaded to believe that your beloved companion Sandrah has not died.*~EXIT

@@ -6,3 +6,12 @@ THEN
 RESPONSE #100
 SetGlobal("SawMagic","RTF153",1)
 END
+
+IF
+Global("SanRTFPlot4","GLOBAL",2)
+Global("Updates","RTF153",0)
+THEN
+RESPONSE #100
+SetGlobal("Updates","RTF153",1)
+AddJournalEntry(@2084,QUEST)
+END

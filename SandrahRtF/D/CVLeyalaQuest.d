@@ -23,7 +23,7 @@ END
 CHAIN
 IF~~THEN RTLeyThi SaeTrou2
 ~Brilliant, I need to tell the boys of your response. The whole guild will be grateful if you'd come one of these days. ~
-DO~SetGlobal("RTLeyPlot1","GLOBAL",3) MoveBetweenAreas("rtf305",[390.599],4)~EXIT
+DO~SetGlobal("RTLeyPlot1","GLOBAL",3) AddJournalEntry(@2082,QUEST)MoveBetweenAreas("rtf305",[390.599],4)~EXIT
 
 CHAIN
 IF~~THEN RTLeyThi SaeTrou3
@@ -33,7 +33,7 @@ DO~SetGlobal("RTLeyPlot1","GLOBAL",2) MoveBetweenAreas("rtf305",[390.599],4)~EXI
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",2) Global("Sanrompath","GLOBAL",1)~THEN  CVLey25J ReconM
 ~I beg you, <CHARNAME>, let us see Saemon in the near future. If only to see if my skills can provide some help - in your name, my Lord.~
-DO~SetGlobal("RTLeyPlot1","GLOBAL",3)~
+DO~SetGlobal("RTLeyPlot1","GLOBAL",3)AddJournalEntry(@2082,QUEST)~
 END
 ++~Who could deny the plea of his sweetest servant.~ EXIT
 ++~Baah, the old weasel only receives what he has earned.~EXIT
@@ -41,7 +41,7 @@ END
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",2) Global("Sanrompath","GLOBAL",2)~THEN  CVLey25J ReconF
 ~I beg you, <CHARNAME>, let us see Saemon in the near future. If only to see if my skills can provide some help - in your name, my Lady.~
-DO~SetGlobal("RTLeyPlot1","GLOBAL",3)~
+DO~SetGlobal("RTLeyPlot1","GLOBAL",3)AddJournalEntry(@2082,QUEST)~
 END
 ++~Who could deny the plea of her sweetest servant.~ EXIT
 ++~Baah, the old weasel only receives what he has earned.~EXIT
@@ -114,7 +114,7 @@ IF~~THEN CVLEY25J Sheimiss3
 ==CVLey25J~I doubt that force is the answer here. We have not heard all of Sandrah's options yet.~
 ==CVSan25J~He guards the water and the intraplane. Consequently we come by air.~
 ==CVLey25J~Nib's skyship!~
-==CVSan25J~The gardens of the former asylum can be reached from the mainland without being seen from his outposts. They will look for sails on the horizon but we will come riding high on the jetstream that blows nightly from the cooling coast to the offshore islands.~EXIT
+==CVSan25J~The gardens of the former asylum can be reached from the mainland without being seen from his outposts. They will look for sails on the horizon but we will come riding high on the jetstream that blows nightly from the cooling coast to the offshore islands.~DO~AddJournalEntry(@2083,QUEST)~EXIT
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",11)~THEN CVLEY25J Sheifree

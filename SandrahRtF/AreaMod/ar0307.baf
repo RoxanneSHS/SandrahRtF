@@ -39,6 +39,14 @@ END
 
 IF
 Global("RTLeyPlot1","GLOBAL",4)
+!InMyArea("arngrl01")
+THEN
+RESPONSE #100
+CreateCreature("Arngrl01",[197.1565],14)
+END
+
+IF
+Global("RTLeyPlot1","GLOBAL",4)
 THEN
 RESPONSE #100
 SetGlobal("RTLeyPlot1","GLOBAL",5)

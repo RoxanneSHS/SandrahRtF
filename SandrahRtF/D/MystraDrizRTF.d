@@ -28,7 +28,7 @@ IF~ Global("SanRTFPlot1","GLOBAL",8)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY 
 IF~ Global("SanRTFPlot1","GLOBAL",9)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY ~ We have found this book by Cerameon in Candlekeep.~ + Candl1
 IF~Global("SanRTFPlot3","GLOBAL",6) Global("RTThayRep","LOCALS",0)~THEN REPLY~We have returned from Thay, Midnight, we have quite some report to make and Sandrah likes to receive your advice on some matters.~ DO~SetGlobal("RTThayRep","LOCALS",1)~EXTERN CVSan25J ThayRepNoTalos1
 IF~Global("SanRTFPlot3","GLOBAL",7) Global("RTThayRep","LOCALS",0)~THEN REPLY~ We have returned from Thay, Midnight, we have quite some report to make and Sandrah likes to receive your advice on some matters.~ DO~SetGlobal("RTThayRep","LOCALS",1)~EXTERN CVSan25J ThayRepNoTalos1
-IF~Global("SanRTFPlot3","GLOBAL",7) Global("RTThayRep","LOCALS",1) GlobalLT("SanRTFPlot4","GLOBAL",6)~THEN REPLY~ We return from the Wood of Sharp Teeth and we have *closed* the new academy there. It seems that Talos is eliminated from the phalanx of our opponents.~DO~ SetGlobal("RTThayRep","LOCALS",2)~EXTERN CVSan25J ThayRepDefTalos1
+IF~Global("SanRTFPlot3","GLOBAL",7) Global("RTThayRep","LOCALS",1) GlobalLT("SanRTFPlot4","GLOBAL",3)~THEN REPLY~ We return from the Wood of Sharp Teeth and we have *closed* the new academy there. It seems that Talos is eliminated from the phalanx of our opponents.~DO~ SetGlobal("RTThayRep","LOCALS",2)~EXTERN CVSan25J ThayRepDefTalos1
 IF~Global("SanRTFPlot4","GLOBAL",6) Global("ToFinal","LOCALS",0)~THEN REPLY~We are here to consult with you one last time as Thay is now our destination to finish this struggle and bring peace to the Realms.~+ Summary1  
 
 CHAIN

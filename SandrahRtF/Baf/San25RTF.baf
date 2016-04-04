@@ -204,6 +204,15 @@ AddJournalEntry(@2061,QUEST)
 END
 
 IF
+Global("RTLouPlot","GLOBAL",12)
+Global("LouGoneJour","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("LouGoneJour","LOCALS",1)
+AddJournalEntry(@2085,QUEST)
+END
+
+IF
 AreaCheck("BG4200")
 Global("RTImpHere","BG4200",1)
 See("RTImpT")
@@ -304,7 +313,7 @@ Global("RTGoRaven","LOCALS",2)
 THEN
 RESPONSE #100
 SetGlobal("RTGoRaven","LOCALS",3)
-SetGlobal("Chapter","Global",26)
+SetGlobal("Chapter","Global",24)
 TextScreen("RTRavn")
 AddJournalEntry(@1795,QUEST)
 END

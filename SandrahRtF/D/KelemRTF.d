@@ -35,7 +35,7 @@ CHAIN
 IF~AreaCheck("RTF120") Dead("RTSarev") Global("SarevT","RTF120",1)~THEN RTSarev Kelem3
 ~You have shown mercy, <CHARNAME>, you allowed me to enter this peaceful realm after a life full of turmoil. Peaceful it was until this day.~
 DO~SetGlobal("SarevT","RTF120",2)~
-=~I owe you, so I will help you to survive the attacks of those you have fallen by your hands. Shall I be your ally on this level of Kelemvor's Realm?~
+=~I owe you, so I will help you to survive the attacks of those you have fallen by your hands. Shall I be your ally on this level of Kelemvor's Realm, the Fugue Plane?~
 END
 ++~I know how much that offer costs you, Sarevok, and I do not reject it.~DO~SetGlobal("SarevT","RTF120",3)~EXIT
 ++~I will have nothing to do with you, *brother*, your former betrayals have sentenced you in my eyes already.~ DO~ActionOverride("RTSarev",EscapeArea())~EXIT
@@ -99,7 +99,7 @@ DO~SetGlobal("SanRTFPlot4","GLOBAL",3)~
 ==CVSan25J~Greetings, Kelemvor. I have not chosen any of those battles that have filled your realm, nor do I seek further confrontation. I do what cannot be avoided.~
 =~Still those that are due for you are yours after the battle is fought - a fact that separates me from my enemies.~
 ==RTKelem~Other gods define their power and impact by the number of their followship. Mine comes from the souls I receive.~
-==CVSan25J~This may not be the case for all future. Those that deny to the Lord of Everything what is rightfully his are getting stronger and their hunger and greed grows daily.~
+==CVSan25J~This may not be the case for all future. Those that deny to the Lord of the Dead what is rightfully his are getting stronger and their hunger and greed grows daily.~
 ==RTKelem~There have always been necromancers and other gods who have taken their share from my harvest, just like mice pick some grains from the farmers.~
 ==CVSan25J~One party has decided to tip the scales of the balance to their side recently. A new sort has appeared led by Velsharoon...~
 ==RTKelem~Ah, that scheming fool, pet dog of the idiot Talos, he has always loathed me for opposing the abnormal undead and liches that are his domain. Have you come to tell me old stories, Mystra. I have expected more from you, given the bloodline you come from.~
@@ -116,7 +116,7 @@ DO~SetGlobal("SanRTFPlot4","GLOBAL",3)~
 CHAIN
 IF~Global("Velshf","RTF340",2)~ THEN RTVelsh Firew1
 ~What has happened...this is not where I wanted to go??~
-DO~SetGlobal("Velshf","RTF340",3) RealSetGlobalTimer("VelshFT","RTF340",180)RealSetGlobalTimer("VelshVul","LOCALS",95)~
+DO~SetGlobal("Velshf","RTF340",3) RealSetGlobalTimer("VelshFT","RTF340",120)RealSetGlobalTimer("VelshVul","LOCALS",100)~
 ==RTKelem~I have summoned you here, Vaunted...~
 ==RTVelsh~You dare to call me such to my face, skelleton?~
 ==RTKelem~I dare even more, necrophant - I dare to stop your excessive leeching of what rightfully belongs to the End of All.~

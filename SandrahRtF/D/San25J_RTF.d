@@ -525,7 +525,7 @@ IF~~THEN REPLY~While we are at it, tell me more about the lich we will meet.~GOT
 END
 
 IF~~THEN BEGIN Larlhint2
-SAY~Larloch, the Shadow King, not to be confused with the King of Shadows, is the last surviving Netherese arcanist-king, one of the oldest non-draconic beings in Faerûn, who ruled over his flying city for centuries and abandoned it before Karsus's Folly. Then a lich by his own process, Larloch amassed an arsenal of spells, magic items, and servants. The Shadow King rules the Warlock's Crypt and its inhabitants, many liches from Netheril, vampires, wights, and lesser undead.~
+SAY~Larloch, the Shadow King, not to be confused with the King of Shadows, is the last surviving Netherese arcanist-king, one of the oldest non-draconic beings in Faerun, who ruled over his flying city for centuries and abandoned it before Karsus's Folly. Then a lich by his own process, Larloch amassed an arsenal of spells, magic items, and servants. The Shadow King rules the Warlock's Crypt and its inhabitants, many liches from Netheril, vampires, wights, and lesser undead.~
 =~Larloch possessed incredible power and intelligence, but human assessment would also declare him as insane.~
 IF~~THEN REPLY~Which means we must prepare for possible attacks from his minions until we can convince the master of our allignment.~DO ~ SetGlobal("LarlHint","LOCALS",2)~ GOTO Larlhint3
 END
@@ -533,7 +533,7 @@ END
 IF~~THEN BEGIN Larlhint3
 SAY~Exactly, once he recognises me as Mystra, we should be able to get his agreement.~
 =~Having survived the cataclysm that resulted from the death of Mystryl, Larloch values the goddess of magic - and the Weave she protects - very highly. Probably the only thing that can draw him out of his studies would be an imminent threat to Mystra or the Weave, like we have it currently. Larloch knows that the destruction or malfunction of the Weave would mean the end of his research and the destruction of all he had accomplished in the last few millennia.~
-=~He also received many boons from Mystra - in exchange for disseminating many of his new discoveries, all incarnations of Mystra granted him great freedom in the research of mighty spells and the creation of powerful artifacts. In some ways the magic he worked rivalled that of ancient Netheril itself. ~
+=~He also received many boons from Mystra - in exchange for disseminating many of his new discoveries, all incarnations of Mystra granted him great freedom in the research of mighty spells and the creation of powerful artifacts. In some ways the magic he works rivals that of ancient Netheril itself. ~
 IF~~THEN REPLY~Now I understand why you had proposed his involvement. Szass Tam will receive quite a shock if he faces the Shadow King.~EXIT
 IF~~THEN REPLY~If we can persuade him to ally with us we will have quite a mighty supporter on our side. Szass Tam will be badly surprised.~EXIT
 END
