@@ -236,7 +236,7 @@ IF~~THEN RTCandre GetIthr2
 ==CVSan25J~Edwin, that brute may not fall for your story easily, he may use extreme measures to interrogate you...~
 ==RTEdwin~I am aware of the risk, Sandrah. This is the task of a leader who puts the mission success above his personal fear and safety. I will lead the Commander and his men out to the estate while you and my wife make sure none of them will escape.~
 ==RTCandre~We have talked about this thoroughly, Sandrah and we have agreed that one of us must take the risk. Edwin convinced me that Lucinda needs me and a mage like him will have a better chance to return unharmed than a fighter like me.~DO~EscapeArea()~
-==RTEdwin~For a new Thay!~ DO~EscapeArea()~EXIT
+==RTEdwin~For a new Thay!~ DO~SetGlobal("Chapter","Global",28) AddJournalEntry(@2087,QUEST) EscapeArea()~EXIT
 
 CHAIN
 IF~Global("CitEntpl","GLOBAL",7)~THEN RTCandre Iltdef1
@@ -257,7 +257,7 @@ IF~~THEN  CVSan25J Iltdef2
 ~Your estimation of the red hoods abilities were not exaggerated, Candrella.~
 =~I am truely glad you could persuade the Legion Commander without getting into too much trouble, Edwin.~
 ==RTCandre~ I am so glad I can hold you in my arms unharmed, my Ssinssrigg.~
-==RTEdwin~(Smiles) I had to re-use some of my former *diplomatic* skills. They aided me in my old days on the Sword Coast when my mastermind had to outwit brainless but powerful foes or allies alike.~
+==RTEdwin~(Smiles) I had to re-use some of my former *diplomatic* skills. They aided me in my old days on the Sword Coast when my mastermind had to outwit brainless but powerful enemies or allies alike.~
 ==CVSan25J~As much as I disliked your behaviour back then...this time I am relieved you used your slick tongue well.~
 ==RTCandre~Let us go inside, friends, we may want to celebrate our success a bit and also discuss our next steps.~DO~EscapeArea()~
 ==RTEdwin~I surely have deserved a glass of Thayan wine or two accompanied by some equally sweet kisses from my wife (Oh, those drow skills..mmh). Come inside once you are ready, I will let Ehrdwin set up a small feast for friends.~DO~EscapeArea()~EXIT

@@ -108,7 +108,7 @@ DO~SetGlobal("SharDes","RTF071",3) SetGlobal("SanRTFPlot4","GLOBAL",8)~
 =~Cyric was a fool to provoke the two of you, <CHARNAME> and Mystra. Your union is stronger than any alliance the gods have forged so far. This is my last word, Mystra, listen and agree.~
 =~Those who have caused this trouble will pay the price. Velsharoon will stay under Kelemvor's custody. Talos, Shar, and Cyric will be banned from the Prime from hereon, their essence will go to Demigorgon should they trespass this verdict.~
 =~Mystra and <CHARNAME> will be responsible to clean up the mess the new Karsus produced - they will also need to capture Cyric and return him to Celestia to enforce the ban on him.~
-==CVSan25J~When our task is done the Weave will return to Celestia like I said.~EXIT
+==CVSan25J~When our task is done the Weave will return to Celestia like I said.~DO~EraseJournalEntry(@1943)~EXIT
 
 CHAIN
 IF~Global("CitEntpl","GLOBAL",15)~THEN CVSzas InPrison1
@@ -162,7 +162,7 @@ DO~ SetGlobal("CitEntpl","GLOBAL",17) SetGlobal("SanRTFPlot5","GLOBAL",4)~
 ==CVSan25J~I see...ah, yes, you put the culprit's head into here...you switch the lever...the hatchet will come down...~
 ==CVSzas~What....????~
 ==CVSan25J~*Sandrah has seized Szass Tam's left hand and before the mage realises what has happened she has snapped his arm into the device. Before he becomes aware of the danger she has already switched the machine and his hand is cut off cleanly...~
-==CVSzas~AAAARGHH!!!!~EXIT
+==CVSzas~AAAARGHH!!!!~DO~AddJournalEntry(@2091,QUEST)~EXIT
 
 CHAIN
 IF~AreaCheck("RTF172") See("CVSandr") Range("CVSandr",25)!Allegiance(Myself,ENEMY)~THEN CVCyr01 Citadl1

@@ -281,14 +281,14 @@ DO~SetGlobal("RTMeliQuest","GLOBAL",3)~
 ==RTMeli~He developped fatherly feelings towards me, you mean?~
 ==CVSan25J~You spend a long time in his care, longer than you did with your real father if I recall correctly.~
 ==RTMeli~The relationship to my parents was rather cold, you know those Waterdeep snobs better than anyone, my dear. A sorcerer was the black sheep of the family. You are right, Thalantyr never made me feel such. (Sigh) I never recognized how important he was for me.~
-==CVSan25J~It may be another sign of growing wisdom and maturity that you do so now.~EXIT
+==CVSan25J~It may be another sign of growing wisdom and maturity that you do so now.~DO~AddJournalEntry(@2088,QUEST)~EXIT
 
 CHAIN
 IF~Global("RTMeliQuest","GLOBAL",4) ~ THEN RTMeli Scroll1
 ~This old scroll, do you think it may be what Thalantyr told me to watch out for?~
 DO~SetGlobal("RTMeliQuest","GLOBAL",5)~
 ==CVSan25J~It has endured the ages since Netheril fell, consequently it has an inherit power of its own. All I can say at the moment is that it is the second half of some old recital. Without its complementary part I can make little out of it.~
-==RTMeli~Still - it will be worth keeping it. Chances are we find the second part somehow, we are coming around a bit, don't we?~ EXIT
+==RTMeli~Still - it will be worth keeping it. Chances are we find the second part somehow, we are coming around a bit, don't we?~ DO~AddJournalEntry(@2089,QUEST)~EXIT
 
 CHAIN
 IF~Global("RTMeliQuest","GLOBAL",6) ~ THEN RTMeli Scroll2
@@ -297,7 +297,7 @@ DO~SetGlobal("RTMeliQuest","GLOBAL",7)~
 ==CVSan25J~ Let us see if we can get some sense out of it.~DO~AddXPObject("RTMeli",22500)~
 ==RTMeli~To study and discover maybe a secret of the ancients with you, oh Sandrah, I have to thank <CHARNAME> again and again for this opportunity, even if nothing may in the end be in those old parchments.~
 ==CVSan25J~They may not reveal their deeper meanings easily - just like some people I met and deciphered during my travels.~
-=~Our study may take some time, let us plan it for a restful evening not too far in the future.~EXIT
+=~Our study may take some time, let us plan it for a restful evening not too far in the future.~DO~AddJournalEntry(@2090,QUEST)~EXIT
 
 CHAIN
 IF~Global("RTMeliQuest","GLOBAL",8)~ THEN RTMeli Scroll3
@@ -313,7 +313,7 @@ DO~SetGlobal("RTMeliQuest","GLOBAL",9)RealSetGlobalTimer("RTMeliNB","LOCALS",120
 ==RTMeli~It surely is not for one man alone to possess such knowledge and power.~
 ==CVSan25J~You have something in mind, my dear?~
 ==RTMeli~A vision, a dream, Sandrah. A university for learning and teaching, where each student will find the answers to his specific needs. Wisdom is not for one alone to dominate like Karsus and others did, but to be spread widely and help all.~
-==CVSan25J~We surely must enter the Citadel, where the artefact is hidden. The current master may oppose our interest, but he is anyway on our list of those who must fall.~DO~RestParty()~EXIT
+==CVSan25J~We surely must enter the Citadel, where the artefact is hidden. The current master may oppose our interest, but he is anyway on our list of those who must fall.~DO~AddJournalEntry(@2092,QUEST) RestParty()~EXIT
 
 CHAIN
 IF~Global("RTMeliQuest","GLOBAL",10)~ THEN RTMeli ScrollN1
@@ -351,7 +351,7 @@ DO~ClearAllActions() Wait(2) CreateVisualEffectObject("icwrati","RTMeli")CreateV
 CHAIN
 IF~Global("RTMeliQuest","GLOBAL",13)~THEN RTMeEle ScrollN5
 ~The master knew some fool would attempt to gain wisdom by theft.~
-DO~SetGlobal("RTMeliQuest","GLOBAL",14)~
+DO~SetGlobal("RTMeliQuest","GLOBAL",14) EraseJournalEntry(@2088) EraseJournalEntry(@2089) EraseJournalEntry(@2090) EraseJournalEntry(@2092)~
 ==RTMeli~The master erred, creature. And the master is long dead. He has nothing to protect anymore.~
 ==RTMeEle~Dead? A god cannot die.~
 ==RTMeli~He never became a god even if he tried. In the end it was him who was punished as the thief he himself was - he stole the knowledge from the people who were supposed to own it - and then by its illegal use he was trying to steal immortality from a goddess.~

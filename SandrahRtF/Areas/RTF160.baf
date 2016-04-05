@@ -22,6 +22,18 @@ END
 
 IF
 Global("Cita","RTF160",2)
+Global("Updates","RTF160",0)
+THEN
+RESPONSE #100
+SetGlobal("Updates","RTF160",1)
+AddJournalEntry(@1946,QUEST)
+EraseJournalEntry(@2061)
+EraseJournalEntry(@2091)
+EraseJournalEntry(@2077)
+END
+
+IF
+Global("Cita","RTF160",2)
 InParty("CVIzzy")
 InParty("CVGiran") 
 Delay(6)

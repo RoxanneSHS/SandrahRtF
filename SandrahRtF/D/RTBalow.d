@@ -3,7 +3,7 @@ BEGIN RTBalow
 IF~AreaCheck("RTF077")Global("SanRTFPlot5","GLOBAL",4)~THEN BEGIN SeenTam
 SAY~Only one came from upstairs who was a red robed foe, he had a stump like I once had.~
 IF~~THEN REPLY~That must have been Szass Tam, we are on his trail.~EXIT
-IF~~THEN REPLY~It is a habbit in Sandrah's family to leave their foes in that way.~EXIT
+IF~~THEN REPLY~It is a habbit in Sandrah's family to leave their foe in that way.~EXIT
 END
 
 IF~AreaCheck("RTF077")GlobalLT("SanRTFPlot5","GLOBAL",4)~THEN BEGIN CityExit1

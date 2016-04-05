@@ -97,7 +97,7 @@ DO~ SetGlobal("RTBackInUD","GLOBAL",6)~
 ==CVSan25J~A less open approach may be more promissing here.~
 ==RTImrae~What do you mean?~
 ==CVSan25J~A few captured surfacers to accompany L'Urieet's sacrifice for the glory of Lolth could be delivered to the temple as a symbol of Ust Natha's redemption attempt.~
-==RTImrae~You have proven once before you are able and brave enough to betray even drow matrons and handmaidens. Now try your luck with the Spider Queen herself.~EXIT
+==RTImrae~You have proven once before you are able and brave enough to betray even drow matrons and handmaidens. Now try your luck with the Spider Queen herself.~ DO~AddJournalEntry(@2086,QUEST)~ EXIT
 
 CHAIN
 IF~ Global("RTBackInUD","GLOBAL",6)~THEN RTLouFav PriorLolth
@@ -157,4 +157,4 @@ DO~ SetGlobal("RTBackInUD","GLOBAL",12)~
 ==RTImrae~So be it, L'Urieet, a new house will be established in this city, its matron will be commander of the defence. Choose well the male and priestesses to found the new line, young one.~ DO~EscapeArea()~
 ==CVSan25J~The blessing of Mystra means little to you, I know, but the best wishes of your friends do.~
 END
-++~Farewell, L'Urieet, love and hope for you and the free drow.~DO~AddexperienceParty(60000)~EXIT
+++~Farewell, L'Urieet, love and hope for you and the free drow.~DO~AddexperienceParty(60000) EraseJournalEntry(@2086) EraseJournalEntry(@2085)EraseJournalEntry(@2059)~EXIT

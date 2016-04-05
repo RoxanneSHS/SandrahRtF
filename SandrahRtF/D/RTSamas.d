@@ -75,7 +75,7 @@ DO~SetGlobal("CitEntpl","GLOBAL",12)~
 ==CVSan25J~You have not stood in the way, just like it was expected from the merchant who always will turn up on the winning side.~
 ==RTSamas~How disappointing, Mystra,...oh, no let us stick to Sandrah.~
 =~How much I long to have you there with me - on the winning side...~
-==CVSan25J~Which side will that be in your opinion Samas?~
+==CVSan25J~Which side will that be in your opinion, Samas?~
 ==RTSamas~Our side, Sandrah - our side.~
 =~You have felt the effect of that wine, haven't you? Forget about all these fools...the winning side is where we will be.~DO~EscapeArea()~EXIT
 
