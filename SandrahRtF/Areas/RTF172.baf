@@ -22,10 +22,19 @@ InMyArea("RTSanCop")
 OR(2)
 HPLT("RTSanCop",50)
 RealGlobalTimerExpired("Clonetime","RTF172")
+Global("CloneOut","RTF172",0)
 THEN
 RESPONSE #100
-DisplayString("RTSanCop",@2021)
+ClearAllActions()
+StartCutSceneMode()
+SetGlobal("CloneOut","RTF172",1)
+Wait(1)
+ActionOverride("RTSanCop",DestroyAllEquipment())
+Wait(2)
+DisplayStringWait("RTSanCop",@2021)
+Wait(1)
 ActionOverride("RTSanCop",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+EndCutSceneMode()
 END
 
 IF

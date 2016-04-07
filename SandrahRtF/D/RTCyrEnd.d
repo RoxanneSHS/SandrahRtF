@@ -124,7 +124,7 @@ END
 
 IF~~THEN BEGIN Gnollend9
 SAY~Fine - you have every right to know and not to doubt my love and loyalty. Yes, I set some of the things in motion, but I did not plan or steer this whole affair. Listen.~
-=~Almost immediately after our ascencion it became clear that we were facing opposition from various old and new foes in Celestia. With the ears and eyes of my ever loyal Pelligram and your Solar it became apparent that some alliance was forming around Cyric and Shar.~
+=~Almost immediately after our ascencion it became clear that we were facing opposition from various old and new foe in Celestia. With the ears and eyes of my ever loyal Pelligram and your Solar it became apparent that some alliance was forming around Cyric and Shar.~
 =~I decided not to let them finish their preparations and also I decided that it would be advantageous for us to set the scenery for the confrontation.~
 IF~~THEN REPLY~You decided on the Prime to be battlefield once more - how could you!~GOTO Gnollend10
 IF~~THEN REPLY~You must have had your reasons, continue please.~ GOTO Gnollend10
@@ -142,7 +142,7 @@ SAY~Are we not inseparable? Can I go without love and hope at my side?~
 =~You were their target just like I was, you once again had little choice. Earlier on you asked me about who has gained from it all - you did.~
 =~The spell plague as they call it will continue, no matter what the Overfool AO might think. The gods relying on mystical and magical manifestations for their believers will vanish over time. The people will turn to science, literature and research and start to create their own devices that do *magic* tasks for them.~
 =~But wherever two pairs of lips meet each other in love and desire, there will be a god who grows in power daily.~
-IF~~THEN REPLY~*Your own lips meet each other in love and desire*~ DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() Wait(2)~ EXIT
+IF~~THEN REPLY~*Your own lips meet each other in love and desire*~ DO~EraseJournalEntry(@2093) EraseJournalEntry(@2094) EraseJournalEntry(@1984) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() Wait(2)~ EXIT
 END
 
 IF~~THEN BEGIN Gnollend12
@@ -150,6 +150,6 @@ SAY~Are we not inseparable? Can I go without love and hope at my side?~
 =~You were their target just like I was, you once again had little choice. Earlier on you asked me about who has gained from it all - you did.~
 =~The spell plague as they call it will continue, no matter what the Overfool AO might think. The gods relying on mystical and magical manifestations for their believers will vanish over time. The people will turn to science, literature and research and start to create their own devices that do *magic* tasks for them.~
 =~But wherever two lips meet each other in love and desire, there will be a goddess who grows in power daily.~
-IF~~THEN REPLY~*Your own lips meet each other in love and desire*~ DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() Wait(2)~ EXIT
+IF~~THEN REPLY~*Your own lips meet each other in love and desire*~ DO~EraseJournalEntry(@2093) EraseJournalEntry(@2094) EraseJournalEntry(@1984) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() Wait(2)~ EXIT
 END
 END

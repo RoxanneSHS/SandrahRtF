@@ -31,6 +31,7 @@ IF
 AreaCheck("RTF340")
 Global("Velshf","RTF340",5)
 Global("Velshen","LOCALS",0)
+See([ENEMY])
 THEN
 RESPONSE #100
 SetGlobalTimer("RANG","LOCALS",THREE_ROUNDS)
@@ -58,118 +59,6 @@ RESPONSE #20
 SetGlobal("BENEMYHASER","LOCALS",0)
 SetGlobal("BP_BehTel","LOCALS",1)
 FaceObject(LastSeenBy(Myself))
-END
-
-IF
-	GlobalTimerExpired("BENEMYHASE","LOCALS")
-	Global("BENEMYHASER","LOCALS",1)
-	!See([ENEMY])
-	!See(LastHitter(Myself))
-THEN
-	RESPONSE #70
-		SetGlobal("BENEMYHASER","LOCALS",0)
-		ClearActions(Myself)
-		Continue()
-	RESPONSE #30
-SetGlobal("BENEMYHASER","LOCALS",0)
-		ReallyForceSpell(LastHitter(Myself),WIZARD_DIMENSION_DOOR)
-END
-
-IF
-	!Allegiance(Myself,ENEMY)
-	HitBy([ENEMY],CRUSHING)
-THEN
-	RESPONSE #100
-		Shout(HELP_ME_GROUP151)
-		Enemy()
-END
-
-IF
-	TookDamage()
-	Global("BENEMYHASER","LOCALS",0)
-	!See(LastHitter(Myself))
-	!See([ENEMY])
-THEN
-	RESPONSE #50
-		SetGlobalTimer("BENEMYHASE","LOCALS",TWO_ROUNDS)
-		SetGlobal("BENEMYHASER","LOCALS",1)
-		MoveToObject(LastHitter(Myself))
-	RESPONSE #25
-RunAwayFrom(LastHitter(Myself),45)
-	RESPONSE #25
-SetGlobal("BENEMYHASER","LOCALS",0)
-		ReallyForceSpell(LastHitter(Myself),WIZARD_DIMENSION_DOOR)
-END
-
-IF
-	CheckStatGT(Myself,5,INT)
-	OR(2)
-		See(LastAttackerOf(Myself))
-		See(LastHitter(Myself))
-	!GlobalTimerNotExpired("BENEMYHASE","LOCALS")
-THEN
-	RESPONSE #35
-		SetGlobalTimer("BENEMYHASE","LOCALS",TWO_ROUNDS)
-		ReallyForceSpell(LastSeenBy(Myself),WIZARD_DIMENSION_DOOR)
-		AttackOneRound(LastSeenBy(Myself))
-	RESPONSE #65
-		SetGlobalTimer("BENEMYHASE","LOCALS",TWO_ROUNDS)
-		ReallyForceSpell(LastSeenBy(Myself),WIZARD_NPC_SYMBOL_STUN)
-		Wait(1)
-		ReallyForceSpell(TenthNearest,WIZARD_DIMENSION_DOOR)
-END
-
-IF
-	CheckStatGT(Myself,5,INT)
-	OR(2)
-		See(LastAttackerOf(Myself))
-		See(LastHitter(Myself))
-	!GlobalTimerNotExpired("BENEMYHASE","LOCALS")
-THEN
-	RESPONSE #100
-		SetGlobalTimer("BENEMYHASE","LOCALS",TWO_ROUNDS)
-		ReallyForceSpell(LastSeenBy(Myself),WIZARD_DIMENSION_DOOR)
-		AttackOneRound(LastSeenBy(Myself))
-END
-
-IF
-	CheckStatGT(Myself,5,INT)
-	!GlobalTimerNotExpired("BENEMYHASE","LOCALS")
-THEN
-	RESPONSE #100
-		SetGlobalTimer("BENEMYHASE","LOCALS",TWO_ROUNDS)
-		EquipMostDamagingMelee()
-		ReallyForceSpell(LastSeenBy(Myself),WIZARD_DIMENSION_DOOR)
-		AttackOneRound(LastSeenBy(Myself))
-END
-
-IF
-	CheckStatGT(Myself,5,INT)
-	See(TenthNearest)
-	!GlobalTimerNotExpired("BENEMYHASE","LOCALS")
-THEN
-	RESPONSE #100
-		SetGlobalTimer("BENEMYHASE","LOCALS",ONE_ROUND)
-		ReallyForceSpell(TenthNearest,WIZARD_DIMENSION_DOOR)
-END
-
-IF
-	CheckStatGT(Myself,5,INT)
-	!GlobalTimerNotExpired("BENEMYHASE","LOCALS")
-	!See([ENEMY])
-THEN
-	RESPONSE #100
-		SetGlobal("BENEMYHASER","LOCALS",1)
-		SetGlobalTimer("BENEMYHASE","LOCALS",TWO_ROUNDS)
-		ReallyForceSpell(Player1,WIZARD_DIMENSION_DOOR)
-END
-
-IF
-	OR(2)
-		!Allegiance(Myself,EVILCUTOFF)
-		!Detect([ENEMY])
-THEN
-	RESPONSE #100
 END
 
 IF
@@ -250,79 +139,7 @@ THEN
 END
 
 IF
-	See(Nearest)
-	False()
-THEN
-	RESPONSE #100
-		Continue()
-END
-
-IF
-	RandomNumLT(31,21)
-	OR(8)
-		See(NearestEnemyOf(Myself))
-		See(MostDamagedOf)
-		See(WorstAC)
-		See(LastTargetedBy(Myself))
-		See(LastAttackerOf(Myself))
-		See(LastHitter(Myself))
-		See([0.0.0.0.0.0.LAWFUL_GOOD])
-		See([0.0.0.PALADIN_ALL])
-	RandomNumLT(27,22)
-	OR(2)
-		See([ENEMY.0.0.0.0.SUMMONED])
-		See([ENEMY.0.0.0.0.ILLUSIONARY])
-	RandomNumLT(29,24)
-	OR(10)
-		See([ENEMY.0.0.BARD_ALL])
-		See([ENEMY.0.0.DRUID_ALL])
-		See([ENEMY.0.0.RANGER_ALL])
-		See([ENEMY.0.0.LONG_BOW])
-		See([ENEMY.0.0.SORCERER])
-		See([ENEMY.0.0.CLERIC_ALL])
-		See([ENEMY.0.0.CLERIC_MAGE])
-		See([ENEMY.0.0.CLERIC_RANGER])
-		See([ENEMY.0.0.PALADIN_ALL])
-		See([ENEMY.0.0.CLERIC.0.0.MASK_GOOD])
-	RandomNumLT(30,16)
-	See(Nearest)
-	RandomNumLT(26,14)
-	OR(3)
-		See([ENEMY.0.0.RANGER_ALL])
-		See([ENEMY.0.0.PALADIN_ALL])
-		See([ENEMY.0.0.CLERIC.0.0.MASK_GOOD])
-	RandomNumLT(28,10)
-	OR(3)
-		See([ENEMY.0.0.MONK])
-		See([ENEMY.0.0.THIEF_ALL])
-		See([ENEMY.0.0.BARD_ALL])
-	RandomNumLT(24,9)
-	OR(3)
-		See(StrongestOf)
-		See(BestAC)
-		See(LeastDamagedOf)
-	RandomNumLT(25,9)
-	See(WeakestOf)
-	RandomNumLT(23,8)
-	See(WorstAC)
-	RandomNumLT(22,8)
-	See(MostDamagedOf)
-	RandomNumLT(32,11)
-	See(TenthNearest([ENEMY.0.0.PALADIN_ALL]))
-	RandomNumLT(34,12)
-	See(TenthNearest([ENEMY.0.0.LONG_BOW]))
-	RandomNumLT(35,12)
-	See(TenthNearest([ENEMY.0.0.CLERIC_ALL]))
-	RandomNumLT(33,12)
-	See(TenthNearest([0.0.0.0.0.0.LAWFUL_GOOD]))
-	False()
-THEN
-	RESPONSE #100
-		Continue()
-END
-
-IF
-	OR(8)
+	OR(7)
 		General(LastSeenBy(Myself),UNDEAD)
 		Race(LastSeenBy(Myself),DEMONIC)
 		Race(LastSeenBy(Myself),RAKSHASA)

@@ -252,6 +252,7 @@ DO~SetGlobal("PellMellB","LOCALS",2)~
 CHAIN
 IF WEIGHT #-7~Global("RTPellSol","BG2300",2)~THEN Pellig SolarJ1
 ~Solar!~
+DO~SetGlobal("PelligFollow","GLOBAL",0)~
 ==Solar~Pelligram!~
 ==Pellig~Solar...Argonsan...~
 ==Solar~The mission is finished, Pelligram.~
