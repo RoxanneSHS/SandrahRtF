@@ -1,4 +1,14 @@
 IF
+Global("SanTotStart","Global",0)
+Global("TotDoorCl","RTF023",0)
+THEN
+RESPONSE #100
+SetGlobal("TotDoorCl","RTF023",1)
+TriggerActivation("InTot",FALSE)
+Continue()
+END
+
+IF
 Global("RTFoundIce","GLOBAL",0)
 Delay(12)
 THEN

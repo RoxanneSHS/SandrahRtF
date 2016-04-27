@@ -3734,3 +3734,38 @@ SAY NAME2 @2072
 SAY UNIDENTIFIED_DESC Cloak
 SAY DESC @2071
 END
+
+//rtf023 new travel region and new entrance for tot001
+COPY_EXISTING ~rtf023.ARE~ ~override~
+LPF fj_are_structure
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 4816
+    fj_box_top      = 2678
+    fj_box_right    = 5122
+    fj_box_bottom   = 2937
+    fj_cursor_idx   = 30   //door
+    fj_vertex_0     = 4813 + (2770 << 16)
+    fj_vertex_1     = 4936 + (2934 << 16)
+    fj_vertex_2     = 5119 + (2829 << 16)
+    fj_vertex_3     = 4813 + (2770 << 16)
+    fj_vertex_4     = 4813 + (2770 << 16)
+    fj_flags        = 0 // (PartyRequired)
+    fj_loc_x        = 4966
+    fj_loc_y        = 2804
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = InTot
+    fj_destination_area = tot001
+    fj_destination_name = In001
+  END
+  
+  LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 4950
+    fj_loc_y       = 2784
+    fj_orientation = 5
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name           = Out001
+  END
