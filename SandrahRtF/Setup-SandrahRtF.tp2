@@ -3750,7 +3750,7 @@ LPF fj_are_structure
     fj_vertex_2     = 5119 + (2829 << 16)
     fj_vertex_3     = 4813 + (2770 << 16)
     fj_vertex_4     = 4813 + (2770 << 16)
-    fj_flags        = 0 // (PartyRequired)
+    fj_flags        = 4 // (PartyRequired)
     fj_loc_x        = 4966
     fj_loc_y        = 2804
     STR_VAR
