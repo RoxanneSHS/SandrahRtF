@@ -2,7 +2,7 @@ BEGIN RTElles
 BEGIN RTDeher
 
 CHAIN
-IF~AreaCheck("ar2800")~THEN RTElles InRTF1
+IF~AreaCheck("ar2800")Global("SanTotStart","Global",0)~THEN RTElles InRTF1
 ~Oh, <CHARNAME>, you have returned, and you, Mystra. Suldanessalar is strong again and reborn thanks to you. We have learned some of what has happened to you since, as much as is possible to comprehend for us mortals.~
 ==CVSan25J~We have returned in our mortal avatars, Ellesime - just as our opponents.~
 ==RTElles~Gods walking on the Prime, good ones like you - and opponents...it has happened once - will it ever end?~
