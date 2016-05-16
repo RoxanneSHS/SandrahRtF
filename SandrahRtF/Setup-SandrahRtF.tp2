@@ -218,6 +218,7 @@ COPY ~SandrahRTF/Areas/RTF145.ARE~ ~override/RTF145.ARE~
      SAY 0x3020  @1910
      SAY 0x3c2c  @2031
      SAY 0x3c60  @1798
+COMPILE     ~SandrahRTF/Areas/RTF145.baf~
 
 COPY ~SandrahRTF/Areas/RTF011.ARE~ ~override/RTF011.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF011.baf~
@@ -1896,8 +1897,6 @@ EXTEND_BOTTOM
 ~RTF138.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
 EXTEND_BOTTOM
 ~RTF139.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
-EXTEND_BOTTOM
-~RTF145.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
 EXTEND_BOTTOM
 ~RTF150.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
 EXTEND_BOTTOM
