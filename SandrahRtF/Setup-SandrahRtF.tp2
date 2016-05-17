@@ -3704,6 +3704,7 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~jellking.cre~ THEN BEGIN
 COPY ~SandrahRTF/cre/jellking.cre~ ~override~
      SAY NAME1 @2070
      SAY NAME2 @2070
+COPY ~SandrahRTF/itm/jellking.itm~ ~override~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BPLizking.CRE~ THEN BEGIN
