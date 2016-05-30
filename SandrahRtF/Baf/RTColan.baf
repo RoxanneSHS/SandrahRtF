@@ -3,7 +3,7 @@ AreaCheck("rtf082")
 NumTimesTalkedTo(0)
 See(Player1)
 See("CVSandr")
-See("RTCandr")
+See("RTCandre")
 THEN
 RESPONSE #100
 StartDialogueNoSet([PC])
