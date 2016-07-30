@@ -3441,7 +3441,7 @@ REPLACE ~ 99992~ @1996
 
 
 APPEND ~pdialog.2da~
-~CVIzzy *** *** *** CVIzy25P CVIzy25J CVIzy25D CVIzy25~
+~CVIzzy CVIzy25P CVIzy25J CVIzy25D CVIzy25P CVIzy25J CVIzy25D CVIzy25~
 UNLESS ~CVIzzy~
 
 APPEND ~interdia.2da~
@@ -3449,7 +3449,7 @@ APPEND ~interdia.2da~
 UNLESS ~CVIzzy~
 
 APPEND ~pdialog.2da~
-~CVGiran *** *** *** CVGir25P CVGir25J CVGir25D CVGir25~
+~CVGiran CVGir25P CVGir25J CVGir25D CVGir25P CVGir25J CVGir25D CVGir25~
 UNLESS ~CVGiran~
 
 APPEND ~interdia.2da~
@@ -3457,7 +3457,7 @@ APPEND ~interdia.2da~
 UNLESS ~CVGiran~
 
 APPEND ~pdialog.2da~
-~Leyala *** *** *** CVLey25P CVLey25J CVLey25D CVLey25~
+~Leyala CVLey25P CVLey25J CVLey25D CVLey25P CVLey25J CVLey25D CVLey25~
 UNLESS ~CVLeyala~
 
 APPEND ~interdia.2da~
@@ -3465,7 +3465,7 @@ APPEND ~interdia.2da~
 UNLESS ~CVLeyala~
 
 APPEND ~pdialog.2da~
-~RTMeli *** *** *** RTMeliP RTMeli RTMeliD RTMeli~
+~RTMeli RTMeliP RTMeli RTMeliD RTMeliP RTMeli RTMeliD RTMeli~
 UNLESS ~RTMeli~
 
 APPEND ~interdia.2da~
@@ -3473,7 +3473,7 @@ APPEND ~interdia.2da~
 UNLESS ~RTMeli~
 
 APPEND ~pdialog.2da~
-~Loureed *** *** *** CVLou25P CVLou25J CVLou25D Loured25~
+~Loureed CVLou25P CVLou25J CVLou25D CVLou25P CVLou25J CVLou25D Loured25~
 UNLESS ~Loureed~
 
 APPEND ~interdia.2da~
@@ -3481,7 +3481,7 @@ APPEND ~interdia.2da~
 UNLESS ~Loureed~
 
 APPEND ~pdialog.2da~
-~Pellig3 *** *** *** PelligP PelligJ *** Pellig~
+~Pellig3 PelligP PelligJ *** PelligP PelligJ *** Pellig~
 UNLESS ~Pellig3~
 
 APPEND ~interdia.2da~
