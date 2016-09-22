@@ -70,7 +70,7 @@ COPY ~SandrahRTF/Areas/CVELM9SR.bmp~ ~override/CVELM9SR.bmp~
 COPY ~SandrahRTF/Areas/CVRTF8.ARE~ ~override/CVRTF8.ARE~
      COMPILE  ~SandrahRTF/Areas/CVRTF8.baf~
 COPY ~SandrahRTF/Areas/CVRTF8.mos~ ~override/CVRTF8.mos~
-COPY ~SandrahRTF/Areas/CVRTF8.tiz~ ~override/CVRTF8.tiz~
+COPY ~SandrahRTF/Areas/CVRTF8.tis~ ~override/CVRTF8.tis~
 COPY ~SandrahRTF/Areas/CVRTF8.wed~ ~override/CVRTF8.wed~
 COPY ~SandrahRTF/Areas/CVRTF8HT.bmp~ ~override/CVRTF8HT.bmp~
 COPY ~SandrahRTF/Areas/CVRTF8LM.bmp~ ~override/CVRTF8LM.bmp~
@@ -88,7 +88,7 @@ COPY ~SandrahRTF/Areas/CVRTF9.ARE~ ~override/CVRTF9.ARE~
       COMPILE  ~SandrahRTF/Areas/CVRTF9.baf~
       COMPILE  ~SandrahRTF/Areas/RTLava.baf~
 COPY ~SandrahRTF/Areas/CVRTF9.mos~ ~override/CVRTF9.mos~
-COPY ~SandrahRTF/Areas/CVRTF9.tiz~ ~override/CVRTF9.tiz~
+COPY ~SandrahRTF/Areas/CVRTF9.tis~ ~override/CVRTF9.tis~
 COPY ~SandrahRTF/Areas/CVRTF9.wed~ ~override/CVRTF9.wed~
 COPY ~SandrahRTF/Areas/CVRTF9HT.bmp~ ~override/CVRTF9HT.bmp~
 COPY ~SandrahRTF/Areas/CVRTF9LM.bmp~ ~override/CVRTF9LM.bmp~
@@ -110,7 +110,7 @@ COPY ~SandrahRTF/Areas/RTF002.ARE~ ~override/RTF002.ARE~
      SAY 0x2984 @1679
      COMPILE  ~SandrahRTF/Areas/RTF002.baf~
 COPY ~SandrahRTF/Areas/RTF002.mos~ ~override/RTF002.mos~
-COPY ~SandrahRTF/Areas/RTF002.tiz~ ~override/RTF002.tiz~
+COPY ~SandrahRTF/Areas/RTF002.tis~ ~override/RTF002.tis~
 COPY ~SandrahRTF/Areas/RTF002.wed~ ~override/RTF002.wed~
 COPY ~SandrahRTF/Areas/RTF002HT.bmp~ ~override/RTF002HT.bmp~
 COPY ~SandrahRTF/Areas/RTF002LM.bmp~ ~override/RTF002LM.bmp~
@@ -119,7 +119,7 @@ COPY ~SandrahRTF/Areas/RTF002SR.bmp~ ~override/RTF002SR.bmp~
 COPY ~SandrahRTF/Areas/RTF003.ARE~ ~override/RTF003.ARE~
      COMPILE  ~SandrahRTF/Areas/RTF003.baf~
 COPY ~SandrahRTF/Areas/RTF003.mos~ ~override/RTF003.mos~
-COPY ~SandrahRTF/Areas/RTF003.tiz~ ~override/RTF003.tiz~
+COPY ~SandrahRTF/Areas/RTF003.tis~ ~override/RTF003.tis~
 COPY ~SandrahRTF/Areas/RTF003.wed~ ~override/RTF003.wed~
 COPY ~SandrahRTF/Areas/RTF003HT.bmp~ ~override/RTF003HT.bmp~
 COPY ~SandrahRTF/Areas/RTF003LM.bmp~ ~override/RTF003LM.bmp~
@@ -130,7 +130,7 @@ COPY ~SandrahRTF/Areas/RTF004.ARE~ ~override/RTF004.ARE~
       SAY 0x4800 @1702
       COMPILE  ~SandrahRTF/Areas/RTF004.baf~
 COPY ~SandrahRTF/Areas/RTF004.mos~ ~override/RTF004.mos~
-COPY ~SandrahRTF/Areas/RTF004.tiz~ ~override/RTF004.tiz~
+COPY ~SandrahRTF/Areas/RTF004.tis~ ~override/RTF004.tis~
 COPY ~SandrahRTF/Areas/RTF004.wed~ ~override/RTF004.wed~
 COPY ~SandrahRTF/Areas/RTF004HT.bmp~ ~override/RTF004HT.bmp~
 COPY ~SandrahRTF/Areas/RTF004LM.bmp~ ~override/RTF004LM.bmp~
@@ -148,7 +148,7 @@ COPY ~SandrahRTF/Areas/RTF04HSR.bmp~ ~override/RTF04HSR.bmp~
 COPY ~SandrahRTF/Areas/RTF005.ARE~ ~override/RTF005.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF005.baf~
 COPY ~SandrahRTF/Areas/RTF005.mos~ ~override/RTF005.mos~
-COPY ~SandrahRTF/Areas/RTF005.tiz~ ~override/RTF005.tiz~
+COPY ~SandrahRTF/Areas/RTF005.tis~ ~override/RTF005.tis~
 COPY ~SandrahRTF/Areas/RTF005.wed~ ~override/RTF005.wed~
 COPY ~SandrahRTF/Areas/RTF005HT.bmp~ ~override/RTF005HT.bmp~
 COPY ~SandrahRTF/Areas/RTF005LM.bmp~ ~override/RTF005LM.bmp~
@@ -165,7 +165,7 @@ COPY ~SandrahRTF/Areas/RTF006.ARE~ ~override/RTF006.ARE~
       SAY 0x8bd8 @1717
 COPY ~SandrahRTF/Areas/RTF006.mos~ ~override/RTF006.mos~
      COMPILE     ~SandrahRTF/Areas/RTF006.baf~
-COPY_LARGE ~SandrahRTF/Areas/RTF006.tiz~ ~override/RTF006.tiz~
+COPY_LARGE ~SandrahRTF/Areas/RTF006.tis~ ~override/RTF006.tis~
 COPY ~SandrahRTF/Areas/RTF006.wed~ ~override/RTF006.wed~
 COPY ~SandrahRTF/Areas/RTF006HT.bmp~ ~override/RTF006HT.bmp~
 COPY ~SandrahRTF/Areas/RTF006LM.bmp~ ~override/RTF006LM.bmp~
@@ -205,7 +205,7 @@ COPY ~SandrahRTF/Areas/RTF010.ARE~ ~override/RTF010.ARE~
      SAY 0x127c @1798
      COMPILE     ~SandrahRTF/Areas/RTF010.baf~
 COPY ~SandrahRTF/Areas/RTF010.mos~ ~override/RTF010.mos~
-COPY ~SandrahRTF/Areas/RTF010.tiz~ ~override/RTF010.tiz~
+COPY ~SandrahRTF/Areas/RTF010.tis~ ~override/RTF010.tis~
 COPY ~SandrahRTF/Areas/RTF010.wed~ ~override/RTF010.wed~
 COPY ~SandrahRTF/Areas/RTF010HT.bmp~ ~override/RTF010HT.bmp~
 COPY ~SandrahRTF/Areas/RTF010LM.bmp~ ~override/RTF010LM.bmp~
@@ -321,7 +321,7 @@ COPY ~SandrahRTF/Areas/RTF021.ARE~ ~override/RTF021.ARE~
      SAY 0x2818 @1754
      COMPILE     ~SandrahRTF/Areas/RTF021.baf~
 COPY ~SandrahRTF/Areas/RTF021.mos~ ~override/RTF021.mos~
-COPY ~SandrahRTF/Areas/RTF021.tiz~ ~override/RTF021.tiz~
+COPY ~SandrahRTF/Areas/RTF021.tis~ ~override/RTF021.tis~
 COPY ~SandrahRTF/Areas/RTF021.wed~ ~override/RTF021.wed~
 COPY ~SandrahRTF/Areas/RTF021HT.bmp~ ~override/RTF021HT.bmp~
 COPY ~SandrahRTF/Areas/RTF021LM.bmp~ ~override/RTF021LM.bmp~
@@ -342,7 +342,7 @@ COPY ~SandrahRTF/Areas/RTF023.ARE~ ~override/RTF023.ARE~
      SAY 0x1b78 @1756
      COMPILE     ~SandrahRTF/Areas/RTF023.baf~
 COPY ~SandrahRTF/Areas/RTF023.mos~ ~override/RTF023.mos~
-COPY ~SandrahRTF/Areas/RTF023.tiz~ ~override/RTF023.tiz~
+COPY ~SandrahRTF/Areas/RTF023.tis~ ~override/RTF023.tis~
 COPY ~SandrahRTF/Areas/RTF023.wed~ ~override/RTF023.wed~
 COPY ~SandrahRTF/Areas/RTF023HT.bmp~ ~override/RTF023HT.bmp~
 COPY ~SandrahRTF/Areas/RTF023LM.bmp~ ~override/RTF023LM.bmp~
@@ -414,7 +414,7 @@ COPY ~SandrahRTF/Areas/RTF306SR.bmp~ ~override/RTF306SR.bmp~
 COPY ~SandrahRTF/Areas/RTF030.ARE~ ~override/RTF030.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF030.baf~
 COPY ~SandrahRTF/Areas/RTF030.mos~ ~override/RTF030.mos~
-COPY ~SandrahRTF/Areas/RTF030.tiz~ ~override/RTF030.tiz~
+COPY ~SandrahRTF/Areas/RTF030.tis~ ~override/RTF030.tis~
 COPY ~SandrahRTF/Areas/RTF030.wed~ ~override/RTF030.wed~
 COPY ~SandrahRTF/Areas/RTF030HT.bmp~ ~override/RTF030HT.bmp~
 COPY ~SandrahRTF/Areas/RTF030LM.bmp~ ~override/RTF030LM.bmp~
@@ -450,7 +450,7 @@ COPY ~SandrahRTF/Areas/RTF034.ARE~ ~override/RTF034.ARE~
        SAY 0x34f4 @1734
        COMPILE     ~SandrahRTF/Areas/RTF034.baf~
 COPY ~SandrahRTF/Areas/RTF034.mos~ ~override/RTF034.mos~
-COPY ~SandrahRTF/Areas/RTF034.tiz~ ~override/RTF034.tiz~
+COPY ~SandrahRTF/Areas/RTF034.tis~ ~override/RTF034.tis~
 COPY ~SandrahRTF/Areas/RTF034.wed~ ~override/RTF034.wed~
 COPY ~SandrahRTF/Areas/RTF034HT.bmp~ ~override/RTF034HT.bmp~
 COPY ~SandrahRTF/Areas/RTF034LM.bmp~ ~override/RTF034LM.bmp~
@@ -522,7 +522,7 @@ COPY ~SandrahRTF/Areas/RTF039SR.bmp~ ~override/RTF039SR.bmp~
 COPY ~SandrahRTF/Areas/RTF401.ARE~ ~override/RTF401.ARE~
       SAY 0x3cc @1708
 COPY ~SandrahRTF/Areas/RTF401.mos~ ~override/RTF401.mos~
-COPY ~SandrahRTF/Areas/RTF401.tiz~ ~override/RTF401.tiz~
+COPY ~SandrahRTF/Areas/RTF401.tis~ ~override/RTF401.tis~
 COPY ~SandrahRTF/Areas/RTF401.wed~ ~override/RTF401.wed~
 COPY ~SandrahRTF/Areas/RTF401HT.bmp~ ~override/RTF401HT.bmp~
 COPY ~SandrahRTF/Areas/RTF401LM.bmp~ ~override/RTF401LM.bmp~
@@ -545,7 +545,7 @@ COPY ~SandrahRTF/Areas/RTF040.ARE~ ~override/RTF040.ARE~
      COMPILE     ~SandrahRTF/Areas/RavSpeak.baf~
      COMPILE     ~SandrahRTF/Areas/RTF040.baf~
 COPY ~SandrahRTF/Areas/RTF040.mos~ ~override/RTF040.mos~
-COPY ~SandrahRTF/Areas/RTF040.tiz~ ~override/RTF040.tiz~
+COPY ~SandrahRTF/Areas/RTF040.tis~ ~override/RTF040.tis~
 COPY ~SandrahRTF/Areas/RTF040.wed~ ~override/RTF040.wed~
 COPY ~SandrahRTF/Areas/RTF040HT.bmp~ ~override/RTF040HT.bmp~
 COPY ~SandrahRTF/Areas/RTF040LM.bmp~ ~override/RTF040LM.bmp~
@@ -592,7 +592,7 @@ COPY ~SandrahRTF/Areas/RTF045.ARE~ ~override/RTF045.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF045.baf~
      COMPILE     ~SandrahRTF/Areas/RT45See.baf~
 COPY ~SandrahRTF/Areas/RTF045.mos~ ~override/RTF045.mos~
-COPY ~SandrahRTF/Areas/RTF045.tiz~ ~override/RTF045.tiz~
+COPY ~SandrahRTF/Areas/RTF045.tis~ ~override/RTF045.tis~
 COPY ~SandrahRTF/Areas/RTF045.wed~ ~override/RTF045.wed~
 COPY ~SandrahRTF/Areas/RTF045HT.bmp~ ~override/RTF045HT.bmp~
 COPY ~SandrahRTF/Areas/RTF045LM.bmp~ ~override/RTF045LM.bmp~
@@ -622,7 +622,7 @@ COPY ~SandrahRTF/Areas/RTF048.ARE~ ~override/RTF048.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF048.baf~
      COMPILE     ~SandrahRTF/Areas/RT48CR.baf~
 COPY ~SandrahRTF/Areas/RTF048.mos~ ~override/RTF048.mos~
-COPY ~SandrahRTF/Areas/RTF048.tiz~ ~override/RTF048.tiz~
+COPY ~SandrahRTF/Areas/RTF048.tis~ ~override/RTF048.tis~
 COPY ~SandrahRTF/Areas/RTF048.wed~ ~override/RTF048.wed~
 COPY ~SandrahRTF/Areas/RTF048HT.bmp~ ~override/RTF048HT.bmp~
 COPY ~SandrahRTF/Areas/RTF048LM.bmp~ ~override/RTF048LM.bmp~
@@ -632,7 +632,7 @@ COPY ~SandrahRTF/Areas/RTF049.ARE~ ~override/RTF049.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF049.baf~
      COMPILE     ~SandrahRTF/Areas/RT49CR.baf~
 COPY ~SandrahRTF/Areas/RTF049.mos~ ~override/RTF049.mos~
-COPY ~SandrahRTF/Areas/RTF049.tiz~ ~override/RTF049.tiz~
+COPY ~SandrahRTF/Areas/RTF049.tis~ ~override/RTF049.tis~
 COPY ~SandrahRTF/Areas/RTF049.wed~ ~override/RTF049.wed~
 COPY ~SandrahRTF/Areas/RTF049HT.bmp~ ~override/RTF049HT.bmp~
 COPY ~SandrahRTF/Areas/RTF049LM.bmp~ ~override/RTF049LM.bmp~
@@ -650,7 +650,7 @@ COPY ~SandrahRTF/Areas/RTF050.ARE~ ~override/RTF050.ARE~
      SAY 0x355c  @1827
      COMPILE     ~SandrahRTF/Areas/RTF050.baf~
 COPY ~SandrahRTF/Areas/RTF050.mos~ ~override/RTF050.mos~
-COPY ~SandrahRTF/Areas/RTF050.tiz~ ~override/RTF050.tiz~
+COPY ~SandrahRTF/Areas/RTF050.tis~ ~override/RTF050.tis~
 COPY ~SandrahRTF/Areas/RTF050.wed~ ~override/RTF050.wed~
 COPY ~SandrahRTF/Areas/RTF050HT.bmp~ ~override/RTF050HT.bmp~
 COPY ~SandrahRTF/Areas/RTF050LM.bmp~ ~override/RTF050LM.bmp~
@@ -783,7 +783,7 @@ COPY ~SandrahRTF/Areas/RTF060.ARE~ ~override/RTF060.ARE~
      SAY 0x64f8 @1857
      COMPILE     ~SandrahRTF/Areas/RTF060.baf~
 COPY ~SandrahRTF/Areas/RTF060.mos~ ~override/RTF060.mos~
-COPY ~SandrahRTF/Areas/RTF060.tiz~ ~override/RTF060.tiz~
+COPY ~SandrahRTF/Areas/RTF060.tis~ ~override/RTF060.tis~
 COPY ~SandrahRTF/Areas/RTF060.wed~ ~override/RTF060.wed~
 COPY ~SandrahRTF/Areas/RTF060HT.bmp~ ~override/RTF060HT.bmp~
 COPY ~SandrahRTF/Areas/RTF060LM.bmp~ ~override/RTF060LM.bmp~
@@ -918,7 +918,7 @@ COPY ~SandrahRTF/Areas/RTF070.ARE~ ~override/RTF070.ARE~
      COMPILE     ~SandrahRTF/Areas/Trig080.baf~
      COMPILE     ~SandrahRTF/Areas/RT70Jump.baf~
 COPY ~SandrahRTF/Areas/RTF070.mos~ ~override/RTF070.mos~
-COPY ~SandrahRTF/Areas/RTF070.tiz~ ~override/RTF070.tiz~
+COPY ~SandrahRTF/Areas/RTF070.tis~ ~override/RTF070.tis~
 COPY ~SandrahRTF/Areas/RTF070.wed~ ~override/RTF070.wed~
 COPY ~SandrahRTF/Areas/RTF070HT.bmp~ ~override/RTF070HT.bmp~
 COPY ~SandrahRTF/Areas/RTF070LM.bmp~ ~override/RTF070LM.bmp~
@@ -930,7 +930,7 @@ COPY ~SandrahRTF/Areas/RTF071.ARE~ ~override/RTF071.ARE~
      SAY 0x4670  @1952
      COMPILE  ~SandrahRTF/Areas/RTF071.baf~
 COPY ~SandrahRTF/Areas/RTF071.mos~ ~override/RTF071.mos~
-COPY ~SandrahRTF/Areas/RTF071.tiz~ ~override/RTF071.tiz~
+COPY ~SandrahRTF/Areas/RTF071.tis~ ~override/RTF071.tis~
 COPY ~SandrahRTF/Areas/RTF071.wed~ ~override/RTF071.wed~
 COPY ~SandrahRTF/Areas/RTF071HT.bmp~ ~override/RTF071HT.bmp~
 COPY ~SandrahRTF/Areas/RTF071LM.bmp~ ~override/RTF071LM.bmp~
@@ -948,7 +948,7 @@ COPY ~SandrahRTF/Areas/RTF072.ARE~ ~override/RTF072.ARE~
      COMPILE  ~SandrahRTF/Areas/RTF072.baf~
      COMPILE  ~SandrahRTF/Areas/RT72Tem.baf~
 COPY ~SandrahRTF/Areas/RTF072.mos~ ~override/RTF072.mos~
-COPY ~SandrahRTF/Areas/RTF072.tiz~ ~override/RTF072.tiz~
+COPY ~SandrahRTF/Areas/RTF072.tis~ ~override/RTF072.tis~
 COPY ~SandrahRTF/Areas/RTF072.wed~ ~override/RTF072.wed~
 COPY ~SandrahRTF/Areas/RTF072HT.bmp~ ~override/RTF072HT.bmp~
 COPY ~SandrahRTF/Areas/RTF072LM.bmp~ ~override/RTF072LM.bmp~
@@ -959,7 +959,7 @@ COPY ~SandrahRTF/Areas/RTF073.ARE~ ~override/RTF073.ARE~
      SAY 0x18ec  @2014
      COMPILE  ~SandrahRTF/Areas/RTF073.baf~
 COPY ~SandrahRTF/Areas/RTF073.mos~ ~override/RTF073.mos~
-COPY_LARGE ~SandrahRTF/Areas/RTF073.tiz~ ~override/RTF073.tiz~
+COPY_LARGE ~SandrahRTF/Areas/RTF073.tis~ ~override/RTF073.tis~
 COPY ~SandrahRTF/Areas/RTF073.wed~ ~override/RTF073.wed~
 COPY ~SandrahRTF/Areas/RTF073HT.bmp~ ~override/RTF073HT.bmp~
 COPY ~SandrahRTF/Areas/RTF073LM.bmp~ ~override/RTF073LM.bmp~
@@ -968,7 +968,7 @@ COPY ~SandrahRTF/Areas/RTF073SR.bmp~ ~override/RTF073SR.bmp~
 COPY ~SandrahRTF/Areas/RTF074.ARE~ ~override/RTF074.ARE~
      COMPILE  ~SandrahRTF/Areas/RTF074.baf~
 COPY ~SandrahRTF/Areas/RTF074.mos~ ~override/RTF074.mos~
-COPY_LARGE ~SandrahRTF/Areas/RTF074.tiz~ ~override/RTF074.tiz~
+COPY_LARGE ~SandrahRTF/Areas/RTF074.tis~ ~override/RTF074.tis~
 COPY ~SandrahRTF/Areas/RTF074.wed~ ~override/RTF074.wed~
 COPY ~SandrahRTF/Areas/RTF074HT.bmp~ ~override/RTF074HT.bmp~
 COPY ~SandrahRTF/Areas/RTF074LM.bmp~ ~override/RTF074LM.bmp~
@@ -998,7 +998,7 @@ COPY ~SandrahRTF/Areas/RTF077.ARE~ ~override/RTF077.ARE~
      SAY 0x14cc  @1804
      COMPILE     ~SandrahRTF/Areas/RTF077.baf~
 COPY ~SandrahRTF/Areas/RTF077.mos~ ~override/RTF077.mos~
-COPY ~SandrahRTF/Areas/RTF077.tiz~ ~override/RTF077.tiz~
+COPY ~SandrahRTF/Areas/RTF077.tis~ ~override/RTF077.tis~
 COPY ~SandrahRTF/Areas/RTF077.wed~ ~override/RTF077.wed~
 COPY ~SandrahRTF/Areas/RTF077HT.bmp~ ~override/RTF077HT.bmp~
 COPY ~SandrahRTF/Areas/RTF077LM.bmp~ ~override/RTF077LM.bmp~
@@ -1046,7 +1046,7 @@ COPY ~SandrahRTF/Areas/RTF081SR.bmp~ ~override/RTF081SR.bmp~
 COPY ~SandrahRTF/Areas/RTF082.ARE~ ~override/RTF082.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF082.baf~
 COPY ~SandrahRTF/Areas/RTF082.mos~ ~override/RTF082.mos~
-COPY ~SandrahRTF/Areas/RTF082.tiz~ ~override/RTF082.tiz~
+COPY ~SandrahRTF/Areas/RTF082.tis~ ~override/RTF082.tis~
 COPY ~SandrahRTF/Areas/RTF082.wed~ ~override/RTF082.wed~
 COPY ~SandrahRTF/Areas/RTF082HT.bmp~ ~override/RTF082HT.bmp~
 COPY ~SandrahRTF/Areas/RTF082LM.bmp~ ~override/RTF082LM.bmp~
@@ -1113,7 +1113,7 @@ COPY ~SandrahRTF/Areas/RTF090.ARE~ ~override/RTF090.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF090.baf~
      COMPILE     ~SandrahRTF/Areas/RT90Trig.baf~
 COPY ~SandrahRTF/Areas/RTF090.mos~ ~override/RTF090.mos~
-COPY ~SandrahRTF/Areas/RTF090.tiz~ ~override/RTF090.tiz~
+COPY ~SandrahRTF/Areas/RTF090.tis~ ~override/RTF090.tis~
 COPY ~SandrahRTF/Areas/RTF090.wed~ ~override/RTF090.wed~
 COPY ~SandrahRTF/Areas/RTF090HT.bmp~ ~override/RTF090HT.bmp~
 COPY ~SandrahRTF/Areas/RTF090LM.bmp~ ~override/RTF090LM.bmp~
@@ -1367,7 +1367,7 @@ COPY ~SandrahRTF/Areas/RTF111.ARE~ ~override/RTF111.ARE~
       SAY 0x1828  @1884
       COMPILE     ~SandrahRTF/Areas/RT111h.baf~
 COPY ~SandrahRTF/Areas/RTF111.mos~ ~override/RTF111.mos~
-COPY ~SandrahRTF/Areas/RTF111.tiz~ ~override/RTF111.tiz~
+COPY ~SandrahRTF/Areas/RTF111.tis~ ~override/RTF111.tis~
 COPY ~SandrahRTF/Areas/RTF111.wed~ ~override/RTF111.wed~
 COPY ~SandrahRTF/Areas/RTF111HT.bmp~ ~override/RTF111HT.bmp~
 COPY ~SandrahRTF/Areas/RTF111LM.bmp~ ~override/RTF111LM.bmp~
@@ -1439,7 +1439,7 @@ COPY ~SandrahRTF/Areas/RTF118SR.bmp~ ~override/RTF118SR.bmp~
 COPY ~SandrahRTF/Areas/RTF120.ARE~ ~override/RTF120.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF120.baf~
 COPY ~SandrahRTF/Areas/RTF120.mos~ ~override/RTF120.mos~
-COPY ~SandrahRTF/Areas/RTF120.tiz~ ~override/RTF120.tiz~
+COPY ~SandrahRTF/Areas/RTF120.tis~ ~override/RTF120.tis~
 COPY ~SandrahRTF/Areas/RTF120.wed~ ~override/RTF120.wed~
 COPY ~SandrahRTF/Areas/RTF120HT.bmp~ ~override/RTF120HT.bmp~
 COPY ~SandrahRTF/Areas/RTF120LM.bmp~ ~override/RTF120LM.bmp~
@@ -1448,7 +1448,7 @@ COPY ~SandrahRTF/Areas/RTF120SR.bmp~ ~override/RTF120SR.bmp~
 COPY ~SandrahRTF/Areas/RTF121.ARE~ ~override/RTF121.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF121.baf~
 COPY ~SandrahRTF/Areas/RTF121.mos~ ~override/RTF121.mos~
-COPY ~SandrahRTF/Areas/RTF121.tiz~ ~override/RTF121.tiz~
+COPY ~SandrahRTF/Areas/RTF121.tis~ ~override/RTF121.tis~
 COPY ~SandrahRTF/Areas/RTF121.wed~ ~override/RTF121.wed~
 COPY ~SandrahRTF/Areas/RTF121HT.bmp~ ~override/RTF121HT.bmp~
 COPY ~SandrahRTF/Areas/RTF121LM.bmp~ ~override/RTF121LM.bmp~
@@ -1469,7 +1469,7 @@ COPY ~SandrahRTF/Areas/RTF123.ARE~ ~override/RTF123.ARE~
       SAY 0x3f18  @1986
      COMPILE     ~SandrahRTF/Areas/RTF123.baf~
 COPY ~SandrahRTF/Areas/RTF123.mos~ ~override/RTF123.mos~
-COPY_LARGE ~SandrahRTF/Areas/RTF123.tiz~ ~override/RTF123.tiz~
+COPY_LARGE ~SandrahRTF/Areas/RTF123.tis~ ~override/RTF123.tis~
 COPY ~SandrahRTF/Areas/RTF123.wed~ ~override/RTF123.wed~
 COPY ~SandrahRTF/Areas/RTF123HT.bmp~ ~override/RTF123HT.bmp~
 COPY ~SandrahRTF/Areas/RTF123LM.bmp~ ~override/RTF123LM.bmp~
@@ -1479,7 +1479,7 @@ COPY ~SandrahRTF/Areas/RTF130.ARE~ ~override/RTF130.ARE~
      SAY 0x2210  @1908
      SAY 0x214c  @1909
 COPY ~SandrahRTF/Areas/RTF130.mos~ ~override/RTF130.mos~
-COPY ~SandrahRTF/Areas/RTF130.tiz~ ~override/RTF130.tiz~
+COPY ~SandrahRTF/Areas/RTF130.tis~ ~override/RTF130.tis~
 COPY ~SandrahRTF/Areas/RTF130.wed~ ~override/RTF130.wed~
 COPY ~SandrahRTF/Areas/RTF130HT.bmp~ ~override/RTF130HT.bmp~
 COPY ~SandrahRTF/Areas/RTF130LM.bmp~ ~override/RTF130LM.bmp~
@@ -1573,7 +1573,7 @@ COPY ~SandrahRTF/Areas/RTF141.ARE~ ~override/RTF141.ARE~
       COMPILE     ~SandrahRTF/Areas/RT141D.baf~
       COMPILE     ~SandrahRTF/Areas/RT141Y.baf~
 COPY ~SandrahRTF/Areas/RTF141.mos~ ~override/RTF141.mos~
-COPY ~SandrahRTF/Areas/RTF141.tiz~ ~override/RTF141.tiz~
+COPY ~SandrahRTF/Areas/RTF141.tis~ ~override/RTF141.tis~
 COPY ~SandrahRTF/Areas/RTF141.wed~ ~override/RTF141.wed~
 COPY ~SandrahRTF/Areas/RTF141HT.bmp~ ~override/RTF141HT.bmp~
 COPY ~SandrahRTF/Areas/RTF141LM.bmp~ ~override/RTF141LM.bmp~
@@ -1582,7 +1582,7 @@ COPY ~SandrahRTF/Areas/RTF141SR.bmp~ ~override/RTF141SR.bmp~
 COPY ~SandrahRTF/Areas/RTF142.ARE~ ~override/RTF142.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF142.baf~
 COPY ~SandrahRTF/Areas/RTF142.mos~ ~override/RTF142.mos~
-COPY ~SandrahRTF/Areas/RTF142.tiz~ ~override/RTF142.tiz~
+COPY ~SandrahRTF/Areas/RTF142.tis~ ~override/RTF142.tis~
 COPY ~SandrahRTF/Areas/RTF142.wed~ ~override/RTF142.wed~
 COPY ~SandrahRTF/Areas/RTF142HT.bmp~ ~override/RTF142HT.bmp~
 COPY ~SandrahRTF/Areas/RTF142LM.bmp~ ~override/RTF142LM.bmp~
@@ -1593,7 +1593,7 @@ COPY ~SandrahRTF/Areas/RTF143.ARE~ ~override/RTF143.ARE~
      SAY 0x12f8  @1927
      COMPILE     ~SandrahRTF/Areas/RTF143.baf~
 COPY ~SandrahRTF/Areas/RTF143.mos~ ~override/RTF143.mos~
-COPY ~SandrahRTF/Areas/RTF143.tiz~ ~override/RTF143.tiz~
+COPY ~SandrahRTF/Areas/RTF143.tis~ ~override/RTF143.tis~
 COPY ~SandrahRTF/Areas/RTF143.wed~ ~override/RTF143.wed~
 COPY ~SandrahRTF/Areas/RTF143HT.bmp~ ~override/RTF143HT.bmp~
 COPY ~SandrahRTF/Areas/RTF143LM.bmp~ ~override/RTF143LM.bmp~
@@ -1611,7 +1611,7 @@ COPY ~SandrahRTF/Areas/RTF150.ARE~ ~override/RTF150.ARE~
      SAY 0x4be0  @1896
      COMPILE     ~SandrahRTF/Areas/RT150c.baf~
 COPY ~SandrahRTF/Areas/RTF150.mos~ ~override/RTF150.mos~
-COPY ~SandrahRTF/Areas/RTF150.tiz~ ~override/RTF150.tiz~
+COPY ~SandrahRTF/Areas/RTF150.tis~ ~override/RTF150.tis~
 COPY ~SandrahRTF/Areas/RTF150.wed~ ~override/RTF150.wed~
 COPY ~SandrahRTF/Areas/RTF150HT.bmp~ ~override/RTF150HT.bmp~
 COPY ~SandrahRTF/Areas/RTF150LM.bmp~ ~override/RTF150LM.bmp~
@@ -1620,7 +1620,7 @@ COPY ~SandrahRTF/Areas/RTF150SR.bmp~ ~override/RTF150SR.bmp~
 COPY ~SandrahRTF/Areas/RTF151.ARE~ ~override/RTF151.ARE~
      COMPILE     ~SandrahRTF/Areas/RTF151.baf~
 COPY ~SandrahRTF/Areas/RTF151.mos~ ~override/RTF151.mos~
-COPY ~SandrahRTF/Areas/RTF151.tiz~ ~override/RTF151.tiz~
+COPY ~SandrahRTF/Areas/RTF151.tis~ ~override/RTF151.tis~
 COPY ~SandrahRTF/Areas/RTF151.wed~ ~override/RTF151.wed~
 COPY ~SandrahRTF/Areas/RTF151HT.bmp~ ~override/RTF151HT.bmp~
 COPY ~SandrahRTF/Areas/RTF151LM.bmp~ ~override/RTF151LM.bmp~
@@ -1694,7 +1694,7 @@ COPY ~SandrahRTF/Areas/RTF161.ARE~ ~override/RTF161.ARE~
      SAY 0x306c  @1961
      COMPILE     ~SandrahRTF/Areas/RTF161.baf~
 COPY ~SandrahRTF/Areas/RTF161.mos~ ~override/RTF161.mos~
-COPY ~SandrahRTF/Areas/RTF161.tiz~ ~override/RTF161.tiz~
+COPY ~SandrahRTF/Areas/RTF161.tis~ ~override/RTF161.tis~
 COPY ~SandrahRTF/Areas/RTF161.wed~ ~override/RTF161.wed~
 COPY ~SandrahRTF/Areas/RTF161HT.bmp~ ~override/RTF161HT.bmp~
 COPY ~SandrahRTF/Areas/RTF161LM.bmp~ ~override/RTF161LM.bmp~
@@ -1713,7 +1713,7 @@ COPY ~SandrahRTF/Areas/RTF162.ARE~ ~override/RTF162.ARE~
      SAY 0x1e94  @1964
      SAY 0x1f58  @1964
 COPY ~SandrahRTF/Areas/RTF162.mos~ ~override/RTF162.mos~
-COPY ~SandrahRTF/Areas/RTF162.tiz~ ~override/RTF162.tiz~
+COPY ~SandrahRTF/Areas/RTF162.tis~ ~override/RTF162.tis~
 COPY ~SandrahRTF/Areas/RTF162.wed~ ~override/RTF162.wed~
 COPY ~SandrahRTF/Areas/RTF162HT.bmp~ ~override/RTF162HT.bmp~
 COPY ~SandrahRTF/Areas/RTF162LM.bmp~ ~override/RTF162LM.bmp~
@@ -1916,10 +1916,9 @@ EXTEND_BOTTOM
 
 COMPILE     ~SandrahRTF/Areas/RTPoiTr.baf~
 
-COPY ~SandrahRTF/Areas/tisunpack.exe~  ~override/tisunpack.exe~
+PRINT ~Copying new area graphics - this may take a few minutes...~
 
-AT_NOW ~SandrahRTF/Areas/RTFUnpack.bat~
-AT_UNINSTALL ~SandrahRTF/Areas/RTFUninstall.bat~
+COPY ~SandrahRTF/PVRZ~  ~override~
 
 PRINT ~Installed RtF New Areas~
 
