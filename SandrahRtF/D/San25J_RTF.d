@@ -80,7 +80,7 @@ END
 
 IF~Global("RTFOldFriends","GLOBAL",1)~THEN BEGIN RTFSearchfr1
 SAY~ Before we actually start our quest we may want to gather some old friends to accompany us.~
-IF~~THEN REPLY~They may be shattered everywhere - those that are still alive...~DO~SetGlobal("RTFOldFriends","GLOBAL",2) SetGlobal("SanPidPack","GLOBAL",17)~GOTO RTFSearchfr2
+IF~~THEN REPLY~They may be shattered everywhere - those who are still alive...~DO~SetGlobal("RTFOldFriends","GLOBAL",2) SetGlobal("SanPidPack","GLOBAL",17)~GOTO RTFSearchfr2
 END
 
 IF~~THEN BEGIN RTFSearchfr2
