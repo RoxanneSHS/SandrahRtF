@@ -84,16 +84,6 @@ SetGlobal("RTGiranNash","BG3300",1)
 END
 
 IF
-HPPercentLT(Myself,50)
-See(NearestEnemyOf(Myself))
-HPGT(LastSeenBy(Myself),50)
-HaveSpell(MINSC_BERSERK)
-THEN
-RESPONSE #100
-Spell(Myself,MINSC_BERSERK)
-END
-
-IF
 AttackedBy([ANYONE],DEFAULT)
 THEN
 RESPONSE #100
