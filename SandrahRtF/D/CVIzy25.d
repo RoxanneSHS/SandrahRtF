@@ -29,7 +29,7 @@ IF~AreaCheck("BG3321")~THEN CVIzy25 GoWith
 ==Henning2~Oh, Imoen, will you not give our guests a chance to answer at least one of your questions.~
 ==CVSan25J~All is well still in Beregost. Your good deeds with the children all along the Sword Coast are well recognized, my besta friend. But for us something new is brewing darkly. We have been send by the Overgod himself to clarify matters on the Prime.~
 ==RTFImo~(Imoen looks concerned - all of a sudden you see your old friend and *sister* turn into the serious council member and caring mother she has become meanwhile.)~
-=~Gods walk Faerun in their mortal avatars, that is never a good sign. I remember what that meant last time...Times of Trouble.~
+=~Gods walk Faerun in their mortal avatars, that is never a good sign. I remember what that meant last time...Time of Troubles.~
 ==CVSan25J~I would not be pessimistic so early already, but something is amiss. <CHARNAME> and me have not only made friends with our actions since our ascencion.~
 ==RTFImo~I can imagine old Cyric thinking of a nasty intrigue every single day...and that stupid Stormlord that never left you alone...~
 ==CVSan25J~A valid candidate list, if still not complete. We investigate it and we need companions from the Realms to accompany us in it...~
