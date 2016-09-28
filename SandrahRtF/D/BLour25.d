@@ -6,9 +6,9 @@ IF~Global("LouredB","GLOBAL",1)~ THEN BLour25 meanwhile
 DO~SetGlobal("LouredB","GLOBAL",2) RealSetGlobalTimer("LoureedT","LOCALS",1040)~
 ==BSandr25~It sounds like you have not done that too often, L'Urieet. How did you fare since our initial meeting, was it hard for you to reach Undermountain?~
 ==BLour25~I made it, so much is obvious. It was harder than I had envisioned, I was not prepared for the surface - I mean to manage my survival alone, not heading a conquering drow army for the glory of my damned mother.~
-=~The way through Tethir was hard, the Bhaalwar had left its traces everywhere and people where mostly hostile towards strangers - especially if those strangers made it even worse by displaying a dark elf's face. I found no peace until I reached Undermountain almost a year afterwards.~
-==BSandr25~It cannot have been so bad in Qilandrha's enclave afterwards - you were still there after all the time.~
-==BLour25~The shelter of a new *house*, excuse me for that expression...my drow mindset translates it that way as I have no other word. I lived a sheltered life of study and training, still - I am happy to get out and make new experiences. My skills are not for the Undermountain quarters but for the battlefield.~
+=~The way through Tethir was hard, the Bhaalspawn war had left its traces everywhere and people were mostly hostile towards strangers - especially if those strangers made it even worse by displaying a dark elf's face. I found no peace until I reached Undermountain almost a year afterwards.~
+==BSandr25~It cannot have been so bad in Qilandrha's enclave - you were still there after all the time.~
+==BLour25~The shelter of a new *house*, excuse me for that expression...my drow mindset translates it that way as I have no other word. I lived a sheltered life of study and training - still, I am happy to get out and make new experiences. My skills are not for the Undermountain quarters but for the battlefield.~
 ==BSandr25~We will see one or the other battle, I am sure, even if we would rather avoid them.~
 ==BLour25~In those forced upon us I will get the chance to prove my worth to you and <CHARNAME>.~
 ==BSandr25~And to yourself.~
