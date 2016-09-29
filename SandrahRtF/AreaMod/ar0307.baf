@@ -11,6 +11,16 @@ CreateCreature("Chalcy02",[1372.924],6)
 CreateCreature("Chalcy02",[1922.627],0)
 CreateCreature("Chalcy02",[1936.678],3)
 SetGlobal("RTCyr1","ar0307",1)
+Continue()
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("OH_JOURNAL_KILL_ARAN","AR0307",0)
+THEN
+RESPONSE #100
+SetGlobal("OH_JOURNAL_KILL_ARAN","AR0307",1)
+Continue()
 END
 
 IF
