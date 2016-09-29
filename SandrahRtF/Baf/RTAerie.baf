@@ -5,7 +5,7 @@ Range([PC],50)
 THEN
 RESPONSE #100
 StartCutSceneMode()
-MoveToObject(Player1)
+MoveToObject(Nearest([PC]))
 Wait(2)
 CreateVisualEffectObject("ICWrati",Myself)
 Wait(4)
