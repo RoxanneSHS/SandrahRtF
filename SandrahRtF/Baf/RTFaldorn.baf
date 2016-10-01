@@ -1,0 +1,8 @@
+IF
+Global("RTCloakwood","GLOBAL",7)
+Global("notgo","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("notgo","LOCALS",1)
+ChangeAIScript("",OVERRIDE)
+END

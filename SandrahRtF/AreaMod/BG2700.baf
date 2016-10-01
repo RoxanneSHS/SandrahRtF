@@ -21,3 +21,12 @@ RESPONSE #100
 CreateCreature("Desslo",[1314.3346],0)
 SetGlobal("RTCloakwood","GLOBAL",1)
 END
+
+IF
+GlobalGT("RTCloakwood","GLOBAL",6)
+Global("Candl","BG2700",0)
+THEN
+RESPONSE #100
+SetGlobal("Candl","BG2700",1)
+RevealAreaOnMap("BG2626")
+END

@@ -3630,6 +3630,8 @@ EXTEND_TOP
 ~Yaga01.bcs~ ~SandrahRTF/Mods/Yaga01.baf~
 EXTEND_TOP
 ~Thalantr.bcs~ ~SandrahRTF/Mods/ThalaMeli.baf~
+EXTEND_TOP
+~Faldorn_.bcs~ ~SandrahRTF/Baf/RTFaldorn.baf~
 
 EXTEND_BOTTOM
 ~ar60pb.bcs~ ~SandrahRTF/Mods/ar60pbY.baf~
