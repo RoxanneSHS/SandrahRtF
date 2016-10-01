@@ -40,8 +40,8 @@ CHAIN
 IF WEIGHT #-2~ Global("RTCloakwood","GLOBAL",4) See([PC]) Allegiance(Myself,NEUTRAL) ~THEN Cythan ReturnClkw2
 ~Peter, I knew you would not be able to handle them alone. I advised you to alert me immediately should they awake.~
 DO~SetGlobal("RTCloakwood","GLOBAL",5) SetGlobal("TalkedToCythan","GLOBAL",1) ActionOverride("Coksmth",DestroyItem("Imos1hp1"))~
-==Coksmth IF~!StateCheck("Peter",CD_STATE_NOTVALID)~THEN~Cythandria, have a bit of faith, my dear.~
-==Cythan IF~!StateCheck("Peter",CD_STATE_NOTVALID)~THEN~Bah, you told me the same between the sheets last night - before I fell asleep in frustration.~
+==Coksmth IF~!StateCheck("Coksmth",CD_STATE_NOTVALID)~THEN~Cythandria, have a bit of faith, my dear.~
+==Cythan IF~!StateCheck("Coksmth",CD_STATE_NOTVALID)~THEN~Bah, you told me the same between the sheets last night - before I fell asleep in frustration.~
 ==Cythan~Anything I don't do myself will not be done correctly.~
 ==CVSan25J~Sarevok's old consort Cythandria seems to have found a new master, or is it rather that you try to play the role of the mistress here - based on what you have NOT learned from your former Bhaalspawn?~
 ==Cythan~You and your Bhaalspawn have not learned to keep your noses out of other people's affairs, it seems.~
@@ -53,7 +53,7 @@ END
 CHAIN
 IF ~~THEN CVSan25J  ReturnClkw3
 ~Not by her own choice as it sounds to me.~
-==Cythan~You are surely not be in a position to free her. I am not without my defenses, <CHARNAME>.  I am a conjurer of some proficiency as you should remember.  Come, my minions, make short work of these intruders!~
+==Cythan~You are surely not in a position to free her. I am not without my defenses, <CHARNAME>.  I am a conjurer of some proficiency as you should remember.  Come, my minions, make short work of these intruders!~
 DO~CreateCreature("ARGHH",[1680.927],1) CreateCreature("ARGHH",[2281.957],4)CreateCreature("UGHH",[1988.1533],8) CreateCreature("UGHH",[2191.1122],1)
 Enemy()~EXIT
 
