@@ -6,3 +6,12 @@ SetGlobal("PapInChest","BG2614",1)
 ActionOverride("Container 5",CreateItem("RTCera",0,0,0)) 
 ActionOverride("Container 5",CreateItem("RTVolo",0,0,0))
 END
+
+IF
+PartyHasItem("CVSkys") 
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+ActionOverride(Player1,TakePartyItem("CVSkys"))
+ActionOverride(Player1,DestroyItem("CVSkys")) 
+END
