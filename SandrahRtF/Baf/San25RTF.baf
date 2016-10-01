@@ -325,14 +325,18 @@ CombatCounter(0)
 Delay(12)
 THEN
 RESPONSE #100
-CreateCreatureObjectDoor("CVorwarl",Player1,0,0,0)
+ClearAllActions()
+StartCutSceneMode()
 Wait(2)
-ActionOverride("CVorwarl",ReallyForceSpellRES("Cvorunve",Myself))
+CreateCreatureObjectDoor("CVorwarl",Player1,0,0,0) 
+Wait(2)
+ActionOverride("CVorwarl",ReallyForceSpellRES("Cvorunve",Myself)) 
 Wait(1)
 ActionOverride("CVorwarl",Polymorph(FIGHTER_MALE_HALFORC))
 SetGlobal("RTGoRaven","LOCALS",4)
 Wait(2)
-ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+EndCutSceneMode()
+ActionOverride("CVSandr",StartDialogueNoSet("CVSandr"))
 END
 
 IF
