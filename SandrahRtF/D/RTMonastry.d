@@ -213,7 +213,7 @@ CHAIN
 IF~Global("RTMons1","RTF043",1)~THEN RTMonkSt sacred
 ~The stairs lead to the mourner's fountain only and the catacombs of the old war. Only the abbot can grant access. ~
 DO~SetGlobal("RTMons1","RTF043",2)~
-==CVSan25J~This sounds exactly like the area that contains what we came for, do you agree, <CHARNAME>.~
+==CVSan25J~This sounds exactly like the area that contains what we came for. Do you agree, <CHARNAME>?~
 END
 ++~Let's go to see Iylos then.~ EXIT
 ++~I am adventurer for so long now to know you're right in this assumption.~EXIT
@@ -242,7 +242,7 @@ IF~GlobalLT("RTMons1","RTF043",3)~THEN RTIYLO Access1
 ==CVSan25J~Not just that. We as well intend to use it ourself this time to get to the heart of our enemies' lair.~
 ==CVSan25J~*Sandrah continues to provide Iylos with further details of the recent events.*~
 ==RTIYLO~Hm, hm...be assured that the Order of the Striking Scorpion is all but defenseless. This place is designed to hold back whole armies with just a few well trained and well equipped monks. ~
-==CVSan25J~This means that now that you know about the threat you and your brothers will guard the seal?~
+==CVSan25J~This means that now that you know about the threat, you and your brothers will guard the seal?~
 ==RTIYLO~My oath on that, Sandrah. This will give you the opportunity to prepare and execute your strike into the heart of Thay.~
 =~You have my permission to access the lower levels at your discretion. You will find a sun relict in the mourner's fountain just below which you will need to venture further into the unlit and uncharted areas that were the battlefield of old.~DO~SetGlobal("RTMons1","RTF043",3)~EXIT
 
