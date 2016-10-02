@@ -347,12 +347,16 @@ CombatCounter(0)
 Global("FoundSeal34","RTF034",0)
 THEN 
 RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
 SetGlobal("FoundSeal34","RTF034",1)
 MoveToObject("CVMinsc")
 ActionOverride("Thalantyr",MoveToObject("CVMinsc"))
 ActionOverride("Keldorn",MoveToObject("CVMinsc"))
+ActionOverride(Player1,MoveToObject("CVMinsc"))
 Wait(4)
-StartDialogNoSet("CVSandr")
+EndCutSceneMode()
+StartDialogueNoSet("CVSandr")
 END
 
 IF

@@ -1,5 +1,5 @@
 IF
-OnCreation()
+Global("Helpers","LOCALS",0)
 AreaCheck("RTF027")
 THEN
 RESPONSE #100
@@ -10,8 +10,7 @@ CreateCreatureObjectOffset("CVBanDE1",Myself,[-150.100])
 CreateCreatureObjectOffset("CVBanDE1",Myself,[-150.-100])
 CreateCreatureObjectOffset("CVBanDE1",Myself,[70.10])
 CreateCreatureObjectOffset("CVBanDE1",Myself,[-70.100])
-Wait(2)
-DestroySelf()
+SetGlobal("Helpers","LOCALS",1)
 END
 
 

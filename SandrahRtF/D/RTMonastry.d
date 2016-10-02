@@ -278,6 +278,10 @@ EXTEND_BOTTOM Ambar01 40
 IF~GlobalGT("SanRTFPlot2","GLOBAL",1) Global("RTAsk","LOCALS",0)~THEN REPLY~We are looking for the way to get to Ravencrest.~GOTO Rave1
 END
 
+EXTEND_BOTTOM Ambar01 48
+IF~GlobalGT("SanRTFPlot2","GLOBAL",1) Global("RTAsk","LOCALS",0)~THEN REPLY~We are looking for the way to get to Ravencrest.~GOTO Rave1
+END
+
 CHAIN
 IF~~THEN Ambar01 Rave1
 ~You must be determined to take that road, friends, it's not an easy journey.~
