@@ -15,7 +15,7 @@ RESPONSE #100
 CreateCreature("F_Deadbo",[3410.286],7)
 CreateCreature("F_Deadhr",[3246.595],7)
 CreateCreature("F_Deadwm",[3659.885],7)
-CreateCreature("Emitar2",[4121.697],7)
+CreateCreature("Emitar4",[4121.697],7)
 SetGlobal("CreWave","RTF010",1)
 RealSetGlobalTimer("CreWavTi","RTF010",60)
 END
