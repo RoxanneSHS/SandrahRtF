@@ -28,7 +28,7 @@ RESPONSE #100
 CreateCreatureObjectOffset("Gorwowe",Player1,[175.175])
 CreateCreatureObjectOffset("wolfva01",Player1,[75.-175])
 CreateCreatureObjectOffset("wolfva",Player1,[-175.105])
-CreateCreatureObjectOffset("wolfwegr",Player1,[-100.100])
+CreateCreatureObjectOffset("wolfgr01",Player1,[-100.100])
 CreateCreatureObjectOffset("Gorwowe",Player1,[175.175])
 CreateCreatureObjectOffset("wolfgr01",Player1,[-75.75])
 CreateCreatureObjectOffset("wolfgr01",Player1,[75.-75])
@@ -44,7 +44,7 @@ RESPONSE #100
 CreateCreature("F_Deadbo",[3363.1086],4)
 CreateCreature("F_Deadhr",[4176.1505],3)
 CreateCreature("F_Deadwm",[4200.985],7)
-CreateCreature("Emitar2",[4209.1886],4)
+CreateCreature("Emitar4",[4209.1886],4)
 SetGlobal("CreWave","RTF010",3)
 END
 
@@ -56,7 +56,7 @@ RESPONSE #100
 CreateCreatureObjectOffset("skellord",Player1,[175.175])
 CreateCreatureObjectOffset("wolfva01",Player1,[75.-175])
 CreateCreatureObjectOffset("wolfva",Player1,[-175.105])
-CreateCreatureObjectOffset("wolfwegr",Player1,[-100.100])
+CreateCreatureObjectOffset("wolfgr01",Player1,[-100.100])
 CreateCreatureObjectOffset("skellord",Player1,[175.175])
 CreateCreatureObjectOffset("wolfgr01",Player1,[-75.75])
 CreateCreatureObjectOffset("wolfgr01",Player1,[75.-75])
