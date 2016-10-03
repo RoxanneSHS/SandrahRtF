@@ -26,6 +26,16 @@ SetGlobal("BalBridge","RTF048",5)
 END
 
 IF
+Global("BalBridge","RTF048",3)
+Global("Haijump","RTF048",0)
+THEN
+RESPONSE #100
+SetGlobal("Haijump","RTF048",1)
+ActionOverride("Haiass",JumpToPoint([1074.2548]))
+ActionOverride("Pellig",JumpToPoint([1074.2548]))
+END
+
+IF
 InParty("CVSandr")
 Global("PelligFollow","GLOBAL",1)
 !InActiveArea("pellig")
