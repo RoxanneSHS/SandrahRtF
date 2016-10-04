@@ -1,13 +1,4 @@
 IF
-Global("SanRTFPlot4","GLOBAL",7)
-GlobalLT("Baylan","RTF050",7)
-THEN
-RESPONSE #100
-CreateCreature("RTBaylan",[219.3077],4)
-SetGlobal("Baylan","RTF050",7)
-END
-
-IF
 OnCreation()
 Global("Reset","RTF050",0)
 Global("NobleDopple","GLOBAL",1)
@@ -15,6 +6,15 @@ THEN
 RESPONSE #100
 SetGlobal("Reset","RTF050",1)
 SetGlobal("NobleDopple","GLOBAL",0)
+END
+
+IF
+Global("SanRTFPlot4","GLOBAL",7)
+GlobalLT("Baylan","RTF050",7)
+THEN
+RESPONSE #100
+CreateCreature("RTBaylan",[219.3077],4)
+SetGlobal("Baylan","RTF050",7)
 END
 
 IF

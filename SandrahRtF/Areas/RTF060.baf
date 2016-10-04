@@ -95,6 +95,26 @@ Continue()
 END
 
 IF
+Global("RTMetCandre","GLOBAL",3)
+Global("NobleDopple","GLOBAL",1)
+Global("RTColan","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RTColan","GLOBAL",1)
+RealSetGlobalTimer("Colano1","RTF060",90)
+END
+
+IF
+Global("RTColan","GLOBAL",1)
+RealGlobalTimerExpired("Colano1","RTF060")
+THEN
+RESPONSE #100
+SetGlobal("RTColan","GLOBAL",2)
+CreateCreatureObjectOffset("RTColan",Player1,[150.100])
+ActionOverride("RTColan",FaceObject(Player1))
+END
+
+IF
 InParty("CVSandr")
 Global("PelligFollow","GLOBAL",1)
 !InActiveArea("pellig")
