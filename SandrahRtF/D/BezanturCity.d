@@ -422,3 +422,9 @@ ADD_TRANS_TRIGGER Priilmu 9
 EXTEND_BOTTOM Priilmu 9
 IF~ AreaCheck("RTF060")~THEN REPLY ~But only in your fantasy, man. You have run far away but still not far enough to forget.~ EXIT
 END
+
+CHAIN
+IF WEIGHT #-7~GlobalGT("SanBeginRTF","Global",1)~ THEN Cowenf2 InRtFwrong
+~The practice of magic without a license is forbidden in this city. You shall receive one warning only. Further spellcasting will result in your death.~
+==CVSan25J~Really?~
+==Cowenf2 ~Eh...? Gosh, those old habbits are hard to kill.~DO~ForceSpell(Myself,DRYAD_TELEPORT)~EXIT
