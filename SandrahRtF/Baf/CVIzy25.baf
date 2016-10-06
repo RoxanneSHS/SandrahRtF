@@ -56,7 +56,7 @@ IF
 AreaCheck("RTF107")
 OR(2)
 See("Dockhlp1")
-See("x#lp1rep")
+See("x#lakep1")
 Global("Izzypink","RTF107",0)
 CombatCounter(0)
 !See([ENEMY])

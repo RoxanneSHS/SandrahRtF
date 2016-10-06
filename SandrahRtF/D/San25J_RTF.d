@@ -421,7 +421,7 @@ IF~~THEN REPLY~That was VERY long ago, wasn't it?~DO~SetGlobal("RTFWhy1","GLOBAL
 END
 
 IF~~THEN BEGIN Kars2
-SAY~Netheril, the floating city, was the ancient centre of wisdom, technology, and arcane knowledge. Among them all Karsus was the most powerful Sorcerer seeing himself almost equal to the gods.~
+SAY~Netheril, the floating city, was the ancient centre of wisdom, technology, and arcane knowledge. Among them all Karsus was the most powerful sorcerer seeing himself almost equal to the gods.~
 =~Karsus tried to steal the divinity from the keeper of the Weave Mystril - in her last resort Mystril sacrificed herself to prevent Karsus' success. AO himself separated the shadow weave which he gave to Shar and established the first Mystra as the Guardian of the Weave and All Magic.~
 IF~~THEN REPLY~ At Candlekeep I learned that all magic departed the Netheril afterwards and the city itself crashed into the Anauroch desert.~GOTO Kars3
 END
