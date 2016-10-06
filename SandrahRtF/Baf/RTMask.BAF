@@ -15,7 +15,7 @@ Allegiance(Myself,NEUTRAL)
 THEN
 RESPONSE #100
 Enemy()
-Shout(HELP79)
+AttackReevaluate(NearestEnemyOf(Myself),20)
 END
 
 IF
@@ -25,15 +25,7 @@ Allegiance(Myself,NEUTRAL)
 THEN
 RESPONSE #100
 Enemy()
-Shout(HELP79)
-END
-
-IF
-GlobalGT("RTMaskplot","GLOBAL",7)
-!Allegiance(Myself,NEUTRAL)
-THEN
-RESPONSE #100
-Shout(HELP79)
+AttackReevaluate(NearestEnemyOf(Myself),20)
 END
 
 IF
@@ -42,7 +34,7 @@ AttackedBy([GOODCUTOFF],DEFAULT)
 THEN
 RESPONSE #100
 Enemy()
-Shout(HELP79)
+AttackReevaluate(NearestEnemyOf(Myself),20)
 END
 
 IF
