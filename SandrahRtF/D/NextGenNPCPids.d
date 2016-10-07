@@ -118,7 +118,7 @@ IF~~THEN REPLY~ You're too weak for such a challenge anyway.~EXIT
 END
 
 IF~~THEN BEGIN Age1
-SAY~I think I know what you mean, <CHARNAME>. Mellisan once was issuing a similar remark about my mother and the other Bhaalspawn, Yaga Shura. She thought all of the seed of the God of Murder was sown at about the same time, shortly prior to his end in the Times of Trouble.~
+SAY~I think I know what you mean, <CHARNAME>. Mellisan once was issuing a similar remark about my mother and the other Bhaalspawn, Yaga Shura. She thought all of the seed of the God of Murder was sown at about the same time, shortly prior to his end in the Time of Troubles.~
 IF~~THEN REPLY~You almost read my thoughts...~ GOTO Age2
 IF~~THEN REPLY~So, that was not the case?~ GOTO Age2
 END
