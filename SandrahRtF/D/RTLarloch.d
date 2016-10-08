@@ -114,7 +114,7 @@ DO~SetGlobal("RTLarDec","LOCALS",1)SetGlobal("RTSimbul","RTF143",4)~
 ==CVSharG~Give me that globe, *my friend*, I have no time to waste to establish my new reign of the combined weave.~
 ==RTLarlo~Ah, I feel that ultimate energy, how it vibrates and stirs, hihihi...~
 ==CVSharG~Too much for you to handle, Larloch, this belongs into the hands of a Goddess.~
-==RTLarlo~Sure, hihihi, you will not forget the truest of all servants, Dark lady.~
+==RTLarlo~Sure, hihihi, you will not forget the truest of all servants, Dark Lady.~
 ==CVSharG~How long have you lived, Larloch? Ah, I need not to know - it's been too long by all means. You will never deceive me the way you have deceived HER.~
 ==RTLarlo~Hihihi, I guess I know what you have in mind - time for Larloch's Great Escape from Everything, hihihi...~
 ==CVSharG~I have greater plans than chasing after demented traitors.~EXIT

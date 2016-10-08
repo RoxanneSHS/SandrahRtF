@@ -85,7 +85,7 @@ IF~~THEN BEGIN PellId10
 SAY~No.~
 =~(She hesitates a moment before she continues.)...There will be no further incarnations of Mystra, not ever.~
 =~Even...my heritage is not equal to Sandrah's - I am no creature of the Prime like it is required for Mystra. Even being born to a human mother I was conceived by Mystra out of the Weave itself.~
-IF~~THEN REPLY~That explains why you did not appear as a candidate at the Times of Trouble nor as an alternative to Sandrah.~DO~SetGlobal("Realpel","LOCALS",3)~EXIT
+IF~~THEN REPLY~That explains why you did not appear as a candidate at the Time of Troubles nor as an alternative to Sandrah.~DO~SetGlobal("Realpel","LOCALS",3)~EXIT
 END
 
 IF~~THEN BEGIN Pellitem3
@@ -157,7 +157,7 @@ DO~SetGlobal("Thamove","BG4802",2)~
 ==PelligJ ~Animals are more at times than meets the eye.~
 ==RTMeli IF~InParty("RTMeli")~THEN~It has paid off before to do so and it does once again, Master Thalantyr.~
 ==Thalan~I decided to act before those who feel strong now take their chance on me.~
-==PelligJ~Your goddess has not left you even if it is her today that needs your help.~
+==PelligJ~Your goddess has not left you even if it is her today who needs your help.~
 ==Nalin~Thalantyr acted quickly but I find now that you may be correct - even as others are affected by the spell plague after Mystra's death his abilities seem to be intact.~
 END
 ++~Mystra has left an item in your care and it is for that reason we have sought you out.~ + HintNash5

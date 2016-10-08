@@ -16,7 +16,7 @@ END
 ++~Thank you and farewell. We will do as Sandrah has promised.~EXIT
 
 CHAIN
-IF~GlobalGT("RTLouPlot","GLOBAL",0) GlobalLT("RTLouPlot","GLOBAL",15) ~THEN CVQIDR HelpUDDown
+IF~GlobalGT("RTLouPlot","GLOBAL",0) GlobalLT("RTLouPlot","GLOBAL",15) InParty("CVSandr")~THEN CVQIDR HelpUDDown
 ~My sister, how can I help you and <CHARNAME> this time?~
 ==CVSan25J~We must rescue a companion who has been kidnapped and brought to the Underdark to stand trial by Lolth.~
 ==CVQIDR~Trial by Lolth? This is equivalent to a death sentence, torture and transformation to a drider. (Sigh) I know it is not really news to you.~
