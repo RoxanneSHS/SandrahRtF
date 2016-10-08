@@ -58,7 +58,7 @@ IF~ AreaCheck("RTF120")~THEN RTSharp Att120
 
 CHAIN
 IF~AreaCheck("RTF121") Global("Bodhimeet","RTF121",0)~THEN RTBodhi KelemBo
-~Ha, I see the puzzled look on you faces, silly ones. I am surely the last creature you expected to meet here, <CHARNAME>. Me and your Drow Bhaalsister over in the southern wing. Ha, we have a lot of fun chasing each other around...~
+~Ha, I see the puzzled look on your faces, silly ones. I am surely the last creature you expected to meet here, <CHARNAME>. Me and your Drow Bhaalsister over in the southern wing. Ha, we have a lot of fun chasing each other around...~
 =~...it is good practice, you know. Practice for a day like this, when prey is delivered to our doorstep.~
 DO~SetGlobal("Bodhimeet","RTF121",1)~
 ==CVSan25J~Sendai is here as well? You are right, the abyss is the place I would have expected you to be.~
