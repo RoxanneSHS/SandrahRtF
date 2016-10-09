@@ -45,7 +45,7 @@ IF~Global("SanRTFPlot5","GLOBAL",6) Global("Gnollend","RTF123",2)~THEN CVCyr01 G
 ~Hi, hi, you just appear in time for the exchange, my dears. I knew I have an offer for you that you cannot refuse.~
 DO~SetGlobal("Gnollend","RTF123",3)~
 ==SanMyst~Sandrah, <CHARNAME>, do not make any concessions to this liar and traitor. He will not hold his word anyway.~
-==CVCyr01~Not everyone gives away the power once acclaimed away as easy as you do, poor beloved Midnight.~
+==CVCyr01~Not everyone gives the power once acclaimed away as easy as you do, poor beloved Midnight.~
 ==SanMyst~Do not call me such, murderer and deceiver.~
 ==CVDRIZR~She is yours no longer, Prince of Lies!~
 ==CVCyr01~The deal is easy and straightforward. Bhaal's essence for Midnight's now again mortal existence.~

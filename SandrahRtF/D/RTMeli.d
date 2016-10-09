@@ -376,7 +376,7 @@ IF~Global("RTMeliQuest","GLOBAL",15)~THEN RTMeli ScrollN6
 DO~SetGlobal("RTMeliQuest","GLOBAL",16)~
 ==CVSan25J~You are not giving up your dream of the University of the Sword Coast just because of this event, my friend?~
 ==RTMeli~Oh, no, Sandrah, I am as determined to make it happen as I ever was. What I have learned is that there is no shortcut to wisdom and knowledge. But I will earn it, bit by bit.~
-==CVLey25J IF~InParty("Leyala")~THEN~You must not do that all alone, Melicamp. Your vision is a good and strong one and you will have supporters that share it.~
+==CVLey25J IF~InParty("Leyala")~THEN~You must not do that all alone, Melicamp. Your vision is a good and strong one and you will have supporters who share it.~
 ==CVSan25J IF~!InParty("Leyala")~THEN~ ou must not do that all alone, Melicamp. Your vision is a good and strong one and you will have supporters that share it.~
 ==RTMeli IF~InParty("Leyala")~THEN~Are these words out of kindness or do they come from one of those supporters?~
 ==CVLey25J IF~InParty("Leyala")~THEN~Some time ago you kind of offered me a vacancy at your university, didn't you. I will collect my share of wisdom for my domain and bring it to the academy, count on it.~

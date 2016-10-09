@@ -270,7 +270,7 @@ END
 
 CHAIN
 IF~~THEN  CVSan25J SzassDef3
-~Blackstaff Tower fell to ruins after the Times of Trouble, its name was lost from memory. It was a large fortress guarding the southern frontier of the Sword Coast.~
+~Blackstaff Tower fell to ruins after the Time of Troubles, its name was lost from memory. It was a large fortress guarding the southern frontier of the Sword Coast.~
 =~Gnolls settled in the ruins later - until the heroic <CHARNAME> cleared the place to rescue a Wychalarn of Rashemen.~
 END
 ++~THAT was once Blackstaff Tower, the ancient castle where we rescued Dynaheir? Let us go there at once.~EXIT

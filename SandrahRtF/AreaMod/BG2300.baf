@@ -34,3 +34,11 @@ THEN
 RESPONSE #100
 ActionOverride("Pellig3",StartDialogueNoSet([PC]))
 END
+
+IF
+GlobalGT("RTPellSol","BG2300",3)
+InMyArea("Pellig")
+THEN
+RESPONSE #100
+ActionOverride("Pellig",EscapeArea())
+END

@@ -1810,109 +1810,109 @@ COPY ~SandrahRTF/Areas/RTF340LM.bmp~ ~override/RTF340LM.bmp~
 COPY ~SandrahRTF/Areas/RTF340SR.bmp~ ~override/RTF340SR.bmp~
 
 EXTEND_BOTTOM
-~RTF008.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF008.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF009.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF009.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF014.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF014.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF015.bcs~ ~SandrahRTF/Areas/pellfoll.baf~      
+~RTF015.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~      
 EXTEND_BOTTOM
-~RTF022.bcs~ ~SandrahRTF/Areas/pellfoll.baf~  
+~RTF022.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~  
 EXTEND_BOTTOM
-~RTF027.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF027.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF028.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF028.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF031.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF031.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF033.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF033.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF036.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF036.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF037.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF037.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF381.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF381.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF382.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF382.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF401.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF401.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF042.bcs~ ~SandrahRTF/Areas/pellfoll.baf~  
+~RTF042.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~  
 EXTEND_BOTTOM
 ~RTF090.bcs~ ~SandrahRTF/Areas/RTMaskp.baf~
 EXTEND_BOTTOM
 ~RTF050.bcs~ ~SandrahRTF/Areas/RTMaskp.baf~
 EXTEND_BOTTOM
-~RTF053.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF053.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF054.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF054.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF055.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF055.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
 ~RTF060.bcs~ ~SandrahRTF/Areas/RTMaskp.baf~
 EXTEND_BOTTOM
-~RTF062.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF062.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF066.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF066.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF076.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF076.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF081.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF081.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF083.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF083.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF084.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF084.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF086.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF086.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF092.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF092.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF094.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF094.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF100.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF100.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF101.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF101.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF102.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF102.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF103.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF103.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF104.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF104.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF105.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF105.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF110.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF110.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF111.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF111.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF115.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF115.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF117.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF117.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF118.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF118.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF130.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF130.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF136.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF136.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF138.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF138.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF139.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF139.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF150.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF150.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF152.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF152.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF153.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF153.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF162.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF162.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF164.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF164.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF165.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF165.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
-~RTF910.bcs~ ~SandrahRTF/Areas/pellfoll.baf~
+~RTF910.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 
 COMPILE     ~SandrahRTF/Areas/RTPoiTr.baf~
 
