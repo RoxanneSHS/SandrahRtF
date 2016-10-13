@@ -1,5 +1,4 @@
 IF
-OnCreation()
 Global("Reset","RTF050",0)
 Global("NobleDopple","GLOBAL",1)
 THEN
@@ -15,6 +14,15 @@ THEN
 RESPONSE #100
 CreateCreature("RTBaylan",[219.3077],4)
 SetGlobal("Baylan","RTF050",7)
+END
+
+IF
+GlobalGT("SanRTFPlot4","GLOBAL",7)
+InMyArea("RTBaylan")
+THEN
+RESPONSE #100
+ActionOverride("RTBaylan",DestroySelf())
+Continue()
 END
 
 IF
