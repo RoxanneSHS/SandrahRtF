@@ -32,3 +32,14 @@ ActionOverride("ppgirl",MoveToObject(Nearest([PC])))
 ActionOverride("ppgirl",StartDialogueNoSet(Player1))
 Continue()
 END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("Disable1500","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("Disable1500","GLOBAL",3)
+TriggerActivation("Tran1500",TRUE)
+TriggerActivation("1500after",FALSE)
+Continue()
+END
