@@ -17,13 +17,13 @@ IF WEIGHT #-2~ Global("RTFSharInfo","GLOBAL",1) GlobalLT("RTFFoundLab402","GLOBA
 ~We have received unexpected visitors, gentlemen - and maybe unexpected help, I hope. <CHARNAME> and, eh, Mystra....~
 DO~SetGlobal("SanRTFPlot1","GLOBAL",1) SetGlobal("RTFSharInfo","GLOBAL",2)~
 ==CVSan25J~ I prefer Sandrah as long as I dwell on the Prime. In a sense we are here incognito.~
-==Belt~Help from the gods themselves. I did not think things were that bad already.~
+==Belt~Help from the gods themselves. I did not think things were that bad yet.~
 ==Keldda~You have always been a force of hope and light in the past. May our current meeting have similar results.~
 ==Keldo25a ~The Order is ready to strike. We may well solve those little problems by ourselve.~
 ==CVSan25J~I hope you will have no need to strike, at least not until we know all the facts.~
 ==Keldo25a~It was a mistake to trust orcs, even worse...half-orcs.~
 ==CVShabab~Prelate Keldorn, please. Let us hear facts not prejudice.~
-=~ You see how things are, <CHARNAME>, my own attempts to shed light in recent events have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved already (sigh).~
+=~ You see how things are, <CHARNAME>, my own attempts to shed light in recent events have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
 ==CVSan25J~We are ready to listen and decide on our course afterwards, Shar-Teel.~
 ==CVShabab~It has been peaceful between Shauhana's Clan Orcs and our town for a decade. The Neutral Zone has been respected by both sides and eventual trespassers have been punished adequately. We established trade with Hai 'Ulthak with benefits for both sides.~
 =~Five summers ago all together, orc, dwarf and Waterdeep men, built the Hornswamp bridge to make trade easier and safer. ~
@@ -59,13 +59,13 @@ IF WEIGHT #-2~ Global("RTFSharInfo","GLOBAL",1) Global("RTFFoundLab402","GLOBAL"
 ~We have received unexpected visitors, gentlemen - and maybe unexpected help, I hope. <CHARNAME> and, eh, Mystra....~
 DO~SetGlobal("SanRTFPlot1","GLOBAL",2) SetGlobal("RTFSharInfo","GLOBAL",4)~
 ==CVSan25J~ I prefer Sandrah as long as I dwell on the Prime. In a sense we are here incognito.~
-==Belt~Help from the gods themselves. I did not think things were that bad already.~
+==Belt~Help from the gods themselves. I did not think things were that bad yet.~
 ==Keldda~You have always beem a force of hope and light in the past. May our current meeting have similar results.~
 ==Keldo25a ~The Order is ready to strike. We may well solve those little problems by ourselve.~
 ==CVSan25J~I hope you will have no need to strike, at least not until we know all the facts.~
 ==Keldo25a~It was a mistake to trust orcs, even worse half-orcs.~
 ==CVShabab~Prelate Keldorn, please. Let us hear facts not prejudice.~
-=~ You see how things are, <CHARNAME>, my own attempts to shed light in recent events have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved already (sigh).~
+=~ You see how things are, <CHARNAME>, my own attempts to shed light in recent events have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
 ==CVSan25J~We are ready to listen and decide on our course afterwards, Shar-Teel.~
 ==CVShabab~It has been peaceful between Shauhana's Clan Orcs and our town for a decade. The Neutral Zone has been respected by both sides and eventual trespassers have been punished adequately. We established trade with Hai 'Ulthak with benefits for both sides.~
 =~Five summers ago all together, orc, dwarf and Waterdeep men, built the Hornswamp bridge to make trade easier and safer. ~

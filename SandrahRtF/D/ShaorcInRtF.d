@@ -26,7 +26,7 @@ IF~ GlobalGT("SanBeginRTF","GLOBAL",1) AreaCheck("CVRTF8")OR(2)Global("SanRTFPlo
 ~Who dares...<CHARNAME>!! Sandrah!! How unexpected but yet welcome.~
 DO~SetGlobal("SanRTFPlot1","GLOBAL",1) SetGlobal("RTFShauInfo","GLOBAL",1)~
 ==CVSan25J~Shauhana, it is not in the best of times that we arrive, but hopefully we can do something to improve the situation.~
-==CVShauq~ I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved already (sigh).~
+==CVShauq~ I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
 ==CVSan25J~We are ready to listen and decide on our course afterwards, Shauhana.~
 ==CVShauq~It has been peace between Clan Orcs and the South for ten summers, my friends. The Neutral Zone has been respected by both sides and eventual trespassers have been punished adequately. We established trade with the Sword Coast with benefits for both sides.~
 =~Five summers ago orc, dwarf and Waterdeep men built together the Hornswamp bridge to make trade easier and safer. It was a big celebration - Minsc was drunk on meade for five days, oh my.~
@@ -63,7 +63,7 @@ IF~~THEN CVSan25J TakeGiran
 
 CHAIN
 IF~~THEN CVShauq InitRtF3
-~Giran, our son, has trained and learned well with his father. He is no longer a child and has proven his courage and skills on a number of occasions already.~
+~Giran, our son, has trained and learned well with his father. He is no longer a child and has proven his courage and skills on a number of occasions.~
 =~I have agreed with Minsc that it is time he sees more of the Realms and learns outside of our society as well. He may one day become leader here and he needs wisdom and experience for that.~
 ==CVSan25J~A djahemma, like it was custom in his father's land?~
 DO~SetGlobal("SanRTFGiranOK","GLOBAL",2)~
@@ -79,7 +79,7 @@ IF~ GlobalGT("SanBeginRTF","GLOBAL",1) AreaCheck("CVRTF8") Global("SanRTFPlot1",
 ~Who dares...<CHARNAME>!! Sandrah!! How unexpected but yet welcome.~
 DO~SetGlobal("SanRTFPlot1","GLOBAL",2)SetGlobal("RTFShauInfo","GLOBAL",4)~
 ==CVSan25J~Shauhana, it is not in the best of times that we arrive, but hopefully we can do something to improve the situation.~
-==CVShauq~ I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved already (sigh).~
+==CVShauq~ I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
 ==CVSan25J~We are ready to listen and decide on our course afterwards, Shauhana.~
 ==CVShauq~It has been peace between Clan Orcs and the South for ten summers, my friends. The Neutral Zone has been respected by both sides and eventual trespassers have been punished adequately. We established trade with the Sword Coast with benefits for both sides.~
 =~Five summers ago orc, dwarf and Waterdeep men built together the Hornswamp bridge to make trade easier and safer. It was a big celebration - Minsc was drunk on meade for five days, oh my.~
