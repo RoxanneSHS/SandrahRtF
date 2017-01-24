@@ -43,7 +43,9 @@ END
 
 IF~~THEN BEGIN DownShar2
 SAY~*The symbols you have touched turn to a fiery red under your fingertips and you scream out in pain.*~
-IF~~THEN DO~ApplyDamagePercent(Player1,70,MAGICFIRE)
+IF~DifficultyLT(HARD)~THEN DO~ApplyDamagePercent(Player1,70,MAGICFIRE)
+ApplySpell(Player1,CLERIC_HOLD_PERSON)~EXIT
+IF~DifficultyGT(NORMAL)~THEN DO~ApplyDamagePercent(Player1,49,MAGICFIRE)
 ApplySpell(Player1,CLERIC_HOLD_PERSON)~EXIT
 END
 
