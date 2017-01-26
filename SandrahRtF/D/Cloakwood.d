@@ -39,7 +39,7 @@ END
 CHAIN
 IF WEIGHT #-2~ Global("RTCloakwood","GLOBAL",4) See([PC]) Allegiance(Myself,NEUTRAL) ~THEN Cythan ReturnClkw2
 ~Peter, I knew you would not be able to handle them alone. I advised you to alert me immediately should they awake.~
-DO~SetGlobal("RTCloakwood","GLOBAL",5) SetGlobal("TalkedToCythan","GLOBAL",1) ActionOverride("Coksmth",DestroyItem("Imos1hp1"))~
+DO~SetGlobal("RTCloakwood","GLOBAL",5) SetGlobal("TalkedToCythan","GLOBAL",1) ActionOverride("Coksmth",DestroyItem("ImoSlHP1"))~
 ==Coksmth IF~!StateCheck("Coksmth",CD_STATE_NOTVALID)~THEN~Cythandria, have a bit of faith, my dear.~
 ==Cythan IF~!StateCheck("Coksmth",CD_STATE_NOTVALID)~THEN~Bah, you told me the same between the sheets last night - before I fell asleep in frustration.~
 ==Cythan~Anything I don't do myself will not be done correctly.~

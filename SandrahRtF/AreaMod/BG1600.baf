@@ -32,6 +32,7 @@ CreateCreature("druid8a",[624.2069],10)
 CreateCreature("gdruid",[1020.2086],8)
 CreateCreature("CVLotw2",[608.2828],13)
 CreateCreature("gdruid",[695.2717],7)
+ActionOverride("Coksmth",DestroyItem("ImoSlHP1"))
 SetGlobal("RTCloakwood","GLOBAL",6)
 END
 
