@@ -96,7 +96,7 @@ DO~SetGlobal("RTSarAmb","BG2610",2)RealSetGlobalTimer("RTAmb","BG2610",30)~
 ==RTSarev~Ah, so you have met him already, I should have known that, my knowledgable little darling, yes it will be a power like his that awaits me.~
 ==CVSan25J~Eternal life as a lich - and you really find that state desireable?~
 ==RTSarev~It is all I have left to desire. The lifeform, the power, the will and ability to destroy - I found my true nature and the master will give it to me.~
-==CVSan25J~Your *master* has never given to anyone what he has promised. You may have eternal existance but no power, Sarevok. You will be Velsharoon's thrall like anyone else who ever chose to serve the Lich-Lord.~
+==CVSan25J~Your *master* has never given to anyone what he has promised. You may have eternal existence but no power, Sarevok. You will be Velsharoon's thrall like anyone else who ever chose to serve the Lich-Lord.~
 ==RTSarev~With the power that <CHARNAME>'s soul will provide me I will be his master once he has served his task.~ DO~Enemy()~
 ==CVSan25J~You will go down in true ignorance, Sarevok. Your master has some thousands of years of experience to use ambitious mortals like you for his purpose. All of them ended as willing puppets of the undead Archmage of Necromancy.~ EXIT
 

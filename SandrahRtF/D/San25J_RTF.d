@@ -803,7 +803,7 @@ END
 IF~~THEN BEGIN Sarfool4
 SAY~You may feel it inside you like you once did, but what you gave to your *brother* was never enough to endanger you now that you made your decision for Love and Hope. You are much too strong at will to be turned by it. And mind that it is just a lost bit of Bhaal's essence that has nowhere to go in the multiverse. The safest place to store it will be within you.~
 =~I await your decision to perform the extraction if you want me to.~
-IF~~THEN REPLY~I reject. I will not have the evil taint within me again, regardless how small it is.~ DO~SetGlobal("SPRITE_IS_DEADRTSAREV","GLOBAL",0) ApplySpellRES("CVSLEEP",Player1)AddexperienceParty(-23000)~EXIT
+IF~~THEN REPLY~I reject. I will not have the evil taint within me again, regardless how small it is.~ DO~SetGlobal("SPRITE_IS_DEADRTSAREV","GLOBAL",0) ApplySpellRES("CVSLEEP",Player1)AddXPObject(Player1,-23000)~EXIT
 IF~Global("Sanrompath","GLOBAL",1)~THEN REPLY~The god of love and hope will not allow even one like Sarevok to suffer such a fate. I am strong enough to take what I once gave him.~ DO~ActionOverride("CVSandr",ForceSpell(Player1,SAREVOK_SOULSTEAL))AddexperienceParty(23000) ~EXIT
 IF~Global("Sanrompath","GLOBAL",2)~THEN REPLY~The goddess of love and hope will not allow even one like Sarevok to suffer such a fate. I am strong enough to take what I once gave him.~ DO~ActionOverride("CVSandr",ForceSpell(Player1,SAREVOK_SOULSTEAL)) ApplySpellRES("CVSLEEP",Player1)AddexperienceParty(23000)~EXIT
 END
