@@ -58,14 +58,14 @@ IF~~THEN DO~EscapeArea()~EXIT
 END
 END
 
-APPEND Watch6
+APPEND Chante2
 IF WEIGHT #-1~Global("Criminal","GLOBAL",99)~THEN BEGIN Nochant
 SAY~No chanting of the prophesy anymore. Love and Hope be with you, friends.~
 IF~~THEN DO~EscapeArea()~EXIT
 END
 END
 
-APPEND Chante2
+APPEND Watch6
 IF WEIGHT #-1~Global("Criminal","GLOBAL",99)~THEN BEGIN NoArr
 SAY~Greetings, <CHARNAME>, may you find what you seek at Candlekeep.~
 IF~~THEN DO~EscapeArea()~EXIT
