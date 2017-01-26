@@ -20,7 +20,7 @@ Dead("RTSarev")
 THEN
 RESPONSE #100
 SetGlobal("RTSarAmb","BG2610",7)
-TriggerActivation("Door6509",TRUE)
+TriggerActivation("Door2609",TRUE)
 END
 
 IF
@@ -35,7 +35,7 @@ CreateCreature("DSDuerg2",[1155.1197],9)
 CreateCreature("DSDuerg2",[1037.1098],12)
 CreateCreature("RTSarev",[1050.790],13)
 SetGlobal("RTSarAmb","BG2610",1)
-TriggerActivation("Door6509",FALSE)
+TriggerActivation("Door2609",FALSE)
 END
 
 IF
