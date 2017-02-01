@@ -1,5 +1,5 @@
 IF
-GlobalGT("RtFIzGir","GLOBAL",11)
+GlobalGT("RtFIzGir","GLOBAL",9)
 InParty("CVIzzy")
 Global("Izzypink","RTF057",0)
 Delay(6)
