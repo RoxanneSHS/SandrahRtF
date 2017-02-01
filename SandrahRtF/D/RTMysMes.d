@@ -42,7 +42,7 @@ IF~~THEN RTThKn Think2
 ==CVSan25J~Please, <CHARNAME>, we are not here to uneccessarily draw attention yet. Let us explore this area for another possibility first.~
 END
 ++~You are right counselor, they mistake us for someone else it seems. Let's find out what is going on.~EXIT
-++~I take no insults from such an ape, and I'm surely no Odesseiron. I will stuff the arrogant fool's mouth.~DO~Enemy()~EXIT
+++~I take no insults from such an ape, and I'm surely no Odesseiron. I will stuff the arrogant fool's mouth.~DO~ActionOverride("RTThKn",Enemy())~EXIT
 
 
 

@@ -881,7 +881,7 @@ IF~Global("CreWave","RTF010",5)~ THEN BEGIN MornView1
 SAY~*You could swear you hear Sandrah grind her teeth.*~
 =~They will pay for it, <CHARNAME>, oh, they will!~
 IF~~THEN REPLY~ I swear it - they have no right to call themselves *gods* for what they do here.~ DO~SetGlobal("CreWave","RTF010",6)~EXIT
-IF~~THEN REPLY~*You silently nod. You know she will even stand her ground against AO himself to demand compensation for these misdeeds.~DO~SetGlobal("CreWave","RTF010",6)~EXIT
+IF~~THEN REPLY~*You silently nod. You know she will even stand her ground against AO himself to demand compensation for these misdeeds.*~DO~SetGlobal("CreWave","RTF010",6)~EXIT
 END
 
 IF~Global("CreWave","RTF010",7) ~ THEN BEGIN MornView2
