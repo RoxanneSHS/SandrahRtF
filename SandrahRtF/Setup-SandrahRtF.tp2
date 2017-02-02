@@ -3653,6 +3653,8 @@ EXTEND_BOTTOM
 ~RTNild.bcs~ ~SandrahRTF/Mods/RTF073Orcs.baf~
 EXTEND_BOTTOM
 ~RTNorr.bcs~ ~SandrahRTF/Mods/RTF073Orcs.baf~
+EXTEND_BOTTOM
+~jellspa.bcs~ ~SandrahRTF/Mods/jellred.baf~
 
 COMPILE ~SandrahRTF/D/NextGenNPCPids.d~
 
