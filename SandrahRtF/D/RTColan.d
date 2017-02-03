@@ -72,7 +72,7 @@ IF~Global("RTColan","GLOBAL",14)~THEN RTColan RTTrial1
 ==RTJudge~Continue - if that bitch opens her mouth again we'll have her gagged for the rest of the trial. Order in the Court!~
 ==RTColan~Your honor, I'd rather avoid that. Those primitive outburts often reveal facts they may try to hide from us.~
 ==RTJudge~Your methods are legendary, chief inquisitor, you may have it your way.~
-==RTColan~The klling of several merchants, is next on the list...~
+==RTColan~The killing of several merchants, is next on the list...~
 ==CVGir25J IF~InParty("CVGiran")~THEN~You know well those were doppelgangers.~
 ==CVIzy25J IF ~ InParty("CVIzzy")~THEN~ Even the stupidest inkwisitar found quickest it was doppelgangers!~
 ==RTMeli IF~ InParty("RTMeli")~THEN~This is a farce, judge. There is no denying that we were attacked by doppelgangers.~
