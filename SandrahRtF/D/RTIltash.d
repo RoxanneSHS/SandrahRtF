@@ -45,7 +45,7 @@ IF~Global("RTSaeHij","GLOBAL",4)~THEN RTIltash FoundSaem
 ~When there is stealing, when there is burglaring, then there is you!!~
 DO~SetGlobal("RTSaeHij","GLOBAL",5)~
 ==RTSaemon~I think he means you, <CHARNAME>, what did you steal from him?~
-==CVSan25J~We took something he himself had stolen from the Red Hoods. I am afraid, Saemon it is NOT that theft he came for here today.~
+==CVSan25J~We took something he himself had stolen from the Red Hoods. Saemon, I am afraid it is NOT that theft he came for here today.~
 ==RTIltash~ I see clear now, one thief is friend of another thief and all are here waiting to be crushed.~
 ==RTSaemon~Good man, don't throw me in with these people who stole something from you, you know me, I am a friend of Samas Kul.~
 ==RTIltash~They thieves, you thief, Samas greatest thief of all but not steal never from me. You do steal woman, where is she?~
