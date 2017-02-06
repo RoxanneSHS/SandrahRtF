@@ -108,7 +108,7 @@ DO~SetGlobal("RtFIzGir","GLOBAL",14) RealSetGlobalTimer("IzGirRomTime","LOCALS",
 =~*She points at the river* - This water. ~
 =~*She pokes her finger into Giran's breast* - This smelly dirty fighter orc.~
 =~*She elegantly lets her tunic slide from her body and points at herself.* - This is girl who wants clean nice boy at her side.~
-=~*Her quick dexterious thief's fingers open and remove Giran's armour in a second.* - Time for a bath, come on slowpoke.~
+=~*Her quick dexterious thief's fingers open and remove Giran's armour in a second.* - Time for a bath, come on, slowpoke.~
 ==BGir25~*There is no obvious resistance from the naked ranger as Izzy drags him by the hand down towards the river where they both splash laughing into the ripples.*~ DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
