@@ -33,7 +33,7 @@ Global("SanRTFPlot2","GLOBAL",2)
 Global("Attack","RTF030",0)
 THEN
 RESPONSE #100
-CreateCreature("RTVelsh",[4233.2491],5)
+CreateCreature("RTVelsh",[3233.2491],5)
 CreateCreature("CVVambo3",[4874.527],10)
 CreateCreature("CVVambo3",[2599.1747],0)
 CreateCreature("CVVamsh1",[2436.1703],14)

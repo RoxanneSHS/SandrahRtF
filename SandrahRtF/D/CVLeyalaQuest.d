@@ -107,7 +107,7 @@ IF~~THEN CVLEY25J Sheimiss3
 ~The pirate king of the island will surely have complete control over the waters around his bastion. We must consider an approach that is not by boat or ship.~
 ==CVSan25J~We may have a chance to come in via the backdoor, the former Spellhold Asylum. It is vacated since we defeated Bodhi and Irenicus there.~
 ==CVLey25J~Can we get there from Irenicus' installation here in Athkatla?~
-==CVSan25J~Even if such a connection still exists, I doubt we can find and activate it without the master of the house. We have no idea where they spent their honeymoon or when they will return.~
+==CVSan25J~Even if such a connection still exists, I doubt we can find and activate it without the master of the house. We have no idea where they spend their honeymoon or when they will return.~
 ==CVLey25J~Your magic transportation then, Sandrah?~
 ==CVSan25J~Desharik is directly supported by Umberlee from her temple on the island. He will detect us as quickly as if we approached over the waves.~
 ==RTSaemon~Then our approach over the waves must be so quick and forceful that he is swept away before he even recognises it.~
