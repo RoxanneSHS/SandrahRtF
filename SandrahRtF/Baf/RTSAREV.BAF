@@ -33,7 +33,7 @@ See([ENEMY])
 THEN
 RESPONSE #100
 EquipMostDamagingMelee()
-Attack(NearestEnemyOf(Myself))
+AttackReevaluate([ENEMY],15)
 END
 
 IF
