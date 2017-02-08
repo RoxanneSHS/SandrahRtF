@@ -108,7 +108,7 @@ DO~SetGlobal("SanRTFPlot4","GLOBAL",3)~
 ==CVSan25J~Just the opposite, Kelemvor, they build new armies of clones and undead to fight the Realms - and the Gods.~
 ==RTKelem~I will not partake in any of those foolish quarrels you celestials have all the time. If you came for an ally you came to the wrong place, do not insult me with your proposals.~
 ==CVSan25J~You must have misunderstood me, good friend. I am not looking for an ally in you. Pacts among the gods are always broken once one side sees the chance for an advantage. Such scheming is beyond us, is it not?~
-==RTKelem~Good to hear, my dear. If it is not a supporter you have seeked here, why did you come?~
+==RTKelem~Good to hear, my dear. If it is not a supporter you have sought here, why did you come?~
 ==CVSan25J~There is a balance to keep, Kelemvor. For everything born something else must go and make space. This is where you have your task. Currently those who are due to pass to you are entering the cycle once again. Where will that end?~
 =~We will leave you to your thoughts and decisions now. If you see any need to act you know where and against whom. I know you will do the right thing.~
 ==RTKelem~Hm, I will - just like you just did, young one. Take the way up from here, it is more convenient.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
