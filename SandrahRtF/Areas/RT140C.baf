@@ -1,5 +1,7 @@
 IF
+OR(2)
 IsOverMe("CVSandr")
+Entered("CVSandr")
 Global("Statue","RTF140",0)
 THEN
 RESPONSE #100
