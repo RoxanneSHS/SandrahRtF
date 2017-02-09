@@ -9,7 +9,7 @@ DO~SetGlobal("RTPriQ","BG4800",3)~
 ==RTSPEil1~You're judging prematurely, it is your god who has lost the powers that the Weave and Mystra had to let him participate in.~
 ==RTSPTa1~Your Eilistraee was just a dark copy of the defeated Mystra, you and all her followers will bow before the Chaos!~
 ==RTSPEil1~Haven't you noticed yet that your spells fail and your god looses followers daily. Even in death Mystra triumphs over her opponents.~
-==RTSPTa1~Bow or die~DO~Enemy() Attack("RTSPTal1") ActionOverride("Pellig3",Attack("RTSPTal1")~EXIT
+==RTSPTa1~Bow or die!~DO~Enemy() Attack("RTSPeil1") ActionOverride("Pellig3",Attack("RTSPTal1")~EXIT
 
 CHAIN
 IF~ Global("RTPriQ","BG4800",3)~THEN RTSPEil1 Quar2

@@ -152,7 +152,7 @@ IF~~THEN Thalan HintNash3
 
 CHAIN
 IF WEIGHT #-10~Global("Thamove","BG4802",1)~THEN Thalan HintNash4
-~Your presence here confirms that you have the habbit of listening to talking chickens, haha.~
+~Your presence here confirms that you have the habit of listening to talking chickens, haha.~
 DO~SetGlobal("Thamove","BG4802",2)~
 ==PelligJ ~Animals are more at times than meets the eye.~
 ==RTMeli IF~InParty("RTMeli")~THEN~It has paid off before to do so and it does once again, Master Thalantyr.~
