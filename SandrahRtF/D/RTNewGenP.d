@@ -10,8 +10,9 @@ IF~Global("MeliJoin","LOCALS",1)~ THEN RTMeliP GoM
 ~(Sigh) I had hoped to improve my skills while travelling with you. Well, I still have to learn. I will humbly ask my old Master Thalantyr to give me another chance.~
 ==RTMeliP IF~InParty("Leyala")~THEN~*He gives Leyala a certain smile.* Take good care, my dear.~
 ==CVLey25J IF~InParty("Leyala")~THEN~Take good care, Melicamp.~
+==RTMeliP~*He looks at you expectantly.*~
 END
-++~Oops, my mistake, Melicamp, stay with us please.~DO~SetGlobal("MeliJoin","LOCALS",1)JoinParty() ~EXIT
+++~Oops, my mistake, Melicamp, stay with us please.~DO~JoinParty() ~EXIT
 ++~You can improve until we return.~+GoMH
 
 CHAIN
