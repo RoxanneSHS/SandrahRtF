@@ -8,3 +8,12 @@ ActionOverride(Player1,RemoveSpellRES("spin822"))
 Continue()
 END
 
+IF
+Global("Slayer10","GLOBAL",1)
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("Slayer10","GLOBAL",10)
+DisplayString(Player1,@2095)
+END
+
