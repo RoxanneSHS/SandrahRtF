@@ -465,10 +465,11 @@ END
 IF
 Global("RTBackInUD","GLOBAL",1)
 AreaCheck("RTF072")
-OR(3)
+OR(4)
 See("dadrow14")
 See("RTImrae")
 See("udspid01")
+See("uddrow24")
 CombatCounter(0)
 THEN
 RESPONSE #100

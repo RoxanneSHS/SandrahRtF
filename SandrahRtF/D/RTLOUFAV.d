@@ -121,7 +121,7 @@ DO~ SetGlobal("RTBackInUD","GLOBAL",8)~
 ==RTLouUD~Not without opposition.~
 ==CVSan25J~You will be more than lucky if you make it out of this self constructed trap alive. Does your hatred really make you so blind as not to see whom you are facing?~
 ==RTLolth~A city full of doomed waels, the daughter of a traitor who wanted to be a goddess herself - baah. You wait in the pit for your turn!!~  DO~ActionOverride("RTLouUD",ReallyForceSpell(Myself,DRYAD_TELEPORT)) SetGlobal("DrowCityHostile","GLOBAL",1)~
-=~And what more? A minor surfacer deity who stumbled into darkness to be eliminated.~DO~Enemy()~EXIT
+=~And what more? A minor surfacer deity who stumbled into darkness to be eliminated.~DO~ActionOverride("RTLouFav",Enemy())~EXIT
 
 CHAIN
 IF WEIGHT #-5~Global("RTLouPlot","GLOBAL",16)~THEN Senbeh01 WayDown
