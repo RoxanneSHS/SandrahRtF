@@ -90,7 +90,7 @@ IF~Global("SharDes","RTF071",2)~THEN RTLordAO SharInter1
 ~The whole pantheon these days is but a bunch of traitors and rebels - and YOU, Mystra, are even outgrowing your demented grandfather, it seems!!~
 DO~SetGlobal("SharDes","RTF071",3) SetGlobal("SanRTFPlot4","GLOBAL",8)~
 ==CVSan25J~*There is an almost wicked smile upon Sandrah's lips.*~
-=~AO I know just too well what has really brought you here. Your existence depends on the Weave like everyone else's around here.~
+=~AO, I know just too well what has really brought you here. Your existence depends on the Weave like everyone else's around here.~
 ==RTLordAO~You are just the Weave's keeper and watcher, not its owner.~
 =~Both parts of the Weave must co-exist as you have just explained to your silly opponent. Keep them apart as you have been tasked - Shar, you have imbalanced the energies of the multiverse with your attempt, you will no longer partake in the current conflict. My verdict is that you withdraw to your Realm until I notify you. Do you consent to this sentence?~
 ==CVSharg~Grr, not till I hear what will happen to HER.~
