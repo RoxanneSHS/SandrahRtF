@@ -1,4 +1,15 @@
 IF
+GlobalGT("Chapter","Global",30)
+Global("IzzyHere","BG3321",1)
+THEN
+RESPONSE #100
+SetGlobal("IzzyHere","BG3321",2)
+ActionOverride("RTFImo",DestroySelf())
+ActionOverride("Henning2",DestroySelf())
+Continue()
+END
+
+IF
 GlobalGT("SanBeginRTF","GLOBAL",1)
 Global("IzzyHere","BG3321",0)
 THEN
