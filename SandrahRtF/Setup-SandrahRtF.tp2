@@ -3171,6 +3171,13 @@ COPY ~SandrahRTF/STO/RTEMart.sto~ ~override/RTEMart.sto~
 COPY ~SandrahRTF/STO/RTAuri.sto~ ~override/RTAuri.sto~
      SAY 0xc  @1848
 
+COPY_EXISTING ~trmer04.sto~ ~override/trmer04.sto~
+  ADD_STORE_ITEM ~CVheherb~ #5 #0 #0 ~IDENTIFIED~ #3
+  ADD_STORE_ITEM ~arow08~ #25 #0 #0 ~IDENTIFIED~ #3
+  ADD_STORE_ITEM ~potn27~ #1 #0 #0 ~IDENTIFIED~ #3
+  ADD_STORE_ITEM ~scrl1g~ #1 #0 #0 ~IDENTIFIED~ #3
+
+
 COPY ~SandrahRTF/Itm/CVLenam.spl~ ~override/CVLenam.spl~
 SAY 0x9e @1698
 
