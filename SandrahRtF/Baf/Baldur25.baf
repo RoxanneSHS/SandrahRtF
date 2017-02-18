@@ -17,3 +17,13 @@ SetGlobal("Slayer10","GLOBAL",10)
 DisplayString(Player1,@2095)
 END
 
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+PartyRested()
+THEN
+RESPONSE #100
+ActionOverride(Player1,RemoveSpellRES("spin649"))
+ActionOverride(Player1,RemoveSpellRES("spin822"))
+Continue()
+END
+
