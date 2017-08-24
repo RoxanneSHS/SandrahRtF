@@ -1,12 +1,12 @@
 CHAIN
 IF~ Global("Meet1","RTF903",1)~THEN CVSzas BezSurpr1
-~Whom do we have here?~
+~Whom do we have here?~ [OH93633]
 =~That's an interesting turn of events...the little priestess of Mystra from the Stormhorns...~
 DO~SetGlobal("Meet1","RTF903",2)~
 ==CVSan25J~That is an interesting remark, Szass.~
-==CVSzas~Your goddess surely misjudges once again what is really going on - to send YOU and this ragged band of fledgling adventurers!! I can surely leave your elimination to the authorities of Bezantur. False alert it seems.~
+==CVSzas~Your goddess surely misjudges once again what is really going on - to send YOU and this ragged band of fledgling adventurers!! I can surely leave your elimination to the authorities of Bezantur. False alert it seems.~[OH93453]
 ==CVSan25J~(Smiles) Someone surely misjudges the situation here.~
-==CVSzas~HAHAHA, Goddess of all Mystic...HAHAHAHA...~
+==CVSzas~HAHAHA, Goddess of all Mystic...HAHAHAHA...~[OH93468]
 DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
 CHAIN
