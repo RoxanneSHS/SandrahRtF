@@ -2,7 +2,7 @@ CHAIN
 IF WEIGHT #-1~GlobalGT("SanBeginRTF","GLOBAL",1) Global("RTFSharInfo","GLOBAL",0)OR(2)Global("SanRTFPlot1","GLOBAL",0) Global("SanRTFPlot1","GLOBAL",1) ~ THEN CVShabab GetStarted
 ~ Who is...<CHARNAME>!!!! How unexpected but not unwelcome.~
 DO~SetGlobal("RTFSharInfo","GLOBAL",1)~
-==CVSAN25J~ High Commander Dorsan (giggle), hello, Wildcat.~
+==CVSAN25J~ High Commander Dosan (giggle), hello, Wildcat.~
 ==CVShabab~ (Laughs harshly) Let no one ouside these walls hear you calling me that, Pussycat. How good to see you in times like these.~
 == CVShabab IF~GlobalGT("SanSharInt","GLOBAL",40)~THEN~Regardless how others may call you, Loverboy, you are my man and may play that god and hero role elsewhere. This house is mine to command. (Smiles and comes to kiss you passionately).~
 == CVShabab IF~GlobalLT("SanSharInt","GLOBAL",40)~THEN~The god of love and hope in my *humble* house, who would have guessed...~
