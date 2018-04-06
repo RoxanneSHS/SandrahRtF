@@ -41,16 +41,16 @@ APPEND CVSan25J
 
 //PID
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",17) ~ THEN BEGIN SanPCInit17
-SAY ~ *Sandrah - once again in her human avatar - has not changed a single bit from the girl you loved and admired before your common ascencion.*~
+SAY ~ *Sandrah - once again in her human avatar - has not changed a single bit from the girl you loved and admired before your common ascension.*~
 IF~Global("RTFOldFriends","GLOBAL",2) Global("SanRTFPlot5","GLOBAL",0)~THEN REPLY~ Can you tell me some locations where our old friends are today?~ GOTO RTFSearchfr2
 IF~Global("Godsnow","LOCALS",0)~THEN REPLY~*She's the Goddess of All Magic now, a powerful member of the Pantheon - still for you she will always remain your beloved Sandrah*.~GOTO Godsnow1
 IF~Global("RTParcel","LOCALS",0) Global("SanRTFPlot3","GLOBAL",0)~THEN REPLY~Will your parcel again aid us in travelling the Realms, Sandrah?.~DO~SetGlobal("RTParcel","LOCALS",1) ~GOTO RTParcel1
 IF~Global("RtFReasonSent","LOCALS",2)~THEN REPLY~ I have remembered who that trader Nerkio was.~ GOTO NerkiHi1
 IF~Global("SanRTFPlot1","GLOBAL",4) Global("RTFIren","GLOBAL",0)~THEN REPLY~How can we get to Irenicus? A journey to the Abyss once again?~ GOTO RTFIren1
 IF~Global("SanRTFColl","GLOBAL",1) Global("Sanfence","LOCALS",0)~THEN REPLY~Where should we start our search for the Collector now, what do you think? ~GOTO FencHint2
-IF~Global("RTFoundIce","GLOBAL",8)~THEN REPLY~Tell me about that Summer Camp and how we can go there, counselor.~GOTO SumCamp1
+IF~Global("RTFoundIce","GLOBAL",8)~THEN REPLY~Tell me about that Summer Camp and how we can go there, counsellor.~GOTO SumCamp1
 IF~GlobalGT("SanRTFPlot1","GLOBAL",8) Global("RTTethRoad","LOCALS",0)~THEN REPLY~Amkethran is quite a journey away without your parcel's aid. Can you suggest something?~DO~SetGlobal("RTTethRoad","LOCALS",1)~GOTO TethRoa
-IF~Global("SanRTFPlot1","GLOBAL",9) Global("RTFWhy1","GLOBAL",0)~THEN REPLY~So, my beloved counselor, who do you think our foe are really targetting - you or me?~ GOTO RTFTargt1
+IF~Global("SanRTFPlot1","GLOBAL",9) Global("RTFWhy1","GLOBAL",0)~THEN REPLY~So, my beloved counsellor, who do you think our foe are really targeting - you or me?~ GOTO RTFTargt1
 IF~GlobalGT("SanRTFPlot2","GLOBAL",4) Global("RTFWhy1","GLOBAL",1)~THEN REPLY~ Some time ago you mentioned Karsus, the mighty sorcerer who challenged the ancient Mystril.~GOTO Kars1
 IF~Global("SanRTFPlot2","GLOBAL",4) Global("RoadMorn","LOCALS",0)~THEN REPLY~Any idea how we can best travel to Mornbryn's Shield?~ GOTO MornTrav1
 IF~Global("SanRTFPlot1","GLOBAL",6)~THEN REPLY~What about the graveyards of Waterdeep?~GOTO WDGravey1
@@ -58,7 +58,7 @@ IF~Global("SanRTFPlot1","GLOBAL",8)Global("AskedcandV","LOCALS",0)~THEN REPLY~Wh
 IF~Global("RTBalow","GLOBAL",2) Global("BalowolQ","LOCALS",0)~THEN REPLY~Are you earnestly trying to deal with that Balrog in a civilized way?~GOTO Balod1
 IF~Global("SeenMysPid","LOCALS",1)~THEN REPLY~We wanted to talk about Candrella, I propose it's time for that now.~DO~SetGlobal("SeenMysPid","LOCALS",2)~ GOTO Candr2
 IF~Global("RTOdess","GLOBAL",1)GlobalGT("GuardOd","RTF070",1)GlobalLT("SanRTFPlot3","GLOBAL",4)~THEN REPLY~I am pretty unsure which role the Odesseiron family plays in this affair.~GOTO Odedisc1
-IF~Global("RT78BoHi","LOCALS",0) PartyHasItemIdentified("RT78Bok")~THEN REPLY~This book here speaks of *...place the artifact left of you and put your right hand on the scales...*. It must be the scales in that control room where we found the book. Which artifact does it talk of?~GOTO Scales2
+IF~Global("RT78BoHi","LOCALS",0) PartyHasItemIdentified("RT78Bok")~THEN REPLY~This book here speaks of *...place the artefact left of you and put your right hand on the scales...*. It must be the scales in that control room where we found the book. Which artefact does it talk of?~GOTO Scales2
 IF~GlobalGT("RTSamThrone","GLOBAL",3)Global("ThayLesson","LOCALS",0)~ THEN REPLY~A sly creature, this Samas Kul, but what did we really learn from him?~GOTO AfterSam1
 IF~GlobalGT("RTColan","GLOBAL",16) GlobalLT("SanRTFPlot3","GLOBAL",3) Global("Colanrole","LOCALS",0)~THEN REPLY~ What role does that Chief-Inquisitor really play here, any idea?~GOTO ColRol1
 IF~Global("SanRTFPlot4","GLOBAL",1) Global("LarlHint","LOCALS",0)~THEN REPLY~You surely have an idea where that Shadow King Larloch and the Warlock's Crypt can be found?~GOTO Larlhint1
@@ -90,10 +90,10 @@ IF~Dead("Viconia") !Dead("Yasraena")~THEN REPLY~ Do you know where any of our dr
 IF~!Dead("Viconia") Dead("Yasraena")~THEN REPLY~ Do you know where any of our drow friends are?~ GOTO Vicionly
 IF~ !Dead("Viconia") !Dead("Yasraena")~THEN REPLY~ Do you know where any of our drow friends are?~ GOTO Bothdrow  
 IF~!Dead("O#Xan")~THEN REPLY~Is our doomed elf from Evereska still around?~GOTO RTXan
-IF~!Dead("ACBre")GlobalGT("SanBreBa","GLOBAL",1)~THEN REPLY~What about our grumpy dwarfen smith, Breagar?~GOTO BreagCK
+IF~!Dead("ACBre")GlobalGT("SanBreBa","GLOBAL",1)~THEN REPLY~What about our grumpy dwarven smith, Breagar?~GOTO BreagCK
 IF~Global("SuSanKnowsFinch","GLOBAL",1) !Dead("Sufinch")~THEN REPLY~Where is our bookworm Finch?~GOTO FinchCK
 IF~!Dead("Haerdalis")~THEN REPLY~How about a bard to enrich our company?~ GOTO HaerThe
-IF~~THEN REPLY~What happened to our noble samaritan?~GOTO NalCoun
+IF~~THEN REPLY~What happened to our noble Samaritan?~GOTO NalCoun
 IF~!Dead("Jan")~THEN REPLY~What has happened to the turnip gnome inventor, do you know?~GOTO JanRT
 IF~GlobalLT("RTTalkedSaem","GLOBAL",9)~THEN REPLY~Where could our Avariel have gone to?~GOTO AerJon
 IF~GlobalGT("MWleaveShau","GLOBAL",1)~THEN REPLY ~Our blood thirsty pit fighter?~ GOTO Ariena1
@@ -159,14 +159,14 @@ IF~~THEN REPLY~ Anyone else you can propose?~GOTO RTFSearchfr2
 END
 
 IF~~THEN BEGIN Vicionly
-SAY~ The enigmatic Viconia has tried to live in a number of places and with everchanging males until she and her daughter have finally found a shelter with Qilandrha's community in Undermountain.~
+SAY~ The enigmatic Viconia has tried to live in a number of places and with ever-changing males until she and her daughter have finally found a shelter with Qilandrha's community in Undermountain.~
 IF~~ THEN REPLY ~Waterdeep and Undermountain are places we will visit anyway soon.~EXIT
 IF~~ THEN REPLY ~As you mention her, how about your sister herself?~GOTO QuiNo
 IF~~THEN REPLY~ Anyone else you can propose?~GOTO RTFSearchfr2
 END
 
 IF~~THEN BEGIN Bothdrow
-SAY~ The enigmatic Viconia has tried to live in a number of places and with everchanging males until she and her daughter have finally found a shelter with Qilandrha's community in Undermountain. Yasraena and her Divalir made a similar odyssee over the surface and now live there, too.~
+SAY~ The enigmatic Viconia has tried to live in a number of places and with ever-changing males until she and her daughter have finally found a shelter with Qilandrha's community in Undermountain. Yasraena and her Divalir made a similar odyssey over the surface and now live there, too.~
 IF~~ THEN REPLY ~Waterdeep and Undermountain are places we will visit anyway soon.~DO~RevealAreaOnMap("cvroa1")~EXIT
 IF~~ THEN REPLY ~As you mention her, how about your sister herself?~DO~RevealAreaOnMap("cvroa1")~GOTO QuiNo
 IF~~THEN REPLY~ Anyone else you can propose?~GOTO RTFSearchfr2
@@ -192,9 +192,9 @@ END
 
 IF~~THEN BEGIN WDGravey1
 SAY~A good question - there are three of them actually, two very busy ones currently in use. I think we, and of course Nerkio, might be more interested in the third one.~
-=~I am talking about the ancient graveyard, no longer used but the last rest for most of the Capitale's former leaders and heroes. Its catacombs were carved into Undermountain, which is also the reason why it was later abandoned when it was found that it started to connect to the haunted parts of the Undermountain labyrinth.~
+=~I am talking about the ancient graveyard, no longer used but the last rest for most of the Capital's former leaders and heroes. Its catacombs were carved into Undermountain, which is also the reason why it was later abandoned when it was found that it started to connect to the haunted parts of the Undermountain labyrinth.~
 IF~~THEN REPLY~I fully agree with you - it sounds like the place to inspect for what we search. Where is it exactly?~GOTO WDGravey2
-IF~~THEN REPLY~Sounds like an interesting place for sure, but the Collector needs fresh material for his pupose, not bodies fallen to dust since centuries.~GOTO WDGravey3
+IF~~THEN REPLY~Sounds like an interesting place for sure, but the Collector needs fresh material for his purpose, not bodies fallen to dust since centuries.~GOTO WDGravey3
 END
 
 IF~~THEN BEGIN WDGravey2
@@ -203,7 +203,7 @@ IF~~THEN DO~ AddJournalEntry(@2050,QUEST)~EXIT
 END
 
 IF~~THEN BEGIN WDGravey3
-SAY~There are two issues, <CHARNAME>. Even if he gets his artefacts elsewhere he needs to preserve and store them quickly. The old catacombs have a very special icy climate from the seawinds and a system of air funnels said to be constructed by Halaster himself. It preserves the bodies burried there and of course his new stuff as well.~
+SAY~There are two issues, <CHARNAME>. Even if he gets his artefacts elsewhere he needs to preserve and store them quickly. The old catacombs have a very special icy climate from the sea winds and a system of air funnels said to be constructed by Halaster himself. It preserves the bodies buried there and of course his new stuff as well.~
 =~Secondly it is close to his activities but still unvisited by the people due to its history and reputation.~
 IF~~THEN REPLY~I fully agree with you - it sounds like the place to inspect for what we search. Where is it exactly?~GOTO WDGravey2
 END
@@ -256,7 +256,7 @@ END
 IF~~THEN BEGIN Balod1
 SAY~I am impressed in a way. He fought against Cerameon and they both lost a hand or similar in that fight. For seven hundred years he was separated from his kin and any chance to perform any demonic action.~
 =~All of it has changed him. We need him to go on and he needs us. Other than his kin normally acts he seems to accept this fact and come to reasonable conclusions.~
-IF~~THEN REPLY~I'm still listening, counselor. Anything else.~DO~SetGlobal("BalowolQ","LOCALS",1)~GOTO Balod2
+IF~~THEN REPLY~I'm still listening, counsellor. Anything else.~DO~SetGlobal("BalowolQ","LOCALS",1)~GOTO Balod2
 END
 
 IF~~THEN BEGIN Balod2

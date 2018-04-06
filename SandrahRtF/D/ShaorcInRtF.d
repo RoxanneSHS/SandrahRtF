@@ -4,7 +4,7 @@ IF~GlobalGT("SanBeginRTF","GLOBAL",1) NumTimesTalkedTo(0) AreaCheck("CVRTF8")~TH
 ==CVSan25J~We have come to investigate just that. There are rumours but I stand to Shauhana unless I learn otherwise.~
 ==Shaorc1~Hornswamp road is troubled, messengers are missing to Waterdeep, dark clouds over the passes.~
 ==CVSan25J~We have come to talk about all with your queen. Where is she to be found?~
-==Shaorc1~Is in big warroom, talk with Prince Giran to see her.~EXIT
+==Shaorc1~Is in big war room, talk with Prince Giran to see her.~EXIT
 
 CHAIN
 IF~GlobalGT("SanBeginRTF","GLOBAL",1) NumTimesTalkedToGT(0) AreaCheck("CVRTF8")~THEN Shaorc1 Hint
@@ -29,8 +29,8 @@ DO~SetGlobal("SanRTFPlot1","GLOBAL",1) SetGlobal("RTFShauInfo","GLOBAL",1)~
 ==CVShauq~ I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
 ==CVSan25J~We are ready to listen and decide on our course afterwards, Shauhana.~
 ==CVShauq~It has been peace between Clan Orcs and the South for ten summers, my friends. The Neutral Zone has been respected by both sides and eventual trespassers have been punished adequately. We established trade with the Sword Coast with benefits for both sides.~
-=~Five summers ago orc, dwarf and Waterdeep men built together the Hornswamp bridge to make trade easier and safer. It was a big celebration - Minsc was drunk on meade for five days, oh my.~
-=~But since two moons dark clouds have appeared. Trade stopped. Rumours were heard that troups were sighted on the Hornswamp fields. I send messengers to Waterdeep but they are overdue. Minsc wants to move his berserkers south to investigate but I reject - it would be a transgression of the Neutral Zone and may really cause war with the Sword Coast.~
+=~Five summers ago orc, dwarf and Waterdeep men built together the Hornswamp bridge to make trade easier and safer. It was a big celebration - Minsc was drunk on Meade for five days, oh my.~
+=~But since two moons dark clouds have appeared. Trade stopped. Rumours were heard that troupes were sighted on the Hornswamp fields. I send messengers to Waterdeep but they are overdue. Minsc wants to move his berserkers south to investigate but I reject - it would be a transgression of the Neutral Zone and may really cause war with the Sword Coast.~
 ==CVSan25J~We are neutral, my friend. It is obviously the best if we do the investigation before anyone would do a false move with unwanted effects.~
 ==CVShauq~Exactly - if you could follow the trade route and find the truth, it would be helpful. Maybe you can even make the full journey to Waterdeep and give Shar-Teel the report and assure her that we intend no violence.~
 ==CVSan25J IF ~Global("RTFSharInfo","GLOBAL",0)~THEN~Shar-Teel is in charge in Waterdeep?~
@@ -47,7 +47,7 @@ END
 CHAIN
 IF~~THEN CVShauq InitRtF2
 ~The trade route goes south from old Bear Clan Village where we once defeated our foe together. It crosses the newly built bridge and the high fields of the Hornswamp and goes down towards Waterdeep's ancient Sune temple.~
-==CVSan25J~I know that old place, Shauhana. From there we can travel onwards to the Capitale from the north east.~
+==CVSan25J~I know that old place, Shauhana. From there we can travel onwards to the Capital from the north east.~
 ==CVShauq~I would be more than grateful if you could do that my friends.~
 =~There is another, a more personal wish from a caring mother, <CHARNAME>, if you care to listen.~
 END
@@ -65,7 +65,7 @@ CHAIN
 IF~~THEN CVShauq InitRtF3
 ~Giran, our son, has trained and learned well with his father. He is no longer a child and has proven his courage and skills on a number of occasions.~
 =~I have agreed with Minsc that it is time he sees more of the Realms and learns outside of our society as well. He may one day become leader here and he needs wisdom and experience for that.~
-==CVSan25J~A djahemma, like it was custom in his father's land?~
+==CVSan25J~A dajemma, like it was custom in his father's land?~
 DO~SetGlobal("SanRTFGiranOK","GLOBAL",2)~
 ==CVShauq~Call it that, yes. Minsc has told us much about that time in his life and filled the boy's head with it. And I agree - it is a good chance to learn and grow...maybe find even a companion of his kin, he is a bit tired of the orc girls of his age it seems...~
 ==CVSan25J~In the company of trusted friends you may not fear for him, Shauhana.~
@@ -82,8 +82,8 @@ DO~SetGlobal("SanRTFPlot1","GLOBAL",2)SetGlobal("RTFShauInfo","GLOBAL",4)~
 ==CVShauq~ I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
 ==CVSan25J~We are ready to listen and decide on our course afterwards, Shauhana.~
 ==CVShauq~It has been peace between Clan Orcs and the South for ten summers, my friends. The Neutral Zone has been respected by both sides and eventual trespassers have been punished adequately. We established trade with the Sword Coast with benefits for both sides.~
-=~Five summers ago orc, dwarf and Waterdeep men built together the Hornswamp bridge to make trade easier and safer. It was a big celebration - Minsc was drunk on meade for five days, oh my.~
-=~But since two moons dark clouds have appeared. Trade stopped. Rumours were heard that troups were sighted on the Hornswamp fields. I send messengers to Waterdeep but they are overdue. Minsc wants to move his berserkers south to investigate but I reject - it would be a transgression of the Neutral Zone and may really cause war with the Sword Coast.~
+=~Five summers ago orc, dwarf and Waterdeep men built together the Hornswamp bridge to make trade easier and safer. It was a big celebration - Minsc was drunk on Meade for five days, oh my.~
+=~But since two moons dark clouds have appeared. Trade stopped. Rumours were heard that troupes were sighted on the Hornswamp fields. I send messengers to Waterdeep but they are overdue. Minsc wants to move his berserkers south to investigate but I reject - it would be a transgression of the Neutral Zone and may really cause war with the Sword Coast.~
 ==CVSan25J~We have received a similar story from Shar-Teel already. We came through the passage as we are neutral and investigated the case.~
 =~*Sandrah and yourself provide the orc queen with a detailed report about your findings.*~
 ==CVShauq~Very good news for peace even if the intrigue itself is disturbing.~
