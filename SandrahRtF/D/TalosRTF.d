@@ -2,7 +2,7 @@ CHAIN
 IF~Global("RTFTalAmb","BG3200",1)~THEN CVTalop1 Thalameet
 ~Like so many times before I find you in a place where you should not be, my dear.~
 DO~SetGlobal("RTFTalAmb","BG3200",2)~
-==CVSAn25J~I am reluctant to imagine our meeting here is coincidence. I tend to think it is more like one of the players here prematurely reveils his identity.~
+==CVSAn25J~I am reluctant to imagine our meeting here is coincidence. I tend to think it is more like one of the players here prematurely reveals his identity.~
 ==CVTalop1~ Little one, you always have been and are once again the epitome of bad timing.~
 ==CVSAn25J~You mean that <CHARNAME> and me have come a bit too early for your taste?~
 =~Whatever you and your meddlesome Storm Lord had in mind was not yet ready up in the Stormhorns when we intervened.~

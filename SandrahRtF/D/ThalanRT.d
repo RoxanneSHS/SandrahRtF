@@ -5,8 +5,8 @@ DO~SetGlobal("RtFThal","LOCALS",1) ~
 ==CVSan25J ~Nothing to fear, old friend, no harm has been done. You will not need this protection any longer.~
 ==Thalan~Mystra!~
 ==CVSan25J ~Sandrah, old friend, it is Sandrah as long as I dwell on the Prime.~
-==Thalan~My goddess, you have overcome those Talos troups then?~
-==CVSan25J~They are no threat for you anymore. They were not after you in the first place, rather they tried to prevent our current meeting.~
+==Thalan~My goddess, you have overcome those Talos troupes then?~
+==CVSan25J~They are no threat for you any more. They were not after you in the first place, rather they tried to prevent our current meeting.~
 ==Thalan~Why is that, my g...my friend Sandrah?~
 ==CVSan25J~Me and <CHARNAME> once again walk the Prime as our enemies have chosen our former home as the battle ground against us.~
 ==Thalan IF ~Global("SanRompath","GLOBAL",1)~THEN~Talos dares to stand up against you and the God of Love and Hope?~
@@ -20,7 +20,7 @@ DO~SetGlobal("RtFThal","LOCALS",1) ~
 ==CVSan25J IF~InParty("RTMeli")~THEN~ (Laughs) Should I let him indent my reputation while trying his spells unobserved?~
 ==CVSan25J~ These are the items we have found, Thalantyr. I will not tell you my observations now, so you may inspect them unprejudiced.~
 ==Thalan~ Mhm, let me see...~DO~TakePartyItem("RTFlui") TakePartyItem("RTDScar") TakePartyItem("Misc65")~
-=~Dear, I hate to say it...(Laughs) I need the help of two gods for some little errand...in my hasted flight from the Talos troup I have lost the Lens of Spectro Analysis required for the task at hand.~
+=~Dear, I hate to say it...(Laughs) I need the help of two gods for some little errand...in my hasted flight from the Talos troupe I have lost the Lens of Spectro Analysis required for the task at hand.~
 END
 ++~Oh, no, something like that was to be expected!~ + RTF1b
 ++~Great, we've not done this kind of quest for some time now. The young ones need to learn this part of the adventuring live as well.~ + RTF1b
@@ -28,13 +28,13 @@ END
 CHAIN
 IF~~THEN Thalan RTF1b
 ~I'm sorry but there is no way other. I need the Lens for my analysis.~
-=~Talos' men found me in the area of the old Xwart village south of here. I escaped in a hurried flight passing by the Fisherman's Lake and through the Red Canyons to reach the Hedge and call for Mystra's seals. Somewhere on that trail I lost my bag with the lens and some elixirs.~
+=~Talos' men found me in the area of the old Xvart village south of here. I escaped in a hurried flight passing by the Fisherman's Lake and through the Red Canyons to reach the Hedge and call for Mystra's seals. Somewhere on that trail I lost my bag with the lens and some elixirs.~
 END
 ++~Sigh, let's begin this search.~EXIT
 
 CHAIN
 IF WEIGHT #-3~ Global("RtFThal","LOCALS",1) !PartyHasItem("RTTalens")~ THEN Thalan RTF1n
-~Sorry, but I can do nothing for you without the Lens of Spectro Analysis. It must be somewhere between here and the Xwart village.~EXIT
+~Sorry, but I can do nothing for you without the Lens of Spectro Analysis. It must be somewhere between here and the Xvart village.~EXIT
 
 CHAIN
 IF WEIGHT #-3~ Global("RtFThal","LOCALS",1) PartyHasItem("RTTalens")~ THEN Thalan RTF1y
@@ -59,7 +59,7 @@ DO~SetGlobal("RtFThal","LOCALS",3) SetGlobal("SanRTFPlot1","GLOBAL",4)~
 ==Thalan~It matches to those tanks you found up in that laboratory...~
 =~Now that substance. I have never seen anything alike before and I still have not found all of its ingrediences and abilities. Still, I can say, it is what more or less keeps those creatures alive.~
 ==CVSan25J~Probably that is why we found no blood on the battlefield.~
-==Thalan~I think so. The substance nutures the bodies - it is also a very strong drug.~
+==Thalan~I think so. The substance nurtures the bodies - it is also a very strong drug.~
 ==CVSan25J~It controls them?~
 ==Thalan~You may say so. They are on the one hand addicted to it, they need it to *live*. In addition, it controls their thoughts and perceptions completely.~
 END
@@ -97,6 +97,6 @@ DO~SetGlobal("RTMeliQuest","GLOBAL",2)~
 ==CVSan25J~You are a highly respected servant of Mystra, you always did what needed to be done.~
 ==Thalan~Thank you...but now to my boy - I dearly hope I prepared you well enough for what lies ahead.~
 ==RTMeli~I never thought you would care for me so much...outside of our professional relationship...~
-==Thalan~Be aware that Thay rejects Mystra, our source and our strength. Still they are reported to possess artefacts as old as our art, scrolls of enourmous power and wisdom. Shouldst you find part of it, do not forget to share it with your old teacher on your return. And your return I will await, hoping and trusting it will be save.~
+==Thalan~Be aware that Thay rejects Mystra, our source and our strength. Still they are reported to possess artefacts as old as our art, scrolls of enormous power and wisdom. Shouldst you find part of it, do not forget to share it with your old teacher on your return. And your return I will await, hoping and trusting it will be save.~
 ==RTMeli~Whether I find these things or not, master, I will return and come to see you so we may share the tales of my encounters in Thay.~
 ==Thalan~Farewell, Melicamp, may the goddess bless you.~DO~CreateVisualEffectObject("SPUNHOLY",Myself) ActionOverride("RTMeli",AddSpecialAbility("CVDra19"))Wait(2)ActionOverride("Thalantyr",EscapeArea()) ~ EXIT

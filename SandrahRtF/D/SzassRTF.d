@@ -19,6 +19,6 @@ IF~~THEN REPLY~How can he NOT know you are Mystra herself - was he the REAL Szas
 
 CHAIN
 IF~~ THEN CVSan25J BezSurpr3
-~Obviously no one has considered it necessary to inform the Necromancer of the changes that have occured in the Pantheon recently. Only some of the gods and half-gods we anticipate to be in league with him know it anyway. Most likely everyone has assumed he would know it already and so nobody found it necessary to mention it.~
+~Obviously no one has considered it necessary to inform the Necromancer of the changes that have occurred in the Pantheon recently. Only some of the gods and half-gods we anticipate to be in league with him know it anyway. Most likely everyone has assumed he would know it already and so nobody found it necessary to mention it.~
 ==CVSan25J IF~Global("SanRomPath","GLOBAL",1)~THEN~And - as far as I know - the new God of Love and Hope is among the few gods not worshipped in Thay due to his relation to the hated Mystra.~
 ==CVSan25J IF~Global("SanRomPath","GLOBAL",2)~THEN~And - as far as I know - the new Goddess of Love and Hope is among the few gods not worshipped in Thay due to her relation to the hated Mystra.~ EXIT

@@ -94,7 +94,7 @@ END
 CHAIN
 IF~~THEN RTMoninj Ins3
 ~I discovered my natural understanding of the magical very early and when the monks of Mystra detected me and invited me for the education at the temple I was happy to follow and my parents were happy to let me go as we all thought highly of the Goddess and what she and <CHARNAME> had achieved recently.~
-=~I found many with similar talents than mine when I came to the temple and we all made much progress in learning to handle our gifts. What was a bit disappointing was that all the spells we learned were somehow related with agression and destruction.~
+=~I found many with similar talents than mine when I came to the temple and we all made much progress in learning to handle our gifts. What was a bit disappointing was that all the spells we learned were somehow related with aggression and destruction.~
 ==CVSan25J~Sadly enough such skills are still necessary throughout Faerun these days.~
 ==RTMoninj~Yes, to defend yourself against enemies of the people and the goddess - you have healed me within a moment from my injuries - none at the temple teaches such skills. They talk of despair and darkness in such a case as if it was something to embrace voluntarily.~
 =~As a child I thought of the Weave as something shimmering, light and positive, not as a Dark Moon that grows strength out of nothingness.~

@@ -23,10 +23,10 @@ DO~SetGlobal("RTVolo","LOCALS",1) ~
 ==CVSan25J~Any problem with that, old friend?~
 ==Volo~Psst...come aside please, there is indeed a little problem...~
 =~Here is better, please keep your voices down a bit...you must understand - my reputation.~
-==CVSan25J~You do not want to be seen with us anymore, Volo?~
-==Volo~Oh, mylady Sandrah, please don't misunderstand me...fact is, I would not have wanted anyone to see you anymore - I mean...you were not expected to be seen by anyone after all that had happened and your absence from sight for so long...~
+==CVSan25J~You do not want to be seen with us any more, Volo?~
+==Volo~Oh, my lady Sandrah, please don't misunderstand me...fact is, I would not have wanted anyone to see you any more - I mean...you were not expected to be seen by anyone after all that had happened and your absence from sight for so long...~
 ==CVSan25J~You had to finish the story of our deeds in some way, is it that?~
-==Volo~I knew you would understand, mylady. You and <CHARNAME> were last seen when you went to fight the deadly murder god. Bhaal was gloriously defeated by the fearless heroes. The realms were saved. Oh, what a battle!! The planes were shaking as the mortals slew monster after monster and finally faced the God of Murder himself,~
+==Volo~I knew you would understand, my lady. You and <CHARNAME> were last seen when you went to fight the deadly murder god. Bhaal was gloriously defeated by the fearless heroes. The realms were saved. Oh, what a battle!! The planes were shaking as the mortals slew monster after monster and finally faced the God of Murder himself,~
 =~Three full days the battle was raging as darkness hung over Faerun. At the morning of the fourth day the sun rose again. Bhaal was defeated as the heroes had flung their own lives at him to push him finally into the abyss.~
 ==CVSan25J~So - we are glorious heroes - glorious dead heroes, that is.~
 ==Volo~You understand?? There had to be an end to the epos - public demand. What else could have happened, as you never reappeared and Bhaal was dead.~ DO~GiveItemCreate("RTVolo","CVSandr",1,0,0) EscapeArea()~
@@ -34,4 +34,4 @@ DO~SetGlobal("RTVolo","LOCALS",1) ~
 END
 ++~Volo, you have never seen us today, is that clear? We are not here at all, you just had a glass too many, my friend.~EXIT
 ++~Our incognito is save then. Volo, you have our permission to spread the story as you like, as long as we remain dead.~EXIT
-++~You are a liar, Volo...but a suitable one. Nevermind.~EXIT
+++~You are a liar, Volo...but a suitable one. Never mind.~EXIT

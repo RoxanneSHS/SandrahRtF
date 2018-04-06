@@ -4,8 +4,8 @@ IF WEIGHT #-2~ GlobalGT("SanBeginRTF","GLOBAL",1) Global("GreetRTF","LOCALS",0)~
 DO~ SetGlobal("GreetRTF","LOCALS",1)~
 =~Psst, I know it is you in person and the God of Love and Hope - I assume you want your personal presence here not to be publicly known.~
 ==CVSAn25J~Right, my good Rhanthona, Sandrah of Waterdeep speaks to you.~
-==SaMystP1 ~(Loud) Greetings, Mylady Sandrah, Grandchild of Midnight, Guardian of the Cloak. It is a pleasure to greet you at your temple. ~
-=~Enjoy your stay, Mylady Sandrah, Grandchild of Midnight, Guardian of the Cloak. Everything is to your service. You may leave a small donation for the Temple if you require any service.~
+==SaMystP1 ~(Loud) Greetings, My lady Sandrah, Grandchild of Midnight, Guardian of the Cloak. It is a pleasure to greet you at your temple. ~
+=~Enjoy your stay, My lady Sandrah, Grandchild of Midnight, Guardian of the Cloak. Everything is to your service. You may leave a small donation for the Temple if you require any service.~
 END
 ++~Chosen Priestess Rhathona, we greet you but we have no need for the Temple's services today.~EXIT
 ++~Thank you for the warm welcome, Chosen Priestess Rhathona, what does your house offer to us?~DO~StartStore("CVMystem",LastTalkedToBy(Myself))~EXIT
