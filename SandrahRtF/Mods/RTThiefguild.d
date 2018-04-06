@@ -8,7 +8,7 @@ END
 
 CHAIN
 IF WEIGHT #-4~ GlobalGT("SanBeginRTF","GLOBAL",1)NumTimesTalkedTo(0)~THEN Arnman03 Newboss3
-~Heh, welcome to the guild, my name's Cuchul, top burgler of Amn. The very best this side of Waterdeep, hehe.~
+~Heh, welcome to the guild, my name's Cuchul, top burglar of Amn. The very best this side of Waterdeep, hehe.~
 END
 ++~I'm looking for the training area...~+ 1
 

@@ -12,7 +12,7 @@ APPEND K#Sara25
 IF WEIGHT #-4~GlobalGT("SanBeginRTF","GLOBAL",1) Global("K#SarahHere","BG0401",1)~THEN BEGIN RTFStart
 SAY~What in the...? <CHARNAME> ? What are you doing here?~
 IF~~THEN REPLY~Good to see you too, Sarah. A lot is happening right now, and I could really use your help.~ DO~SetGlobal("K#SarahHere","BG0401",2)~GOTO RTFStart2
-IF~~THEN REPLY~I heard you're here from Wenric ouside. Just took the chance to say hello. - So, hello...see you next time.~ DO~SetGlobal("K#SarahHere","BG0401",2)~ EXIT
+IF~~THEN REPLY~I heard you're here from Wenric outside. Just took the chance to say hello. - So, hello...see you next time.~ DO~SetGlobal("K#SarahHere","BG0401",2)~ EXIT
 END
 
 IF~~THEN BEGIN RTFStart2
@@ -31,7 +31,7 @@ APPEND K#Sarah
 IF WEIGHT #-4~GlobalGT("SanBeginRTF","GLOBAL",1) Global("K#SarahHere","BG0401",1)~THEN BEGIN RTFStartn
 SAY~What in the...? <CHARNAME> ? What are you doing here?~
 IF~~THEN REPLY~Good to see you too, Sarah. A lot is happening right now, and I could really use your help.~ DO~SetGlobal("K#SarahHere","BG0401",2)~GOTO RTFStartn2
-IF~~THEN REPLY~I heard you're here from Wenric ouside. Just took the chance to say hello. - So, hello...see you next time.~ DO~SetGlobal("K#SarahHere","BG0401",2)~ EXIT
+IF~~THEN REPLY~I heard you're here from Wenric outside. Just took the chance to say hello. - So, hello...see you next time.~ DO~SetGlobal("K#SarahHere","BG0401",2)~ EXIT
 END
 
 IF~~THEN BEGIN RTFStartn2

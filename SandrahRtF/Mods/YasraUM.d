@@ -1,7 +1,7 @@
 CHAIN
 IF WEIGHT #-4~GlobalGT("SanBeginRTF","GLOBAL",1) AreaCheck("CVUmo5") !InParty(Myself) NumTimesTalkedTo(0)~  THEN Yasra25P MeetUM1
 ~<CHARNAME>! Who would have guessed we will see each other again. I have finally found a home here with Divalir.~
-==Divalir1~Sandrah's sister worships a goddess we can follow and provides shelter for elves and drows alike. It is the place were hope is reborn every day.~
+==Divalir1~Sandrah's sister worships a goddess we can follow and provides shelter for elves and drow alike. It is the place were hope is reborn every day.~
 ==CVSan25J~Many of our former companions have found a new home with Qilandrha. I dearly love my sister for what she achieves.~
 ==Divalir1~Are you coming again the request my beloved wife's services, <CHARNAME>?~
 END
