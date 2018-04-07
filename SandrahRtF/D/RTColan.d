@@ -14,7 +14,7 @@ END
 
 IF~~THEN BEGIN Intro2
 SAY~I am Inquisitor Colano, Chief-Inquisitor Colano, to be exact. My task is to inquire for the unusual and suspicious in this town.~
-IF~~THEN REPLY~This is a trade center, isn't it? Visitors from abroad should neither be unusual nor suspicious.~DO~SetGlobal("RTColan","GLOBAL",3)~ GOTO Intro3
+IF~~THEN REPLY~This is a trade centre, isn't it? Visitors from abroad should neither be unusual nor suspicious.~DO~SetGlobal("RTColan","GLOBAL",3)~ GOTO Intro3
 END
 
 IF~~THEN BEGIN Intro3
@@ -70,7 +70,7 @@ IF~Global("RTColan","GLOBAL",14)~THEN RTColan RTTrial1
 ==CVSan25J~Even in Thay nobody hangs for being cautious of not spreading the own name in a foreign town unnecessarily.~
 ==RTColan~Right, woman, if that were the only point.~
 ==RTJudge~Continue - if that bitch opens her mouth again we'll have her gagged for the rest of the trial. Order in the Court!~
-==RTColan~Your honor, I'd rather avoid that. Those primitive outburts often reveal facts they may try to hide from us.~
+==RTColan~Your honor, I'd rather avoid that. Those primitive outbursts often reveal facts they may try to hide from us.~
 ==RTJudge~Your methods are legendary, chief inquisitor, you may have it your way.~
 ==RTColan~The killing of several merchants, is next on the list...~
 ==CVGir25J IF~InParty("CVGiran")~THEN~You know well those were doppelgangers.~
@@ -106,12 +106,12 @@ END
 
 CHAIN
 IF~~THEN RTColan RTTrial4
-~Ha, HOW DO YOU KNOW IT BY NOW. Yes, the hooker, the black one. Do we need more evidence, your honor?~
+~Ha, HOW DO YOU KNOW IT BY NOW. Yes, the hooker, the black one. Do we need more evidence, your honour?~
 ==CVSan25J~What evidence is the name of a whore, be it Candrella or not?~
-==RTJudge~You fool no one anymore, woman!! You know Odesseiron, you know his liasion, you come here by false names. You come to support the Red Hoods. You are traitors and imposters - and you are sentenced to death.~
+==RTJudge~You fool no one any more, woman!! You know Odesseiron, you know his liaison, you come here by false names. You come to support the Red Hoods. You are traitors and imposters - and you are sentenced to death.~
 =~*The heavy quilt writes the final verdict on the bottom of the parchment.*~
-==RTColan~I have more facts on the case, your honor...~
-==RTJudge~You are a brilliant man, Colano, but I think we have already more than we need. You may now follow the next urgent case you undoubtly have.~
+==RTColan~I have more facts on the case, your honour...~
+==RTJudge~You are a brilliant man, Colano, but I think we have already more than we need. You may now follow the next urgent case you undoubtedly have.~
 ==RTColan~But...~
 ==RTJudge~The case is closed. These are to be hanged in the morning from the walls of the Citadel.~
 =~What is...?~DO~SetGlobal("NiteMove","RTF163",1)~EXIT
@@ -120,7 +120,7 @@ CHAIN
 IF~Global("RTColan","GLOBAL",15)~ THEN RTKniJu Intervene
 ~*The knight places a sealed scroll on the judges table.*~
 DO~ SetGlobal("RTColan","GLOBAL",16)~
-==RTJudge~Why was I not informed that the zulkir had an interest...~
+==RTJudge~Why was I not informed that the Zulkir had an interest...~
 ==RTKniJu~Oh, there is no interest to influence the jurisdiction, your honor. My master just wants a few words with one of that party.~
 ==RTJudge~Well, he'd better be quick as they just have a few hours left to live.~
 ==RTKniJu~He would be very unhappy if the one known as Sandrah of Waterdeep would escape him so easily by letting herself be hanged.~
@@ -138,22 +138,22 @@ DO~ SetGlobal("RTColan","GLOBAL",18) EscapeArea()~ EXIT
 
 CHAIN
 IF~Global("RTCityHost","GLOBAL",2)~THEN RTKniJu Alert
-~The oulanders have escaped the prison!! Alert!!~
+~The outlanders have escaped the prison!! Alert!!~
 DO~SetGlobal("RTCityHost","GLOBAL",3) Enemy()~ EXIT
 
 CHAIN
 IF~Global("RTCityHost","GLOBAL",2)~THEN RTTHKn Alert
-~The oulanders have escaped the prison!! Alert!!~
+~The outlanders have escaped the prison!! Alert!!~
 DO~SetGlobal("RTCityHost","GLOBAL",3) Enemy()~ EXIT
 
 CHAIN
 IF~Global("RTCityHost","GLOBAL",2)~THEN RTKniNeu Alert
-~The oulanders have escaped the prison!! Alert!!~
+~The outlanders have escaped the prison!! Alert!!~
 DO~SetGlobal("RTCityHost","GLOBAL",3) Enemy()~ EXIT
 
 CHAIN
 IF~!Global("RTCityHost","GLOBAL",2)~THEN RTKniNeu NoAlert
-~I have no talk with oulanders. Move on!!~ EXIT
+~I have no talk with outlanders. Move on!!~ EXIT
 
 CHAIN
 IF~Global("NargaR","RTF063",1)~THEN CVNarga Free63
@@ -164,7 +164,7 @@ DO~SetGlobal("NargaR","RTF063",2)~
 ==CVSan25J~Have you a decent proposal to make or do you just want to give me a final shower?~
 ==CVNarga~I love your pride, sssure I do. It makesss you even more valuable when you kneel by my ssside, happy to pleassure me in every way.~
 =~Sssthe deal isss eassy. You beg me to become my love ssslave after all and I will accept your friendsss asss slaves to my household. They can do odd tasksss according to ssseir limited abilities. They will be alive.~
-==CVSan25J~It is not understandable for me what makes Szass Tam ressurect such a complete and incompetent loser like you time and time again. Maybe you should consider it as a special kind of cruelty from his side.~
+==CVSan25J~It is not understandable for me what makes Szass Tam resurrect such a complete and incompetent loser like you time and time again. Maybe you should consider it as a special kind of cruelty from his side.~
 ==CVNarga~Your anssswer is of no importansss, my lovely. We will all depart right now.~
 ==CVSan25J~Oh, yes, we will. You will depart to hell and we will depart to freedom.~
 DO~ActionOverride("CVSandr",Attack("CVNarga"))~EXIT
@@ -184,7 +184,7 @@ DO~SetGlobal("RTColan","GLOBAL",4)~
 ==RTCowl2~*Raises a hand*~
 ==RTAuct~Seven thousand!~
 ==CVSan25J~*Raises a hand*~
-==RTAuct~Eight thousand for a lady with an exquisit taste.~
+==RTAuct~Eight thousand for a lady with an exquisite taste.~
 ==RTBidd1~*Raises a hand*~
 ==Cultsa7~Oh no!!~
 ==RTAuct~Nine thousand, thank you, Master Calhouh.~
@@ -206,14 +206,14 @@ IF~Global("RTColan","GLOBAL",5) ~THEN RTSlav1 Sell2
 ~You own us now, mistress, and even as we are slaves now we may still call ourselves lucky today.~
 DO~SetGlobal("RTColan","GLOBAL",6)RealSetGlobalTimer("Colano2","RTF060",50)~
 ==Cultsa7~That red devil, what would he have done with me?~
-==CVSan25J~No need to worry about that anymore.~
+==CVSan25J~No need to worry about that any more.~
 ==RTSlav1~*Tears well up in the father's eyes.*~
 ==CVSan25J~Do you have any save place to go to now?~
 ==RTSlav1~What do you mean, mistress, we go wherever you order us to go?~
 ==CVSan25J~I keep no slaves but I assume the responsibility I have for you now.~
 ==RTSlav1~I am Stanton, my wife is Harretta and my daughter is Renata. We received the death sentence because I opposed the mighty red zulkir - we are worse than criminals, outcasts...~
 ==CVSan25J~If you oppose Szass Tam then the Red Hoods should be an option.~
-==RTSlav1~Psst...I know not how you got that information, mylady, but...yes, I trust you.~
+==RTSlav1~Psst...I know not how you got that information, my lady, but...yes, I trust you.~
 ==Cultsa7~We can go to our friends, lady, is that true?~ DO~EscapeArea()~
 ==CVSan25J~Yes, it is.~
 =~I do not want to pressure you but if you know how to contact them it is something I try myself as well.~
@@ -230,7 +230,7 @@ DO~SetGlobal("RTColan","GLOBAL",8) SetGlobal("SanRTFPlot3","GLOBAL",2)~
 ==CVSan25J~It makes it quite easy for you to keep on our track, Chief-Inquisitor.~
 ==RTColan~*Consults his notes again* Ah, right - it should be you, lady, I should address, you made that unfortunate purchase.~
 ==CVSan25J~Unfortunate? Neither for me nor for that family, maybe for some red robed maroon - are you in his service, Colano?~
-==RTColan~Mylady, please, I work for the law and justice in Thay, for nothing and no one else. It is the law that makes me act once again.~
+==RTColan~My lady, please, I work for the law and justice in Thay, for nothing and no one else. It is the law that makes me act once again.~
 =~Outlanders are not allowed to keep slaves in Thay.~
 ==CVSan25J~We have no problem in this case as I do not keep them.~
 ==RTColan~*Scribbles down Sandrah's statement on the backside of one of his sheets.*~
@@ -260,21 +260,21 @@ DO~SetGlobal("RTColan","GLOBAL",10)~
 ==RTColan~(You could swear you have seen a smile appear on Colano's face for an instant.) Oh, with the trail you leave behind you, it's probably impossible to keep an overview yourself...~
 =~Ehem, you destroyed some expensive Lizard Guardians recently, didn't you?~
 ==CVSan25J~Somebody must have left them unattended, Colano. We met them by coincidence and they attacked us. We had no chance but to defend ourselves.~
-==RTColan~Their owner, the honorable Samas Kul, has a different oppinion on that.~
-==CVSan25J~I see, the Master of the Guild of Foreign Trade himself. (She penses for a second.)~
+==RTColan~Their owner, the honourable Samas Kul, has a different opinion on that.~
+==CVSan25J~I see, the Master of the Guild of Foreign Trade himself. (She ponders for a second.)~
 =~Say, good Chief-Inquisitor, if we are accused of *destruction of private property* the best way to settle the cause would probably be to pay for the damage to the owner?~
 ==RTColan~(The notes he consults do not seem to contain any answer for the Inquisitor.)~
-=~Mylady, ehem, the Master Samas Kul is a very busy and...eh, dangerous man...but...I see that will not hinder you. You may also be in a position to compensate for his not-so-small demands, mylady.~
+=~Mylady, ehem, the Master Samas Kul is a very busy and...eh, dangerous man...but...I see that will not hinder you. You may also be in a position to compensate for his not-so-small demands, my lady.~
 ==CVSan25J~Then we will visit him soon and clarify the whole issue. Will that be in your interest as well?~
-==RTColan~You seem to be determined, mylady - I somehow have the feeling you are even keen to meet that man.~
-=~In any case, you will need a recommendation to allow entry into the Guild of Foreign Trade. As I cannot hinder you, I will give you this letter to open the doors for you. (Whispers) Please be careful, mylady.~ DO~ GiveItemCreate("RTkeylig",Player1,1,0,0) EscapeArea()~
+==RTColan~You seem to be determined, my lady - I somehow have the feeling you are even keen to meet that man.~
+=~In any case, you will need a recommendation to allow entry into the Guild of Foreign Trade. As I cannot hinder you, I will give you this letter to open the doors for you. (Whispers) Please be careful, my lady.~ DO~ GiveItemCreate("RTkeylig",Player1,1,0,0) EscapeArea()~
 ==CVSan25J~Thank you, Colano. Do not worry for us.~EXIT
 
 CHAIN
 IF~Global("RTColan","GLOBAL",11)~ THEN RTColan Arrests
 ~(Instead of his usual pile of scribbled notes the Chief-Inquisitor has a sealed document in his hand this time.)~
 ==CVSan25J~Another misdeed, Chief-Inquisitor?~
-==RTColan~Things do not look so rosy for you anymore, mylady.~
+==RTColan~Things do not look so rosy for you any more, mylady.~
 ==RTColan IF~Global("RTNameVel","GLOBAL",1)~THEN~Veldrin, you must come with me, the Court is waiting.~
 ==RTColan IF~Global("RTNamePri","GLOBAL",1)~THEN~Prism, you must come with me, the Court is waiting.~
 ==RTColan IF~Global("RTNameAbe","GLOBAL",1)~THEN~Abela, you must come with me, the Court is waiting.~
@@ -287,10 +287,10 @@ END
 
 CHAIN
 IF~Global("RTColan","GLOBAL",12)~ THEN RTColan ArrestJ
-~Your honor?~
+~Your honour?~
 DO~SetGlobal("RTColan","GLOBAL",13)~
 ==RTJudge~Colano, whom do you bring next?~
-==RTColan~Here are the papers, your honor.~
+==RTColan~Here are the papers, your honour.~
 ==RTJudge~(Glances at the pile of papers for a second)~
 ==RTRedwi1~The Chief-Inquisitor has forgotten to add the illegal slave issue to his investigation.~
 ==RTColan~They do not own slaves...~
@@ -308,7 +308,7 @@ CHAIN
 IF~~THEN RTJudge NoBail
 ~You have someone to stand bail for you?~
 ==CVSan25J~We have enough gold and jewels ourselves for that.~
-==RTJudge~Not permissable.~
+==RTJudge~Not permissible.~
 =~(Writes something on the last page of the parchment and seals it.)~
 ==RTRedwi1~They also have...~
 ==RTJudge~SILENCE!!~
@@ -330,14 +330,14 @@ DO~ReputationInc(1)~
 =~I may make another big mistake but I trust you. What is your name?~
 ==CVSan25J~Sandrah of Waterdeep.~
 ==RTSlav1~You need to enter the Odesseiron Mausoleum...~
-==CVSan25J~We have already received a wardstone for it but it seems a second key is also required.~
+==CVSan25J~We have already received a ward stone for it but it seems a second key is also required.~
 ==RTSlav1~(Sigh) It is currently in our enemy's hands, most likely kept in the treasury chamber of the court building. Autharch Ithrash has confiscated it but to our advantage he does not yet know what he has in his hands.~
 =~We will leave town now and hide near the Odesseiron estate. Our friends will find us. Good luck, my lady.~ DO~EscapeArea()~
 ==CVSan25J~Good luck for you, we will see each other in safety, hopefully.~ DO~AddJournalEntry(@2069,QUEST) ActionOverride("CVCultgi",EscapeArea())~EXIT
 
 CHAIN
 IF~Global("NargaR","RTF063",3)~THEN RTColan Reveal1
-~ (Sigh) You make it not an easy job to protect you, mylady...Sandrah.~
+~ (Sigh) You make it not an easy job to protect you, my lady...Sandrah.~
 DO~SetGlobal("NargaR","RTF063",4) SetGlobal("RTColan","GLOBAL",20) SetGlobal("RTCityHost","GLOBAL",1) SetGlobalTimer("RTCityHos","GLOBAL",1800) ~
 ==CVSan25J~(Smiles) Sandrah? I should have known...~
 =~I apologize, Chief-Inquisitor, you did your best but maybe protection does not serve my purpose too well.~
@@ -347,10 +347,10 @@ DO~SetGlobal("NargaR","RTF063",4) SetGlobal("RTColan","GLOBAL",20) SetGlobal("RT
 =~Force is useless against you so please take my words as a true invitation.~
 =~There are people who like to meet you and I am certain you want to meet them, too.~
 ==CVSan25J~There are two categories of people I want to meet in Bezantur, one I regard as friends, the others as enemies.~
-==RTColan~I am talking of friends, mylady.~
+==RTColan~I am talking of friends, my lady.~
 ==CVSan25J~(Nods) You are much more than you want people to see...my friend.~
 ==RTColan~Which is true for you as well..eh, enough now, time is pressing.~
-=~You will need something that should be in the treasury at the other side of the hall. Once you have it you will know how to use it. In a few hours this town will not be a safe place for you anymore - or for me.~
+=~You will need something that should be in the treasury at the other side of the hall. Once you have it you will know how to use it. In a few hours this town will not be a safe place for you any more - or for me.~
 ==CVSan25J~Thank you, Colano, we will definitely meet again.~
 ==RTColan~I wish I could be as confident in that as you are.~DO ~EscapeArea()~
 ==CVSan25J~Hope, my friend, hope and courage.~EXIT
@@ -364,7 +364,7 @@ DO~SetGlobal("Szassretr","RTF078",2)~
 ==CVSan25J~To be precise just like you always try to be, there is no way to activate it without his hand.~
 ==RTColan~(Smiles wickedly) I see the difference...and it explains the bleeding stump that was his left arm.~
 ==CVSan25J~Once we went through the portal I ask you to retrieve the two items we need to open it again and keep them save. Let only Candrella and Edwin and the red hoods use them to access the Citadel when the time is right.~
-==RTColan~I am confident in your success, mylady.~
+==RTColan~I am confident in your success, my lady.~
 ==CVSan25J~I have friends that guarantee success - friends like you are one.~
 =~*She gently kisses his cheek.*~EXIT
 

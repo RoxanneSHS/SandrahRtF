@@ -53,9 +53,9 @@ DO~SetGlobal("Gnollend","RTF123",3)~
 ==CVCyr01~What, babbling foolish girl? Wasn't it YOU who told me that the essence is the key to the Throne of Bhaal?~
 ==CVSan25J~It surely would be - if it still existed. I think you better explain the facts to this God of Murder immitation, <CHARNAME>.~
 END
-++~Bhaal's essence, mine and that of the spawns who were victim to Melissan's attempt to become the new Goddess of Murder, was destroyed together with the Throne of Bhaal in the Abyss by AO. My essence today is connected with the new portefolio created for Love and Hope.~+ Gnollend2
+++~Bhaal's essence, mine and that of the spawns who were victim to Melissan's attempt to become the new Goddess of Murder, was destroyed together with the Throne of Bhaal in the Abyss by AO. My essence today is connected with the new portfolio created for Love and Hope.~+ Gnollend2
 ++~Why should Sandrah have told you such? She and Midnight were present when all existing essence of Bhaal was given to the ambitious priestess Melissan before she was forever destroyed together with the Throne of Bhaal.~+ Gnollend2
-++~You have lost, Cyric. I have none of the essence you ask for anymore. It was taken and destroyed when I accepted my new godly power. The Throne of Bhaal went down with the ursupator Melissan.~+ Gnollend2
+++~You have lost, Cyric. I have none of the essence you ask for any more. It was taken and destroyed when I accepted my new godly power. The Throne of Bhaal went down with the usurper Melissan.~+ Gnollend2
 
 CHAIN
 IF~~THEN CVCyr01 Gnollend2
@@ -70,7 +70,7 @@ DO~SetGlobal("Gnollend","RTF123",5)~
 ==SanMyst~Kelemvor!~
 ==CVCyr01~Kelemvor? Well, hihihi, you must know better than any...~
 ==RTKelem~Blackstaff Tower saw my end, how adequate that my murderer has voluntarily chosen it for his own.~
-==RTLordAo~As we all have learned by now the essence of the former God of Murder is not an issue for anyone anymore. The new Lord of Murder will need to stick with what he has got in his portefolio.~
+==RTLordAo~As we all have learned by now the essence of the former God of Murder is not an issue for anyone anymore. The new Lord of Murder will need to stick with what he has got in his portfolio.~
 ==CVSan25J~Blackstaff Tower is the last glimpse you will have of the Primary Plane, *grandfather*.~
 ==RTLordAo~Mystra and <CHARNAME> were sent to give you the word that from this day you are banned from this Plane forever, Cyric. This struggle is hereby ended!~
 ==CVCyr01~YOU, miserable descendent of that meddling harper - ALL OF THIS IS YOUR WORK!!~
@@ -105,7 +105,7 @@ IF~~THEN REPLY~Honestly, I don't. Considering who has gained and who has lost...
 END
 
 IF~~THEN BEGIN Gnollend6b
-SAY~He is really the disappointed loser of this campagne just like he deserves to be.~
+SAY~He is really the disappointed loser of this campaign just like he deserves to be.~
 IF~~THEN REPLY~Considering who has gained and who has lost...Mystra might be considered a true winner this time.~ GOTO Gnollend7
 IF~~THEN REPLY~Cyric's words still ring in my ears that actually you planted this Throne of Bhaal idea in his head.~ GOTO Gnollend8
 END
@@ -124,15 +124,15 @@ END
 
 IF~~THEN BEGIN Gnollend9
 SAY~Fine - you have every right to know and not to doubt my love and loyalty. Yes, I set some of the things in motion, but I did not plan or steer this whole affair. Listen.~
-=~Almost immediately after our ascencion it became clear that we were facing opposition from various old and new foe in Celestia. With the ears and eyes of my ever loyal Pelligram and your Solar it became apparent that some alliance was forming around Cyric and Shar.~
+=~Almost immediately after our ascension it became clear that we were facing opposition from various old and new foe in Celestia. With the ears and eyes of my ever loyal Pelligram and your Solar it became apparent that some alliance was forming around Cyric and Shar.~
 =~I decided not to let them finish their preparations and also I decided that it would be advantageous for us to set the scenery for the confrontation.~
 IF~~THEN REPLY~You decided on the Prime to be battlefield once more - how could you!~GOTO Gnollend10
 IF~~THEN REPLY~You must have had your reasons, continue please.~ GOTO Gnollend10
 END
 
 IF~~THEN BEGIN Gnollend10
-SAY~The Prime would give us the advantage of the home team over our opponents and we still had substantial support from the mortals - this would not have been the case anymore in a number of decades - as long as probably the Phalanx would have needed without my ignition sparks to trigger on their actions. Furthermore it gave me the chance for my primary goal, namely Faerun's emancipation from this bunch of useless gods that stand in the way of the progress of the mortals.~
-=~So, Pelligram and me made sure that the name of Szass Tam reached the prying ears of those who should not have known about him and with that the phalanx got connected to the Prime. Cyric used the zulkir's ambitions to gain Mystra's power like a new Karsus, everything that weakened me and Shar at the same time would be in his favour. The rest of the players and their intentions you know yourself.~
+SAY~The Prime would give us the advantage of the home team over our opponents and we still had substantial support from the mortals - this would not have been the case any more in a number of decades - as long as probably the Phalanx would have needed without my ignition sparks to trigger on their actions. Furthermore it gave me the chance for my primary goal, namely Faerun's emancipation from this bunch of useless gods that stand in the way of the progress of the mortals.~
+=~So, Pelligram and me made sure that the name of Szass Tam reached the prying ears of those who should not have known about him and with that the phalanx got connected to the Prime. Cyric used the Zulkir's ambitions to gain Mystra's power like a new Karsus, everything that weakened me and Shar at the same time would be in his favour. The rest of the players and their intentions you know yourself.~
 IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~And what about me in all this?~ GOTO Gnollend11
 IF~Global("SanRomPath","GLOBAL",2)~THEN REPLY~And what about me in all this?~ GOTO Gnollend12
 END
