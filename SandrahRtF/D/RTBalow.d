@@ -3,7 +3,7 @@ BEGIN RTBalow
 IF~AreaCheck("RTF077")Global("SanRTFPlot5","GLOBAL",4)~THEN BEGIN SeenTam
 SAY~Only one came from upstairs who was a red robed foe, he had a stump like I once had.~
 IF~~THEN REPLY~That must have been Szass Tam, we are on his trail.~EXIT
-IF~~THEN REPLY~It is a habbit in Sandrah's family to leave their foe in that way.~EXIT
+IF~~THEN REPLY~It is a habit in Sandrah's family to leave their foe in that way.~EXIT
 END
 
 IF~AreaCheck("RTF077")GlobalLT("SanRTFPlot5","GLOBAL",4)~THEN BEGIN CityExit1
@@ -26,7 +26,7 @@ IF~Global("RTBalow","GLOBAL",2) GlobalTimerExpired("RTWait","RTF048")~THEN BEGIN
 SAY~I have made a decision to test you. Cooperate and you might gain my trust.~
 IF~~THEN REPLY~But we don't trust you, beast. We can use your body and follow Sandrah's plan without your consent.~GOTO 48fight
 IF~PartyHasItem("Compon04")~THEN REPLY~We have found your lost claw meanwhile, we can propose a deal with it.~GOTO Test1
-IF~~THEN REPLY~My counselor has advised me to listen to you, beast, so speak.~ GOTO Test1b
+IF~~THEN REPLY~My counsellor has advised me to listen to you, beast, so speak.~ GOTO Test1b
 END
 
 IF~~THEN BEGIN 48fight
@@ -44,7 +44,7 @@ SAY~You love riddles like I do? Yes, no? It doesn't matter, you must solve these
 =~For some I go fast
 for others I'm slow. 
 To most people, I'm an obsession 
-relying on me is a well practiced lesson.~
+relying on me is a well practised lesson.~
 IF~~THEN REPLY~ A snail.~ GOTO 1wrong
 IF~~THEN REPLY~ Time.~GOTO 1right
 IF~~THEN REPLY~ A man with a crutch.~ GOTO 1wrong
@@ -103,13 +103,13 @@ IF~ GlobalGT("Balpoints","RTF048",2)~GOTO Test4b
 END
 
 IF ~~THEN BEGIN Test4a
-SAY~Your counselor seems to be the clever one here and just drags you along like an old rag. I trust her and you are no hazzard. The test is passed.~
+SAY~Your counsellor seems to be the clever one here and just drags you along like an old rag. I trust her and you are no hazard. The test is passed.~
 IF~PartyHasItem("Compon04")~THEN GOTO Claw1
 IF~!PartyHasItem("Compon04")~THEN GOTO Claw12
 END
 
 IF~~THEN BEGIN Test4b
-SAY~You are clever and you do not try to hide it. I trust your counselor and she trusts you, I have no reason to mistrust all of you. The test is passed.~
+SAY~You are clever and you do not try to hide it. I trust your counsellor and she trusts you, I have no reason to mistrust all of you. The test is passed.~
 IF~PartyHasItem("Compon04")~THEN GOTO Claw1
 IF~!PartyHasItem("Compon04")~THEN GOTO Claw12
 END
@@ -152,7 +152,7 @@ DO~SetGlobal("RTBalow","GLOBAL",2) SetGlobalTimer("RTWait","RTF048",TWO_HOURS)~
 ==CVSan25J~She sealed the passage you are stuck in, loosing her hand in that process.~
 ==RTBalow~I know - it was me who bit it off just like she cut off my claw. (He holds up the stump where one of his claws is missing.) As the portal closed I spit her hand out at her and she threw the claw to my side...I never could find it, those lizards must have stolen it.~
 ==CVSan25J~Why did you not return to where you came from?~
-==RTBalow~Look behind me, there is no way anymore, the lava has risen meanwhile.~
+==RTBalow~Look behind me, there is no way any more, the lava has risen meanwhile.~
 ==CVSan25J~But...a creature like you is immune to that heat.~
 ==RTBalow~Right, but it is too deep to step inside, I will sink down in it and drown. And the jump is too far.~
 ==CVSan25J~With some assistance from the other side you could make the step, I guess.~

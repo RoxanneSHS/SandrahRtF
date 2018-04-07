@@ -79,9 +79,9 @@ DO~SetGlobal("SharDes","RTF071",1)~
 =~You fuel the madness of that mad new Karsus, Szass Tam, and try to unite what needs to be kept apart by all means.~
 ==CVSharg~You have known that, haven't you?~
 ==CVSan25J~You should have known it just as well. We are both keepers, each with our own ward to protect. The worst that can happen is for one of us to hunger for the other one's part. Szass Tam has betrayed you already by fuelling your ambitions. It was surely his intention that we weaken each other enough to have an easy prey in the survivor.~
-==CVSharg~But it was once ONE WEAVE and Mystril ruled it.~
+==CVSharg~But it was once ONE WEAVE and Mystryl ruled it.~
 ==CVSan25J~We cannot revert the separation. Look around at the result of even this minor attempt with the small amount of my power I let Larloch give you.~
-==CVSharg~Szass Tam claims and proves by the ancient knowledge he has found that it can be done. That wisdom is older than Nethril's fall and older than the splitting of the ONE.~
+==CVSharg~Szass Tam claims and proves by the ancient knowledge he has found that it can be done. That wisdom is older than Netheril's fall and older than the splitting of the ONE.~
 ==CVSan25J~It is ancient knowledge for an ancient constellation of the powers and the multiverse. Much has changed meanwhile.~
 ==CVSharg~You were foolish enough to come once more, Mystra. This time I will claim your full ward, as only by this the restoration of the one weave can be accomplished.~EXIT
 
@@ -98,7 +98,7 @@ DO~SetGlobal("SharDes","RTF071",3) SetGlobal("SanRTFPlot4","GLOBAL",8)~
 =~Mystra, you will continue your quest with <CHARNAME> of Love and Hope until the aggressor from the Prime is eliminated. Meanwhile you will restore the full power of the True Weave to us.~
 ==CVSan25J~We will see about that, AO. There are some conditions to be negotiated first.~
 ==RTLordAO~There is no negotiation with renegade gods - I was willing to forgive you as you are new to your duties, but now you start to get impertinent...~
-==CVSan25J~Listen, AO, and listen carefully. The Prime Plane is my home, mine and <CHARNAME>'s. I made a solemn vow that it will never again be the playground to the escapades of the Celestials. Agree to that and the Weave will continue to guarantee Celestia's existence - and yours, Overloard.~
+==CVSan25J~Listen, AO, and listen carefully. The Prime Plane is my home, mine and <CHARNAME>'s. I made a solemn vow that it will never again be the playground to the escapades of the Celestials. Agree to that and the Weave will continue to guarantee Celestia's existence - and yours, Overlord.~
 ==RTLordAO~You try to blackmail your Overgod with the Weave as your hostage. This will be your end!~
 ==CVSan25J~My end will be the end of the Weave, the end of those who depend on it, the end of the gods and their Overlord.~
 ==RTLordAO~You bluff.~
@@ -106,7 +106,7 @@ DO~SetGlobal("SharDes","RTF071",3) SetGlobal("SanRTFPlot4","GLOBAL",8)~
 ==CVSharg~Ha, now the REAL TRAITOR shows her true face and ambition...~
 ==RTLordAO~Silence, Shar!~
 =~Cyric was a fool to provoke the two of you, <CHARNAME> and Mystra. Your union is stronger than any alliance the gods have forged so far. This is my last word, Mystra, listen and agree.~
-=~Those who have caused this trouble will pay the price. Velsharoon will stay under Kelemvor's custody. Talos, Shar, and Cyric will be banned from the Prime from hereon, their essence will go to Demigorgon should they trespass this verdict.~
+=~Those who have caused this trouble will pay the price. Velsharoon will stay under Kelemvor's custody. Talos, Shar, and Cyric will be banned from the Prime from hereof, their essence will go to Demogorgon should they trespass this verdict.~
 =~Mystra and <CHARNAME> will be responsible to clean up the mess the new Karsus produced - they will also need to capture Cyric and return him to Celestia to enforce the ban on him.~
 ==CVSan25J~When our task is done the Weave will return to Celestia like I said.~DO~EraseJournalEntry(@1943)~EXIT
 
@@ -125,9 +125,9 @@ DO~ SetGlobal("CitEntpl","GLOBAL",16)~
 ==RTSamas~YOU ARE A FOOL, MYSTRA!!~
 ==CVSzas~Mystra?~
 ==CVSan25J~The traitor did not tell you my true identity? He really thought he could hide me from your view and treat me like a love slave...~
-==CVSzas~Not a bad idea...Samas Kul was always known as a man of excellent taste, tsst tsst. A bit ambituous but useful. ~
+==CVSzas~Not a bad idea...Samas Kul was always known as a man of excellent taste, tsst tsst. A bit ambitious but useful. ~
 =~Very useful.~
-=~And superflous by now.~
+=~And superfluous by now.~
 ==CVSan25J~Samas, it looks like your master has a similar intent with me like you had.~
 ==CVSzas~The difference is that I have the power to get what I want - even if the woman is a goddess. Please receive my heartfelt reward for your treason, Samas Kul.~
 DO~StartCutsceneMode()
@@ -157,7 +157,7 @@ DO~ SetGlobal("CitEntpl","GLOBAL",17) SetGlobal("SanRTFPlot5","GLOBAL",4)~
 ==CVSan25J~The iron maiden? The screws?~
 ==CVSzas~We will take our time, Mystra, you will learn about all of them and you will be my willing toy more and more.~
 =~And then...if you are a good girl I will end it mercifully with this great new device.~
-==CVSan25J~Interesting - I heard about it, a guilottine, right?~
+==CVSan25J~Interesting - I heard about it, a guillotine, right?~
 ==CVSzas~It will cut off your godly head in a mere second, clean and quick.~
 ==CVSan25J~I see...ah, yes, you put the culprit's head into here...you switch the lever...the hatchet will come down...~
 ==CVSzas~What....????~
@@ -228,7 +228,7 @@ DO~SetGlobal("RTCitKeySearch","GLOBAL",3)~
 ==CVSan25J~Not at all, Phaere, not at all.~
 =~We last saw you when an over-ambitious plan was definitely failing - and here you are again involved in an intrigue sizes too large for your delicate feet.~
 ==RTPhaer~Ah, you are still there at <CHARNAME>'s side? You were almost impressive in your drow disguise, almost of deadly beauty and power. Too bad your true face is so pale and so...human.~
-==RTPhaer IF~Global("SanRomPath","GLOBAL",1)~THEN~I halfways could understand what you saw in her when she was drow, but now - you are as weak as she is pale.~
+==RTPhaer IF~Global("SanRomPath","GLOBAL",1)~THEN~I halfway could understand what you saw in her when she was drow, but now - you are as weak as she is pale.~
 END
 ++~Phaere, you may have a chance to escape here before it is too late. We just need a key you will now hand over to us.~ + InCitadl2
 ++~You have not learned much, Phaere, and your fate will be the same as before.~ + InCitadl2
@@ -251,7 +251,7 @@ IF~Global("Wayout","RTF172",3)~THEN RTCandre SzassDef
 DO~SetGlobal("Wayout","RTF172",4)~
 ==CVSan25J~The shaping of the new Faerun still has to wait, our mission is not yet finished, <CHARNAME>.~
 ==RTEdwin~After all you have done, after all the success, it seems you are not ready to celebrate our victory with us, Sandrah?~
-==CVSan25J~As much as I rejoyce with you and your beloved Candrella and all of Thay...we must still eliminate the one who pulled all those strings.~
+==CVSan25J~As much as I rejoice with you and your beloved Candrella and all of Thay...we must still eliminate the one who pulled all those strings.~
 ==RTCandre~Cyric...your grandfather...~
 ==CVSan25J~Old family business has caught up with me, my Chosen. From Cyric's words before he deserted once again the scene of his crime we have learned that he is on his way to kidnap my grandmother.~
 ==RTCandre~She and Drizzt will not be completely helpless against the Prince of Lies in his human avatar.~

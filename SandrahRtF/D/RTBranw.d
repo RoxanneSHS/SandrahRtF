@@ -42,7 +42,7 @@ DO~SetGlobal("RTFoundBran","GLOBAL",1)~
 ==CVSan25J~This is also a land build on slavery and exploit, not a place you could feel too well at home?~
 ==RTBranw~'twill change, Sandrah, the storm will come over them soon.~
 ==CVSan25J~(Mumbles) Oh, yes, it will - are you somehow in contact with those who will bring this storm and change?~
-==RTBranw~I know thee well enough not to guess you came here for leasure. Your heart and instinct will guide you to the Red Hoods sooner or later.~
+==RTBranw~I know thee well enough not to guess you came here for leisure. Your heart and instinct will guide you to the Red Hoods sooner or later.~
 ==CVSan25J~Know that Mystra supports them, Branwen.~
 ==RTBranw~I's heard such - from their own mouth. They count on you to retrieve the key that has fallen to the enemy.~
 ==CVSan25J~We heard it may be in the Court's treasury but we have not found access to the building yet.~

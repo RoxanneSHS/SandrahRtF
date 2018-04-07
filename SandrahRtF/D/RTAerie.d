@@ -30,7 +30,7 @@ END
 
 CHAIN
 IF~~THEN RTAerie JonLove2
-~Ooops, landing still needs to be practiced a bit...~
+~Ooops, landing still needs to be practised a bit...~
 ==CVSan25J~You seem to be quite cheerful down here - not a miserable captive damsel in a fierce mage's dungeon.~
 ==RTAerie~Captive?? Fierce Mage?? Dungeon?? Oh, my, you got it all wrong (laughs amused).~
 ==CVSan25J~You are here on your free will using the torrents created by these large ventilators to fly?~
@@ -38,7 +38,7 @@ IF~~THEN RTAerie JonLove2
 ==CVSan25J~Joneleth *helped* you?~
 ==RTAerie~Oh, yes, he struggled so long and spend endless days and nights (sigh) over his experiments and research. He was so frustrated when the wings he tried to make for me failed again and again. I had long accepted my fate but you know how stubborn he can be. He swore to make me fly again and he would not stop until he succeeded.~
 ==CVSan25J~You live here - with him?~
-==RTAerie~Of course, this is now my home. Joneleth finally found this solution you just saw, he taught me to change into a flying creature at will. It is not truely my own wings he returned to me but the sensation of flying once again has been restored.~
+==RTAerie~Of course, this is now my home. Joneleth finally found this solution you just saw, he taught me to change into a flying creature at will. It is not truly my own wings he returned to me but the sensation of flying once again has been restored.~
 ==CVSan25J~What is the price you had to pay for that, Aerie?~
 ==RTAerie~The price?~
 =~You are all so completely wrong about Joneleth, really. He is not the monster you encountered, not at all. The price? He has all he may ask for already, he has...me.~
