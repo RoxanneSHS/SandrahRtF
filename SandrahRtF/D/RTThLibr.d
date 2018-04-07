@@ -26,14 +26,14 @@ DO~SetGlobal("SpokeLib","RTF058",1)~
 ==CVSan25J~We are really, seekers. Greetings, librarian. I'm looking for a history of the Odesseiron family.~
 ==RTLibMa~Hm...a dangerous request...but, oh, Oghma, the truth must prevail!~
 ==CVSan25J~Is there a problem, we do not want to endanger you?~
-==RTLibMa~You will see yourself in a minute, mylady.~
+==RTLibMa~You will see yourself in a minute, my lady.~
 =~Here is the tome. You may look at it but you cannot take it.~
 ==CVSan25J~*Sandrah quickly searches through the pages - starting from the last one...~
 =~Mmh...I think I see what you mean. <CHARNAME>, the last pages of the book have been totally blackened out with ink. Someone does not want anyone to see the most recent events around the family.~
 ==RTLibMa~(Sigh) Science and history in Thay are not independent from the red wizards and their politics.~
 ==CVSan25J~You need not to endanger yourself further, my friend. We understand.~
 =~Have you by any chance read in this book before it was manipulated?~
-==RTLibMa~Psst. (Mumbles) The last of the family is still alive even if authorities declare him dead and not to be mentioned anymore.~
+==RTLibMa~Psst. (Mumbles) The last of the family is still alive even if authorities declare him dead and not to be mentioned any more.~
 ==CVSan25J~(Whispers) Edwin Odesseiron?~
 ==RTLibMa~Oghma may bless you - and him.~DO~EscapeArea()~EXIT
 

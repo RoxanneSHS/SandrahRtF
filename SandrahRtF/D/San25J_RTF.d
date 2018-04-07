@@ -51,7 +51,7 @@ IF~Global("SanRTFColl","GLOBAL",1) Global("Sanfence","LOCALS",0)~THEN REPLY~Wher
 IF~Global("RTFoundIce","GLOBAL",8)~THEN REPLY~Tell me about that Summer Camp and how we can go there, counsellor.~GOTO SumCamp1
 IF~GlobalGT("SanRTFPlot1","GLOBAL",8) Global("RTTethRoad","LOCALS",0)~THEN REPLY~Amkethran is quite a journey away without your parcel's aid. Can you suggest something?~DO~SetGlobal("RTTethRoad","LOCALS",1)~GOTO TethRoa
 IF~Global("SanRTFPlot1","GLOBAL",9) Global("RTFWhy1","GLOBAL",0)~THEN REPLY~So, my beloved counsellor, who do you think our foe are really targeting - you or me?~ GOTO RTFTargt1
-IF~GlobalGT("SanRTFPlot2","GLOBAL",4) Global("RTFWhy1","GLOBAL",1)~THEN REPLY~ Some time ago you mentioned Karsus, the mighty sorcerer who challenged the ancient Mystril.~GOTO Kars1
+IF~GlobalGT("SanRTFPlot2","GLOBAL",4) Global("RTFWhy1","GLOBAL",1)~THEN REPLY~ Some time ago you mentioned Karsus, the mighty sorcerer who challenged the ancient Mystryl.~GOTO Kars1
 IF~Global("SanRTFPlot2","GLOBAL",4) Global("RoadMorn","LOCALS",0)~THEN REPLY~Any idea how we can best travel to Mornbryn's Shield?~ GOTO MornTrav1
 IF~Global("SanRTFPlot1","GLOBAL",6)~THEN REPLY~What about the graveyards of Waterdeep?~GOTO WDGravey1
 IF~Global("SanRTFPlot1","GLOBAL",8)Global("AskedcandV","LOCALS",0)~THEN REPLY~What is your interest to go to Candlekeep, my learned counselor?~GOTO CanCear1
@@ -279,14 +279,14 @@ END
 IF~~THEN BEGIN Pellrev1
 SAY~She did not have to - it was her own will and choice.~
 =~She is very special among the Chosen of Mystra for we are together for so long and she is really my true friend and companion. She has done her fair amount of duties for the different incarnations of Mystra, as you might have learned from her. The panther avatar allows her to accompany the two of us.~
-=~(Smiles) She loves us and still thinks we need a kind celestial guardian - and I would really miss her as well. By the way she performs her duties examplatory.~
+=~(Smiles) She loves us and still thinks we need a kind celestial guardian - and I would really miss her as well. By the way she performs her duties exemplary.~
 IF~~THEN REPLY~I am glad to hear it is her free choice and not the cruelty of her godly mistress, which I had not expected anyway.~DO~SetGlobal("Pellrevrt","LOCALS",1)~EXIT
 IF~~THEN REPLY~Maybe she will grant us the pleasure of her human form once we return to Celestia. There is so much she could tell us of the adventures of her long existence before we met.~DO~SetGlobal("Pellrevrt","LOCALS",1)~EXIT
 END
 
 IF~~THEN BEGIN RetThay1
 SAY~We should inquire with my grandmother whether she has heard something about Kelemvor's pending decision concerning Velsharoon.~
-IF~~THEN REPLY~Right, his endless supply of undead and clones for Szass Tam will still be a major hinderance to get close to the heads of this conspirancy.~EXIT
+IF~~THEN REPLY~Right, his endless supply of undead and clones for Szass Tam will still be a major hindrance to get close to the heads of this conspiracy.~EXIT
 IF~~THEN REPLY~Ah, the Lich King - it would be good to hear that another player is eliminated before we go to Thay.~EXIT
 END
 
@@ -311,7 +311,7 @@ END
 IF~~THEN BEGIN Godsnow2
 SAY~ Yes, we can. Try to look at the situation like an outsider who had never met any of us in that time a decade ago.~
 =~Many have heard about <CHARNAME> of Candlekeep's heroic deeds on the Sword Coast of course, but few have seen the mystic figure in real life. The adventures in Amn and especially in Suldanessalar are known to few outside of the elvish community.~
-=~Finally - the Bhaal war of course was an historic event of some dimension but actually few really know about the identity of the key players and only those present at your ascenscion know who the Bhaalspawn was who finally ended the war and overcame his father's taint to emerge as the God of Love and Hope.~
+=~Finally - the Bhaal war of course was an historic event of some dimension but actually few really know about the identity of the key players and only those present at your ascension know who the Bhaalspawn was who finally ended the war and overcame his father's taint to emerge as the God of Love and Hope.~
 IF~~THEN REPLY~ And what about yourself?~DO~SetGlobal("Godsnow","LOCALS",1)~ GOTO Godsnow3
 END
 
@@ -340,7 +340,7 @@ END
 
 IF~~THEN BEGIN  RTFIren3
 SAY~Guildmaster Havarian is a practical man and money still opens his doors and supplies to anyone. If he sees a profit to deal with Irenicus he will not hesitate. Even if somebody else is involved it will not be without his knowledge.~
-IF~~THEN REPLY~ Saemon Havarian!! Let's pay the squirreling scoundrel a visit then.~GOTO RTFIren5
+IF~~THEN REPLY~ Saemon Havarian!! Let's pay the squirrelling scoundrel a visit then.~GOTO RTFIren5
 END
 
 IF~~THEN BEGIN  RTFIren4
@@ -358,11 +358,11 @@ END
 IF~~THEN BEGIN  RTIren6
 SAY~My parcel could take us but I recommend to use it with utmost care this time. Travelling through the intra-plane always leaves our signature that can be traced. You know we face opponents this time that have the godly abilities to see those traces like a ranger sees an animal's trail.~
 =~We have the option to return to Waterdeep and go through the passage once more to Nib's skyship. He can get us to the town with less attention drawn to us.~
-=~We can also find transportation with the harbourmaster in Waterdeep, for a price of course.~
+=~We can also find transportation with the harbour master in Waterdeep, for a price of course.~
 =~The most secretive way would be to travel the roads in the old fashioned way.~
-IF~~THEN REPLY~I would say we use our feet and take the chance to see how the Realms have developped since we last travelled them together.~EXIT
+IF~~THEN REPLY~I would say we use our feet and take the chance to see how the Realms have developed since we last travelled them together.~EXIT
 IF~~THEN REPLY~I would risk the magic despite your warning - we can thus act quicker than our foe may expect us.~EXIT
-IF~~THEN REPLY~What would be your preference, my counselor?~GOTO RTIren7
+IF~~THEN REPLY~What would be your preference, my counsellor?~GOTO RTIren7
 END
 
 IF~~THEN BEGIN  RTIren7
@@ -372,12 +372,12 @@ END
 
 IF~~THEN BEGIN RTFTargt1
 SAY~*She embraces you kindly.* As close as we are, aiming at one of us would always affect the other, would it not? *She kisses you.*~
-=~But even with cold analytic skills I would come to the same result. What makes us the target of our foe's envy and hatred is our close relationship. We have worked together in a way that is not common among the celestials, who have their alliances from time to time with each partner having his or her personal gain but not a patnership like ours.~
+=~But even with cold analytic skills I would come to the same result. What makes us the target of our foe's envy and hatred is our close relationship. We have worked together in a way that is not common among the celestials, who have their alliances from time to time with each partner having his or her personal gain but not a partnership like ours.~
 IF~~THEN REPLY~ That is an aspect to be considered but not really an answer.~DO~ SetGlobal("RTFWhy1","GLOBAL",1)~GOTO RTFTargt2
 END
 
 IF~~THEN BEGIN RTFTargt2
-SAY~To get to the answer we must probably slice the alliance or our oponents into their parts, as everyone will have their own different motivation.~
+SAY~To get to the answer we must probably slice the alliance or our opponents into their parts, as everyone will have their own different motivation.~
 IF~~THEN REPLY~Cyric is definitely after me and the essence of Bhaal that he claims for himself as the reigning god of murder.~ GOTO RTFTargt3
 IF~~THEN REPLY~Talos has always quarrelled with us since our adventures on the Sword Coast. It's hard to tell if he's in it just out of principle or for a more dedicated reason.~ GOTO RTFTargt4
 IF~~THEN REPLY~That Supra Lich Velsharoon sounds to me like one of your guys rebelling against his goddess and her open agression towards necromancy.~ GOTO RTFTargt5
@@ -410,19 +410,19 @@ IF~~THEN REPLY~The cowls were already referring to their new master in the Citad
 END
 
 IF~~THEN BEGIN RTFTargt8
-SAY~The Zulkir residing in the Thaymounts, in a citadel founded by an ancient lizard folk even before the time of Netheril's fall, full of the most secret and powerful arcane knowledge you can imagine. ~
+SAY~The Zulkir residing in the Thaymount, in a citadel founded by an ancient lizard folk even before the time of Netheril's fall, full of the most secret and powerful arcane knowledge you can imagine. ~
 =~Enough to produce armies of clones and other thralls, enough to challenge even the gods. Enough to attempt again where Karsus had failed and provoked Netheril's destruction.~
 IF~~THEN REPLY~*You see how her imagination starts to construct and re-construct the pieces of her ancient lore. You will give her time to analyse her facts and ask about the results later.*~EXIT
 END
 
 IF ~~THEN BEGIN Kars1
-SAY~ Karsus ...the destruction of Netheril and Mystril...the split of the Weave for the true and the shadow Weave...~
+SAY~ Karsus ...the destruction of Netheril and Mystryl...the split of the Weave for the true and the shadow Weave...~
 IF~~THEN REPLY~That was VERY long ago, wasn't it?~DO~SetGlobal("RTFWhy1","GLOBAL",2)~GOTO Kars2
 END
 
 IF~~THEN BEGIN Kars2
 SAY~Netheril, the floating city, was the ancient centre of wisdom, technology, and arcane knowledge. Among them all Karsus was the most powerful sorcerer seeing himself almost equal to the gods.~
-=~Karsus tried to steal the divinity from the keeper of the Weave Mystril - in her last resort Mystril sacrificed herself to prevent Karsus' success. AO himself separated the shadow weave which he gave to Shar and established the first Mystra as the Guardian of the Weave and All Magic.~
+=~Karsus tried to steal the divinity from the keeper of the Weave Mystryl - in her last resort Mystryl sacrificed herself to prevent Karsus' success. AO himself separated the shadow weave which he gave to Shar and established the first Mystra as the Guardian of the Weave and All Magic.~
 IF~~THEN REPLY~ At Candlekeep I learned that all magic departed the Netheril afterwards and the city itself crashed into the Anauroch desert.~GOTO Kars3
 END
 
@@ -442,7 +442,7 @@ SAY~ This is indeed puzzling. We should apply our usual method to look at the de
 IF~~THEN REPLY~The Odesseirons are obviously under siege of the authorities.~ GOTO Odedisc2
 IF~~THEN REPLY~The family is missing, just leaving behind a child and an old servant.~GOTO Odedisc2
 IF~~THEN REPLY~What is Candrella's relation to the family. Her daughter is here alone.~GOTO Odedisc2
-IF~~THEN REPLY~The temple of Cyric, which used to be Bhaals's is here, together with that portal installation. ~ GOTO Odedisc2
+IF~~THEN REPLY~The temple of Cyric, which used to be Bhaal's is here, together with that portal installation. ~ GOTO Odedisc2
 IF~~THEN REPLY~Where is our old *friend* Edwin these days?~GOTO Odedisc2
 END
 
@@ -501,7 +501,7 @@ END
 
 IF~~THEN BEGIN ColRol1
 SAY~The future ex-Chief-Inquisitor I would assume, after what he did for us.~
-IF~~THEN REPLY~He persued and observed us, brought us to court, pleaded before the court for our execution - pfft, and then let us escape?~ DO~SetGlobal("Colanrole","LOCALS",1) ~GOTO ColRol2
+IF~~THEN REPLY~He pursued and observed us, brought us to court, pleaded before the court for our execution - pfft, and then let us escape?~ DO~SetGlobal("Colanrole","LOCALS",1) ~GOTO ColRol2
 IF~~THEN REPLY~He persued and observed us, brought us to court, pleaded before the court for our execution - pfft, and then let us escape? It's a trap, isn't it, he wants us to find the Red Hoods for him.~ DO~SetGlobal("Colanrole","LOCALS",1) ~GOTO ColRol2
 END
 
@@ -511,7 +511,7 @@ IF~~THEN REPLY~You mean he's one of the Red Hoods himself?~GOTO ColRol3
 END
 
 IF~~THEN BEGIN ColRol3
-SAY~ If not by oath than at least by attitude, I would say. Now that he helped us to find our course around town, the Red Hoods may also be his future. He has none anymore with the government.~
+SAY~ If not by oath than at least by attitude, I would say. Now that he helped us to find our course around town, the Red Hoods may also be his future. He has none any more with the government.~
 =~His arresting us has served its purpose - it brought us into the building to get the key and it also helped us to disappear from the view before the red wizards really get too suspicious about our true nature and intention.~
 IF~~THEN REPLY~I wish you were right, my love. Anyway I will keep my eyes wide open just in case there is some betrayal afoot.~EXIT
 IF~~THEN REPLY~Perhaps we will see him again to discuss those questions in person.~EXIT
@@ -533,7 +533,7 @@ END
 IF~~THEN BEGIN Larlhint3
 SAY~Exactly, once he recognises me as Mystra, we should be able to get his agreement.~
 =~Having survived the cataclysm that resulted from the death of Mystryl, Larloch values the goddess of magic - and the Weave she protects - very highly. Probably the only thing that can draw him out of his studies would be an imminent threat to Mystra or the Weave, like we have it currently. Larloch knows that the destruction or malfunction of the Weave would mean the end of his research and the destruction of all he had accomplished in the last few millennia.~
-=~He also received many boons from Mystra - in exchange for disseminating many of his new discoveries, all incarnations of Mystra granted him great freedom in the research of mighty spells and the creation of powerful artifacts. In some ways the magic he works rivals that of ancient Netheril itself. ~
+=~He also received many boons from Mystra - in exchange for disseminating many of his new discoveries, all incarnations of Mystra granted him great freedom in the research of mighty spells and the creation of powerful artefacts. In some ways the magic he works rivals that of ancient Netheril itself. ~
 IF~~THEN REPLY~Now I understand why you had proposed his involvement. Szass Tam will receive quite a shock if he faces the Shadow King.~EXIT
 IF~~THEN REPLY~If we can persuade him to ally with us we will have quite a mighty supporter on our side. Szass Tam will be badly surprised.~EXIT
 END
@@ -570,13 +570,13 @@ END
 IF~~THEN BEGIN Cit5Ent3
 SAY~We must provide them with a reason to make any of them see the necessity to act for themselves instead of sending another of their endless cohorts.~
 =~We must hurt them here in the heartland of Thay in a way that endangers their power and reputation in Bezantur.~
-IF~~THEN REPLY~You seem to have a plan counselor?~ GOTO Cit5Ent4
+IF~~THEN REPLY~You seem to have a plan, counsellor?~ GOTO Cit5Ent4
 END
 
 IF~~THEN BEGIN Cit5Ent4
 SAY~Legion Commander and Autharch Ithrash is the local focus of power and Szass' representative in this region. His removal will require their action as those lizard elites and undead forces would be out of control otherwise.~
 =~Ithrash is still searching some thieves that have as well deeply hurt his pride and reputation if I am not mistaken.~
-IF~~THEN REPLY~Let us stick out our fishing rod's then. Let us start at his house we already burglared once.~EXIT
+IF~~THEN REPLY~Let us stick out our fishing rod's then. Let us start at his house we already burgled once.~EXIT
 IF~~THEN REPLY~Are we not escaped criminals from Bezantur's court? A visit to the government district will probably alert the Legion and its leader.~EXIT
 END
 
@@ -617,7 +617,7 @@ IF~~THEN BEGIN RTFPlot1Ide2
 SAY~Absolutely correct, my love. Corpses of people who died a decade ago but obviously not any of those undead we have known before. A battlefield full of orcs and people from the south, but none of the parties have send their troupes up here by now.~
 =~The combatants are all dead without visible injuries and without the masses of blood you would expect from such a battle. Certainly they are not victims of those yeti who have just come down from the mountains after the killing to get their share of the bodies.~
 =~ And finally this strange liquid that all of the creatures had on them...~
-IF~~THEN REPLY~Any conclusions yet, my counselor?~DO~SetGlobal("FoundStuffClon","GLOBAL",2)~ GOTO RTFPlot1Ide3
+IF~~THEN REPLY~Any conclusions yet, my counsellor?~DO~SetGlobal("FoundStuffClon","GLOBAL",2)~ GOTO RTFPlot1Ide3
 END
 
 IF~~THEN BEGIN RTFPlot1Ide3
@@ -684,7 +684,7 @@ END
 IF~Global("RTDockSolution","GLOBAL",1)~THEN BEGIN DockOrph
 SAY~It is not just the information we need from Saemon but also the benefit of Athkatla we must have in mind when solving this problem between Nalia and the Guild.~
 IF~~THEN REPLY~Probably one will not be feasible without the other anyway.~ GOTO DockOrph2
-IF~~THEN REPLY~I would be puzzled if my clever counselor has no solution to propose.~ GOTO DockOrph2
+IF~~THEN REPLY~I would be puzzled if my clever counsellor has no solution to propose.~ GOTO DockOrph2
 IF~~THEN REPLY~Give both sides enough money and they forget about it all. Nalia can feed the poor and Saemon can buy himself a harem or whatever.~ GOTO DockOrph2
 END
 
@@ -701,7 +701,7 @@ IF~~THEN REPLY~Will Saemon agree to that?~DO~SetGlobal("RTDockSolution","GLOBAL"
 END
 
 IF~~THEN BEGIN DockOrph4
-SAY~He will be reasonable enough, I guess. Being on the board of directors for the Charity House will be a first step towards Counsil representation.~
+SAY~He will be reasonable enough, I guess. Being on the board of directors for the Charity House will be a first step towards Council representation.~
 IF~~THEN REPLY~You could have been politician in another life. Sorry, I didn't mean to insult you.~EXIT
 IF~~THEN REPLY~Let's try to sell this package to Saemon then.~EXIT
 END
@@ -719,23 +719,23 @@ END
 
 IF~Global("AskedcandV","LOCALS",1)~THEN BEGIN CanCearq
 SAY~I hope we get to Cerameon's book before someone else does.~
-IF~~THEN REPLY~What is your urgent interest to go to Candlekeep, my learned counselor?~GOTO CanCear1
+IF~~THEN REPLY~What is your urgent interest to go to Candlekeep, my learned counsellor?~GOTO CanCear1
 END
 
 IF~Global("BalApp","rtf020",2)~THEN BEGIN UMOunWarn
 SAY~The ancient graveyard is long unused, <CHARNAME>. It was found to be too dangerous by the Lords of Waterdeep as they soon found an existing connection to the Undermountain caves.~
-IF~~THEN REPLY~What does that imply, my counselor?~DO~SetGlobal("BalApp","rtf020",3)~ GOTO UMOunWarn2
+IF~~THEN REPLY~What does that imply, my counsellor?~DO~SetGlobal("BalApp","rtf020",3)~ GOTO UMOunWarn2
 END
 
 IF~~THEN BEGIN UMOunWarn2
-SAY~ The collector and his allies have chosen it because it is near to the capitale but still undisturbed. But they are not alone down there, these levels hold some other monsters as well that live in these caves since ages.~
+SAY~ The collector and his allies have chosen it because it is near to the capital but still undisturbed. But they are not alone down there, these levels hold some other monsters as well that live in these caves since ages.~
 IF~~THEN REPLY~Let us prepare well, friends, but onward we must go.~EXIT
 IF~~THEN REPLY~We best retreat for the moment and rest before we move deeper.~EXIT
 IF~~THEN REPLY~It is the way we must follow, anyway, we should fill up our supplies before moving on.~EXIT
 END
 
 IF~Global("RTFoundIce","GLOBAL",3)~THEN BEGIN Icycold2
-SAY~This must be a storage area for the Collector's artifacts to preserve them until required for the clone production. The production itself must be performed elsewhere hence the need to freeze the stuff for transport.~
+SAY~This must be a storage area for the Collector's artefacts to preserve them until required for the clone production. The production itself must be performed elsewhere hence the need to freeze the stuff for transport.~
 =~*In a distance you hear the rumbling of heavy doors opening.*~
 IF~~THEN REPLY~Time we find the man himself to answer all these questions, I would say.~DO~SetGlobal("RTFoundIce","GLOBAL",4)~ EXIT
 END
@@ -787,10 +787,10 @@ END
 
 IF~~THEN BEGIN Sarfool2
 SAY~*She looks intensively at you and considers long before she speaks.*~
-=~It will depend on your decision, <CHARNAME>. I am sure the Vaunted Necromancer will fulfill his promise to Sarevok in that he will make him undying - a mighty fighter lich enthralled in his service, a slave without hope to ever die or be redeemed.~
+=~It will depend on your decision, <CHARNAME>. I am sure the Vaunted Necromancer will fulfil his promise to Sarevok in that he will make him undying - a mighty fighter lich enthralled in his service, a slave without hope to ever die or be redeemed.~
 =~You may save him from that fate - and us from trouble of having to fight him again and again.~
 IF~~THEN REPLY~ Maybe we must just destroy his corpse completely so Velsharoon will have nothing to ressurect?~ GOTO Sarfool3
-IF~~THEN REPLY~Why do you say it is my decision, my counselor?~GOTO Sarfool3
+IF~~THEN REPLY~Why do you say it is my decision, my counsellor?~GOTO Sarfool3
 END
 
 IF~~THEN BEGIN Sarfool3
@@ -829,7 +829,7 @@ END
 IF~Global("RTFindCham","GLOBAL",1)~THEN BEGIN NoFit1
 SAY~*Sandrah places her own mystic hammer into the mould of the seal - it does not fit exactly and nothing happens at all.*~
 IF~~THEN REPLY~Looks like only the one which sealed the passage can open it again.~GOTO NoFit2
-IF~~THEN REPLY~And now? The real one was burried with your heroine if I remember well.~ GOTO NoFit2
+IF~~THEN REPLY~And now? The real one was buried with your heroine if I remember well.~ GOTO NoFit2
 END
 
 IF~~THEN BEGIN NoFit2
@@ -1053,7 +1053,7 @@ IF~~THEN REPLY~A logical solution - if that were possible. Even the Goddess of A
 END
 
 IF~~THEN BEGIN TalosendNosae3
-SAY~Right, all true magic originates from the Weave. There is a limited power provided by Shar from the Shadow Wave, but I will put that aside for the moment. The Weave can only be controlled by Mystra and even if other gods grant powers to their followers they can only do it through Mystra. There is no direct access to the Weave by anyone else, since the day Mystril was killed by Karsus.~
+SAY~Right, all true magic originates from the Weave. There is a limited power provided by Shar from the Shadow Wave, but I will put that aside for the moment. The Weave can only be controlled by Mystra and even if other gods grant powers to their followers they can only do it through Mystra. There is no direct access to the Weave by anyone else, since the day Mystryl was killed by Karsus.~
 =~ Afterwards AO gave some of the Weaves energy to Shar, but the majority and the portion used by Faerun's mages, clerics and sorcerers he gave to Mystra.~
 IF~~THEN REPLY~To separate your foe from the source of their magic...we had to eliminate - Mystra.~ GOTO TalosendNosae4
 END
@@ -1122,7 +1122,7 @@ END
 
 IF~Global("Statue","RTF140",1)~THEN BEGIN Statu1
 SAY~*Sandrah studies the statue in front of the temple seemingly lost in her thoughts.*~
-IF~~THEN REPLY~She neither resembles you nor your grandmother...maybe old Mystril?~ GOTO Statu2
+IF~~THEN REPLY~She neither resembles you nor your grandmother...maybe old Mystryl?~ GOTO Statu2
 IF~~THEN REPLY~The original is even more beautiful than that statue.~GOTO Statu2
 END
 
