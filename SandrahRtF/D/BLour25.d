@@ -19,13 +19,13 @@ IF~Global("LouredB","GLOBAL",3)~ THEN BLour25 Lougods1
 ~I do not regret to have left Undermountain. This develops into much more the life I want for myself.~
 DO~SetGlobal("LouredB","GLOBAL",4) RealSetGlobalTimer("LoureedT","LOCALS",1040)~
 ==BSandr25~You were not too happy in the enclave?~
-==BLour25~It was necessary, I learned and grew but I was not truely part of it. Your sister was the only friend I made - she even understood my rejection of Eilistraee.~
+==BLour25~It was necessary, I learned and grew but I was not truly part of it. Your sister was the only friend I made - she even understood my rejection of Eilistraee.~
 ==BSandr25~You follow another god? Surely not the Spider Queen.~
 ==BLour25~I follow no god. Even if Eilistraee is better than Lolth, a society build on faith is weak. Drow will never achieve anything if they depend on such higher powers.~
 ==BSandr25~This may be true for any other religion as well.~
 ==BLour25~(Momentarily the drow seems to be puzzled by those words - from the mouth of a goddess.)~
 =~Travelling in the company of two *gods* I cannot deny their existence but I can doubt their role for us mortals.~
-==BSandr25~Righfully so.~
+==BSandr25~Rightfully so.~
 ==BLour25~You must know best - you may have your reason to play along in their game.~
 ==BSandr25~Be assured I have good reason. I am forever a creature of the Prime regardless of my current power and role.~EXIT
 
@@ -59,10 +59,10 @@ DO~SetGlobal("RTLouPlot","GLOBAL",8)~
 =~There are those who attract their disciples by example and love, those that provide benefits for them and those that rule by - fear.~
 ==BLour25~Lolth cannot allow any drow to escape from her regime. It would encourage others, it would be an example that the fear can be overcome.~
 ==BSandr25~You are right, it is not so much revenge but to constitute an example for others to follow her even more fanatically.~
-==BLour25~Resistance and giving the example is locgically the best way to fight her, like Drizzt, like Solaufein, like Qilandrha...~
+==BLour25~Resistance and giving the example is logically the best way to fight her, like Drizzt, like Solaufein, like Qilandrha...~
 ==BSandr25~...and like you?~
 ==BLour25~Unlike them I would not replace her by another god or goddess, regardless of alignment. The drow must gain the right to decide for themselves.~
-==BSandr25~The spider queen has any reason to persue you. You are dangerous - to her.~
+==BSandr25~The spider queen has any reason to pursue you. You are dangerous - to her.~
 ==BLour25~Just like you and <CHARNAME> are dangerous for the rest of the pantheon - I wonder which of them are aware of this danger?~DO~AddJournalEntry(@2059,QUEST)~EXIT
 
 //Giran tested
@@ -74,7 +74,7 @@ DO~SetGlobal("LouredG","GLOBAL",2) RealSetGlobalTimer("LoureedT","LOCALS",500)~
 ==BLour25~ Do not try to be insolent, do as you are told.~
 ==BGir25~(Sigh) Young orc girls in the heat of their hormones are not that different and I know how to treat them.~
 ==BLour25~You dare to compare me with those *animals*? (Grins wickedly) In the Underdark this answer would have gained you a flogging in the spider web pits - with me it gains you respect.~
-==BGir25~(Laughs) You play your role well - even as I know you are not fond of the ways of your own kin anymore. So here I am just like you begged me to be.~
+==BGir25~(Laughs) You play your role well - even as I know you are not fond of the ways of your own kin any more. So here I am just like you begged me to be.~
 ==BLour25~Fine, you came to your senses after all. Let me take care of that injury now.~DO~
 ReallyForceSpell("CVGiran",CLERIC_HEAL)~EXIT
 
@@ -84,12 +84,12 @@ IF~Global("LouredM","GLOBAL",1)~THEN BLour25 Testmeli
 ~Come here, mageling, I demand it!~
 DO~SetGlobal("LouredM","GLOBAL",2) RealSetGlobalTimer("LoureedT","LOCALS",500)~
 ==RTMeli~Are you trying your drowish domination ways on me, L'Urieet?~
-==BLour25~I treat you like a male needs to be treated! Especially such weaklings that hide behind their toy magics.~
+==BLour25~I treat you like a male needs to be treated! Especially such weaklings that hide behind their toy magic.~
 ==RTMeli~You are a mage yourself - why do you insult our art so?~
 ==BLour25~Are you trying to beat me with intellectual challenge where your weapons fail?~
 ==RTMeli~Intellect and logic can be as sharp as any weapon.~
 ==BLour25~(Grins wickedly) I like that answer, maybe you are not such a weakling.~
-==RTMeli~(Laughs) Even as I know you are not fond of the ways of your own kin anymore, you played your role well - So here I am just like you begged me to be.~
+==RTMeli~(Laughs) Even as I know you are not fond of the ways of your own kin any more, you played your role well - So here I am just like you begged me to be.~
 ==BLour25~Fine you came to your senses after all. Let me give you this scroll for inspection, it is faulty and maybe you can correct it.~DO~ GiveItemCreate("scrl69","RTMeli",1,0,0)~ EXIT
 
 CHAIN

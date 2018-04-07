@@ -60,7 +60,7 @@ END
 
 APPEND Chante2
 IF WEIGHT #-1~Global("Criminal","GLOBAL",99)~THEN BEGIN Nochant
-SAY~No chanting of the prophesy anymore. Love and Hope be with you, friends.~
+SAY~No chanting of the prophesy any more. Love and Hope be with you, friends.~
 IF~~THEN DO~EscapeArea()~EXIT
 END
 END
@@ -78,7 +78,7 @@ END
 
 APPEND  Poghm7
 IF~~THEN BEGIN RTBook
-SAY~It is a very ancient toom that would be kept at the top level of the library, my friend.~
+SAY~It is a very ancient tome that would be kept at the top level of the library, my friend.~
 IF~~THEN EXIT
 END
 END
@@ -98,10 +98,10 @@ IF~Global("RTSarAmb","BG2610",1)~THEN RTSarev NewBoss
 ~My new master will be delighted to learn of your death, my foolish, foolish old friends.~
 DO~SetGlobal("RTSarAmb","BG2610",2)RealSetGlobalTimer("RTAmb","BG2610",30)~
 ==CVSan25J~What did this master promise you to make you pick up your weapon once again to fight <CHARNAME> - and me?~
-==RTSarev~The power and the eternal life that Bhaal had promised but forsaken me, the heritage that has truely be mine all the time.~
+==RTSarev~The power and the eternal life that Bhaal had promised but forsaken me, the heritage that has truly be mine all the time.~
 ==CVSan25J~Eternal life? Hm, there may be a price your new master requires for that. Did you take a close look at him to see what that means?~
-==RTSarev~Ah, so you have met him already, I should have known that, my knowledgable little darling, yes it will be a power like his that awaits me.~
-==CVSan25J~Eternal life as a lich - and you really find that state desireable?~
+==RTSarev~Ah, so you have met him already, I should have known that, my knowledgeable little darling, yes it will be a power like his that awaits me.~
+==CVSan25J~Eternal life as a lich - and you really find that state desirable?~
 ==RTSarev~It is all I have left to desire. The lifeform, the power, the will and ability to destroy - I found my true nature and the master will give it to me.~
 ==CVSan25J~Your *master* has never given to anyone what he has promised. You may have eternal existence but no power, Sarevok. You will be Velsharoon's thrall like anyone else who ever chose to serve the Lich-Lord.~
 ==RTSarev~With the power that <CHARNAME>'s soul will provide me I will be his master once he has served his task.~ DO~Enemy()~

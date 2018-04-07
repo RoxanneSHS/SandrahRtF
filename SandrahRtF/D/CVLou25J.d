@@ -3,7 +3,7 @@ BEGIN CVLou25J
 IF~Global("Loureed900","LOCALS",1)~ THEN BEGIN Templ1
 SAY~A shame to see the money and power spent to crawl before those impertinent power creatures that call themselves *Gods*!~
 IF~~THEN REPLY~(Ignore her).~EXIT
-IF~~THEN REPLY~You do not worship Eilistrae?~ GOTO Templ2e
+IF~~THEN REPLY~You do not worship Eilistraee?~ GOTO Templ2e
 IF~~THEN REPLY~You do not worship Lolth?~ GOTO Templ2l
 IF~~THEN REPLY~You seem to forget you accompany some of them.~ GOTO Templ2u
 END
@@ -37,7 +37,7 @@ END
 
 IF~Global("Loureed900","LOCALS",3)~THEN BEGIN BeatSen1
 SAY~It is no wonder that you defeated all the other Bhaalspawns and were able to rise to godhood. And maybe it is even a valid choice you made.~
-IF~~THEN REPLY~I was never alone, I always had support from comrads who felt like I did.~ GOTO  BeatSen2
+IF~~THEN REPLY~I was never alone, I always had support from comrades who felt like I did.~ GOTO  BeatSen2
 IF~~THEN REPLY~This is a strange thing to say for one who hates all gods.~DO~SetGlobal("Loureed900","LOCALS",4) RealSetGlobalTimer("LoureedT","LOCALS",1000)~GOTO  BeatSen2
 END
 
@@ -55,5 +55,5 @@ DO~SetGlobal("RTLouMiss","LOCALS",2)~
 ==PelligJ~Gods are only dead when their believers desert them. Friends will stay alive as long as we keep their memory and example.~
 ==CVLou25J~By this logic Mystra's neither dead for you nor for me. I'm not a believer but I count myself among Sandrah's friends. I have not lost hope yet.~
 ==PelligJ~There is hope in all she left behind for us. First of all she left us a task to do.~
-==CVLou25J~Count on me to fulfill this task just like she would have done the same for me.~
+==CVLou25J~Count on me to fulfil this task just like she would have done the same for me.~
 ==PelligJ~Be assured she will give you back what you give for her now.~EXIT

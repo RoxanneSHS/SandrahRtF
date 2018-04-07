@@ -14,7 +14,7 @@ END
 
 APPEND CVSan25J
 IF~~THEN BEGIN Tour2
-SAY~Dummy, every town in Thay has such a citadel housing the local zulkir and his legions. This one was the stronghold of the infamous Aznar Thrull. Today it is a tourist attraction we should not waste our time with.~
+SAY~Dummy, every town in Thay has such a citadel housing the local Zulkir and his legions. This one was the stronghold of the infamous Aznar Thrull. Today it is a tourist attraction we should not waste our time with.~
 IF~~THEN REPLY~And *our* citadel?~GOTO Tour3
 END
 
@@ -26,7 +26,7 @@ IF~~THEN REPLY~We have seen pretty little of the red or the cowled wizards so fa
 END
 
 IF~~THEN BEGIN Tour4
-SAY~Others than those directly surrounding Szass Tam will probably be at the REAL new center of this town, the allmighty Guild of Foreign Trade. The headquarter is at the far east end of the Harbour in its own complex.~ 
+SAY~Others than those directly surrounding Szass Tam will probably be at the REAL new center of this town, the almighty Guild of Foreign Trade. The headquarters are at the far east end of the Harbour in its own complex.~ 
 IF~~THEN DO~SetGlobal("OpenE","RTF060",1)~EXIT
 END
 
@@ -84,7 +84,7 @@ END
 
 IF~AreaCheck("RTF094")~THEN BEGIN Brew1
 SAY~What about a drink of the best brew east of the West, friends?~
-IF~~THEN REPLY~Sure, there's nothing better than true craftmanship.~GOTO Brew2
+IF~~THEN REPLY~Sure, there's nothing better than true craftsmanship.~GOTO Brew2
 IF~~THEN REPLY~Eh, we'd better keep sober and ready for action.~ GOTO Brew2
 END
 
@@ -260,7 +260,7 @@ END
 
 BEGIN RTNOBL3
 IF~AreaCheck("RTF050")~THEN BEGIN Ooops
-SAY~Oulanders, bastards, scum, aaargh...~
+SAY~Outlanders, bastards, scum, aaargh...~
 IF~~THEN DO~SetGlobal("NobleDopple","GLOBAL",1)~EXIT
 END
 
@@ -354,7 +354,7 @@ END
 APPEND Smith
 IF WEIGHT #-1~AreaCheck("RTF060")~THEN BEGIN NoSell
 SAY~It is not permitted to sell weaponry to outlanders here in Thay.~
-IF~~THEN REPLY~I see, nevermind.~ EXIT
+IF~~THEN REPLY~I see, never mind.~ EXIT
 IF~~THEN REPLY~You must be joking, man, you can buy everything in Thay for just the right price.~GOTO NoSell2
 END
 
@@ -388,7 +388,7 @@ IF~~THEN REPLY~ What have you brought along to this place? ~ GOTO 2
 END
 
 IF~~THEN BEGIN LazThay2
-SAY~This town really has an enourmous need in spells and magical items. They hate Mystra as much as she seems to hate them but the red wizards seem to manage to get along somehow.~
+SAY~This town really has an enormous need in spells and magical items. They hate Mystra as much as she seems to hate them but the red wizards seem to manage to get along somehow.~
 IF~~THEN REPLY~ Now we know you are here we may return to buy something.~GOTO 3
 IF~~THEN REPLY~ What have you brought along to this place? ~ GOTO 2
 END
@@ -427,4 +427,4 @@ CHAIN
 IF WEIGHT #-7~GlobalGT("SanBeginRTF","Global",1)~ THEN Cowenf2 InRtFwrong
 ~The practice of magic without a license is forbidden in this city. You shall receive one warning only. Further spellcasting will result in your death.~
 ==CVSan25J~Really?~
-==Cowenf2 ~Eh...? Gosh, those old habbits are hard to kill.~DO~ForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+==Cowenf2 ~Eh...? Gosh, those old habits are hard to kill.~DO~ForceSpell(Myself,DRYAD_TELEPORT)~EXIT

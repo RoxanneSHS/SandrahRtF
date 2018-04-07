@@ -8,8 +8,8 @@ DO~SetGlobal("SanRTFGiranOK","GLOBAL",1)~
 ==Giran25~ I hope it's not just sweet words and you are actually here to help. And...~
 ==CVSan25J~And...?~
 ==Giran25~I hope your remark about my fighter appearance was meant in earnest. (Blushes) I have gained already some reputation with the berserkers of Hai 'Ulthak.~
-==CVSan25J~I see where this leads, my brave boy. It is time for your djahemma. With the Neutral Zone protecting the Clan lands it is also a kind of barrier for the adventurer to proof himself.~
-==Giran25~Your reputation is well earned, wise Sandrah. But with the prospect of companions like you and <CHARNAME> my parents cannot deny it to me anymore.~
+==CVSan25J~I see where this leads, my brave boy. It is time for your dajemma. With the Neutral Zone protecting the Clan lands it is also a kind of barrier for the adventurer to proof himself.~
+==Giran25~Your reputation is well earned, wise Sandrah. But with the prospect of companions like you and <CHARNAME> my parents cannot deny it to me any more.~
 END
 ++~We will see what can be done, once we talked to your mother.~EXIT
 
@@ -37,7 +37,7 @@ END
 
 CHAIN
 IF~~ THEN Giran25 Join
-~My djahemma has thus begun. Thank you, <CHARNAME>.~
+~My dajemma has thus begun. Thank you, <CHARNAME>.~
 ==CVShauq IF~AreaChecK("CVRTF8") Global("Gavebow","LOCALS",0)~THEN~My son, my heart, I will not let you go without a gift to protect you and bring you back unharmed. May your foe fall before you.~
 ==Giran25 IF~AreaChecK("CVRTF8") Global("Gavebow","LOCALS",0)~THEN~Your famous bow, Mother? But...you may need it...~
 ==CVShauq IF~AreaChecK("CVRTF8") Global("Gavebow","LOCALS",0)~THEN~I have not used it except to hunt deer now for ten summers. It belongs in the hands of a ranger who fights for the Clan. Now move, boy, there are deeds to be done.~

@@ -16,7 +16,7 @@ IF~~THEN EXIT
 END
 
 IF~!AreaCheck("RTF110") RandomNum(4,4)~THEN BEGIN SailT4
-SAY~Saemon put that blind passenger out into the lifboat on a long line. Nobody can listen to that maroon and not get mad.~
+SAY~Saemon put that blind passenger out into the lifeboat on a long line. Nobody can listen to that maroon and not get mad.~
 IF~~THEN EXIT
 END
 
@@ -80,7 +80,7 @@ CHAIN
 IF~AreaCheck("RTF098") Global("Myrescue","LOCALS",0)~ THEN RTShaj Resc1
 ~You may want to know more about me as we travel together now, don't you?~
 DO~SetGlobal("Myrescue","LOCALS",1) ~
-==CVSan25J~You know Saemon for longer already, Shaleji?~
+==CVSan25J~You know Saemon for longer already, Shaleij?~
 ==RTShaj~He came to Bezantur a few times and we met in my master's house or at Samas guild when there were feasts and I had to entertain the men.~
 =~He was different - he really cared, I was a person not a toy for him...~
 ==CVSan25J~You were Autharch Ithrash's slave?~
@@ -88,7 +88,7 @@ DO~SetGlobal("Myrescue","LOCALS",1) ~
 ==CVLey25J IF~InParty("Leyala")~THEN~Poor girl, to be forced to do what should be a great pleasure for any woman.~
 ==RTShaj IF~InParty("Leyala")~THEN~Not as bad as you think. The harder they come the bigger they fall, you know, just in Ithrash's case *hard* is not the right word, hihi.~
 ==RTShaj~Saemon treated me kindly and showed me feelings I never had before.~
-==CVSan25J~You should be safe now, unless Ithrash cares so much for you to mobilize a fleet to persue you.~
+==CVSan25J~You should be safe now, unless Ithrash cares so much for you to mobilize a fleet to pursue you.~
 ==RTShaj~He may not care much for me - but he gets extremely upset when he sees a threat to his *possessions*.~
 ==CVSan25J~No man can own another as possession.~
 ==RTShaj~In Thay they would hang you for such opinions.~

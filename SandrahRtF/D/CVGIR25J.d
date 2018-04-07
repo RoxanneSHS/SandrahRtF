@@ -12,7 +12,7 @@ IF~~THEN REPLY~Do you think they are better fighters than the southern men?~  GO
 END
 
 IF~~THEN BEGIN Orcask2
-SAY~ They set the wellfare of their loved ones and their family above all, next comes their loyalty to the Clan and the Queen. They are steadfast and unbending when it comes to these values.~
+SAY~ They set the welfare of their loved ones and their family above all, next comes their loyalty to the Clan and the Queen. They are steadfast and unbending when it comes to these values.~
 IF~~THEN EXIT
 END
 

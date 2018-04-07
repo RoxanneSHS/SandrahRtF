@@ -53,7 +53,7 @@ END
 CHAIN
 IF ~~THEN CVSan25J  ReturnClkw3
 ~Not by her own choice as it sounds to me.~
-==Cythan~You are surely not in a position to free her. I am not without my defenses, <CHARNAME>.  I am a conjurer of some proficiency as you should remember.  Come, my minions, make short work of these intruders!~
+==Cythan~You are surely not in a position to free her. I am not without my defences, <CHARNAME>.  I am a conjurer of some proficiency as you should remember.  Come, my minions, make short work of these intruders!~
 DO~CreateCreature("ARGHH",[1680.927],1) CreateCreature("ARGHH",[2281.957],4)CreateCreature("UGHH",[1988.1533],8) CreateCreature("UGHH",[2191.1122],1)
 Enemy()~EXIT
 
@@ -66,7 +66,7 @@ DO~SetGlobal("RTCloakwood","GLOBAL",8) ~
 =~I wandered the woods alone seeking my peace. I came out of the shadow that I inherited.~
 =~The Great Mother finally led me back to the Cloakwood where I found some peaceful druids who took me in without too many questions.~
 ==CVSan25J~What happened to them?~
-==Faldor~The crazy sorceress and her even more crazy wyvern tamer slaughtered all in sleep with only me escaping to this treehouse. I defended this last stand but it is as well my prison now.~
+==Faldor~The crazy sorceress and her even more crazy Wyvern tamer slaughtered all in sleep with only me escaping to this treehouse. I defended this last stand but it is as well my prison now.~
 END
 ++~You are free to go, druid, we have defeated the intruders.~ + InRTFCL2
 ++~As you have left the shadow druids, why don't you come with us?~ + InRTFCL2

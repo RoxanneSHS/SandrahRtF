@@ -40,7 +40,7 @@ END
 
 IF~GlobalGT("SanRTFPlot1","GLOBAL",4)~THEN BEGIN NoFight
 SAY~What is it again, citizens. The garrison is off limits for your kind.~
-IF~~THEN REPLY~The discurs has been settled, Saemon will become part of the local authority and board member of the Charity House soon to be established here in the docks. Nalia has sealed his appointment, see.~ GOTO NoFight2
+IF~~THEN REPLY~The discourse has been settled, Saemon will become part of the local authority and board member of the Charity House soon to be established here in the docks. Nalia has sealed his appointment, see.~ GOTO NoFight2
 END
 
 IF~~THEN BEGIN NoFight2

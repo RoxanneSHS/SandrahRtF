@@ -8,7 +8,7 @@ DO~SetGlobal("PellGir","LOCALS",2)~
 ==Bizy25~Grrrr, you will see in a second how a human girl can turn into a panther and rip you to shreds an' I dont give no damn if that looks graceful to you or not!!~
 ==BGir25~ Izzy? Is that jealousy? I was just expressing a ranger's admiration for a beautiful creature...~
 ==Bizy25~*Smack*. Has your nature observation taught you nuthin, drooling orc? Give her another look and I will digest your eyeballs with no need for a pinch of salt or spice.~
-==BGir25~*Grins vicously*. You are a real hot red head, my lovely.~
+==BGir25~*Grins viscously*. You are a real hot red head, my lovely.~
 ==Bizy25~YOU...wait...I know that grin...you...oh, you try to play games with ol' Izzy gettin me all hot and jealous for ya entertainment!~
 ==BGir25~*Laughs*. Now that your blood is so hot and boiling, how about some entertainment for just the two of us?~
 ==Bizy25~You want a wildcat - you will get one!~

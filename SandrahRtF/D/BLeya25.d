@@ -59,7 +59,7 @@ CHAIN
 IF~Global("RTLeyGir","LOCALS",1)~ THEN BLeya25 Giran1
 ~This is the land where you grew up, Giran?~
 DO~SetGlobal("RTLeyGir","LOCALS",2)~
-==BGir25~Yes, even if I were born in Bergost it is this land I call my home and I feel at home. Do you like it?~
+==BGir25~Yes, even if I were born in Beregost it is this land I call my home and I feel at home. Do you like it?~
 ==BLeya25~It is cold and rough but it has its beauty. It is cold and rough like its inhabitants and very unlike yourself.~
 ==BGir25~You think so?~
 ==BLeya25~You are very calm, gentle - I see how you care for your little animal. It is hard to imagine you being happy among the Clan Orcs.~
@@ -68,8 +68,8 @@ DO~SetGlobal("RTLeyGir","LOCALS",2)~
 ==BGir25~Wild, proud and unkempt. (Laughs) When they want you there is little chance of resistance and when they want you they swallow you whole...~
 ==BLeya25~Are you talking out of experience?~
 ==BGir25~Hm, I was able to fight them off until now. Not many want me anyway, even - it gets harder now that I really have a berserker's reputation. I am afraid some strong ones have detected me...~
-==BLeya25~But...your djahemma - it is not that you are running away, I cannot imagine such a thing from you?~
-==BGir25~I would not call it running away, but a good fighter must know when to battle and a good ranger must know when to hide. When I meet a strong grizzly bear I hide - not out of fear as I could most likely kill the beast - but because it is a senseless fight that I can easily avoid. There is no need for unnessesary hurt, in the end a bear is not my foe but a creature to be respected.~
+==BLeya25~But...your dajemma - it is not that you are running away, I cannot imagine such a thing from you?~
+==BGir25~I would not call it running away, but a good fighter must know when to battle and a good ranger must know when to hide. When I meet a strong grizzly bear I hide - not out of fear as I could most likely kill the beast - but because it is a senseless fight that I can easily avoid. There is no need for unnecessary hurt, in the end a bear is not my foe but a creature to be respected.~
 ==BLeya25~Those orc girls won't accept a *no* from you?~
 ==BGir25~I am not sure, Leyala, it does not happen, young orcs will not do that - I mean they just...~
 ==BLeya25~They listen to their basic instincts rather than to their heart?~
@@ -86,7 +86,7 @@ DO~SetGlobal("RTLeyGir","LOCALS",4)~
 ==BLeya25~I am glad if you would. It may avoid misunderstanding.~
 ==BGir25 IF~Global("SanRomPath","GLOBAL",1)~THEN~Maybe - I am not so sure I understand what a nun's service in the name of the God of Love would encompass. ~
 ==BGir25 IF~Global("SanRomPath","GLOBAL",2)~THEN~Maybe - I am not so sure I understand what a nun's service in the name of the Goddess of Love would encompass.~
-==BLeya25~Now I am really glad you have asked. Chastity is not on our agenda but we are no temple whores or such. I advise couples who may have problems with their partner, I show them how they may get happy with each other. I help unexperienced youngsters to overcome their fears of the other gender. Such is how I show people the joy of loving each other.~
+==BLeya25~Now I am really glad you have asked. Chastity is not on our agenda but we are no temple whores or such. I advise couples who may have problems with their partner, I show them how they may get happy with each other. I help inexperienced youngsters to overcome their fears of the other gender. Such is how I show people the joy of loving each other.~
 ==BGir25~But it requires more than just words...at times?~
 ==BLeya25~It may, it is up to the counselling nun to decide that on her own.~
 ==BGir25~Can you do that without your heart being in it?~

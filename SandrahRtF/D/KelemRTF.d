@@ -26,10 +26,10 @@ DO~SetGlobal("TazHelp","RTF120",1)~
 
 CHAIN 
 IF WEIGHT #-4~Global("SanRTFPlot4","GLOBAL",2) NumTimesTalkedTo(0)~THEN Firkra02 Kelem2
-~The old game had a winner as it turned out. The black blood was powerful even if now you follow another path. Gorion, the old fool and his mad croony Elminster were right in the end.~
-==CVSan25J~What has given YOU the priviledge to be here instead of the abyss, where I would expect such an evil creature like you belongs?~
+~The old game had a winner as it turned out. The black blood was powerful even if now you follow another path. Gorion, the old fool and his mad crony Elminster were right in the end.~
+==CVSan25J~What has given YOU the privilege to be here instead of the abyss, where I would expect such an evil creature like you belongs?~
 ==Firkra02~You don't know the answer, you who estimate your own knowledge so high, hahaha??~
-=~It's the priviledge of my old race, older than you fledgling gods of the High Fool Ao. We have inherited the right to choose our own place...I have all the fire I need inside so I decided to wait here - FOR YOU!~DO~Enemy()~EXIT
+=~It's the privilege of my old race, older than you fledgling gods of the High Fool Ao. We have inherited the right to choose our own place...I have all the fire I need inside so I decided to wait here - FOR YOU!~DO~Enemy()~EXIT
 
 CHAIN
 IF~AreaCheck("RTF120") Dead("RTSarev") Global("SarevT","RTF120",1)~THEN RTSarev Kelem3
@@ -45,7 +45,7 @@ IF~AreaCheck("RTF120") !Dead("RTSarev")Global("SarevT","RTF120",1)~THEN RTSarev 
 ~It is not your deeds or your mercy that have brought me to this place, <CHARNAME>. I would still be in Velsharoon's slavery by your decision.~
 DO~SetGlobal("SarevT","RTF120",2)~
 ==CVSan25J~The Vaunted Lich has not forgiven you your failure at Candlekeep?~
-==RTSarev~He just laughted and left me for dead. Kelemvor himself it was who showed mercy and saved me from the Abyss. He decreed my innocence to what Bhaal's blood had caused me to do. Not everyone has the guidance and strength to follow the path that was open to <CHARNAME>. Only one of the spawns was ever offered this perspective.~
+==RTSarev~He just laughed and left me for dead. Kelemvor himself it was who showed mercy and saved me from the Abyss. He decreed my innocence to what Bhaal's blood had caused me to do. Not everyone has the guidance and strength to follow the path that was open to <CHARNAME>. Only one of the spawns was ever offered this perspective.~
 ==CVSan25J~(Mumbles) Actually two, even the gods were always unaware of Qilandrha. Well done, father.~
 ==RTSarev~I don't owe you, but I will help you to survive the attacks of those you have fallen by your hands to gain my eternal stay in Kelemvor's Realm. Shall I be your ally on this level?~
 END
@@ -62,7 +62,7 @@ IF~AreaCheck("RTF121") Global("Bodhimeet","RTF121",0)~THEN RTBodhi KelemBo
 =~...it is good practice, you know. Practice for a day like this, when prey is delivered to our doorstep.~
 DO~SetGlobal("Bodhimeet","RTF121",1)~
 ==CVSan25J~Sendai is here as well? You are right, the abyss is the place I would have expected you to be.~
-==RTBodhi~I received this doubtful last present from my beloved brother, that enduring fool. His silly fluttering new wife must have given him those demented ideas about forgiving and repention. He is lost forever it seems.~
+==RTBodhi~I received this doubtful last present from my beloved brother, that enduring fool. His silly fluttering new wife must have given him those demented ideas about forgiving and repentance. He is lost forever it seems.~
 END
 ++~I propose to accept your brother's gift, Bodhi, otherwise our meeting here will end like all others before.~+ Kelembo1
 ++~Your brother may be forgiving these days - I am not. I still remember what you did to my *sister* Imoen.~+ Kelembo1
@@ -79,7 +79,7 @@ IF~AreaCheck("RTF121") Global("Sendmeet","RTF121",0)~THEN RTSenda KelemSe
 =~Only a newcomer or a complete fool would dare to come to our level here.~
 DO~SetGlobal("Sendmeet","RTF121",1)~
 ==CVLOU25J IF~InParty("Loureed")~THEN~I was a bit astonished to hear about your presence here from that vampire.~
-==RTSenda IF~InParty("Loureed")~THEN~Is that how my seed has misgrown? So you're a mercenary for the greatest fool in the multiverse, the one to reject our father's powers for the love and hope set in a falling goddess.~
+==RTSenda IF~InParty("Loureed")~THEN~Is that how my seed has turned to aberration? So you're a mercenary for the greatest fool in the multiverse, the one to reject our father's powers for the love and hope set in a falling goddess.~
 ==CVLOU25J IF~InParty("Loureed")~THEN~You are here today as the result of a series of your own errors. I am not sure whether I am proud to be at the side of the ones who teach you another lesson or ashamed that I do feel nothing for my *mother*, not even hatred. You are already dead and gone for me and you will stay that way - you are no part of my life.~
 ==CVSan25J~We heard that Bodhi was spared the descent to the Abyss by a good word from her brother Irenicus. Who may your advocat have been?~
 ==RTSenda~Are you really so dumb that you have to ask?~
@@ -98,12 +98,12 @@ IF~Global("SanRTFPlot4","GLOBAL",2) ~ THEN RTKelem Ally1
 DO~SetGlobal("SanRTFPlot4","GLOBAL",3)~
 ==CVSan25J~Greetings, Kelemvor. I have not chosen any of those battles that have filled your realm, nor do I seek further confrontation. I do what cannot be avoided.~
 =~Still those that are due for you are yours after the battle is fought - a fact that separates me from my enemies.~
-==RTKelem~Other gods define their power and impact by the number of their followship. Mine comes from the souls I receive.~
+==RTKelem~Other gods define their power and impact by the number of their followers. Mine comes from the souls I receive.~
 ==CVSan25J~This may not be the case for all future. Those that deny to the Lord of the Dead what is rightfully his are getting stronger and their hunger and greed grows daily.~
 ==RTKelem~There have always been necromancers and other gods who have taken their share from my harvest, just like mice pick some grains from the farmers.~
 ==CVSan25J~One party has decided to tip the scales of the balance to their side recently. A new sort has appeared led by Velsharoon...~
 ==RTKelem~Ah, that scheming fool, pet dog of the idiot Talos, he has always loathed me for opposing the abnormal undead and liches that are his domain. Have you come to tell me old stories, Mystra. I have expected more from you, given the bloodline you come from.~
-==CVSan25J~The pet has freed himself from the leash. He has found a wolfish teacher, one whose hunger is unsateable. Szass Tam is no mouse that picks the eventual grain to survive. He has in mind an empire built by his undead, his clones and his liches. Nothing more for you to harvest regardless how many losses his great battles might bring.~
+==CVSan25J~The pet has freed himself from the leash. He has found a wolfish teacher, one whose hunger is insatiable. Szass Tam is no mouse that picks the eventual grain to survive. He has in mind an empire built by his undead, his clones and his liches. Nothing more for you to harvest regardless how many losses his great battles might bring.~
 ==RTKelem~Hm, Szass Tam - Thay...the stream of new souls from there has indeed reduced to a rivulet. I had guessed they might have found peace after all this time of constant war.~
 ==CVSan25J~Just the opposite, Kelemvor, they build new armies of clones and undead to fight the Realms - and the Gods.~
 ==RTKelem~I will not partake in any of those foolish quarrels you celestials have all the time. If you came for an ally you came to the wrong place, do not insult me with your proposals.~
@@ -118,7 +118,7 @@ IF~Global("Velshf","RTF340",2)~ THEN RTVelsh Firew1
 ~What has happened...this is not where I wanted to go??~
 DO~SetGlobal("Velshf","RTF340",3) RealSetGlobalTimer("VelshFT","RTF340",120)RealSetGlobalTimer("VelshVul","LOCALS",100)~
 ==RTKelem~I have summoned you here, Vaunted...~
-==RTVelsh~You dare to call me such to my face, skelleton?~
+==RTVelsh~You dare to call me such to my face, skeleton?~
 ==RTKelem~I dare even more, necrophant - I dare to stop your excessive leeching of what rightfully belongs to the End of All.~
 ==RTVelsh~Kelemvor!!~
 ==RTKelem~This place I choose as it has seen the folly and the end of those who aimed to rule more than they were supposed to.~

@@ -20,8 +20,8 @@ IF~Global("RtFIzGir","GLOBAL",3)~ THEN Bizy25 IzGir2
 ~Eeek, why do you carry that rat around, Giran? Is that your orc meal or what?~
 DO~SetGlobal("RtFIzGir","GLOBAL",4)~
 ==BGir25~Meal? Are you crazy, Izzy! Boola is my hamster like every good berserker has one.~
-==Bizy25~Aye...I seee...I remember mama told me about that once - a pangalactic space traveller hamster or something like that, right?~
-==BGir25~Pangalactic what? Izzy, you are really strange sometimes. Boola is just a little hamster lady.~
+==Bizy25~Aye...I seee...I remember mama told me about that once - a pan-galactic space traveller hamster or something like that, right?~
+==BGir25~Pan-galactic what? Izzy, you are really strange sometimes. Boola is just a little hamster lady.~
 ==Bizy25~Then why does such a fearless warrior like you carry her around?~
 ==BGir25~Every berserker takes care of such a small creature. It shows that he can take responsibility for the safety of those who cannot defend themselves like the women and children.~
 ==Bizy25~Hm, not so stupid then, me guesses - even...I cant hardly imagine you with the orc girls, really...~
@@ -59,7 +59,7 @@ CHAIN
 IF~ Global("RtFIzGir","GLOBAL",9)~ THEN Bizy25 IzGirHeal
 ~Now hold still and let Izzy treat that, my orc prince boy...~
 DO~SetGlobal("RtFIzGir","GLOBAL",10)~
-==BGir25~Treat what? *He looks bewildered at the hankerchief Izzy has retrieved and starts to wet with her spittle*.~
+==BGir25~Treat what? *He looks bewildered at the handkerchief Izzy has retrieved and starts to wet with her spittle*.~
 ==BIzy25~That bleeding wound of yours, of course, there...on your brow.~
 ==BGir25~That's nothing...~
 ==BIzy25~Psst. *She begins to rub eagerly, smearing the blood from the small cut on Giran's brow all over his cheek.* ~
@@ -108,7 +108,7 @@ DO~SetGlobal("RtFIzGir","GLOBAL",14) RealSetGlobalTimer("IzGirRomTime","LOCALS",
 =~*She points at the river* - This water. ~
 =~*She pokes her finger into Giran's breast* - This smelly dirty fighter orc.~
 =~*She elegantly lets her tunic slide from her body and points at herself.* - This is girl who wants clean nice boy at her side.~
-=~*Her quick dexterious thief's fingers open and remove Giran's armour in a second.* - Time for a bath, come on, slowpoke.~
+=~*Her quick dexterous thief's fingers open and remove Giran's armour in a second.* - Time for a bath, come on, slowpoke.~
 ==BGir25~*There is no obvious resistance from the naked ranger as Izzy drags him by the hand down towards the river where they both splash laughing into the ripples.*~ DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
@@ -141,7 +141,7 @@ DO~SetGlobal("Izzypink","RTF057",2)~
 ==CVSan25J~One thing about Thay that has to be respected is that they know what quality is worth in clothes.~
 ==Bizy25~Watcha think, cleverest Sandrah, can we put dem red robes out in the sun to bleach'em to pink?~
 ==CVSan25J~We probably have not enough time to stay in one place and wait for the miracle to happen...~
-==Bizy25~THERE!!!! PINK BOOTS!!! (Points exitedly at a store table.)~
+==Bizy25~THERE!!!! PINK BOOTS!!! (Points excitedly at a store table.)~
 =~(Sigh) If I had just a prince boy who cared much and much for me and enough to buy them...~
 ==CVGir25J IF~InParty("CVGiran")~ THEN~There is quite enough pink on you already, little hamster. And those slippers you wear show your delicate feet very well, why hide them in boots?~
 ==Bizy25 IF~InParty("CVGiran")~ THEN~Gee, was that a compliment? My orc prince, what's gotten into you? Can it be repeated and done again?~
@@ -178,7 +178,7 @@ IF~Global("RTIzCow","RTF081",1)~THEN Bizy25 Cowstamp
 DO~SetGlobal("RTIzCow","RTF081",2)~
 ==CVGir25J~You refer to that stampede we once encountered?~
 ==Bizy25~If they'd knowed how many of their kind I've eaten already they might get some weird ideas, dontcha think?~
-==CVGir25J~Maybe you should consider your eating habbits, my hamster. Just in case you encounter some of them without a fence...~
+==CVGir25J~Maybe you should consider your eating habits, my hamster. Just in case you encounter some of them without a fence...~
 ==Bizy25~...or without my strong fearless protector, eh? (She clings to Giran's arm playing the helpless little girl she surely is not.)~
 ==CVGir25J~I propose to make sure that your boy is always near, how about that?~
 ==Bizy25~Isn't that what I do and do each 'n' every day? (Kisses him.) We need more cows and moose on Faerun so you cant leave me unprotected for the shortest moment.~EXIT
