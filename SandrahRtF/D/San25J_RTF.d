@@ -904,18 +904,18 @@ IF~~THEN REPLY~We are underground - who knows how deep below the surface we are.
 END
 
 IF~~THEN BEGIN Hotseal2
-SAY~To run such an installation like the portal that transports large groups of creatures over large distances it would require an enourmous supply of energy.~
+SAY~To run such an installation like the portal that transports large groups of creatures over large distances it would require an enormous supply of energy.~
 =~As we can exclude wind or water down here it would probably be the heat of the lava that was used.~
-IF~~THEN REPLY~Thank you for the warning, counselor. We should continue with the necessary caution.~EXIT
+IF~~THEN REPLY~Thank you for the warning, counsellor. We should continue with the necessary caution.~EXIT
 END
 
 IF~Global("CyricNear","RTF049",1)~THEN BEGIN Steelcoffin1
-SAY~We must be below a Thayan City already, <CHARNAME>, I have read about those iron coffin cemetries in Thay.~
+SAY~We must be below a Thayan City already, <CHARNAME>, I have read about those iron coffin cemeteries in Thay.~
 IF~~THEN REPLY~This does not look like a cemetery to me?~ DO~SetGlobal("CyricNear","RTF049",2)~GOTO Steelcoffin2
 END
 
 IF~~THEN BEGIN Steelcoffin2
-SAY~It is not the avarage way for the Thay to bury their dead, it is exclusively for some circles of the red wizards. They preserve their dead and seal them in these steel tanks in the floor to re-animate them when they think they are needed again. One of their necromantic practices that I find so disgusting.~
+SAY~It is not the average way for the Thay to bury their dead, it is exclusively for some circles of the red wizards. They preserve their dead and seal them in these steel tanks in the floor to re-animate them when they think they are needed again. One of their necromantic practices that I find so disgusting.~
 IF~~THEN REPLY~Do you know which city this could be?~ GOTO Steelcoffin3
 IF~~THEN REPLY~Which god, if not Mystra, blesses these dead?~ GOTO Steelcoffin3
 END
@@ -927,13 +927,13 @@ END
 
 IF~Global("RT78BoHi","RTF078",1)~THEN BEGIN Scales1
 SAY~This seems to be the control room for the portal in some way.~
-IF~~THEN REPLY~This book here speaks of *...place the artifact left of you and put your right hand on the scales...*. Which artifact?~ GOTO Scales2
+IF~~THEN REPLY~This book here speaks of *...place the artefact left of you and put your right hand on the scales...*. Which artefact?~ GOTO Scales2
 IF~~THEN REPLY~ I think we must destroy it somehow.~ GOTO Scales2
 IF~~THEN REPLY~ This will be our way back home if we find out to handle it.~ GOTO Scales2
 END
 
 IF~~THEN BEGIN Scales2
-SAY~ The only artifact we found until now that manipulates those gates is the symbol from Sarevok. I am afraid it will be harder to find the hand that is the second ingredient. The owner might not be willing to co-operate with us.~
+SAY~ The only artefact we found until now that manipulates those gates is the symbol from Sarevok. I am afraid it will be harder to find the hand that is the second ingredient. The owner might not be willing to co-operate with us.~
 IF~~THEN REPLY~ An interesting aspect, my counselor. You have some more ideas about this installation?~DO~SetGlobal("RT78BoHi","RTF078",2) SetGlobal("RT78BoHi","LOCALS",2)~ GOTO Scales3
 END
 
@@ -1243,7 +1243,7 @@ DO~SetGlobal("RTFoundIce","GLOBAL",2)~
 ==CVLou25J IF~InParty("Loureed")~THEN~In the Underdark it gets warmer the deeper you venture - this here is a perversion.~
 ==CVSan25J~This is some unnatural type of cold as if somebody has a need to keep things frozen down here.~
 END
-++~I'm afraid that's what they do. Probably the artifacts they need to produce clones. Let us take a look.~EXIT
+++~I'm afraid that's what they do. Probably the artefacts they need to produce clones. Let us take a look.~EXIT
 ++~They need to preserve those fingers and hair and so on from decay until it's time to make a clone out of it.~EXIT
 
 CHAIN
