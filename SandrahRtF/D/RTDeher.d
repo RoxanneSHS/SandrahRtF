@@ -18,7 +18,7 @@ IF~~THEN RTElles InRTF2
 ==RTElles~Suldanessalar will pay its debt even if I do not know what we may offer you to assist.~
 ==RTDeher~My queen, will you allow me to pay the debt of our city as well as my own personal one. Should <CHARNAME> agree I will be happy to follow <PRO_HIMHER> and stand by <PRO_HIMHER> and <PRO_HISHER> companions as one of them.~
 END
-++~I am glad for this offer, Deheriana. I will be honored by your company.~ EXTERN RTDeher Deherjoin
+++~I am glad for this offer, Deheriana. I will be honoured by your company.~ EXTERN RTDeher Deherjoin
 ++~I thank you for your good will, Deheriana. I have reconsidered my request and now agree with your queen - I should not involve you, your city, or the elves in our struggle. Fare well.~ EXTERN RTDeher Deherstay
 
 CHAIN
