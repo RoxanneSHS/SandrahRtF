@@ -958,13 +958,13 @@ END
 
 IF~~ THEN BEGIN Candr3
 SAY~Yes, she is a priestess and a Chosen of Mystra, born the illegitimate daughter of a murdered zulkir of Thay. She had to flee from Thay as a child from the regime of Szass Tam and was educated at the temple of Waterdeep.~
-=~She has volunteered to return to her home country and is a member of the Thayan underground opposition who call themself the *Red Hoods*.~ 
+=~She has volunteered to return to her home country and is a member of the Thayan underground opposition who call them self the *Red Hoods*.~ 
 IF~~THEN REPLY~They sound to me like the people we should get in contact with.~ GOTO Candr4
 IF~~THEN REPLY~You have your secret agent here in town, I would say.~GOTO Candr4
 END
 
 IF~~ THEN BEGIN Candr4
-SAY~The issue will be that we cannot just go to a meeting point and address them. They are a secret organisation, constantly having to conceil identity and location from the red wizards and the authorities controlled by them. ~
+SAY~The issue will be that we cannot just go to a meeting point and address them. They are a secret organisation, constantly having to conceal identity and location from the red wizards and the authorities controlled by them. ~
 =~They will soon know we are here. They will get it touch with us when they decide it is safe, we need to wait for their move.~
 IF~~THEN REPLY~So let's explore the town and see what we can do on our own until we get a call from the Red Hoods, if that happens at all.~DO~SetGlobal("SanPlot3","GLOBAL",1) AddJournalEntry(@2062,QUEST)~EXIT
 END
@@ -981,20 +981,20 @@ IF~~THEN REPLY~You said that. And? ~DO~SetGlobal("RTMetCandre","GLOBAL",3)~GOTO 
 END
 
 IF~~THEN BEGIN Candrow3
-SAY~Her father could never marry her mother even though he truely loved her because of the Thay laws and traditions versus the mother's race.~
-=~Her mother was a drow who came to Bezantur as a slave. The zulkir fell in love with her and freed her but could never make their liason official.~
+SAY~Her father could never marry her mother even though he truly loved her because of the Thay laws and traditions versus the mother's race.~
+=~Her mother was a drow who came to Bezantur as a slave. The Zulkir fell in love with her and freed her but could never make their liason official.~
 IF~~THEN REPLY~A drow - wait...that hooker...?~ GOTO  Candrow4
 END
 
 IF~~THEN BEGIN Candrow4
-SAY~...was Candrella. She had to use a disguise to contact us, even if the one she chose still was quite a risk. Now we need to find the entry for which we received the wardstone.~
+SAY~...was Candrella. She had to use a disguise to contact us, even if the one she chose still was quite a risk. Now we need to find the entry for which we received the ward stone.~
 IF~~THEN REPLY~Let us keep our eyes open. If we are observed already they will find a way to guide us further.~ EXIT
 IF~~THEN REPLY~One locked building we encountered already, strangely enough on the Odesseiron estate.~ EXIT
 IF~~THEN REPLY~Sometimes the best place to hide such things is way out in the open. We just must recognise the signs.~EXIT
 END
 
 IF~Global("Key2","RTF080",2)~THEN BEGIN Mauso1
-SAY~Looks like we were a bit too enthuastic, <CHARNAME>. There is more than one key required to get further. At least we have confirmed that we are at the right location Candrella hinted to.~
+SAY~Looks like we were a bit too enthusiastic, <CHARNAME>. There is more than one key required to get further. At least we have confirmed that we are at the right location Candrella hinted to.~
 IF~~THEN REPLY~Things are getting more twisted, this estate seems to be a target of interest to more than one party involved. Let's return to the city to find more.~DO~SetGlobal("Key2","RTF080",3)~EXIT
 IF~~THEN REPLY~There is more in Bezantur for us to explore. I'm confident we will find other pieces of the puzzle sooner or later.~DO~SetGlobal("Key2","RTF080",3)~EXIT
 END
@@ -1017,7 +1017,7 @@ IF~~THEN DO~SetGlobal("RTInCell","RTF061",6) RealSetGlobalTimer("RTInCellD","RTF
 END
 
 IF~Global("RTGetOut","GLOBAL",3)~THEN BEGIN VisAut1
-SAY~According to this orderly statement Autharch Ithrash has the key we seek, obviously a magical latern, at his home. I doubt that it would be wise to wait here until he decides to return it to the court exhibits again.~
+SAY~According to this orderly statement Autharch Ithrash has the key we seek, obviously a magical lantern, at his home. I doubt that it would be wise to wait here until he decides to return it to the court exhibits again.~
 IF~!InParty("CVIzzy")~THEN REPLY~A little burglary will not drastically worsen our reputation in this town.~DO~SetGlobal("RTGetOut","GLOBAL",4)~EXIT
 IF~InParty("CVIzzy")~THEN REPLY~A little burglary will not drastically worsen our reputation in this town.~ EXTERN CVIzy25J VisAut2
 END
@@ -1042,7 +1042,7 @@ IF~Global("SanRTFPlot3","GLOBAL",5)~THEN REPLY~It is high time to declare this *
 END
 
 IF~~THEN BEGIN TalosendNosae1
-SAY~Now we have learned a bit about the magical powers that Szass Tam and the red wizards possess. Add to that the power of his current allys and it is clear that even you and me cannot defeat this phalanx as it stands.~
+SAY~Now we have learned a bit about the magical powers that Szass Tam and the red wizards possess. Add to that the power of his current allies and it is clear that even you and me cannot defeat this phalanx as it stands.~
 IF~~THEN REPLY~It wouldn't be you if there were not some solution forming already beneath those adorable curls.~ GOTO TalosendNosae2
 IF~~THEN REPLY~True, my dear, but we need to find a solution soon.~ GOTO TalosendNosae2
 END
@@ -1085,12 +1085,12 @@ IF~~THEN DO~SetGlobal("RTF4Driz","rtf006",3)~EXIT
 END
 
 IF~~THEN BEGIN KelTSharBG
-SAY~Not very likely, as Kelemvor speaks of battle, not of bloody sacrifices, mad as they may have been. As the fields of death battle was caused by agression and defence rather than by madness, I would exclude it as well.~
+SAY~Not very likely, as Kelemvor speaks of battle, not of bloody sacrifices, mad as they may have been. As the fields of death battle was caused by aggression and defence rather than by madness, I would exclude it as well.~
 IF~~THEN REPLY~Would you agree that it is the Firewine that is our destination?~ GOTO KelTSharFi
 END
 
 IF~~THEN BEGIN KelTSharNo
-SAY~The fields of death battle was caused by agression and defence rather than by madness. The history of the Undercity speaks of bloody sacrifices not of battle, mad as they may have been.~
+SAY~The fields of death battle was caused by aggression and defence rather than by madness. The history of the Undercity speaks of bloody sacrifices not of battle, mad as they may have been.~
 IF~~THEN REPLY~Would you agree that it is the Firewine that is our destination?~ GOTO KelTSharFi
 END
 
@@ -1114,7 +1114,7 @@ IF~~THEN REPLY~What do you mean - of course we will get those things together if
 END
 
 IF~~THEN BEGIN Insig3
-SAY~Hush...you will understand everything pretty soon. Never loose your hope, whatever will happen. So - remember Thalantyr, Qilandrha, the third ingredience will find you...Let us move now, we have little time.~
+SAY~Hush...you will understand everything pretty soon. Never loose your hope, whatever will happen. So - remember Thalantyr, Qilandrha, the third ingredients will find you...Let us move now, we have little time.~
 =~I love you.~
 IF~~THEN EXIT
 END
@@ -1189,7 +1189,7 @@ DO~SetGlobal("RTGoRaven","LOCALS",2)~
 ==CVLey25J IF~InParty("Leyala")~THEN~I know it well, <CHARNAME>, it is where I have learned my fighting skills with the monks.~
 ==CVSan25J ~ It is south of Amkethran on the shores of the Lake of Steam.~
 ==CVLey25J IF~InParty("Leyala")~THEN~This is the route I would propose as well, Sandrah. We need to go to Amkethran and then I can lead us over the Ithal Pass to Ravencrest.~
-==CVSan25J IF~!InParty("Leyala")~THEN~Remember the nun Leyala in the Waterdeep Temple, <CHARNAME>, Ringonthal mentioned she studied down there. We may want her to show us the way and provide us access to the monastry.~
+==CVSan25J IF~!InParty("Leyala")~THEN~Remember the nun Leyala in the Waterdeep Temple, <CHARNAME>, Ringhontal mentioned she studied down there. We may want her to show us the way and provide us access to the monastery.~
 END
 IF~Global("SanRTFPlot2","GLOBAL",1)~THEN REPLY~Let us go to Amkethran without losing further time.~EXIT
 IF~Global("SanRTFPlot2","GLOBAL",1)!InParty("Leyala")~THEN REPLY~We should first pick up Leyala then who was so eager to join us and afterwards go to Amkethran.~EXIT
@@ -1210,7 +1210,7 @@ DO~SetGlobal("RtFReasonSent","LOCALS",4)~
 ==CVSan25J~It seemed back then that he stole nothing but a lock of my hair...~
 END
 ++~Mysterious - I cannot yet see any connection to what is going on here today.~EXIT
-++~And now he is here obviously involved in that strange intrigue in the Hornswamp. I fail to see what those occurances have in common.~EXIT
+++~And now he is here obviously involved in that strange intrigue in the Hornswamp. I fail to see what those occurrences have in common.~EXIT
 
 CHAIN
 IF~Global("SanRTFColl","GLOBAL",3)~THEN CVSan25J CollF1
@@ -1280,12 +1280,12 @@ DO~SetGlobal("RTGotempl","ar0300",2) ~
 ==CVSan25J IF~InParty("CVGiran")~THEN~You seem to be more relaxed about this town than she was.~
 ==BGir25 IF~InParty("CVGiran")~THEN~Remember that I was kidnapped and sold to the orcs when I was on my way to here with my uncle those many years ago. I never got sight of the town due to my fate...and my luck.~
 =~Say, can we pay a visit to the Temple District and the Order of the Radiant Heart? My uncle was talking about it during all of our journey until the ambush that killed him. I could not bury him but I may even say a short prayer there for his soul.~
-==CVIzy25J IF~InParty("CVizzy") ~ THEN~Baah, this ain't really lookin' like the glorious capitale mama made such a fuss about.~
+==CVIzy25J IF~InParty("CVizzy") ~ THEN~Baah, this ain't really lookin' like the glorious capital mama made such a fuss about.~
 ==CVSan25J IF~InParty("CVizzy") ~ THEN~We are not in the most splendid part of town, wait until you see Waukeen's Promenade or the Temple District...~
 ==CVIzy25J IF~InParty("CVizzy") ~ THEN~Yeah, that's the thing to do, now I remember...mama got really crazy about that Order of the Randalizing Heart or something. Oh, <CHARNAME>, we must and must visit that thing, I beg and beg ya!~
 ==RTMeli IF~InParty("RTMeli")!InParty("CVGiran")!InParty("CVizzy")~ THEN~ It's probably a good idea to visit the Temple District on this occasion. The Order of the Radiant Heart is reported to sell the most interesting scrolls for my profession.~
 END
-++~We can surely do a little sidetrip to the Temples for your sake.~EXIT
+++~We can surely do a little side-trip to the Temples for your sake.~EXIT
 ++~What do you folks think, he? I'm not your travel guide giving tours to this town of ugly memories.~EXIT
 ++~Why not visit those Temples again. I wonder whom they may worship there these days. (Do I have a temple there myself?) ~EXIT
 
@@ -1295,7 +1295,7 @@ IF~Global("SanAskWind","ar0602",1)~ THEN CVSan25J WonderWind
 DO~SetGlobal("SanAskWind","ar0602",2)~
 END
 ++~I heard you well, my dear, and, yes, we will look into the Pocket Plane to find it out.~EXIT
-++~(Mumble to yourself) Some counselor I know would advise that we will only find out by looking into that place again.~EXIT
+++~(Mumble to yourself) Some counsellor I know would advise that we will only find out by looking into that place again.~EXIT
 ++~(Shake your head) We surely have more urgent questions to ponder, my Goddess of All Magic.~EXIT
 ++~(Ignore her.) ~EXIT
 
@@ -1336,7 +1336,7 @@ IF~~ THEN CVSan25J CampMeet3
 ==CVSan25J~Absolutely right, Wallrick. All we can say for sure is that we have acted just in time to make the initial phase of their plan a failure. Due to your calm and peaceful reaction the plan to stir trouble between Clan orcs and the South has failed.~
 ==CVShauQ~It has been a good test to the stability of our arrangement, do you agree Shar-Teel?~
 ==CVShabab~We are more confident in our peaceful arrangements than before, that is true.~
-==CVOrwarl~We plan to stay up here in the neutral zone for a number of days, Sandrah, so we can have a conference on further actions and cooperations.~
+==CVOrwarl~We plan to stay up here in the neutral zone for a number of days, Sandrah, so we can have a conference on further actions and cooperation.~
 ==Keldo25a~If the plan was to bring us apart it has produced just the opposite effect.~
 ==CVMinsc~Keldorn, it seems all this fuss was not so much against you or the Clans but to bring Sandrah and <CHARNAME> here.~
 ==Thalan~What about Irenicus?~
@@ -1390,8 +1390,8 @@ IF~~THEN CVSan25J CampRes2
 ==Keldo25a~In a minute, my dear. We should first identify the traitor and seal him down here as well with his dead friends.~
 ==CVSan25J~A traitor?~
 ==CVShabab~We had some time to think about the situation while we were trapped down here and holding away those clones and spawns.~
-==Thalan~The attack on the camp was surely no coincidence. The Lich-King knew we were up here with very few guards only. But only very few knew of our secret counsil in this remote place.~
-==CVMinsc~In fact only the ones that are in this room here. My berserker elite and Shar-Teel's few guards can be trusted as they have foresworn their lives to their duty.~
+==Thalan~The attack on the camp was surely no coincidence. The Lich-King knew we were up here with very few guards only. But only very few knew of our secret council in this remote place.~
+==CVMinsc~In fact only the ones that are in this room here. My berserker elite and Shar-Teel's few guards can be trusted as they have forsworn their lives to their duty.~
 END
 ++~The only one who left the camp except for us was Wallrick...~+ CampRes3
 ++~Are you accusing us? That is silly...impertinent.~+ CampRes3
@@ -1422,7 +1422,7 @@ CHAIN
 IF~~THEN CVSan25J CampRes5
 ~Then just at this moment the former cowled wizard appeared with his story and questions.~
 ==CVShauq~Who was that?~
-==CVSan25J~Madeen, a man who formerly worked for the cowled wizard leader Corneil, the one who collaborated with Thay. Madeen claimed to have persued his former master himself as Corneil had betrayed him and killed his wife.~
+==CVSan25J~Madeen, a man who formerly worked for the cowled wizard leader Corneil, the one who collaborated with Thay. Madeen claimed to have pursued his former master himself as Corneil had betrayed him and killed his wife.~
 ==Keldo25a~A single man attempting what you barely could handle with all your company and experience?~
 ==CVSan25J~We did not question his story too much as it seemed to be quite unimportant to us at that time.~
 ==Thalan~Probably a lie. One part of the conspiracy just was blown up and - whoosh, the next player appeared to stay on your trail.~
@@ -1443,9 +1443,9 @@ IF~~THEN CVSan25J CampRes6
 
 CHAIN
 IF~Global("RTMons1","RTF040",1)~ THEN CVSan25J RaveMon1
-~I wonder if they would let us enter the monastry for our research just like that.~
+~I wonder if they would let us enter the monastery for our research just like that.~
 DO~SetGlobal("RTMons1","RTF040",2)~
-==CVLey25J IF~InParty("Leyala")~THEN~We must receive a badge from the sister harbor master. She inspects everyone who visits the town and hands out a badge to suitable visitors for the monastry.~
+==CVLey25J IF~InParty("Leyala")~THEN~We must receive a badge from the sister harbour master. She inspects everyone who visits the town and hands out a badge to suitable visitors for the monastery.~
 ==CVSan25J IF~!InParty("Leyala")~THEN~They probably have a kind of security procedure. Maybe we should inquire over there at the harbor master building.~EXIT
 
 CHAIN
@@ -1455,4 +1455,4 @@ DO~SetGlobal("RTGetOut","GLOBAL",4)~
 ==CVSan25J~No one ever doubted the value of an honest little thief in any company, *Isobel*.~
 ==CVIzy25J~Yeah, but a betterest leader would just mention it now and then jus' to keep spirits up and such, dontcha guess.~
 ==CVGIR25J IF~InParty("CVGiran")~THEN~There is always one to appreciate your presence in the party should you doubt it.~
-==CVIzy25J IF~InParty("CVGiran")~THEN~(She kisses him enthusiastically.) That makes up for all the neglection I have to suffer and suffer from nasty <CHARNAME>. (She winks at you and embraces her ranger once again.)~EXIT
+==CVIzy25J IF~InParty("CVGiran")~THEN~(She kisses him enthusiastically.) That makes up for all the neglect I have to suffer and suffer from nasty <CHARNAME>. (She winks at you and embraces her ranger once again.)~EXIT
