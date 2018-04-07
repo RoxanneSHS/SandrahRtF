@@ -2,7 +2,7 @@ CHAIN
 IF~GlobalGT("SanBeginRTF","GLOBAL",1)Global("ShauMes","RTF002",0) AreaCheck("RTF002") GlobalLT("SanRTFPlot1","GLOBAL",3)~THEN Shaorc1 Hint1
 ~You friends of our princess, yes? Bad things happen out there.~
 DO~SetGlobal("ShauMes","RTF002",1)~
-==CVSan25J~ We are here to investigate the strange occurances in this area. What have you seen?~
+==CVSan25J~ We are here to investigate the strange occurrences in this area. What have you seen?~
 ==Shaorc1~Scouts went out many days ago for Waterdeep. Must return already if not bad happened.~
 ==CVSan25J~Have some from the south arrived, some send by the towns?~
 ==Shaorc1~No one passed except trader from the pass to bring news of battle.~
@@ -80,7 +80,7 @@ IF~~THEN REPLY~We need to see Shauhana urgently, do you know where we find her?~
 END
 
 IF~~THEN BEGIN  palace2
-SAY~Hai 'Ulthak is capitale now - our queen lives in palace.~
+SAY~Hai 'Ulthak is capital now - our queen lives in palace.~
 IF~~THEN REPLY~I see, the clans have restored the ancient palace we once saw near Nib's sky ship.~EXIT
 END
 END

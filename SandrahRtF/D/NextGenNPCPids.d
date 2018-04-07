@@ -10,12 +10,12 @@ END
 
 IF~ IsGabber(Player1)~ THEN BEGIN LeyalaPCInit
 SAY ~ *Leyala smiles as you approach her, a smile that can break every man's or woman's heart.~
-IF~GlobalGT("SanRTFPlot2","GLOBAL",3)AreaCheck("ar5500")~THEN REPLY~Can you guide us again to the monastry, sweet nun?~GOTO MoveMonstr
+IF~GlobalGT("SanRTFPlot2","GLOBAL",3)AreaCheck("ar5500")~THEN REPLY~Can you guide us again to the monastery, sweet nun?~GOTO MoveMonstr
 IF~~THEN REPLY~I am impressed by your skills, little one. It is good you are with us.~EXIT
 IF~Global("Hoodmove","LOCALS",0)~THEN REPLY~*You cannot restrain yourself but to move her hood a bit further from her face to get a better view.*~GOTO Hoodmove1
 IF~Global("Hoodmove","LOCALS",1)~THEN REPLY~*You cannot restrain yourself but to move her hood a bit further from her face to get a better view.*~GOTO Hoodmove2
 IF~~THEN REPLY~*You try to return her smile although you have the feeling your face just becomes a silly grimace.*~EXIT
-IF~Global("Hoodmove","LOCALS",2)Global("SanRomPath","GLOBAL",1)!AreaType(OUTDOOR)~THEN REPLY~You are very desireable, little one, would you remove more than just your hood for me?~GOTO Hoodmove3m
+IF~Global("Hoodmove","LOCALS",2)Global("SanRomPath","GLOBAL",1)!AreaType(OUTDOOR)~THEN REPLY~You are very desirable, little one, would you remove more than just your hood for me?~GOTO Hoodmove3m
 IF~Global("Hoodmove","LOCALS",2)Global("SanRomPath","GLOBAL",2)!AreaType(OUTDOOR)~THEN REPLY~Little one, would you mind to share some of the experience you teach others in love with me tonight?~GOTO Hoodmove3f
 END
 
@@ -48,7 +48,7 @@ IF~~THEN BEGIN  NightSc
 SAY~*She lets her robe drop at the side of your bedroll with true grace and displays her well-trained slim body. Her movements are concentrated and tempting, not unequal to her combat style.*~
 =~*She sneaks up close to you, starting to touch and caress you tenderly. Your body relaxes under the treatment of her fingertips. While your mind starts to drift with her touches you hardly recognise that her lips have joined the process.*~
 =~*Her touches and kisses become more and more intense, you feel her tongue probe for more sensitive parts of your body.*~
-=~*Your breathing gets heavier as you cannot restrain your arousal anymore. You loose yourself completely to the nun's art.*~
+=~*Your breathing gets heavier as you cannot restrain your arousal any more. You loose yourself completely to the nun's art.*~
 =~*She senses your condition and expertly starts to fuel it even more. Your own hands have automatically begun to explore her body as well and you feel her respond passionately.*~
 =~Ah...yes...please...mh....oh...~
 IF~~THEN REPLY~Yes...yes...YES...~DO~SetGlobal("Hoodmove","LOCALS",3) RestParty()~EXIT
@@ -89,7 +89,7 @@ END
 APPEND CVLou25J
 
 IF~IsGabber(Player1) Global("RTVisithedge","GLOBAL",1)~THEN BEGIN loupid
-SAY~*The drow mage looks at you with steel-grey eyes, her feelings inpenetrable.*~
+SAY~*The drow mage looks at you with steel-grey eyes, her feelings impenetrable.*~
 IF~~THEN REPLY~You hold no grudge against me, the killer of your mother?~GOTO Murd1
 IF~~THEN REPLY~I was wondering about your age, L'Urieet...~GOTO Age1
 IF~GlobalGT("LouredB","GLOBAL",5)~THEN REPLY~You despise gods in general, L'Urieet, still you travel in their company - and you are a priestess yourself.~GOTO Reli1
@@ -118,13 +118,13 @@ IF~~THEN REPLY~ You're too weak for such a challenge anyway.~EXIT
 END
 
 IF~~THEN BEGIN Age1
-SAY~I think I know what you mean, <CHARNAME>. Mellisan once was issuing a similar remark about my mother and the other Bhaalspawn, Yaga Shura. She thought all of the seed of the God of Murder was sown at about the same time, shortly prior to his end in the Time of Troubles.~
+SAY~I think I know what you mean, <CHARNAME>. Melissan once was issuing a similar remark about my mother and the other Bhaalspawn, Yaga Shura. She thought all of the seed of the God of Murder was sown at about the same time, shortly prior to his end in the Time of Troubles.~
 IF~~THEN REPLY~You almost read my thoughts...~ GOTO Age2
 IF~~THEN REPLY~So, that was not the case?~ GOTO Age2
 END
 
 IF~~THEN BEGIN Age2
-SAY~The God of Murder lay with women even before he became aware of his possible end and he planned his ressurection. Probably spawns like my mother, that Fire Giant, and also the Dragonspawn nurished his idea when he sensed the power and essence they had inherited from him.~
+SAY~The God of Murder lay with women even before he became aware of his possible end and he planned his resurrection. Probably spawns like my mother, that Fire Giant, and also the Dragonspawn nourished his idea when he sensed the power and essence they had inherited from him.~
 =~Apart from yourself and Qilandrha those early spawns were much stronger than any from the later phase.~
 IF~~THEN REPLY~The old bastard may have run out of steam during his later day mass production.~ EXIT
 IF~~THEN REPLY~When he started to spawn in excess he also provided smaller portions of the essence, it seems.~EXIT

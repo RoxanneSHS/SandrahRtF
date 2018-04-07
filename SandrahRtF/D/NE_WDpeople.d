@@ -5,7 +5,7 @@ IF WEIGHT #-12~ GlobalGT("SanBeginRTF","GLOBAL",1) NumTimesTalkedTo(0)~THEN Bots
 ==Botsmith~Yes, yes, very much thank you - but is not thanks to unfaithful old master, baah.~
 ==CVSan25J~You must forgive <CHARNAME>, good imp, <PRO_HESHE> did not know that <PRO_HISHER> little pocket plane would cease to exist without Bhaal's fuel.~
 ==Botsmith~Blah, blah, blah, old master not know but you know - you more god or what?~
-==CVSan25J~I know just more about those things that concern magic and energie matters and issues concerning the Weave - I was <CHARNAME>'s counselor then as I am now, so it was my duty to take care.~
+==CVSan25J~I know just more about those things that concern magic and energie matters and issues concerning the Weave - I was <CHARNAME>'s counsellor then as I am now, so it was my duty to take care.~
 ==Botsmith~Hmpf, if so - all is good. New home is good home and new boss is good boss. Also nobody to threaten to blow up new home...~
 END
 ++~So now that the issue has been clarified, Cespenar, can you still provide your services to us?~+ 4
@@ -81,14 +81,14 @@ CHAIN
 IF~Global("Morc","RTF007",3)~THEN  RTF7Monk Dorc2
 ~Here he is. I fear the worst...~
 DO~SetGlobal("Morc","RTF007",4)~
-==CVSan25J~Yes, there is nothing we can do anymore, he is dead.~
+==CVSan25J~Yes, there is nothing we can do any more, he is dead.~
 =~*She examines the corpse carefully.*~
 =~Very strange...~
 ==RTF7Monk~What is it you found?~
 ==CVSan25J~I wonder how he came to be alive in the first place - and how old he was.~
 ==RTF7Monk~I do not understand?~
 ==CVSan25J~There is no blood , orcish or other in his body. And his hands and hair...he could only have been a few weeks old according to their texture.~
-==RTF7Monk~Many mysteries, mylady.~
+==RTF7Monk~Many mysteries, my lady.~
 ==CVSan25J~His fate seems to be connected with that strange liquid he held onto until his last minute but more I cannot say at the moment.~
 ==RTF7Monk~We will bury him. Clan orcs are a civilized race.~EXIT
 

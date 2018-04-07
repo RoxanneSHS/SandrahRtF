@@ -33,7 +33,7 @@ END
 
 BEGIN PELLIGJ
 IF~IsGabber(Player1)OR(2)AreaCheck("RTF143") AreaCheck("RTF141")~THEN BEGIN PidPellE
-SAY~<CHARNAME> let us leave this temple behind us before we can talk. Our enemies may use our desperate situation to their advantage. We must fulfill Sandrah's last instructions before we can think of striking at them ourselves. Please, trust me like you trusted her.~
+SAY~<CHARNAME> let us leave this temple behind us before we can talk. Our enemies may use our desperate situation to their advantage. We must fulfil Sandrah's last instructions before we can think of striking at them ourselves. Please, trust me like you trusted her.~
 IF~~THEN REPLY~Right, let us leave. We will soon find a quiet moment to talk about our plans.~EXIT
 END
 
@@ -42,13 +42,13 @@ SAY~Pelligram's human form is beautiful and graceful like her animal appearance 
 IF~Global("Realpel","LOCALS",0)~THEN REPLY~Tell me the truth now, Pelligram - who are you?~GOTO PellId1
 IF~Global("Realpel","LOCALS",1)~THEN REPLY~We have a quiet moment now, Pelligram, I am eager to learn more about you.~  GOTO PellId3
 IF~Global("Realpel","LOCALS",2)~THEN REPLY~As Mystra's own daughter you come from the same bloodline than Sandrah did, the one all incarnations of Mystra came from. Will you succeed her?~GOTO PellId10
-IF~Global("PelItem3","LOCALS",1)~THEN REPLY~We have assembled Sandrah's artifact, Pelligram. What do we do now, we still need the *item that will find me*?~GOTO Pellitem3
+IF~Global("PelItem3","LOCALS",1)~THEN REPLY~We have assembled Sandrah's artefact, Pelligram. What do we do now, we still need the *item that will find me*?~GOTO Pellitem3
 IF~~THEN REPLY~*You stare at your old and nevertheless new companion, lost for words.*~EXIT
 IF~~THEN REPLY~I do not feel so lost and alone thanks to your presence. You are the only one who can really understand what we all have lost with Sandrah's death.~GOTO NotReally1
 END
 
 IF~~THEN BEGIN NotReally1
-SAY~A goddess dies if no one believes in her anymore. I know many who have not given up and I walk beside the deity representing Hope itself. I am not desperate.~
+SAY~A goddess dies if no one believes in her any more. I know many who have not given up and I walk beside the deity representing Hope itself. I am not desperate.~
 IF~~THEN EXIT
 END
 
@@ -64,7 +64,7 @@ IF~~THEN REPLY~I will ask you later when we have sufficient time for the topic.~
 END
 
 IF~~THEN BEGIN PellId3
-SAY~ I am Pelligram, Servant and Chosen of Mystra, also known to your anchestors as the Witch-Queen of Aglarond.~
+SAY~ I am Pelligram, Servant and Chosen of Mystra, also known to your ancestors as the Witch-Queen of Aglarond.~
 IF~~THEN REPLY~But...that means you are one of the Seven Sisters.~ GOTO PellId4
 IF~~THEN REPLY~The watchful...I heard you named *The Simbul* as well...~ GOTO PellId4
 END
@@ -103,13 +103,13 @@ END
 
 CHAIN
 IF~Global("CyrChance","RTF140",1)~THEN chalcy01 SanDeCha1
-~Love and hope, it seems to me, are a weak foundation for a new god and desasterous for an alliance of celestials.~
+~Love and hope, it seems to me, are a weak foundation for a new god and disastrous for an alliance of celestials.~
 =~So here you are alone now to face your doom and just like my stupid granddaughter had to let go the Weave you will release Bhaal's heritage to me.~
 DO~SetGlobal("CyrChance","RTF140",2)~
 ==PelligJ~You may find Love and Hope much stronger powers than your limited view has revealed to you, Cyric...~
-==Chalcy01~YOU??!! What are you...ah, Mystra's old servant - there is nothing to serve for you anymore, Simbul.~
+==Chalcy01~YOU??!! What are you...ah, Mystra's old servant - there is nothing to serve for you any more, Simbul.~
 ==PelligJ~Was it Shar's clever idea to send you here, Prince of Lies? Has she - by any chance - planted those ideas you just expressed in your empty head?~
-==Chalcy01~Shar immediately informed us of her success and her possesion of the Weave.~
+==Chalcy01~Shar immediately informed us of her success and her possession of the Weave.~
 END
 ++~You fool, of course she did. To get you out of the way for her own manipulation of her new toy. You are crazy enough to leave her with the Weave unattended.~+ SanDeCha2
 ++~I had never guessed that the greatest Deceiver of All would let himself be fooled so easily by the Dark Goddess. She apparently plans to get rid of you this way.~+ SanDeCha2
@@ -139,7 +139,7 @@ IF~~THEN Thalan HintNash2
 ~Gluck, I wasn't left here to be your last supper but to give you, creek, the hint you need.~
 ==PelligJ~(Laughs) We are all vegetarians, you have nothing to fear.~
 ==Thalan~Master said, gluck, the All-seeing Eye is neutral as always.~
-==PelligJ~He went into the shelter of a temple of Helm, I pressume?~
+==PelligJ~He went into the shelter of a temple of Helm, I presume?~
 END
 ++~The nearest one is in Nashkel.~+ HintNash3
 ++~There is a small temple in the northern quarters of Baldur's Gate.~ + HintNash3
@@ -164,7 +164,7 @@ END
 
 CHAIN
 IF~~THEN Thalan HintNash5
-~I had to be very cautious so I have not endangered the artifact by taking it on the road with me.~
+~I had to be very cautious so I have not endangered the artefact by taking it on the road with me.~
 ==PelligJ~My - we made the journey all in vain?~
 ==Thalan~You did not, my dear, as otherwise you would not have known where to look for it.~
 =~Go to the house north of my compound at the High Hedge. You will find what Mystra has required of you.~
@@ -187,7 +187,7 @@ CHAIN
 IF~~THEN CVQidr PelQuidr2
 ~You seem to be more in grief than you should be, <CHARNAME>. You of Hope and Love should know better than any that gods do not die as long as they are believed in.~
 ==PelligJ~We will soon learn the truth of that wisdom, Qilandrha. We need the item that Sandrah gave to your care in order to fulfill her will.~
-==CVQidr~I have felt the impact of the spellplague on our opponents. Her item has assured that we here in Undermountain have not been impacted.~
+==CVQidr~I have felt the impact of the Spellplague on our opponents. Her item has assured that we here in Undermountain have not been impacted.~
 ==PelligJ~Her blessing and that of Eilistraee will continue to support you. The Weave is not hidden from you, high priestess.~
 ==CVQidr~I have not reason to doubt the words of the Simbul herself. Take what you need and finish your mission. The light will soon shine on Faerun.~ DO~GiveItemCreate("RTBummy","Pellig3",1,0,0)~
 ==PelligJ~May our goddess bless you.~DO~AddexperienceParty(8200)~EXIT
@@ -198,7 +198,7 @@ IF WEIGHT #2~Global("PelItem3","LOCALS",3)~THEN PelligJ PellMys1
 DO~SetGlobal("PelItem3","LOCALS",4)~
 ==SanMyst~You are the truest of all Chosen, Pelligram, it was good to have entrusted you once again with a mission of the highest importance.~
 ==PelligJ~Love and Hope have always been motivation like nothing else can be.~
-==SanMyst~Even in our secluded retirement we have received enough information to deduct that the spell plague has produced the desired results. Those gods and godesses we have targeted loose influence, power and believers at great scale.~
+==SanMyst~Even in our secluded retirement we have received enough information to deduct that the spell plague has produced the desired results. Those gods and goddesses we have targeted loose influence, power and believers at great scale.~
 END
 ++~ The price for it was too high for my liking. Your granddaughter's death seems to leave you unimpressed.~ + PellMys2
 ++~ You make your granddaughter's death and the spell plague sound like the success of a great stage production.~ + PellMys2
@@ -211,7 +211,7 @@ END
 
 CHAIN
 IF~~THEN PelligJ PellMys3
-~Wait and listen, please. It is true that you had to believe all of that. YOU had to believe and act authentic or YOUR ENEMIES would have known about the deceit. The spell plague is an enourmous ploy.~
+~Wait and listen, please. It is true that you had to believe all of that. YOU had to believe and act authentic or YOUR ENEMIES would have known about the deceit. The spell plague is an enormous ploy.~
 ==SanMyst~All had to believe in it, Sandrah made sure that even the Overlord is unaware of her deed.~
 ==PelligJ~You will see Larloch in some moments, stay your wraith - he acted perfectly and his staged deceit made the whole thing possible - that and your own belief that Mystra is dead.~
 END
@@ -221,8 +221,8 @@ CHAIN
 IF~~THEN PelligJ PellMys4
 ~You have felt her presence even in your despair. Your feelings have not betrayed you. Love and Hope remain victorious. She had to disappear in the full view of your foe and with the expected results.~
 ==SanMyst~What Larloch gave to Shar was just a small portion of the Weave, enough to keep her occupied for some time but not enough to cause massive destruction.~
-==PelligJ~It is time now to use the artifacts and the Simbul, my mistress.~
-==SanMyst~I will go upstairs and open the Arboretum for the ritual. Come with the ingrediences to make Mystra return.~
+==PelligJ~It is time now to use the artefacts and the Simbul, my mistress.~
+==SanMyst~I will go upstairs and open the Arboretum for the ritual. Come with the ingredients to make Mystra return.~
 ==PelligJ~You will be united with your true companion in a moment.~
 =~*She gives you a kiss on the cheek and smiles the same mysterious smile you have seen so often from Sandrah.* Let us go upstairs.~DO~SetGlobal("Miston","RTF018",1)~EXIT
 
@@ -262,7 +262,7 @@ CHAIN
 IF WEIGHT #-7~Global("RTPellSol","BG2300",3)~THEN Pellig SolarJ2
 ~I have done all I could do to make Mystra succeed.~
 DO~SetGlobal("RTPellSol","BG2300",4)~
-==CVSan25J~You have, Pelligram, my Chosen, my comrad, my friend. Do now what your heart demands of you.~
+==CVSan25J~You have, Pelligram, my Chosen, my comrade, my friend. Do now what your heart demands of you.~
 ==Pellig~You know what that is, my Goddess - you know it too, Argonsan.~
 ==Solar IF~Global("SanRomPath","GLOBAL",1)~THEN~It is the same that my heart tells me, Pelligram. The God of Love and Hope has grown into an authority now. My tutoring is no longer required by him.~
 ==Solar IF~Global("SanRomPath","GLOBAL",2)~THEN~It is the same that my heart tells me, Pelligram. The Goddess of Love and Hope has grown into an authority now. My tutoring is no longer required by her.~

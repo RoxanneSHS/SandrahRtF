@@ -3,7 +3,7 @@ IF~GlobalGT("SanBeginRTF","GLOBAL",1) Global("MeetRTFM","LOCALS",0) ~THEN SanMys
 ~Welcome, <CHARNAME>, welcome granddaughter.~
 DO~SetGlobal("MeetRTFM","LOCALS",1) SetName(@2054)~
 ==CVSan25J~Grandmother! Finally we have found a way to address each other as we always should have done.~
-==SanMyst~Your deeds as Mystra ripple even into this remote corner of the Prime, my dear. You and the true Love and Hope really fulfill the expectations that have been set upon you.~
+==SanMyst~Your deeds as Mystra ripple even into this remote corner of the Prime, my dear. You and the true Love and Hope really fulfil the expectations that have been set upon you.~
 =~Maybe a bit more than some can accept...you are not here to visit a happy old couple, arent't you?~
 ==CVSan25J~(Sighs) As much as I would like to have this as a nice visit to a loving elder couple - you know it is not. We are on the prime as those who cannot accept all we have done start to react on it.~
 ==SanMyst~If they chose the Prime as their playground, they made a mistake. This is our plane, yours, mine, and <CHARNAME>'s. All gods who were so foolish in the past have been shattered by the true power of the mortals.~
@@ -35,7 +35,7 @@ CHAIN
 IF~~THEN CVSan25J ThayRepNoTalos1
 ~Grandmother, this is what we learned in Thay...(Sandrah gives a report about the recent events.)~
 ==SanMyst~Xephistagoras had me captured already once in his own attempt to gain access to the Weave's power. I share your view about his plan for an excessive draining of energy from the Weave.~
-==SanMyst IF~Global("SanRTFPlot3","GLOBAL",6)~THEN ~IF he is really in the old Bhaal temple in the Wood of Sharp Teeth you should pay him a visit now, chances are good that you can defeat him before he can summon any help from his allys.~
+==SanMyst IF~Global("SanRTFPlot3","GLOBAL",6)~THEN ~IF he is really in the old Bhaal temple in the Wood of Sharp Teeth you should pay him a visit now, chances are good that you can defeat him before he can summon any help from his allies.~
 END
 IF~Global("SanRTFPlot3","GLOBAL",7)~THEN REPLY~That is the obvious step, but what about thereafter?~+ ThayRepDefTalos1
 IF~Global("SanRTFPlot3","GLOBAL",7)~THEN REPLY~I recall the events you refer to, Midnight. But what about mobilizing our own allys? ~+ ThayRepDefTalos1
@@ -101,10 +101,10 @@ DO~SetGlobal("VelshIn","LOCALS",1)~
 ==CVSan25J~I already blame myself for having neglected this aspect of my duties while still on Celestia.~
 ==SanMyst~We all have our blind spots, child, yours is the hatred against that misuse of magical powers that the necromancers perform. You are not alone in that opinion but the goddess of ALL Magic has a responsibility.~
 ==CVSan25J~How did you manage it in your time as Mystra?~
-==SanMyst~Velsharoon originates from Thay, the arch-necromancer later appeared in Halruaa, where he and a Halruaan elder fought over the country turning their battlefield into a desolate ruin. Ultimately, he entered the Plains of Purple Dust, north of Raurin,where he set up a tower and began exploring ruins of ancient Imaskar. He discovered in a very old ruin a set of texts penned by the Storm Lord Talos, requiring the blood of adventurers, which would allow him to achieve immortality and divinity; however, after achieving godhood the astute Velsharoon was swift to realize that the Storm Lord would exploit his newfound divinity for his own purposes, ultimately destroying Velsharoon.~
+==SanMyst~Velsharoon originates from Thay, the arch-necromancer later appeared in Halruaa, where he and a Halruaan elder fought over the country turning their battlefield into a desolate ruin. Ultimately, he entered the Plains of Purple Dust, north of Raurin,where he set up a tower and began exploring ruins of ancient Imaskar. He discovered in a very old ruin a set of texts penned by the Storm Lord Talos, requiring the blood of adventurers, which would allow him to achieve immortality and divinity; however, after achieving godhood the astute Velsharoon was swift to realize that the Storm Lord would exploit his new-found divinity for his own purposes, ultimately destroying Velsharoon.~
 ==CVSan25J~This explains a bit about the relationship to Talos we encountered, <CHARNAME>.~
 ==SanMyst~After discovering that Talos intended to use him, Velsharoon pledged his allegiance instead to Azuth. Talos was furious at this betrayal, and attempted to act in vengeance. This is when I intervened to protect my protege Azuth whom he now serves. ~
-==CVSan25J~So, at least nominally he serves Azuth and by that, inderectly Mystra. ~
+==CVSan25J~So, at least nominally he serves Azuth and by that, indirectly Mystra. ~
 ==SanMyst~Velsharoon is an old schemer and might have renewed his old alliance with Talos. And - by the way - he despises the *newcomer* Cyric.~ EXIT
 
 CHAIN
@@ -120,8 +120,8 @@ END
 
 CHAIN
 IF~~THEN SanMyst Velsh7
-~Velsharoon loathes Kelemvor for his opposition of undeath, which is logical. The necromancers deny to the Lord of the End of Everything what is rightfully his. Other gods receive power from their worshippers but Kelemvor gains power from the dead souls he receives. ~
-==CVSan25J~Any attempt of Velsharoon to gain power is a direct assault at Kelemvor's portifolio.~
+~Velsharoon loathes Kelemvor for his opposition of anything undead, which is logical. The necromancers deny to the Lord of the End of Everything what is rightfully his. Other gods receive power from their worshippers but Kelemvor gains power from the dead souls he receives. ~
+==CVSan25J~Any attempt of Velsharoon to gain power is a direct assault at Kelemvor's portfolio.~
 ==SanMyst~Make the Lord of Death see it that way, my grandchild, and you have an unseen ally on your side. I know my former knight well enough to be sure he will not directly get in league with you. He is not one to make pacts with anyone.~
 ==CVSan25J~Still...if we could make him aware of the approaching danger for him, he may decide to act against the necromancers on his own.~
 ==SanMyst~Exactly. The Lich-Lord will all of a sudden have to face another unexpected enemy, which gives you some relief.~
@@ -192,7 +192,7 @@ CHAIN
 IF~~THEN  CVDrizR  EscUP
 ~You surely have good reasons to ask for it.~
 DO~SetGlobal("RTLouPlot","GLOBAL",15) ~
-==CVSan25J~A companion has been kidnapped to the Underdark and Adlon is blocking the only access we have knowledge about. Surely there are other routes we can take.~
+==CVSan25J~A companion has been kidnapped to the Underdark and Adalon is blocking the only access we have knowledge about. Surely there are other routes we can take.~
 ==CVDrizR~You have definitely no fear to face a strong colony of beholders, gauths and similar creatures, not like some lone desperate drow refugee had when crawling through their tunnels...~
 ==CVSan25J~Beholders...of course.~
 ==CVDrizR~All their tunnels connect to each other, find an entrance to one and you can pass into the next.~
