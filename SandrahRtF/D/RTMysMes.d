@@ -39,9 +39,9 @@ END
 CHAIN
 IF~~THEN RTThKn Think2                                        
 ~Have you not learned yet, Odesseiron, violence is useless here.~
-==CVSan25J~Please, <CHARNAME>, we are not here to uneccessarily draw attention yet. Let us explore this area for another possibility first.~
+==CVSan25J~Please, <CHARNAME>, we are not here to unnecessarily draw attention yet. Let us explore this area for another possibility first.~
 END
-++~You are right counselor, they mistake us for someone else it seems. Let's find out what is going on.~EXIT
+++~You are right counsellor, they mistake us for someone else it seems. Let's find out what is going on.~EXIT
 ++~I take no insults from such an ape, and I'm surely no Odesseiron. I will stuff the arrogant fool's mouth.~DO~ActionOverride("RTThKn",Enemy())~EXIT
 
 
@@ -56,9 +56,9 @@ DO~SetGlobal("CadrHint","RTF079",1)~
 ==RTOdButl~Psst!!~
 =~Mylady, can it be? It must be true then...you...~
 ==CVSan25J~Candrella?~
-==RTOdButl~Psst! There may be ears everywhere, mylady.~
+==RTOdButl~Psst! There may be ears everywhere, my lady.~
 ==CVSan25J~This is the former Odesseiron estate, is it not?~
-==RTOdButl~Psst! All these names are not to be mentioned here anymore.~
+==RTOdButl~Psst! All these names are not to be mentioned here any more.~
 =~Move upstairs, you will find what you are supposed to find. Good luck.~
 DO~EscapeArea()~EXIT
 

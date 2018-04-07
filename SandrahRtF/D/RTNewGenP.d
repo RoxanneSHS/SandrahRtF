@@ -32,7 +32,7 @@ JoinParty() ~EXIT
 CHAIN
 IF~Global("RTFIzyJoin","GLOBAL",1)~THEN CVIzy25P GoI
 ~You will be lost and more lost without ol' Izzy, I can tell you but you will learn soon yaself. I will have NO problem to make it back to Beregost.~
-==CVGir25J IF~InParty("CVGiran")~THEN~If <CHARNAME> will not find his way back to you...hm, I certainly will as soon as I fullfilled my oath to finish this quest.~
+==CVGir25J IF~InParty("CVGiran")~THEN~If <CHARNAME> will not find his way back to you...hm, I certainly will as soon as I fulfilled my oath to finish this quest.~
 ==CVIzy25P IF~InParty("CVGiran")~THEN~I'll count the days, orc prince boy.~
 END
 ++~It will be just for a small while, Izzy.~ + GoIR
@@ -83,7 +83,7 @@ END
 CHAIN
 IF~Global("SanRTFGiranOK","GLOBAL",4)~THEN CVGir25P GoG
 ~My djahemma is not yet finished. I will return to the Stormhorns to look for further tasks.~
-==CVIzy25J IF~InParty("CVIzzy")~THEN~If nasty <CHARNAME> will not find his way back to ya...hm, I swear and swear that I certainly will as soon as I fullfilled my bloody oath to finish this quest.~
+==CVIzy25J IF~InParty("CVIzzy")~THEN~If nasty <CHARNAME> will not find his way back to ya...hm, I swear and swear that I certainly will as soon as I fulfilled my bloody oath to finish this quest.~
 ==CVGir25P IF~InParty("CVizzy")~THEN~I'll count the days, my red haired hamster.~
 END
 ++~It is only temporary, my dear Giran.~+ GoGSH

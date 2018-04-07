@@ -8,7 +8,7 @@ DO~SetGlobal("RTSaem","RTF090",2)~
 ==CVSan25J~Who might that beautiful lady be, Saemon, would you introduce her to us?~
 ==RTSaemon~This is Shaleij, my friends, she will come with us.~
 ==CVSan25J~It is her own free will, I assume?~
-==RTSaemon~SURELY, what do you think - actually it is her first free will action since a long time. Can you imagine the poor girl in the hands of that monster Ilthrash?~
+==RTSaemon~SURELY, what do you think - actually it is her first free will action since a long time. Can you imagine the poor girl in the hands of that monster Ithrash?~
 ==RTShaj~I will not go back, you made a promise, Saemon!~
 ==CVSan25J~You know how much I hate slavery...(Sigh) So much about a save peaceful sea cruise...~
 ==RTShaj~Why do we not sail, my master will be here soon!!~ DO~EscapeArea()~
@@ -32,7 +32,7 @@ CHAIN
 IF~Global("RTSaem","RTF100",1)~THEN RTSaemon OutThay3
 ~Now it is time to talk about YOUR plans.~
 DO~SetGlobal("RTSaem","RTF100",2)~
-==CVSan25J~You have been in Thay often enough to have learned about the magical powers that Szass Tam and the red wizards possess. Add to that the power of his current allys and it is clear that even <CHARNAME> and me cannot defeat this phalanx as it stands.~
+==CVSan25J~You have been in Thay often enough to have learned about the magical powers that Szass Tam and the red wizards possess. Add to that the power of his current allies and it is clear that even <CHARNAME> and me cannot defeat this phalanx as it stands.~
 ==RTSaemon~It wouldn't be you if there were not some solution forming already beneath those adorable curls.~
 ==RTShaj~Saemon, facts, not compliments.~
 ==RTSaemon~I only look, I don't touch, honey, no one but you.~
@@ -44,7 +44,7 @@ END
 
 CHAIN
 IF~~THEN CVSan25J OutThay4
-~All true magic originates from the Weave. There is a limited power provided by Shar from the Shadow Weave, but I will put that aside for the moment. The Weave can only be controlled by Mystra and even if other gods grant powers to their followers they can only do it through Mystra. There is no direct access to the Weave by anyone else, since the day Mystril was killed by Karsus.~
+~All true magic originates from the Weave. There is a limited power provided by Shar from the Shadow Weave, but I will put that aside for the moment. The Weave can only be controlled by Mystra and even if other gods grant powers to their followers they can only do it through Mystra. There is no direct access to the Weave by anyone else, since the day Mystryl was killed by Karsus.~
 ==RTSaemon~I vaguely remember the story. All magic departed Netheril and the Prime on that day.~
 ==CVSan25J~Correct, Saemon. Afterwards AO gave some of the Weaves energy to Shar, but the majority and the portion used by Faerun's mages, clerics and sorcerers he gave to Mystra.~
 ==RTSaemon~To separate your foe from the source of their magic...you had to eliminate - Mystra.~
@@ -68,8 +68,8 @@ IF~ Global("SanRTFPlot1","GLOBAL",4)Global("RTTalkedSaem","GLOBAL",0) ~THEN RTSa
 DO~SetGlobal("RTTalkedSaem","GLOBAL",1)~
 ==CVSan25J~The same old Saemon as ever, tss, tsss, nothing bad has ever happened between us, right old weasel?~
 ==RTSaemon~Well, well, we're all alive and prospering while so many we knew once have left Toril forever.~
-==CVSan25J~Like for example your predessessor?~
-==RTSaemon~Let's say there was a vacany in town requiring a competent leader to fill it in.~
+==CVSan25J~Like for example your predecessor?~
+==RTSaemon~Let's say there was a vacancy in town requiring a competent leader to fill it in.~
 ==CVSan25J~However you got your present post is not our concern at all. Let us continue to talk about those still alive.~
 ==RTSaemon~Yeees?~
 ==CVSan25J~Irenicus.~
@@ -87,7 +87,7 @@ IF~~THEN RTSaemon RTSea2
 ==CVSan25J~Who is threatening you so heavily that all your guild cannot protect you?~
 ==RTSaemon~Looks like the Lady Governor herself somehow holds a grudge against me. She seems to forget that a well organised Guild controlling the docks and slums benefits the whole town and county.~
 ==CVSan25J~In a way I can accept your point. The guild has always been better than chaos and criminals running uncontrolled.~
-==RTSaemon~ de'Arnise must nowadays see that otherwise. She has set up an enourmous garrison right here in the docks and there are curfews every moment to impede us.~
+==RTSaemon~ de'Arnise must nowadays see that otherwise. She has set up an enormous garrison right here in the docks and there are curfews every moment to impede us.~
 ==CVSan25J~Hm, the cost for the city must be high for that. Nalia surely must have better ways to spend that money for the town.~
 ==RTSaemon~ You're old buddies, aren't you? You will definitely find a way to persuade her to stop that nonsense.~
 ==CVSan25J~Probably. However be prepared that it may cost you a bit more than just the information you can provide us.~
@@ -102,7 +102,7 @@ IF~~THEN RTSaemon RTSea3
 ==CVSan25J~Nalia is threatening you so heavily that all your guild cannot protect you.~
 ==RTSaemon~Looks like the Lady Governor somehow holds a grudge against me. She seems to forget that a well organised Guild controlling the docks and slums benefits the whole town and county.~
 ==CVSan25J~In a way I can accept your point. The guild has always been better than chaos and criminals running uncontrolled.~
-==RTSaemon~ de'Arnise must nowadays see that otherwise. She has set up an enourmous garrison right here in the docks and there are curfews every moment to impede us.~
+==RTSaemon~ de'Arnise must nowadays see that otherwise. She has set up an enormous garrison right here in the docks and there are curfews every moment to impede us.~
 ==CVSan25J~Hm, the cost for the city must be high for that. Nalia surely must have better ways to spend that money for the town.~
 ==RTSaemon~ You're old buddies, aren't you? You will definitely find a way to persuade her to stop that nonsense.~
 ==CVSan25J~Probably. However be prepared that it may cost you a bit more than just the information you can provide us.~
@@ -150,7 +150,7 @@ IF~ ~THEN RTSaemon RTSea6
 CHAIN
 IF~Global("SanRTFPlot1","GLOBAL",5) GlobalLT("RTTalkedSaem","GLOBAL",9)~THEN RTSaemon RTSea7
 ~I can see by your expression that the Council has accepted our deal.~
-==CVSan25J~You are on your way to become a respectable honority of Athkatla, Saemon. Use your chance well.~
+==CVSan25J~You are on your way to become a respectable consultor of Athkatla, Saemon. Use your chance well.~
 ==RTSaemon~I am sooo relieved, my friends. You know how much I hate bloodshed, especially my own.~
 DO~SetGlobal("RTTalkedSaem","GLOBAL",9) TakePartyItem("RTNalsa") GiveItemCreate("misc4s","CVSandr",1,0,0) AddexperienceParty(12000)~
 =~This is what to do to get to Irenicus.~
@@ -165,9 +165,9 @@ IF WEIGHT #-1~Global("RTCyr1","ar0307",1)~THEN Chalcy01 InIrD1
 DO~SetGlobal("RTCyr1","ar0307",2)~
 ==CVSan25J~It was just a question of time for you to appear, like the bad penny you are.~
 ==Chalcy01~Trying your hand in god hood is a bad habit of your bloodline. Your grandmother was not fit for it and neither will you proof to be.~
-==CVSan25J~I wonder what you try to gain, Cyric, neither my portifolio nor the one that was created for <CHARNAME> would suit you. You are still the God of Murder, whatever the worth of that title may be.~
+==CVSan25J~I wonder what you try to gain, Cyric, neither my portfolio nor the one that was created for <CHARNAME> would suit you. You are still the God of Murder, whatever the worth of that title may be.~
 ==Chalcy01~Bingo, darling, bingo!!~
-=~The God of Murder by name, but the essence of Bhaal has been corrupted by what <CHARNAME> and your own damned sister call *purefication* or cleansing. The essence must be returned to its true nature.~
+=~The God of Murder by name, but the essence of Bhaal has been corrupted by what <CHARNAME> and your own damned sister call *purification* or cleansing. The essence must be returned to its true nature.~
 ==CVSan25J~Do your buddies know of your intent?~
 ==Chalcy01~My allies? You know nothing about them, ever-silly girl.~
 END
@@ -179,7 +179,7 @@ IF~~ THEN Chalcy01 InIrD2
 ~*For a moment you could swear you see Cyric slightly irritated*.~
 =~The name of that mortal means nothing to me. Your accusations are as blind as they ever were.~
 ==CVSan25J~The Exile is not working for you - maybe he is in the service of one of your allies. I am sure they will not inform you of their own agenda in this affair.~
-==Chalcy01~Mystra, you're trying to be clever, he? You are so eager to learn who it is that you have to face. No need to hurry, your doom comes infailably.~
+==Chalcy01~Mystra, you're trying to be clever, he? You are so eager to learn who it is that you have to face. No need to hurry, your doom comes ineffably.~
 ==CVSan25J~Up to now we have found we are a bit ahead of our enemies, *grandfather*. Their design was only half-baked and rushed. Be sure we keep up the pressure. You are known to act weird and weirder when put under stress.~
 END
 ++~Whoever your allies are, Cyric, you know as well as we know that they will backstab you as soon as they see the chance for themselves...~+ InIrD3

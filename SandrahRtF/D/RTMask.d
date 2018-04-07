@@ -32,7 +32,7 @@ END
 
 IF~~THEN BEGIN MaskKnows6
 SAY~ Good. Here is the deal. ~
-=~I need a cloak and sword of my God to advance my Guild's power over the Theskians. By some coincidence that are of no interest for you those two items are currently in the possession of Samas Kul, the Leader of the Guild of Foreign Trade. He negotiates with us as well as with the Theskians. His prize raises with every round and will become unacceptable soon. YOU must retrieve those items for us from the Guild's headquarter before Samas Kul makes the deal with our opponents.~
+=~I need a cloak and sword of my God to advance my Guild's power over the Theskians. By some coincidence that are of no interest for you those two items are currently in the possession of Samas Kul, the Leader of the Guild of Foreign Trade. He negotiates with us as well as with the Theskians. His prize raises with every round and will become unacceptable soon. YOU must retrieve those items for us from the Guild's headquarters before Samas Kul makes the deal with our opponents.~
 IF~~THEN REPLY~How am I to enter the Guild and find those items?~ GOTO MaskKnows7
 END
 
@@ -120,7 +120,7 @@ IF WEIGHT #-11~GlobalGT("SanBeginRTF","GLOBAL",1)~ THEN THIEF5 Gorv
 ==CVSan25J~Old friends, just old friends, Gorvin.~
 ==THIEF5~If you say so...So - friends - you don't happen to have any *medicine* on ya, he?~
 ==CVSan25J IF~GlobalGT("RTMaskplot","GLOBAL",0) !PartyHasItem("RTKeylig")~THEN~Have you ever found a way inside the Guild of Foreign Trade, friend?~
-==THIEF5 IF~GlobalGT("RTMaskplot","GLOBAL",0) !PartyHasItem("RTKeylig")~THEN~You're jokin', my dear. That compound is unpenetrable unless you're invited by whatever means.~
+==THIEF5 IF~GlobalGT("RTMaskplot","GLOBAL",0) !PartyHasItem("RTKeylig")~THEN~You're jokin', my dear. That compound is impenetrable unless you're invited by whatever means.~
 END
 ++~Get lost, old drunkard.~EXIT
 ++~You're of no use when you're drunk and you're of no use when you're sober, bah.~EXIT

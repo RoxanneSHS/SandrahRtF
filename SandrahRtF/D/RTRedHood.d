@@ -63,10 +63,10 @@ CHAIN
 IF WEIGHT #1~Global("StrangeVap","RTF080",3)~THEN RTReHod1 Foun1
 ~Finally!! It was announced that you are in town and would most likely be able to break the blockade of the red wizards...~
 DO~SetGlobal("StrangeVap","RTF080",4)~
-==CVSan25J~From your words I presume that you are not in their ranks, at least not anymore?~
+==CVSan25J~From your words I presume that you are not in their ranks, at least not any more?~
 ==RTReHod1 ~You have a keen eye, I was a red wizard in the sixth circle before I fell from grace with my superiors and had to leave town before being fed to the lizard men.~
 ==CVSan25J~Is this what the Red Hoods are, renegade wizards and runaway slaves?~
-==RTReHod1 ~Each of us has a different fate and reason to be here, mylady. There are many that have political reasons, others escaped from trouble with the current rulers, and still others are here because the red scum above have taken everything else from their life.~
+==RTReHod1 ~Each of us has a different fate and reason to be here, my lady. There are many that have political reasons, others escaped from trouble with the current rulers, and still others are here because the red scum above have taken everything else from their life.~
 =~Our leader unites us all in our resistance against Szass Tam and what the Necromancer wants to make of our homeland in order to ascend to godhood.~
 ==CVSan25J~Your leader - it is him we are seeking as well as a friend of mine, Candrella.~
 ==RTReHod1~The leader and his wife expected you to come, just continue downstairs.~

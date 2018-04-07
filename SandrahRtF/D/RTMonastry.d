@@ -25,12 +25,12 @@ BEGIN RTMonkH
 CHAIN
 IF~!PartyHasItem("RTMoBad")Global("RTMons1","RTF040",3)~THEN RTMonkH NeedBadgeNun1
 ~Visitors, welcome, you have some specific business at Ravencrest?~
-==CVSan25J~Thank you, harbourmaster, we are actually here for the monastry.~
-==RTMonkH~Why would you visit the monastry?~
+==CVSan25J~Thank you, harbour master, we are actually here for the monastery.~
+==RTMonkH~Why would you visit the monastery?~
 END
 ++~We are scholars, I hail from Candlekeep myself, your library has some reputation~+ BooksH
-++~We are here to investigate for some ancient relict that is hidden below the monastry.~+RelictH
-IF ~InParty("Leyala")~THEN REPLY~My companion's old teacher is here, Ilyos.~+ TeachH
+++~We are here to investigate for some ancient relict that is hidden below the monastery.~+RelictH
+IF ~InParty("Leyala")~THEN REPLY~My companion's old teacher is here, Iylos.~+ TeachH
 IF ~!InParty("Leyala")~THEN REPLY~ We heard about the fighting style of the Scorpion and want to challenge the monks.~ + ChallH
 
 CHAIN
@@ -38,26 +38,26 @@ IF~~THEN RTMonkH BooksH
 ~You may be disappointed, maybe you heard about the recent thefts already?~
 ==CVSan25J~Books have been stolen?~
 ==RTMonkH~Strangely enough, yes. You may want to talk with the brother inside who is responsible for the library. If you are lucky, the books you are interested in are still there.~
-=~Here is your badge to enter the monastry.~DO~GiveItemCreate("RTMoBad",Player1,1,0,0) SetGlobal("RTMons1","RTF040",5)~ EXIT
+=~Here is your badge to enter the monastery.~DO~GiveItemCreate("RTMoBad",Player1,1,0,0) SetGlobal("RTMons1","RTF040",5)~ EXIT
 
 CHAIN
 IF~~THEN RTMonkH RelictH
-~Our monastry is not the place for treasure hunters.~
-==CVSan25J~We are not interested in treasures but in knowledge. The history of your place is related to my anchestors.~
-==RTMonkH~You are from Cerameons's bloodline then?~
+~Our monastery is not the place for treasure hunters.~
+==CVSan25J~We are not interested in treasures but in knowledge. The history of your place is related to my ancestors.~
+==RTMonkH~You are from Cerameon's bloodline then?~
 ==CVSan25J~Yes, I am.~
-==RTMonkH~You are welcome to Ravencrest. Here is your badge to enter the monastry.~DO~GiveItemCreate("RTMoBad",Player1,1,0,0) SetGlobal("RTMons1","RTF040",5)~ EXIT
+==RTMonkH~You are welcome to Ravencrest. Here is your badge to enter the monastery.~DO~GiveItemCreate("RTMoBad",Player1,1,0,0) SetGlobal("RTMons1","RTF040",5)~ EXIT
 
 CHAIN
 IF~~THEN RTMonkH TeachH
 ~*She turns to Leyala and studies the girl's features for a moment.*~
 =~You resemble a young student I still remember, the one who followed the new path of Love and Hope - still being able to defend herself pretty well.~
 ==CVLey25J~I am Leyala, yes, and I remember you very well.~
-==RTMonkH~Leyala, welcome back again, the abbot will be happy to see you again. Here is your badge to enter the monastry.~DO~GiveItemCreate("RTMoBad",Player1,1,0,0) SetGlobal("RTMons1","RTF040",5)~ EXIT
+==RTMonkH~Leyala, welcome back again, the abbot will be happy to see you again. Here is your badge to enter the monastery.~DO~GiveItemCreate("RTMoBad",Player1,1,0,0) SetGlobal("RTMons1","RTF040",5)~ EXIT
 
 CHAIN
 IF~~THEN RTMonkH ChallH
-~This is not what the monks would accept. Their skills are for defense only. You will not disturb their peace. Leave us please.~ DO~SetGlobal("RTMons1","RTF040",4)~ EXIT
+~This is not what the monks would accept. Their skills are for defence only. You will not disturb their peace. Leave us please.~ DO~SetGlobal("RTMons1","RTF040",4)~ EXIT
 
 CHAIN
 IF~!PartyHasItem("RTMoBad")Global("RTMons1","RTF040",4)~THEN RTMonkH NeedBadgeNun2
@@ -77,10 +77,10 @@ END
 BEGIN RTMonk1
 
 IF~!PartyHasItem("RTMoBad")~THEN BEGIN NeedBadge
-SAY~You need an invitation badge to enter the monastry - especially after the recent thefts.~
+SAY~You need an invitation badge to enter the monastery - especially after the recent thefts.~
 IF~~THEN REPLY~Where do I get such a badge? ~GOTO Nun
 IF~~THEN REPLY~Recent thefts? What has been stolen?~ GOTO Books
-IF~~THEN REPLY~Old buerocrate!~ GOTO Nun
+IF~~THEN REPLY~Old bureaucrat!~ GOTO Nun
 END
 
 IF~~THEN BEGIN Nun
@@ -94,7 +94,7 @@ IF~~THEN EXIT
 END
 
 IF~PartyHasItem("RTMoBad")~THEN BEGIN HasBadge
-SAY~You have a badge for the monastry. The door is now open for you.~
+SAY~You have a badge for the monastery. The door is now open for you.~
 IF~~THEN DO~SetGlobal("RTMons1","RTF040",6)~EXIT
 END
 
@@ -106,7 +106,7 @@ IF~~THEN REPLY~Where do we find him?~ GOTO HintNun3
 END
 
 IF~~THEN BEGIN HintNun2
-SAY~SHE inspects all newcomers, especially if they ask for permission to enter the monastry.~
+SAY~SHE inspects all newcomers, especially if they ask for permission to enter the monastery.~
 IF~~THEN REPLY~Where do we find her?~ GOTO HintNun3
 END
 
@@ -150,7 +150,7 @@ IF~AreaCheck("RTF042")~THEN REPLY ~We seek the harbour master, brother.~GOTO ins
 END
 
 IF~~THEN BEGIN insp
-SAY~At this time she nornally inspects the harbour fortification. She will be out on the wall catwalk.~
+SAY~At this time she normally inspects the harbour fortification. She will be out on the wall catwalk.~
 IF~~THEN EXIT
 END
 
@@ -173,7 +173,7 @@ DO~SetGlobal("RTMissBooks","LOCALS",2) ActionOverride("RTMonkbo",SetNumTimesTalk
 ==RTMonkBo~(Laughs bitterly.) Can I still bear that title?~
 =~They left little of our library, those book thieves (sigh).~
 ==CVSan25J~Did you have many valuable tomes in here?~
-==RTMonkBo~Strangely enough we didn't - they did not even take the most valuable one, the history of our monastry itself. I am the only one here who has read them all...~
+==RTMonkBo~Strangely enough we didn't - they did not even take the most valuable one, the history of our monastery itself. I am the only one here who has read them all...~
 ==CVSan25J~What did they take then?~
 ==RTMonkBo~Mostly biographies and auto-biographies of celebrities of the Realms.~
 ==CVSan25J~And there is no hint who could have been the thief?~
@@ -186,7 +186,7 @@ DO~ActionOverride("CVSandr",SetGlobal("RTMissBooks","LOCALS",2))~
 ==RTMonkBo~(Laughs bitterly.) Can I still bear that title?~
 =~They left little of our library, those book thieves (sigh).~
 ==CVSan25J~Did you have many valuable tomes in here?~
-==RTMonkBo~Strangely enough we didn't - they did not even take the most valuable one, the history of our monastry itself. I am the only one here who has read them all...~
+==RTMonkBo~Strangely enough we didn't - they did not even take the most valuable one, the history of our monastery itself. I am the only one here who has read them all...~
 ==CVSan25J~What did they take then?~
 ==RTMonkBo~Mostly biographies and auto-biographies of celebrities of the Realms.~
 ==CVSan25J~And there is no hint who could have been the thief?~
@@ -231,18 +231,18 @@ IF~GlobalLT("RTMons1","RTF043",3)~THEN RTIYLO Access1
 ==RTIYLO IF~GlobalGT("SanIylos","GLOBAL",1)~THEN~Sandrah of Waterdeep and <CHARNAME> - that is unexpected, to say the least.~
 ==RTIYLO IF~InParty("LEYALA")~THEN~...my former apprentice! Welcome sweet Leyala, the nun of hope and love - you have surely outgrown your old teacher by lengths these days.~
 ==CVLey25J IF~InParty("LEYALA")~THEN~No one could do that, master, but I am not too shy to say that I do not disgrace my teacher.~
-==RTIYLO~What leads you to our remote monastry, my friends.~
+==RTIYLO~What leads you to our remote monastery, my friends.~
 ==CVSan25J~The deeds of one of my anchestors right here - I mean at this place where later this cloister was erected.~
 ==RTIYLO~Your anchestress? Cerameon - a woman with a hammer, of course...We talk about events very far in the darkness of the past.~
 ==CVSan25J~Still there are those who remember those events - be it for good or for evil.~
 =~It was here as you will know, good abbot, that a portal was sealed that was used by malicious eastern forces to enable the invasion of the old Realms. We assume that the seal can be opened and the old connection be re-established.~
 ==RTIYLO~We have no indication that this has been attempted.~
-==CVSan25J~Maybe not yet, at least not by our enemies. If I am correct in my interpretation of my anchestress' journal, the portal and the seal can only be opened from this side of the passage. If our current enemies would attempt to re-use it, they would need to open it from here first.~
+==CVSan25J~Maybe not yet, at least not by our enemies. If I am correct in my interpretation of my ancestress' journal, the portal and the seal can only be opened from this side of the passage. If our current enemies would attempt to re-use it, they would need to open it from here first.~
 ==RTIYLO~You come to prevent that?~
 ==CVSan25J~Not just that. We as well intend to use it ourself this time to get to the heart of our enemies' lair.~
 ==CVSan25J~*Sandrah continues to provide Iylos with further details of the recent events.*~
-==RTIYLO~Hm, hm...be assured that the Order of the Striking Scorpion is all but defenseless. This place is designed to hold back whole armies with just a few well trained and well equipped monks. ~
-=~Hm...now the bookthefts our librarian complaints about may appear in another light. You should talk to him if you haven't done already.~
+==RTIYLO~Hm, hm...be assured that the Order of the Striking Scorpion is all but defenceless. This place is designed to hold back whole armies with just a few well trained and well equipped monks. ~
+=~Hm...now the book thefts our librarian complaints about may appear in another light. You should talk to him if you haven't done already.~
 ==CVSan25J~This means that now that you know about the threat, you and your brothers will guard the seal?~
 ==RTIYLO~My oath on that, Sandrah. This will give you the opportunity to prepare and execute your strike into the heart of Thay.~
 =~You have my permission to access the lower levels at your discretion. You will find a sun relict in the mourner's fountain just below which you will need to venture further into the unlit and uncharted areas that were the battlefield of old.~DO~SetGlobal("RTMons1","RTF043",3)~EXIT
@@ -311,7 +311,7 @@ IF~Global("Narga","rtf045",2)~THEN CVNarga InRavencr1
 =~Open the Ssseal and come wisss me to your new life at my ssside.~
 DO~SetGlobal("Narga","rtf045",3)~
 ==CVIzy25J IF~InParty("CVIzzy")~THEN~Uuh, I always been thinkin' the rain on our ol' Sword Coast wasss bad, but not asss wet asss that guy's word gush.~
-==CVSan25J~I am a good swimmer but I have no intent to practice it in the ocean of your droolings.~
+==CVSan25J~I am a good swimmer but I have no intent to practice it in the ocean of your drooling.~
 ==CVNarga~Sssh...~
 ==CVSan25J~There is a man upstairs who would be glad if I returned the books you have stolen to him.~
 ==CVNarga~I have found what wasss needed.~

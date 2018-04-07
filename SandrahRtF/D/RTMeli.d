@@ -18,7 +18,7 @@ END
 CHAIN
 IF~AreaCheck("RTF005") NumTimesTalkedTo(0)!InParty(Myself)~THEN RTMeli Desas1
 ~ <CHARNAME>, Sandrah!!! ....oh...~
-==CVSan25J~Melicamp?? Would it be that you are responsible for that desaster around here?~
+==CVSan25J~Melicamp?? Would it be that you are responsible for that disaster around here?~
 ==RTMeli~I was guessing it wouldst be rather save to do my new enchantment training out here. People avoid the old Sune temple for fear of monsters and such...~
 ==CVSan25J~Rightfully so, I would say. So this was another of you failed experiments then?~
 ==RTMeli~Failed? Oh, no, this was a GREAT success. Tell me of a sorcerer you know who could create such a multitude of the most dangerous creatures in one spell?~
@@ -69,7 +69,7 @@ IF~Global("RTMelibant","GLOBAL",3)~ THEN RTMeli AftThal
 DO~SetGlobal("RTMelibant","GLOBAL",4)~
 ==CVSan25J~A title appropriate to all of us.~
 ==RTMeli~I doubt my old teacher meant it that way.~
-==CVSan25J~One thing I have learned during my travels with <CHARNAME> is that we never stop learning, regardless whether we are sorcerers, mages, or fighters or whatever. One who denies it will forver stay the fool he is. You are not one of those.~
+==CVSan25J~One thing I have learned during my travels with <CHARNAME> is that we never stop learning, regardless whether we are sorcerers, mages, or fighters or whatever. One who denies it will forever stay the fool he is. You are not one of those.~
 ==RTMeli~Really? These words mean much to me.~
 ==CVSan25J~When we found you out at that Sune temple you were there to practice and to learn out of your own motivation. You tried to improve yourself.~
 ==RTMeli~But it was a disaster, like so often.~
@@ -130,7 +130,7 @@ EXIT
 
 CHAIN
 IF~Global("RTMelLayWom","LOCALS",6)~ THEN RTMeli LaySharDre
-~Leyala, Sandrah and me have discovered from the old scrolls we found that the Citadel may have an artifact from the days of Karsus, a collection of enormous wisdom about the arcane but also about technology, the planes, the stars and other aspects of nature.~
+~Leyala, Sandrah and me have discovered from the old scrolls we found that the Citadel may have an artefact from the days of Karsus, a collection of enormous wisdom about the arcane but also about technology, the planes, the stars and other aspects of nature.~
 DO~SetGlobal("RTMelLayWom","LOCALS",7)~
 ==BLeya25~Your eyes are sparkling with enthusiasm, Melicamp. I do not need to remind you of the danger that can lie in the possession of such items.~
 ==RTMeli~I have no intention to follow the ways of the Karsusses of this plane. Knowledge belongs to the people to improve their lives.~
@@ -149,17 +149,17 @@ IF~Global("MeliNosti","LOCALS",0)  OR(3) Global("SawMagic","AR0603",1) Global("S
 DO~ SetGlobal("MeliNosti","LOCALS",1)~
 ==BSandr25~I am sure the owner would not allow you that. Your eager to study and learn however should not be in vain.~
 ==RTMeli~When I joined you and <CHARNAME> I was hoping I could benefit from your own skills a bit.~
-==BSandr25~I have to apologize, Melicamp, it is my fault - or rather it is neglegtion due to the strange new situation we had to face and investigate. I wanted to do that and my promise still stands.~
+==BSandr25~I have to apologize, Melicamp, it is my fault - or rather it is neglected due to the strange new situation we had to face and investigate. I wanted to do that and my promise still stands.~
 =~As soon as we find some hours of quietude, you and me should take our time and look into your knowledge of the arcane and possible areas of enhancement. I give you my word for on that.~
 ==RTMeli~*Sandrah's words seem to make a large impact on Melicamp's otherwise cool attitude.* Oh, how that reminds me of the old, old days in Waterdeep...~
-==BSandr25~Ouch, you are not referring to some hormone driven youngter's errors way back then, are you?~
+==BSandr25~Ouch, you are not referring to some hormone driven youngster's errors way back then, are you?~
 ==RTMeli~It may have been such - back then. We have grown a bit since. One thing was definitely no error, Sandrah, the girl back then was as attracting as the woman is today.~
 ==BSandr25~Melicamp, I promised you studies in magic, not something else.~
 ==RTMeli~Oh, yes, yes, I got carried away a bit...nostalgia...~EXIT
 
 CHAIN
 IF~Global("RTMelibant","GLOBAL",5)~THEN RTMeli SanRom1
-~Sandrah, you had now the chance to observe how I have developped myself.~
+~Sandrah, you had now the chance to observe how I have developed myself.~
 DO~SetGlobal("RTMelibant","GLOBAL",6)~
 ==BSandr25~Are you referring to your added experience as a sorcerer or as - a man?~
 ==RTMeli~Any aspect that would awaken your interest would delight me.~
@@ -195,7 +195,7 @@ IF~Global("RTMelibant","GLOBAL",11)~THEN RTMeli SanRom3
 ~Sandrah, do you have an idea why that recent spell of mine failed again?~
 DO~SetGlobal("RTMelibant","GLOBAL",12)~
 ==BSandr25~Did you have the feeling you were truely connected with the Weave and the effect you wanted to produce was clear and focussed in your mind?~
-==RTMeli~I have practiced the spell before successfully, I was sure to handle it.~
+==RTMeli~I have practised the spell before successfully, I was sure to handle it.~
 ==BSandr25~Mmh, practice is good but you cannot rely on routine alone. Any time you try to manage the Weave you need the same dedication and concentration to do it.~
 =~It is the limited view of most people to think of the Weave only as a means to cast spells.~
 =~The Weave is in everything and around everything, it is the many energies and forces that exist around the planes.~
@@ -278,7 +278,7 @@ IF~Global("RTMeliQuest","GLOBAL",2)~ THEN RTMeli Thalcare
 ~I had no idea that Thalantyr cared so much for me.~
 DO~SetGlobal("RTMeliQuest","GLOBAL",3)~
 ==CVSan25J~It reminded me of Gorion's care for <CHARNAME>, childless mages having to take care of a pupil for some reason.~
-==RTMeli~He developped fatherly feelings towards me, you mean?~
+==RTMeli~He developed fatherly feelings towards me, you mean?~
 ==CVSan25J~You spend a long time in his care, longer than you did with your real father if I recall correctly.~
 ==RTMeli~The relationship to my parents was rather cold, you know those Waterdeep snobs better than anyone, my dear. A sorcerer was the black sheep of the family. You are right, Thalantyr never made me feel such. (Sigh) I never recognized how important he was for me.~
 ==CVSan25J~It may be another sign of growing wisdom and maturity that you do so now.~DO~AddJournalEntry(@2088,QUEST)~EXIT
@@ -308,7 +308,7 @@ DO~SetGlobal("RTMeliQuest","GLOBAL",9)RealSetGlobalTimer("RTMeliNB","LOCALS",120
 ==RTMeli~Are you really sure?? - That would be a magnificent find!~
 ==CVSan25J~Yes, provided we will find it in the waste dungeon of the Citadel.~
 ==RTMeli~Karsus' Pocket Library!!~
-=~If this description is halfways correct it must contain a wisdom greater than any we know of today in Faerun.~
+=~If this description is halfway correct it must contain a wisdom greater than any we know of today in Faerun.~
 ==CVSan25J~Karsus' near success was not based on madness alone, Melicamp. Beneath his deeds was a knowledge and wisdom that made him see himself as a god already.~
 ==RTMeli~It surely is not for one man alone to possess such knowledge and power.~
 ==CVSan25J~You have something in mind, my dear?~
@@ -368,7 +368,7 @@ DO~SetGlobal("RTWantMel","RTF074",2)~
 ==CVLey25J~MY MAN will not mix anything with any other female, you understand (She wraps her arm around Melicamp's waist and motions him away.)~
 ==RTMeli~Your man?~
 ==CVLey25J~(Blushes) I thought I had to rescue you from her advances, those orc girls can be very direct in their demands...or...was I spoiling anything?~
-==RTMeli~She's still observing us. (He pulls her a bit toghter with his arm now over her shoulder until they are out of sight.)~ EXIT
+==RTMeli~She's still observing us. (He pulls her a bit tighter with his arm now over her shoulder until they are out of sight.)~ EXIT
 
 CHAIN
 IF~Global("RTMeliQuest","GLOBAL",15)~THEN RTMeli ScrollN6
@@ -381,4 +381,4 @@ DO~SetGlobal("RTMeliQuest","GLOBAL",16)~
 ==RTMeli IF~InParty("Leyala")~THEN~Are these words out of kindness or do they come from one of those supporters?~
 ==CVLey25J IF~InParty("Leyala")~THEN~Some time ago you kind of offered me a vacancy at your university, didn't you. I will collect my share of wisdom for my domain and bring it to the academy, count on it.~
 ==RTMeli IF~InParty("Leyala")~THEN~*He raises her fingertips to his mouth and kisses them.*. I will count the days until my professor of love will arrive in the Sharp Wood.~
-==CVSan25J~You may not have Karsus' Library to fill your bookshelfs but maybe the assembled lore of Elminster and his daughter will be a baseline to start with - aside from your respectable own collection. Here.~DO~GiveItemCreate("sanbok2","RTMeli",1,0,0) AddXPObject("RTMeli",17000)EraseJournalEntry(@2092) EraseJournalEntry(@2090) EraseJournalEntry(@2089) EraseJournalEntry(@2088)~EXIT
+==CVSan25J~You may not have Karsus' Library to fill your bookshelves but maybe the assembled lore of Elminster and his daughter will be a baseline to start with - aside from your respectable own collection. Here.~DO~GiveItemCreate("sanbok2","RTMeli",1,0,0) AddXPObject("RTMeli",17000)EraseJournalEntry(@2092) EraseJournalEntry(@2090) EraseJournalEntry(@2089) EraseJournalEntry(@2088)~EXIT
