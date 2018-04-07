@@ -24,7 +24,7 @@ END
 
 IF~~THEN BEGIN SeeBoy2
 SAY~An orc boy, here in Thay, definitely Clan-Orc. He vanished into this building over there.~
-IF~~THEN REPLY~The caravanserai?~ EXIT
+IF~~THEN REPLY~The Caravanserai?~ EXIT
 IF~~THEN REPLY~It does not hurt to check it out.~ EXIT
 END
 
@@ -96,7 +96,7 @@ DO~SetGlobal("RTGiranQuest","GLOBAL",10)~
 ==RSlaver1~Hey, you, peons! Better leave here quick. This is borderland, military restricted zone.~
 ==RSlaver2~Yes, get back while you still can - how did they pass the guards anyway?~
 ==CVGir25J~We will not back down from you, scum. I know why YOU are in this zone. Your game is up - it's for you to retreat.~
-==RSlaver1~Damn, who are you to interfer in Thayan operations. Your life and freedom are at stake if you don't move out of here immediately.~
+==RSlaver1~Damn, who are you to interfere in Thayan operations. Your life and freedom are at stake if you don't move out of here immediately.~
 ==CVGir25J~It's the life and freedom of your supposed victims that made us come here. You will not capture those Clan Orcs you hunt.~
 ==RSlaver2~What now, Lorcos?~
 ==RSlaver1~The captain and his men will take care of them while the operation continues as planned.~DO~ClearAllActions() StartCutSceneMode() Wait(2) CreateCreatureObjectDoor("RTKnihos",Player1,0,0,0) CreateCreatureObjectDoor("RTKnihos",Player3,0,0,0) CreateCreatureObjectDoor("RTKnihos",Player5,0,0,0) Wait(2) CreateCreatureObjectDoor("RTKnihol",Player2,0,0,0) CreateCreatureObjectDoor("RTKnihos",Player4,0,0,0) Wait(2) ActionOverride("RSlaver1",EscapeArea())ActionOverride("RSlaver2",EscapeArea()) EndCutSceneMode() ~EXIT
@@ -148,7 +148,7 @@ CHAIN
 IF~Global("RTGiranQuest","GLOBAL",15)~THEN RTNild Stop5
 ~ Giran. Your mother sends you a long way to chase some disobedient clan members.~
 DO~SetGlobal("RTGiranQuest","GLOBAL",16)~
-==CVGir25J~I come not by the Queen's command. The Clans do not persue you. You made your choice to live by your own rule and law and not follow Shauhana. This is sad but your free will and your right.~
+==CVGir25J~I come not by the Queen's command. The Clans do not pursue you. You made your choice to live by your own rule and law and not follow Shauhana. This is sad but your free will and your right.~
 ==RTNild~You have not come across all those lands we crossed and battled to tell us that. Why are you here?~
 ==CVGir25J~Do you know you are on the border to Thay? Do you know that land?~
 ==RTNild~This is good land - this is free land. People here left, we did not force them.~
@@ -170,11 +170,11 @@ IF~Global("RTGiranQuest","GLOBAL",17)~THEN RTNild Final
 DO~SetGlobal("RTGiranQuest","GLOBAL",18)~
 ==CVGir25J~Yes, we have. What do we gain out of this victory?~
 ==RTNild~I may have been wrong about you and your *mother*. Gathlenk's version by which I was raised may not have been the only truth.~
-==CVGir25J~It matters not anymore, Nildjek, what matters is the future of the Clan Orcs over here in Rashemen.~
+==CVGir25J~It matters not any more, Nildjek, what matters is the future of the Clan Orcs over here in Rashemen.~
 ==RTNild~The ones you and me - and your brave friends - have rescued today. ~
 ==CVGir25J~You will always be welcome back in the Stormhorns, you know that. But it will be a very long hard road back. You found good land, a good place. It will be safe from now on.~
 ==RTNild~Will they not try it again? On behalf of the women and children I wish you were right. It will be very hard to bring all of them back west - some may not see the end of the journey.~
-==CVGir25J~I told you our reason to be here was not your persuit. The quest we follow will bring changes to Thay in its wake. Those who try to oppress you may shortly loose their power over this land.~
+==CVGir25J~I told you our reason to be here was not your pursuit. The quest we follow will bring changes to Thay in its wake. Those who try to oppress you may shortly loose their power over this land.~
 ==RTNild~Do you advise me to stay here?~
 ==CVGir25J~The choice is yours and your people's. I give you the facts for decision.~
 =~<CHARNAME>'s and Sandrah's fight, our fight, is against those who currently rule over Thay. We have found allies in this land who will take over once we defeated the leaders. Send some messengers to the outskirts of Bezantur in the south of here. Make contact with the Red Hoods, the opposition of Thay. You will find that you will be welcome as free citizens in a new land.~

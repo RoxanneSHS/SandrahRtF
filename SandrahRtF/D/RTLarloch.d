@@ -65,11 +65,11 @@ IF~~THEN RTLarlo SharV2
 ==CVSan25J~Shar offered you the Shadow Weave and its powers in return for your services, right?~
 ==RTLarlo~An interesting subject, isn't it, a complete new field for research and development, hihihi.~
 ==CVSan25J~(Smiles) A strong temptation - even if you see that she may not be able to grant it, even if she wanted.~
-=~You have studied and learned from the Weave since two millenia, Larloch. You are not at the end by far. The True Weave has as much to explore for you still as the Shadow Weave may offer.~
+=~You have studied and learned from the Weave since two millennia, Larloch. You are not at the end by far. The True Weave has as much to explore for you still as the Shadow Weave may offer.~
 ==RTLarlo~I knew you would help me order my options, Mystra. You always did. A new Karsus you named the puppeteer in the background?~
-==CVSan25J~Szass Tam of Thay, dweller and explorer of the ancient Citadel in the Thaymounts.~
-==RTLarlo~The knowledge of the old lizard race, descendents of the Dragon Age, old as Netheril...a dangerous matter to deal with...a new Karsus?~
-=~He has the power but knows not his limits, this Szass Tam. He aims at godhood - YOUR godhood and portifolio. He wants the Weave.~
+==CVSan25J~Szass Tam of Thay, dweller and explorer of the ancient Citadel in the Thaymount.~
+==RTLarlo~The knowledge of the old lizard race, descendants of the Dragon Age, old as Netheril...a dangerous matter to deal with...a new Karsus?~
+=~He has the power but knows not his limits, this Szass Tam. He aims at godhood - YOUR godhood and portfolio. He wants the Weave.~
 ==CVSan25J~You have been there when Netheril fell, destroyed by one of such ambitions and such foolishness.~
 ==RTLarlo~It will not happen again. I will give Shar my answer.~
 ==CVSan25J~Not so hasty, Larloch. Shar expects your response still? We may use it to our advantage. Meet with her, but we will be there as well. It is a breach in our foe's phalanx.~
@@ -104,7 +104,7 @@ DO~SetGlobal("SanRTFPlot4","GLOBAL",4)~
 ==CVSan25J~You are a lackey of the new Karsus east at Thay - he is a creature of the prime and you should know what will happen when he gets hold of Larloch's Globe of Ultimate Stupidity.~
 ==RTLarlo~Hihihi, a brilliant name for a brilliant invention!~DO~Enemy()~
 ==CVSharG~Forget about Szass Tam and forget about Mystra. Darkness will rule the planes from now on.~DO~Enemy()~
-==CVSharG IF~InParty("Loureed")~THEN~Darkness will also swallow the little traitor - neither the Helping Hand Shaundakul you have chosen over me nor the then deceased Mystra can prevent your anhilation, drow. ~
+==CVSharG IF~InParty("Loureed")~THEN~Darkness will also swallow the little traitor - neither the Helping Hand Shaundakul you have chosen over me nor the then deceased Mystra can prevent your annihilation, drow. ~
 ==CVLOU25J IF~InParty("Loureed")~THEN~Where there is love and hope, darkness has already lost the fight.~EXIT
 
 CHAIN
@@ -128,7 +128,7 @@ END
 
 CHAIN 
 IF~~THEN RTLarlo Ress2
-~The Goddess of All Magic, the true goddess of the True Weave made her choice well. No one can be more loyal to the Weave than the one who has reeped its benefits for as long as I have. She knew they would believe my motifs to step out of Mystra's shadow and become the herold of the Shadow Weave, hihihi. This kind of scheming is in their own league and they apply the formula to everyone not knowing that our brain works on a different level, hihihi.~
+~The Goddess of All Magic, the true goddess of the True Weave made her choice well. No one can be more loyal to the Weave than the one who has reeped its benefits for as long as I have. She knew they would believe my motifs to step out of Mystra's shadow and become the herald of the Shadow Weave, hihihi. This kind of scheming is in their own league and they apply the formula to everyone not knowing that our brain works on a different level, hihihi.~
 =~She's Cyric's granddaughter after all, the blood of the Great Manipulator runs in her veins, hihihi, only she is able to use his own weapons against himself.~
 =~Now hurry, friend, do your part of the task so we can pay Thay a visit.~DO~SetGlobal("26Once","LOCALS",1)~EXIT
 
@@ -144,6 +144,6 @@ DO~SetGlobal("26Once","LOCALS",2)~
 =~Your performance, Larloch, and <CHARNAME>'s true grieve and anger were necessary to cover the leaks in our plan and draw the attention from my faked death.~
 ==RTLarlo~Hihihi, you estimated their reaction well, my Goddess, including Shar's immediate impuls to get rid of me and her haste to secure the globe without investigating your unexpected defeat any further.~
 ==CVSan25J~The spell plague takes its toll by now among the gods and their power and reputation. I hope Shar's manipulation with the contradictory forces of the Weaves will also show some unpleasant results soon.~
-==RTLarlo~My reports state that Szass Tam's efforts here on the Sword Coast have come to a halt, hihihi. The signs of an inner tension in the phalanx are apparent, they are occupied with internal quarreling at the moment.~
+==RTLarlo~My reports state that Szass Tam's efforts here on the Sword Coast have come to a halt, hihihi. The signs of an inner tension in the phalanx are apparent, they are occupied with internal quarrelling at the moment.~
 ==CVSan25J~We should once more consult my grandmother below and then seize the opportunity to visit Thay again - this time with the power and the odds in our favour.~
 ==RTLarlo~Down with the new Karsus, hihihi - hihihi...~DO~EscapeArea()~EXIT

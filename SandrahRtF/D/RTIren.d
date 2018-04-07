@@ -29,11 +29,11 @@ END
 
 CHAIN
 IF~~THEN RTIren Disturb3
-~*Ignoring you completetly, Irenicus awaits Sandrah's explanation.*~
+~*Ignoring you completely, Irenicus awaits Sandrah's explanation.*~
 ==CVSan25J~The issue is - Clones.~
 =~A large amount of them, Joneleth, including people already very long dead. Controlled by some mysterious substance fed to them.~
 =~She continues with the details that she and Thalantyr have found.~
-==RTIren~I agree with your analysis of the Hornswamp laboratory. You need a much bigger installation for that - and an enourmous amount of energy for the production. I had my air elemental pocket plane down here for that purpose. (It serves a much better purpose now!!) They must do the cloning somehere else.~
+==RTIren~I agree with your analysis of the Hornswamp laboratory. You need a much bigger installation for that - and an enourmous amount of energy for the production. I had my air elemental pocket plane down here for that purpose. (It serves a much better purpose now!!) They must do the cloning somewhere else.~
 =~Professionally speaking, they are good at what they do, very advanced. They have found something I was still researching in my time, the thing that makes those clones so willing and responsive whilst maintaining their inherited skills and zest.~
 ==CVSan25J~Where would YOU have gone to find such a solution, with all your knowledge and provided you had access to such sources?~
 ==RTIren~They must possess knowledge of the most ancient scientific sources, the origins of necromancy and cloning, from the days before the branches were separated.~
@@ -77,7 +77,7 @@ CHAIN
 IF~~THEN RTIren Colle2
 ~That is what flat-footed detectives do, isn't it? You should be capable of at least that.~
 ==CVLou25J IF~InParty("Loureed") G("lrSendaiSoul",1)~THEN~So this is how my mother's soul lives on. Ha, in a pathetic male retired mageling - it serves her so well.~
-==RTIren IF~InParty("Loureed") G("lrSendaiSoul",1)~THEN~She serves me quite well since I got that desasterous drow female hormone turmoil under control - I'm sure you know well that weakness I'm talking about, *drow girly*.~
+==RTIren IF~InParty("Loureed") G("lrSendaiSoul",1)~THEN~She serves me quite well since I got that disastrous drow female hormone turmoil under control - I'm sure you know well that weakness I'm talking about, *drow girly*.~
 ==CVLou25J IF~InParty("Loureed") !G("lrSendaiSoul",1)~THEN~So this is how my mother's soul could have ended. Ha, in a pathetic male retired mageling - it would serve her so well.~
 ==RTIren IF~InParty("Loureed") !G("lrSendaiSoul",1)~THEN~She would have served me quite well provided I'd get that desasterous drow female hormone turmoil under control - I'm sure you know well that weakness I'm talking about, *drow girly*.~
 ==RTIren~Just before we part and you leave me again to my restored peace, I like to ask you for something.~
@@ -86,7 +86,7 @@ IF~~THEN RTIren Colle2
 END
 ++~No way. I don't trust you to use it for just that.~+ Colle3
 ++~Why not. You seem to have become a harmless scientist by now.~+ Colle3
-++~Sorry, but I have none of it with me anymore.~+ Colle3
+++~Sorry, but I have none of it with me any more.~+ Colle3
 ++~Fine, but only for little Quayle's protection and his mother...~+ Colle4
 
 CHAIN

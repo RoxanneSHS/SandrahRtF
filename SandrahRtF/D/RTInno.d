@@ -23,7 +23,7 @@ IF~~THEN REPLY~Who are you? Surely not the little boy you pretend to be!~GOTO Wr
 END
 
 IF~~THEN BEGIN Wraith2
-SAY~The nasties have overun us and killed everyone, even the old holy church.~
+SAY~The nasties have overrun us and killed everyone, even the old holy church.~
 IF~~THEN REPLY~What have they done to you? How come you are alive?~GOTO Wraith3
 END
 
@@ -34,7 +34,7 @@ IF~~THEN REPLY~This trap is too obvious for us, *BOY*, or whoever you are...~GOT
 END
 
 IF~~THEN BEGIN Wraith4
-SAY~Ha, it does not matter anymore, you are already too near to think of escaping!!~
+SAY~Ha, it does not matter any more, you are already too near to think of escaping!!~
 IF~~THEN DO~ ClearAllActions() StartCutSceneMode() StartCutScene("CRTF010")~EXIT
 END
 
@@ -47,7 +47,7 @@ END
 IF~~THEN BEGIN Real2
 SAY~I have the amulet from the monk in the temple, the one which had belonged to the old heroine. It kept the nasties off - but I have no more to eat since this morning.~
 IF~Global("RTMetMonk","GLOBAL",2)~THEN REPLY~We have met Lir already and he told us to search for you. The way is save to the temple, go to him now, we will follow.~DO~SetGlobal("RTMetMonk","GLOBAL",5)~GOTO Real3
-IF~Global("RTMetMonk","GLOBAL",0)~THEN REPLY~ We must go to the temple for an artifact. Stay here, we will try to find that monk, he will be able to help you if he is still alive.~DO~SetGlobal("RTMetMonk","GLOBAL",1) ~GOTO Real4
+IF~Global("RTMetMonk","GLOBAL",0)~THEN REPLY~ We must go to the temple for an artefact. Stay here, we will try to find that monk, he will be able to help you if he is still alive.~DO~SetGlobal("RTMetMonk","GLOBAL",1) ~GOTO Real4
 END
 
 IF~~THEN BEGIN Real3
@@ -70,7 +70,7 @@ BEGIN RTMonk
 IF~NumTimesTalkedTo(0)~THEN BEGIN Monk1
 SAY~ Have you come for the blessed grave of Cerameon? A dark time for travellers, a dark time for us all.~
 IF~Global("RTMetMonk","GLOBAL",1) ~THEN REPLY~Yes, that is one thing - but we also found another survivor, a little boy in a house not far from here that is in need of help.~GOTO MonkHelpBoy1
-IF~Global("RTMetMonk","GLOBAL",0) ~THEN REPLY ~Yes, we need an artifact from the tomb for an urgent task on behalf of the Realms. We must open again the sealed passage to Thay. ~DO~SetGlobal("RTMetMonk","GLOBAL",2)~GOTO MonkHelpBoy2
+IF~Global("RTMetMonk","GLOBAL",0) ~THEN REPLY ~Yes, we need an artefact from the tomb for an urgent task on behalf of the Realms. We must open again the sealed passage to Thay. ~DO~SetGlobal("RTMetMonk","GLOBAL",2)~GOTO MonkHelpBoy2
 END
 
 IF~~THEN BEGIN MonkHelpBoy1
@@ -92,12 +92,12 @@ CHAIN
 IF WEIGHT #-2~ Global("RTMetMonk","GLOBAL",5)~THEN RTMonk Boyresc1
 ~You have returned the hope to these walls, whoever you are, just as our heroine has done ages ago.~
 DO~ SetGlobal("RTMetMonk","GLOBAL",6)~
-==CVSan25J~Know that she is one of my anchestors in the bloodline of my mother.~
+==CVSan25J~Know that she is one of my ancestors in the bloodline of my mother.~
 ==RTMonk~But then...she was a descendent of the goddess Mystra and...you must have that blood as well...~
 ==CVSan25J~And Mystra's enemies have once again gathered their forces, Lir. That is the reason why we need to get to Thay urgently. The access we seek is a secret one.~
-==RTMonk~You want to use the passage again that your anchestress has sealed?~
+==RTMonk~You want to use the passage again that your ancestress has sealed?~
 ==CVSan25J~She sealed it with her famous hammer. It is this hammer we seek as it is the key to unseal the passage again.~
-==RTMonk~You will find it with her remains in the crypta. It was buried and locked with her for all times. But you have come as one of her blood to demand it one more time. So be it.~
+==RTMonk~You will find it with her remains in the crypts. It was buried and locked with her for all times. But you have come as one of her blood to demand it one more time. So be it.~
 =~You will find the key here in my desk. It was told in MY family from father to son that the day would come when one like you would come to ask for it again.~
 EXIT
 

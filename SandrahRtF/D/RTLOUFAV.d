@@ -4,7 +4,7 @@ BEGIN RTLouUD
 BEGIN RTLouFav
 
 IF ~ Global("RTLouPlot","GLOBAL",2)~ THEN BEGIN 0
-SAY ~Here are the petty surfacers who shelter the daughter of the traitress Sendai. I am Shyntlara, favorite of Lolth.~
+SAY ~Here are the petty surfacers who shelter the daughter of the traitress Sendai. I am Shyntlara, favourite of Lolth.~
 =~She has chosen to reject Lolth - blinded by the ambition of her mother to rise equal to the Spider Queen. Surrender her to me and I may let the rest of you alive.~
 IF ~~ THEN REPLY ~I think not, drow! Together we have defeated enemies much stronger than you. ~ GOTO 2
 IF ~~ THEN REPLY ~L'Urieet and I stand as one, Shyntlara. If you want her you will have to get through me!~ GOTO 2
@@ -29,7 +29,7 @@ IF ~~ THEN REPLY~ That will not occur, you will not get her!~ EXTERN CVLOU25J Ab
 END
 
 IF ~~ THEN BEGIN 6
-  SAY  ~Fool! By your own deeds shall Mother Lolth judge you! With the Spider Queen's favor my power is vast.~
+  SAY  ~Fool! By your own deeds shall Mother Lolth judge you! With the Spider Queen's favour my power is vast.~
 =~I look forward to overseeing your transformation into a Drider personally, L'Urieet. I think you'll like being trapped as a creature of pure, base, bestial instinct.~
 = ~And if you flee ... she will feast on you now! Face me! Face your doom!~
 IF ~~ THEN DO ~SetGlobal("RTLouPlot","GLOBAL",3)~ EXIT
@@ -40,7 +40,7 @@ IF~~THEN CVLOU25J Abdu1
 ~I never served your spider queen nor any other god.~
 ==RTLouFav~You're even worse, child of the renegade who wanted godhood alongside our holy Lolth.~
 ==BVICON25 IF~InParty("Viconia")~THEN~Shar will be my protector from you, waela.~
-==RTLouFav~You will kneel and bleed before the righful ruler of ALL drow!~
+==RTLouFav~You will kneel and bleed before the rightful ruler of ALL drow!~
 END
 ++~You have heard her, Shyntlara, she will never be one of you. Now leave us be.~ EXTERN RTLouFav 6
 
@@ -84,7 +84,7 @@ IF~ Global("RTBackInUD","GLOBAL",5)~THEN RTImrae PriorLolth
 DO~ SetGlobal("RTBackInUD","GLOBAL",6)~
 ==UDDrow10~Lolth will have us all suffer, our houses are doomed.~
 ==UDDrow06~The wraith of the Spider Queen will spare no one in Ust Natha.~
-==RTImrae~Silence, fools? Will you wimper like surfacers or go down fighting like drow?~
+==RTImrae~Silence, fools? Will you whimper like surfacers or go down fighting like drow?~
 ==UDDrow07~We cannot fight Lolth!~
 ==RTImrae~What else can we do, she will forgive none of us?~
 ==CVSan25J~You can hang your head and wait for the axe to fall or you can stand up and fight against that injust tyranny. You have already lost everything - except for your pride and your life.~
@@ -94,7 +94,7 @@ DO~ SetGlobal("RTBackInUD","GLOBAL",6)~
 ==CVSan25J~We should all keep our blood cool and our minds considering a strategy to get her out of town.~
 ==UDDrow06~She is in the main temple with just a few of her revengers and their victim.~
 ==UDDrow10~There must be a chance for all of us to overcome her in her mortal avatar.~
-==CVSan25J~A less open approach may be more promissing here.~
+==CVSan25J~A less open approach may be more promising here.~
 ==RTImrae~What do you mean?~
 ==CVSan25J~A few captured surfacers to accompany L'Urieet's sacrifice for the glory of Lolth could be delivered to the temple as a symbol of Ust Natha's redemption attempt.~
 ==RTImrae~You have proven once before you are able and brave enough to betray even drow matrons and handmaidens. Now try your luck with the Spider Queen herself.~ DO~AddJournalEntry(@2086,QUEST)~ EXIT
@@ -116,7 +116,7 @@ DO~ SetGlobal("RTBackInUD","GLOBAL",8)~
 ==CVSan25J~Lolth, I propose to retreat urgently. Our friend L'Urieet is neither your strayed disciple nor your possession. You will not execute your revenge on an innocent.~
 ==RTLolth~She is drow and she is mine! You make not the rules of the Underdark...Mystra?~
 ==RTLouUD~Neither do you impose them! You have made more than one mistake this time, Spider Queen, following only blinded revenge.~
-==CVSan25J~You have lost a city of once faihful followers already today...~
+==CVSan25J~You have lost a city of once faithful followers already today...~
 ==RTLolth~They will be crushed beneath my heel!~
 ==RTLouUD~Not without opposition.~
 ==CVSan25J~You will be more than lucky if you make it out of this self constructed trap alive. Does your hatred really make you so blind as not to see whom you are facing?~
@@ -146,7 +146,7 @@ IF~GlobalGT("RTBackInUD","GLOBAL",7)AreaCheck("RTF076")~THEN  RTLouUD  StayUD
 DO~ SetGlobal("RTBackInUD","GLOBAL",12)~
 ==RTImrae~It was good to set on the power of the outsiders this time, L'Urieet.~
 ==RTLouUD~The Spider Queen has lost much today. The spell plague has already weakened her - now WE, Ust Natha, the first City, has proven that drow can survive beyond Lolth's constant threat.~
-==RTImrae~There will be attempts to gain back what was lost today. We have defeated her avatar but Lolth still exists, even if weakend.~
+==RTImrae~There will be attempts to gain back what was lost today. We have defeated her avatar but Lolth still exists, even if weakened.~
 ==RTLouUD~There will also be support from other drow who had suffered and doubted the cruel goddess. Many follow her out of sheer fear only. We have proven it can be overcome.~
 ==CVSan25J~You sound like one who has achieved much more than just survival today.~
 ==RTLouUD~You remember well our talks during our common travel?~

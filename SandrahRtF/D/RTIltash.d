@@ -19,7 +19,7 @@ IF~~THEN GOTO Burglar5
 END
 
 IF~~THEN BEGIN Burglar4
-SAY~Thieves rascals underdogs sneaking house? Must be Mask fools seeking for latern, he. MEN, go surround house, me go check inside. Let no escape!!~
+SAY~Thieves rascals underdogs sneaking house? Must be Mask fools seeking for lantern, he. MEN, go surround house, me go check inside. Let no escape!!~
 IF~~THEN DO~ SetGlobal("RTGetOut","GLOBAL",7) EscapeArea()~EXIT
 END
 
@@ -35,7 +35,7 @@ IF~~THEN REPLY~Ohnonothimagain!~GOTO Deceiver2
 END
 
 IF~~THEN BEGIN Deceiver2
-SAY~There was burglers in my house and that was you. You are Red Hood!!~
+SAY~There was burglars in my house and that was you. You are Red Hood!!~
 =~You are dead Red Hood in a moment.~
 IF~~THEN DO~SetGlobal("RTGetOut","GLOBAL",9)Enemy()~ EXIT
 END
