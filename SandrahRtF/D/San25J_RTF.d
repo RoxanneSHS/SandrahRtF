@@ -621,7 +621,7 @@ IF~~THEN REPLY~Any conclusions yet, my counsellor?~DO~SetGlobal("FoundStuffClon"
 END
 
 IF~~THEN BEGIN RTFPlot1Ide3
-SAY~(Laughs roughly) Not more than you see, my love. Nothing here is what it is supposed to make us think. The battle has been no battle even if there are dead bodies. Those bodies are not the people we are supposed to think they are. They are neither undead or summoned creatures - they are real and they have lived and are now dead. What killed them I cannot say - maybe the strange substance has something to do with it.~
+SAY~(Laughs roughly) Not more than you see, <CHARNAME>. Nothing here is what it is supposed to make us think. The battle has been no battle even if there are dead bodies. Those bodies are not the people we are supposed to think they are. They are neither undead or summoned creatures - they are real and they have lived and are now dead. What killed them I cannot say - maybe the strange substance has something to do with it.~
 IF~~THEN REPLY~However, it appears to me that someone tries hard to get the North and South to move into the Neutral Zone and to make them believe that blood has been spilled already.~GOTO RTFPlot1Ide4
 END
 
@@ -947,7 +947,7 @@ IF~Global("SeenMys","RTF070",5)~THEN BEGIN Candr1
 SAY~Candrella...of course...~
 =~I owe you some explanation, <CHARNAME>, and by that provide all of us with some more insight into Mystra's position here in Thay.~
 IF~~THEN REPLY~Please do so.~ DO~SetGlobal("SeenMys","RTF070",6)~GOTO Candr2
-IF~~THEN REPLY~We should seek a calm place so we can talk undisturbed. I will ask you about Candrella later, my love.~DO~SetGlobal("SeenMysPid","LOCALS",1) SetGlobal("SeenMys","RTF070",6)~ EXIT
+IF~~THEN REPLY~We should seek a calm place so we can talk undisturbed. I will ask you about Candrella later, Sandrah.~DO~SetGlobal("SeenMysPid","LOCALS",1) SetGlobal("SeenMys","RTF070",6)~ EXIT
 END
 
 IF~~ THEN BEGIN Candr2
