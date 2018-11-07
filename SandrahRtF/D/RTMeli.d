@@ -20,7 +20,7 @@ IF~AreaCheck("RTF005") NumTimesTalkedTo(0)!InParty(Myself)~THEN RTMeli Desas1
 ~ <CHARNAME>, Sandrah!!! ....oh...~
 ==CVSan25J~Melicamp?? Would it be that you are responsible for that disaster around here?~
 ==RTMeli~I was guessing it wouldst be rather save to do my new enchantment training out here. People avoid the old Sune temple for fear of monsters and such...~
-==CVSan25J~Rightfully so, I would say. So this was another of you failed experiments then?~
+==CVSan25J~Rightfully so, I would say. So this was another of your failed experiments then?~
 ==RTMeli~Failed? Oh, no, this was a GREAT success. Tell me of a sorcerer you know who could create such a multitude of the most dangerous creatures in one spell?~
 ==CVSan25J~I would prefer any sorcerer who had control of the creatures he summons.~
 ==RTMeli~Eh...yes...I'd prefer that myself - hence the training out here.~
