@@ -76,7 +76,7 @@ IF~~THEN Thalan RTF4
 ==CVSan25J~The kind of things our friend Nerkio was so keen to *collect*~
 END
 ++~Oh my!! He took some of your hair back then in Amn!!~ + RTF5
-++~Clones!! That is why those glasses reminded me of Athkatla - and of Irenicus~ + RTF5
+++~Clones!! That is why those glasses reminded me of Athkatla - and of Irenicus.~ + RTF5
 
 CHAIN
 IF~~THEN Thalan RTF5

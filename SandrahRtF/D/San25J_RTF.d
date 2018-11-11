@@ -329,7 +329,7 @@ END
 
 IF~~THEN BEGIN  RTFIren1
 SAY~It will not be that dramatic, <CHARNAME>, even if it will still recall some unpleasant memories. Joneleth has returned to his old place in Athkatla and some semi-retirement down there.~
-IF~~THEN REPLY~You think we can just walk into that place just like that?~DO~SetGlobal("RTFIren","GLOBAL",1)RevealAreaOnMap("ar0020")~GOTO RTFIren2
+IF~~THEN REPLY~You think we can walk into that place just like that?~DO~SetGlobal("RTFIren","GLOBAL",1)RevealAreaOnMap("ar0020")~GOTO RTFIren2
 END
 
 IF~~THEN BEGIN  RTFIren2
