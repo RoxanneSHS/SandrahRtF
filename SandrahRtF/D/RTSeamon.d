@@ -3,7 +3,7 @@ BEGIN RTShaj
 
 CHAIN
 IF~Global("RTSaem","RTF090",1)~THEN RTSaemon OutThay1
-~ There you are and here we are ready to depart, just as promised.~
+~There you are and here we are ready to depart, just as promised.~
 DO~SetGlobal("RTSaem","RTF090",2)~
 ==CVSan25J~Who might that beautiful lady be, Saemon, would you introduce her to us?~
 ==RTSaemon~This is Shaleij, my friends, she will come with us.~
@@ -11,13 +11,13 @@ DO~SetGlobal("RTSaem","RTF090",2)~
 ==RTSaemon~SURELY, what do you think - actually it is her first free will action since a long time. Can you imagine the poor girl in the hands of that monster Ithrash?~
 ==RTShaj~I will not go back, you made a promise, Saemon!~
 ==CVSan25J~You know how much I hate slavery...(Sigh) So much about a save peaceful sea cruise...~
-==RTShaj~Why do we not sail, my master will be here soon!!~ DO~EscapeArea()~
+==RTShaj~Why do we not sail, my master will be here soon!!~DO~EscapeArea()~
 ==RTSaemon~We will depart as soon as these people go below deck. I cannot be seen leaving the harbour with them or you in full sight. You all go below.~
 =~Fear nothing, once we are at sea we are save. Your capturer is no seaman like Saemon is.~DO~EscapeArea()~EXIT
 
 CHAIN
 IF~AreaCheck("RTF100") Global("RTSaem","RTF100",0)~THEN RTSaemon OutThay2
-~ Ah, fresh sea breeze, there's nothing that can compare to the freedom on the waves.~
+~Ah, fresh sea breeze, there's nothing that can compare to the freedom on the waves.~
 DO~SetGlobal("RTSaem","RTF100",1)~
 ==CVSan25J~Freedom for Shaleij hopefully.~
 ==RTSaemon~My black pearl! She is wonderful, I hope she will never ask me to settle down too soon. There are so many places I'd like to show her and enjoy with her.~
@@ -53,17 +53,17 @@ IF~~THEN CVSan25J OutThay4
 ==CVSan25J~It would be, you are absolutely right, Saemon. If not...(You see her thoughts drift off into possibilities you cannot imagine yourself.)~
 END
 ++~Tell me that you will not do such a thing, tell me!!~+ OutThay5
-++~What are you planning, I have a right to know. I love you.~ + OutThay5
+++~What are you planning, I have a right to know. I love you.~+ OutThay5
 
 CHAIN
 IF~~THEN CVSan25J OutThay5
 ~We will need to do something drastically soon, <CHARNAME>. Mystra must be saved before Szass Tam can kill her. She and her magic must...disappear. Even AO must be prevented to interfere.~
 =~We must discuss this plan with my grandmother after we paid the Black Hand in the Sharp Wood our visit. ~
-=~Enough of that now, Saemon, bring us home as fast as you can.~ 
+=~Enough of that now, Saemon, bring us home as fast as you can.~
 DO~ClearAllActions() StartCutSceneMode() Wait(2) StartCutScene("RTFaen")~EXIT
 
 CHAIN
-IF~ Global("SanRTFPlot1","GLOBAL",4)Global("RTTalkedSaem","GLOBAL",0) ~THEN RTSaemon RTSea1
+IF~Global("SanRTFPlot1","GLOBAL",4)Global("RTTalkedSaem","GLOBAL",0) ~THEN RTSaemon RTSea1
 ~What a splendid surprise, my good old friends!!!~
 DO~SetGlobal("RTTalkedSaem","GLOBAL",1)~
 ==CVSan25J~The same old Saemon as ever, tss, tsss, nothing bad has ever happened between us, right old weasel?~
@@ -77,9 +77,9 @@ DO~SetGlobal("RTTalkedSaem","GLOBAL",1)~
 ==CVSan25J~Make it short, Havarian. You know how it could be achieved, you will tell us - you will just be asking for something in return. What is it?~
 ==RTSaemon~Straight to the heart of the matter, my dear. How I love dealing with you.~
 END
-IF~Global("RTTalkedNalia","GLOBAL",0) ~ THEN REPLY~Spit it out, scoundrel. I may save your life.~ + RTSea2
-IF~Global("RTTalkedNalia","GLOBAL",1) ~ THEN REPLY~You are not really in a position to make much demands. The Governor's swords are ready to strike.~ + RTSea3
-IF~Global("RTTalkedNalia","GLOBAL",1) ~ THEN REPLY~Spit it out, scoundrel. I may save your life.~+ RTSea4
+IF~Global("RTTalkedNalia","GLOBAL",0) ~THEN REPLY~Spit it out, scoundrel. I may save your life.~+ RTSea2
+IF~Global("RTTalkedNalia","GLOBAL",1) ~THEN REPLY~You are not really in a position to make much demands. The Governor's swords are ready to strike.~+ RTSea3
+IF~Global("RTTalkedNalia","GLOBAL",1) ~THEN REPLY~Spit it out, scoundrel. I may save your life.~+ RTSea4
 
 CHAIN
 IF~~THEN RTSaemon RTSea2
@@ -87,11 +87,11 @@ IF~~THEN RTSaemon RTSea2
 ==CVSan25J~Who is threatening you so heavily that all your guild cannot protect you?~
 ==RTSaemon~Looks like the Lady Governor herself somehow holds a grudge against me. She seems to forget that a well organised Guild controlling the docks and slums benefits the whole town and county.~
 ==CVSan25J~In a way I can accept your point. The guild has always been better than chaos and criminals running uncontrolled.~
-==RTSaemon~ de'Arnise must nowadays see that otherwise. She has set up an enormous garrison right here in the docks and there are curfews every moment to impede us.~
+==RTSaemon~de'Arnise must nowadays see that otherwise. She has set up an enormous garrison right here in the docks and there are curfews every moment to impede us.~
 ==CVSan25J~Hm, the cost for the city must be high for that. Nalia surely must have better ways to spend that money for the town.~
-==RTSaemon~ You're old buddies, aren't you? You will definitely find a way to persuade her to stop that nonsense.~
+==RTSaemon~You're old buddies, aren't you? You will definitely find a way to persuade her to stop that nonsense.~
 ==CVSan25J~Probably. However be prepared that it may cost you a bit more than just the information you can provide us.~
-==RTSaemon~ We're all reasonable people, aren't we. Bloodshed costs us all. As long as her demands stay within some limits there is always room for negotiation.~
+==RTSaemon~We're all reasonable people, aren't we. Bloodshed costs us all. As long as her demands stay within some limits there is always room for negotiation.~
 END
 ++~Sandrah, we will find another way, let this rat sink with his ship.~EXIT
 ++~Let us hear what the other side has to say to that.~EXIT
@@ -102,11 +102,11 @@ IF~~THEN RTSaemon RTSea3
 ==CVSan25J~Nalia is threatening you so heavily that all your guild cannot protect you.~
 ==RTSaemon~Looks like the Lady Governor somehow holds a grudge against me. She seems to forget that a well organised Guild controlling the docks and slums benefits the whole town and county.~
 ==CVSan25J~In a way I can accept your point. The guild has always been better than chaos and criminals running uncontrolled.~
-==RTSaemon~ de'Arnise must nowadays see that otherwise. She has set up an enormous garrison right here in the docks and there are curfews every moment to impede us.~
+==RTSaemon~de'Arnise must nowadays see that otherwise. She has set up an enormous garrison right here in the docks and there are curfews every moment to impede us.~
 ==CVSan25J~Hm, the cost for the city must be high for that. Nalia surely must have better ways to spend that money for the town.~
-==RTSaemon~ You're old buddies, aren't you? You will definitely find a way to persuade her to stop that nonsense.~
+==RTSaemon~You're old buddies, aren't you? You will definitely find a way to persuade her to stop that nonsense.~
 ==CVSan25J~Probably. However be prepared that it may cost you a bit more than just the information you can provide us.~
-==RTSaemon~ We're all reasonable people, aren't we. Bloodshed costs us all. As long as her demands stay within some limits there is always room for negotiation.~
+==RTSaemon~We're all reasonable people, aren't we. Bloodshed costs us all. As long as her demands stay within some limits there is always room for negotiation.~
 END
 ++~Sandrah, we will find another way, let this rat sink with his ship.~EXIT
 ++~Let us hear what the other side has to say to that.~EXIT
@@ -117,34 +117,34 @@ IF~~THEN RTSaemon RTSea4
 ==CVSan25J~Nalia is threatening you so heavily that all your guild cannot protect you.~
 ==RTSaemon~Looks like the Lady Governor somehow holds a grudge against me. She seems to forget that a well organised Guild controlling the docks and slums benefits the whole town and county.~
 ==CVSan25J~In a way I can accept your point. The guild has always been better than chaos and criminals running uncontrolled.~
-==RTSaemon~ de'Arnise must nowadays see that otherwise. She has set up an enourmous garrison right here in the docks and there are curfews every moment to impede us.~
+==RTSaemon~de'Arnise must nowadays see that otherwise. She has set up an enourmous garrison right here in the docks and there are curfews every moment to impede us.~
 ==CVSan25J~Hm, the cost for the city must be high for that. Nalia surely must have better ways to spend that money for the town.~
-==RTSaemon~ You're old buddies, aren't you? You will definitely find a way to persuade her to stop that nonsense.~
+==RTSaemon~You're old buddies, aren't you? You will definitely find a way to persuade her to stop that nonsense.~
 ==CVSan25J~Probably. However be prepared that it may cost you a bit more than just the information you can provide us.~
-==RTSaemon~ We're all reasonable people, aren't we. Bloodshed costs us all. As long as her demands stay within some limits there is always room for negotiation.~
+==RTSaemon~We're all reasonable people, aren't we. Bloodshed costs us all. As long as her demands stay within some limits there is always room for negotiation.~
 END
 ++~Sandrah, we will find another way, let this rat sink with his ship.~EXIT
 ++~Let us hear what the other side has to say to that.~EXIT
 
 CHAIN
-IF~ Global("SanRTFPlot1","GLOBAL",4)Global("RTDockSolution","GLOBAL",2)Global("RTTalkedSaem","GLOBAL",1)~THEN RTSaemon RTSea5
+IF~Global("SanRTFPlot1","GLOBAL",4)Global("RTDockSolution","GLOBAL",2)Global("RTTalkedSaem","GLOBAL",1)~THEN RTSaemon RTSea5
 ~War or peace, my friends?~
 DO~SetGlobal("RTTalkedSaem","GLOBAL",2)~
 ==CVSan25J~Peace, reputation and influence - provided you make the right choice, Saemon. War and destruction if you anger the gods.~
 ==RTSaemon~You know I am no fool, I ignore your threat for now and will listen to the alternative.~
-==CVSan25J IF ~ Global("PlayerThiefguild","GLOBAL",1)~THEN~Even <CHARNAME> will contribute our share by giving up <PRO_HISHER> Guild building here in the docks.~
-==CVSan25J IF ~ !Global("PlayerThiefguild","GLOBAL",1)~THEN~ All you need to give up is the unused old Guild building here in the docks.~
+==CVSan25J IF ~Global("PlayerThiefguild","GLOBAL",1)~THEN~Even <CHARNAME> will contribute our share by giving up <PRO_HISHER> Guild building here in the docks.~
+==CVSan25J IF ~!Global("PlayerThiefguild","GLOBAL",1)~THEN~All you need to give up is the unused old Guild building here in the docks.~
 ==RTSaemon~That is all?~
 ==CVSan25J~We could make the pill more acceptable to the Governor if we tell her that the Shadow Thieves are willing to share half the cost for the Charity House to be established with the town.~
 ==RTSaemon~Too much!!~
 ==CVSan25J~Really? That is how the seats on the board of directors are determined. They go to those who contribute.~
 ==RTSaemon~Hmm. Such a seat...could be easily a foot in the door to the council itself...such an institution would cost less than a power struggle with the Governor...on the other hand...~
 END
-++~ I will go and tell Nalia about your acceptance.~+ RTSea6
-++~ Don't be a fool, you gain so much for such a small stake~ + RTSea6
+++~I will go and tell Nalia about your acceptance.~+ RTSea6
+++~Don't be a fool, you gain so much for such a small stake~+ RTSea6
 
 CHAIN
-IF~ ~THEN RTSaemon RTSea6
+IF~~THEN RTSaemon RTSea6
 ~Well, bring me the sealed document from the Governor that makes me a board member and I will tell you about Irenicus.~EXIT
 
 CHAIN
@@ -172,10 +172,10 @@ DO~SetGlobal("RTCyr1","ar0307",2)~
 ==Chalcy01~My allies? You know nothing about them, ever-silly girl.~
 END
 ++~So it's true what the rumour said, you are in league with Irenicus then.~+ InIrD2
-++~So once again Havarian has sold his hide to a new master and tries to sell ours as well.~ + InIrD2
+++~So once again Havarian has sold his hide to a new master and tries to sell ours as well.~+ InIrD2
 
 CHAIN
-IF~~ THEN Chalcy01 InIrD2
+IF~~THEN Chalcy01 InIrD2
 ~*For a moment you could swear you see Cyric slightly irritated*.~
 =~The name of that mortal means nothing to me. Your accusations are as blind as they ever were.~
 ==CVSan25J~The Exile is not working for you - maybe he is in the service of one of your allies. I am sure they will not inform you of their own agenda in this affair.~
@@ -185,8 +185,8 @@ END
 ++~Whoever your allies are, Cyric, you know as well as we know that they will backstab you as soon as they see the chance for themselves...~+ InIrD3
 
 CHAIN
-IF~~ THEN Chalcy01 InIrD3
-~ Hohohoho...that joke is, eh, *godly*!!! Backstab me, the Lord of all Assassins who killed your father already...hihihi....~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+IF~~THEN Chalcy01 InIrD3
+~Hohohoho...that joke is, eh, *godly*!!! Backstab me, the Lord of all Assassins who killed your father already...hihihi....~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
 CHAIN
 IF WEIGHT #-4~GlobalGT("SanBeginRTF","GLOBAL",1)~THEN Tassa RTFGreet

@@ -17,7 +17,7 @@ END
 
 CHAIN
 IF~AreaCheck("RTF005") NumTimesTalkedTo(0)!InParty(Myself)~THEN RTMeli Desas1
-~ <CHARNAME>, Sandrah!!! ....oh...~
+~<CHARNAME>, Sandrah!!! ....oh...~
 ==CVSan25J~Melicamp?? Would it be that you are responsible for that disaster around here?~
 ==RTMeli~I was guessing it wouldst be rather save to do my new enchantment training out here. People avoid the old Sune temple for fear of monsters and such...~
 ==CVSan25J~Rightfully so, I would say. So this was another of your failed experiments then?~
@@ -37,7 +37,7 @@ END
 
 CHAIN
 IF~~THEN RTMeli Desas2
-~Too bad, my reputation found me even here. Well, I continue to improve here in solitude then, ready any time to join you shouldst you change your mind.~ EXIT
+~Too bad, my reputation found me even here. Well, I continue to improve here in solitude then, ready any time to join you shouldst you change your mind.~EXIT
 
 CHAIN
 IF~~THEN RTMeli Desas3
@@ -46,9 +46,9 @@ DO~SetGlobal("MeliJoin","LOCALS",1) JoinParty()~EXIT
 
 CHAIN
 IF~AreaCheck("RTF005") NumTimesTalkedToGT(0)!InParty(Myself)~THEN RTMeli Desas4
-~ <CHARNAME>, you have changed your mind? May I join.~
+~<CHARNAME>, you have changed your mind? May I join.~
 END
-++~No, we were just checking if you already managed to kill yourself with your magical fumblings.~ +Desas2
+++~No, we were just checking if you already managed to kill yourself with your magical fumblings.~+Desas2
 ++~If you oversee his deeds, Sandrah, we may give it a try.~+Desas3
 
 CHAIN
@@ -64,8 +64,8 @@ DO~SetGlobal("RTMelibant","GLOBAL",2)~
 ==RTMeli~I saw no one - I sleep little and I summon my watchers when I do, so I'm pretty sure nobody went up or came down.~EXIT
 
 CHAIN
-IF~Global("RTMelibant","GLOBAL",3)~ THEN RTMeli AftThal
-~ The Permanent Apprentice he called me!~
+IF~Global("RTMelibant","GLOBAL",3)~THEN RTMeli AftThal
+~The Permanent Apprentice he called me!~
 DO~SetGlobal("RTMelibant","GLOBAL",4)~
 ==CVSan25J~A title appropriate to all of us.~
 ==RTMeli~I doubt my old teacher meant it that way.~
@@ -76,7 +76,7 @@ DO~SetGlobal("RTMelibant","GLOBAL",4)~
 ==CVSan25J~The intention compensates for the failure. You learn from your mistakes each time.~
 ==RTMeli~I make a lot of mistakes...~
 ==CVSan25J~Consequently you learn a lot. Honestly, Melicamp, you are a competent sorcerer and improving daily. Keep your arrogance at bay and do not take failure as a personal insult - then your progress will increase. You have Mystra's sympathy.~
-==RTMeli~ Have I? Well, you must know it better than anyone.~EXIT
+==RTMeli~Have I? Well, you must know it better than anyone.~EXIT
 
 CHAIN
 IF~Global("RTMeliIzzChi","LOCALS",1) ~THEN RTMeli IzzChicken
@@ -125,11 +125,11 @@ DO~SetGlobal("RTMelLayWom","LOCALS",5)~
 ==RTMeli~*Melicamp performs his duties with great care and tenderness now and then rewarded by Leyala turning around to him and encouraging him with gentle smiles and words you cannot overhear...~
 ==BSandr25~<CHARNAME>, if that does not inspire you, I surely have lost my attraction for you.~
 END
-++~*Turning towards her you see her holding out her own hairbrush to you.*~DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
+++~*Turning towards her you see her holding out her own hairbrush to you.*~DO ~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
 CHAIN
-IF~Global("RTMelLayWom","LOCALS",6)~ THEN RTMeli LaySharDre
+IF~Global("RTMelLayWom","LOCALS",6)~THEN RTMeli LaySharDre
 ~Leyala, Sandrah and me have discovered from the old scrolls we found that the Citadel may have an artefact from the days of Karsus, a collection of enormous wisdom about the arcane but also about technology, the planes, the stars and other aspects of nature.~
 DO~SetGlobal("RTMelLayWom","LOCALS",7)~
 ==BLeya25~Your eyes are sparkling with enthusiasm, Melicamp. I do not need to remind you of the danger that can lie in the possession of such items.~
@@ -146,7 +146,7 @@ DO~SetGlobal("RTMelLayWom","LOCALS",7)~
 CHAIN
 IF~Global("MeliNosti","LOCALS",0)  OR(3) Global("SawMagic","AR0603",1) Global("SawMagic","RTF078",1) Global("SawMagic","RTF153",1)~THEN RTMeli Magic1
 ~Even if used for evil purposes in its time this installation would be worth studying and learning from.~
-DO~ SetGlobal("MeliNosti","LOCALS",1)~
+DO~SetGlobal("MeliNosti","LOCALS",1)~
 ==BSandr25~I am sure the owner would not allow you that. Your eager to study and learn however should not be in vain.~
 ==RTMeli~When I joined you and <CHARNAME> I was hoping I could benefit from your own skills a bit.~
 ==BSandr25~I have to apologize, Melicamp, it is my fault - or rather it is neglected due to the strange new situation we had to face and investigate. I wanted to do that and my promise still stands.~
@@ -188,7 +188,7 @@ DO~SetGlobal("RTMelibant","GLOBAL",8)~
 ==BSandr25~I cannot blame you for your attitude, Melicamp, I once had a similar view on the males, always comparing them to the ideal example I had created myself from a great hero I admired. I learned over time to see other people with an open mind and found there are so many loveable aspects in most people. Ideals and idols may help us to frame our tastes - but they should stay out of our real lives.~
 ==RTMeli~Do you advise me to keep Sandrah out of my life.~
 ==BSandr25~(She takes his face in both hands and looks him in the eyes.) I advise you to forget your *Dream Sandrah* and concentrate on a real woman.~
-==RTMeli~Her name may by chance be Sandrah as well...(He leans forward and kisses her.)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty()~ EXIT
+==RTMeli~Her name may by chance be Sandrah as well...(He leans forward and kisses her.)~DO ~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty()~EXIT
 
 CHAIN
 IF~Global("RTMelibant","GLOBAL",11)~THEN RTMeli SanRom3
@@ -207,7 +207,7 @@ DO~SetGlobal("RTMelibant","GLOBAL",12)~
 ==RTMeli~Does your healing skills work in such a way as well?~
 ==BSandr25~Yes and no - healing is a much more complex manipulation of the Weave and of the powers the body to heal has imminent. It would be a very long lecture should we try to discuss this matter now.~
 ==RTMeli~Maybe we should change the subject to a topic I feel more confident with since we travel together again.~
-=~*He blushes shortly but straightens himself within a moment. He takes Sandrah's hand and lifts it to his lips. He looks straight into her eyes as he begins to kiss her fingertips.*~DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty()~ EXIT
+=~*He blushes shortly but straightens himself within a moment. He takes Sandrah's hand and lifts it to his lips. He looks straight into her eyes as he begins to kiss her fingertips.*~DO ~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty()~EXIT
 
 CHAIN
 IF~Global("RTMelibant","GLOBAL",14)~THEN RTMeli SanRom4
@@ -224,13 +224,13 @@ DO~SetGlobal("RTMelibant","GLOBAL",15)RealSetGlobalTimer("RTMeliNB","LOCALS",160
 ==BSandr25~Oh, there is not so much magic involved, it is more the knowledge of how the elements involved in the healing process work together. Much depends on the will of the patient itself. The best healer is helpless when an injured person has given himself up.~
 ==RTMeli~I am glad I have not given up my belief in you and me and that there is a bond between us.~
 ==BSandr25~(Smiles) Your persistence is your strength.~
-==RTMeli~That is one thing we have in common, Sandrah. Let me lead you a bit aside from our friends...~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty()~ EXIT
+==RTMeli~That is one thing we have in common, Sandrah. Let me lead you a bit aside from our friends...~DO ~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty()~EXIT
 
 CHAIN
 IF~Global("RTMelibant","GLOBAL",16)~THEN RTMeli SanRom5
 ~*Melicamp has taken Sandrah's hand in a sudden impulse and clears his throat dramatically.*~
 DO~SetGlobal("RTMelibant","GLOBAL",17)RealSetGlobalTimer("RTMeliNB","LOCALS",1600)~
-==BSandr25~ No need to be shy, dear, speak your heart whatever is on your mind.~
+==BSandr25~No need to be shy, dear, speak your heart whatever is on your mind.~
 ==RTMeli~It is an overwhelming thought to hold the hand of the Goddess of All Magic in such a way, isn't it?~
 ==BSandr25~It was the woman I am, not the goddess you now learned that I have become meanwhile, who stirred the feelings you have. It is the woman I still am who responds to it.~
 ==RTMeli~I have told myself the same, my love, and my heart tells me I am right. Still - one day soon you...we...will have defeated those that made you return to Faerun.~
@@ -239,10 +239,10 @@ DO~SetGlobal("RTMelibant","GLOBAL",17)RealSetGlobalTimer("RTMeliNB","LOCALS",160
 =~I am grateful for the wisdom that made you decide how you did. I would not have missed a single moment of our time together and I will savour each one we will still have with full passion.~
 ==BSandr25~I would not have acted this way with any other man, Melicamp. I knew that otherwise we both would have grieved forever over the chance we never allowed each other.~
 ==RTMeli~Sandrah is in my arms, Mystra is a creature of another dimension for another time.~
-==BSandr25~Tonight I will be as much of a woman as you can ever desire...~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty()~ EXIT
+==BSandr25~Tonight I will be as much of a woman as you can ever desire...~DO ~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty()~EXIT
 
 CHAIN
-IF~Global("MeliAfterKul","LOCALS",1)~ THEN RTMeli SanRom5
+IF~Global("MeliAfterKul","LOCALS",1)~THEN RTMeli SanRom5
 ~You are an incredibly powerful woman, Sandrah. Is this why men like Samas Kul think they can win you by force?~
 DO~SetGlobal("MeliAfterKul","LOCALS",2)~
 ==BSandr25~Probably yes, but it should neither concern me nor you, Melicamp. You see the results and YOU know better than anyone how to succeed.~
@@ -252,10 +252,10 @@ DO~SetGlobal("MeliAfterKul","LOCALS",2)~
 ==RTMeli~Since we are together, you have never given me the feeling that any of us possesses the power over the other or should have it. I feel at equal terms with you without the need to be a god to do so.~
 ==BSandr25~Love is not a question of owning or dominating, you have understood that well. Thus I am more than willing to deliver my heart and body to you without any conditions.~
 ==RTMeli~I define my own condition, sweetheart, it is to make you feel like a woman who is truely loved.~
-DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
+DO ~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT
 
 CHAIN
-IF~ Global("MeliSanGB","LOCALS",1) ~THEN RTMeli Goodbye
+IF~Global("MeliSanGB","LOCALS",1) ~THEN RTMeli Goodbye
 ~What will happen to us, my love, now that you and <CHARNAME> have accomplished your mission on the Prime?~
 DO~SetGlobal("MeliSanGB","LOCALS",2)~
 ==BSandr25~When I was still a young mortal girl I fell in love with an elf of the age of about 250 years and knowing that was only half of his expected lifetime. We both agreed that he had loved before and would do so again after me. Still, our love was the most important thing to us while it lasted and we both accepted to enjoy it under the conditions we knew rather than to be hindered by the difficulties.~
@@ -270,11 +270,11 @@ DO~SetGlobal("MeliSanGB","LOCALS",2)~
 =~I will become part of that new development. I will become a teacher to those who seek knowledge of the multiverse and its possibilities. The Sword Coast needs a place to trade knowledge, to promote technical progress and research and to explore our possibilities as mortals.~
 ==BSandr25~Your university?~
 ==RTMeli~That's what I have in mind. I think there is a vacant installation to suit my plans in the Sharp Wood Forest.~
-==BSandr25~You will succeed.~DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
+==BSandr25~You will succeed.~DO ~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT
 
 //Melicamp Quest
 CHAIN
-IF~Global("RTMeliQuest","GLOBAL",2)~ THEN RTMeli Thalcare
+IF~Global("RTMeliQuest","GLOBAL",2)~THEN RTMeli Thalcare
 ~I had no idea that Thalantyr cared so much for me.~
 DO~SetGlobal("RTMeliQuest","GLOBAL",3)~
 ==CVSan25J~It reminded me of Gorion's care for <CHARNAME>, childless mages having to take care of a pupil for some reason.~
@@ -284,23 +284,23 @@ DO~SetGlobal("RTMeliQuest","GLOBAL",3)~
 ==CVSan25J~It may be another sign of growing wisdom and maturity that you do so now.~DO~AddJournalEntry(@2088,QUEST)~EXIT
 
 CHAIN
-IF~Global("RTMeliQuest","GLOBAL",4) ~ THEN RTMeli Scroll1
+IF~Global("RTMeliQuest","GLOBAL",4) ~THEN RTMeli Scroll1
 ~This old scroll, do you think it may be what Thalantyr told me to watch out for?~
 DO~SetGlobal("RTMeliQuest","GLOBAL",5)~
 ==CVSan25J~It has endured the ages since Netheril fell, consequently it has an inherit power of its own. All I can say at the moment is that it is the second half of some old recital. Without its complementary part I can make little out of it.~
-==RTMeli~Still - it will be worth keeping it. Chances are we find the second part somehow, we are coming around a bit, don't we?~ DO~AddJournalEntry(@2089,QUEST)~EXIT
+==RTMeli~Still - it will be worth keeping it. Chances are we find the second part somehow, we are coming around a bit, don't we?~DO~AddJournalEntry(@2089,QUEST)~EXIT
 
 CHAIN
-IF~Global("RTMeliQuest","GLOBAL",6) ~ THEN RTMeli Scroll2
+IF~Global("RTMeliQuest","GLOBAL",6) ~THEN RTMeli Scroll2
 ~We have both parts of the ancient scroll now?~
 DO~SetGlobal("RTMeliQuest","GLOBAL",7)~
-==CVSan25J~ Let us see if we can get some sense out of it.~DO~AddXPObject("RTMeli",22500)~
+==CVSan25J~Let us see if we can get some sense out of it.~DO~AddXPObject("RTMeli",22500)~
 ==RTMeli~To study and discover maybe a secret of the ancients with you, oh Sandrah, I have to thank <CHARNAME> again and again for this opportunity, even if nothing may in the end be in those old parchments.~
 ==CVSan25J~They may not reveal their deeper meanings easily - just like some people I met and deciphered during my travels.~
 =~Our study may take some time, let us plan it for a restful evening not too far in the future.~DO~AddJournalEntry(@2090,QUEST)~EXIT
 
 CHAIN
-IF~Global("RTMeliQuest","GLOBAL",8)~ THEN RTMeli Scroll3
+IF~Global("RTMeliQuest","GLOBAL",8)~THEN RTMeli Scroll3
 ~Do you think it is convenient to look at those ancient scrolls now together?~
 DO~SetGlobal("RTMeliQuest","GLOBAL",9)RealSetGlobalTimer("RTMeliNB","LOCALS",1200)~
 ==CVSan25J~Come sit here beside me, I was eagerly awaiting this moment already...~
@@ -316,13 +316,13 @@ DO~SetGlobal("RTMeliQuest","GLOBAL",9)RealSetGlobalTimer("RTMeliNB","LOCALS",120
 ==CVSan25J~We surely must enter the Citadel, where the artefact is hidden. The current master may oppose our interest, but he is anyway on our list of those who must fall.~DO~AddJournalEntry(@2092,QUEST) RestParty()~EXIT
 
 CHAIN
-IF~Global("RTMeliQuest","GLOBAL",10)~ THEN RTMeli ScrollN1
+IF~Global("RTMeliQuest","GLOBAL",10)~THEN RTMeli ScrollN1
 ~So this is the magnificent heritage of Karsus, the pocket library. ~
 =~*You see that Melicamp's hands are slightly trembling as her caresses the surface of the parchment package.*~
 DO~SetGlobal("RTMeliQuest","GLOBAL",11)~
 ==CVSan25J~There is a magic transparent on it that even Mystra is too young to comprehend without intensive study.~
 END
-++~You want to see what it contains most eagerly, don't you?~ + ScrollN2
+++~You want to see what it contains most eagerly, don't you?~+ ScrollN2
 ++~Beware - do not open it too hastily, it may be trapped or poisoned or cursed!~+ ScrollN2
 
 CHAIN
@@ -331,7 +331,7 @@ IF~~THEN RTMeli ScrollN2
 ==CVSan25J~(Smiles) I see it has come to the right hands for now. Keep it save, Melicamp, until we can do as you have proposed.~DO~AddXPObject("RTMeli",3500)~EXIT
 
 CHAIN
-IF~Global("RTMeliQuest","GLOBAL",12)~ THEN RTMeli ScrollN3
+IF~Global("RTMeliQuest","GLOBAL",12)~THEN RTMeli ScrollN3
 ~Sandrah and me have analysed our artifact from the Citadel. We are sure that there is a certain danger to activate it.~
 DO~SetGlobal("RTMeliQuest","GLOBAL",13)~
 ==CVSan25J~A protection spell older than Mystra's knowledge is there, so much is sure. It is not a minor one but I cannot remove it.~
@@ -364,11 +364,11 @@ DO~SetGlobal("RTWantMel","RTF074",2)~
 ==RTMeli~How can you see that through the robe, my orc lady?~
 ==RTOrcMel~See how you hold shoulders and head - I like what I see - not bad for weakling human.~
 ==CVLey25J~Orc girl!! What is your interest in a weak human?~
-==RTOrcMel~He good brain, me good strong body - good mixture...~ 
+==RTOrcMel~He good brain, me good strong body - good mixture...~
 ==CVLey25J~MY MAN will not mix anything with any other female, you understand (She wraps her arm around Melicamp's waist and motions him away.)~
 ==RTMeli~Your man?~
 ==CVLey25J~(Blushes) I thought I had to rescue you from her advances, those orc girls can be very direct in their demands...or...was I spoiling anything?~
-==RTMeli~She's still observing us. (He pulls her a bit tighter with his arm now over her shoulder until they are out of sight.)~ EXIT
+==RTMeli~She's still observing us. (He pulls her a bit tighter with his arm now over her shoulder until they are out of sight.)~EXIT
 
 CHAIN
 IF~Global("RTMeliQuest","GLOBAL",15)~THEN RTMeli ScrollN6
@@ -377,7 +377,7 @@ DO~SetGlobal("RTMeliQuest","GLOBAL",16)~
 ==CVSan25J~You are not giving up your dream of the University of the Sword Coast just because of this event, my friend?~
 ==RTMeli~Oh, no, Sandrah, I am as determined to make it happen as I ever was. What I have learned is that there is no shortcut to wisdom and knowledge. But I will earn it, bit by bit.~
 ==CVLey25J IF~InParty("Leyala")~THEN~You must not do that all alone, Melicamp. Your vision is a good and strong one and you will have supporters who share it.~
-==CVSan25J IF~!InParty("Leyala")~THEN~ ou must not do that all alone, Melicamp. Your vision is a good and strong one and you will have supporters that share it.~
+==CVSan25J IF~!InParty("Leyala")~THEN~ou must not do that all alone, Melicamp. Your vision is a good and strong one and you will have supporters that share it.~
 ==RTMeli IF~InParty("Leyala")~THEN~Are these words out of kindness or do they come from one of those supporters?~
 ==CVLey25J IF~InParty("Leyala")~THEN~Some time ago you kind of offered me a vacancy at your university, didn't you. I will collect my share of wisdom for my domain and bring it to the academy, count on it.~
 ==RTMeli IF~InParty("Leyala")~THEN~*He raises her fingertips to his mouth and kisses them.*. I will count the days until my professor of love will arrive in the Sharp Wood.~
