@@ -3,8 +3,8 @@
 @003 = ~The complete Sandrah mod must be installed before the extension can be installed.~
 @004 = ~Failed installation check - EET and the complete Sandrah mod must be installed before the extension can be installed.~
 
-@1680 = ~ Shauhana's Bow~
-@1681 = ~ Shauhana's Bow
+@1680 = ~Shauhana's Bow~
+@1681 = ~Shauhana's Bow
 
 Shauhana, the half-orc girl you once rescued from her own Clan in the Stormhorns, later became the ruler and queen of the northern Clan Orcs. As a daughter of the god Arvoreen she is the only female part-orc you have ever heard of to have any magic abilities. The origin of her bow is mysterious as it is clearly not orcish. Shauhana gave the weapon to the stepson she and her husband Minsc had adopted.
 The bow requires no arrows but spits out salves of magical arrows when used, making him a kind of one-man army against large groups of foe.~
@@ -12,8 +12,8 @@ The bow requires no arrows but spits out salves of magical arrows when used, mak
 Well, her foster parents...Izzy was among the very first children to come to the Orphanage at Beregost which was founded by Imoen the Magnificent and Henning of Nashkel. When Imoen finally retired after the adventuring days with <CHARNAME> and Sandrah she returned to the Sword Coast and settled down at the large mansion she owned. Izzy and Imoen were considered soon by all as mother and daughter and it did not take long until it was made official with Izzy's adoption.
 The red headed and quick witted youngster learned her mother's spells as easily as she became the threat to every lock around town.
 Her foster parents became aware that they would not be able to keep their eldest in the house for much longer after her seventeenth birthday as she was nurtured on the adventuring stories of Imoen the Magnificent from her early days onwards. They surely would not let her go with just any adventuring party passing through town - but when <CHARNAME> in person appeared one day returning to the Realms once again to fight against evil, there was no way of holding Izzy in the house just one day longer...~
-@1683 = ~ When you see the stately ranger today it is hard to recognize the little street rat from Beregost you once met in your early adventuring days. Seeking shelter with his uncle in Amn he was instead captured by slavers and sold to the orcs in the Stormhorns. When Shauhana finally united the Clans and the new age began for the orcs he was freed by her but having no place else to go he stayed with Minsc and Shauhana who raised them as their son. In Minsc's Clan Orc Berserkers Lodge he learned from his heroic stepfather, while his mother taught him to use her famous magic bow. Like any good ranger he has his small animal companion, a female hamster descendent of the most famous Boo - aka Boolerion - whom he has named Boola.~
-@1684 = ~ Boola is a female hamster, descendent of the most famous Boo - aka Boolerion - who had accompanied the hero Minsc during his adventuring days. It is unknown whether she is a real miniature space hamster like her famous ancestor. ~
+@1683 = ~When you see the stately ranger today it is hard to recognize the little street rat from Beregost you once met in your early adventuring days. Seeking shelter with his uncle in Amn he was instead captured by slavers and sold to the orcs in the Stormhorns. When Shauhana finally united the Clans and the new age began for the orcs he was freed by her but having no place else to go he stayed with Minsc and Shauhana who raised them as their son. In Minsc's Clan Orc Berserkers Lodge he learned from his heroic stepfather, while his mother taught him to use her famous magic bow. Like any good ranger he has his small animal companion, a female hamster descendent of the most famous Boo - aka Boolerion - whom he has named Boola.~
+@1684 = ~Boola is a female hamster, descendent of the most famous Boo - aka Boolerion - who had accompanied the hero Minsc during his adventuring days. It is unknown whether she is a real miniature space hamster like her famous ancestor. ~
 @1685 = ~Giran's Ring~
 @1686 = ~Giran's Ring
 A gift of Giran's stepmother, the orc queen Shauhana, which has been magically enchanted by the giver.~
@@ -105,7 +105,7 @@ We should revisit the Sword Coast and the High Hedge next.~
 @1751 = ~Cowled Enforcer~
 @1752 = ~Bittersnake Queen~
 @1753 = ~The banners in this room show a crowned laughing lich skull on a solid black hexagon.~
-@1754 = ~A powerful spell guards the doors at the moment. You must first find a way to disable it before you can move on.~ 
+@1754 = ~A powerful spell guards the doors at the moment. You must first find a way to disable it before you can move on.~
 @1755 = ~The button on the table pulses maliciously. You wonder what happens if it is pushed.~
 @1756 = ~Eruptions of some unknown energy supply block the tunnels from here on.~
 @1757 = ~Duergar Mechanic~
@@ -114,8 +114,8 @@ We should revisit the Sword Coast and the High Hedge next.~
 After the complete disaster you accomplished with the Stormhorn manoeuvre you must destroy all evidence that hints to us immediately, especially the laboratory equipment provided.
 Ship all remaining artefacts to the Citadel in a hurry. Nothing must be found by the ones that interfere too early.
 ST~
-@1760 =~ Bhaal's End by Volo~
-@1761 =~ A best-seller in the Realms for a decade now. The famous bard and historian Volo describes the battle of the Bhaalspawns in Anm and Tethir. The final battle of the famous <CHARNAME> and <PRO_HISHER> unyielding companion Sandrah of Waterdeep against the reborn Bhaal is the highlight of the epos. It ends dramatically with the heroes sacrificing their own lives to push the God of Murder into the abyss for all eternity.~
+@1760 =~Bhaal's End by Volo~
+@1761 =~A best-seller in the Realms for a decade now. The famous bard and historian Volo describes the battle of the Bhaalspawns in Anm and Tethir. The final battle of the famous <CHARNAME> and <PRO_HISHER> unyielding companion Sandrah of Waterdeep against the reborn Bhaal is the highlight of the epos. It ends dramatically with the heroes sacrificing their own lives to push the God of Murder into the abyss for all eternity.~
 @1762 =~Cerameon's Journal~
 @1763 =~The personal memories of the great Defender of Westgate are an inspiring lecture for her descendant Sandrah who shows many similarities to her ancestress. 
 The part that is of most interest to you at this time however is the chapter dealing with the infiltration of the Realms by Thayan wizards to supply the aggressor troupes. Through magically created tunnels they supplied magic devices and summoned monsters from the East to strategic points in the Realms. The main exit portal was located in a place that later became the site of the monastery of Ravencrest. Cerameon had to sacrifice her right hand holding her famous hammer in the act to seal this portal.
@@ -195,7 +195,7 @@ Our journey will now lead us once again to Amkethran and further south to Ravenc
 @1801 =~According to the inscription this coffin is reserved for Edwin Odesseiron. The coffin is unused.~
 @1802 =~Mausoleum~
 @1803 =~An unknown magic protects this door. You must possess the right ward stone to open it.~
-@1804 =~ The features of an older god have been hastily remodelled to resemble Cyric now.~
+@1804 =~The features of an older god have been hastily remodelled to resemble Cyric now.~
 @1805 =~Burning Undead Archer~
 @1806 =~I will help!~
 @1807 =~The scales await the right items to be placed on them. With the exactly right weight in both scales the mechanism will operate.~
@@ -419,7 +419,7 @@ Zulkir Szass Tam has confiscated all books found in the Citadel for his own stud
 @1948 =~Overlord Ao~
 @1949 =~Priest of Tempus~
 @1950 =~Shar's temple has been destroyed by the energy burst of bringing a part of the True Weave and the Shadow Weave together.~
-@1951 =~The Goddess Shar is hardly recognisable in the burned and ash covered statue.~ 
+@1951 =~The Goddess Shar is hardly recognisable in the burned and ash covered statue.~
 @1952 =~The passage to the walled slave quarters in the slums has collapsed under the power of the recent explosions.~
 @1953 =~Godsbane~
 @1954 =~Godsbane was the sword form assumed by Mask during the Time of Troubles. He would eventually come to be wielded by the then-mortal Cyric, who acquired the sword by murdering a halfling named Sneakabout, who in turn killed the former wielder of the sword.
@@ -511,7 +511,7 @@ Those who believed that the Goddess of All Magic was dead and slain by Shar and 
 Argonsan's and Pelligram's epic adventures are the tale for another day.~
 @1991 =~Isobel and Giran travelled first to the Stormhorns and then to Beregost. They received the blessings of their parents and in the spring following their adventure with Sandrah and you, they were married at the Temple of the Morning Lord.
 They settled down at Waterdeep where Isobel aided her stepmother Imoen's charity work - the rich of the town were often subject to nightly visits of a hooded thief who relieved them of some unnecessary *extras* that were afterwards distributed to the poor.
-When the question of Shauhana's successor came up in later years, Giran encouraged and promoted Welrick's son Farngiel to become the new Clan Orc leader. He himself followed Shar-Teel Dosan as Commander of the Forces when the former Wildcat retired from her duties to spend her life as a happy grandmother.~  
+When the question of Shauhana's successor came up in later years, Giran encouraged and promoted Welrick's son Farngiel to become the new Clan Orc leader. He himself followed Shar-Teel Dosan as Commander of the Forces when the former Wildcat retired from her duties to spend her life as a happy grandmother.~ 
 @1992 =~Isobel returned to Beregost and for a while accompanied her stepfather's caravans across the Realms. At several occasions she visited the Stormhorns and the old friendship with Shauhana and Minsc's adopted son Giran - once an orphan from Beregost himself - was renewed. Friendship grew into love.
 They received the blessings of their parents and in the second spring following the adventure with Sandrah and you, they were married at the Temple of the Morning Lord.
 They settled down at Waterdeep where Isobel aided her stepmother Imoen's charity work - the rich of the town were often subject to nightly visits of a hooded thief who relieved them of some unnecessary *extras* that were afterwards distributed to the poor. 
@@ -616,7 +616,7 @@ Second - The knowledge to produce Clones in large quantity requires very ancient
 Third - The only trail left to follow is that of Nerkio, alias The Collector. Either some Shadow Thief Fence or some graveyard may be a point to start inquiries about him.~
 @2050 =~Clones and an old *Friend*
 
-We found a promising hint as to where *The Collector* may be found. There is an ancient graveyard at Waterdeep just east of Mystra's Temple which has a connection to Halaster's old catacombs in Undermountain. Several conditions make it the ideal place for the activities of our target.~ 
+We found a promising hint as to where *The Collector* may be found. There is an ancient graveyard at Waterdeep just east of Mystra's Temple which has a connection to Halaster's old catacombs in Undermountain. Several conditions make it the ideal place for the activities of our target.~
 @2051 =~Block of Ice~
 @2052 =~Ice, useful in a variety of cooling applications, is valued in many cities throughout the Realms because of its limited availability.  Taverns, festhalls, butchers, and fishmongers pay merchants well for fresh, clean ice which they use to cool meats, alcoholic beverages, and a number of other perishable products.  ~
 @2053 =~Ghotal's Summer Camp
@@ -678,7 +678,7 @@ The trace to the missing Orcs leads to the border area between Thay and Rashemee
 @2069 =~Journey to Thay
 
 The way to the Red Hoods leads through the mausoleum on the Odesseiron estate - a strange coincidence, if it really is one. We received part of a key from Candrella but the second part is in the hand of the enemy, this time the almighty Autharch and Legion Commander Ithrash. He has confiscated the item we need and probably inspects it in the Court Building or some other forbidden area.~
-@2070 =~Green Slime King~ 
+@2070 =~Green Slime King~
 @2071 =~The Cloak of Mask is the perfect item for a thief. The former owner should have put an enchantment for backstab. He his no longer breathing air and the cloak has a new owner. Such as life of a thief in a guild.
 
 STATISTICS:
