@@ -141,7 +141,7 @@ DO~SetGlobal("RTTalkedSaem","GLOBAL",2)~
 ==RTSaemon~Hmm. Such a seat...could be easily a foot in the door to the council itself...such an institution would cost less than a power struggle with the Governor...on the other hand...~
 END
 ++~I will go and tell Nalia about your acceptance.~+ RTSea6
-++~Don't be a fool, you gain so much for such a small stake~+ RTSea6
+++~Don't be a fool, you gain so much for such a small stake.~+ RTSea6
 
 CHAIN
 IF~~THEN RTSaemon RTSea6
@@ -156,7 +156,7 @@ DO~SetGlobal("RTTalkedSaem","GLOBAL",9) TakePartyItem("RTNalsa") GiveItemCreate(
 =~This is what to do to get to Irenicus.~
 =~Go to the training area in the lower levels. You must find a red button at the end of the spiked stealth test for our thieves. It will open the secret door to Irenicus' dungeon.~
 END
-++~Use your chance, Saemon, at least within your own limits~EXIT
+++~Use your chance, Saemon, at least within your own limits.~EXIT
 ++~I really hope this was the very last time we have met, Saemon.~EXIT
 
 CHAIN
