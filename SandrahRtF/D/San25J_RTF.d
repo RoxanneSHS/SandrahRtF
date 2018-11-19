@@ -1222,7 +1222,7 @@ DO~SetGlobal("SanRTFColl","GLOBAL",4)~
 ==CVColle~How can it be ready...what is going on here?~
 ==CVSan25J~I have the feeling we just came in time, <CHARNAME>. We are disturbing them in an untimely manner when they are not ready for us yet.~
 END
-++~You will have to answer a lot of questions, *Collector*~+ CollF2
+++~You will have to answer a lot of questions, *Collector*.~+ CollF2
 ++~You have done more than is acceptable already. You will die just here and now.~+ CollF2
 
 CHAIN
@@ -1230,7 +1230,7 @@ IF~~THEN CVSan25J CollF2
 ~Give up before it is too late, Nerkio!~
 ==CVColle~You must not be here at all...I must activate the contingency sequence.~
 DO~ActionOverride("CVColle",EscapeArea())~
-==CVSan25J~<CHARNAME>, we must follow him quickly, he is probably about to destroy the evidence leading to his superiors.~EXIT
+==CVSan25J~<CHARNAME>, we must follow him urgently, he is probably about to destroy the evidence leading to his superiors.~EXIT
 
 CHAIN
 IF~Global("RTFoundIce","GLOBAL",1)~THEN CVSan25J Icycold

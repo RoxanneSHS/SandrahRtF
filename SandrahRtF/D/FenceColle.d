@@ -1,6 +1,6 @@
 CHAIN
 IF WEIGHT #-3 ~Global("SanRTFColl","GLOBAL",1) ~THEN Sethle CollHint1
-~ You...you again...I have done nothing to endure your presence again.~
+~ You...you again...I have done nothing to endure your presence once more.~
 ==CVSan25J~We are looking for very special artifacts today, things that the previous owner has no need for any more due to his current condition. ~
 DO~SetGlobal("SanRTFPlot1","GLOBAL",6) SetGlobal("SanRTFColl","GLOBAL",2) ~
 ==Sethle~What would that condition be like, lady?~
