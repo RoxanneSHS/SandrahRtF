@@ -37,7 +37,7 @@ END
 
 IF~Global("Loureed900","LOCALS",3)~THEN BEGIN BeatSen1
 SAY~It is no wonder that you defeated all the other Bhaalspawns and were able to rise to godhood. And maybe it is even a valid choice you made.~
-IF~~THEN REPLY~I was never alone, I always had support from comrades who felt like I did.~ GOTO  BeatSen2
+IF~~THEN REPLY~I was never alone, I always had support from comrades who felt like I did.~DO~SetGlobal("Loureed900","LOCALS",4) RealSetGlobalTimer("LoureedT","LOCALS",1000)~ GOTO  BeatSen2
 IF~~THEN REPLY~This is a strange thing to say for one who hates all gods.~DO~SetGlobal("Loureed900","LOCALS",4) RealSetGlobalTimer("LoureedT","LOCALS",1000)~GOTO  BeatSen2
 END
 
