@@ -3351,6 +3351,8 @@ EXTEND_TOP
 ~CVDrizR.bcs~ ~SandrahRTF/Baf/CVDrizR.baf~
 EXTEND_TOP
 ~CVSan25D.bcs~ ~SandrahRTF/Baf/San25RTFD.baf~
+EXTEND_BOTTOM
+~Cythan.bcs~ ~SandrahRTF/Baf/Cythan.baf~
 
 COPY ~SandrahRTF/Baf/RTPL1E.2DA~ ~override/RTPL1E.2DA~
 REPLACE ~99990~ @1764

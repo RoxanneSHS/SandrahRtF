@@ -1,0 +1,25 @@
+IF
+GlobalGT("RTCloakwood","GLOBAL",3)
+HasItem("scrl2l",Myself)
+THEN
+RESPONSE #100
+DestroyItem("scrl2l")
+Continue()
+END
+
+IF
+GlobalGT("RTCloakwood","GLOBAL",3)
+HasItem("scrl2m",Myself)
+THEN
+RESPONSE #100
+DestroyItem("scrl2m")
+Continue()
+END
+
+IF
+GlobalGT("RTCloakwood","GLOBAL",3)
+HasItem("scrl3f",Myself)
+THEN
+RESPONSE #100
+DestroyItem("scrl3f")
+END
