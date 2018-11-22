@@ -46,7 +46,7 @@ DO~SetGlobal("RTCloakwood","GLOBAL",5) SetGlobal("TalkedToCythan","GLOBAL",1) Ac
 ==CVSan25J~Sarevok's old consort Cythandria seems to have found a new master, or is it rather that you try to play the role of the mistress here - based on what you have NOT learned from your former Bhaalspawn?~
 ==Cythan~You and your Bhaalspawn have not learned to keep your noses out of other people's affairs, it seems.~
 ==CVSan25J~We would have left you and your strange companion in your little kingdom out here. We have been kidnapped and taken to here, did you forget?~
-==Cythan~Who did...oh, that idiot Kollossed! He seems to have over reacted again, just like with that Faldorn druid...~
+==Cythan~Who did...oh, that idiot Kolssed! He seems to have over reacted again, just like with that Faldorn druid...~
 END
 ++~Faldorn is here as well?~EXTERN  CVSan25J  ReturnClkw3
 
