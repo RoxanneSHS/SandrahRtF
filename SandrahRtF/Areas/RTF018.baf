@@ -28,6 +28,14 @@ EraseJournalEntry(@2079)
 END
 
 IF
+Global("Rename","rtf018",0)
+THEN
+RESPONSE #100
+SetGlobal("Rename","rtf018",1)
+ActionOverride("Sanmyst",SetName(@2054))  
+END
+
+IF
 InParty("CVSandr")
 Global("PelligFollow","GLOBAL",1)
 !InActiveArea("pellig")

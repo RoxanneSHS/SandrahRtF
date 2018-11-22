@@ -759,7 +759,7 @@ IF~~THEN REPLY~Who do you think it was, tell me!~DO~SetGlobal("VelshAmb","ar10pb
 END
 
 IF~~THEN BEGIN Velsh4
-SAY~The Lord of the Forsaken crypt, he is called, others say *The Vaunted*. I think I made a big mistake back in Celestia not to deal with him while I had the chance...~
+SAY~The Lord of the Forsaken Crypt, he is called, others say *The Vaunted*. I think I made a big mistake back in Celestia not to deal with him while I had the chance...~
 IF~~THEN REPLY~*You know your beloved well enough not to question her further as her gaze has become absent minded searching her memories and lore for clues and answers.*~EXIT
 END
 
