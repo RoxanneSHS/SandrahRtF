@@ -57,7 +57,7 @@ DO~SetGlobal("RtFThal","LOCALS",3) SetGlobal("SanRTFPlot1","GLOBAL",4)~
 ==Thalan~You as a healer are surely better suited to interpret it but I can assure you those were real living creatures, even if their life was quite short.~
 ==CVSan25J~It matches with my results. Brage for example, I mean the dead Brage from the Stormhorns had the structure in flesh and hair of a baby - a creature who has lived for some weeks only and not yet aged.~
 ==Thalan~It matches to those tanks you found up in that laboratory...~
-=~Now that substance. I have never seen anything alike before and I still have not found all of its ingrediences and abilities. Still, I can say, it is what more or less keeps those creatures alive.~
+=~Now that substance. I have never seen anything alike before and I still have not found all of its ingredients and abilities. Still, I can say, it is what more or less keeps those creatures alive.~
 ==CVSan25J~Probably that is why we found no blood on the battlefield.~
 ==Thalan~I think so. The substance nurtures the bodies - it is also a very strong drug.~
 ==CVSan25J~It controls them?~

@@ -38,7 +38,7 @@ DO~SetGlobal("SanRTFPlot1","GLOBAL",1) SetGlobal("RTFShauInfo","GLOBAL",1)~
 ==CVSan25J IF ~Global("RTFSharInfo","GLOBAL",2)~THEN~We saw Shar-Teel already and she gave a similar story of the events.~
 ==CVShauq IF ~Global("RTFSharInfo","GLOBAL",2)~ THEN~I am relieved to hear that - and troubled at the same time. Someone wants to separate us again, it seems.~
 ==CVSan25J~Who gave you the reports about those events, are your sources to be trusted?~
-==CVShauq~A trader, Nerkio by name, set up his post on the pass some time ago and supplies the caravans passing through. He saw the troups but was afraid to get near them for details.~
+==CVShauq~A trader, Nerkio by name, set up his post on the pass some time ago and supplies the caravans passing through. He saw the troupes but was afraid to get near them for details.~
 ==CVSan25J IF ~Global("RTFSharInfo","GLOBAL",0)~THEN~Nerkio...(where have I heard that name before?)...~
 ==CVSan25J IF ~Global("RTFSharInfo","GLOBAL",2)~THEN~Nerkio...he seems to be in a lot of places these days...~
 END

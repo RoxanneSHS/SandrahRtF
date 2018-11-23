@@ -29,7 +29,7 @@ DO~SetGlobal("RTVolo","LOCALS",1) ~
 ==Volo~I knew you would understand, my lady. You and <CHARNAME> were last seen when you went to fight the deadly murder god. Bhaal was gloriously defeated by the fearless heroes. The realms were saved. Oh, what a battle!! The planes were shaking as the mortals slew monster after monster and finally faced the God of Murder himself.~
 =~Three full days the battle was raging as darkness hung over Faerun. At the morning of the fourth day the sun rose again. Bhaal was defeated as the heroes had flung their own lives at him to push him finally into the abyss.~
 ==CVSan25J~So - we are glorious heroes - glorious dead heroes, that is.~
-==Volo~You understand?? There had to be an end to the epos - public demand. What else could have happened, as you never reappeared and Bhaal was dead.~ DO~GiveItemCreate("RTVolo","CVSandr",1,0,0) EscapeArea()~
+==Volo~You understand?? There had to be an end to the epic - public demand. What else could have happened, as you never reappeared and Bhaal was dead.~ DO~GiveItemCreate("RTVolo","CVSandr",1,0,0) EscapeArea()~
 ==CVSan25J~Very good. <CHARNAME>, nothing could have suited us better, do you agree?~
 END
 ++~Volo, you have never seen us today, is that clear? We are not here at all, you just had a glass too many, my friend.~EXIT
