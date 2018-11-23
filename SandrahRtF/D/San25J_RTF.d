@@ -1184,7 +1184,7 @@ END
 
 CHAIN
 IF~Global("RTGoRaven","LOCALS",1)~THEN CVSan25J GoRaven1
-~So, it is the monastry of Ravencrest - respectively the ancient ground it was built on - that we need to visit.~
+~So, it is the monastery of Ravencrest - respectively the ancient ground it was built on - that we need to visit.~
 DO~SetGlobal("RTGoRaven","LOCALS",2)~
 ==CVLey25J IF~InParty("Leyala")~THEN~I know it well, <CHARNAME>, it is where I have learned my fighting skills with the monks.~
 ==CVSan25J ~It is south of Amkethran on the shores of the Lake of Steam.~
@@ -1438,7 +1438,7 @@ IF~~THEN CVSan25J CampRes6
 ==CVShabab~Shauhana, we will see each other in six moons for our next conference at the Sune temple.~
 ==Keldo25a~Much has been achieved that our enemies had not planned in that way, I am sure.~
 ==CVMinsc~Friendship has been tested and has proven its strength.~
-==CVSan25J~Our next destination lies far south now, friends, past Amkethran - the monastry of Ravencrest.~
+==CVSan25J~Our next destination lies far south now, friends, past Amkethran - the monastery of Ravencrest.~
 =~I will now seal the portal.~EXIT
 
 CHAIN

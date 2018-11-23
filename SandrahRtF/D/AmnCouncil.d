@@ -22,7 +22,7 @@ END
 BEGIN RTHals
 IF~Global("SanRTFPlot1","GLOBAL",4)~THEN BEGIN NoDisc
 SAY~There is nothing to see here, citizens. The garrison is off limits this time.~
-IF~OR(2) GlobalGT("RTTalkedSaem","GLOBAL",0)GlobalGT("RTTalkedNalia","GLOBAL",0)~THEN REPLY~We are friends of Governor de'Arnise, man. We will prevent any unnessessary bloodshed in the docks.~GOTO NoDisc2
+IF~OR(2) GlobalGT("RTTalkedSaem","GLOBAL",0)GlobalGT("RTTalkedNalia","GLOBAL",0)~THEN REPLY~We are friends of Governor de'Arnise, man. We will prevent any unnecessary bloodshed in the docks.~GOTO NoDisc2
 IF~OR(2) GlobalGT("RTTalkedSaem","GLOBAL",0)GlobalGT("RTTalkedNalia","GLOBAL",0)~THEN REPLY~(Bluff) You have no more business here, we have settled the discourse between the Governor and the Guild.~ GOTO NoDisc2
 IF~~THEN REPLY~What is your purpose here in the docks with such massive fortification?~ GOTO NoDisc3
 END

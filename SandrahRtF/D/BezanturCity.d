@@ -26,7 +26,7 @@ IF~~THEN REPLY~We have seen pretty little of the red or the cowled wizards so fa
 END
 
 IF~~THEN BEGIN Tour4
-SAY~Others than those directly surrounding Szass Tam will probably be at the REAL new center of this town, the almighty Guild of Foreign Trade. The headquarters are at the far east end of the Harbour in its own complex.~ 
+SAY~Others than those directly surrounding Szass Tam will probably be at the REAL new centre of this town, the almighty Guild of Foreign Trade. The headquarters are at the far east end of the Harbour in its own complex.~ 
 IF~~THEN DO~SetGlobal("OpenE","RTF060",1)~EXIT
 END
 
@@ -412,7 +412,7 @@ IF~Global("SanRomPath","GLOBAL",2)~THEN REPLY~(Sigh) What a pity that some as ed
 
 CHAIN
 IF~~THEN RTCANDRE Hooker2
-~Nevermind. There is still time. You may use this little trinket should you ever feel the urge to visit...my bedchamber.~
+~Never mind. There is still time. You may use this little trinket should you ever feel the urge to visit...my bedchamber.~
 DO~GiveItemCreate("RTMausa",Player1,1,0,0)~
 ==RTCANDRE~We will see each other for sure.~DO~EscapeArea()~EXIT
 
