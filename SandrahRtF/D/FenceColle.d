@@ -1,7 +1,7 @@
 CHAIN
 IF WEIGHT #-3 ~Global("SanRTFColl","GLOBAL",1) ~THEN Sethle CollHint1
 ~ You...you again...I have done nothing to endure your presence once more.~
-==CVSan25J~We are looking for very special artifacts today, things that the previous owner has no need for any more due to his current condition. ~
+==CVSan25J~We are looking for very special artefacts today, things that the previous owner has no need for any more due to his current condition. ~
 DO~SetGlobal("SanRTFPlot1","GLOBAL",6) SetGlobal("SanRTFColl","GLOBAL",2) ~
 ==Sethle~What would that condition be like, lady?~
 ==CVSan25J~The person would be dead.~
@@ -12,11 +12,11 @@ DO~SetGlobal("SanRTFPlot1","GLOBAL",6) SetGlobal("SanRTFColl","GLOBAL",2) ~
 ==Sethle~Probably...what do I know - what do I care.~DO~EscapeArea()~EXIT
 
 EXTEND_BOTTOM  BmThief 0
-IF ~Global("SanRTFColl","GLOBAL",1)~THEN REPLY~ I am looking for very special artefacts today, things that the previous owner has no need for anymore due to his current condition. ~GOTO CollHint1
+IF ~Global("SanRTFColl","GLOBAL",1)~THEN REPLY~ I am looking for very special artefacts today, things that the previous owner has no need for any more due to his current condition. ~GOTO CollHint1
 END
 
 EXTEND_BOTTOM  BmThief 4
-IF ~Global("SanRTFColl","GLOBAL",1)~THEN REPLY~ I am looking for very special artefacts today, things that the previous owner has no need for anymore due to his current condition.  ~GOTO CollHint1
+IF ~Global("SanRTFColl","GLOBAL",1)~THEN REPLY~ I am looking for very special artefacts today, things that the previous owner has no need for any more due to his current condition.  ~GOTO CollHint1
 END
 
 APPEND  BmThief

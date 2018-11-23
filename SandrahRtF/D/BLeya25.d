@@ -45,7 +45,7 @@ DO~SetGlobal("AerieCreated","ar0601",5)~
 ==BLeya25 IF~Global("SanRomPath","GLOBAL",1)~THEN~It is what makes me follow the new god with all my heart.~
 ==BLeya25 IF~Global("SanRomPath","GLOBAL",2)~THEN~It is what makes me follow the new goddess with all my heart.~
 ==BSandr25~And what about yourself, Leyala? A nun of love is not condemned to chastity.~
-==BLeya25 ~That is true and I am surely not a virgin anymore. But it is different to teach and encourage others and to experience it yourself.~
+==BLeya25 ~That is true and I am surely not a virgin any more. But it is different to teach and encourage others and to experience it yourself.~
 ==BSandr25~Did we take you from the one you love when we took you from Waterdeep?~
 ==BLeya25 ~I am close to <CHARNAME> now every moment, the one who makes my heart sing and rejoice.~
 ==BSandr25~I understand that, however a deity may not be the target for your mortal affection nor does the love for <CHARNAME> exclude you from other happy experience.~

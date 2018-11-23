@@ -5,7 +5,7 @@ IF WEIGHT #-12~ GlobalGT("SanBeginRTF","GLOBAL",1) NumTimesTalkedTo(0)~THEN Bots
 ==Botsmith~Yes, yes, very much thank you - but is not thanks to unfaithful old master, baah.~
 ==CVSan25J~You must forgive <CHARNAME>, good imp, <PRO_HESHE> did not know that <PRO_HISHER> little pocket plane would cease to exist without Bhaal's fuel.~
 ==Botsmith~Blah, blah, blah, old master not know but you know - you more god or what?~
-==CVSan25J~I know just more about those things that concern magic and energie matters and issues concerning the Weave - I was <CHARNAME>'s counsellor then as I am now, so it was my duty to take care.~
+==CVSan25J~I know just more about those things that concern magic and energy matters and issues concerning the Weave - I was <CHARNAME>'s counsellor then as I am now, so it was my duty to take care.~
 ==Botsmith~Hmpf, if so - all is good. New home is good home and new boss is good boss. Also nobody to threaten to blow up new home...~
 END
 ++~So now that the issue has been clarified, Cespenar, can you still provide your services to us?~+ 4

@@ -159,7 +159,7 @@ DO~SetGlobal("RTLeyPlot1","GLOBAL",14)~
 ==ppgirl~Desharik never expected an assault from the back entrance so he only guarded the access from town.~
 ==CVLEY25J~Which means he will appear here soon to prevent our escape.~
 ==ppgirl~He will surely not come alone, Brynnlaw today is fully in the hands of his pirates.~
-==CVLEY25J~Anyway, he needs to deactivate his trap to reach us and we will have a chance to escape or to get possession of a wardstone.~
+==CVLEY25J~Anyway, he needs to deactivate his trap to reach us and we will have a chance to escape or to get possession of a ward stone.~
 ==CVSan25J~I would propose to meet his attack at the end of the narrow bridge outside where he has no chance to make use of his manpower. The pirates cannot come at us with more than two men side by side across that bridge.~EXIT
 
 CHAIN

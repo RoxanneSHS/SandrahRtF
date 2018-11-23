@@ -38,9 +38,9 @@ IF~~THEN CVSan25J ThayRepNoTalos1
 ==SanMyst IF~Global("SanRTFPlot3","GLOBAL",6)~THEN ~IF he is really in the old Bhaal temple in the Wood of Sharp Teeth you should pay him a visit now, chances are good that you can defeat him before he can summon any help from his allies.~
 END
 IF~Global("SanRTFPlot3","GLOBAL",7)~THEN REPLY~That is the obvious step, but what about thereafter?~+ ThayRepDefTalos1
-IF~Global("SanRTFPlot3","GLOBAL",7)~THEN REPLY~I recall the events you refer to, Midnight. But what about mobilizing our own allys? ~+ ThayRepDefTalos1
+IF~Global("SanRTFPlot3","GLOBAL",7)~THEN REPLY~I recall the events you refer to, Midnight. But what about mobilizing our own allies? ~+ ThayRepDefTalos1
 IF~Global("SanRTFPlot3","GLOBAL",6)~THEN REPLY~That is the obvious step, but what about thereafter?~EXTERN SanMyst ThayRepDefTalos2
-IF~Global("SanRTFPlot3","GLOBAL",6)~THEN REPLY~I recall the events you refer to, Midnight. But what about mobilizing our own allys? ~EXTERN SanMyst ThayRepDefTalos2
+IF~Global("SanRTFPlot3","GLOBAL",6)~THEN REPLY~I recall the events you refer to, Midnight. But what about mobilizing our own allies? ~EXTERN SanMyst ThayRepDefTalos2
 IF~Global("SanRTFPlot3","GLOBAL",6)~THEN REPLY~Fine. Let us do this step first before we return to discuss further options depending on what we learn there.~EXIT
 
 CHAIN
