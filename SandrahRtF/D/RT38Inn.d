@@ -22,7 +22,7 @@ IF~AreaCheck("RTF381") NumTimesTalkedTo(0)~THEN RT38Inn InnSide
 ==CVSan25J~(She turns to you) It seems Szass or whoever is in his service here knows what is required to open the portal.~
 ==RT38Inn~He must not have found it, that blasted mage!!~
 ==CVSan25J~You saw him return empty handed?~
-==RT38Inn~So to say, grrrm. He left - but alone. His croonies are still in town - we haven't heard anything from there since then. The smith's delivery boy went to town before the red scourge came and has not returned yet. We were stuck here and dared not inquire.~
+==RT38Inn~So to say, grrrm. He left - but alone. His cronies are still in town - we haven't heard anything from there since then. The smith's delivery boy went to town before the red scourge came and has not returned yet. We were stuck here and dared not inquire.~
 ==CVSan25J~We will go to Mornbryn's Shield and find out what has happened.~
 ==RT38Inn~I dare say you look like you know what you do - or you are fools beyond imagination. This red one brought hordes of terrible creatures with him. I cannot even imagine what happened to the town but I fear the worst.~
 END

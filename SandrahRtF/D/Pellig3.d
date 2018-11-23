@@ -186,7 +186,7 @@ END
 CHAIN
 IF~~THEN CVQidr PelQuidr2
 ~You seem to be more in grief than you should be, <CHARNAME>. You of Hope and Love should know better than any that gods do not die as long as they are believed in.~
-==PelligJ~We will soon learn the truth of that wisdom, Qilandrha. We need the item that Sandrah gave to your care in order to fulfill her will.~
+==PelligJ~We will soon learn the truth of that wisdom, Qilandrha. We need the item that Sandrah gave to your care in order to fulfil her will.~
 ==CVQidr~I have felt the impact of the Spellplague on our opponents. Her item has assured that we here in Undermountain have not been impacted.~
 ==PelligJ~Her blessing and that of Eilistraee will continue to support you. The Weave is not hidden from you, high priestess.~
 ==CVQidr~I have not reason to doubt the words of the Simbul herself. Take what you need and finish your mission. The light will soon shine on Faerun.~ DO~GiveItemCreate("RTBummy","Pellig3",1,0,0)~

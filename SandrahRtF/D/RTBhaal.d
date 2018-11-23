@@ -9,7 +9,7 @@ END
 IF~~THEN BEGIN Ghost2
 SAY~You think you made the clever choice, but the one who calls himself by MY name now will teach you your error.~
 IF~~THEN REPLY~This was once your temple as it is now Cyric's, just like the name. I am not eager to regain any of the two.~GOTO Ghost3
-IF~~THEN REPLY~If you try to warn me - I know well who my enemies were once and who they are now. You are not among them anymore, dead one.~ GOTO Ghost3
+IF~~THEN REPLY~If you try to warn me - I know well who my enemies were once and who they are now. You are not among them any more, dead one.~ GOTO Ghost3
 END
 
 CHAIN

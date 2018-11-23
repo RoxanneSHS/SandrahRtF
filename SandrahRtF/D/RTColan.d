@@ -61,7 +61,7 @@ END
 
 CHAIN
 IF~Global("RTColan","GLOBAL",14)~THEN RTColan RTTrial1
-~Thank you, your honor. First there is the question about the culprit's identity - even if it may be minor...who cares what is written on an unmarked gravestone anyway.~
+~Thank you, your honour. First there is the question about the culprit's identity - even if it may be minor...who cares what is written on an unmarked gravestone anyway.~
 ==RTColan IF~Global("RTNameVel","GLOBAL",1)~THEN~The name given during my inquiries was Veldrin, an obvious lie. It is an everyday name...but only for a drow!~
 ==RTColan IF~Global("RTNamePri","GLOBAL",1)~THEN~The name given during my inquiries was Prism, an obvious lie. We all know about the sad death of that great artist long ago at Nashkel.~
 ==RTColan IF~Global("RTNameAbe","GLOBAL",1)~THEN~The name given during my inquiries was Abela, an obvious lie. She was a famous nymph but is dead and the person here may be called a beauty but surely not a nymph.~
@@ -70,7 +70,7 @@ IF~Global("RTColan","GLOBAL",14)~THEN RTColan RTTrial1
 ==CVSan25J~Even in Thay nobody hangs for being cautious of not spreading the own name in a foreign town unnecessarily.~
 ==RTColan~Right, woman, if that were the only point.~
 ==RTJudge~Continue - if that bitch opens her mouth again we'll have her gagged for the rest of the trial. Order in the Court!~
-==RTColan~Your honor, I'd rather avoid that. Those primitive outbursts often reveal facts they may try to hide from us.~
+==RTColan~Your honour, I'd rather avoid that. Those primitive outbursts often reveal facts they may try to hide from us.~
 ==RTJudge~Your methods are legendary, chief inquisitor, you may have it your way.~
 ==RTColan~The killing of several merchants, is next on the list...~
 ==CVGir25J IF~InParty("CVGiran")~THEN~You know well those were doppelgangers.~
@@ -86,7 +86,7 @@ CHAIN
 IF~~THEN RTColan RTTrial2
 ~Chief Inquisitor, my dear, chief inquisitor, and not for no reason.~
 ==RTJudge~You always get your man, so to say. Continue.~
-==RTColan IF~Global("Edyes","LOCALS",1)~ THEN~The culprit knows Edwin Odesseiron from their common days in Amn and baldur's Gate. Furthermore, the The knights watching the estate witnessed the culprit to have been out there. With a forged authorisation.~
+==RTColan IF~Global("Edyes","LOCALS",1)~ THEN~The culprit knows Edwin Odesseiron from their common days in Amn and Baldur's Gate. Furthermore, the The knights watching the estate witnessed the culprit to have been out there. With a forged authorisation.~
 ==RTColan IF~Global("Edyes","LOCALS",0)~ THEN~Questioned directly the culprit denied to know Edwin Odesseiron, another one in the line of lies told by that person. The knights watching the estate witnessed the culprit to have been out there. With a forged authorisation.~
 ==CVSan25J~One cannot deny that your investigation is thorough, chief inquisitor. You should stick to the facts and not draw conclusions prematurely.~
 ==RTColan~This is exactly what I am known for - and thank you for your compliment, it is always good to be recognised for one's art.~
@@ -121,7 +121,7 @@ IF~Global("RTColan","GLOBAL",15)~ THEN RTKniJu Intervene
 ~*The knight places a sealed scroll on the judges table.*~
 DO~ SetGlobal("RTColan","GLOBAL",16)~
 ==RTJudge~Why was I not informed that the Zulkir had an interest...~
-==RTKniJu~Oh, there is no interest to influence the jurisdiction, your honor. My master just wants a few words with one of that party.~
+==RTKniJu~Oh, there is no interest to influence the jurisdiction, your honour. My master just wants a few words with one of that party.~
 ==RTJudge~Well, he'd better be quick as they just have a few hours left to live.~
 ==RTKniJu~He would be very unhappy if the one known as Sandrah of Waterdeep would escape him so easily by letting herself be hanged.~
 ==RTJudge~We will keep them in the cells just below for convenience tonight. Tell...HIM...he may find the girl he so much desires there.~DO~EscapeArea()~EXIT
@@ -252,7 +252,7 @@ IF~Global("RTColan","GLOBAL",9)~ THEN RTColan Property
 ~(Sigh) Here I am once again.~
 DO~SetGlobal("RTColan","GLOBAL",10)~
 ==CVSan25J~We have already missed you and your *protection*, Colano.~
-==RTColan~Really? (Consuts his notes as usual) You will not be so happy if you hear about my reason to bother you this time.~
+==RTColan~Really? (Consults his notes as usual) You will not be so happy if you hear about my reason to bother you this time.~
 ==CVSan25J~And the reason is...?~
 ==RTColan~(After some searching through his pile of crumbled notes he finally is ready to cite from the correct one.)~
 =~We received a charge against you from a VERY influential person for *destruction of private property, trespassing, breach of the peace*...~
@@ -264,7 +264,7 @@ DO~SetGlobal("RTColan","GLOBAL",10)~
 ==CVSan25J~I see, the Master of the Guild of Foreign Trade himself. (She ponders for a second.)~
 =~Say, good Chief-Inquisitor, if we are accused of *destruction of private property* the best way to settle the cause would probably be to pay for the damage to the owner?~
 ==RTColan~(The notes he consults do not seem to contain any answer for the Inquisitor.)~
-=~Mylady, ehem, the Master Samas Kul is a very busy and...eh, dangerous man...but...I see that will not hinder you. You may also be in a position to compensate for his not-so-small demands, my lady.~
+=~My lady, ehem, the Master Samas Kul is a very busy and...eh, dangerous man...but...I see that will not hinder you. You may also be in a position to compensate for his not-so-small demands, my lady.~
 ==CVSan25J~Then we will visit him soon and clarify the whole issue. Will that be in your interest as well?~
 ==RTColan~You seem to be determined, my lady - I somehow have the feeling you are even keen to meet that man.~
 =~In any case, you will need a recommendation to allow entry into the Guild of Foreign Trade. As I cannot hinder you, I will give you this letter to open the doors for you. (Whispers) Please be careful, my lady.~ DO~ GiveItemCreate("RTkeylig",Player1,1,0,0) EscapeArea()~
@@ -274,7 +274,7 @@ CHAIN
 IF~Global("RTColan","GLOBAL",11)~ THEN RTColan Arrests
 ~(Instead of his usual pile of scribbled notes the Chief-Inquisitor has a sealed document in his hand this time.)~
 ==CVSan25J~Another misdeed, Chief-Inquisitor?~
-==RTColan~Things do not look so rosy for you any more, mylady.~
+==RTColan~Things do not look so rosy for you any more, my lady.~
 ==RTColan IF~Global("RTNameVel","GLOBAL",1)~THEN~Veldrin, you must come with me, the Court is waiting.~
 ==RTColan IF~Global("RTNamePri","GLOBAL",1)~THEN~Prism, you must come with me, the Court is waiting.~
 ==RTColan IF~Global("RTNameAbe","GLOBAL",1)~THEN~Abela, you must come with me, the Court is waiting.~

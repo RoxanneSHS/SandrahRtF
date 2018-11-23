@@ -41,7 +41,7 @@ IF~Global("Opening","RTF082",3)~ THEN RTOdLuc FoundCan2
 ~Hello, Mystra.~
 DO~SetGlobal("Opening","RTF082",4)~
 ==RTCandre~Greetings, my goddess. Psst, Lucinda, this will be our little secret, yes?~
-==CVSan25J~Your mother is right, for the time beeing I will stay Sandrah of Waterdeep for all our safety. I greet you again, Lucinda, it is good we finally meet, Candrella.~
+==CVSan25J~Your mother is right, for the time being I will stay Sandrah of Waterdeep for all our safety. I greet you again, Lucinda, it is good we finally meet, Candrella.~
 ==RTCandre~We will soon reveal the necessity for this arrangement, my goddess...eh, Sandrah. You have already received some insight into our situation and more you will learn down here today. The first step is made, our lantern and the entrance are in our hands once again.~
 ==CVSan25J~There must be some other means of entrance as you met us in the town above, Candrella.~
 ==RTCandre~There is a small hidden entrance from the cellar of the mansion but it is for special purposes only, as the estate is under close observation and you must use a potion to pass it unseen. We cannot apply any spells as such would be immediately recognised by the red wizards.~
@@ -54,7 +54,7 @@ DO~SetGlobal("Opening","RTF082",4)~
 
 CHAIN
 IF~Global("Opening","RTF082",5)~THEN RTColan InredHod1
-~ You were right, mylady, we were destined to meet again. Maybe we should start again with some introductions, Mystra, <PRO_LADYLORD> <CHARNAME>.~
+~ You were right, my lady, we were destined to meet again. Maybe we should start again with some introductions, Mystra, <PRO_LADYLORD> <CHARNAME>.~
 DO~SetGlobal("Opening","RTF082",6)~
 ==CVSan25J~Let us keep it at Sandrah and <CHARNAME>, Colano. It is Colano still?~
 ==RTCandre~Squadron Leader Colano, head of the Red Hood intelligence service.~
@@ -116,7 +116,7 @@ IF~~THEN RTCandre Plans2
 ~The Red Hoods are legions outside of the small enclave here, we are all over Thay. Thousands live in the underground and approximately as much are in the towns, many of them in influential positions. ~
 ==RTEdwin~We are a mighty power and the Red Wizards fear and persecute us but with little success (Brilliant leadership prevents this).~
 =~The Red Hoods will rule Thay (Odesseiron will finally rule Thay), what we need is the spark that starts the explosion and the additional power to hold off Szass Tam in his Citadel from the events.~
-==RTCandre~My Ssinssrigg is right, as long as Szass and his unlimited undeads, clones and monsters can be summoned and deployed from the Citadel our attempts will cause nothing but bloodshed and disaster.~
+==RTCandre~My Ssinssrigg is right, as long as Szass and his unlimited undead, clones and monsters can be summoned and deployed from the Citadel our attempts will cause nothing but bloodshed and disaster.~
 ==CVSan25J~You mean us, Candrella, the force to bind Szass, even defeat him, while you start the revolution against the Government?~
 ==RTCandre~The interests of Mystra and the interests of Thay are the same in this respect. We need to eliminate Szass Tam. The Red Hoods are ready to stabilize and rule Thay and prevent a political vacuum after his demise.~
 ==CVSan25J~The Odesseirons will rule Thay, that is.~
@@ -135,7 +135,7 @@ IF~~THEN CVSan25J Plans3
 ~Now it is *Ssst* to you, <CHARNAME>, I trust Candrella to have a valid justification for her approach.~
 ==RTCandre~The change for Thay must come from above, from the rulers not from the masses. Sad as that fact is but the common folk will just seek revenge and their own gain in any time of trouble and under a weak government. ~
 =~Edwin and me, we have been abroad, we have seen other countries and other models of society. We and our friends will not change it in a day but carefully over time.~
-==RTEdwin~Without the mighty landowners and their slaves, Thay's economy will crash within weeks and the land will be in an uncontrolled state and ruleless. I know how you hate slavery, Sandrah, but we cannot just set the millions free without any perspective, work, education, and care.~
+==RTEdwin~Without the mighty landowners and their slaves, Thay's economy will crash within weeks and the land will be in an uncontrolled state and rule-less. I know how you hate slavery, Sandrah, but we cannot just set the millions free without any perspective, work, education, and care.~
 ==CVSan25J~I see your point, Candrella. Any ruler other than Szass Tam is an improvement for Thay. Without the tyranny of the Red Wizards a change may become reality. You are no dreamer or idealist nor is Edwin a revolutionary, but you may improve the state of the land bit by bit.~
 END
 ++~What do we do now?~ EXTERN RTCandre Plans4
@@ -255,7 +255,7 @@ END
 CHAIN
 IF~~THEN  CVSan25J Iltdef2
 ~Your estimation of the red hoods abilities were not exaggerated, Candrella.~
-=~I am truely glad you could persuade the Legion Commander without getting into too much trouble, Edwin.~
+=~I am truly glad you could persuade the Legion Commander without getting into too much trouble, Edwin.~
 ==RTCandre~ I am so glad I can hold you in my arms unharmed, my Ssinssrigg.~
 ==RTEdwin~(Smiles) I had to re-use some of my former *diplomatic* skills. They aided me in my old days on the Sword Coast when my mastermind had to outwit brainless but powerful enemies or allies alike.~
 ==CVSan25J~As much as I disliked your behaviour back then...this time I am relieved you used your slick tongue well.~
@@ -281,7 +281,7 @@ IF~~THEN  CVSan25J Iltdef4
 ~*Sandrah quickly summarises the events after the recent celebration*.~
 ==RTCandre~ I never had suspected Samas Kul to be a traitor to our cause.~
 ==RTEdwin~I think he was not one until his mind got occupied by the lust to possess a goddess and a woman like Sandrah. (I was on the brink to such madness once myself - a drow's love saved me.)~
-==CVSan25J~The red hoods have potent men and women in their ranks to lead the Guild of Foreign Trade now. The turn for Thay is not far away anymore.~
+==CVSan25J~The red hoods have potent men and women in their ranks to lead the Guild of Foreign Trade now. The turn for Thay is not far away any more.~
 ==RTEdwin~It looks like Szass Tam has retreated to his Citadel through the old temple below. I wonder why he had to use this way to get there.~
 ==CVSan25J~His own defence system probably does not allow any other access to his lair. (Laughs harshly) He has one hand left still to activate the portal.~
 ==RTCandre~It will take us half a day probably to assemble enough of the Red Hood forces to pursue him...~

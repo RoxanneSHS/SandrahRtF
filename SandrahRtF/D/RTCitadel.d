@@ -183,7 +183,7 @@ DO~AddJournalEntry(@2093,QUEST) SetGlobal("Chapter","Global",29) ReallyForceSpel
 
 CHAIN
 IF~~THEN CVSan25J Mecha1
-~Obviously you are not here by your free will, and most likely the one responsible for your state is the one we are persuing.~
+~Obviously you are not here by your free will, and most likely the one responsible for your state is the one we are pursuing.~
 ==RTCitMec~That sounds as if your appearance so shortly after the bastard himself is a good sign.~
 ==CVSan25J~You have seen Szass Tam recently, master mechanic?~
 ==RTCitMec~He fled to his sanctum, well protected behind those ancient walls of the Citadel's inner sanctum.~

@@ -51,7 +51,7 @@ DO~SetGlobal("Gnollend","RTF123",3)~
 ==CVCyr01~The deal is easy and straightforward. Bhaal's essence for Midnight's now again mortal existence.~
 ==CVSan25J~Have you understood nothing, Prince of Lies? What you ask for has long already been destroyed.~
 ==CVCyr01~What, babbling foolish girl? Wasn't it YOU who told me that the essence is the key to the Throne of Bhaal?~
-==CVSan25J~It surely would be - if it still existed. I think you better explain the facts to this God of Murder immitation, <CHARNAME>.~
+==CVSan25J~It surely would be - if it still existed. I think you better explain the facts to this God of Murder imitation, <CHARNAME>.~
 END
 ++~Bhaal's essence, mine and that of the spawns who were victim to Melissan's attempt to become the new Goddess of Murder, was destroyed together with the Throne of Bhaal in the Abyss by AO. My essence today is connected with the new portfolio created for Love and Hope.~+ Gnollend2
 ++~Why should Sandrah have told you such? She and Midnight were present when all existing essence of Bhaal was given to the ambitious priestess Melissan before she was forever destroyed together with the Throne of Bhaal.~+ Gnollend2
@@ -70,7 +70,7 @@ DO~SetGlobal("Gnollend","RTF123",5)~
 ==SanMyst~Kelemvor!~
 ==CVCyr01~Kelemvor? Well, hihihi, you must know better than any...~
 ==RTKelem~Blackstaff Tower saw my end, how adequate that my murderer has voluntarily chosen it for his own.~
-==RTLordAo~As we all have learned by now the essence of the former God of Murder is not an issue for anyone anymore. The new Lord of Murder will need to stick with what he has got in his portfolio.~
+==RTLordAo~As we all have learned by now the essence of the former God of Murder is not an issue for anyone any more. The new Lord of Murder will need to stick with what he has got in his portfolio.~
 ==CVSan25J~Blackstaff Tower is the last glimpse you will have of the Primary Plane, *grandfather*.~
 ==RTLordAo~Mystra and <CHARNAME> were sent to give you the word that from this day you are banned from this Plane forever, Cyric. This struggle is hereby ended!~
 ==CVCyr01~YOU, miserable descendent of that meddling harper - ALL OF THIS IS YOUR WORK!!~
