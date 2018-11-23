@@ -54,7 +54,7 @@ IF~Global("SanRTFPlot1","GLOBAL",9) Global("RTFWhy1","GLOBAL",0)~THEN REPLY~So, 
 IF~GlobalGT("SanRTFPlot2","GLOBAL",4) Global("RTFWhy1","GLOBAL",1)~THEN REPLY~Some time ago you mentioned Karsus, the mighty sorcerer who challenged the ancient Mystryl.~GOTO Kars1
 IF~Global("SanRTFPlot2","GLOBAL",4) Global("RoadMorn","LOCALS",0)~THEN REPLY~Any idea how we can best travel to Mornbryn's Shield?~GOTO MornTrav1
 IF~Global("SanRTFPlot1","GLOBAL",6)~THEN REPLY~What about the graveyards of Waterdeep?~GOTO WDGravey1
-IF~Global("SanRTFPlot1","GLOBAL",8)Global("AskedcandV","LOCALS",0)~THEN REPLY~What is your interest to go to Candlekeep, my learned counselor?~GOTO CanCear1
+IF~Global("SanRTFPlot1","GLOBAL",8)Global("AskedcandV","LOCALS",0)~THEN REPLY~What is your interest to go to Candlekeep, my learned counsellor?~GOTO CanCear1
 IF~Global("RTBalow","GLOBAL",2) Global("BalowolQ","LOCALS",0)~THEN REPLY~Are you earnestly trying to deal with that Balrog in a civilized way?~GOTO Balod1
 IF~Global("SeenMysPid","LOCALS",1)~THEN REPLY~We wanted to talk about Candrella, I propose it's time for that now.~DO~SetGlobal("SeenMysPid","LOCALS",2)~GOTO Candr2
 IF~Global("RTOdess","GLOBAL",1)GlobalGT("GuardOd","RTF070",1)GlobalLT("SanRTFPlot3","GLOBAL",4)~THEN REPLY~I am pretty unsure which role the Odesseiron family plays in this affair.~GOTO Odedisc1
@@ -223,7 +223,7 @@ END
 IF~~THEN BEGIN CanCear2
 SAY~Your tutors have probably thought the tome was too precious for a young rascal like you, even though you might have liked the adventures.~
 =~The reason I want to look for it is the secret supply system her enemies used in these days, a system of portals and remote reservoirs they used to supply their troupes to the Realms from the far east in no time.~
-=~If our suspicions are correct, we face a foe that is well aquainted in even the oldest lore and wisdom. We must know what he or they know.~
+=~If our suspicions are correct, we face a foe that is well acquainted in even the oldest lore and wisdom. We must know what he or they know.~
 IF~~THEN REPLY~I see your point - it is worth a try.~EXIT
 IF~~THEN REPLY~My former home is worth a visit anyway, maybe we can find other lore as well that may be helpful.~EXIT
 IF~~THEN REPLY~If such information is at Candlekeep we must at least assure it is save from the hands of our enemies.~EXIT
@@ -310,7 +310,7 @@ END
 
 IF~~THEN BEGIN Godsnow2
 SAY~Yes, we can. Try to look at the situation like an outsider who had never met any of us in that time a decade ago.~
-=~Many have heard about <CHARNAME> of Candlekeep's heroic deeds on the Sword Coast of course, but few have seen the mystic figure in real life. The adventures in Amn and especially in Suldanessalar are known to few outside of the elvish community.~
+=~Many have heard about <CHARNAME> of Candlekeep's heroic deeds on the Sword Coast of course, but few have seen the mystic figure in real life. The adventures in Amn and especially in Suldanesselar are known to few outside of the elvish community.~
 =~Finally - the Bhaal war of course was an historic event of some dimension but actually few really know about the identity of the key players and only those present at your ascension know who the Bhaalspawn was who finally ended the war and overcame his father's taint to emerge as the God of Love and Hope.~
 IF~~THEN REPLY~And what about yourself?~DO~SetGlobal("Godsnow","LOCALS",1)~GOTO Godsnow3
 END
@@ -380,7 +380,7 @@ IF~~THEN BEGIN RTFTargt2
 SAY~To get to the answer we must probably slice the alliance or our opponents into their parts, as everyone will have their own different motivation.~
 IF~~THEN REPLY~Cyric is definitely after me and the essence of Bhaal that he claims for himself as the reigning god of murder.~GOTO RTFTargt3
 IF~~THEN REPLY~Talos has always quarrelled with us since our adventures on the Sword Coast. It's hard to tell if he's in it just out of principle or for a more dedicated reason.~GOTO RTFTargt4
-IF~~THEN REPLY~That Supra Lich Velsharoon sounds to me like one of your guys rebelling against his goddess and her open agression towards necromancy.~GOTO RTFTargt5
+IF~~THEN REPLY~That Supra Lich Velsharoon sounds to me like one of your guys rebelling against his goddess and her open aggression towards necromancy.~GOTO RTFTargt5
 END
 
 IF~~THEN BEGIN RTFTargt3
@@ -432,7 +432,7 @@ IF~~THEN REPLY~Irenicus aiming for the power of the Seldarine...~GOTO Kars4
 END
 
 IF~~THEN BEGIN Kars4
-SAY~A valid example - another one is Szass Tam. We saw his early attempts to manipulate the Shadow Weave in order to weaken Mystra and the True Weave. He cannot have continued his efforts without some celestials to assist him - whether she is in leage with him or his foe, we must add Shar to the equation.~
+SAY~A valid example - another one is Szass Tam. We saw his early attempts to manipulate the Shadow Weave in order to weaken Mystra and the True Weave. He cannot have continued his efforts without some celestials to assist him - whether she is in league with him or his foe, we must add Shar to the equation.~
 IF~~THEN REPLY~I begin to understand why AO had the need to get us out of Celestia. With all those powers involved the effect of a clash would really cause massive destruction throughout the whole multiverse.~DO~ClearAllActions()SmallWait(2)SetInterrupt(FALSE)
 TextScreen("RTPL2")AddJournalEntry(@1776,QUEST)~EXIT
 END
@@ -502,7 +502,7 @@ END
 IF~~THEN BEGIN ColRol1
 SAY~The future ex-Chief-Inquisitor I would assume, after what he did for us.~
 IF~~THEN REPLY~He pursued and observed us, brought us to court, pleaded before the court for our execution - pfft, and then let us escape?~DO~SetGlobal("Colanrole","LOCALS",1) ~GOTO ColRol2
-IF~~THEN REPLY~He persued and observed us, brought us to court, pleaded before the court for our execution - pfft, and then let us escape? It's a trap, isn't it, he wants us to find the Red Hoods for him.~DO~SetGlobal("Colanrole","LOCALS",1) ~GOTO ColRol2
+IF~~THEN REPLY~He pursued and observed us, brought us to court, pleaded before the court for our execution - pfft, and then let us escape? It's a trap, isn't it, he wants us to find the Red Hoods for him.~DO~SetGlobal("Colanrole","LOCALS",1) ~GOTO ColRol2
 END
 
 IF~~THEN BEGIN ColRol2
@@ -527,7 +527,7 @@ END
 IF~~THEN BEGIN Larlhint2
 SAY~Larloch, the Shadow King, not to be confused with the King of Shadows, is the last surviving Netherese arcanist-king, one of the oldest non-draconic beings in Faerun, who ruled over his flying city for centuries and abandoned it before Karsus's Folly. Then a lich by his own process, Larloch amassed an arsenal of spells, magic items, and servants. The Shadow King rules the Warlock's Crypt and its inhabitants, many liches from Netheril, vampires, wights, and lesser undead.~
 =~Larloch possessed incredible power and intelligence, but human assessment would also declare him as insane.~
-IF~~THEN REPLY~Which means we must prepare for possible attacks from his minions until we can convince the master of our allignment.~DO ~SetGlobal("LarlHint","LOCALS",2)~GOTO Larlhint3
+IF~~THEN REPLY~Which means we must prepare for possible attacks from his minions until we can convince the master of our alignment.~DO ~SetGlobal("LarlHint","LOCALS",2)~GOTO Larlhint3
 END
 
 IF~~THEN BEGIN Larlhint3
@@ -541,17 +541,17 @@ END
 IF~~THEN BEGIN OwnAlly1
 SAY~What would you propose, <CHARNAME>?~
 IF~~THEN REPLY~Baldur's Gate owes me for releasing them of Sarevok.~GOTO OwnAlly2
-IF~~THEN REPLY~I count on Ellesime and Suldanessalar.~GOTO OwnAlly3
+IF~~THEN REPLY~I count on Ellesime and Suldanesselar.~GOTO OwnAlly3
 IF~~THEN REPLY~We aided a number of towns in Amn out of their trouble.~GOTO OwnAlly2
 END
 
 IF~~THEN BEGIN OwnAlly2
 SAY~We should not involve the mortals of the prime into this struggle of the celestials.~
-IF~~THEN REPLY~Ellesime and Suldanessalar are different, she is descendent of the Seldarine herself.~GOTO OwnAlly3
+IF~~THEN REPLY~Ellesime and Suldanesselar are different, she is descendent of the Seldarine herself.~GOTO OwnAlly3
 END
 
 IF~~THEN BEGIN OwnAlly3
-SAY~The power of the Seldarine has returned to Suldanessalar...still...well, it is your decision, <CHARNAME>, we might try it.~
+SAY~The power of the Seldarine has returned to Suldanesselar...still...well, it is your decision, <CHARNAME>, we might try it.~
 IF~~THEN DO~SetGlobal("Suldatry","LOCALS",1)~EXIT
 END
 
@@ -647,7 +647,7 @@ IF~~THEN REPLY~Those terrible jars down there, just like Irenicus had them in hi
 END
 
 IF~~THEN BEGIN HornLab2
-SAY~The picture starts to get its contures. With what we have I highly recommend that we talk with either Shauhana or Shar-Teel so peace can be maintained between the two. Now that we have seen what has happened they can exchange messengers and trade again, I guess.~
+SAY~The picture starts to get its contours. With what we have I highly recommend that we talk with either Shauhana or Shar-Teel so peace can be maintained between the two. Now that we have seen what has happened they can exchange messengers and trade again, I guess.~
 IF~~THEN REPLY~And we should go after that Nerkio guy wherever he may have gone.~GOTO HornLab3
 END
 
@@ -789,7 +789,7 @@ IF~~THEN BEGIN Sarfool2
 SAY~*She looks intensively at you and considers long before she speaks.*~
 =~It will depend on your decision, <CHARNAME>. I am sure the Vaunted Necromancer will fulfil his promise to Sarevok in that he will make him undying - a mighty fighter lich enthralled in his service, a slave without hope to ever die or be redeemed.~
 =~You may save him from that fate - and us from trouble of having to fight him again and again.~
-IF~~THEN REPLY~Maybe we must just destroy his corpse completely so Velsharoon will have nothing to ressurect?~GOTO Sarfool3
+IF~~THEN REPLY~Maybe we must just destroy his corpse completely so Velsharoon will have nothing to resurrect?~GOTO Sarfool3
 IF~~THEN REPLY~Why do you say it is my decision, my counsellor?~GOTO Sarfool3
 END
 
@@ -833,7 +833,7 @@ IF~~THEN REPLY~And now? The real one was buried with your heroine if I remember 
 END
 
 IF~~THEN BEGIN NoFit2
-SAY~She lost her right hand holding the hammer when she closed this seal here. Her journal says she had the wish that both were burried with her when she died.~
+SAY~She lost her right hand holding the hammer when she closed this seal here. Her journal says she had the wish that both were buried with her when she died.~
 IF~~THEN REPLY~So we need to open her tomb - I hate to do it but I imagine the heroine herself would agree to the deed would she know the reason why we have to do it.~DO~
 SetGlobal("RTFindCham","GLOBAL",2)~ GOTO NoFit3
 END
@@ -934,7 +934,7 @@ END
 
 IF~~THEN BEGIN Scales2
 SAY~The only artefact we found until now that manipulates those gates is the symbol from Sarevok. I am afraid it will be harder to find the hand that is the second ingredient. The owner might not be willing to co-operate with us.~
-IF~~THEN REPLY~An interesting aspect, my counselor. You have some more ideas about this installation?~DO~SetGlobal("RT78BoHi","RTF078",2) SetGlobal("RT78BoHi","LOCALS",2)~GOTO Scales3
+IF~~THEN REPLY~An interesting aspect, my counsellor. You have some more ideas about this installation?~DO~SetGlobal("RT78BoHi","RTF078",2) SetGlobal("RT78BoHi","LOCALS",2)~GOTO Scales3
 END
 
 IF~~THEN BEGIN Scales3
@@ -982,7 +982,7 @@ END
 
 IF~~THEN BEGIN Candrow3
 SAY~Her father could never marry her mother even though he truly loved her because of the Thay laws and traditions versus the mother's race.~
-=~Her mother was a drow who came to Bezantur as a slave. The Zulkir fell in love with her and freed her but could never make their liason official.~
+=~Her mother was a drow who came to Bezantur as a slave. The Zulkir fell in love with her and freed her but could never make their liaison official.~
 IF~~THEN REPLY~A drow - wait...that hooker...?~GOTO  Candrow4
 END
 
@@ -1446,7 +1446,7 @@ IF~Global("RTMons1","RTF040",1)~THEN CVSan25J RaveMon1
 ~I wonder if they would let us enter the monastery for our research just like that.~
 DO~SetGlobal("RTMons1","RTF040",2)~
 ==CVLey25J IF~InParty("Leyala")~THEN~We must receive a badge from the sister harbour master. She inspects everyone who visits the town and hands out a badge to suitable visitors for the monastery.~
-==CVSan25J IF~!InParty("Leyala")~THEN~They probably have a kind of security procedure. Maybe we should inquire over there at the harbor master building.~EXIT
+==CVSan25J IF~!InParty("Leyala")~THEN~They probably have a kind of security procedure. Maybe we should inquire over there at the harbour master building.~EXIT
 
 CHAIN
 IF~~THEN CVIzy25J VisAut2

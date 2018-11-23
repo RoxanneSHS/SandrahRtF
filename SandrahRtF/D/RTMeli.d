@@ -109,7 +109,7 @@ DO~SetGlobal("RTMelLayWom","LOCALS",3)~
 ==RTMeli~(His face is purple red) I have never slept with a woman until now, yes.~
 ==RTMOM~Salith, let's go quickly...~DO~EscapeArea()~
 ==RTKid~Oh, but I liked him, the nicest dad for a long time...~DO~EscapeArea()~
-==BLeya25~Your chastity saved you this time, my friend. But is that state really desireable?~
+==BLeya25~Your chastity saved you this time, my friend. But is that state really desirable?~
 ==RTMeli~I did not chose it...It's just, eh. coincidence...~
 ==BLeya25~(Leyala shifts her hood backwards and her whole beauty becomes visible as she smiles at Melicamp.) We must work on that problem, definitely. You travel in the company of the Ambassadors of love, don't forget.~
 ==RTMeli~I was about to say that I wait for the right one to share myself with.~EXIT
@@ -182,7 +182,7 @@ DO~SetGlobal("RTMelibant","GLOBAL",8)~
 ==BSandr25~Neither of us is immune to the true charm of a person.~
 ==RTMeli~I am definitely encased by yours - I have recently asked myself why I have never...eh, romanced eh, a woman.~
 ==BSandr25~Are you blaming me for it?~
-==RTMeli~Blame is not the appropriate word, nor can I say you are in any way responsible for it. Still...any woman pales in comparrison with you and then my interest I had initially on her fades on second thought.~
+==RTMeli~Blame is not the appropriate word, nor can I say you are in any way responsible for it. Still...any woman pales in comparison with you and then my interest I had initially on her fades on second thought.~
 ==BSandr25~Tragic - chances are good that even I myself would fail against the ideal woman you have created for yourself inside your own mind. You may think it is me but I doubt that you know me well enough for that.~
 ==RTMeli~A valid remark. You are in deed disturbing at times, something my ideal never was.~
 ==BSandr25~I cannot blame you for your attitude, Melicamp, I once had a similar view on the males, always comparing them to the ideal example I had created myself from a great hero I admired. I learned over time to see other people with an open mind and found there are so many loveable aspects in most people. Ideals and idols may help us to frame our tastes - but they should stay out of our real lives.~
@@ -194,7 +194,7 @@ CHAIN
 IF~Global("RTMelibant","GLOBAL",11)~THEN RTMeli SanRom3
 ~Sandrah, do you have an idea why that recent spell of mine failed again?~
 DO~SetGlobal("RTMelibant","GLOBAL",12)~
-==BSandr25~Did you have the feeling you were truely connected with the Weave and the effect you wanted to produce was clear and focussed in your mind?~
+==BSandr25~Did you have the feeling you were truly connected with the Weave and the effect you wanted to produce was clear and focussed in your mind?~
 ==RTMeli~I have practised the spell before successfully, I was sure to handle it.~
 ==BSandr25~Mmh, practice is good but you cannot rely on routine alone. Any time you try to manage the Weave you need the same dedication and concentration to do it.~
 =~It is the limited view of most people to think of the Weave only as a means to cast spells.~
@@ -251,7 +251,7 @@ DO~SetGlobal("MeliAfterKul","LOCALS",2)~
 =~Still you have won because you are stronger than any of them. You have overcome your own fear and you have followed your heart with persistence.~
 ==RTMeli~Since we are together, you have never given me the feeling that any of us possesses the power over the other or should have it. I feel at equal terms with you without the need to be a god to do so.~
 ==BSandr25~Love is not a question of owning or dominating, you have understood that well. Thus I am more than willing to deliver my heart and body to you without any conditions.~
-==RTMeli~I define my own condition, sweetheart, it is to make you feel like a woman who is truely loved.~
+==RTMeli~I define my own condition, sweetheart, it is to make you feel like a woman who is truly loved.~
 DO ~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT
 
 CHAIN
@@ -266,7 +266,7 @@ DO~SetGlobal("MeliSanGB","LOCALS",2)~
 =~I make this promise, my love - should I return to Faerun eventually I will not come to see you or try to enter your life again.~
 ==RTMeli~It may sound cruel but I see that it is kindness. I will be myself from now on, a happy man who has made an experience and now looks forward to a new episode in his life.~
 ==BSandr25~You have made some plan already?~
-==RTMeli~An idea, a vision maybe. You taught me about the Weave and how it surrounds everything. Also I now have developped my methods to communicate with it. Mystra may have withdrawn but the Weave maintains. I have understood your vision of a Faerun without the gods to mingle or magic to do our wonders.~
+==RTMeli~An idea, a vision maybe. You taught me about the Weave and how it surrounds everything. Also I now have developed my methods to communicate with it. Mystra may have withdrawn but the Weave maintains. I have understood your vision of a Faerun without the gods to mingle or magic to do our wonders.~
 =~I will become part of that new development. I will become a teacher to those who seek knowledge of the multiverse and its possibilities. The Sword Coast needs a place to trade knowledge, to promote technical progress and research and to explore our possibilities as mortals.~
 ==BSandr25~Your university?~
 ==RTMeli~That's what I have in mind. I think there is a vacant installation to suit my plans in the Sharp Wood Forest.~
@@ -332,7 +332,7 @@ IF~~THEN RTMeli ScrollN2
 
 CHAIN
 IF~Global("RTMeliQuest","GLOBAL",12)~THEN RTMeli ScrollN3
-~Sandrah and me have analysed our artifact from the Citadel. We are sure that there is a certain danger to activate it.~
+~Sandrah and me have analysed our artefact from the Citadel. We are sure that there is a certain danger to activate it.~
 DO~SetGlobal("RTMeliQuest","GLOBAL",13)~
 ==CVSan25J~A protection spell older than Mystra's knowledge is there, so much is sure. It is not a minor one but I cannot remove it.~
 ==RTMeli~We have discussed the issue and it is Sandrah's expectation that a party with our combined skills will be able to protect itself even against old Netheril's malice.~
@@ -352,7 +352,7 @@ CHAIN
 IF~Global("RTMeliQuest","GLOBAL",13)~THEN RTMeEle ScrollN5
 ~The master knew some fool would attempt to gain wisdom by theft.~
 DO~SetGlobal("RTMeliQuest","GLOBAL",14) EraseJournalEntry(@2088) EraseJournalEntry(@2089) EraseJournalEntry(@2090) EraseJournalEntry(@2092)~
-==RTMeli~The master erred, creature. And the master is long dead. He has nothing to protect anymore.~
+==RTMeli~The master erred, creature. And the master is long dead. He has nothing to protect any more.~
 ==RTMeEle~Dead? A god cannot die.~
 ==RTMeli~He never became a god even if he tried. In the end it was him who was punished as the thief he himself was - he stole the knowledge from the people who were supposed to own it - and then by its illegal use he was trying to steal immortality from a goddess.~
 ==RTMeEle~He failed? So will you in your attempt to follow him. Hahaha.~DO~TakePartyItem("RTMels3") DestroyItem("RTMels3") Enemy()~EXIT

@@ -121,14 +121,14 @@ DO~SetGlobal("RTLarDec","LOCALS",1)SetGlobal("RTSimbul","RTF143",4)~
 
 CHAIN
 IF~AreaCheck("RTF026") !InParty("CVSandr") Global("26Once","LOCALS",0)~THEN RTLarlo Ress1
-~Hihihi, in no time there will be the happy surprise for you, young god. All will turn out like the masterbrain has conjured it. I love it when a well laid plan rolls out.~
+~Hihihi, in no time there will be the happy surprise for you, young god. All will turn out like the master brain has conjured it. I love it when a well laid plan rolls out.~
 END
 ++~You dare to appear in Midnights presence - and in mine, lousy traitor!~ + Ress2
 ++~You fooled everyone behind your madman's mask, Larloch, you were really good.~ + Ress2
 
 CHAIN 
 IF~~THEN RTLarlo Ress2
-~The Goddess of All Magic, the true goddess of the True Weave made her choice well. No one can be more loyal to the Weave than the one who has reeped its benefits for as long as I have. She knew they would believe my motifs to step out of Mystra's shadow and become the herald of the Shadow Weave, hihihi. This kind of scheming is in their own league and they apply the formula to everyone not knowing that our brain works on a different level, hihihi.~
+~The Goddess of All Magic, the true goddess of the True Weave made her choice well. No one can be more loyal to the Weave than the one who has reaped its benefits for as long as I have. She knew they would believe my motifs to step out of Mystra's shadow and become the herald of the Shadow Weave, hihihi. This kind of scheming is in their own league and they apply the formula to everyone not knowing that our brain works on a different level, hihihi.~
 =~She's Cyric's granddaughter after all, the blood of the Great Manipulator runs in her veins, hihihi, only she is able to use his own weapons against himself.~
 =~Now hurry, friend, do your part of the task so we can pay Thay a visit.~DO~SetGlobal("26Once","LOCALS",1)~EXIT
 
@@ -142,7 +142,7 @@ IF~AreaCheck("RTF026") InParty("CVSandr")~ THEN RTLarlo Ress4
 DO~SetGlobal("26Once","LOCALS",2)~
 ==CVSan25J~You were superb, Larloch, even my friends believed you to be the scoundrel and traitor in this ploy. Without you giving Shar *the Weave* and escaping her *reward* by just pure luck they would rarely have accepted the bait.~
 =~Your performance, Larloch, and <CHARNAME>'s true grieve and anger were necessary to cover the leaks in our plan and draw the attention from my faked death.~
-==RTLarlo~Hihihi, you estimated their reaction well, my Goddess, including Shar's immediate impuls to get rid of me and her haste to secure the globe without investigating your unexpected defeat any further.~
+==RTLarlo~Hihihi, you estimated their reaction well, my Goddess, including Shar's immediate impulse to get rid of me and her haste to secure the globe without investigating your unexpected defeat any further.~
 ==CVSan25J~The spell plague takes its toll by now among the gods and their power and reputation. I hope Shar's manipulation with the contradictory forces of the Weaves will also show some unpleasant results soon.~
 ==RTLarlo~My reports state that Szass Tam's efforts here on the Sword Coast have come to a halt, hihihi. The signs of an inner tension in the phalanx are apparent, they are occupied with internal quarrelling at the moment.~
 ==CVSan25J~We should once more consult my grandmother below and then seize the opportunity to visit Thay again - this time with the power and the odds in our favour.~

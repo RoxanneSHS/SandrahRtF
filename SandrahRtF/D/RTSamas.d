@@ -48,7 +48,7 @@ DO~SetGlobal("CitEntpl","GLOBAL",10)~
 ==RTCandre~The red hood knights have proven their excellence on the occasion, Samas.~
 ==CVSan25J~(Mumbles) Late? I could swear there were some familiar lizard men among the aggressors...~
 ==RTODButl~I have prepared everything for the celebration just like the master has ordered.~
-==RTSamas~I had my servants bring a cascet of most excellent wine reserved for such a special occasion.~
+==RTSamas~I had my servants bring a casket of most excellent wine reserved for such a special occasion.~
 ==CVSan25J~(Mumbles) Everyone contributes to the success in his own way...~
 ==RTODLuc~My daddy is a big hero, yes, he is.~
 ==RTCandre~He surely is, Lucinda.~

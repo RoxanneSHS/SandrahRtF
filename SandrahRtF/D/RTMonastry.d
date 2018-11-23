@@ -232,8 +232,8 @@ IF~GlobalLT("RTMons1","RTF043",3)~THEN RTIYLO Access1
 ==RTIYLO IF~InParty("LEYALA")~THEN~...my former apprentice! Welcome sweet Leyala, the nun of hope and love - you have surely outgrown your old teacher by lengths these days.~
 ==CVLey25J IF~InParty("LEYALA")~THEN~No one could do that, master, but I am not too shy to say that I do not disgrace my teacher.~
 ==RTIYLO~What leads you to our remote monastery, my friends.~
-==CVSan25J~The deeds of one of my anchestors right here - I mean at this place where later this cloister was erected.~
-==RTIYLO~Your anchestress? Cerameon - a woman with a hammer, of course...We talk about events very far in the darkness of the past.~
+==CVSan25J~The deeds of one of my ancestors right here - I mean at this place where later this cloister was erected.~
+==RTIYLO~Your ancestress? Cerameon - a woman with a hammer, of course...We talk about events very far in the darkness of the past.~
 ==CVSan25J~Still there are those who remember those events - be it for good or for evil.~
 =~It was here as you will know, good abbot, that a portal was sealed that was used by malicious eastern forces to enable the invasion of the old Realms. We assume that the seal can be opened and the old connection be re-established.~
 ==RTIYLO~We have no indication that this has been attempted.~
@@ -290,7 +290,7 @@ DO~SetGlobal("RTAsk","LOCALS",1)~
 ==CVSan25J~We have been to hell and back already, as they say, we may be capable to cross a mountain path.~
 ==Ambar01~If you say so. Nevertheless you would be lost up there on Ithal Pass without a guide.~
 ==CVSan25J~I understand that we need to cross the pass and continue south towards the sea.~
-==Ambar01~Generally correct, but the path is not often used and nearly invisible. One false move and you'll find yourself in one of those crevisses like so many before you.~
+==Ambar01~Generally correct, but the path is not often used and nearly invisible. One false move and you'll find yourself in one of those crevices like so many before you.~
 ==CVSan25J~Is there a mountain guide around here, my friend?~
 ==Ambar01~Herlakk has returned to town a few days ago, you may find him south with the herds probably.~
 =~Do not forget to bring some spare coins to convince him.~EXIT

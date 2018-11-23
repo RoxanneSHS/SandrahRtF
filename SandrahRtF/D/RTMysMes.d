@@ -54,7 +54,7 @@ IF~AreaCheck("RTF079") Global("CadrHint","RTF079",0)~THEN RTOdButl Hint1
 DO~SetGlobal("CadrHint","RTF079",1)~
 ==CVSan25J~Mystra...~
 ==RTOdButl~Psst!!~
-=~Mylady, can it be? It must be true then...you...~
+=~My lady, can it be? It must be true then...you...~
 ==CVSan25J~Candrella?~
 ==RTOdButl~Psst! There may be ears everywhere, my lady.~
 ==CVSan25J~This is the former Odesseiron estate, is it not?~

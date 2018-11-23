@@ -87,7 +87,7 @@ DO~ SetGlobal("RTBackInUD","GLOBAL",6)~
 ==RTImrae~Silence, fools? Will you whimper like surfacers or go down fighting like drow?~
 ==UDDrow07~We cannot fight Lolth!~
 ==RTImrae~What else can we do, she will forgive none of us?~
-==CVSan25J~You can hang your head and wait for the axe to fall or you can stand up and fight against that injust tyranny. You have already lost everything - except for your pride and your life.~
+==CVSan25J~You can hang your head and wait for the axe to fall or you can stand up and fight against that unjust tyranny. You have already lost everything - except for your pride and your life.~
 ==UDDrow10~I will not be another victim on Lolth's altar. An outsider, a surfacer must come to tell us we are drow - DROW, not Lolth's fodder.~
 ==RTImrae~The Spider Queen has betrayed her most loyal disciples in her blind action of hatred. She will destroy us all for the deeds that none of us have committed unless we stop her.~
 ==UDDrow07~The Spider Queen be cursed.~

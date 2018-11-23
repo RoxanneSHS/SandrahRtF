@@ -22,7 +22,7 @@ DO~SetGlobal("RTSaem","RTF100",1)~
 ==CVSan25J~Freedom for Shaleij hopefully.~
 ==RTSaemon~My black pearl! She is wonderful, I hope she will never ask me to settle down too soon. There are so many places I'd like to show her and enjoy with her.~
 ==CVSan25J~Are you a doppelganger? Is this Saemon Havarian talking?~
-==RTSaemon~Believe it or not - this old captain is truely in love...~
+==RTSaemon~Believe it or not - this old captain is truly in love...~
 ==RTShaj~WHAT!! YOU BASTRARD!! Who is she, you bloody liar!!~
 ==RTSaemon~Hehehe, I was talking about you of course, my one and only.~
 ==RTShaj~You...me...you really...oh. (She embraces the old seaman with a tear of joy in her eye.)~
@@ -117,7 +117,7 @@ IF~~THEN RTSaemon RTSea4
 ==CVSan25J~Nalia is threatening you so heavily that all your guild cannot protect you.~
 ==RTSaemon~Looks like the Lady Governor somehow holds a grudge against me. She seems to forget that a well organised Guild controlling the docks and slums benefits the whole town and county.~
 ==CVSan25J~In a way I can accept your point. The guild has always been better than chaos and criminals running uncontrolled.~
-==RTSaemon~de'Arnise must nowadays see that otherwise. She has set up an enourmous garrison right here in the docks and there are curfews every moment to impede us.~
+==RTSaemon~de'Arnise must nowadays see that otherwise. She has set up an enormous garrison right here in the docks and there are curfews every moment to impede us.~
 ==CVSan25J~Hm, the cost for the city must be high for that. Nalia surely must have better ways to spend that money for the town.~
 ==RTSaemon~You're old buddies, aren't you? You will definitely find a way to persuade her to stop that nonsense.~
 ==CVSan25J~Probably. However be prepared that it may cost you a bit more than just the information you can provide us.~
@@ -150,7 +150,7 @@ IF~~THEN RTSaemon RTSea6
 CHAIN
 IF~Global("SanRTFPlot1","GLOBAL",5) GlobalLT("RTTalkedSaem","GLOBAL",9)~THEN RTSaemon RTSea7
 ~I can see by your expression that the Council has accepted our deal.~
-==CVSan25J~You are on your way to become a respectable consultor of Athkatla, Saemon. Use your chance well.~
+==CVSan25J~You are on your way to become a respectable consulter of Athkatla, Saemon. Use your chance well.~
 ==RTSaemon~I am sooo relieved, my friends. You know how much I hate bloodshed, especially my own.~
 DO~SetGlobal("RTTalkedSaem","GLOBAL",9) TakePartyItem("RTNalsa") GiveItemCreate("misc4s","CVSandr",1,0,0) AddexperienceParty(12000)~
 =~This is what to do to get to Irenicus.~

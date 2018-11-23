@@ -131,7 +131,7 @@ CHAIN
 IF~~THEN  CVGir25J Stop3
 ~You have come a very long way from Clan Orc Land, Hartleff. If you want to call this valley your new home then there are still obstacles ahead.~
 ==RTHartl~It's really you - Giran. We far from home and you still find us?~
-==CVGir25J~I am not here because of you, the Queen has not sent after you to persue you. I have come to warn you of another danger.~
+==CVGir25J~I am not here because of you, the Queen has not sent after you to pursue you. I have come to warn you of another danger.~
 ==RTHartl~We have come through all land and all danger without help. Nildjek is strong leader, not half-orc bastard with human findling son.~
 ==CVGir25J~Let me talk to Nildjek. He will understand. I have not come to change the past but to give you a chance for the future.~
 ==RTHartl~Bastard prince was always a talker - human sly tongue. Want to see Nildjek? Talk orcish to Hartleff, see who will cross bridge.~DO ~
@@ -210,7 +210,7 @@ END
 
 APPEND Shaorc4
 IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~ THEN BEGIN bers1b
-SAY~ Long treck from Stormhorns to find new place. Clan Orcs will not give up new home.~
+SAY~ Long trek from Stormhorns to find new place. Clan Orcs will not give up new home.~
 IF~~THEN EXIT
 END
 
@@ -229,7 +229,7 @@ END
 
 APPEND Shaorc10
 IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~ THEN BEGIN bers1e
-SAY~ Long treck from Stormhorns to find new place. Clan Orcs will not give up new home.~
+SAY~ Long trek from Stormhorns to find new place. Clan Orcs will not give up new home.~
 IF~~THEN EXIT
 END
 

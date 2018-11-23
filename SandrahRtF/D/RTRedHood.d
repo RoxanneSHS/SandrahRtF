@@ -72,7 +72,7 @@ DO~SetGlobal("StrangeVap","RTF080",4)~
 ==RTReHod1~The leader and his wife expected you to come, just continue downstairs.~
 ==CVSan25J~Candrella...we have seen her daughter upstairs on the estate. She is the wife of the Red Hood Leader?~
 ==RTReHod1~His wife and his right hand in the most crucial operations. They keep Lucinda with the old butler in the safety of the house. You will soon hear the whole story from their own mouths.~
-==CVSan25J~Before we move on, <CHARNAME>, let me cleanse this area from the spells that block the passage and make it useable for the Red hoods again.~EXIT
+==CVSan25J~Before we move on, <CHARNAME>, let me cleanse this area from the spells that block the passage and make it usable for the Red hoods again.~EXIT
 
 CHAIN
 IF WEIGHT #1~AreaCheck("RTF081")Global("Welcome","RTF081",0)~THEN RTReHod3 Foun2
