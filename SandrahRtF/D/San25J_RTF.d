@@ -450,7 +450,7 @@ IF~~THEN BEGIN Odedisc2
 SAY~Let me tell you what my lore knows about the family history here in Thay.~
 =~The patriarch of the family, Tharchion Homen Odesseiron of Surthay, some time ago ventured on an enterprise against Rashemen that not only has failed, but has also put him in opposition against Szass Tam and his trusted. The family seems to have fled or gone underground or, like Edwin, has gone abroad.~
 =~The last I know about Edwin himself is that he has returned to Thay about three years ago, but obviously he was not able to restore his relationship with the authorities. He might as well be hiding at this moment - maybe he will venture to come out should he learn about our presence here.~
-IF~~THEN REPLY~This somehow contradicts the presence of the portal right here on their premisses.~DO~ SetGlobal("RTOdess","GLOBAL",2)~GOTO Odedisc3
+IF~~THEN REPLY~This somehow contradicts the presence of the portal right here on their premisses.~DO~SetGlobal("RTOdess","GLOBAL",2)~GOTO Odedisc3
 END
 
 IF~~THEN BEGIN Odedisc3
@@ -749,7 +749,7 @@ END
 IF~~THEN BEGIN Velsh2
 SAY~We saw a crowned laughing skull not so long ago.~
 IF~~THEN REPLY~On those banners in the snake room below the Collector's hideout - what does it mean?~GOTO Velsh3
-IF~~THEN REPLY~A crowned laughing lich skull on a black hexagon - it was in a book I once studied in Candlekeep - if I can only remember the context...~ GOTO Velsh3
+IF~~THEN REPLY~A crowned laughing lich skull on a black hexagon - it was in a book I once studied in Candlekeep - if I can only remember the context...~GOTO Velsh3
 IF~~THEN REPLY~A new face...eh, not really a face actually...a new player or the ally of one of our foe?~GOTO Velsh3
 END
 
@@ -835,7 +835,7 @@ END
 IF~~THEN BEGIN NoFit2
 SAY~She lost her right hand holding the hammer when she closed this seal here. Her journal says she had the wish that both were buried with her when she died.~
 IF~~THEN REPLY~So we need to open her tomb - I hate to do it but I imagine the heroine herself would agree to the deed would she know the reason why we have to do it.~DO~
-SetGlobal("RTFindCham","GLOBAL",2)~ GOTO NoFit3
+SetGlobal("RTFindCham","GLOBAL",2)~GOTO NoFit3
 END
 
 IF~~THEN BEGIN NoFit3
@@ -1070,7 +1070,7 @@ SAY~We will need to do something drastically soon, <CHARNAME>. Mystra must be sa
 IF~~THEN EXIT
 END
 
-//Part4 Finding Allys
+//Part4 Finding Allies
 IF~Global("RTF4Driz","rtf006",2)~THEN BEGIN KelTShar1
 SAY~We still have a bit of time before we need to go to Wheloon. Enough to have our meeting with Kelemvor, I propose.~
 IF~~THEN REPLY~Baldur's Gate and the Undercity, is that the gate to the God of the End of Everything?~GOTO KelTSharBG
@@ -1170,7 +1170,7 @@ END
 IF~Global("RTBackInUD","GLOBAL",2)~THEN BEGIN RetUst1
 SAY~It is strange, Lolth visit to Ust Natha appears to be quite violent.~
 IF~~THEN REPLY~Those that are not dead are confined in their houses with a spell. The Spider Queen acts against her own people. We must find someone alive and willing to speak.~DO~SetGlobal("RTBackInUD","GLOBAL",3)~EXIT
-IF~~THEN REPLY~Did you see that? Up there in the slave cages is some movement. Some survivors? Let's check.~ DO~SetGlobal("RTBackInUD","GLOBAL",3)~EXIT
+IF~~THEN REPLY~Did you see that? Up there in the slave cages is some movement. Some survivors? Let's check.~DO~SetGlobal("RTBackInUD","GLOBAL",3)~EXIT
 END
 
 IF~~THEN BEGIN NoMirr

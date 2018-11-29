@@ -9,7 +9,7 @@ END
 IF~AreaCheck("RTF077")GlobalLT("SanRTFPlot5","GLOBAL",4)~THEN BEGIN CityExit1
 SAY~Outside is the city of the red robed mortals. I hate them but they will destroy me with their magic even if I kill many of them first.~
 IF~~THEN REPLY~Why don't you stay here and keep them from entering your lair.~GOTO CityExit2
-IF~~THEN REPLY~They cannot enter here with whole armies, you can always defend yourself against the small groups that may want to enter.~ GOTO CityExit2
+IF~~THEN REPLY~They cannot enter here with whole armies, you can always defend yourself against the small groups that may want to enter.~GOTO CityExit2
 END
 
 IF~~THEN BEGIN CityExit2
@@ -26,7 +26,7 @@ IF~Global("RTBalow","GLOBAL",2) GlobalTimerExpired("RTWait","RTF048")~THEN BEGIN
 SAY~I have made a decision to test you. Cooperate and you might gain my trust.~
 IF~~THEN REPLY~But we don't trust you, beast. We can use your body and follow Sandrah's plan without your consent.~GOTO 48fight
 IF~PartyHasItem("Compon04")~THEN REPLY~We have found your lost claw meanwhile, we can propose a deal with it.~GOTO Test1
-IF~~THEN REPLY~My counsellor has advised me to listen to you, beast, so speak.~ GOTO Test1b
+IF~~THEN REPLY~My counsellor has advised me to listen to you, beast, so speak.~GOTO Test1b
 END
 
 IF~~THEN BEGIN 48fight
@@ -45,10 +45,10 @@ SAY~You love riddles like I do? Yes, no? It doesn't matter, you must solve these
 for others I'm slow. 
 To most people, I'm an obsession 
 relying on me is a well practised lesson.~
-IF~~THEN REPLY~ A snail.~ GOTO 1wrong
-IF~~THEN REPLY~ Time.~GOTO 1right
-IF~~THEN REPLY~ A man with a crutch.~ GOTO 1wrong
-IF~~THEN REPLY~ Life.~ GOTO 1wrong
+IF~~THEN REPLY~A snail.~GOTO 1wrong
+IF~~THEN REPLY~Time.~GOTO 1right
+IF~~THEN REPLY~A man with a crutch.~GOTO 1wrong
+IF~~THEN REPLY~Life.~GOTO 1wrong
 END
 
 IF~~THEN BEGIN  1wrong
@@ -63,8 +63,8 @@ END
 
 IF~~THEN BEGIN Test2
 SAY~A blue house is made of blue bricks. A yellow house is made of yellow bricks. A red house is made of red bricks. An orange house is made of orange bricks. What would a green house be made of? ~
-IF~~THEN REPLY~ Green bricks.~GOTO 2wrong
-IF~~THEN REPLY~ Branches. ~GOTO 2wrong
+IF~~THEN REPLY~Green bricks.~GOTO 2wrong
+IF~~THEN REPLY~Branches. ~GOTO 2wrong
 IF~~THEN REPLY~Glass.~DO~IncrementGlobal("Balpoints","RTF048",1)~GOTO 2right
 END
 
@@ -80,7 +80,7 @@ END
 
 IF~~THEN BEGIN Test3
 SAY~They have not flesh, nor feathers, nor scales, nor bone. Yet they have fingers and thumbs of their own. What are they? ~
-IF~~THEN REPLY~ Gloves.~DO~IncrementGlobal("Balpoints","RTF048",1)~GOTO 3right
+IF~~THEN REPLY~Gloves.~DO~IncrementGlobal("Balpoints","RTF048",1)~GOTO 3right
 IF~~THEN REPLY~Zombies.~GOTO 3wrong
 IF~~THEN REPLY~Clones.~GOTO 3wrong
 IF~~THEN REPLY~Fish.~GOTO 3wrong
@@ -98,8 +98,8 @@ END
 
 IF~~THEN BEGIN Test4
 SAY~Let us think about the results.~
-IF~ GlobalLT("Balpoints","RTF048",3)~GOTO Test4a
-IF~ GlobalGT("Balpoints","RTF048",2)~GOTO Test4b
+IF~GlobalLT("Balpoints","RTF048",3)~GOTO Test4a
+IF~GlobalGT("Balpoints","RTF048",2)~GOTO Test4b
 END
 
 IF ~~THEN BEGIN Test4a
@@ -143,7 +143,7 @@ IF~~THEN REPLY~We need another moment of preparation, we'll be back soon.~DO ~Se
 
 
 CHAIN
-IF~Global("RTBalow","GLOBAL",1)~ THEN RTBalow Smell1
+IF~Global("RTBalow","GLOBAL",1)~THEN RTBalow Smell1
 ~AAARGH!! I CAN SMELL THE BLOOD!!~
 =~It's the blood of the one who trapped me here. I tasted it from the hand which held the hammer.~
 DO~SetGlobal("RTBalow","GLOBAL",2) SetGlobalTimer("RTWait","RTF048",TWO_HOURS)~
