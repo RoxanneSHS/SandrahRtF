@@ -428,3 +428,11 @@ IF WEIGHT #-7~GlobalGT("SanBeginRTF","Global",1)~ THEN Cowenf2 InRtFwrong
 ~The practice of magic without a license is forbidden in this city. You shall receive one warning only. Further spellcasting will result in your death.~
 ==CVSan25J~Really?~
 ==Cowenf2 ~Eh...? Gosh, those old habits are hard to kill.~DO~ForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+
+CHAIN
+IF WEIGHT #-1~GlobalGT("SanBeginRTF","Global",1)NumberOfTimesTalkedTo(0)~ THEN Mcook2 SharkCook
+~Hey, you stays out of my kitchen! You'll mess up my art! Someday I'z gonna cook for da zulkir himself! Betcha there's less fistfights in the palace, so's you can enjoy a meal from start to finish.~EXIT
+
+CHAIN
+IF WEIGHT #-1~GlobalGT("SanBeginRTF","Global",1)NumberOfTimesTalkedTo(0)~ THEN Mcook3 SharkCook
+~Would you like it if I whipped up some food for you right here and now? Come on friends, stay and try out my Sembian meatballs!~EXIT
