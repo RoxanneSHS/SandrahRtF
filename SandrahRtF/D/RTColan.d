@@ -15,6 +15,7 @@ END
 IF~~THEN BEGIN Intro2
 SAY~I am Inquisitor Colano, Chief-Inquisitor Colano, to be exact. My task is to inquire for the unusual and suspicious in this town.~
 IF~~THEN REPLY~This is a trade centre, isn't it? Visitors from abroad should neither be unusual nor suspicious.~DO~SetGlobal("RTColan","GLOBAL",3)~ GOTO Intro3
+IF~~THEN REPLY~I'm just a normal <PRO_RACE> <PRO_MANWOMAN>. What could be unusual or suspicious with me?~DO~SetGlobal("RTColan","GLOBAL",3)~ GOTO Intro3
 END
 
 IF~~THEN BEGIN Intro3

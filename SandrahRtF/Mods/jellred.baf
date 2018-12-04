@@ -1,7 +1,19 @@
 IF
+OR(2)
+AreaCheck("RTF090")
 AreaCheck("RTF901")
-NumCreatureGT("Jellspa",3)
+NumCreatureGT("Jellspa",3)  
 Global("NoFusion","LOCALS",0)
+Global("Fusionstop","MYAREA",0)
+THEN
+RESPONSE #100
+SetGlobal("NoFusion","LOCALS",1)
+SetGlobal("Fusionstop","MYAREA",1)
+END
+
+IF
+Global("NoFusion","LOCALS",0)
+Global("Fusionstop","MYAREA",1)
 THEN
 RESPONSE #100
 SetGlobal("NoFusion","LOCALS",1)

@@ -17,50 +17,50 @@ END
 
 APPEND CVGir25J
 
-IF~Global("RTGiranQuest","GLOBAL",1)~ THEN BEGIN SeeBoy
+IF~Global("RTGiranQuest","GLOBAL",1)~THEN BEGIN SeeBoy
 SAY~Did you see that, <CHARNAME>?~
-IF~~THEN REPLY~What?~ DO~SetGlobal("RTGiranQuest","GLOBAL",2)~GOTO SeeBoy2
+IF~~THEN REPLY~What?~DO~SetGlobal("RTGiranQuest","GLOBAL",2)~GOTO SeeBoy2
 END
 
 IF~~THEN BEGIN SeeBoy2
 SAY~An orc boy, here in Thay, definitely Clan-Orc. He vanished into this building over there.~
-IF~~THEN REPLY~The Caravanserai?~ EXIT
-IF~~THEN REPLY~It does not hurt to check it out.~ EXIT
+IF~~THEN REPLY~The Caravanserai?~EXIT
+IF~~THEN REPLY~It does not hurt to check it out.~EXIT
 END
 
-IF~Global("RTGiranQuest","GLOBAL",5)~ THEN BEGIN OrcHelp1
+IF~Global("RTGiranQuest","GLOBAL",5)~THEN BEGIN OrcHelp1
 SAY~Have you heard what those slavers said, <CHARNAME>?~
-IF~~THEN REPLY~Very far north west from here, that describes the location of the Stormhorns.~ GOTO OrcHelp2
-IF~~THEN REPLY~Why should any of your folks have come all the way to here recently?~ GOTO OrcHelp2
+IF~~THEN REPLY~Very far north west from here, that describes the location of the Stormhorns.~GOTO OrcHelp2
+IF~~THEN REPLY~Why should any of your folks have come all the way to here recently?~GOTO OrcHelp2
 END
 
 IF~~THEN BEGIN OrcHelp2
 SAY~You were there when Mama took the reign over the Clans.~
-IF~~THEN REPLY~Most were supporting her - or did she drive some from the Clan's land?~ GOTO OrcHelp7
-IF~~THEN REPLY~There were still some who did not accept the half-orc ruler and her human family.~ GOTO OrcHelp7
+IF~~THEN REPLY~Most were supporting her - or did she drive some from the Clan's land?~GOTO OrcHelp7
+IF~~THEN REPLY~There were still some who did not accept the half-orc ruler and her human family.~GOTO OrcHelp7
 END
 
 IF~~THEN BEGIN OrcHelp7
 SAY~Gathlenk's son, Nildjek, some time ago managed to gather the remainder of the opposition around him.~
 =~Shauhana tried to negotiate with him and to integrate them into the Clans. However, before anything was achieved, Nildjek and his people...well,...they no longer could be found. We suspected they had left to somewhere in the east to seek a new fortune.~
-IF~~THEN REPLY~This fortune may now be to end as Thayan slaves.~ GOTO OrcHelp3
+IF~~THEN REPLY~This fortune may now be to end as Thayan slaves.~GOTO OrcHelp3
 END
 
 IF~~THEN BEGIN OrcHelp3
 SAY~<CHARNAME>, this will not happen! They are Clan Orcs! They are MY people.~
 =~They may have erred or they may have been too proud to accept their new queen but they do not deserve what those slavers plan with them - no one deserves that.~
-IF~~THEN REPLY~You are determined to intervene - and so am I.~ GOTO OrcHelp4
-IF~~THEN REPLY~I doubt that we are in a very good position ourselves to help them.~ GOTO OrcHelp4
+IF~~THEN REPLY~You are determined to intervene - and so am I.~GOTO OrcHelp4
+IF~~THEN REPLY~I doubt that we are in a very good position ourselves to help them.~GOTO OrcHelp4
 END
 
 IF~~THEN BEGIN OrcHelp4
 SAY~None of us can stop those slavers with their red wizards alone. But if they are warned and we can use our party's skills to prevent the red spellcasters to disable the orcish fighting power, we can spoil the attack.~
-IF~~THEN REPLY~And then?~ GOTO OrcHelp5
+IF~~THEN REPLY~And then?~GOTO OrcHelp5
 END
 
 IF~~THEN BEGIN OrcHelp5
 SAY~They will be welcome back home if they want that. If not then they are at least free to try their luck somewhere else.~
-IF~~THEN REPLY~They could live as free orcs in a new Thay should the Red Hoods be successful. Now we must first find out where your people are.~ GOTO OrcHelp6
+IF~~THEN REPLY~They could live as free orcs in a new Thay should the Red Hoods be successful. Now we must first find out where your people are.~GOTO OrcHelp6
 IF~~THEN REPLY~You will be a good leader one day, Giran. Yes, let them decide for themselves, we will provide them with the option to make a choice if we can find them.~GOTO OrcHelp6
 END
 
@@ -69,15 +69,15 @@ SAY~The little spy we saw should tell us, don't forget I'm a ranger and can foll
 IF~~THEN DO~SetGlobal("RTGiranQuest","GLOBAL",6) AddJournalEntry(@2067,QUEST)~EXIT
 END
 
-IF~Global("RTGiranQuest","GLOBAL",7)~ THEN BEGIN Trail1
+IF~Global("RTGiranQuest","GLOBAL",7)~THEN BEGIN Trail1
 SAY~See, the little footprints lead east, all along the shoreline and harbour and then to the north.~
-IF~~THEN REPLY~Fine, let us follow quickly.~ DO~SetGlobal("RTGiranQuest","GLOBAL",8)AddJournalEntry(@2068,QUEST)~EXIT
-IF~~THEN REPLY~Fine, let us stock up our resources and rest before we follow the trail.~ DO~SetGlobal("RTGiranQuest","GLOBAL",8)AddJournalEntry(@2068,QUEST)~EXIT
+IF~~THEN REPLY~Fine, let us follow quickly.~DO~SetGlobal("RTGiranQuest","GLOBAL",8)AddJournalEntry(@2068,QUEST)~EXIT
+IF~~THEN REPLY~Fine, let us stock up our resources and rest before we follow the trail.~DO~SetGlobal("RTGiranQuest","GLOBAL",8)AddJournalEntry(@2068,QUEST)~EXIT
 END
 END
 
 CHAIN
-IF~Global("RTGiranQuest","GLOBAL",4)~  THEN RSlaver2 Overhear
+IF~Global("RTGiranQuest","GLOBAL",4)~ THEN RSlaver2 Overhear
 ~...they will be worth a fortune, at least the men.~
 DO~SetGlobal("RTGiranQuest","GLOBAL",5)~
 ==RSlaver1~Oh, yes, I heard the woman are ugly hairy brutes - but those men first need to be defeated.~
@@ -85,7 +85,7 @@ DO~SetGlobal("RTGiranQuest","GLOBAL",5)~
 ==RSlaver1~They say that they come from very far north west, they fought their trail all the way through to the borderland between us and Rashemen, where they now dwell.~
 ==RSlaver2~They had no losses, my contact said, that's how strong they are!~
 ==RSlaver1~Still, our red wizards should be able to disable them long enough for the capture.~
-==RSlaver2~Let us hope for that, otherwise this will end unpretty bloody.~ DO~EndCutSceneMode() AddJournalEntry(@2066,QUEST) ActionOverride("RSlaver1",EscapeArea()) ActionOverride("RSlaver2",EscapeArea())~EXIT
+==RSlaver2~Let us hope for that, otherwise this will end unpretty bloody.~DO~EndCutSceneMode() AddJournalEntry(@2066,QUEST) ActionOverride("RSlaver1",EscapeArea()) ActionOverride("RSlaver2",EscapeArea())~EXIT
 
 CHAIN
 IF~Global("RTGiranQuest","GLOBAL",9)~THEN CVGir25J Cave1
@@ -107,7 +107,7 @@ IF~Global("RTGiranQuest","GLOBAL",11)~THEN CVGir25J AtCave
 DO~SetGlobal("RTGiranQuest","GLOBAL",12)~
 ==CVSan25J~We have little time to loose if we still want to overtake them.~
 ==CVIzy25J IF~InParty("CVIzzy")~THEN~(Sigh) Another dark hole into which the fearless heroine follows her orc prince.~
-==CVGir25J IF~InParty("CVIzzy")~THEN~ Are you scared, Izzy?~
+==CVGir25J IF~InParty("CVIzzy")~THEN~Are you scared, Izzy?~
 ==CVIzy25J IF~InParty("CVIzzy")~THEN~Do you think I'm a coward or what, if you can go there, I can do it a hundred times, heh!~
 ==CVGir25J IF~InParty("CVIzzy")~THEN~Well, I am scared, my dear, still we must do it.~
 ==CVIzy25J IF~InParty("CVIzzy")~THEN~(Grins) Come, take my hand, Giri darling, my spells will protect you.~
@@ -115,7 +115,7 @@ DO~SetGlobal("RTGiranQuest","GLOBAL",12)~
 
 CHAIN
 IF~Global("RTGiranQuest","GLOBAL",12)~THEN RTHartl Stop
-~ You have come to wrong place. Turn and go. This is Clan Orc Land.~
+~You have come to wrong place. Turn and go. This is Clan Orc Land.~
 DO~SetGlobal("RTGiranQuest","GLOBAL",13)~
 END
 ++~This is why we came, you are in great danger. We are friends.~+ Stop2
@@ -135,18 +135,18 @@ IF~~THEN  CVGir25J Stop3
 ==RTHartl~We have come through all land and all danger without help. Nildjek is strong leader, not half-orc bastard with human findling son.~
 ==CVGir25J~Let me talk to Nildjek. He will understand. I have not come to change the past but to give you a chance for the future.~
 ==RTHartl~Bastard prince was always a talker - human sly tongue. Want to see Nildjek? Talk orcish to Hartleff, see who will cross bridge.~DO ~
-CreateItem("SHARTHP1",0,0,0) FillSlot(SLOT_AMULET) ActionOverride("CVGiran",Attack("RTHartl")) ~ EXIT
+CreateItem("SHARTHP1",0,0,0) FillSlot(SLOT_AMULET) ActionOverride("CVGiran",Attack("RTHartl")) ~EXIT
 
 CHAIN
 IF~Global("RTGiranQuest","GLOBAL",14)~THEN RTHartl Stop5
-~ You not coward, Giran. You prove to speak truth by will to pay with blood. Nildjek may want to hear your words.~
+~You not coward, Giran. You prove to speak truth by will to pay with blood. Nildjek may want to hear your words.~
 DO~SetGlobal("RTGiranQuest","GLOBAL",15)~
 ==CVGir25J~Keep your watch, Hartleff. The next visitors to come will not talk but attack. Make sure you and your men are ready, there is little time left.~
 ==RTHartl~Nildjek is near big house north. Know many orc arrows follow your every move. Make not mistake bastard prince.~DO~ClearAllActions() EndCutSceneMode() MoveToPoint([2543.1699])~EXIT
 
 CHAIN
 IF~Global("RTGiranQuest","GLOBAL",15)~THEN RTNild Stop5
-~ Giran. Your mother sends you a long way to chase some disobedient clan members.~
+~Giran. Your mother sends you a long way to chase some disobedient clan members.~
 DO~SetGlobal("RTGiranQuest","GLOBAL",16)~
 ==CVGir25J~I come not by the Queen's command. The Clans do not pursue you. You made your choice to live by your own rule and law and not follow Shauhana. This is sad but your free will and your right.~
 ==RTNild~You have not come across all those lands we crossed and battled to tell us that. Why are you here?~
@@ -166,7 +166,7 @@ DO~SetGlobal("RTGiranQuest","GLOBAL",16)~
 
 CHAIN
 IF~Global("RTGiranQuest","GLOBAL",17)~THEN RTNild Final
-~ Giran. The Clan Orcs have won.~
+~Giran. The Clan Orcs have won.~
 DO~SetGlobal("RTGiranQuest","GLOBAL",18)~
 ==CVGir25J~Yes, we have. What do we gain out of this victory?~
 ==RTNild~I may have been wrong about you and your *mother*. Gathlenk's version by which I was raised may not have been the only truth.~
@@ -185,56 +185,56 @@ DO~SetGlobal("RTGiranQuest","GLOBAL",18)~
 
 
 APPEND Shaorc7
-IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~ THEN BEGIN bers1a
-SAY~ I left the Stormhorn for reason. Too much human is queen and her family.~
+IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~THEN BEGIN bers1a
+SAY~I left the Stormhorn for reason. Too much human is queen and her family.~
 IF~~THEN EXIT
 END
 
-IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,2) ~ THEN BEGIN bers2a
-SAY~ This good place to stay, almost replace Hai 'Ulthak.~
+IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,2) ~THEN BEGIN bers2a
+SAY~This good place to stay, almost replace Hai 'Ulthak.~
 IF~~THEN EXIT
 END
 END
 
 APPEND Shaorc8
-IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~ THEN BEGIN bers1d
-SAY~ I left the Stormhorn for reason. Too much human is queen and her family.~
+IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~THEN BEGIN bers1d
+SAY~I left the Stormhorn for reason. Too much human is queen and her family.~
 IF~~THEN EXIT
 END
 
-IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,2) ~ THEN BEGIN bers2d
-SAY~ This good place to stay, almost replace Hai 'Ulthak.~
+IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,2) ~THEN BEGIN bers2d
+SAY~This good place to stay, almost replace Hai 'Ulthak.~
 IF~~THEN EXIT
 END
 END
 
 APPEND Shaorc4
-IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~ THEN BEGIN bers1b
-SAY~ Long trek from Stormhorns to find new place. Clan Orcs will not give up new home.~
+IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~THEN BEGIN bers1b
+SAY~Long trek from Stormhorns to find new place. Clan Orcs will not give up new home.~
 IF~~THEN EXIT
 END
 
-IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,2) ~ THEN BEGIN bers2b
-SAY~ This good place to stay, still miss Hai 'Ulthak maybe.~
+IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,2) ~THEN BEGIN bers2b
+SAY~This good place to stay, still miss Hai 'Ulthak maybe.~
 IF~~THEN EXIT
 END
 END
 
 APPEND Shaorc6
-IF WEIGHT #-2~AreaCheck("RTF074") ~ THEN BEGIN bers1c
-SAY~ Good land for moose but may get weak after time. Not so rough like old Stormhorns.~
+IF WEIGHT #-2~AreaCheck("RTF074") ~THEN BEGIN bers1c
+SAY~Good land for moose but may get weak after time. Not so rough like old Stormhorns.~
 IF~~THEN EXIT
 END
 END
 
 APPEND Shaorc10
-IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~ THEN BEGIN bers1e
-SAY~ Long trek from Stormhorns to find new place. Clan Orcs will not give up new home.~
+IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,1)~THEN BEGIN bers1e
+SAY~Long trek from Stormhorns to find new place. Clan Orcs will not give up new home.~
 IF~~THEN EXIT
 END
 
-IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,2) ~ THEN BEGIN bers2e
-SAY~ This good place to stay, still miss Hai 'Ulthak maybe.~
+IF WEIGHT #-2~AreaCheck("RTF074") RandomNum(2,2) ~THEN BEGIN bers2e
+SAY~This good place to stay, still miss Hai 'Ulthak maybe.~
 IF~~THEN EXIT
 END
 END
