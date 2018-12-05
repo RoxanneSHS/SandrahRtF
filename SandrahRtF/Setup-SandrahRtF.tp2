@@ -1313,6 +1313,7 @@ COPY ~SandrahRTF/Areas/RTF104LM.bmp~ ~override/RTF104LM.bmp~
 COPY ~SandrahRTF/Areas/RTF104SR.bmp~ ~override/RTF104SR.bmp~
 
 COPY ~SandrahRTF/Areas/RTF105.ARE~ ~override/RTF105.ARE~
+     COMPILE     ~SandrahRTF/Areas/RTF105.baf~
 COPY ~SandrahRTF/Areas/RTF105.mos~ ~override/RTF105.mos~
 COPY ~SandrahRTF/Areas/RTF105.tis~ ~override/RTF105.tis~
 COPY ~SandrahRTF/Areas/RTF105.wed~ ~override/RTF105.wed~
@@ -1879,8 +1880,6 @@ EXTEND_BOTTOM
 ~RTF103.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
 ~RTF104.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
-EXTEND_BOTTOM
-~RTF105.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
 ~RTF110.bcs~ ~SandrahNPC/Pellig/pellfoll.baf~
 EXTEND_BOTTOM
