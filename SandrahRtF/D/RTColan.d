@@ -70,7 +70,7 @@ IF~Global("RTColan","GLOBAL",14)~THEN RTColan RTTrial1
 ==RTJudge~A good start, chief inquisitor, go on like that and we will have a hanging tomorrow morning.~
 ==CVSan25J~Even in Thay nobody hangs for being cautious of not spreading the own name in a foreign town unnecessarily.~
 ==RTColan~Right, woman, if that were the only point.~
-==RTJudge~Continue - if that bitch opens her mouth again we'll have her gagged for the rest of the trial. Order in the Court!~
+==RTJudge~Continue - if that bitch opens her mouth again we'll have her gagged for the rest of the trial. Order in the court!~
 ==RTColan~Your honour, I'd rather avoid that. Those primitive outbursts often reveal facts they may try to hide from us.~
 ==RTJudge~Your methods are legendary, chief inquisitor, you may have it your way.~
 ==RTColan~The killing of several merchants, is next on the list...~
@@ -292,7 +292,7 @@ IF~Global("RTColan","GLOBAL",12)~ THEN RTColan ArrestJ
 DO~SetGlobal("RTColan","GLOBAL",13)~
 ==RTJudge~Colano, whom do you bring next?~
 ==RTColan~Here are the papers, your honour.~
-==RTJudge~(Glances at the pile of papers for a second)~
+==RTJudge~(Glances at the pile of papers for a second.)~
 ==RTRedwi1~The Chief-Inquisitor has forgotten to add the illegal slave issue to his investigation.~
 ==RTColan~They do not own slaves...~
 ==RTRedwi1~But that lady at the recent auction has...~

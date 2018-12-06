@@ -3101,8 +3101,8 @@ SAY NAME2 Wardstone
 SAY DESC @1828
 
 COPY ~SandrahRTF/Itm/RTMausw.ITM~ ~override/RTMausw.ITM~
-SAY NAME1 Latern
-SAY NAME2 Latern
+SAY NAME1 Lantern
+SAY NAME2 Lantern
 SAY DESC @1829
 
 COPY ~SandrahRTF/Itm/RTlaNote.ITM~ ~override/RTlaNote.ITM~
