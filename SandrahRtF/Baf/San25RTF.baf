@@ -102,6 +102,7 @@ IF
 Global("Key2","RTF080",1)
 See("Batin01")
 AreaCheck("RTF080")
+!PartyHasItem("RTMausw")
 THEN
 RESPONSE #100
 SetGlobal("Key2","RTF080",2)
