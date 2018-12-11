@@ -2938,6 +2938,8 @@ COPY ~SandrahRTF/Cre/IzzyE.bmp~ ~override/IzzyE.bmp~
 COPY ~SandrahRTF/Cre/LeyalE.bmp~ ~override/LeyalE.bmp~
 COPY ~SandrahRTF/Cre/LoureedE.bmp~ ~override/LoureedE.bmp~
 COPY ~SandrahRTF/Cre/PelligE.bmp~ ~override/PelligE.bmp~
+COPY ~SandrahRTF/Cre/dehers.bmp~ ~override~
+COPY ~SandrahRTF/Cre/deherm.bmp~ ~override~
 
 PRINT ~Installed RtF Creatures~
 
