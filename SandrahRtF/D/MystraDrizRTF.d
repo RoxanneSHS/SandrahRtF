@@ -35,7 +35,7 @@ CHAIN
 IF~~THEN CVSan25J ThayRepNoTalos1
 ~Grandmother, this is what we learned in Thay...(Sandrah gives a report about the recent events.)~
 ==SanMyst~Xephistagoras had me captured already once in his own attempt to gain access to the Weave's power. I share your view about his plan for an excessive draining of energy from the Weave.~
-==SanMyst IF~Global("SanRTFPlot3","GLOBAL",6)~THEN ~IF he is really in the old Bhaal temple in the Wood of Sharp Teeth you should pay him a visit now, chances are good that you can defeat him before he can summon any help from his allies.~
+==SanMyst IF~Global("SanRTFPlot3","GLOBAL",6)~THEN ~If he is really in the old Bhaal temple in the Wood of Sharp Teeth you should pay him a visit now, chances are good that you can defeat him before he can summon any help from his allies.~
 END
 IF~Global("SanRTFPlot3","GLOBAL",7)~THEN REPLY~That is the obvious step, but what about thereafter?~+ ThayRepDefTalos1
 IF~Global("SanRTFPlot3","GLOBAL",7)~THEN REPLY~I recall the events you refer to, Midnight. But what about mobilizing our own allies? ~+ ThayRepDefTalos1
