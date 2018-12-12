@@ -144,6 +144,7 @@ DO~SetGlobal("RTLeyPlot1","GLOBAL",13)~
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",13)~THEN RTShaj Sheifree3
 ~I told Cayia about our need to find a ship from this island.~
+DO~SetGlobal("RTLeyPlot1","GLOBAL",14)~
 END
 ++~Yes?~EXTERN ppgirl Sheifree4
 
