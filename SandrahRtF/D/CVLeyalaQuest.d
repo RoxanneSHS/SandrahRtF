@@ -118,7 +118,7 @@ IF~~THEN CVLEY25J Sheimiss3
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",11)~THEN CVLEY25J Sheifree
-~There she is in the glass prison, but no trace of the switch Cayla mentioned.~
+~There she is in the glass prison, but no trace of the switch Cayia mentioned.~
 DO~SetGlobal("RTLeyPlot1","GLOBAL",12)~
 ==RTShaj~(The girl gestures at Sandrah and pantomimes as if using a hammer.)~
 ==CVLEY25J~It seems she wants us to do something with Sandrah's hammer...~
@@ -134,16 +134,16 @@ IF~Global("RTLeyPlot1","GLOBAL",12)~THEN RTShaj Sheifree2
 DO~SetGlobal("RTLeyPlot1","GLOBAL",13)~
 ==CVLEY25J~Saemon will be more than happy to hold you in your arms very soon. We had a hard job to prevent him from sailing to your rescue immediately.~
 ==RTShaj~You are wise to do so. My capturer was planning on just that. This asylum is a trap with me for bait.~
-==CVLEY25J~Your new friend Cayla warned us about that.~
-==RTShaj~Oh poor Cayla, she was my help and hope here, she had to suffer for so long already from that pirate brute.~
+==CVLEY25J~Your new friend Cayia warned us about that.~
+==RTShaj~Oh poor Cayia, she was my help and hope here, she had to suffer for so long already from that pirate brute.~
 ==CVLEY25J~We promised her to help her out of Brynnlaw as well.~
 ==RTShaj~The bridge to and from town is deadly, but how can we leave the island any other way?~
 ==CVSan25J~We had to send our skyship back to the mainland. We had no idea what we would find here and that ship would have notified about our presence immediately. We need to defeat the pirates and disable the trap to get access to the harbour and the ships down there.~
-==RTShaj~I propose to consult Cayla, she knows Desharik and the island better than anyone.~DO~EscapeAreaMove("ar1515",1696,820,5)~EXIT
+==RTShaj~I propose to consult Cayia, she knows Desharik and the island better than anyone.~DO~EscapeAreaMove("ar1515",1696,820,5)~EXIT
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",13)~THEN RTShaj Sheifree3
-~I told Cayla about our need to find a ship from this island.~
+~I told Cayia about our need to find a ship from this island.~
 END
 ++~Yes?~EXTERN ppgirl Sheifree4
 
@@ -173,7 +173,7 @@ DO~SetGlobal("RTLeyPlot1","GLOBAL",9)~
 ==CVLey25J~We were able to convince Saemon to stay in Athkatla where Desharik's spies may get sore feet from observing his every move while we came through the back-door to free the prisoner - well, the prisoners as it appears now.~
 ==ppgirl~Heavens, I hope you will be able to get me out of here after all these years that I pay now for my mistakes I made as a foolish youngster.~
 ==CVLey25J~Fear nothing, we will leave no one to the pirate's wraith.~
-==ppgirl~I am Cayla, by the way. Have your weapons ready when you get inside, there are further guards all over the place.~ DO~MoveToPoint([1313.1581]) EscapeAreaDestroy(30)~EXIT
+==ppgirl~I am Cayia, by the way. Have your weapons ready when you get inside, there are further guards all over the place.~ DO~MoveToPoint([1313.1581]) EscapeAreaDestroy(30)~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("RTLeyPlot1","GLOBAL",9)AreaCheck("ar1515")~THEN ppgirl Leyquest2
