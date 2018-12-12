@@ -3681,6 +3681,9 @@ COPY  ~SandrahRTF/EET~ ~override~
 COPY_EXISTING ~Belt.cre~ ~override/RTBelt.cre~
 WRITE_ASCII 0x248 ~none~ #8
 
+COPY_EXISTING ~ppgirl2.cre~ ~override~
+WRITE_ASCII 0x268 ~none~ #8
+
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVDrizR.cre~ THEN BEGIN
 COPY ~SandrahNPC/Mods/CVDRIZR.CRE~ ~override/CVDRIZR.CRE~
      SAY NAME1 Drizzt
