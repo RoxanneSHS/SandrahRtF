@@ -64,7 +64,7 @@ IF~~THEN RTLarlo SharV2
 ==RTLarlo~This way or that, the Weave is endangered.~
 ==CVSan25J~Shar offered you the Shadow Weave and its powers in return for your services, right?~
 ==RTLarlo~An interesting subject, isn't it, a complete new field for research and development, hihihi.~
-==CVSan25J~(Smiles) A strong temptation - even if you see that she may not be able to grant it, even if she wanted.~
+==CVSan25J~(Smiles) A strong temptation - but you see that she may not be able to grant it, even if she wanted.~
 =~You have studied and learned from the Weave since two millennia, Larloch. You are not at the end by far. The True Weave has as much to explore for you still as the Shadow Weave may offer.~
 ==RTLarlo~I knew you would help me order my options, Mystra. You always did. A new Karsus you named the puppeteer in the background?~
 ==CVSan25J~Szass Tam of Thay, dweller and explorer of the ancient Citadel in the Thaymount.~
