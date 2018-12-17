@@ -50,7 +50,7 @@ Global("HaiassSeUne","GLOBAL",1)
 !Dead("haiass")
 THEN
 RESPONSE #100
-MoveGlobalObjectOffScreenOffScreen("haiass",Protagonist)
+MoveGlobalObjectOffScreen("haiass",Protagonist)
 END
 
 IF
