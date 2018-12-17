@@ -6,7 +6,7 @@ Global("PelligFollow","GLOBAL",1)
 !Dead("pellig")
 THEN
 RESPONSE #100
-MoveGlobalObject("Pellig","CVSandr")
+MoveGlobalObjectOffScreenOffScreen("Pellig","CVSandr")
 END
 
 IF
@@ -25,7 +25,7 @@ Global("HaiassSeUne","GLOBAL",1)
 !Dead("haiass")
 THEN
 RESPONSE #100
-MoveGlobalObjectOffScreen("haiass",Protagonist)
+MoveGlobalObjectOffScreenOffScreen("haiass",Protagonist)
 END
 
 IF
