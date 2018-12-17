@@ -6,7 +6,7 @@ Global("PelligFollow","GLOBAL",1)
 !Dead("pellig")
 THEN
 RESPONSE #100
-MoveGlobalObjectOffScreenOffScreen("Pellig","CVSandr")
+MoveGlobalObjectOffScreen("Pellig","CVSandr")
 END
 
 IF
