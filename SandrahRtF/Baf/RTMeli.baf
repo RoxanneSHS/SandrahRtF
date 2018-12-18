@@ -184,10 +184,12 @@ END
 IF
 GlobalGT("SanRTFPlot2","GLOBAL",4)
 InParty(Myself)
-OR(3)
+OR(5)
 AreaCheck("rtf010")
 AreaCheck("ar5500")
 AreaCheck("BG2300")
+AreaCheck("ar2500")
+AreaCheck("BG3200")
 Global("RTMeliQuest","GLOBAL",0)
 Delay(12)
 THEN
