@@ -76,19 +76,7 @@ Global("PelligFollow","GLOBAL",1)
 !Dead("pellig")
 THEN
 RESPONSE #100
-MoveGlobalObjectOffScreen("Pellig","CVSandr")
-END
-
-IF
-Global("SanRTFPlot2","GLOBAL",3)
-Global("Updates","RTF030",0)
-THEN
-RESPONSE #100
-SetGlobal("Updates","RTF030",1)
-AddJournalEntry(@2056,QUEST)
-EraseJournalEntry(@2053)
-EraseJournalEntry(@1764)
-EraseJournalEntry(@2055)
+MoveGlobalObject("Pellig","CVSandr")
 END
 
 IF
@@ -100,6 +88,7 @@ ChangeEnemyAlly("Pellig",CONTROLLED)
 END
 
 IF
+Delay(6)
 Global("HaiassJumpOn","GLOBAL",1)
 Global("HaiassSeUne","GLOBAL",1)
 !InActiveArea("haiass")
@@ -107,7 +96,8 @@ Global("HaiassSeUne","GLOBAL",1)
 !Dead("haiass")
 THEN
 RESPONSE #100
-MoveGlobalObjectOffScreen("haiass",Protagonist)
+MoveGlobalObject("haiass",Protagonist)
+ActionOverride("Haiass",RunAwayFrom(Player1,5))
 END
 
 IF

@@ -10,41 +10,41 @@ EraseJournalEntry(@1795)
 END
 
 IF
-	InParty("CVSandr")
-	Global("PelligFollow","GLOBAL",1)
-	!InActiveArea("pellig")
-	!See("pellig")
-	!Dead("pellig") // Pelligram
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
 THEN
-	RESPONSE #100
-		MoveGlobalObjectOffScreen("Pellig","CVSandr")
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
 END
 
 IF
-	!Allegiance("Pellig",CONTROLLED)
-	Delay(10)
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
 THEN
-	RESPONSE #100
-		ChangeEnemyAlly("Pellig",CONTROLLED)
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
 END
 
 IF
-	Global("HaiassJumpOn","GLOBAL",1)
-	Global("HaiassSeUne","GLOBAL",1)
-	!InActiveArea("haiass")
-	!See("haiass")
-	!Dead("haiass")
+Delay(6)
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
 THEN
-	RESPONSE #100
-		MoveGlobalObjectOffScreen("haiass",Protagonist)
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+ActionOverride("Haiass",RunAwayFrom(Player1,5))
 END
 
 IF
-	!Allegiance("haiass",CONTROLLED)
-	Delay(12)
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
 THEN
-	RESPONSE #100
-		ChangeEnemyAlly("haiass",CONTROLLED)
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
 END
-
-
