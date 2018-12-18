@@ -50,7 +50,7 @@ Global("PelligFollow","GLOBAL",1)
 !Dead("pellig")
 THEN
 RESPONSE #100
-MoveGlobalObjectOffScreen("Pellig","CVSandr")
+MoveGlobalObject("Pellig","CVSandr")
 END
 
 IF
@@ -62,6 +62,7 @@ ChangeEnemyAlly("Pellig",CONTROLLED)
 END
 
 IF
+Delay(6)
 Global("HaiassJumpOn","GLOBAL",1)
 Global("HaiassSeUne","GLOBAL",1)
 !InActiveArea("haiass")
@@ -69,7 +70,8 @@ Global("HaiassSeUne","GLOBAL",1)
 !Dead("haiass")
 THEN
 RESPONSE #100
-MoveGlobalObjectOffScreen("haiass",Protagonist)
+MoveGlobalObject("haiass",Protagonist)
+ActionOverride("Haiass",RunAwayFrom(Player1,5))
 END
 
 IF
@@ -79,4 +81,3 @@ THEN
 RESPONSE #100
 ChangeEnemyAlly("haiass",CONTROLLED)
 END
-
