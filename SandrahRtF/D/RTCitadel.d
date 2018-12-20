@@ -186,7 +186,7 @@ IF~~THEN CVSan25J Mecha1
 ~Obviously you are not here by your free will, and most likely the one responsible for your state is the one we are pursuing.~
 ==RTCitMec~That sounds as if your appearance so shortly after the bastard himself is a good sign.~
 ==CVSan25J~You have seen Szass Tam recently, master mechanic?~
-==RTCitMec~He fled to his sanctum, well protected behind those ancient walls of the Citadel's inner sanctum.~
+==RTCitMec~He fled to his shelter, well protected behind those ancient walls of the Citadel's inner sanctum.~
 ==CVSan25J~He did not use the door we do not see, right?~
 ==RTCitMec~There are no doors to that part of the Citadel...He uses his spells to go there - nobody else is allowed to go there, only his thieving buddy...~
 ==CVSan25J~Cyric.~
