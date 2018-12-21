@@ -1,4 +1,34 @@
 IF
+Global("SanRTFPlot5","GLOBAL",6)
+Global("Gnollend","RTF123",0)
+AreaCheck("RTF123")
+Global("Kele123","LOCALS",0)
+CombatCounter(0)
+See("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Kele123","LOCALS",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("Kele123","LOCALS",2)
+THEN
+RESPONSE #100
+MoveToPoint([2754.1159])
+SetGlobal("Kele123","LOCALS",3)
+END
+
+IF
+Global("Kele123","LOCALS",3)
+THEN
+RESPONSE #100
+SetGlobal("Kele123","LOCALS",4)
+MoveToPoint([2512.626])
+EscapeArea()
+END
+
+IF
 Global("Gnollend","RTF123",4)
 THEN
 RESPONSE #100

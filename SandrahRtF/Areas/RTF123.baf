@@ -3,6 +3,7 @@ Global("Myssleep","RTF123",0)
 THEN
 RESPONSE #100
 ActionOverride("SanMyst",Polymorph(SLEEPING_WOMAN_ELF))
+ActionOverride("RTKelem",ChangeAIScript("RTKele2",OVERRIDE))
 SetGlobal("Myssleep","RTF123",1)
 END
 
