@@ -27,3 +27,27 @@ ActionOverride(Player1,RemoveSpellRES("spin822"))
 Continue()
 END
 
+IF
+OnCreation()
+Global("SanToTRRepl","GLOBAL",6)
+THEN
+RESPONSE #100
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdre"))
+Continue()
+END
+
+IF
+Global("SanToTRRepl","GLOBAL",6)
+PartyRested()
+THEN
+RESPONSE #100
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdre"))
+Continue()
+END
+
