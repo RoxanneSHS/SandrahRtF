@@ -1,16 +1,16 @@
-CHAIN 
+CHAIN
 IF WEIGHT #-2~GlobalGT("SanBeginRTF","GLOBAL",1) NumTimesTalkedTo(0)~THEN CVQIDR RTFUMMeet1
 ~My sister!~
 ==CVSan25J~My sister!~
 =~*Qilandrha and Sandrah embrace and kiss each other dearly*.~
 ==CVQIDR~Gods walk on the Prime of Faerun once again, at least you and <CHARNAME>?~
-==CVSan25J~Maybe others as well, we are here to find that out. I am afraid our home plane has become once again the playground for some celestial power struggle.~
+==CVSan25J~Maybe others as well, we are here to find that out. I am afraid our home plane has become the playground for some celestial power struggle like it did in the past already.~
 ==CVQIDR~I have faith in my goddess and my sister to prevent harm from us as much as she can.~
 ==CVSan25J~This will always stay home for me. Me and <CHARNAME> will do what we can, however it appears that those who oppose us have allies down here.~
 ==CVQIDR~Bad news, my sister, and it implies that in such a struggle not only the evil doers will suffer.~
 ==CVSan25J~I know that it is only a small promise if I say that those who let the mortals suffer will have to compensate for it.~
 ==CVQIDR~It is not such a small promise as it was made by a most powerful goddess who is known to keep her word.~
-=~*Once again the sisters embrace each other in mutual understanding.~
+=~*Again the sisters embrace each other in mutual understanding.*~
 =~<CHARNAME>, you will find a number of your old friends and companions in my little Realm down here. Feel free to look around.~
 END
 ++~Thank you and farewell. We will do as Sandrah has promised.~EXIT
