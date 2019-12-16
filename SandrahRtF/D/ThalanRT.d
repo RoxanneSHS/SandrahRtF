@@ -17,9 +17,9 @@ DO~SetGlobal("RtFThal","LOCALS",1) ~
 ==RTMeli IF~InParty("RTMeli")~THEN~I have improved quite some, Master Thalantyr, but even Sandrah cannot do the studies we need your help for without the aid of some laboratory like yours.~
 ==CVSan25J IF~InParty("RTMeli")~THEN~ Dealing with magic means constant learning for all of us.~
 ==Thalan IF~InParty("RTMeli")~THEN~Is he so bad that he needs the Goddess of All Magic herself to tutor him?~
-==CVSan25J IF~InParty("RTMeli")~THEN~ (Laughs) Should I let him indent my reputation while trying his spells unobserved?~
-==CVSan25J~ These are the items we have found, Thalantyr. I will not tell you my observations now, so you may inspect them unprejudiced.~
-==Thalan~ Mhm, let me see...~DO~TakePartyItem("RTFlui") TakePartyItem("RTDScar") TakePartyItem("Misc65")~
+==CVSan25J IF~InParty("RTMeli")~THEN~(Laughs) Should I let him indent my reputation while trying his spells unobserved?~
+==CVSan25J~These are the items we have found, Thalantyr. I will not tell you my observations now, so you may inspect them unprejudiced.~
+==Thalan~Mhm, let me see...~DO~TakePartyItem("RTFlui") TakePartyItem("RTDScar") TakePartyItem("Misc65")~
 =~Dear, I hate to say it...(Laughs) I need the help of two gods for some little errand...in my hasted flight from the Talos troupe I have lost the Lens of Spectro Analysis required for the task at hand.~
 END
 ++~Oh, no, something like that was to be expected!~ + RTF1b

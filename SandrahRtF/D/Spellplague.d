@@ -21,7 +21,7 @@ DO~SetGlobal("RTPriQ","BG4800",4)~
 
 CHAIN
 IF~Global("RTPriQ2","CVElm4",1) AreaCheck("CVELM4")~ THEN RTYouSha InWDSP
-~ There you are again, see we have come even though we heard a lot of rumours about Mystra's death and the spell plague.~
+~There you are again, see we have come even though we heard a lot of rumours about Mystra's death and the spell plague.~
 DO~SetGlobal("RTPriQ2","CVElm4",2) ~
 ==RTMoninj~They say here that a god or goddess lives by the faith and dedication of her followers.~
 ==RTYouSha~Mystra's power is unbroken but we had a number of encounters with followers of other faiths and gods who loose influence almost daily.~

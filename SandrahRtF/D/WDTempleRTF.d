@@ -1,6 +1,6 @@
 CHAIN
 IF WEIGHT #-2~ GlobalGT("SanBeginRTF","GLOBAL",1) Global("GreetRTF","LOCALS",0)~THEN SaMystP1 RTF1
-~ We swear allegiance to the Lady, Mistress of the Mysteries, Mystra.~
+~We swear allegiance to the Lady, Mistress of the Mysteries, Mystra.~
 DO~ SetGlobal("GreetRTF","LOCALS",1)~
 =~Psst, I know it is you in person and the God of Love and Hope - I assume you want your personal presence here not to be publicly known.~
 ==CVSAn25J~Right, my good Rhanthona, Sandrah of Waterdeep speaks to you.~
@@ -20,7 +20,7 @@ IF WEIGHT #-5~GlobalGT("SanBeginRTF","GLOBAL",1) Global("GreetRTF","LOCALS",0)~T
 ~My sweet child...ah, yes, I cannot but address you otherwise, my Goddess...~
 DO~ SetGlobal("GreetRTF","LOCALS",1)~
 ==CVSAn25J~You cannot and you shall not, my mentor and teacher! Especially not as me and <CHARNAME> once again roam the Realms in our mortal avatars.~
-==CVRingo~ The resources of the temple are yours...ah, what am I babbling, this is your temple and it also serves the new God of Love and Hope besides now.~
+==CVRingo~The resources of the temple are yours...ah, what am I babbling, this is your temple and it also serves the new God of Love and Hope besides now.~
 ==CVSAn25J IF~ GlobalLT("SanRTFPlot1","GLOBAL",2) ~THEN~We still try to get ourselves a rough picture of the situation here in Waterdeep and in Clan Orc Land. Can you share the information you have with us?~
 ==CVRingo IF~ GlobalLT("SanRTFPlot1","GLOBAL",2) ~THEN~It is not much we know here at the temple, only some of our scouts and messenger sent to investigate the trade route to the Stormhorns are missing and some unclear reports have been received about activities up there. This is in the hands of the civil authorities - Commander Shar-Teel. I heard she receives delegates from Athkatla and Baldur's Gate today to analyse the situation.~
 ==CVSAn25J IF~ GlobalLT("SanRTFPlot1","GLOBAL",2) ~THEN~Thank you, we should pay our good old Wildcat a visit then, <CHARNAME>.~
@@ -49,7 +49,7 @@ END
 
 CHAIN
 IF~GlobalGT("SanBeginRTF","GLOBAL",1) Global("HintMys","LOCALS",0)~THEN NarQMes MidnHi
-~ The daughter of the house returns. Greetings, Miss Sandrah.~
+~The daughter of the house returns. Greetings, Miss Sandrah.~
 DO~SetGlobal("HintMys","LOCALS",1)~
 ==CVSan25J~How refreshing, good Landrel, to be treated like who I really am.~
 ==NarQMes~Oh, Sandrah, goddesses and former goddesses grace this house almost daily you must know.~

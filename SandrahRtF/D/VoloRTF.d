@@ -1,6 +1,6 @@
 CHAIN
 IF WEIGHT #-2~ Global("SanRTFPlot5","GLOBAL",7) ~THEN VOLO RTVoloFin
-~ Oh, my heroes, you still stand in the dark days to come.~
+~Oh, my heroes, you still stand in the dark days to come.~
 DO~SetGlobal("SanRTFPlot5","GLOBAL",8) ~
 ==CVSan25J~You are troubled, old friend? What are you working on these days?~
 ==Volo~(Sigh) History needs its scribe even if it's a sad tale to tell. There is only one thing of interest in the Realms today - Mystra's death and the spell plague.~
@@ -14,7 +14,7 @@ DO~SetGlobal("SanRTFPlot5","GLOBAL",8) ~
 
 CHAIN
 IF WEIGHT #-2~ AreaCheck("RTF025") GlobalLT("SanRTFPlot5","GLOBAL",7)Global("RTVolo","LOCALS",0) ~THEN VOLO RTSurpr1
-~ Oh, my heroes, the magnificent Bhaalspawn <CHARNAME>!!!~
+~Oh, my heroes, the magnificent Bhaalspawn <CHARNAME>!!!~
 =~The wonderful Sandrah of Waterdeep!!!!~
 =~??????~
 =~But....~
