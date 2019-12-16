@@ -5,7 +5,7 @@ CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",1)~THEN RTLeyThi SaeTrou1
 ~Hey, you there, please wait, I need a minute of ya time!~
 ==CVIzy25J IF~InParty("CVIzzy")~THEN~You're a shadow thief, right man, I've seen ya in Saemon's place, cutie.~
-==CVSan25J IF~!InParty("CVIzzy")~THEN~ A shadow thief if I'm not mistaken. Are you one of Saemon's guild?~
+==CVSan25J IF~!InParty("CVIzzy")~THEN~A shadow thief if I'm not mistaken. Are you one of Saemon's guild?~
 ==RTLeyThi~Absolutely right, ma'am, and it's because of the boss the boys sent out to seek for ya. Ac'tally it's for her we look.~
 ==CVLey25J~For me? What have I to do with the shadow thieves?~
 ==RTLeyThi~Well, yeah, see...the boys 'n' me sat together and discussed. See, somethin's wrong with the boss for a couple of days now. We fear for his brainwise sanity and such.~
@@ -152,7 +152,7 @@ CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",13)~THEN ppgirl Sheifree4
 ~The only way to leave the asylum's ground is via the bridge to the town. But the bridge is blocked by a deadly trap.~
 DO~SetGlobal("RTLeyPlot1","GLOBAL",14)~
-==CVLEY25J~ What is this trap, do you know?~
+==CVLEY25J~What is this trap, do you know?~
 ==ppgirl~Anyone who crosses the bridge without holding a specific ward stone is immediately turned to stone.~
 ==CVLEY25J~You received water and food while incarcerated here and there is no supply within these walls.~
 ==RTShaj~The madman Lonk who calls himself Lonk the Sane brought everything we needed from town.~

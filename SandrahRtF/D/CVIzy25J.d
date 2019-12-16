@@ -4,18 +4,18 @@ BEGIN CVIzy25J
 
 IF~Global("IzzyGods","LOCALS",1)~THEN BEGIN Advantage1
 SAY~Ya 'ave the largest biggest advantage over dem gods tryin' to make lotsa trouble down here, <CHARNAME>.~
-IF~~THEN REPLY~ Which is?~GOTO Advantage2
-IF~~THEN REPLY~ (Sigh)I close my eyes and I hear Imoen babbling and babbling on and on...~ GOTO Advantage3
+IF~~THEN REPLY~Which is?~GOTO Advantage2
+IF~~THEN REPLY~(Sigh)I close my eyes and I hear Imoen babbling and babbling on and on...~ GOTO Advantage3
 END
 
 IF~~ THEN BEGIN Advantage2
 SAY~Slowpoke, yours is the advantage you're from round here and know your world and its peoples - they just don't.~
-IF~~THEN REPLY~ We've been through many cases where the gods have failed here on Toril just for underestimating the mortals, that's right, Izzy.~GOTO Advantage4
+IF~~THEN REPLY~We've been through many cases where the gods have failed here on Toril just for underestimating the mortals, that's right, Izzy.~GOTO Advantage4
 END
 
 IF~~ THEN BEGIN Advantage3
 SAY~Yeah, she warned me to ignore your nasty remarks and just always see your oh-so-golden heart ya tryin' to hide, she says...anyway, slowpoke, yours is the advantage you're from round here and know your world and its peoples - they just don't.~
-IF~~THEN REPLY~ We've been through many cases where the gods have failed here on Toril just for underestimating the mortals, that's right, Izzy.~GOTO Advantage4
+IF~~THEN REPLY~We've been through many cases where the gods have failed here on Toril just for underestimating the mortals, that's right, Izzy.~GOTO Advantage4
 END
 
 IF~~ THEN BEGIN Advantage4
@@ -56,7 +56,7 @@ END
 
 IF~Global("Izzyplot","GLOBAL",5)~THEN BEGIN IzPlotSt6
 SAY~*Izzy seems to be more affected by the scene with Shabella than anyone else. But maybe the reason is some other - you have seen her talk to several thieves in the Guild while you were dealing with the Mistress.*~
-IF~~THEN REPLY~ Have you received news about your missing girl Sharlenia and her boyfriend?~ GOTO IzPlotSt7
+IF~~THEN REPLY~Have you received news about your missing girl Sharlenia and her boyfriend?~ GOTO IzPlotSt7
 IF~~THEN REPLY~What is it, Izzy?~ GOTO IzPlotSt7
 END
 

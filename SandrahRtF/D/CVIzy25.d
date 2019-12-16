@@ -5,12 +5,12 @@ CHAIN
 IF~ NumTimesTalkedTo(0)~THEN CVIzy25 FirstSaw
 ~Heya...My!!! I'll drop dead jus' where I stand if that ain't San...but, hey no, it's not that goddesses walk in any time of the day to our house...~
 DO~SetGlobal("SanIzzyJoin","GLOBAL",1)~
-==CVSan25J ~ You must be Iz...I mean, Isobel. You are still here, little one?~
-==CVIzy25~ Hey, Sandrah or Mystra or what...it's okay to say Izzy these days...mom 'n' dad have given up with that Isobel fine talking as mom never was bestest at it anyway.~
-==CVSan25J ~ Mom and dad? You have found new parents, Izzy?~
-==CVIzy25~ Guess you walk into here 'coz of them, 'tis not hard to figure that out. Wanna see your besta friend again, right?~
+==CVSan25J ~You must be Iz...I mean, Isobel. You are still here, little one?~
+==CVIzy25~Hey, Sandrah or Mystra or what...it's okay to say Izzy these days...mom 'n' dad have given up with that Isobel fine talking as mom never was bestest at it anyway.~
+==CVSan25J ~Mom and dad? You have found new parents, Izzy?~
+==CVIzy25~Guess you walk into here 'coz of them, 'tis not hard to figure that out. Wanna see your besta friend again, right?~
 ==CVSan25J ~Oh, now I understand! Of course, this had to turn out that way - you are Imoen's daughter.~
-==CVIzy25~ You'll never see bester mom and daughter, Sandrah. I learned and learned everything first handedly from Imoen the Magnificent. Heya, <CHARNAME>, ain't no day in this house that your name not get mentioned and all you did do together.~
+==CVIzy25~You'll never see bester mom and daughter, Sandrah. I learned and learned everything first handedly from Imoen the Magnificent. Heya, <CHARNAME>, ain't no day in this house that your name not get mentioned and all you did do together.~
 END
 ++~Pleased to meet you, Izzy, a fine young woman you have become, Imoen must be proud of you.~ + FirstSaw2
 
