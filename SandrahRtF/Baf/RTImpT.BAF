@@ -5,7 +5,6 @@ THEN
 RESPONSE #100
 SetGlobal("RTImpHere","BG4200",4)
 DisplayStringHead(Myself,@2036)
-Enemy()
 RunAwayFrom(NearestEnemyOf(Myself),150)
 END
 
@@ -28,6 +27,7 @@ CreateCreatureObjectOffset("goliro01",Player6,[40.40])
 Wait(1)
 EndCutSceneMode()
 SetGlobal("RTImpHere","BG4200",5)
+Enemy()
 END
 
 IF
