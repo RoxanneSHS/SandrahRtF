@@ -17,7 +17,7 @@ END
 IF~ Global("GuardOd","RTF070",3)~THEN BEGIN NoOut70b
 SAY~What do you want again?~
 IF~~THEN REPLY~We go where we want to go, lackey.~ GOTO Think2
-IF~PartyHasItem("RTOdBad")~THEN REPLY~ We have a permission, we may pass.~GOTO Out70
+IF~PartyHasItem("RTOdBad")~THEN REPLY~We have a permission, we may pass.~GOTO Out70
 IF~~THEN REPLY~Calm down, we will go back.~DO~SetGlobal("GuardOd","RTF070",3)~EXIT
 END
 
@@ -49,7 +49,7 @@ END
 BEGIN RTOdButl
 CHAIN
 IF~AreaCheck("RTF079") Global("CadrHint","RTF079",0)~THEN RTOdButl Hint1
-~ Get out, red scum...!!~
+~Get out, red scum...!!~
 =~Eeh...who are you?~
 DO~SetGlobal("CadrHint","RTF079",1)~
 ==CVSan25J~Mystra...~
@@ -84,9 +84,9 @@ IF~Global("In091","RTF091",1)~THEN RTThKn GoSamHQ
 ~Peasants!! Where do you think you go, he?~
 DO~SetGlobal("In091","RTF091",2)~
 ==CVSan25J~I assume this is the Guild of Foreign Trade. Consequently the man to meet here will be Samas Kul.~
-==RTThKn~ Lady, the Master will surely like you, I know his taste in women. For that we ought to get rid of your armour and we need to get rid of that company you brought along.~
+==RTThKn~Lady, the Master will surely like you, I know his taste in women. For that we ought to get rid of your armour and we need to get rid of that company you brought along.~
 ==CVSan25J~I am afraid your master has to deal with me just the way I am. He may appreciate the woman but he may even prefer the treasure I bring for him.~
-==RTThKn~ You come with tribute, why didn't you say that - Samas may still wanna add you to the loot, be careful.~
+==RTThKn~You come with tribute, why didn't you say that - Samas may still wanna add you to the loot, be careful.~
 ==CVSan25J~I come to compensate for some losses your master had to endure recently. Step aside less you want to be among them.~
-==RTThKn~ Ah, you're the one who so reduced the ranks of our lizardmen. I think he will make me Lieutenant for dragging you before his throne in chains, my beauty.~
+==RTThKn~Ah, you're the one who so reduced the ranks of our lizardmen. I think he will make me Lieutenant for dragging you before his throne in chains, my beauty.~
 DO~Enemy()~EXIT

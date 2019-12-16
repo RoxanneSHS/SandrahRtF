@@ -26,7 +26,7 @@ IF~ GlobalGT("SanBeginRTF","GLOBAL",1) AreaCheck("CVRTF8")OR(2)Global("SanRTFPlo
 ~Who dares...<CHARNAME>!! Sandrah!! How unexpected but yet welcome.~
 DO~SetGlobal("SanRTFPlot1","GLOBAL",1) SetGlobal("RTFShauInfo","GLOBAL",1)~
 ==CVSan25J~Shauhana, it is not in the best of times that we arrive, but hopefully we can do something to improve the situation.~
-==CVShauq~ I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
+==CVShauq~I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
 ==CVSan25J~We are ready to listen and decide on our course afterwards, Shauhana.~
 ==CVShauq~It has been peace between Clan Orcs and the South for ten summers, my friends. The Neutral Zone has been respected by both sides and eventual trespassers have been punished adequately. We established trade with the Sword Coast with benefits for both sides.~
 =~Five summers ago orc, dwarf and Waterdeep men built together the Hornswamp bridge to make trade easier and safer. It was a big celebration - Minsc was drunk on Meade for five days, oh my.~
@@ -51,7 +51,7 @@ IF~~THEN CVShauq InitRtF2
 ==CVShauq~I would be more than grateful if you could do that my friends.~
 =~There is another, a more personal wish from a caring mother, <CHARNAME>, if you care to listen.~
 END
-IF~Global("SanRTFGiranOK","GLOBAL",1)~THEN REPLY~ It's about Giran, isn't it?~ + InitRtF3
+IF~Global("SanRTFGiranOK","GLOBAL",1)~THEN REPLY~It's about Giran, isn't it?~ + InitRtF3
 IF~Global("SanRTFGiranOK","GLOBAL",1)~THEN REPLY~If it's about your little prince boy, forget it. We will not nurse fledgling adventurers, Queen Shauhana, forget it...~ EXTERN CVSan25J TakeGiran
 ++~Will you ask to join us again, now Giran looks like he's grown?~ + InitRtF3
 ++~Anything you wish, my orc queen.~ + InitRtF3
@@ -79,7 +79,7 @@ IF~ GlobalGT("SanBeginRTF","GLOBAL",1) AreaCheck("CVRTF8") Global("SanRTFPlot1",
 ~Who dares...<CHARNAME>!! Sandrah!! How unexpected but yet welcome.~
 DO~SetGlobal("SanRTFPlot1","GLOBAL",2)SetGlobal("RTFShauInfo","GLOBAL",4)~
 ==CVSan25J~Shauhana, it is not in the best of times that we arrive, but hopefully we can do something to improve the situation.~
-==CVShauq~ I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
+==CVShauq~I hope you can as my own attempts have failed so far and my folks get very nervous about it. Some start to talk of another war already - after all we thought we had achieved (sigh).~
 ==CVSan25J~We are ready to listen and decide on our course afterwards, Shauhana.~
 ==CVShauq~It has been peace between Clan Orcs and the South for ten summers, my friends. The Neutral Zone has been respected by both sides and eventual trespassers have been punished adequately. We established trade with the Sword Coast with benefits for both sides.~
 =~Five summers ago orc, dwarf and Waterdeep men built together the Hornswamp bridge to make trade easier and safer. It was a big celebration - Minsc was drunk on Meade for five days, oh my.~
@@ -93,7 +93,7 @@ DO~SetGlobal("SanRTFPlot1","GLOBAL",2)SetGlobal("RTFShauInfo","GLOBAL",4)~
 ==CVShauq~So be it. Let us commence at once.~
 =~There is another, a more personal wish from a caring mother, <CHARNAME>, if you care to listen.~
 END
-IF~Global("SanRTFGiranOK","GLOBAL",1)~THEN REPLY~ It's about Giran, isn't it?~ + InitRtF3
+IF~Global("SanRTFGiranOK","GLOBAL",1)~THEN REPLY~It's about Giran, isn't it?~ + InitRtF3
 IF~Global("SanRTFGiranOK","GLOBAL",1)~THEN REPLY~If it's about your little prince boy, forget it. We will not nurse fledgling adventurers, Queen Shauhana, forget it...~ EXTERN CVSan25J TakeGiran
 ++~Will you ask to join us again, now Giran looks like he's grown?~ + InitRtF3
 ++~Anything you wish, my orc queen.~ + InitRtF3
@@ -115,11 +115,11 @@ IF~Global("RTGoRaven","LOCALS",4)~THEN CVSan25J CampAttack1
 ~Wallrick? What do you do here?~
 DO~SetGlobal("RTGoRaven","LOCALS",5)SetGlobal("SanRTFPlot2","GLOBAL",2)~
 ==CVOrwarl~We are under an attack, friends. Listen, we need your help immediately.~
-==CVSan25J~ What has happened, Wallrick?~
-==CVOrwarl~ The summer camp is under attack and siege. We know not how they have found out, but they must have known our leaders are up there with only few guards to protect the peaceful conference.~
+==CVSan25J~What has happened, Wallrick?~
+==CVOrwarl~The summer camp is under attack and siege. We know not how they have found out, but they must have known our leaders are up there with only few guards to protect the peaceful conference.~
 =~The attack started two days ago and caught us by surprise. All sorts of clones it seems are involved led by a mysterious lich mage all in white.~
-==CVSan25J~ We have encountered him already...~
-==CVOrwarl~ I am on my way to alert the berserker legion of Hai 'Ulthak, but it may take us too long to reach the camp...~
+==CVSan25J~We have encountered him already...~
+==CVOrwarl~I am on my way to alert the berserker legion of Hai 'Ulthak, but it may take us too long to reach the camp...~
 ==CVSan25J~Where are the others?~
 ==CVOrwarl~Shauhana and Shar-Teel and the other conference members fought hard but where driven down to the lower levels of the old fortress. The enemy hordes have overrun the camp so they are trapped down there now.~
 ==CVOrwarl~I was separated with the few guards we had on the surface and had to retreat to get re-enforcements. I think our heroes can defend themselves for some time, as the caverns and basements below the fort are narrow and the large enemy forces cannot make use of their larger numbers. As long as they keep their spirit and their rations I fear not for them.~
@@ -128,8 +128,8 @@ DO~SetGlobal("RTGoRaven","LOCALS",5)SetGlobal("SanRTFPlot2","GLOBAL",2)~
 ==CVOrwarl~That is exactly as I see it as well, Sandrah. This is why I have notified you.~ DO~EscapeArea()~
 ==CVSan25J~We are on our way, Wallrick, let us do as proposed. Right, <CHARNAME>?~
 END
-++~ I heard my buzzword, Sandrah, a small experienced adventurer group clearing out a monster infested dungeon - that's us. Let's go.~DO~AddJournalEntry(@2055,QUEST)~ EXIT
-++~ Exactly the task for which we came down to Faerun, isn't it.~DO~AddJournalEntry(@2055,QUEST)~EXIT
+++~I heard my buzzword, Sandrah, a small experienced adventurer group clearing out a monster infested dungeon - that's us. Let's go.~DO~AddJournalEntry(@2055,QUEST)~ EXIT
+++~Exactly the task for which we came down to Faerun, isn't it.~DO~AddJournalEntry(@2055,QUEST)~EXIT
 
 
 APPEND F_DWSmit

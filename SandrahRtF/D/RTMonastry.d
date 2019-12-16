@@ -31,7 +31,7 @@ END
 ++~We are scholars, I hail from Candlekeep myself, your library has some reputation~+ BooksH
 ++~We are here to investigate for some ancient relict that is hidden below the monastery.~+RelictH
 IF ~InParty("Leyala")~THEN REPLY~My companion's old teacher is here, Iylos.~+ TeachH
-IF ~!InParty("Leyala")~THEN REPLY~ We heard about the fighting style of the Scorpion and want to challenge the monks.~ + ChallH
+IF ~!InParty("Leyala")~THEN REPLY~We heard about the fighting style of the Scorpion and want to challenge the monks.~ + ChallH
 
 CHAIN
 IF~~THEN RTMonkH BooksH
@@ -168,7 +168,7 @@ END
 
 CHAIN
 IF~Global("RTMissBooks","LOCALS",1)~THEN CVSan25J Theft1
-~ Are you the librarian here?~
+~Are you the librarian here?~
 DO~SetGlobal("RTMissBooks","LOCALS",2) ActionOverride("RTMonkbo",SetNumTimesTalkedTo(1))~
 ==RTMonkBo~(Laughs bitterly.) Can I still bear that title?~
 =~They left little of our library, those book thieves (sigh).~
@@ -181,7 +181,7 @@ DO~SetGlobal("RTMissBooks","LOCALS",2) ActionOverride("RTMonkbo",SetNumTimesTalk
 
 CHAIN
 IF~~THEN CVSan25J Theft3
-~ Are you the librarian here?~
+~Are you the librarian here?~
 DO~ActionOverride("CVSandr",SetGlobal("RTMissBooks","LOCALS",2))~
 ==RTMonkBo~(Laughs bitterly.) Can I still bear that title?~
 =~They left little of our library, those book thieves (sigh).~

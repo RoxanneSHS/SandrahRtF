@@ -5,8 +5,8 @@ IF~Global("RTSamThrone","GLOBAL",2)~THEN RTSamas First1
 ~Another bout of destruction and violence, not really what our visitors should represent, my good Havarian.~
 DO~SetGlobal("RTSamThrone","GLOBAL",3)~
 ==RTSaemon~Eh, how am I to know, my friend Samas?~
-==RTSamas~ Oyoyh, all those beautiful little charades, how I love them...you know them as well as I know them, Saemon.~
-==RTSamas IF~Global("SanRomPath","GLOBAL",1)~THEN~ The Goddess of All Magic and the God of Love and Hope finally make their appearance in my humble quarters.~
+==RTSamas~Oyoyh, all those beautiful little charades, how I love them...you know them as well as I know them, Saemon.~
+==RTSamas IF~Global("SanRomPath","GLOBAL",1)~THEN~The Goddess of All Magic and the God of Love and Hope finally make their appearance in my humble quarters.~
 ==RTSamas IF~Global("SanRomPath","GLOBAL",2)~THEN~The Goddess of All Magic and the Goddess of Love and Hope finally make their appearance in my humble quarters.~
 ==RTSaemon~Eh, are they?~
 ==CVSan25J~So we have made the introductory round, Samas Kul, Master of the Guild of Foreign Trade and Saemon Havarian, Bad Penny of Faerun.~
