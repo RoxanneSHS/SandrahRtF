@@ -15,7 +15,7 @@ END
 APPEND Read3
 IF WEIGHT #-1~Global("Criminal","GLOBAL",99)~THEN BEGIN NoArrn
 SAY~Greetings, <CHARNAME>, may you find what you seek at Candlekeep.~
-IF~~THEN REPLY~ We are in search of a book concerning Cerameon of Westgate.~ GOTO RTBookN
+IF~~THEN REPLY~We are in search of a book concerning Cerameon of Westgate.~ GOTO RTBookN
 IF~~THEN REPLY~I would be faster at it if you'd get out of my way, old fool.~EXIT
 END
 
@@ -35,7 +35,7 @@ END
 APPEND Tethto2
 IF WEIGHT #-1~Global("Criminal","GLOBAL",99)~THEN BEGIN NoArrn
 SAY~Greetings, <CHARNAME>, may you find what you seek at Candlekeep.~
-IF~~THEN REPLY~ We are in search of a book concerning Cerameon of Westgate.~ GOTO RTBookt
+IF~~THEN REPLY~We are in search of a book concerning Cerameon of Westgate.~ GOTO RTBookt
 IF~~THEN REPLY~I would be faster at it if you'd get out of my way, old fool.~EXIT
 END
 
@@ -48,7 +48,7 @@ END
 APPEND Ulraun
 IF WEIGHT #-1~Global("Criminal","GLOBAL",99)~THEN BEGIN NoArrn
 SAY~Greetings, <CHARNAME>, may you find what you seek at Candlekeep.~
-IF~~THEN REPLY~ We are in search of a book concerning Cerameon of Westgate.~ GOTO RTBooku
+IF~~THEN REPLY~We are in search of a book concerning Cerameon of Westgate.~ GOTO RTBooku
 IF~~THEN REPLY~I would be faster at it if you'd get out of my way, old fool.~EXIT
 END
 
@@ -86,8 +86,8 @@ END
 BEGIN RTOutWa
 IF~ Global("Criminal","GLOBAL",99)~THEN BEGIN Leavecand
 SAY~You want to leave us again, <CHARNAME>?~
-IF~~THEN REPLY~ Not yet, Watcher?~EXIT
-IF~~THEN REPLY~ I finished business for this time, my friend.~DO~ ClearAllActions()
+IF~~THEN REPLY~Not yet, Watcher?~EXIT
+IF~~THEN REPLY~I finished business for this time, my friend.~DO~ ClearAllActions()
 StartCutScene("RTCaOut") ~EXIT
 END
 

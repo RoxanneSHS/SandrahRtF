@@ -2,7 +2,7 @@ BEGIN BLour25
 
 CHAIN
 IF~Global("LouredB","GLOBAL",1)~ THEN BLour25 meanwhile
-~ Ah, to be out in the open once again - in company to trust!!~
+~Ah, to be out in the open once again - in company to trust!!~
 DO~SetGlobal("LouredB","GLOBAL",2) RealSetGlobalTimer("LoureedT","LOCALS",1040)~
 ==BSandr25~It sounds like you have not done that too often, L'Urieet. How did you fare since our initial meeting, was it hard for you to reach Undermountain?~
 ==BLour25~I made it, so much is obvious. It was harder than I had envisioned, I was not prepared for the surface - I mean to manage my survival alone, not heading a conquering drow army for the glory of my damned mother.~
@@ -53,7 +53,7 @@ CHAIN
 IF~Global("RTLouPlot","GLOBAL",7) ~ THEN BLour25 Lougods4
 ~She said she will return. Can they not accept the fact I will never be one of them?~
 DO~SetGlobal("RTLouPlot","GLOBAL",8)~
-==BSandr25~ You were right in your earlier judgement about Lolth. Drow are not her worshippers but her slaves. She hunts you and those who think and act like you like a slaver chases after his lost *property*.~
+==BSandr25~You were right in your earlier judgement about Lolth. Drow are not her worshippers but her slaves. She hunts you and those who think and act like you like a slaver chases after his lost *property*.~
 ==BLour25~Gods that behave like the worst of the mortals. Is there no one to stop them?~
 ==BSandr25~They are powerful but they can be fought. All gods gain their status from the masses that worship them. Without followers they are nothing.~
 =~There are those who attract their disciples by example and love, those that provide benefits for them and those that rule by - fear.~
@@ -71,7 +71,7 @@ IF~Global("LouredG","GLOBAL",1)~THEN BLour25 Testgiran
 ~Come here, orc boy, I demand it!~
 DO~SetGlobal("LouredG","GLOBAL",2) RealSetGlobalTimer("LoureedT","LOCALS",500)~
 ==BGir25~If you want something you may ask me politely, *drow*. Is that the famous way the females of your kin treat the males?~
-==BLour25~ Do not try to be insolent, do as you are told.~
+==BLour25~Do not try to be insolent, do as you are told.~
 ==BGir25~(Sigh) Young orc girls in the heat of their hormones are not that different and I know how to treat them.~
 ==BLour25~You dare to compare me with those *animals*? (Grins wickedly) In the Underdark this answer would have gained you a flogging in the spider web pits - with me it gains you respect.~
 ==BGir25~(Laughs) You play your role well - even as I know you are not fond of the ways of your own kin any more. So here I am just like you begged me to be.~
@@ -97,11 +97,11 @@ IF~Global("LouredB","GLOBAL",9) ~THEN BLour25 Loumale1
 ~Sandrah...as a woman...you surely had quite some experience with the male gender?~
 DO~SetGlobal("LouredB","GLOBAL",10) RealSetGlobalTimer("LoureedT","LOCALS",2500)~
 ==BSandr25~You talk of drow male or just generally? Anyway, the answer to both is yes. Is there any problem you have with that issue?~
-==BLour25~ The drow male in Undermountain - well, you once said we carry the Underdark still inside...they do, at least this generation.~
+==BLour25~The drow male in Undermountain - well, you once said we carry the Underdark still inside...they do, at least this generation.~
 ==BSandr25~They have a problem when facing a strong female like you, you mean, at least when that woman is drow?~
 ==BLour25~That very much explains it. And the elves and humans, there is either fear of my race or the plain lust that arises in them when they see a dark beauty like me.~
 ==BSandr25~You are now in company of people that have a clearer mind than those you encountered before, people strong enough to overcome prejudice and race frontiers.~
 ==BLour25~It may not be a good idea to mingle with fighting companions...~
-==BLour25 IF~InParty("RTMeli")~THEN ~ ...even, mh, he is unbiased and a strong sorcerer...(she glances thoughtfully in Melicamp's direction.) Ah, we should focus on the task ahead, Sandrah, thank you for listening.~
-==BLour25 IF~!InParty("RTMeli") InParty("CVGiran")~THEN ~ ...even, mh, he has withstood those lusty orc girls and he is quite charming - for a human...(she glances thoughtfully in Giran's direction.) Ah, we should focus on the task ahead, Sandrah, thank you for listening.~
+==BLour25 IF~InParty("RTMeli")~THEN ~...even, mh, he is unbiased and a strong sorcerer...(she glances thoughtfully in Melicamp's direction.) Ah, we should focus on the task ahead, Sandrah, thank you for listening.~
+==BLour25 IF~!InParty("RTMeli") InParty("CVGiran")~THEN ~...even, mh, he has withstood those lusty orc girls and he is quite charming - for a human...(she glances thoughtfully in Giran's direction.) Ah, we should focus on the task ahead, Sandrah, thank you for listening.~
 ==BLour25 IF~!InParty("RTMeli") !InParty("CVGiran")~THEN ~...especially not with gods - even if he's so different and charming...Ah, we should focus on the task ahead, Sandrah, thank you for listening.~EXIT

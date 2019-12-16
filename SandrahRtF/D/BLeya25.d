@@ -27,8 +27,8 @@ CHAIN
 IF~Global("RTLeybant","GLOBAL",1)~THEN BLeya25 Exercise1        
 ~*Leyala has moved a bit aside from the group to perform her morning exercises. Her trained yet fragile feminine body follows a pattern of very slow movements. You enjoy the play of her muscles beneath her spotless skin and the concentrated look on her beautiful face as she goes through her scores with half-closed eyes.*~
 DO~SetGlobal("RTLeybant","GLOBAL",2)~
-==BSandr25~ *Sandrah observes the nun's exercise with similar admiration.*~
-==BLeya25~ Aah, I feel a lot better now with my brain and body refreshed.~
+==BSandr25~*Sandrah observes the nun's exercise with similar admiration.*~
+==BLeya25~Aah, I feel a lot better now with my brain and body refreshed.~
 ==BSandr25~I hope I have not disturbed your concentration, Leyala.~
 ==BLeya25~I have noticed your presence but it only added to the value of my exercise. After all this is a preparation for combat and defence and my foe would do anything to distract me from my attack actions.~
 ==BSandr25~It always fascinates me how you monks have this complete control of your body and make it an effective weapon at will.~

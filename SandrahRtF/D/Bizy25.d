@@ -157,7 +157,7 @@ DO~SetGlobal("RTInCell","RTF061",2) RealSetGlobalTimer("RTInCellD","RTF061",180)
 ==Bizy25~You ain't jokin' are ya? Haven't you seen how the law works in this land?~
 ==CVGir25J IF~InParty("CVGiran")~ THEN~A thief from the Sword Coast is more honest and lawful than the judges in Thay.~
 ==Bizy25 IF~InParty("CVGiran")~ THEN~My!! Prince boy, admit that my skills are the mostest useful of us all at this moment.~
-==Bizy25 IF~!InParty("CVGiran")~ THEN~ A thief from the Sword Coast is more honest and lawful than the judges in Thay. Admit that my skills are the mostest useful of us all at this moment.~
+==Bizy25 IF~!InParty("CVGiran")~ THEN~A thief from the Sword Coast is more honest and lawful than the judges in Thay. Admit that my skills are the mostest useful of us all at this moment.~
 ==CVGir25J IF~InParty("CVGiran")~ THEN~You are a really great - and lovely - lock picker, Izzy, but Sandrah is right, this faked trial is our chance to get into the Court building where we can retrieve the stolen key. You can get us out after our success.~
 ==CVSan25J IF~!InParty("CVGiran")~ THEN~You are a really great lock picker, Izzy, but this faked trial is our chance to get into the Court building where we can retrieve the stolen key. You can get us out after our success.~
 ==Bizy25 ~You can bet on that for surest.~EXIT
@@ -166,10 +166,10 @@ CHAIN
 IF~Global("Izzypink","RTF107",1)~THEN Bizy25 PinkRoom
 ~WOW, this guy likes pomposities like none else, he!~
 DO~SetGlobal("Izzypink","RTF107",2)~
-==CVSan25J~ Wealth does not automatically produce good taste.~
+==CVSan25J~Wealth does not automatically produce good taste.~
 ==CVGir25J IF~InParty("CVGiran")~ THEN~It makes me angry to think of all the suffering slaves required to produce this perverted display of one man's wealth.~
-==Bizy25 IF~InParty("CVGiran")~ THEN~ It's not my taste anyway, orky boy.~
-==Bizy25 IF~!InParty("CVGiran")~ THEN~ It's not my taste anyway, it's incomplete.~
+==Bizy25 IF~InParty("CVGiran")~ THEN~It's not my taste anyway, orky boy.~
+==Bizy25 IF~!InParty("CVGiran")~ THEN~It's not my taste anyway, it's incomplete.~
 ==Bizy25~Where's the pink room after all?~EXIT
 
 CHAIN
