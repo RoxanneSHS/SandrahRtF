@@ -6,7 +6,7 @@ IF~Global("PellGir","LOCALS",1)~THEN BGir25 PellJel
 =~I have always admired her grace and beauty in her animal form. Her human avatar is nearly as perfect, given the limitations we humans have.~
 DO~SetGlobal("PellGir","LOCALS",2)~
 ==Bizy25~Grrrr, you will see in a second how a human girl can turn into a panther and rip you to shreds an' I dont give no damn if that looks graceful to you or not!!~
-==BGir25~ Izzy? Is that jealousy? I was just expressing a ranger's admiration for a beautiful creature...~
+==BGir25~Izzy? Is that jealousy? I was just expressing a ranger's admiration for a beautiful creature...~
 ==Bizy25~*Smack*. Has your nature observation taught you nuthin, drooling orc? Give her another look and I will digest your eyeballs with no need for a pinch of salt or spice.~
 ==BGir25~*Grins viscously*. You are a real hot red head, my lovely.~
 ==Bizy25~YOU...wait...I know that grin...you...oh, you try to play games with ol' Izzy gettin me all hot and jealous for ya entertainment!~

@@ -95,12 +95,12 @@ IF~~THEN REPLY~Good enough to call for another.~ GOTO Brew3
 END
 
 IF~~THEN BEGIN Brew3
-SAY~ That Auril priestess isn't as cold as her goddess, I'd even say she's really hot, hihi. (Whispers) I swear she's in league with the Red Hoods.~
+SAY~That Auril priestess isn't as cold as her goddess, I'd even say she's really hot, hihi. (Whispers) I swear she's in league with the Red Hoods.~
 IF~~THEN REPLY~I could really get addicted to your brew, my friend.~GOTO Brew4
 END
 
 IF~~THEN BEGIN Brew4
-SAY~ Wonder what that Athkatla captain has to deal with Samas Kul. Hope his goods will be in our stores soon. (Mutters) That red robe I saw entering the wizard's tower today was embroidered richer than any I've ever seen.~
+SAY~Wonder what that Athkatla captain has to deal with Samas Kul. Hope his goods will be in our stores soon. (Mutters) That red robe I saw entering the wizard's tower today was embroidered richer than any I've ever seen.~
 IF~~THEN REPLY~That was really worth it, ah, here's your coin.~DO~TakePartyGold(60)~EXIT
 END
 
@@ -118,7 +118,7 @@ IF~~THEN EXIT
 END
 
 IF~~THEN BEGIN Shark3
-SAY~ Splendid, you may be outlanders but you speak the right language.~
+SAY~Splendid, you may be outlanders but you speak the right language.~
 =~Standard or special?~
 IF~~THEN REPLY~Standard is enough.~GOTO Shark4
 IF~~THEN REPLY~Let us see your special.~GOTO Shark5
@@ -327,7 +327,7 @@ IF~~THEN REPLY~Okay, here's your 100 gold.~ DO~TakePartyGold(100)~ GOTO Umberl6
 END
 
 IF~~THEN BEGIN Umberl6
-SAY~ You may bask in the glory of Umberlee for as long as you like, friends.~
+SAY~You may bask in the glory of Umberlee for as long as you like, friends.~
 IF~~THEN EXIT
 END
 
@@ -382,15 +382,15 @@ APPEND 25Spell
 IF WEIGHT #-2~AreaCheck("RTF066")~THEN BEGIN LazThay1
 SAY~Lazarus Librarus at your service.  Welcome to the Arcana Archives.~
 IF~Global("Lazhere","RTF066",0)~THEN REPLY~ You found another place to sell your stuff?~DO~SetGlobal("Lazhere","RTF066",1)~GOTO LazThay2
-IF~~THEN REPLY~ Can you tell us something about this town?~GOTO 4
-IF~~THEN REPLY~ Now we know you are here we may return to buy something.~GOTO 3
-IF~~THEN REPLY~ What have you brought along to this place? ~ GOTO 2
+IF~~THEN REPLY~Can you tell us something about this town?~GOTO 4
+IF~~THEN REPLY~Now we know you are here we may return to buy something.~GOTO 3
+IF~~THEN REPLY~What have you brought along to this place? ~ GOTO 2
 END
 
 IF~~THEN BEGIN LazThay2
 SAY~This town really has an enormous need in spells and magical items. They hate Mystra as much as she seems to hate them but the red wizards seem to manage to get along somehow.~
-IF~~THEN REPLY~ Now we know you are here we may return to buy something.~GOTO 3
-IF~~THEN REPLY~ What have you brought along to this place? ~ GOTO 2
+IF~~THEN REPLY~Now we know you are here we may return to buy something.~GOTO 3
+IF~~THEN REPLY~What have you brought along to this place? ~ GOTO 2
 END
 END
 
@@ -403,7 +403,7 @@ DO~SetGlobal("RTMetCandre","GLOBAL",1)~
 ==RTMeli IF~InParty("RTMeli")~THEN ~You are yourself...ah...fascinating.~
 =~But your words are just professional, too bad...~
 ==CVLou25J IF~InParty("Loureed")~THEN~If they're not Lolth's slaves then they become even more pathetic creatures, those *rulers of the Underdark* (spit).~
-==CVGir25J IF~InParty("CVGiran")~THEN~ I heard about creatures like you, but you are quite different from what I had expected, drow lady.~
+==CVGir25J IF~InParty("CVGiran")~THEN~I heard about creatures like you, but you are quite different from what I had expected, drow lady.~
 ==CVIzy25J IF~InParty("CVIzzy")InParty("CVGiran")~THEN~Get lost quickest, girl, this boy has not any time for ya never!~
 ==CVSan25J IF~!InParty("RTMeli")!InParty("CVGiran")~ THEN~You take quite a risk to follow your business here, a drow in Thay.~
 END

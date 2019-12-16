@@ -50,13 +50,13 @@ END
 
 BEGIN RTCaptCC
 
-IF~ Global("CCClosed","ar0400",1)AreaCheck("ar0400") ~THEN BEGIN CloseCC1
+IF~Global("CCClosed","ar0400",1)AreaCheck("ar0400") ~THEN BEGIN CloseCC1
 SAY~The Copper Coronet is closed by the council for sanitary reasons. Find another inn, there are enough in town.~
 IF~~THEN DO~SetGlobal("CCClosed","ar0400",2)~EXIT
 END
 
 IF~ Global("CCClosed","ar0400",2)AreaCheck("ar0400") ~THEN BEGIN CloseCC2
-SAY~ There is nothing to see here. Move on.~
+SAY ~There is nothing to see here. Move on.~
 IF~~THEN EXIT
 END
 
@@ -74,7 +74,7 @@ DO~SetGlobal("RTTalkedNalia","GLOBAL",1)~
 ==CVSan25J~We need to get in contact with Jon Irenicus who has returned to Athkatla and his old place again.~
 ==RTNalia~I have heard the rumours about it but we have not seen any hints or disturbances from his presence. If he has returned indeed he does not plague us.~
 END
-IF~Global("RTTalkedSaem","GLOBAL",1)~THEN REPLY~ Such is true, he has retired in some way. Saemon's men supply him with all he needs but he stays in his self designed exile.~+RTNal3
+IF~Global("RTTalkedSaem","GLOBAL",1)~THEN REPLY ~Such is true, he has retired in some way. Saemon's men supply him with all he needs but he stays in his self designed exile.~+RTNal3
 IF~Global("RTTalkedSaem","GLOBAL",0)~THEN REPLY~We heard he has retired in some way. Anyway, we need some information from him and hope he will cooperate with us. We need to find a way to get to him.~+RTNal2
 IF~Global("RTTalkedSaem","GLOBAL",1)~THEN REPLY~We intend to keep it that way, still we need to find a way to get to him. Saemon's men supply him with all he needs...~+RTNal3
 IF~Global("RTTalkedSaem","GLOBAL",0)~THEN REPLY~We intend to keep it that way, still we need to find a way to get to him. ~ +RTNal2
@@ -110,7 +110,7 @@ IF~~THEN RTNalia RTNal3
 CHAIN
 IF~Global("SanRTFPlot1","GLOBAL",4) Global("RTTalkedNalia","GLOBAL",1) Global("RTTalkedSaem","GLOBAL",1) ~THEN RTNalia RTNal4
 ~You returned, my friends. Did you succeed?~
-==CVSan25J~ Saemon is very much disturbed by the threat from your garrison in the docks.~
+==CVSan25J ~Saemon is very much disturbed by the threat from your garrison in the docks.~
 ==RTNalia~He has any reason to be.~
 ==CVSan25J~That is a lot of effort and money spent, Nalia. And a large amount of losses for both sides. Resources that could be spent much better for the benefit of Athkatla's citizens.~
 ==RTNalia~It could be spared if Saemon would leave town in peace.~
