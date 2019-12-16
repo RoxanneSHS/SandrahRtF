@@ -7,4 +7,4 @@ DO~SetGlobal("RolfHere","cvrtf9",2)~
 
 CHAIN
 IF~Global("RolfHere","cvrtf9",2)~THEN CBRolfSB RTF2
-~ We are ready to strike!~EXIT
+~We are ready to strike!~EXIT
