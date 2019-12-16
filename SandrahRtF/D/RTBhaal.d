@@ -16,7 +16,7 @@ CHAIN
 IF~~THEN RTBhaal Ghost3
 ~You are just a new god, among many others. Many do not trust you or accept you. For this they have turned against you - and you, unfamiliar with all your new powers, will go down in this struggle. Cyric killed Bhaal before and took my portfolio of murder. ~
 DO~SetGlobal("Bhaal77","rtf077",1)~
-==CVSan25J~ <CHARNAME>'s portfolio is of Love and Hope, your taint is cleaned forever. This is the wrong place to look for what is gone for all times.~
+==CVSan25J~<CHARNAME>'s portfolio is of Love and Hope, your taint is cleaned forever. This is the wrong place to look for what is gone for all times.~
 ==RTBhaal~What about followers? Gods die without them. You might be known throughout the Sword Coast, but that is not enough. How many worshippers do you think you have? Perhaps some in your party? Even if you do have some followers, you are still weak. Gods - their strength is for one thing related to their number of faithful followers. You have seen this in example with Amaunator.~
 ==CVLey25J IF~InParty("Leyala")~THEN~The dedication of <CHARNAME>'s followers is of a kind you have never encountered.~
 ==CVSan25J~No other god has ever been strengthened by the love of another goddess and her followers. This is a new era beginning where old concepts may no longer apply.~

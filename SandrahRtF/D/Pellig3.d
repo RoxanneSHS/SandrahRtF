@@ -64,7 +64,7 @@ IF~~THEN REPLY~I will ask you later when we have sufficient time for the topic.~
 END
 
 IF~~THEN BEGIN PellId3
-SAY~ I am Pelligram, Servant and Chosen of Mystra, also known to your ancestors as the Witch-Queen of Aglarond.~
+SAY~I am Pelligram, Servant and Chosen of Mystra, also known to your ancestors as the Witch-Queen of Aglarond.~
 IF~~THEN REPLY~But...that means you are one of the Seven Sisters.~ GOTO PellId4
 IF~~THEN REPLY~The watchful...I heard you named *The Simbul* as well...~ GOTO PellId4
 END
@@ -90,7 +90,7 @@ END
 
 IF~~THEN BEGIN Pellitem3
 SAY~The road ahead is clear, <CHARNAME>. Sandrah has advised us to go to Midnight.~
-IF~~THEN REPLY~ She has the third item then?~ DO~SetGlobal("PelItem3","LOCALS",2)~ GOTO Pellitem3b
+IF~~THEN REPLY~She has the third item then?~ DO~SetGlobal("PelItem3","LOCALS",2)~ GOTO Pellitem3b
 END
 
 IF~~THEN BEGIN Pellitem3b
@@ -200,8 +200,8 @@ DO~SetGlobal("PelItem3","LOCALS",4)~
 ==PelligJ~Love and Hope have always been motivation like nothing else can be.~
 ==SanMyst~Even in our secluded retirement we have received enough information to deduct that the spell plague has produced the desired results. Those gods and goddesses we have targeted loose influence, power and believers at great scale.~
 END
-++~ The price for it was too high for my liking. Your granddaughter's death seems to leave you unimpressed.~ + PellMys2
-++~ You make your granddaughter's death and the spell plague sound like the success of a great stage production.~ + PellMys2
+++~The price for it was too high for my liking. Your granddaughter's death seems to leave you unimpressed.~ + PellMys2
+++~You make your granddaughter's death and the spell plague sound like the success of a great stage production.~ + PellMys2
 
 CHAIN
 IF~~THEN PelligJ PellMys2

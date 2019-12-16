@@ -23,12 +23,12 @@ END
 IF~ GlobalGT("SanRTFPlot1","GLOBAL",2)Global("TalosIn","LOCALS",0)~THEN REPLY ~We met Talos down here, he seems to be involved in the plot against us.~+ Talos1
 IF~ GlobalGT("SanRTFPlot1","GLOBAL",4)Global("TalosIn","LOCALS",0)~THEN REPLY ~We encountered your former mate Cyric who ambushed us with his snipers. It is not clear what role he plays in the plot against us.~+ Cyric1
 IF~ GlobalGT("SanRTFPlot1","GLOBAL",7) Global("VelshIn","LOCALS",0)~THEN REPLY ~We met a ghostly opponent - Sandrah referred to him as Lord of the Forsaken crypt.~+ Velsh1
-IF~ GlobalGT("SanRTFPlot1","GLOBAL",8) Global("VelshIn","LOCALS",0)~THEN REPLY ~ A lich king named Velsharoon seems to play an important role in the events.~ + Velsh1
-IF~ Global("SanRTFPlot1","GLOBAL",8)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY ~ Sandrah thinks we should seek for a book by Cerameon in Candlekeep.~ + Candl1
-IF~ Global("SanRTFPlot1","GLOBAL",9)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY ~ We have found this book by Cerameon in Candlekeep.~ + Candl1
+IF~ GlobalGT("SanRTFPlot1","GLOBAL",8) Global("VelshIn","LOCALS",0)~THEN REPLY ~A lich king named Velsharoon seems to play an important role in the events.~ + Velsh1
+IF~ Global("SanRTFPlot1","GLOBAL",8)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY ~Sandrah thinks we should seek for a book by Cerameon in Candlekeep.~ + Candl1
+IF~ Global("SanRTFPlot1","GLOBAL",9)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY ~We have found this book by Cerameon in Candlekeep.~ + Candl1
 IF~Global("SanRTFPlot3","GLOBAL",6) Global("RTThayRep","LOCALS",0)~THEN REPLY~We have returned from Thay, Midnight, we have quite some report to make and Sandrah likes to receive your advice on some matters.~ DO~SetGlobal("RTThayRep","LOCALS",1)~EXTERN CVSan25J ThayRepNoTalos1
-IF~Global("SanRTFPlot3","GLOBAL",7) Global("RTThayRep","LOCALS",0)~THEN REPLY~ We have returned from Thay, Midnight, we have quite some report to make and Sandrah likes to receive your advice on some matters.~ DO~SetGlobal("RTThayRep","LOCALS",1)~EXTERN CVSan25J ThayRepNoTalos1
-IF~Global("SanRTFPlot3","GLOBAL",7) Global("RTThayRep","LOCALS",1) GlobalLT("SanRTFPlot4","GLOBAL",3)~THEN REPLY~ We return from the Wood of Sharp Teeth and we have *closed* the new academy there. It seems that Talos is eliminated from the phalanx of our opponents.~DO~ SetGlobal("RTThayRep","LOCALS",2)~EXTERN CVSan25J ThayRepDefTalos1
+IF~Global("SanRTFPlot3","GLOBAL",7) Global("RTThayRep","LOCALS",0)~THEN REPLY~We have returned from Thay, Midnight, we have quite some report to make and Sandrah likes to receive your advice on some matters.~ DO~SetGlobal("RTThayRep","LOCALS",1)~EXTERN CVSan25J ThayRepNoTalos1
+IF~Global("SanRTFPlot3","GLOBAL",7) Global("RTThayRep","LOCALS",1) GlobalLT("SanRTFPlot4","GLOBAL",3)~THEN REPLY~We return from the Wood of Sharp Teeth and we have *closed* the new academy there. It seems that Talos is eliminated from the phalanx of our opponents.~DO~ SetGlobal("RTThayRep","LOCALS",2)~EXTERN CVSan25J ThayRepDefTalos1
 IF~Global("SanRTFPlot4","GLOBAL",6) Global("ToFinal","LOCALS",0)~THEN REPLY~We are here to consult with you one last time as Thay is now our destination to finish this struggle and bring peace to the Realms.~+ Summary1  
 
 CHAIN
@@ -78,10 +78,10 @@ END
 ++~We still need to find facts to analyse the situation. We will return to make use of your generous offer in time, Midnight.~EXIT
 IF~ GlobalGT("SanRTFPlot1","GLOBAL",4)Global("TalosIn","LOCALS",0)~THEN REPLY ~We encountered your former mate Cyric who ambushed us with his snipers. It is not clear what role he plays in the plot against us.~+ Cyric1
 IF~ GlobalGT("SanRTFPlot1","GLOBAL",7)Global("VelshIn","LOCALS",0)~THEN REPLY ~We met a ghostly opponent - Sandrah referred to him as Lord of the Forsaken crypt.~+ Velsh1
-IF~ GlobalGT("SanRTFPlot1","GLOBAL",8)Global("VelshIn","LOCALS",0)~THEN REPLY ~ A lich king named Velsharoon seems to play an important role in the events.~ + Velsh1
-IF~ GlobalGT("SanRTFPlot2","GLOBAL",1)Global("VelshIn","LOCALS",1)~THEN REPLY ~ We found out more about Velsharoon.~ + Velsh6
-IF~ Global("SanRTFPlot1","GLOBAL",8)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY ~ Sandrah thinks we should seek for a book by Cerameon in Candlekeep.~ + Candl1
-IF~ Global("SanRTFPlot1","GLOBAL",9)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY ~ We have found this book by Cerameon in Candlekeep.~ + Candl1
+IF~ GlobalGT("SanRTFPlot1","GLOBAL",8)Global("VelshIn","LOCALS",0)~THEN REPLY ~A lich king named Velsharoon seems to play an important role in the events.~ + Velsh1
+IF~ GlobalGT("SanRTFPlot2","GLOBAL",1)Global("VelshIn","LOCALS",1)~THEN REPLY ~We found out more about Velsharoon.~ + Velsh6
+IF~ Global("SanRTFPlot1","GLOBAL",8)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY ~Sandrah thinks we should seek for a book by Cerameon in Candlekeep.~ + Candl1
+IF~ Global("SanRTFPlot1","GLOBAL",9)Global("SanRTFPlot2","GLOBAL",0)~THEN REPLY ~We have found this book by Cerameon in Candlekeep.~ + Candl1
 
 
 CHAIN
@@ -109,7 +109,7 @@ DO~SetGlobal("VelshIn","LOCALS",1)~
 
 CHAIN
 IF~~THEN SanMyst Velsh6
-~ Let me know, please.~
+~Let me know, please.~
 DO~SetGlobal("VelshIn","LOCALS",2)~
 ==CVSan25J~He and his undead minions made an attack at Ghotal's former summer camp where the representatives of the Sword Coast, Amn, and the Clan Orcs held a conference.~
 = ~Kelemvor.~

@@ -2,7 +2,7 @@ CHAIN
 IF~GlobalGT("SanBeginRTF","GLOBAL",1)Global("ShauMes","RTF002",0) AreaCheck("RTF002") GlobalLT("SanRTFPlot1","GLOBAL",3)~THEN Shaorc1 Hint1
 ~You friends of our princess, yes? Bad things happen out there.~
 DO~SetGlobal("ShauMes","RTF002",1)~
-==CVSan25J~ We are here to investigate the strange occurrences in this area. What have you seen?~
+==CVSan25J~We are here to investigate the strange occurrences in this area. What have you seen?~
 ==Shaorc1~Scouts went out many days ago for Waterdeep. Must return already if not bad happened.~
 ==CVSan25J~Have some from the south arrived, some send by the towns?~
 ==Shaorc1~No one passed except trader from the pass to bring news of battle.~
@@ -71,7 +71,7 @@ CHAIN
 IF~~THEN CVSan25J Scouts2
 ~They must have found these duergar by coincidence.~
 ==CVGIR25J IF~InParty("CVGiran")~THEN~This tunnel - the direction goes to the trader's hut on the Hornswamp fields...~
-==CVSan25J ~ At least we are sure that no message has reached Shar-Teel.~EXIT
+==CVSan25J ~At least we are sure that no message has reached Shar-Teel.~EXIT
 
 APPEND SHAORC6
 IF~GlobalGT("SanBeginRTF","GLOBAL",1) GlobalLT("SanRTFPlot1","GLOBAL",2)~ THEN BEGIN palace

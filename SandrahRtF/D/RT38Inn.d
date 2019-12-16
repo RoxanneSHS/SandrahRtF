@@ -5,7 +5,7 @@ IF~AreaCheck("RTF038")~THEN RT38Inn DogDead
 ~GO AWAY!!~
 =~Ah...you do not belong to them...???~
 ==CVSan25J~Them?~
-==RT38Inn~ At least you defeated Rowell, poor good dog. Couldn't even leave the house since those red robed bastard somehow turned him against me. Had to be killed but I couldn't do it...been a true friend of mine for so long.~
+==RT38Inn~At least you defeated Rowell, poor good dog. Couldn't even leave the house since those red robed bastard somehow turned him against me. Had to be killed but I couldn't do it...been a true friend of mine for so long.~
 ==CVSan25J~It sounds like the ones we fight against have been here already.~
 ==RT38Inn~You fight against...you must be truly brave, lady, that wizard and even more those with him looked like no one I want to anger.~
 ==CVSan25J~Please tell us more, good dwarf.~

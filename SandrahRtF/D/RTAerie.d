@@ -2,7 +2,7 @@ BEGIN RTAerie
 
 CHAIN
 IF~AreaCheck("RTF112") Global("RTWed","RTF112",0)~ THEN RTAerie Wed1
-~ Oh, what a surprise, see, Joneleth, which guests have come to our feast!!~
+~Oh, what a surprise, see, Joneleth, which guests have come to our feast!!~
 DO~SetGlobal("RTWed","RTF112",1)~
 ==RTIren~In deed a surprise, I was not expecting any outsider to witness my final total defeat.~
 ==RTAerie~Darling, you promised me to smile all day, didn't you.~

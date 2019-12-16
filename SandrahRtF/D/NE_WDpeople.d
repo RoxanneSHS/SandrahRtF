@@ -45,12 +45,12 @@ IF~~THEN DO ~StartStore("RTEMart",LastTalkedToBy())~ EXIT
 END
 
 IF~~THEN BEGIN EMInn3
-SAY~ Maybe next time. Enjoy your stay.~
+SAY~Maybe next time. Enjoy your stay.~
 IF~~THEN EXIT
 END
 
 IF~~THEN BEGIN EMInn4
-SAY~ If you want to hear gossip of all kinds just step outside to the market.~
+SAY~If you want to hear gossip of all kinds just step outside to the market.~
 IF~~THEN EXIT
 END
 

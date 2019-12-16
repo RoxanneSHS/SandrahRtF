@@ -9,7 +9,7 @@ IF~~THEN REPLY~Of course, Leyala, lead on.~DO~SetGlobal("Guide","ar5500",6) ~EXI
 END
 
 IF~ IsGabber(Player1)~ THEN BEGIN LeyalaPCInit
-SAY ~ *Leyala smiles as you approach her, a smile that can break every man's or woman's heart.~
+SAY ~*Leyala smiles as you approach her, a smile that can break every man's or woman's heart.~
 IF~GlobalGT("SanRTFPlot2","GLOBAL",3)AreaCheck("ar5500")~THEN REPLY~Can you guide us again to the monastery, sweet nun?~GOTO MoveMonstr
 IF~~THEN REPLY~I am impressed by your skills, little one. It is good you are with us.~EXIT
 IF~Global("Hoodmove","LOCALS",0)~THEN REPLY~*You cannot restrain yourself but to move her hood a bit further from her face to get a better view.*~GOTO Hoodmove1
@@ -25,12 +25,12 @@ IF~~THEN DO~SetGlobal("Guide","ar5500",6)~EXIT
 END
 
 IF~~THEN BEGIN Hoodmove1
-SAY~ *She casts her eyes down but gently touches your hand on her hood for a short moment.~
+SAY~*She casts her eyes down but gently touches your hand on her hood for a short moment.~
 IF~~THEN DO~SetGlobal("Hoodmove","LOCALS",1)~EXIT
 END
 
 IF~~THEN BEGIN Hoodmove2
-SAY~ *She gently takes your hand from her hood and kisses your fingertips lightly.~
+SAY~*She gently takes your hand from her hood and kisses your fingertips lightly.~
 IF~~THEN DO~SetGlobal("Hoodmove","LOCALS",2)~EXIT
 END
 
@@ -105,16 +105,16 @@ END
 
 IF~~THEN BEGIN Murd2
 SAY~You know how it feels to be the daughter of the God of Murder, don't you?~
-IF~~THEN REPLY~ I always appreciated the extra power that came with it.~EXIT
-IF~~THEN REPLY~ You are lucky to be spared that experience.~EXIT
-IF~~THEN REPLY~ You're too weak for such a challenge anyway.~EXIT
+IF~~THEN REPLY~I always appreciated the extra power that came with it.~EXIT
+IF~~THEN REPLY~You are lucky to be spared that experience.~EXIT
+IF~~THEN REPLY~You're too weak for such a challenge anyway.~EXIT
 END
 
 IF~~THEN BEGIN Murd3
 SAY~You know how it feels to be the son of the God of Murder, don't you?~
-IF~~THEN REPLY~ I always appreciated the extra power that came with it.~EXIT
-IF~~THEN REPLY~ You are lucky to be spared that experience.~EXIT
-IF~~THEN REPLY~ You're too weak for such a challenge anyway.~EXIT
+IF~~THEN REPLY~I always appreciated the extra power that came with it.~EXIT
+IF~~THEN REPLY~You are lucky to be spared that experience.~EXIT
+IF~~THEN REPLY~You're too weak for such a challenge anyway.~EXIT
 END
 
 IF~~THEN BEGIN Age1
@@ -143,7 +143,7 @@ IF~~THEN REPLY~You sound very much like Sandrah in her mortal days - and both of
 END
 
 IF~~THEN BEGIN Reli3
-SAY~ My mother tried to raise me as disciple to Shar and I gained my initial abilities from that source even if could never connect to her, just like I never could follow my mother.~
+SAY~My mother tried to raise me as disciple to Shar and I gained my initial abilities from that source even if could never connect to her, just like I never could follow my mother.~
 =~I tried to find a logical relationship with a deity on my own to keep my access to the Weave and my spells without having to sacrifice myself to religious stupidities.~
 IF~~THEN REPLY~And such is possible, (laugh), except maybe with Mystra these days?~GOTO Reli4
 END
