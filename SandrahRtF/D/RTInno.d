@@ -28,7 +28,7 @@ IF~~THEN REPLY~What have they done to you? How come you are alive?~GOTO Wraith3
 END
 
 IF~~THEN BEGIN Wraith3
-SAY~ I hid in that well over there for two whole days...I heard no sound for a while so I guessed it was save to come out now.~
+SAY~I hid in that well over there for two whole days...I heard no sound for a while so I guessed it was save to come out now.~
 IF~~THEN REPLY~That well? It is protected by a heavy grate - you could never have lifted it alone...who are you really?~ GOTO Wraith4
 IF~~THEN REPLY~This trap is too obvious for us, *BOY*, or whoever you are...~GOTO Wraith4
 END
@@ -47,7 +47,7 @@ END
 IF~~THEN BEGIN Real2
 SAY~I have the amulet from the monk in the temple, the one which had belonged to the old heroine. It kept the nasties off - but I have no more to eat since this morning.~
 IF~Global("RTMetMonk","GLOBAL",2)~THEN REPLY~We have met Lir already and he told us to search for you. The way is save to the temple, go to him now, we will follow.~DO~SetGlobal("RTMetMonk","GLOBAL",5)~GOTO Real3
-IF~Global("RTMetMonk","GLOBAL",0)~THEN REPLY~ We must go to the temple for an artefact. Stay here, we will try to find that monk, he will be able to help you if he is still alive.~DO~SetGlobal("RTMetMonk","GLOBAL",1) ~GOTO Real4
+IF~Global("RTMetMonk","GLOBAL",0)~THEN REPLY~We must go to the temple for an artefact. Stay here, we will try to find that monk, he will be able to help you if he is still alive.~DO~SetGlobal("RTMetMonk","GLOBAL",1) ~GOTO Real4
 END
 
 IF~~THEN BEGIN Real3
@@ -62,13 +62,13 @@ END
 
 IF~Global("RTMetMonk","GLOBAL",4)~THEN BEGIN GoToMonk
 SAY~You are back, have you found Lir?~
-IF~~THEN REPLY~ Yes, he is safe in his study in the temple. Go there now, the monsters are defeated.~DO~SetGlobal("RTMetMonk","GLOBAL",5)~GOTO Real3
+IF~~THEN REPLY~Yes, he is safe in his study in the temple. Go there now, the monsters are defeated.~DO~SetGlobal("RTMetMonk","GLOBAL",5)~GOTO Real3
 END
 
 
 BEGIN RTMonk
 IF~NumTimesTalkedTo(0)~THEN BEGIN Monk1
-SAY~ Have you come for the blessed grave of Cerameon? A dark time for travellers, a dark time for us all.~
+SAY~Have you come for the blessed grave of Cerameon? A dark time for travellers, a dark time for us all.~
 IF~Global("RTMetMonk","GLOBAL",1) ~THEN REPLY~Yes, that is one thing - but we also found another survivor, a little boy in a house not far from here that is in need of help.~GOTO MonkHelpBoy1
 IF~Global("RTMetMonk","GLOBAL",0) ~THEN REPLY ~Yes, we need an artefact from the tomb for an urgent task on behalf of the Realms. We must open again the sealed passage to Thay. ~DO~SetGlobal("RTMetMonk","GLOBAL",2)~GOTO MonkHelpBoy2
 END
@@ -79,12 +79,12 @@ IF~~THEN REPLY~We will be back soon.~DO~SetGlobal("RTMetMonk","GLOBAL",4)~EXIT
 END
 
 IF~~THEN BEGIN MonkHelpBoy2
-SAY~ Before that can be done I must ask you for favour to prove your alignment in this matter. There must be another survivor, a little boy who wears a protective amulet from our heroine. He surely hides somewhere in town. Find him, I beg you, send him over here quickly. If you help us I will gladly assist you with the quest that brought you here.~
-IF~~THEN REPLY~ I will do that.~EXIT
+SAY~Before that can be done I must ask you for favour to prove your alignment in this matter. There must be another survivor, a little boy who wears a protective amulet from our heroine. He surely hides somewhere in town. Find him, I beg you, send him over here quickly. If you help us I will gladly assist you with the quest that brought you here.~
+IF~~THEN REPLY~I will do that.~EXIT
 END
 
 IF~NumTimesTalkedToGT(0)~THEN BEGIN Monk2
-SAY~ I will stay no matter what. The believers will return as now hope has returned.~
+SAY~I will stay no matter what. The believers will return as now hope has returned.~
 IF~~THEN EXIT
 END
 

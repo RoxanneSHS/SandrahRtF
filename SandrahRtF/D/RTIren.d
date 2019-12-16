@@ -65,7 +65,7 @@ IF~Global("RTIrenApp","ar0602",6)~THEN RTIren Colle1
 ~Thanks for helping me with the housekeeping. It is really almost impossible to find reliable servants these days. Where were we in our discussion?~
 DO~SetGlobal("RTIrenApp","ar0602",7)~
 ==CVSan25J~Nerkio, the collector.~
-==RTIren~ Ah, yes, a helpful guy, just a bit greedy at times. He was quite useful to provide required material not easily found elsewhere.~
+==RTIren~Ah, yes, a helpful guy, just a bit greedy at times. He was quite useful to provide required material not easily found elsewhere.~
 ==CVSan25J~Do you know whom he works for or where he could be found?~
 ==RTIren~Hm, he delivered the required stuff on time and got paid for it. I never cared for anything else about that cretin other than that he was reliable and confidential.~
 =~For someone like you, it should not be too hard to find him, I got my hints from some fences and graveyard workers back then.~
@@ -103,9 +103,9 @@ DO~ TakePartyItem("RTFlui") AddJournalEntry(@2049,QUEST) ReallyForceSpell(Myself
 CHAIN
 IF WEIGHT #-7~Global("RTIrenApp","ar0602",3)~THEN LRRielev Lassal1
 ~Master, alert!!! ~
-=~ Lassal!! He finally convinced the Snakes to follow his revolt!~
+=~Lassal!! He finally convinced the Snakes to follow his revolt!~
 DO~SetGlobal("RTIrenApp","ar0602",4)~
-==RTIren~ Ah, so called allies, nothing but quarrel and disturbance...~
+==RTIren~Ah, so called allies, nothing but quarrel and disturbance...~
 ==CVSan25J~Lassal? The vampire in Bodhi's former service?~
 ==LRRielev~The same, madame.~
 ==RTIren~Ah, call it a family heritage...~

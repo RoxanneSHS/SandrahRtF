@@ -31,7 +31,7 @@ IF~~THEN REPLY~Make it short, Shabella, the details of your guild war bore us.~ 
 END
 
 IF~~THEN BEGIN MaskKnows6
-SAY~ Good. Here is the deal. ~
+SAY~Good. Here is the deal. ~
 =~I need a cloak and sword of my God to advance my Guild's power over the Theskians. By some coincidence that are of no interest for you those two items are currently in the possession of Samas Kul, the Leader of the Guild of Foreign Trade. He negotiates with us as well as with the Theskians. His prize raises with every round and will become unacceptable soon. YOU must retrieve those items for us from the Guild's headquarters before Samas Kul makes the deal with our opponents.~
 IF~~THEN REPLY~How am I to enter the Guild and find those items?~ GOTO MaskKnows7
 END
@@ -63,7 +63,7 @@ IF~~THEN REPLY~Shar? We should investigate that right away.~GOTO SharH1
 END
 
 IF~~THEN BEGIN SharH1
-SAY~ If you wanna check, this is where to go...~
+SAY~If you wanna check, this is where to go...~
 IF~~THEN DO~ ClearAllActions()
 StartCutSceneMode()
 Wait(2)
@@ -77,13 +77,13 @@ IF~~THEN REPLY~Don't I know you from Athkatla? You worked for the shadow thieves
 END
 
 IF~~THEN BEGIN Gomask2
-SAY~ Cool, I'm that famous already, even if my name is Baylan Gael, right. I surely serve the Shadowmistress, Shabella the Pale. She invites you to her Temple of Mask. She says she has an interesting proposal for you.~
+SAY~Cool, I'm that famous already, even if my name is Baylan Gael, right. I surely serve the Shadowmistress, Shabella the Pale. She invites you to her Temple of Mask. She says she has an interesting proposal for you.~
 IF~~THEN REPLY~Oh, no, not the shadow thieves again.~ GOTO Gomask3
 IF~~THEN REPLY~I will listen to her if I find the time.~ GOTO Gomask3
 END
 
 IF~~THEN BEGIN Gomask3
-SAY~ Cool, you'd better go and see her. Her words were that it is *an offer you cannot refuse.*. See ya.~
+SAY~Cool, you'd better go and see her. Her words were that it is *an offer you cannot refuse.*. See ya.~
 IF~!InParty("CVIzzy") ~THEN DO~EscapeArea()~ EXIT 
 IF~InParty("CVIzzy") !Global("Izzyplot","GLOBAL",4)~THEN DO~EscapeArea()~ EXIT
 IF~InParty("CVIzzy") Global("Izzyplot","GLOBAL",4)~THEN EXTERN CVIzy25J AskSh
@@ -96,7 +96,7 @@ IF~~THEN REPLY~Don't I know you from Athkatla? You worked for the shadow thieves
 END
 
 IF~~THEN BEGIN Gomask5
-SAY~ Cool, I'm that famous already, even if my name is Baylan Gael, right. I surely serve the Shadowmistress, Shabella the Pale. Just like you do, cool. Just get down the stairs to Mask's altar, they await you and the stuff you've gained.~
+SAY~Cool, I'm that famous already, even if my name is Baylan Gael, right. I surely serve the Shadowmistress, Shabella the Pale. Just like you do, cool. Just get down the stairs to Mask's altar, they await you and the stuff you've gained.~
 IF~~THEN DO~SetGlobal("RTMaskplot","GLOBAL",5) EscapeArea()~ EXIT
 END
 

@@ -74,7 +74,7 @@ END
 
 CHAIN
 IF~~THEN RTImrae  OutCage
-~ Let me out of here first and I will tell you what me and my trusted know.~
+~Let me out of here first and I will tell you what me and my trusted know.~
 ==CVSan25J~I will transport us all to the tavern right now. I cannot use more powerful magic just now or the Spider Queen will immediately know about our presence.~
 DO~ SetGlobal("SanTravel","GLOBAL",410) ActionOverride("RTImrae",ReallyForceSpell(Myself,DRYAD_TELEPORT)) ~ EXIT
 

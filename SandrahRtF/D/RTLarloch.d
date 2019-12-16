@@ -77,8 +77,8 @@ IF~~THEN RTLarlo SharV2
 ==CVSan25J IF~Global("CVR140","GLOBAL",0)~THEN ~Mystra's Temple in Wheloon to meet Shar? We will be there. <CHARNAME>, we should pay that place a visit before the meeting takes place, something is not right here.~
 ==CVSan25J IF~Global("CVR140","GLOBAL",1)~THEN ~So that is what we found so strange up there. Mystra is just a facade to attract those gifted for the magic arts, attract them to Shar. <CHARNAME>, we should pay that place a visit before the meeting takes place.~
 END
-IF~ Global("CVR140","GLOBAL",1)~THEN REPLY~ Let us go to Wheloon then.~EXIT
-IF~ Global("CVR140","GLOBAL",0)~THEN REPLY~ Let us go to Wheloon then. Can you explain the way?~EXTERN CVSan25J Whelway
+IF~ Global("CVR140","GLOBAL",1)~THEN REPLY~Let us go to Wheloon then.~EXIT
+IF~ Global("CVR140","GLOBAL",0)~THEN REPLY~Let us go to Wheloon then. Can you explain the way?~EXTERN CVSan25J Whelway
 
 CHAIN
 IF~~THEN CVSan25J Whelway
