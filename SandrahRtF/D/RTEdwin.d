@@ -26,14 +26,14 @@ DO~SetGlobal("Opening","RTF082",2) SetGlobal("SanRTFPlot3","GLOBAL",3)~
 
 CHAIN
 IF~AreaCheck("RTF082") GlobalLT("Opening","RTF082",4)~THEN RTOdButl Hint2
-~ Hope appears in these caves today!!~
+~Hope appears in these caves today!!~
 ==CVSan25J~Candrella and her daughter will be around here as well, I presume.~
 ==RTOdButl~My lady is in her quarters in the south of this area.~
 ==CVSan25J~Your lady? Lady O...I see...~ EXIT
 
 CHAIN
 IF~AreaCheck("RTF082") GlobalGT("Opening","RTF082",3)~THEN RTOdButl Hint3
-~ Hope appears in these caves today!!~
+~Hope appears in these caves today!!~
 EXIT
 
 CHAIN
@@ -54,7 +54,7 @@ DO~SetGlobal("Opening","RTF082",4)~
 
 CHAIN
 IF~Global("Opening","RTF082",5)~THEN RTColan InredHod1
-~ You were right, my lady, we were destined to meet again. Maybe we should start again with some introductions, Mystra, <PRO_LADYLORD> <CHARNAME>.~
+~You were right, my lady, we were destined to meet again. Maybe we should start again with some introductions, Mystra, <PRO_LADYLORD> <CHARNAME>.~
 DO~SetGlobal("Opening","RTF082",6)~
 ==CVSan25J~Let us keep it at Sandrah and <CHARNAME>, Colano. It is Colano still?~
 ==RTCandre~Squadron Leader Colano, head of the Red Hood intelligence service.~
@@ -215,7 +215,7 @@ DO~SetGlobal("CitEntpl","GLOBAL",3)SetGlobal("SanRTFPlot5","GLOBAL",2) ~
 ==RTEdwin~It is good to see you all alive and well, especially the goddess announced to be dead and reason for the spellplague that so much impedes our enemy these days.~
 ==CVSan25J~We advanced quite a bit against the phalanx...(Sandrah reports the recent events to the red robes' representatives.)~
 ==RTCandre~You risked a lot and gained more than expected, My...Sandrah. How do you plan to access the Citadel?~
-==CVSan25J~ Through the portal beneath the former Bhaal temple if we could get Szass' hand to open it - or as his prisoners.~
+==CVSan25J~Through the portal beneath the former Bhaal temple if we could get Szass' hand to open it - or as his prisoners.~
 ==RTCandre~In both cases we need to lure him out of his fortification first.~
 ==CVSan25J~He wants me, he wants Mystra, so I am the logical bait for him, <CHARNAME> should be an attraction to his ally Cyric at the same time.~
 ==RTCandre~We must provide them with a reason to make any of them see the necessity to act for themselves instead of sending another of their endless cohorts.~
@@ -256,7 +256,7 @@ CHAIN
 IF~~THEN  CVSan25J Iltdef2
 ~Your estimation of the red hoods abilities were not exaggerated, Candrella.~
 =~I am truly glad you could persuade the Legion Commander without getting into too much trouble, Edwin.~
-==RTCandre~ I am so glad I can hold you in my arms unharmed, my Ssinssrigg.~
+==RTCandre~I am so glad I can hold you in my arms unharmed, my Ssinssrigg.~
 ==RTEdwin~(Smiles) I had to re-use some of my former *diplomatic* skills. They aided me in my old days on the Sword Coast when my mastermind had to outwit brainless but powerful enemies or allies alike.~
 ==CVSan25J~As much as I disliked your behaviour back then...this time I am relieved you used your slick tongue well.~
 ==RTCandre~Let us go inside, friends, we may want to celebrate our success a bit and also discuss our next steps.~DO~EscapeArea()~
@@ -279,7 +279,7 @@ END
 CHAIN
 IF~~THEN  CVSan25J Iltdef4
 ~*Sandrah quickly summarises the events after the recent celebration*.~
-==RTCandre~ I never had suspected Samas Kul to be a traitor to our cause.~
+==RTCandre~I never had suspected Samas Kul to be a traitor to our cause.~
 ==RTEdwin~I think he was not one until his mind got occupied by the lust to possess a goddess and a woman like Sandrah. (I was on the brink to such madness once myself - a drow's love saved me.)~
 ==CVSan25J~The red hoods have potent men and women in their ranks to lead the Guild of Foreign Trade now. The turn for Thay is not far away any more.~
 ==RTEdwin~It looks like Szass Tam has retreated to his Citadel through the old temple below. I wonder why he had to use this way to get there.~

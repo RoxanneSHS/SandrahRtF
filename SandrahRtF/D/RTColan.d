@@ -19,7 +19,7 @@ IF~~THEN REPLY~I'm just a normal <PRO_RACE> <PRO_MANWOMAN>. What could be unusua
 END
 
 IF~~THEN BEGIN Intro3
-SAY~ Right, right...those who come by ship or through one of the main gates sure are many. Those that somehow appear out of nowhere are rare and of course subject to my inquiries. You are from the Sword Coast?~
+SAY~Right, right...those who come by ship or through one of the main gates sure are many. Those that somehow appear out of nowhere are rare and of course subject to my inquiries. You are from the Sword Coast?~
 IF~~THEN REPLY~Yes.~GOTO Intro4
 IF~~THEN REPLY~No.~ GOTO Intro4
 END
@@ -32,7 +32,7 @@ IF~~THEN REPLY~Where were you and your security when those doppelgangers attacke
 END
 
 IF~~THEN BEGIN Intro5
-SAY~ *Quickly inspects a number of finely scribbled notes.*~
+SAY~*Quickly inspects a number of finely scribbled notes.*~
 =~Doppelgangers, yes, yes...~
 =~So, where are we? Ah, yes. An unlicensed hooker. What about her?~
 IF~~THEN REPLY~What? She approached us, like those women do in a town like this. We had no business with her. Unlicensed means she does not pay your bribe, he?~ GOTO Intro6
@@ -40,7 +40,7 @@ IF~~THEN REPLY~Unlicensed? How are we to know that? Does it mean she does not br
 END
 
 IF~~THEN BEGIN Intro6
-SAY~ Uncivilized, that's how the Sword Coast is...No one bribes a chief inquisitor in Thay....*Consults again his wide heap of scribbled notes.*~
+SAY~Uncivilized, that's how the Sword Coast is...No one bribes a chief inquisitor in Thay....*Consults again his wide heap of scribbled notes.*~
 =~Ah, how forgetful - what is your name, traveller?~
 IF~~THEN REPLY~Veldrin.~ DO~SetGlobal("RTNameVel","GLOBAL",1)~GOTO Intro7
 IF~Global("SanRompath","GLOBAL",1)~THEN REPLY~I am the famous artist Prism. ~DO~SetGlobal("RTNamePri","GLOBAL",1)~GOTO Intro7
@@ -75,7 +75,7 @@ IF~Global("RTColan","GLOBAL",14)~THEN RTColan RTTrial1
 ==RTJudge~Your methods are legendary, chief inquisitor, you may have it your way.~
 ==RTColan~The killing of several merchants, is next on the list...~
 ==CVGir25J IF~InParty("CVGiran")~THEN~You know well those were doppelgangers.~
-==CVIzy25J IF ~ InParty("CVIzzy")~THEN~ Even the stupidest inkwisitar found quickest it was doppelgangers!~
+==CVIzy25J IF ~ InParty("CVIzzy")~THEN~Even the stupidest inkwisitar found quickest it was doppelgangers!~
 ==RTMeli IF~ InParty("RTMeli")~THEN~This is a farce, judge. There is no denying that we were attacked by doppelgangers.~
 ==RTColan~True, the attackers were doppelgangers - but every honest person would have reported such an event to the authorities. Unless, of course, they want to stay undercover.~
 ==RTJudge~*The heavy quilt scratches the parchment as the judge writes down the evidence.*~
@@ -175,11 +175,11 @@ IF~ Global("RTColan","GLOBAL",3)~ THEN RTAuct Sell1
 ~...the next bunch on the block will be sold as a package, criminals of the worst kind - traitors to Thay - with a death sentence having chosen slavery over the noose...~
 DO~SetGlobal("RTColan","GLOBAL",4)~
 ==RTSlav1~...as if there was a choice for a father...~
-==RTSlar1~ *WHIP* Silence!~
+==RTSlar1~*WHIP* Silence!~
 ==Cultsa7~Daddy!!~
 ==RTAuct~...a learned bookkeeper, the woman a splendid cook, yes - and the girl, you can see yourself what she'll be in a year or two...~
 ==RTSlav1~Scum! You're a slave yourself of the red scourge.~
-==RTSlar1~ *WHIP* Silence!~
+==RTSlar1~*WHIP* Silence!~
 ==RTAuct~Do I hear six thousand?~
 ==RTCowl1~*Raises a hand*~
 ==RTCowl2~*Raises a hand*~
@@ -268,7 +268,7 @@ DO~SetGlobal("RTColan","GLOBAL",10)~
 =~My lady, ehem, the Master Samas Kul is a very busy and...eh, dangerous man...but...I see that will not hinder you. You may also be in a position to compensate for his not-so-small demands, my lady.~
 ==CVSan25J~Then we will visit him soon and clarify the whole issue. Will that be in your interest as well?~
 ==RTColan~You seem to be determined, my lady - I somehow have the feeling you are even keen to meet that man.~
-=~In any case, you will need a recommendation to allow entry into the Guild of Foreign Trade. As I cannot hinder you, I will give you this letter to open the doors for you. (Whispers) Please be careful, my lady.~ DO~ GiveItemCreate("RTkeylig",Player1,1,0,0) EscapeArea()~
+=~In any case, you will need a recommendation to allow entry into the Guild of Foreign Trade. As I cannot hinder you, I will give you this letter to open the doors for you. (Whispers) Please be careful, my lady.~ DO~GiveItemCreate("RTkeylig",Player1,1,0,0) EscapeArea()~
 ==CVSan25J~Thank you, Colano. Do not worry for us.~EXIT
 
 CHAIN
@@ -338,7 +338,7 @@ DO~ReputationInc(1)~
 
 CHAIN
 IF~Global("NargaR","RTF063",3)~THEN RTColan Reveal1
-~ (Sigh) You make it not an easy job to protect you, my lady...Sandrah.~
+~(Sigh) You make it not an easy job to protect you, my lady...Sandrah.~
 DO~SetGlobal("NargaR","RTF063",4) SetGlobal("RTColan","GLOBAL",20) SetGlobal("RTCityHost","GLOBAL",1) SetGlobalTimer("RTCityHos","GLOBAL",1800) ~
 ==CVSan25J~(Smiles) Sandrah? I should have known...~
 =~I apologize, Chief-Inquisitor, you did your best but maybe protection does not serve my purpose too well.~

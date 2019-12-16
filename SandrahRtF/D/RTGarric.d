@@ -2,9 +2,9 @@ BEGIN RTGarric
 
 IF~NumTimesTalkedTo(0)~THEN BEGIN First
 SAY~Welcome to the Elfsong, the place of fine art, fine wine, and fine linen.~
-IF~~THEN REPLY~ Garrick? It's good to see you have found your place in life. Let us see what your establishment has to offer.~ GOTO Select1
-IF~~THEN REPLY~ Garrick? Even one like you is good for something after all. Let's see what you can provide. ~ GOTO Select1
-IF~~THEN REPLY~ Garrick? Good to see you alive and well. We have to leave again but we will remember your establishment for our next stay in town.~EXIT
+IF~~THEN REPLY~Garrick? It's good to see you have found your place in life. Let us see what your establishment has to offer.~ GOTO Select1
+IF~~THEN REPLY~Garrick? Even one like you is good for something after all. Let's see what you can provide. ~ GOTO Select1
+IF~~THEN REPLY~Garrick? Good to see you alive and well. We have to leave again but we will remember your establishment for our next stay in town.~EXIT
 END
 
 IF~~THEN BEGIN Select1

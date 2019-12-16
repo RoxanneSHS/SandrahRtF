@@ -72,7 +72,7 @@ END
 
 CHAIN
 IF WEIGHT #-3~AreaCheck("RTF071") Global("SharDes","RTF071",0)~THEN CVSharg BezDes1
-~ By the Nine Hells...YOU??~
+~By the Nine Hells...YOU??~
 =~That may well be the explanation to what has just happened here...~
 DO~SetGlobal("SharDes","RTF071",1)~
 ==CVSan25J~It is not. The explanation is just your own disrespect and breaking of the pact that had provided order ever since the days of Karsus when the True and the Shadow Weave were separated.~
@@ -265,8 +265,8 @@ IF~~THEN  CVSan25J SzassDef2
 ~I assume we will not be able to prevent the kidnapping. I only hope that Drizzt will not attempt to stop the Mad Liar alone.~
 =~<CHARNAME>, he still wants you and the essence you no longer possess. He wants us to find him. I would propose to meet with Cyric right away to leave him no further time for preparation. He gave us the hint...the place where he became a murderer once to gain Midnight.~
 END
-++~ The place where he murdered Kelemvor, wherever that may be.~ + SzassDef3
-++~ Cyric murdered Midnight's lover Kelemvor atop Blackstaff Tower - where is that today?~ + SzassDef3
+++~The place where he murdered Kelemvor, wherever that may be.~ + SzassDef3
+++~Cyric murdered Midnight's lover Kelemvor atop Blackstaff Tower - where is that today?~ + SzassDef3
 
 CHAIN
 IF~~THEN  CVSan25J SzassDef3

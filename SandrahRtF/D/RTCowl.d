@@ -35,7 +35,7 @@ IF WEIGHT #-3~Global("RTFoundIce","GLOBAL",8)~ THEN Madeen OutWDGrave
 ~Is it over, are they...dead?~
 DO~SetGlobal("RTFoundIce","GLOBAL",8) SetGlobal("SanRTFPlot1","GLOBAL",7)EraseJournalEntry(@2044) EraseJournalEntry(@2049) EraseJournalEntry(@2050)~
 ==CVSan25J~If you talk about your former master then the answer is yes. Those fools destroyed themselves in order to destroy all the evidence for their deeds.~
-==Madeen~ That is good news, good news...Corneil is my master no more since the cowled wizards had to leave Amn. I am with them no more since that time.~
+==Madeen~That is good news, good news...Corneil is my master no more since the cowled wizards had to leave Amn. I am with them no more since that time.~
 ==CVSan25J~Why are you here then?~
 ==Madeen~I was to do what you did, in a way. I have perused my former superior and his new friend. They took something from the beloved I lost and I knew for what purpose.~
 ==CVSan25J~You know about the clones?~
