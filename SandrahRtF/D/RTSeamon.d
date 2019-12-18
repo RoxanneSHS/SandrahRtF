@@ -66,7 +66,7 @@ CHAIN
 IF~Global("SanRTFPlot1","GLOBAL",4)Global("RTTalkedSaem","GLOBAL",0) ~THEN RTSaemon RTSea1
 ~What a splendid surprise, my good old friends!!!~
 DO~SetGlobal("RTTalkedSaem","GLOBAL",1)~
-==CVSan25J~The same old Saemon as ever, tss, tsss, nothing bad has ever happened between us, right old weasel?~
+==CVSan25J~The same old Saemon as ever, tss, tsss, nothing bad has ever happened between us, right, old weasel?~
 ==RTSaemon~Well, well, we're all alive and prospering while so many we knew once have left Toril forever.~
 ==CVSan25J~Like for example your predecessor?~
 ==RTSaemon~Let's say there was a vacancy in town requiring a competent leader to fill it in.~

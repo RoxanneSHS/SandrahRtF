@@ -25,7 +25,7 @@ END
 
 IF~Global("Izzyplot","GLOBAL",1)~THEN BEGIN IzPlotSt1
 SAY~*During your negotiation with Saemon you have observed that Isobel was approaching several of the Shadow Thieves, obviously inquiring for something.*~
-IF~~THEN REPLY~Your mother will kill me if I loose you to the Shadow Thieves!~GOTO IzPlotSt2
+IF~~THEN REPLY~Your mother will kill me if I lose you to the Shadow Thieves!~GOTO IzPlotSt2
 IF~~THEN REPLY~Trying to get some first handed lectures from the masters of your *trade*, Izzy?~ GOTO IzPlotSt2
 IF~~THEN REPLY~Running your own investigation on our case, my dear? Did you find out more than me?~ GOTO IzPlotSt2
 END
