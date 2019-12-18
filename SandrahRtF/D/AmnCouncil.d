@@ -117,7 +117,7 @@ IF~Global("SanRTFPlot1","GLOBAL",4) Global("RTTalkedNalia","GLOBAL",1) Global("R
 ==CVSan25J~Havarian has never been a friend of bloodshed, Nalia, nor is his regime in the docks and slums one of terror. In a way the Guild has always guaranteed some stability where otherwise crime would go out of hands.~
 ==RTNalia~You sound like you would give him the seat in council he may be after.~
 ==CVSan25J~I would not go so far...but he may be willing to take some further responsibility in the areas he controls - for the benefit of Athkatla.~
-==RTNalia~He will loose a lot regardless how the fight ends.~
+==RTNalia~He will lose a lot regardless how the fight ends.~
 ==CVSan25J~I have an idea of how all of that may be prevented. We need to talk to him again. Give us your word to hold any action against him meanwhile.~
 ==RTNalia~As long as no murder is reported from the slums or docks, I will give you three days to come up with an acceptable solution, Sandrah. I know I can put my trust in you and <CHARNAME>.~DO~SetGlobal("RTTalkedNalia","GLOBAL",2) ~EXIT
 
