@@ -4,7 +4,7 @@ IF WEIGHT #-4~GlobalGT("SanBeginRTF","GLOBAL",1) Global("Hint1","LOCALS",0) ~THE
 SAY~Things have much improved since we last saw each other.~
 =~Our young human ranger, Sarah, holds them dangers at bay...even if ev'ry day she claims how she yearns for them adventures again.~
 IF~~THEN REPLY~Sarah, is here! Let's go inside, I need to see her!~DO~SetGlobal("Hint1","LOCALS",1)~EXIT
-IF~~THEN REPLY~Don't worry, we'll sneak away before she notices - otherwise she surely wants to come with ús once again.~DO~SetGlobal("Hint1","LOCALS",1)~EXIT
+IF~~THEN REPLY~Don't worry, we'll sneak away before she notices - otherwise she surely wants to come with us once again.~DO~SetGlobal("Hint1","LOCALS",1)~EXIT
 END
 END
 
