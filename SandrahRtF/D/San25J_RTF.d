@@ -811,7 +811,7 @@ END
 IF~Global("OpenSeal","RTF045",2)~THEN BEGIN NewWall1
 SAY~This wall looks like it was erected quickly and more recent than the rest of this cellar. I would be astonished if what we seek would NOT be behind it.~
 IF~~THEN REPLY~The one who's path we follow would have solved this question with her hammer I guess...~GOTO NewWall2
-IF~~THEN REPLY~A woman I know would would normally solve such a question with her hammer I guess...~GOTO NewWall2
+IF~~THEN REPLY~A woman I know would normally solve such a question with her hammer I guess...~GOTO NewWall2
 END
 
 IF~~THEN BEGIN NewWall2
@@ -873,7 +873,7 @@ END
 IF~~THEN BEGIN NoFit8
 SAY~There is something in the last section of her journal, maybe. She writes about small town events, nature, the river...~
 =~She returned to the village of her birth and childhood for her last years. It is likely that she died in peace and was buried right there.~
-=~Mornbryn's Shield on the River Surbrin - a small village between Eversuit and Tezzir.~
+=~Mornbryn's Shield on the River Surbrin - a small village between Eversuit and Teziir.~
 IF~~THEN REPLY~We have a new destination then, I presume.~DO~SetGlobal("SanRTFPlot2","GLOBAL",4) RevealAreaOnMap("RTF038") AddJournalEntry(@2057,QUEST)~EXIT
 END
 
