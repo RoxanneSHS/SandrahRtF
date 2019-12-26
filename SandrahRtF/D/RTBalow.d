@@ -149,7 +149,7 @@ IF~Global("RTBalow","GLOBAL",1)~THEN RTBalow Smell1
 DO~SetGlobal("RTBalow","GLOBAL",2) SetGlobalTimer("RTWait","RTF048",TWO_HOURS)~
 ==CVSan25J~That was a VERY long time ago, Balor.~
 ==RTBalow~Too long even for my liking. Why do you smell like her? Your kin does not exist for so long.~
-==CVSan25J~She sealed the passage you are stuck in, loosing her hand in that process.~
+==CVSan25J~She sealed the passage you are stuck in, losing her hand in that process.~
 ==RTBalow~I know - it was me who bit it off just like she cut off my claw. (He holds up the stump where one of his claws is missing.) As the portal closed I spit her hand out at her and she threw the claw to my side...I never could find it, those lizards must have stolen it.~
 ==CVSan25J~Why did you not return to where you came from?~
 ==RTBalow~Look behind me, there is no way any more, the lava has risen meanwhile.~
