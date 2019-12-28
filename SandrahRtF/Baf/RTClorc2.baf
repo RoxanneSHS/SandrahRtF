@@ -12,6 +12,7 @@ END
 
 IF
 AttackedBy("CVGiran",DEFAULT)
+GlobalLT("RTGiranQuest","GLOBAL",14)
 THEN
 RESPONSE #100
 AttackReevaluate("CVGiran",30)

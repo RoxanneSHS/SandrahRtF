@@ -105,7 +105,7 @@ CHAIN
 IF~Global("RTGiranQuest","GLOBAL",11)~THEN CVGir25J AtCave
 ~This must be the passage to my people's enclave, <CHARNAME>.~
 DO~SetGlobal("RTGiranQuest","GLOBAL",12)~
-==CVSan25J~We have little time to loose if we still want to overtake them.~
+==CVSan25J~We have little time to lose if we still want to overtake them.~
 ==CVIzy25J IF~InParty("CVIzzy")~THEN~(Sigh) Another dark hole into which the fearless heroine follows her orc prince.~
 ==CVGir25J IF~InParty("CVIzzy")~THEN~Are you scared, Izzy?~
 ==CVIzy25J IF~InParty("CVIzzy")~THEN~Do you think I'm a coward or what, if you can go there, I can do it a hundred times, heh!~
@@ -142,7 +142,7 @@ IF~Global("RTGiranQuest","GLOBAL",14)~THEN RTHartl Stop5
 ~You not coward, Giran. You prove to speak truth by will to pay with blood. Nildjek may want to hear your words.~
 DO~SetGlobal("RTGiranQuest","GLOBAL",15)~
 ==CVGir25J~Keep your watch, Hartleff. The next visitors to come will not talk but attack. Make sure you and your men are ready, there is little time left.~
-==RTHartl~Nildjek is near big house north. Know many orc arrows follow your every move. Make not mistake bastard prince.~DO~ClearAllActions() EndCutSceneMode() MoveToPoint([2543.1699])~EXIT
+==RTHartl~Nildjek is near big house north. Know many orc arrows follow your every move. Make not mistake bastard prince.~DO~ClearAllActions() ActionOverride("CVGiran",ClearAllActions()) EndCutSceneMode() MoveToPoint([2543.1699])~EXIT
 
 CHAIN
 IF~Global("RTGiranQuest","GLOBAL",15)~THEN RTNild Stop5
