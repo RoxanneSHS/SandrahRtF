@@ -28,7 +28,7 @@ DO~SetGlobal("SpokeLib","RTF058",1)~
 ==CVSan25J~Is there a problem, we do not want to endanger you?~
 ==RTLibMa~You will see yourself in a minute, my lady.~
 =~Here is the tome. You may look at it but you cannot take it.~
-==CVSan25J~*Sandrah quickly searches through the pages - starting from the last one...~
+==CVSan25J~*Sandrah quickly searches through the pages - starting from the last one...*~
 =~Mmh...I think I see what you mean. <CHARNAME>, the last pages of the book have been totally blackened out with ink. Someone does not want anyone to see the most recent events around the family.~
 ==RTLibMa~(Sigh) Science and history in Thay are not independent from the red wizards and their politics.~
 ==CVSan25J~You need not to endanger yourself further, my friend. We understand.~
