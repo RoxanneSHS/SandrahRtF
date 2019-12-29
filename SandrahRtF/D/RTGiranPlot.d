@@ -174,7 +174,7 @@ DO~SetGlobal("RTGiranQuest","GLOBAL",18)~
 ==RTNild~The ones you and me - and your brave friends - have rescued today. ~
 ==CVGir25J~You will always be welcome back in the Stormhorns, you know that. But it will be a very long hard road back. You found good land, a good place. It will be safe from now on.~
 ==RTNild~Will they not try it again? On behalf of the women and children I wish you were right. It will be very hard to bring all of them back west - some may not see the end of the journey.~
-==CVGir25J~I told you our reason to be here was not your pursuit. The quest we follow will bring changes to Thay in its wake. Those who try to oppress you may shortly loose their power over this land.~
+==CVGir25J~I told you our reason to be here was not your pursuit. The quest we follow will bring changes to Thay in its wake. Those who try to oppress you may shortly lose their power over this land.~
 ==RTNild~Do you advise me to stay here?~
 ==CVGir25J~The choice is yours and your people's. I give you the facts for decision.~
 =~<CHARNAME>'s and Sandrah's fight, our fight, is against those who currently rule over Thay. We have found allies in this land who will take over once we defeated the leaders. Send some messengers to the outskirts of Bezantur in the south of here. Make contact with the Red Hoods, the opposition of Thay. You will find that you will be welcome as free citizens in a new land.~
