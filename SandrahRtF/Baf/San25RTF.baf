@@ -103,6 +103,7 @@ Global("Key2","RTF080",1)
 See("Batin01")
 AreaCheck("RTF080")
 !PartyHasItem("RTMausw")
+OpenState("Gate1",FALSE)
 THEN
 RESPONSE #100
 SetGlobal("Key2","RTF080",2)
