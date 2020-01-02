@@ -103,7 +103,7 @@ DO~SetGlobal("Start112","RTF112",3) SetGlobal("RTSaeHij","GLOBAL",1)~
 ==RTShaj~They have my Saemon, he fought bravely with his sailors to protect my escape from this cave...you must hurry to aid him!~
 ==CVSan25J~We will. Just go a bit to the west, there are friendly elves here who will help you and bring you back to the ship.~
 =~We will meet you there soon - with Saemon.~
-==RTShaj~I hope it, there were so many of them below.~DO~MoveToPoint([2577.1522])EscapeAreaDestroy(20)~EXIT
+==RTShaj~I hope it, there were so many of them inside that cave.~DO~MoveToPoint([2577.1522])EscapeAreaDestroy(20)~EXIT
 
 CHAIN
 IF~Global("RTSaeHij","GLOBAL",2)~THEN RTSaemon RescIs2

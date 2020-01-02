@@ -81,7 +81,7 @@ IF~~THEN RTCandre NewEd3
 ==RTEdwin~(Did she really say that - a compliment from her lips...) Well, to be honest, not all of it was brilliant acting from my side, a lot has changed since we last saw each other.~
 =~(He reaches out to touch Candrella's hand.) A lot has changed, indeed.~
 ==CVSan25J~It must be true, I cannot imagine Candrella calling the Edwin I once knew her beloved Ssinssrigg nor letting him close enough to get her pregnant.~
-==RTCandre~Are you willing to listen to what has happened -it is important for what we have to do next, both you and us.~
+==RTCandre~Are you willing to listen to what has happened - it is important for what we have to do next, both you and us.~
 END
 ++~This will be most interesting.~ + NewEd4
 ++~It must be true, it is just too unbelievable to be a lie.~ + NewEd4

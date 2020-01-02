@@ -61,7 +61,7 @@ DO~SetGlobal("RTLeyPlot1","GLOBAL",4)~
 ==RTSaemon~No one knows as no one saw her leave. When I came down to our quarters three nights ago she simply was not there.~
 ==CVLey25J~Did you consider that she may not have left on her own?~
 ==RTSaemon~Leyala, I respect your good will - but this is the Shadow Thieves Headquarters of Amn. Nobody enters or leaves here without my consent - and definitely nobody takes anything away from here without my knowledge and approval.~
-==CVLey25J~I am sure we have your approval to investigate this case a bit and look around in your quarters below. Should she really have left you, she would surely have left you some sign of what went wrong.~
+==CVLey25J~I am sure we have your approval to investigate this case a bit and look around in your quarters below. Should she really have left you, she would have left you some sign of what went wrong.~
 ==RTSaemon~Do what you think you can do, I expect little from it.~ EXIT
 
 CHAIN
@@ -100,7 +100,7 @@ DO~SetGlobal("RTLeyPlot1","GLOBAL",7)~
 ==CVLey25J~Just like he probably wants you to. NO, Saemon, you will stay here just in case we err and someone contacts you for ransom still. Your attack will just endanger her should the pirate king really have her. We will go, right, <CHARNAME>?~
 END
 ++~Yes, Leyala, I completely agree. We must find a secret way to the island and operate silently.~ EXTERN CVLEY25J Sheimiss3
-++~Leyala is right. Desharik will surely know about your coming as soon as you leave this building. You must stay here and keep up the facade while we secretly try to reach the island.~EXTERN CVLEY25J Sheimiss3
+++~Leyala is right. Desharik will know about your coming as soon as you leave this building. You must stay here and keep up the facade while we secretly try to reach the island.~EXTERN CVLEY25J Sheimiss3
 
 CHAIN
 IF~~THEN CVLEY25J Sheimiss3
@@ -159,7 +159,7 @@ DO~SetGlobal("RTLeyPlot1","GLOBAL",14)~
 ==CVSan25J~He fled the asylum when we entered to notify Desharik of our intrusion.~
 ==ppgirl~Desharik never expected an assault from the back entrance so he only guarded the access from town.~
 ==CVLEY25J~Which means he will appear here soon to prevent our escape.~
-==ppgirl~He will surely not come alone, Brynnlaw today is fully in the hands of his pirates.~
+==ppgirl~He will not come alone, Brynnlaw today is fully in the hands of his pirates.~
 ==CVLEY25J~Anyway, he needs to deactivate his trap to reach us and we will have a chance to escape or to get possession of a ward stone.~
 ==CVSan25J~I would propose to meet his attack at the end of the narrow bridge outside where he has no chance to make use of his manpower. The pirates cannot come at us with more than two men side by side across that bridge.~EXIT
 
