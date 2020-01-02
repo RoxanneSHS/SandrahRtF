@@ -138,7 +138,7 @@ DO~SetGlobal("RTLeyPlot1","GLOBAL",13)~
 ==RTShaj~Oh poor Cayia, she was my help and hope here, she had to suffer for so long already from that pirate brute.~
 ==CVLEY25J~We promised her to help her out of Brynnlaw as well.~
 ==RTShaj~The bridge to and from town is deadly, but how can we leave the island any other way?~
-==CVSan25J~We had to send our skyship back to the mainland. We had no idea what we would find here and that ship would have notified about our presence immediately. We need to defeat the pirates and disable the trap to get access to the harbour and the ships down there.~
+==CVSan25J~We had to send our skyship back to the mainland. We had no idea what we would find here and that ship would have notified about our presence immediately. We need to defeat the pirates and disable the trap to get access to the harbour and the ships.~
 ==RTShaj~I propose to consult Cayia, she knows Desharik and the island better than anyone.~DO~EscapeAreaMove("ar1515",1696,820,5)~EXIT
 
 CHAIN
