@@ -99,14 +99,14 @@ DO~SetGlobal("SanRTFPlot4","GLOBAL",3)~
 ==CVSan25J~Greetings, Kelemvor. I have not chosen any of those battles that have filled your realm, nor do I seek further confrontation. I do what cannot be avoided.~
 =~Still those that are due for you are yours after the battle is fought - a fact that separates me from my enemies.~
 ==RTKelem~Other gods define their power and impact by the number of their followers. Mine comes from the souls I receive.~
-==CVSan25J~This may not be the case for all future. Those that deny to the Lord of the Dead what is rightfully his are getting stronger and their hunger and greed grows daily.~
+==CVSan25J~This may not be the case for all future. Those who deny to the Lord of the Dead what is rightfully his are getting stronger and their hunger and greed grows daily.~
 ==RTKelem~There have always been necromancers and other gods who have taken their share from my harvest, just like mice pick some grains from the farmers.~
 ==CVSan25J~One party has decided to tip the scales of the balance to their side recently. A new sort has appeared led by Velsharoon...~
 ==RTKelem~Ah, that scheming fool, pet dog of the idiot Talos, he has always loathed me for opposing the abnormal undead and liches that are his domain. Have you come to tell me old stories, Mystra. I have expected more from you, given the bloodline you come from.~
 ==CVSan25J~The pet has freed himself from the leash. He has found a wolfish teacher, one whose hunger is insatiable. Szass Tam is no mouse that picks the eventual grain to survive. He has in mind an empire built by his undead, his clones and his liches. Nothing more for you to harvest regardless how many losses his great battles might bring.~
 ==RTKelem~Hm, Szass Tam - Thay...the stream of new souls from there has indeed reduced to a rivulet. I had guessed they might have found peace after all this time of constant war.~
 ==CVSan25J~Just the opposite, Kelemvor, they build new armies of clones and undead to fight the Realms - and the Gods.~
-==RTKelem~I will not partake in any of those foolish quarrels you celestials have all the time. If you came for an ally you came to the wrong place, do not insult me with your proposals.~
+==RTKelem~I will not partake in any of those foolish quarrels you celestials cobstantly have among yourself. If you came for an ally you came to the wrong place. Do not insult me with your proposals.~
 ==CVSan25J~You must have misunderstood me, good friend. I am not looking for an ally in you. Pacts among the gods are always broken once one side sees the chance for an advantage. Such scheming is beyond us, is it not?~
 ==RTKelem~Good to hear, my dear. If it is not a supporter you have sought here, why did you come?~
 ==CVSan25J~There is a balance to keep, Kelemvor. For everything born something else must go and make space. This is where you have your task. Currently those who are due to pass to you are entering the cycle once again. Where will that end?~
