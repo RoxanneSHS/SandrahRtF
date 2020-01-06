@@ -8,7 +8,7 @@ DO~SetGlobal("RTPriQ","BG4800",3)~
 ==RTSPTa1~Your time is over, you're on the wrong side these days, my dear.~
 ==RTSPEil1~You're judging prematurely, it is your god who has lost the powers that the Weave and Mystra had to let him participate in.~
 ==RTSPTa1~Your Eilistraee was just a dark copy of the defeated Mystra, you and all her followers will bow before the Chaos!~
-==RTSPEil1~Haven't you noticed yet that your spells fail and your god looses followers daily. Even in death Mystra triumphs over her opponents.~
+==RTSPEil1~Haven't you noticed yet that your spells fail and your god loses followers daily. Even in death Mystra triumphs over her opponents.~
 ==RTSPTa1~Bow or die!~DO~Enemy() Attack("RTSPeil1") ActionOverride("Pellig3",Attack("RTSPTal1")~EXIT
 
 CHAIN
@@ -16,7 +16,7 @@ IF~ Global("RTPriQ","BG4800",3)~THEN RTSPEil1 Quar2
 ~Such activities were to be expected.~
 DO~SetGlobal("RTPriQ","BG4800",4)~
 ==PelligJ~The gods and their priests feel the missing support of the Weave. Some may hope they can rely on their brutality and force while others seek in vain to replace Mystra's gifts with those of the Shadow Weave.~
-==RTSPEil1~Those who follow Eilistraee do not loose their trust and hope into the one who always stood side by side with our goddess.~ DO~EscapeArea()~
+==RTSPEil1~Those who follow Eilistraee do not lose their trust and hope into the one who always stood side by side with our goddess.~ DO~EscapeArea()~
 ==PelligJ~Mystra's blessing be with you.~DO~AddexperienceParty(2150)~EXIT
 
 CHAIN

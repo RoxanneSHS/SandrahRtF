@@ -1114,7 +1114,7 @@ IF~~THEN REPLY~What do you mean - of course we will get those things together if
 END
 
 IF~~THEN BEGIN Insig3
-SAY~Hush...you will understand everything pretty soon. Never loose your hope, whatever will happen. So - remember Thalantyr, Qilandrha, the third ingredients will find you...Let us move now, we have little time.~
+SAY~Hush...you will understand everything pretty soon. Never lose your hope, whatever will happen. So - remember Thalantyr, Qilandrha, the third ingredients will find you...Let us move now, we have little time.~
 =~I love you.~
 IF~~THEN EXIT
 END
