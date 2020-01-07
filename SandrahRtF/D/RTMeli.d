@@ -279,7 +279,7 @@ IF~Global("RTMeliQuest","GLOBAL",2)~THEN RTMeli Thalcare
 DO~SetGlobal("RTMeliQuest","GLOBAL",3)~
 ==CVSan25J~It reminded me of Gorion's care for <CHARNAME>, childless mages having to take care of a pupil for some reason.~
 ==RTMeli~He developed fatherly feelings towards me, you mean?~
-==CVSan25J~You spend a long time in his care, longer than you did with your real father if I recall correctly.~
+==CVSan25J~You spent a long time in his care, longer than you did with your real father if I recall correctly.~
 ==RTMeli~The relationship to my parents was rather cold, you know those Waterdeep snobs better than anyone, my dear. A sorcerer was the black sheep of the family. You are right, Thalantyr never made me feel such. (Sigh) I never recognized how important he was for me.~
 ==CVSan25J~It may be another sign of growing wisdom and maturity that you do so now.~DO~AddJournalEntry(@2088,QUEST)~EXIT
 
