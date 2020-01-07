@@ -12,7 +12,7 @@ END
 
 CHAIN
 IF WEIGHT #-2 ~GlobalGT("SanBeginRTF","GLOBAL",1)!InParty("CVSandr")~THEN CVRingo RTFNoSan
-~Do not loose your faith in love and hope, friends, Mystra is not lost for those who believe in her.~
+~Do not lose your faith in love and hope, friends, Mystra is not lost for those who believe in her.~
 EXIT
 
 CHAIN

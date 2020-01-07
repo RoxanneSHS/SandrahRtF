@@ -24,7 +24,7 @@ IF~Global("RTPriQ2","CVElm4",1) AreaCheck("CVELM4")~ THEN RTYouSha InWDSP
 ~There you are again, see we have come even though we heard a lot of rumours about Mystra's death and the spell plague.~
 DO~SetGlobal("RTPriQ2","CVElm4",2) ~
 ==RTMoninj~They say here that a god or goddess lives by the faith and dedication of her followers.~
-==RTYouSha~Mystra's power is unbroken but we had a number of encounters with followers of other faiths and gods who loose influence almost daily.~
+==RTYouSha~Mystra's power is unbroken but we had a number of encounters with followers of other faiths and gods who lose influence almost daily.~
 ==PelligJ~Some gods only hold their disciples by the power and magic they promise them. Faith in them goes just as deep as the believers are visibly rewarded and is lost when the incentives fail.~
 ==RTMoninj~I have had long talks with the priests here just as Sandrah advised and I believe in what Mystra stands for.~ DO~EscapeArea()~
 ==PelligJ~If this is so, then Mystra is alive.~
