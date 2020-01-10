@@ -128,7 +128,7 @@ IF WEIGHT #-5~Global("RTLouPlot","GLOBAL",16)~THEN Senbeh01 WayDown
 ~It's always fun and excitement when you come along, little ones.~
 DO~SetGlobal("RTLouPlot","GLOBAL",17) ~
 ==CVSan25J~Our old friend again...last time we met you in Sendai's lair, right?~
-==Senbeh01~You came just in time to relief me of one of those endless boring tasks my hive had contracted for me once again.~
+==Senbeh01~You came just in time to relief me of one of those endless boring tasks my hive had contracted for me.~
 =~How about gambling, solving little riddles, all this fun stuff you mortals like to do to make your short life even shorter. ~
 ==CVSan25J~You have just recalled yourself that you still owe us a little favour for helping you out last time.~
 ==Senbeh01~Do I?...Maybe...maybe not...you have something in mind, little lady?~
