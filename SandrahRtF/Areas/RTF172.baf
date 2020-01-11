@@ -8,6 +8,15 @@ Explore()
 END
 
 IF
+Global("Chapter","Global",29)
+Global("Battlesave","RTF172",0)
+THEN
+RESPONSE #100
+SetGlobal("Battlesave","RTF172",1)
+SaveGame(24)
+END
+
+IF
 RealGlobalTimerExpired("Reinforce","RTF172")
 Global("NewForces","RTF172",0)
 THEN

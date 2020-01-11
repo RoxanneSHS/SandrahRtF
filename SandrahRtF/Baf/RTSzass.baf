@@ -53,7 +53,7 @@ Global("MystItem","LOCALS",6)
 THEN
 RESPONSE #100
 IncrementGlobal("MystItem","LOCALS",1)
-SetGlobalTimer("Itemsdes","LOCALS",60)
+SetGlobalTimer("Itemsdes","LOCALS",36)
 END
 
 IF

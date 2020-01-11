@@ -174,7 +174,7 @@ IF~Global("CyrGetMid","GLOBAL",1)~ THEN CVCyr01 Citadl1
 ~You lack what your grandmother had at hand when she set out to Kill the God of Murder!~
 DO~SetGlobal("CyrGetMid","GLOBAL",2) SetGlobal("SanRTFPlot5","GLOBAL",6)~
 ==CVSan25J~The current one who holds that title is not to be killed. It is AO's verdict that you are simply banned from the Primary Plane.~
-==CVSzas~Cyric, you will stand your ground here with me.~DO~Enemy() SetGlobal("SzassFight","Global",1) RealSetGlobalTimer("Reinforce","RTF172",420)~
+==CVSzas~Cyric, you will stand your ground here with me.~DO~Enemy() SetGlobal("SzassFight","Global",1) RealSetGlobalTimer("Reinforce","RTF172",240)~
 ==CVCyr01~Dream on, fool.~
 ==CVCyr01~Granddaughter, you never gave up your home and mortal attitude - don't forget this was my world as well. The advantage you had over the other fools who think of themselves as Gods fails with me. I will have your companion's essence before I leave.~
 ==CVSan25J~The Throne of Bhaal is known to be a very uncomfortable piece of furniture, Cyric...~
