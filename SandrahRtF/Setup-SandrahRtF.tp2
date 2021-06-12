@@ -3,10 +3,11 @@
 BACKUP ~SandrahRTF/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Sandrah/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v2.05~
+VERSION ~v2.06~
+
 AUTO_TRA ~SandrahRTF/TRA/%s~
 
-LANGUAGE ~English~ ~english~ ~SandrahRTF/TRA/RTF-setup.tra~
+LANGUAGE ~English~ ~english~ ~SandrahRTF/TRA/english/RTF-setup.tra~
 
 BEGIN ~Check Requirements for EET~
 
@@ -2093,18 +2094,18 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVCut402.bcs~ THEN BEGIN
 END
 
 COPY ~SandrahRTF/Cre/CVIZZY2.CRE~ ~override/CVIZZY2.CRE~
-SAY NAME1 Isobel
-SAY NAME2 Izzy
+SAY NAME1 @3034
+SAY NAME2 @3035
 SAY BIO @1682
 
 COPY ~SandrahRTF/Cre/CVGiran.CRE~ ~override/CVGiran.CRE~
-SAY NAME1 Giran
-SAY NAME2 Giran
+SAY NAME1 @3033
+SAY NAME2 @3033
 SAY BIO @1683
 
 COPY ~SandrahRTF/Cre/CVLeyala.CRE~ ~override/CVLeyala.CRE~
-SAY NAME1 Leyala
-SAY NAME2 Leyala
+SAY NAME1 @3032
+SAY NAME2 @3032
 SAY BIO @1695
 
 COPY ~SandrahRTF/Cre/Loureed.CRE~ ~override/Loureed.CRE~
@@ -2135,16 +2136,16 @@ SAY NAME2 @1705
 SAY BIO @1765
 
 COPY ~SandrahRTF/Cre/RTBRAGD.CRE~ ~override/RTBRAGD.CRE~
-SAY NAME1 Brage
-SAY NAME2 Brage
+SAY NAME1 #6225
+SAY NAME2 #6225
 
 COPY ~SandrahRTF/Cre/RTScar.CRE~ ~override/RTScar.CRE~
-SAY NAME1 Scar
-SAY NAME2 Scar
+SAY NAME1 #12262
+SAY NAME2 #12262
 
 COPY ~SandrahRTF/Cre/RTFImo.CRE~ ~override/RTFImo.CRE~
-SAY NAME1 Imoen
-SAY NAME2 Imoen
+SAY NAME1 #16453
+SAY NAME2 #16453
 
 COPY ~SandrahRTF/Cre/RTDueMin.CRE~ ~override/RTDueMin.CRE~
 SAY NAME1 @1728
@@ -2163,8 +2164,8 @@ SAY NAME1 @1723
 SAY NAME2 @1723
 
 COPY ~SandrahRTF/Cre/RTEMInn.CRE~ ~override/RTEMInn.CRE~
-SAY NAME1 Porley
-SAY NAME2 Porley
+SAY NAME1 @3031
+SAY NAME2 @3031
 
 COPY ~SandrahRTF/Cre/RTOutwa.CRE~ ~override/RTOutwa.CRE~
 SAY NAME1 @1731
@@ -2195,12 +2196,12 @@ SAY NAME1 @1742
 SAY NAME2 @1742
 
 COPY ~SandrahRTF/Cre/RTmom.CRE~ ~override/RTmom.CRE~
-SAY NAME1 Marinda
-SAY NAME2 Marinda
+SAY NAME1 @3029
+SAY NAME2 @3029
 
 COPY ~SandrahRTF/Cre/RTkid.CRE~ ~override/RTkid.CRE~
-SAY NAME1 Salith
-SAY NAME2 Salith
+SAY NAME1 @3030
+SAY NAME2 @3030
 
 COPY ~SandrahRTF/Cre/RThals.CRE~ ~override/RThals.CRE~
 SAY NAME1 @1745
@@ -2235,12 +2236,12 @@ SAY NAME1 @1752
 SAY NAME2 @1752
 
 COPY ~SandrahRTF/Cre/RTMadeen.CRE~ ~override/RTMadeen.CRE~
-SAY NAME1 Madeen
-SAY NAME2 Madeen
+SAY NAME1 #2192
+SAY NAME2 #2192
 
 COPY ~SandrahRTF/Cre/CVShar2.CRE~ ~override/CVShar2.CRE~
-SAY NAME1 Shar
-SAY NAME2 Shar
+SAY NAME1 @3028
+SAY NAME2 @3028
 
 COPY ~SandrahRTF/Cre/RTDuEngi.CRE~ ~override/RTDuEngi.CRE~
 SAY NAME1 @1757
@@ -2251,28 +2252,28 @@ SAY NAME1 @1766
 SAY NAME2 @1767
 
 COPY ~SandrahRTF/Cre/CVCyr02.CRE~ ~override/CVCyr02.CRE~
-SAY NAME1 Cyric
-SAY NAME2 Cyric
+SAY NAME1 #72321
+SAY NAME2 #72321
 
 COPY ~SandrahRTF/Cre/RTAerie.CRE~ ~override/RTAerie.CRE~
-SAY NAME1 Aerie
-SAY NAME2 Aerie
+SAY NAME1 #9184
+SAY NAME2 #9184
 
 COPY ~SandrahRTF/Cre/RTBranw.CRE~ ~override/RTBranw.CRE~
-SAY NAME1 Branwen
-SAY NAME2 Branwen
+SAY NAME1 #9480
+SAY NAME2 #9480
 
 COPY ~SandrahRTF/Cre/RTCaptCC.CRE~ ~override/RTCaptCC.CRE~
-SAY NAME1 Officer
-SAY NAME2 Officer
+SAY NAME1 @3027
+SAY NAME2 @3027
 
 COPY ~SandrahRTF/Cre/RTorcmel.CRE~ ~override/RTorcmel.CRE~
-SAY NAME1 Ranani
-SAY NAME2 Ranani
+SAY NAME1 @3026
+SAY NAME2 @3026
 
 COPY ~SandrahRTF/Cre/SlaveM1.CRE~ ~override~
-SAY NAME1 Slave
-SAY NAME2 Slave
+SAY NAME1 #13884
+SAY NAME2 #13884
 
 COPY ~SandrahRTF/Cre/cvlotw2.CRE~ ~override/cvlotw2.CRE~
 SAY NAME1 @2037
@@ -2307,12 +2308,12 @@ SAY NAME1 @1955
 SAY NAME2 @1955
 
 COPY ~SandrahRTF/Cre/RTIYLOS.CRE~ ~override/RTIYLOS.CRE~
-SAY NAME1 Iylos
-SAY NAME2 Iylos
+SAY NAME1 @3025
+SAY NAME2 @3025
 
 COPY ~SandrahRTF/Cre/RTSarev.CRE~ ~override/RTSarev.CRE~
-SAY NAME1 Sarevok
-SAY NAME2 Sarevok
+SAY NAME1 #12266
+SAY NAME2 #12266
 
 COPY ~SandrahRTF/Cre/RTSlGol.CRE~ ~override/RTSlGol.CRE~
 SAY NAME1 @1782
@@ -2327,8 +2328,8 @@ SAY NAME1 @1791
 SAY NAME2 @1791
 
 COPY ~SandrahRTF/Cre/RTGarric.CRE~ ~override/RTGarric.CRE~
-SAY NAME1 Garrick
-SAY NAME2 Garrick
+SAY NAME1 #9476
+SAY NAME2 #9476
 
 COPY ~SandrahRTF/Cre/RT38dog.CRE~ ~override/RT38dog.CRE~
 SAY NAME1 @1797
@@ -2339,20 +2340,20 @@ SAY NAME1 @2027
 SAY NAME2 @2027
 
 COPY ~SandrahRTF/Cre/RT38inn.CRE~ ~override/RT38inn.CRE~
-SAY NAME1 Rarnott
-SAY NAME2 Rarnott
+SAY NAME1 @3024
+SAY NAME2 @3024
 
 COPY ~SandrahRTF/Cre/RTBalod.CRE~ ~override/RTBalod.CRE~
-SAY NAME1 Balowol
-SAY NAME2 Balowol
+SAY NAME1 @3023
+SAY NAME2 @3023
 
 COPY ~SandrahRTF/Cre/RTBalow.CRE~ ~override/RTBalow.CRE~
-SAY NAME1 Balowol
-SAY NAME2 Balowol
+SAY NAME1 @3023
+SAY NAME2 @3023
 
 COPY ~SandrahRTF/Cre/RTBaloc.CRE~ ~override/RTBaloc.CRE~
-SAY NAME1 Balowol
-SAY NAME2 Balowol
+SAY NAME1 @3023
+SAY NAME2 @3023
 
 COPY ~SandrahRTF/Cre/RTBhaal.CRE~ ~override/RTBhaal.CRE~
 SAY NAME1 @1809
@@ -2415,48 +2416,48 @@ SAY NAME1 @1864
 SAY NAME2 @1864
 
 COPY ~SandrahRTF/Cre/RTODLuc.CRE~ ~override/RTODLuc.CRE~
-SAY NAME1 Lucinda
-SAY NAME2 Lucinda
+SAY NAME1 @3022
+SAY NAME2 @3022
 
 COPY ~SandrahRTF/Cre/RTEdwin.CRE~ ~override/RTEdwin.CRE~
-SAY NAME1 Edwin
-SAY NAME2 Edwin
+SAY NAME1 #271
+SAY NAME2 #271
 
 COPY ~SandrahRTF/Cre/RTCandre.CRE~ ~override/RTCandre.CRE~
-SAY NAME1 Candrella
-SAY NAME2 Candrella
+SAY NAME1 @3021
+SAY NAME2 @3021
 
 COPY ~SandrahRTF/Cre/RTCandr2.CRE~ ~override/RTCandr2.CRE~
-SAY NAME1 Escorte
-SAY NAME2 Escorte
+SAY NAME1 @3020
+SAY NAME2 @3020
 
 COPY ~SandrahRTF/Cre/RTNobl1.CRE~ ~override/RTNobl1.CRE~
-SAY NAME1 Citizen
-SAY NAME2 Citizen
+SAY NAME1 #40715
+SAY NAME2 #40715
 
 COPY ~SandrahRTF/Cre/RTNobl2.CRE~ ~override/RTNobl2.CRE~
-SAY NAME1 Citizen
-SAY NAME2 Citizen
+SAY NAME1 #40715
+SAY NAME2 #40715
 
 COPY ~SandrahRTF/Cre/RTNobl3.CRE~ ~override/RTNobl3.CRE~
-SAY NAME1 Citizen
-SAY NAME2 Citizen
+SAY NAME1 #40715
+SAY NAME2 #40715
 
 COPY ~SandrahRTF/Cre/RTBegg1.CRE~ ~override/RTBegg1.CRE~
-SAY NAME1 Beggar
-SAY NAME2 Beggar
+SAY NAME1 #9426
+SAY NAME2 #9426
 
 COPY ~SandrahRTF/Cre/RTSlav1.CRE~ ~override/RTSlav1.CRE~
-SAY NAME1 Slave
-SAY NAME2 Slave
+SAY NAME1 #13884
+SAY NAME2 #13884
 
 COPY ~SandrahRTF/Cre/RTSlav2.CRE~ ~override/RTSlav2.CRE~
-SAY NAME1 Slave
-SAY NAME2 Slave
+SAY NAME1 #13884
+SAY NAME2 #13884
 
 COPY ~SandrahRTF/Cre/RTSlav3.CRE~ ~override/RTSlav3.CRE~
-SAY NAME1 Slave
-SAY NAME2 Slave
+SAY NAME1 #13884
+SAY NAME2 #13884
 
 COPY ~SandrahRTF/Cre/RTSlav4.CRE~ ~override/RTSlav4.CRE~
 SAY NAME1 @1878
@@ -2467,32 +2468,32 @@ SAY NAME1 @1878
 SAY NAME2 @1878
 
 COPY ~SandrahRTF/Cre/RTSlar1.CRE~ ~override/RTSlar1.CRE~
-SAY NAME1 Slaver
-SAY NAME2 Slaver
+SAY NAME1 #4419
+SAY NAME2 #4419
 
 COPY ~SandrahRTF/Cre/RSlaver1.CRE~ ~override/RSlaver1.CRE~
-SAY NAME1 Lorcos
-SAY NAME2 Lorcos
+SAY NAME1 @3019
+SAY NAME2 @3019
 
 COPY ~SandrahRTF/Cre/RSlaver2.CRE~ ~override/RSlaver2.CRE~
-SAY NAME1 Miqueli
-SAY NAME2 Miqueli
+SAY NAME1 @3018
+SAY NAME2 @3018
 
 COPY ~SandrahRTF/Cre/RTColan.CRE~ ~override/RTColan.CRE~
-SAY NAME1 Colano
-SAY NAME2 Colano
+SAY NAME1 @3017
+SAY NAME2 @3017
 
 COPY ~SandrahRTF/Cre/RTCola2.CRE~ ~override/RTCola2.CRE~
-SAY NAME1 Colano
-SAY NAME2 Colano
+SAY NAME1 @3017
+SAY NAME2 @3017
 
 COPY ~SandrahRTF/Cre/RTjudge.CRE~ ~override/RTjudge.CRE~
 SAY NAME1 @1830
 SAY NAME2 @1830
 
 COPY ~SandrahRTF/Cre/RTShark.CRE~ ~override/RTShark.CRE~
-SAY NAME1 Sharkey
-SAY NAME2 Sharkey
+SAY NAME1 @3016
+SAY NAME2 @3016
 
 COPY ~SandrahRTF/Cre/RTcita.CRE~ ~override/RTcita.CRE~
 SAY NAME1 @1831
@@ -2519,28 +2520,28 @@ SAY NAME1 @1847
 SAY NAME2 @1847
 
 COPY ~SandrahRTF/Cre/RTLibli1.CRE~ ~override/RTLibli1.CRE~
-SAY NAME1 Reader
-SAY NAME2 Reader
+SAY NAME1 #9412
+SAY NAME2 #9412
 
 COPY ~SandrahRTF/Cre/RTLibMa.CRE~ ~override/RTLibma.CRE~
-SAY NAME1 Librarian
-SAY NAME2 Librarian
+SAY NAME1 @3015
+SAY NAME2 @3015
 
 COPY ~SandrahRTF/Cre/RTSail1.CRE~ ~override/RTSail1.CRE~
-SAY NAME1 Sailor
-SAY NAME2 Sailor
+SAY NAME1 #13839
+SAY NAME2 #13839
 
 COPY ~SandrahRTF/Cre/RTSail2.CRE~ ~override/RTSail2.CRE~
-SAY NAME1 Sailor
-SAY NAME2 Sailor
+SAY NAME1 #13839
+SAY NAME2 #13839
 
 COPY ~SandrahRTF/Cre/RTSamas.CRE~ ~override/RTSamas.CRE~
 SAY NAME1 @1850
 SAY NAME2 @1850
 
 COPY ~SandrahRTF/Cre/RTShaj.CRE~ ~override/RTShaj.CRE~
-SAY NAME1 Shaleij
-SAY NAME2 Shaleij
+SAY NAME1 @3014
+SAY NAME2 @3014
 
 COPY ~SandrahRTF/Cre/RTIltash.CRE~ ~override/RTIltash.CRE~
 SAY NAME1 @1874
@@ -2563,12 +2564,12 @@ SAY NAME1 @1879
 SAY NAME2 @1879
 
 COPY ~SandrahRTF/Cre/RTAvar1.CRE~ ~override/RTAvar1.CRE~
-SAY NAME1 Avariel
-SAY NAME2 Avariel
+SAY NAME1 @3012
+SAY NAME2 @3012
 
 COPY ~SandrahRTF/Cre/RTAvar2.CRE~ ~override/RTAvar2.CRE~
-SAY NAME1 Avariela
-SAY NAME2 Avariela
+SAY NAME1 @3013
+SAY NAME2 @3013
 
 COPY ~SandrahRTF/Cre/RTPrince.CRE~ ~override/RTPrince.CRE~
 SAY NAME1 @1886
@@ -2579,8 +2580,8 @@ SAY NAME1 @1887
 SAY NAME2 @1887
 
 COPY ~SandrahRTF/Cre/RTImrae.CRE~ ~override/RTImrae.CRE~
-SAY NAME1 Imrae
-SAY NAME2 Imrae
+SAY NAME1 #50878
+SAY NAME2 #50878
 
 COPY ~SandrahRTF/Cre/RTLarImp.CRE~ ~override/RTLarImp.CRE~
 SAY NAME1 @1892
@@ -2599,20 +2600,20 @@ SAY NAME1 @1889
 SAY NAME2 @1889
 
 COPY ~SandrahRTF/Cre/RTTazok.CRE~ ~override/RTTazok.CRE~
-SAY NAME1 Tazok
-SAY NAME2 Tazok
+SAY NAME1 #2835
+SAY NAME2 #2835
 
 COPY ~SandrahRTF/Cre/RTSenda.CRE~ ~override/RTSenda.CRE~
-SAY NAME1 Sendai
-SAY NAME2 Sendai
+SAY NAME1 #18994
+SAY NAME2 #18994
 
 COPY ~SandrahRTF/Cre/RTLolth.CRE~ ~override/RTLolth.CRE~
-SAY NAME1 Lolth
-SAY NAME2 Lolth
+SAY NAME1 @3011
+SAY NAME2 @3011
 
 COPY ~SandrahRTF/Cre/RTBodhi.CRE~ ~override/RTBodhi.CRE~
-SAY NAME1 Bodhi
-SAY NAME2 Bodhi
+SAY NAME1 #22092
+SAY NAME2 #22092
 
 COPY ~SandrahRTF/Cre/RTSharp.CRE~ ~override/RTSharp.CRE~
 SAY NAME1 @1902
@@ -2647,20 +2648,20 @@ SAY NAME1 @1918
 SAY NAME2 @1918
 
 COPY ~SandrahRTF/Cre/RTMonIn2.CRE~ ~override/RTMonIn2.CRE~
-SAY NAME1 Lerabi
-SAY NAME2 Lerabi
+SAY NAME1 @3010
+SAY NAME2 @3010
 
 COPY ~SandrahRTF/Cre/RTYousha.CRE~ ~override/RTYousha.CRE~
 SAY NAME1 @1919
 SAY NAME2 @1919
 
 COPY ~SandrahRTF/Cre/RTelles.CRE~ ~override/RTelles.CRE~
-SAY NAME1 Ellesime
-SAY NAME2 Ellesime
+SAY NAME1 #58009
+SAY NAME2 #58009
 
 COPY ~SandrahRTF/Cre/RTWelo1.CRE~ ~override/RTWelo1.CRE~
-SAY NAME1 Cormyrian
-SAY NAME2 Cormyrian
+SAY NAME1 @3009
+SAY NAME2 @3009
 
 COPY ~SandrahRTF/Cre/RTLordao.CRE~ ~override/RTLordao.CRE~
 SAY NAME1 @1948
@@ -2671,28 +2672,28 @@ SAY NAME1 @2045
 SAY NAME2 @2045
 
 COPY ~SandrahRTF/Cre/RTWelo2.CRE~ ~override/RTWelo2.CRE~
-SAY NAME1 Merchant
-SAY NAME2 Merchant
+SAY NAME1 #9432
+SAY NAME2 #9432
 
 COPY ~SandrahRTF/Cre/RTLeythi.CRE~ ~override/RTLeythi.CRE~
-SAY NAME1 Lathan
-SAY NAME2 Lathan
+SAY NAME1 #34040
+SAY NAME2 #34040
 
 COPY ~SandrahRTF/Cre/RTWelo3.CRE~ ~override/RTWelo3.CRE~
-SAY NAME1 Cormyrian
-SAY NAME2 Cormyrian
+SAY NAME1 @3009
+SAY NAME2 @3009
 
 COPY ~SandrahRTF/Cre/RTGnarl.CRE~ ~override/RTGnarl.CRE~
-SAY NAME1 Gnarl
-SAY NAME2 Gnarl
+SAY NAME1 #12692
+SAY NAME2 #12692
 
 COPY ~SandrahRTF/Cre/RTHairto.CRE~ ~override/RTHairto.CRE~
-SAY NAME1 Hairtooth
-SAY NAME2 Hairtooth
+SAY NAME1 #12693
+SAY NAME2 #12693
 
 COPY ~SandrahRTF/Cre/RTIMPT.CRE~ ~override/RTIMPT.CRE~
-SAY NAME1 Imp
-SAY NAME2 Imp
+SAY NAME1 @3008
+SAY NAME2 @3008
 
 COPY ~SandrahRTF/Cre/RTdeher.CRE~ ~override/RTdeher.CRE~
 SAY NAME1 @1924
@@ -2718,24 +2719,24 @@ SAY NAME1 @1867
 SAY NAME2 @1867
 
 COPY ~SandrahRTF/Cre/RTLarlo.CRE~ ~override/RTLarlo.CRE~
-SAY NAME1 Larloch
-SAY NAME2 Larloch
+SAY NAME1 @3007
+SAY NAME2 @3007
 
 COPY ~SandrahRTF/Cre/RT141DC.CRE~ ~override/RT141DC.CRE~
 SAY NAME1 @1920
 SAY NAME2 @1920
 
 COPY ~SandrahRTF/Cre/Sankab3.CRE~ ~override/Sankab3.CRE~
-SAY NAME1 Khalindra
-SAY NAME2 Khalindra
+SAY NAME1 @3006
+SAY NAME2 @3006
 
 COPY ~SandrahRTF/Cre/Pellig3.CRE~ ~override/Pellig3.CRE~
-SAY NAME1 Pelligram
-SAY NAME2 Pelligram
+SAY NAME1 @3005
+SAY NAME2 @3005
 
 COPY ~SandrahRTF/Cre/RTDesh.CRE~ ~override/RTDesh.CRE~
-SAY NAME1 Desharik
-SAY NAME2 Desharik
+SAY NAME1 #47469
+SAY NAME2 #47469
 
 COPY ~SandrahRTF/Cre/RTLonk.CRE~ ~override/RTLonk.CRE~
 SAY NAME1 @2028
@@ -2790,24 +2791,24 @@ SAY NAME1 @2000
 SAY NAME2 @2000
 
 COPY ~SandrahRTF/Cre/RTPhaer.CRE~ ~override/RTPhaer.CRE~
-SAY NAME1 Phaere
-SAY NAME2 Phaere
+SAY NAME1 #50872
+SAY NAME2 #50872
 
 COPY ~SandrahRTF/Cre/RTlassal.CRE~ ~override/RTlassal.CRE~
-SAY NAME1 Lassal
-SAY NAME2 Lassal
+SAY NAME1 #15245
+SAY NAME2 #15245
 
 COPY ~SandrahRTF/Cre/RTNild.CRE~ ~override/RTNild.CRE~
-SAY NAME1 Nildjek
-SAY NAME2 Nildjek
+SAY NAME1 @3004
+SAY NAME2 @3004
 
 COPY ~SandrahRTF/Cre/RTHartl.CRE~ ~override/RTHartl.CRE~
-SAY NAME1 Hartleff
-SAY NAME2 Hartleff
+SAY NAME1 @3003
+SAY NAME2 @3003
 
 COPY ~SandrahRTF/Cre/RTNorr.CRE~ ~override/RTNorr.CRE~
-SAY NAME1 Norreq
-SAY NAME2 Norreq
+SAY NAME1 @3002
+SAY NAME2 @3002
 
 COPY ~SandrahRTF/Cre/RTIzPlo1.CRE~ ~override/RTIzPlo1.CRE~
 SAY NAME1 @2005
@@ -2963,8 +2964,8 @@ COPY ~SandrahRTF/Itm/RTkalflc.bam~ ~override/RTkalflc.Bam~
 COPY ~SandrahRTF/Itm/RTmyki.bam~ ~override/RTmyki.Bam~
 
 COPY ~SandrahRTF/Itm/boola.itm~ ~override/boola.itm~
-SAY NAME1 Boola
-SAY NAME2 Boola
+SAY NAME1 @3001
+SAY NAME2 @3001
 SAY DESC @1684
 
 COPY ~SandrahRTF/Itm/CVGirri.itm~ ~override/CVGirri.itm~
@@ -3078,8 +3079,8 @@ SAY NAME2 @1785
 SAY DESC @1786
 
 COPY ~SandrahRTF/Itm/RT78BOK.ITM~ ~override/RT78BOK.ITM~
-SAY NAME1 Handbook
-SAY NAME2 Handbook
+SAY NAME1 @3000
+SAY NAME2 @3000
 SAY DESC @1808
 
 COPY ~SandrahRTF/Itm/RTODBAD.ITM~ ~override/RTODBAD.ITM~
@@ -3098,13 +3099,13 @@ SAY NAME2 @1817
 SAY DESC @1818
 
 COPY ~SandrahRTF/Itm/RTMausa.ITM~ ~override/RTMausa.ITM~
-SAY NAME1 Wardstone
-SAY NAME2 Wardstone
+SAY NAME1 #22094
+SAY NAME2 #22094
 SAY DESC @1828
 
 COPY ~SandrahRTF/Itm/RTMausw.ITM~ ~override/RTMausw.ITM~
-SAY NAME1 Lantern
-SAY NAME2 Lantern
+SAY NAME1 @2099
+SAY NAME2 @2099
 SAY DESC @1829
 
 COPY ~SandrahRTF/Itm/RTlaNote.ITM~ ~override/RTlaNote.ITM~
@@ -3199,8 +3200,8 @@ COPY ~SandrahRTF/Itm/RTMydi.spl~ ~override/RTMydi.spl~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Solasna1.itm~ THEN BEGIN
 COPY ~SandrahRTF/Itm/Solasna1.itm~ ~override/Solasna1.itm~
-SAY NAME1 Avenger
-SAY NAME2 Avenger
+SAY NAME1 #25174
+SAY NAME2 #25174
 END
 
 PRINT ~Installed RtF Items~
@@ -3695,8 +3696,8 @@ WRITE_ASCII 0x268 ~none~ #8
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVDrizR.cre~ THEN BEGIN
 COPY ~SandrahNPC/Mods/CVDRIZR.CRE~ ~override/CVDRIZR.CRE~
-     SAY NAME1 Drizzt
-     SAY NAME2 Drizzt
+     SAY NAME1 #12264
+     SAY NAME2 #12309
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVMyMe.CRE~ THEN BEGIN
@@ -3729,8 +3730,8 @@ END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~deadkem.cre~ THEN BEGIN
 COPY ~SandrahRTF/cre/deadkem.cre~ ~override~
-     SAY NAME1 Dead
-     SAY NAME2 Dead
+     SAY NAME1 @2098
+     SAY NAME2 @2098
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~jellking.cre~ THEN BEGIN
@@ -3764,7 +3765,7 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~Comc03.itm~ THEN BEGIN
 COPY ~SandrahRTF/ITM/Comc03.itm~ ~override~
 SAY NAME1 @2072
 SAY NAME2 @2072
-SAY UNIDENTIFIED_DESC Cloak
+SAY UNIDENTIFIED_DESC @2097
 SAY DESC @2071
 END
 
