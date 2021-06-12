@@ -3,203 +3,203 @@ BEGIN RTLonk
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",1)~THEN RTLeyThi SaeTrou1
-~Hey, you there, please wait, I need a minute of ya time!~
-==CVIzy25J IF~InParty("CVIzzy")~THEN~You're a shadow thief, right man, I've seen ya in Saemon's place, cutie.~
-==CVSan25J IF~!InParty("CVIzzy")~THEN~A shadow thief if I'm not mistaken. Are you one of Saemon's guild?~
-==RTLeyThi~Absolutely right, ma'am, and it's because of the boss the boys sent out to seek for ya. Ac'tally it's for her we look.~
-==CVLey25J~For me? What have I to do with the shadow thieves?~
-==RTLeyThi~Well, yeah, see...the boys 'n' me sat together and discussed. See, somethin's wrong with the boss for a couple of days now. We fear for his brainwise sanity and such.~
-==CVLey25J~Does it concern his liaison with Shaleij, maybe?~
-==RTLeyThi~You're the expert for those love things, aren't ya? Trouble is that the gal's missing.~
-==CVLey25J~Did they have a quarrel, did she leave him?~
-==RTLeyThi~That's the point, ma'am, we don't know and we don't dare to ask the boss...see, this is his privacy and so. The mood he has, he'd kill me if I'd address the subject.~
-=~The two of them were in heaven number seven since he returned with her. All day sunshine an' love makin', couldn't stand so much...bah...harmony. Now is gone 'n' boss gone mad...well, we thought you'd be right one for counselling such things.~
-==CVLey25J~What do you think, <CHARNAME>? I would not cost us too much to talk with Saemon and see if we can help here. Whatever he did to you in the past he seems to have compensated by now. Let him not return to the old ways.~
+@0
+==CVIzy25J IF~InParty("CVIzzy")~THEN@1
+==CVSan25J IF~!InParty("CVIzzy")~THEN@2
+==RTLeyThi@3
+==CVLey25J@4
+==RTLeyThi@5
+==CVLey25J@6
+==RTLeyThi@7
+==CVLey25J@8
+==RTLeyThi@9
+=@10
+==CVLey25J@11
 END
-++~We can pay the docks a short visit to see what's going on, Lathan.~+ SaeTrou2
-++~Serves the scoundrel right, he never deserved a good woman like Shaleij.~+ SaeTrou3
-++~Given his position in Amn by now, there may well be a different background to the missing girl. Maybe she did not go voluntarily.~+ SaeTrou2
+++@12+ SaeTrou2
+++@13+ SaeTrou3
+++@14+ SaeTrou2
 
 CHAIN
 IF~~THEN RTLeyThi SaeTrou2
-~Brilliant, I need to tell the boys of your response. The whole guild will be grateful if you'd come one of these days. ~
+@15
 DO~SetGlobal("RTLeyPlot1","GLOBAL",3) AddJournalEntry(@2082,QUEST)MoveBetweenAreas("rtf305",[390.599],4)~EXIT
 
 CHAIN
 IF~~THEN RTLeyThi SaeTrou3
-~Too bad, I need to tell the boys of your declining. Anyway, if you reconsider the whole guild would be grateful if you'd come one of these days.~
+@16
 DO~SetGlobal("RTLeyPlot1","GLOBAL",2) MoveBetweenAreas("rtf305",[390.599],4)~EXIT
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",2) Global("Sanrompath","GLOBAL",1)~THEN  CVLey25J ReconM
-~I beg you, <CHARNAME>, let us see Saemon in the near future. If only to see if my skills can provide some help - in your name, my Lord.~
+@17
 DO~SetGlobal("RTLeyPlot1","GLOBAL",3)AddJournalEntry(@2082,QUEST)~
 END
-++~Who could deny the plea of his sweetest servant.~ EXIT
-++~Baah, the old weasel only receives what he has earned.~EXIT
+++@18 EXIT
+++@19EXIT
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",2) Global("Sanrompath","GLOBAL",2)~THEN  CVLey25J ReconF
-~I beg you, <CHARNAME>, let us see Saemon in the near future. If only to see if my skills can provide some help - in your name, my Lady.~
+@20
 DO~SetGlobal("RTLeyPlot1","GLOBAL",3)AddJournalEntry(@2082,QUEST)~
 END
-++~Who could deny the plea of her sweetest servant.~ EXIT
-++~Baah, the old weasel only receives what he has earned.~EXIT
+++@21 EXIT
+++@19EXIT
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",3)~THEN RTSaemon Sheimiss1
-~Ah, you...~
+@22
 DO~SetGlobal("RTLeyPlot1","GLOBAL",4)~
-==CVSan25J~This sounds very far from the Saemon Havarian we all know.~
-==CVLey25J~I know this depressed tone quite well, I counselled many like that in the name of love and hope.~
-==RTSaemon~Love and hope, are there still fools who believe that silly stuff?~
-==CVLey25J~Neither you nor your beloved were doubting those principles when we last saw you. We are your friends, Saemon, tell us what has happened.~
-==RTSaemon~Nothing happened, do you see her around here any more?~
-==CVLey25J~Shaleij knew well the kind of business you run, Saemon. It did not prevent her from her feelings for you. Why is she not here?~
-==RTSaemon~Ask her if you see her - I do not know it. She said not a word before disappearing.~
-==CVLey25J~How did she do it, I mean this *disappearing*? Did she walk out the door without a word or sneak out in the night?~
-==RTSaemon~No one knows as no one saw her leave. When I came down to our quarters three nights ago she simply was not there.~
-==CVLey25J~Did you consider that she may not have left on her own?~
-==RTSaemon~Leyala, I respect your good will - but this is the Shadow Thieves Headquarters of Amn. Nobody enters or leaves here without my consent - and definitely nobody takes anything away from here without my knowledge and approval.~
-==CVLey25J~I am sure we have your approval to investigate this case a bit and look around in your quarters below. Should she really have left you, she would have left you some sign of what went wrong.~
-==RTSaemon~Do what you think you can do, I expect little from it.~ EXIT
+==CVSan25J@23
+==CVLey25J@24
+==RTSaemon@25
+==CVLey25J@26
+==RTSaemon@27
+==CVLey25J@28
+==RTSaemon@29
+==CVLey25J@30
+==RTSaemon@31
+==CVLey25J@32
+==RTSaemon@33
+==CVLey25J@34
+==RTSaemon@35 EXIT
 
 CHAIN
 IF~AreaCheck("ar0307") OR(2) Global("RTLeyPlot1","GLOBAL",4) Global("RTLeyPlot1","GLOBAL",5)~THEN CVLey25J AskMissy
-~You are always down here, doing your job, aren't you?~
+@36
 DO~SetGlobal("RTLeyPlot1","GLOBAL",6)~
-==Arngrl01~Missy, the coat check girl, must always watch like a HAWK, people come at all times and must check their coats.~
-==CVLey25J~Those people three nights ago, did they check in their coats?~
-==Arngrl01~There's never no one who don't check in their coat with Missy!!. So for the last time - hand... over... the... COAT!~
-==CVLey25J~I only have a cloak...~
-==Arngrl01~I told all of you before that Missy is the coat check girl, no CLOAKS, NO LOUSY BANDANAS...~
-==CVLey25J~They checked in bandanas, how unusual..?~
-==Arngrl01~I've had enough of you, you coat-less little weirdos! All you from the red light secret door come with NO COAT AND NO CODE!!~DO~EscapeArea()~
-==CVSan25J~The red light door...the one that leads to Irenicus' little place?~
-==CVLey25J~But he and Aerie are celebrating their honeymoon, they are not at home.~
-==CVSan25J~Bandanas are worn by pirates and Irenicus once had connections to the Asylum on Brynnlaw. His place on the island and his place right here may have a connection that someone uses during his absence.~
-==CVLey25J~I would like to ask Saemon again about some *friends* who may try to hurt him - and Shaleij.~EXIT
+==Arngrl01@37
+==CVLey25J@38
+==Arngrl01@39
+==CVLey25J@40
+==Arngrl01@41
+==CVLey25J@42
+==Arngrl01@43DO~EscapeArea()~
+==CVSan25J@44
+==CVLey25J@45
+==CVSan25J@46
+==CVLey25J@47EXIT
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",6)~THEN RTSaemon Sheimiss2
-~Already back? There was nothing to find, right (sigh), I would have found it, be sure.~
+@48
 DO~SetGlobal("RTLeyPlot1","GLOBAL",7)~
-==CVLey25J~Someone was down there three days ago and without your knowledge, Saemon, someone who came to steal what is the most valuable for you.~
-==RTSaemon~Impossible!! She can't be kidnapped...this is Shadow Thieves...~
-==CVLey25J~...Headquarters of Amn, yes, yes. You must have hurt someone quite a bit to risk such a deed, that is for sure. The good news is that Shaleij did not leave you.~
-==RTSaemon~I must free her!! Who has her?? I received no demand for a ransom.~
-==CVLey25J~There may not come one.~
-=~Say, Saemon, have you ever stolen something equally valuable from a man, something that hurt him as much as Shaleij's loss hurts you?~
-==RTSaemon~He?~
-==CVLey25J~Maybe you took his woman as well, or his ship?~
-==RTSaemon~Well, there have been some incidents in my past...~
-==CVLey25J~What about one from whom you stole his woman AND his ship?~
-==RTSaemon~Oh, no!!~
-==CVLey25J~Are you thinking of a pirate right now?~
-==RTSaemon~Desharik!! MEN, hoist sails - we go to Brynnlaw immediately!~
-==CVLey25J~Just like he probably wants you to. NO, Saemon, you will stay here just in case we err and someone contacts you for ransom still. Your attack will just endanger her should the pirate king really have her. We will go, right, <CHARNAME>?~
+==CVLey25J@49
+==RTSaemon@50
+==CVLey25J@51
+==RTSaemon@52
+==CVLey25J@53
+=@54
+==RTSaemon@55
+==CVLey25J@56
+==RTSaemon@57
+==CVLey25J@58
+==RTSaemon@59
+==CVLey25J@60
+==RTSaemon@61
+==CVLey25J@62
 END
-++~Yes, Leyala, I completely agree. We must find a secret way to the island and operate silently.~ EXTERN CVLEY25J Sheimiss3
-++~Leyala is right. Desharik will know about your coming as soon as you leave this building. You must stay here and keep up the facade while we secretly try to reach the island.~EXTERN CVLEY25J Sheimiss3
+++@63 EXTERN CVLEY25J Sheimiss3
+++@64EXTERN CVLEY25J Sheimiss3
 
 CHAIN
 IF~~THEN CVLEY25J Sheimiss3
-~The pirate king of the island will surely have complete control over the waters around his bastion. We must consider an approach that is not by boat or ship.~
-==CVSan25J~We may have a chance to come in via the back-door, the former Spellhold Asylum. It is vacated since we defeated Bodhi and Irenicus there.~
-==CVLey25J~Can we get there from Irenicus' installation here in Athkatla?~
-==CVSan25J~Even if such a connection still exists, I doubt we can find and activate it without the master of the house. We have no idea where they spend their honeymoon or when they will return.~
-==CVLey25J~Your magic transportation then, Sandrah?~
-==CVSan25J~Desharik is directly supported by Umberlee from her temple on the island. He will detect us as quickly as if we approached over the waves.~
-==RTSaemon~Then our approach over the waves must be so quick and forceful that he is swept away before he even recognises it.~
-==CVLey25J~I doubt that force is the answer here. We have not heard all of Sandrah's options yet.~
-==CVSan25J~He guards the water and the intraplane. Consequently we come by air.~
-==CVLey25J~Nib's skyship!~
-==CVSan25J~The gardens of the former asylum can be reached from the mainland without being seen from his outposts. They will look for sails on the horizon but we will come riding high on the jet-stream that blows nightly from the cooling coast to the offshore islands.~DO~AddJournalEntry(@2083,QUEST)~EXIT
+@65
+==CVSan25J@66
+==CVLey25J@67
+==CVSan25J@68
+==CVLey25J@69
+==CVSan25J@70
+==RTSaemon@71
+==CVLey25J@72
+==CVSan25J@73
+==CVLey25J@74
+==CVSan25J@75DO~AddJournalEntry(@2083,QUEST)~EXIT
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",11)~THEN CVLEY25J Sheifree
-~There she is in the glass prison, but no trace of the switch Cayia mentioned.~
+@76
 DO~SetGlobal("RTLeyPlot1","GLOBAL",12)~
-==RTShaj~(The girl gestures at Sandrah and pantomimes as if using a hammer.)~
-==CVLEY25J~It seems she wants us to do something with Sandrah's hammer...~
-==CVSan25J~Magic glass versus a magical hammer. Let us see where that leads to.~
-=~(Sandrah resolutely steps up to the glass prison and strikes with her hammer. Immediately the container starts to vibrate and hum lowly.) ~
-=~(Under the second strike the vibrations becomes heavier and the humming turns to an incredible shriek.)~
-=~(Only seconds later the room is filled with a whirl of splinters from every glass object in the vicinity...)~
+==RTShaj@77
+==CVLEY25J@78
+==CVSan25J@79
+=@80
+=@81
+=@82
 DO~ClearAllActions() StartCutSceneMode() StartCutScene("RTShaFre")~EXIT
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",12)~THEN RTShaj Sheifree2
-~It is good you understood. We are once again in your debt, Saemon and me.~
+@83
 DO~SetGlobal("RTLeyPlot1","GLOBAL",13)~
-==CVLEY25J~Saemon will be more than happy to hold you in your arms very soon. We had a hard job to prevent him from sailing to your rescue immediately.~
-==RTShaj~You are wise to do so. My capturer was planning on just that. This asylum is a trap with me for bait.~
-==CVLEY25J~Your new friend Cayia warned us about that.~
-==RTShaj~Oh poor Cayia, she was my help and hope here, she had to suffer for so long already from that pirate brute.~
-==CVLEY25J~We promised her to help her out of Brynnlaw as well.~
-==RTShaj~The bridge to and from town is deadly, but how can we leave the island any other way?~
-==CVSan25J~We had to send our skyship back to the mainland. We had no idea what we would find here and that ship would have notified about our presence immediately. We need to defeat the pirates and disable the trap to get access to the harbour and the ships.~
-==RTShaj~I propose to consult Cayia, she knows Desharik and the island better than anyone.~DO~EscapeAreaMove("ar1515",1696,820,5)~EXIT
+==CVLEY25J@84
+==RTShaj@85
+==CVLEY25J@86
+==RTShaj@87
+==CVLEY25J@88
+==RTShaj@89
+==CVSan25J@90
+==RTShaj@91DO~EscapeAreaMove("ar1515",1696,820,5)~EXIT
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",13)~THEN RTShaj Sheifree3
-~I told Cayia about our need to find a ship from this island.~
+@92
 DO~SetGlobal("RTLeyPlot1","GLOBAL",14)~
 END
-++~Yes?~EXTERN ppgirl Sheifree4
+++@93EXTERN ppgirl Sheifree4
 
 CHAIN
 IF~Global("RTLeyPlot1","GLOBAL",13)~THEN ppgirl Sheifree4
-~The only way to leave the asylum's ground is via the bridge to the town. But the bridge is blocked by a deadly trap.~
+@94
 DO~SetGlobal("RTLeyPlot1","GLOBAL",14)~
-==CVLEY25J~What is this trap, do you know?~
-==ppgirl~Anyone who crosses the bridge without holding a specific ward stone is immediately turned to stone.~
-==CVLEY25J~You received water and food while incarcerated here and there is no supply within these walls.~
-==RTShaj~The madman Lonk who calls himself Lonk the Sane brought everything we needed from town.~
-==CVSan25J~He fled the asylum when we entered to notify Desharik of our intrusion.~
-==ppgirl~Desharik never expected an assault from the back entrance so he only guarded the access from town.~
-==CVLEY25J~Which means he will appear here soon to prevent our escape.~
-==ppgirl~He will not come alone, Brynnlaw today is fully in the hands of his pirates.~
-==CVLEY25J~Anyway, he needs to deactivate his trap to reach us and we will have a chance to escape or to get possession of a ward stone.~
-==CVSan25J~I would propose to meet his attack at the end of the narrow bridge outside where he has no chance to make use of his manpower. The pirates cannot come at us with more than two men side by side across that bridge.~EXIT
+==CVLEY25J@95
+==ppgirl@96
+==CVLEY25J@97
+==RTShaj@98
+==CVSan25J@99
+==ppgirl@100
+==CVLEY25J@101
+==ppgirl@102
+==CVLEY25J@103
+==CVSan25J@104EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("RTLeyPlot1","GLOBAL",8)~THEN ppgirl Leyquest1
-~Quickly, come into the asylum, it's relatively safe inside even if it's a prison for us.~
+@105
 DO~SetGlobal("RTLeyPlot1","GLOBAL",9)~
-==CVLey25J~For us? You are not alone inside there?~
-==ppgirl~I'm not the fool to think you came to rescue ME. She was sure that her Saemon would do everything possible to get her back - (sigh) I wish I had the power back then to trigger the change in this man.~
-==CVLey25J~Shaleij is here then, just like we had assumed!~
-==ppgirl~We're both Desharik's prisoners, but she's also the bait for Saemon in this deadly trap.~
-==CVLey25J~We were able to convince Saemon to stay in Athkatla where Desharik's spies may get sore feet from observing his every move while we came through the back-door to free the prisoner - well, the prisoners as it appears now.~
-==ppgirl~Heavens, I hope you will be able to get me out of here after all these years that I pay now for my mistakes I made as a foolish youngster.~
-==CVLey25J~Fear nothing, we will leave no one to the pirate's wraith.~
-==ppgirl~I am Cayia, by the way. Have your weapons ready when you get inside, there are further guards all over the place.~ DO~MoveToPoint([1313.1581]) EscapeAreaDestroy(30)~EXIT
+==CVLey25J@106
+==ppgirl@107
+==CVLey25J@108
+==ppgirl@109
+==CVLey25J@110
+==ppgirl@111
+==CVLey25J@112
+==ppgirl@113 DO~MoveToPoint([1313.1581]) EscapeAreaDestroy(30)~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("RTLeyPlot1","GLOBAL",9)AreaCheck("ar1515")~THEN ppgirl Leyquest2
-~Please allow me to wait here for your return. I am not a fighter who can help you against the guards further on.~
+@114
 DO~SetGlobal("RTLeyPlot1","GLOBAL",10)~
-==CVLey25J~Stay here, we will return, no fear. Do you know where they keep Shaleij?~
-==ppgirl~You must find your way to the lower level, some strange laboratory of old. And you must find a switch to release her from the strange glass prison she's kept in.~
-==CVLey25J~Fear not for her or for yourself. We have overcome larger obstacles in the name of love and hope.~EXIT
+==CVLey25J@115
+==ppgirl@116
+==CVLey25J@117EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("RTLeyspawn","ar1515",1)~THEN ppworker alert
-~How did they come in...Desharik must know that immediately!~
+@118
 DO~SetGlobal("RTLeyspawn","ar1515",2) EscapeArea()~ EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("RTLeyPlot1","GLOBAL",15)~ THEN PPDesh Showdown
-~What is the meaning of this intrusion?~
-=~Madam, you ravening ditch-pig, I spared your life just to be betrayed again?~
+@119
+=@120
 DO~SetGlobal("RTLeyPlot1","GLOBAL",16)~
-==PPGirl~You spared my life just to make my existence more miserable than it was before. I owe you nothing, you just wanted your revenge on me - and on Havarian!~
-==PPDesh~I am the Lord of this Isle! I sentence you to death and all that are with you.~
-==RTLonk~But, sir...captain...the ward stone...I still have it here...~
-=~Uuuh!!~DO~MoveToObjectFollow("rtdesh")~EXIT
+==PPGirl@121
+==PPDesh@122
+==RTLonk@123
+=@124DO~MoveToObjectFollow("rtdesh")~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("RTLeyPlot1","GLOBAL",16) Global("escape","LOCALS",0)~THEN pirsea01 alerti
-~Intruders, kill them for Desharik!~
+@125
 DO~SetGlobal("escape","LOCALS",1) Enemy()~EXIT
