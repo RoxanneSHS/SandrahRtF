@@ -1,0 +1,828 @@
+//RTF
+@002 = ~EET required for installation!~
+@003 = ~The complete Sandrah mod must be installed before the extension can be installed.~
+@004 = ~Failed installation check - EET and the complete Sandrah mod must be installed before the extension can be installed.~
+
+@1680 = ~Shauhana's Bow~
+@1681 = ~Shauhana's Bow
+
+Shauhana, the half-orc girl you once rescued from her own Clan in the Stormhorns, later became the ruler and queen of the northern Clan Orcs. As a daughter of the god Arvoreen she is the only female part-orc you have ever heard of to have any magic abilities. The origin of her bow is mysterious as it is clearly not orcish. Shauhana gave the weapon to the stepson she and her husband Minsc had adopted.
+The bow requires no arrows but spits out salves of magical arrows when used, making him a kind of one-man army against large groups of foe.~
+@1682 = ~Isobel is called *Izzy* by everyone who knows her despite some early attempts by the orphanage and later her foster parents to make her use her real name.
+Well, her foster parents...Izzy was among the very first children to come to the Orphanage at Beregost which was founded by Imoen the Magnificent and Henning of Nashkel. When Imoen finally retired after the adventuring days with <CHARNAME> and Sandrah she returned to the Sword Coast and settled down at the large mansion she owned. Izzy and Imoen were considered soon by all as mother and daughter and it did not take long until it was made official with Izzy's adoption.
+The red headed and quick witted youngster learned her mother's spells as easily as she became the threat to every lock around town.
+Her foster parents became aware that they would not be able to keep their eldest in the house for much longer after her seventeenth birthday as she was nurtured on the adventuring stories of Imoen the Magnificent from her early days onwards. They surely would not let her go with just any adventuring party passing through town - but when <CHARNAME> in person appeared one day returning to the Realms once again to fight against evil, there was no way of holding Izzy in the house just one day longer...~
+@1683 = ~When you see the stately ranger today it is hard to recognize the little street rat from Beregost you once met in your early adventuring days. Seeking shelter with his uncle in Amn he was instead captured by slavers and sold to the orcs in the Stormhorns. When Shauhana finally united the Clans and the new age began for the orcs he was freed by her but having no place else to go he stayed with Minsc and Shauhana who raised them as their son. In Minsc's Clan Orc Berserkers Lodge he learned from his heroic stepfather, while his mother taught him to use her famous magic bow. Like any good ranger he has his small animal companion, a female hamster descendent of the most famous Boo - aka Boolerion - whom he has named Boola.~
+@1684 = ~Boola is a female hamster, descendent of the most famous Boo - aka Boolerion - who had accompanied the hero Minsc during his adventuring days. It is unknown whether she is a real miniature space hamster like her famous ancestor. ~
+@1685 = ~Giran's Ring~
+@1686 = ~Giran's Ring
+A gift of Giran's stepmother, the orc queen Shauhana, which has been magically enchanted by the giver.~
+@1687 = ~Stormhorn Dragon Helmet~
+@1688 = ~As a proof for his manhood the young Giran went out with his stepfather Minsc to hunt a red dragon that was terrorising the Clan's moose herds. From the scales of the beast that Giran slew this helmet was made.~
+@1689 = ~<CHARNAME>'s Robe ~
+@1690 = ~This robe belonged to <CHARNAME> during the adventuring days before ascension. How it came to Waterdeep and the Temple and thus into Leyala's possession only Mystra might know. The fact that it once belonged to the God of Love and Hope increases the wearer's charisma.~
+@1691 =~Cloak of Love~
+@1692 =~The typical cloak worn by followers of the new God of Love and Hope.~
+@1693 =~Leyala's Monk Hood~
+@1694 =~The nun of <CHARNAME> is anything but a defenceless little girl. And even if the hood partly hides the beauty and charm of the love god's ambassador, she just has to adjust it a bit to make it an item of ultimate female seduction.~
+@1695 =~During a visit to the Waterdeep Temple Sandrah has once rescued an infected young girl from a painful death. With a blood transfusion using <CHARNAME>'s blood she saved Leyala's life.
+Leyala stayed at the temple and was educated by Mystra's priests. She concentrated on learning a monk's skills. When <CHARNAME> became the God of Love and Hope, she dedicated her life and faith to the one whose blood runs in her veins and became a nun of the new god. With her charisma and example she won new followers for her god easily.
+Following <CHARNAME>'s example she made her body a weapon in combat but a vessel for the carnal aspects of love at night.~
+@1696 =~Nun's Fist~
+@1697 =~A nun's trained fist can often cause more damage than even an enchanted weapon.~
+@1698 = ~God of Love Nun~
+@1699 = ~Goddess of Love Nun~
+@1670 = ~The road leads to neglected fields only~
+@1671 = ~The door is blocked with bones and skulls~
+@1672 = ~Cerameon's Defender~
+@1673 = ~Cerameon's Defender
+This ancient hammer once belonged to Cerameon, the famous defender of Westgate, one heroine from Sandrah's motherly bloodline. The artefact is not only the key to the sealed passageway to Thay but still a powerful magical weapon despite its age. ~
+@1674 = ~Ancient Wraith~
+@1675 = ~Innocento~
+@1676 = ~Monk Lir~
+@1677 = ~Monk's Key~
+@1678 = ~The key to Cerameon's sarcophagus~
+@1679 = ~Hornswamp Bridge~
+@1700 = ~To Old Waterdeep Road~
+@1701 = ~People keep their doors locked due to the current threat.~
+@1702 = ~Southern Trail~
+@1703 = ~Stormhorn Trail~
+@1704 = ~Closed for repair~
+@1705 = ~Melicamp~
+@1706 = ~Mysterious Liquid~
+@1707 = ~The vial contains a pale substance that is carried by all the dead creatures you have found on and near the Hornswamp battlefield. Sandrah suggests that maybe a learned alchemist like Thalantyr could shed a light on the matter.~
+@1708 = ~A dead end reveals the plan to extend the installation further.~
+@1709 = ~These man-sized glasses remind you in an unpleasant way of those encountered long ago below Athkatla...~
+@1710 = ~Dead Scar~
+@1711 = ~Commander Scar led the Flaming Fist until his death more than ten years ago. Strangely enough you found his freshly killed body on the Hornswamp battlefield.~
+@1712 = ~Emergency Exit~
+@1713 = ~Tactical Map of the Northern Territories and the Hornswamp Passage between Clan Orc Land and Waterdeep.~
+@1714 = ~Weathered Statue~
+@1715 = ~Very old graves~
+@1716 = ~East Market Inn~
+@1717 = ~Overland Shop~
+@1718 = ~In respect to the older race the orcs have left the sarcophagus untouched.~
+@1719 = ~Dwarf smiths' use the natural lava resource to heat their ovens down here.~
+@1720 = ~A possibility for further exploration.~
+@1721 = ~Back in the Realms
+
+The two gods have returned to the Prime, their original home plane to deal with their returned enemies once again in their mortal avatars.
+You can find former companions and new friends to accompany your new missions. Sandrah's celestial friend Pelligram and your steadfast old Haiass are with you as well.
+The Solar has hinted that you should first investigate with the orc queen Shauhana and the authorities at Waterdeep to get some insight in the new plot.~
+@1722 = ~Stormhorm Smitty~
+@1723 = ~Khalindra~
+@1724 = ~The room looks like Midnight's and Drizzt's temper can be quite explosive at times.~
+@1725 = ~Even archmages throughout the Realms would sell their souls to Demogorgon for a single glance at the scrolls on this table.~
+@1726 = ~It looks like the former goddess of all magic cooks strawberry jam.~
+@1727 = ~The rabbit stew simmering here smells delicious.~
+@1728 = ~Duergar Miner~
+@1729 = ~Duergar~
+@1730 = ~The Hornswamp massacre
+
+We found a lot of disturbing evidence in our initial investigation of the passage between Waterdeep and the Clan Orc land. Someone attempts to disturb the peace between the major nations and has staged a battle on the Hornswamp. But the dead we found were neither orc nor men. Long dead heroes like Brage and Scar were among them even if no traces of undead activities were present.
+Sandrah thinks that a scientific analysis of the material we gathered by her and the archmage Thalantyr would provide us with more information.
+We should revisit the Sword Coast and the High Hedge next.~
+@1731 = ~Inner Gatewarden~
+@1732 = ~The lava bubbles up suddenly and releases some of its creatures.~
+@1733 = ~Lava King~
+@1734 = ~Spawns~
+@1735 = ~A permanent supply of new clones seems to materialize here at frequent intervals.~
+@1736 = ~Thayan Gnoll~
+@1737 = ~Halberd Maniac~
+@1738 = ~Saemon Havarian~
+@1739 = ~Nalia de'Arnise~
+@1740 = ~This is the statue of Anm's first king, Esmel Torlath. He founded the Realm almost 1000 years ago after the fall of the Shoon Empire.~
+@1741 = ~Statue remembering the fall of Ulatos, the Maztica city in New Amn.~
+@1742 = ~Commissioner Brega~
+@1743 = ~The Troll in Flames~
+@1744 = ~Caldreth's Cobbling~
+@1745 = ~Brigadier Halm~
+@1746 = ~Saemon's Appointment~
+@1747 = ~A document containing Governor de'Arnise's seal and declaring the appointment of Saemon Havarian to the steering board of Athkatla's Charity House.~
+@1748 = ~Jon Irenicus~
+@1749 = ~Yuan-Ti Magician~
+@1750 = ~Yuan-Ti Elite~
+@1751 = ~Cowled Enforcer~
+@1752 = ~Bittersnake Queen~
+@1753 = ~The banners in this room show a crowned laughing lich skull on a solid black hexagon.~
+@1754 = ~A powerful spell guards the doors at the moment. You must first find a way to disable it before you can move on.~
+@1755 = ~The button on the table pulses maliciously. You wonder what happens if it is pushed.~
+@1756 = ~Eruptions of some unknown energy supply block the tunnels from here on.~
+@1757 = ~Duergar Mechanic~
+@1758 = ~Letter~
+@1759 = ~Nerkio!
+After the complete disaster you accomplished with the Stormhorn manoeuvre you must destroy all evidence that hints to us immediately, especially the laboratory equipment provided.
+Ship all remaining artefacts to the Citadel in a hurry. Nothing must be found by the ones that interfere too early.
+ST~
+@1760 =~Bhaal's End by Volo~
+@1761 =~A best-seller in the Realms for a decade now. The famous bard and historian Volo describes the battle of the Bhaalspawns in Anm and Tethir. The final battle of the famous <CHARNAME> and <PRO_HISHER> unyielding companion Sandrah of Waterdeep against the reborn Bhaal is the highlight of the epic. It ends dramatically with the heroes sacrificing their own lives to push the God of Murder into the abyss for all eternity.~
+@1762 =~Cerameon's Journal~
+@1763 =~The personal memories of the great Defender of Westgate are an inspiring lecture for her descendant Sandrah who shows many similarities to her ancestress. 
+The part that is of most interest to you at this time however is the chapter dealing with the infiltration of the Realms by Thayan wizards to supply the aggressor troupes. Through magically created tunnels they supplied magic devices and summoned monsters from the East to strategic points in the Realms. The main exit portal was located in a place that later became the site of the monastery of Ravencrest. Cerameon had to sacrifice her right hand holding her famous hammer in the act to seal this portal.
+In the personal entry following this loss, the heroine also mentions the fact that the portal could have been used to travel to Thay within a single day. The hammer used to seal the gate is also the only key to open it again hence she required it to be buried with her forever after her death.~
+@1764 =~Peace Restored
+
+Your initial mission to prevent a conflict between the Clan Orcs of Shauhana and the Southern Towns has been successful. Nevertheless it becomes apparent that your mission on Faerun has just begun.
+
+Some possible opponents have shown their faces for a short moment while others are still hidden. 
+
+Your lover and counsellor Sandrah, the goddess at your side, has proposed to inquire ancient sources of lore to gain more information. She has suggested to visit her grandmother Midnight, the retired Mystra, in Waterdeep. Another trip should lead you to your former home, the library of Candlekeep.~
+@1765 =~You first encountered the over-ambitious sorcerer in the form of a talking chicken during your early Sword Coast adventures. The apprentice of Thalantyr had made attempts with spells far beyond his skills and could only be restored with yours and his masters help. The lesson learned from that did not seem to have lasted long.
+Melicamp has travelled the Realms for some time now and has worn out several tutors on his trail. He has a natural talent for the arcane but lacks the patience and concentration to make full use of his skills at times. Maybe he will listen to Sandrah to advance in his art.
+By the way - Sandrah. Melicamp started his career in Waterdeep where the youngster fell in love with a young student priestess of Mystra...the quicksilver temper of both did not let this early attempt at romance last long. But both may have matured since then.~
+@1766 =~Ghostly Lich~
+@1767 =~Velsharoon~
+@1768 =~Elegantly Aerie glides into the upwind created by the ventilators and enjoys her freedom in flight.~
+@1769 =~You could sail from here to Baldur's Gate in a couple of days if you wish. Cost GP2500.~
+@1770 =~The sea cruise is calm and smooth and the fresh breezes clear your mind and revive the spirits of your whole company.
+
+Your companions stroll the decks leisurely and you observe different couples and groups gather in talk and play over time. What happens when the stars light the whispering waves you can only guess.
+
+You sigh as the docks of Baldur's Gate come into sight and the mainland with all its problems and struggles receives you again.~
+@1771 =~Ravencrest Monk~
+@1772 =~Ravencrest Harbour Nun~
+@1773 =~Arrogant Noblewoman~
+@1774 =~Velsharoon's Symbol~
+@1775 =~The symbol shows a crowned laughing lich skull on a solid black hexagon. Sandrah assumes that Sarevok carried it as a kind of key or ward stone for his new master. She proposes to keep it as it may be useful in the future.~
+@1776 =~A monstrous conspiracy
+
+The phalanx of our opponents becomes visible part by part - and each new face adds to our disturbance. Cyric and Talos, our old enemies, are involved same as the Arch-Lich Velsharoon. The goddess Shar, goddess of the dark and the Shadow Weave, might as well play a role. 
+
+Behind all however is a creature of the Prime, a mortal, or better to say undead, pulling the strings -
+Szass Tam, the High Zulkir of Thay whom we had encountered long ago in Sharkta Fai.
+
+One thing has become clear, we need to leave our known grounds as the answers lie to the far unknown east of Faerun, in Thay.~
+@1777 =~A painting showing Elminster and Khalindra who carries a little baby in her arms.~
+@1778 =~Cerameon's hammer glows red for a short moment.~
+@1779 =~The seal in the ground has an indention formed like a hammer. Something must obviously be placed here to open the seal.~
+@1780 =~You are too far away to use this.~
+@1781 =~You can now use the portal.~
+@1782 =~Seal Servant~
+@1783 =~Amkethran~
+@1784 =~Scholar~
+@1785 =~Ravencrest Badge~
+@1786 =~This badge is required to enter the Ravencrest monastery~
+@1787 =~Ship to Baldur's Gate~
+@1788 =~The Orphanage~
+@1789 =~Mountain Guide~
+@1790 =~North to Ravencrest~
+@1791 =~Caravan Bandit Leader~
+@1792 =~The enormous bell would have sounded an alert for many miles were it still intact.~
+@1793 = ~Senior Cowled Enforcer~
+@1794 = ~The Seal To Thay
+
+Many generations ago the heroine Cerameon, known as the Defender of Westgate, prevented the occupation of the Western Realms of Toril by the eastern hordes led by Thay. Her descendant Sandrah has found that the magic tunnels and portals used in the old days to supply monster troupes and wizards to the battlefields still exist and might be used again.
+
+The main portal was once sealed by Cerameon with her mighty hammer, losing her right hand in the process. It still would connect the West with Thay would it be opened again.
+
+We must prevent the alliance of our enemies to access the old seal which is hidden below the new Monastery of Ravencrest and to use it for their purpose again.
+
+My fearless companion even suggests that this time we ourselves may use the installation to take the battle into the heart of Thay itself...
+
+Our journey will now lead us once again to Amkethran and further south to Ravencrest.~
+@1795 = ~The Seal To Thay
+
+Many generations ago the heroine Cerameon, known as the Defender of Westgate, prevented the occupation of the Western Realms of Toril by the eastern hordes led by Thay. Her descendant Sandrah has found that the magic tunnels and portals used in the old days to supply monster troupes and wizards to the battlefields still exist and might be used again.
+The main portal was once sealed by Cerameon with her mighty hammer, losing her right hand in the process. It still would connect the West with Thay would it be opened again.
+We must prevent the alliance of our enemies to access the old seal which is hidden below the new Monastery of Ravencrest and to use it for their purpose again.
+My fearless companion even suggests that this time we ourselves may use the installation to take the battle into the heart of Thay itself...
+Our journey will now lead us once again to Amkethran and further south to Ravencrest.~
+@1796 =~Monastery Entrance~
+@1797 =~Chief's dog~
+@1798 =~Sword Coast~
+@1799 =~According to the inscription this coffin is reserved for Tharchion Homen Odesseiron of Surthay. The coffin is unused.~
+@1800 =~Odesseiron Estate~
+@1801 =~According to the inscription this coffin is reserved for Edwin Odesseiron. The coffin is unused.~
+@1802 =~Mausoleum~
+@1803 =~An unknown magic protects this door. You must possess the right ward stone to open it.~
+@1804 =~The features of an older god have been hastily remodelled to resemble Cyric now.~
+@1805 =~Burning Undead Archer~
+@1806 =~I will help!~
+@1807 =~The scales await the right items to be placed on them. With the exactly right weight in both scales the mechanism will operate.~
+@1808 =~...place the artefact left of you and put your right hand on the scales...~
+@1809 =~Bhaal's Ghost~
+@1810 =~Priest of Mystra~
+@1811 =~Thayan Knight~
+@1812 =~Ehrdwin, the Butler~
+@1813 =~Authorisation~
+@1814 =~This document sealed by Autharch Ithrash - Legion Commander - authorises the bearer to enter and leave the restricted Odesseiron premisses.~
+@1815 =~Dead Thayan Knight~
+@1816 =~The throat of the man was cut by an *expert*, the victim had no chance to cry for help and the loss of blood is kept to a minimum. The soldier was a member of Bezantur's elite legion.~
+@1817 =~Szass Tam's left hand~
+@1818 =~The high prize the Thayan Arch-lich had to pay for an attempted night with Sandrah. The hand will be recognised by the scales that open the portal to Szass' Citadel.~
+@1819 =~Boarding House~
+@1820 =~Enclave of Oghma~
+@1821 =~Sharkey's~
+@1822 =~Chapel of Umberlee~
+@1823 =~Library~
+@1824 =~Autharch Ithrash's House~
+@1825 =~Temple of Mask~
+@1826 =~The smell from the outhouse is terrible.~
+@1827 =~Clothes Shop~
+@1828 =~A ward stone received from a drow hooker in Thay to open her *bedchamber*. There is more behind this key just like that lady probably was no whore.~
+@1829 =~The lantern is the key to the Odesseiron mausoleum~
+@1830 =~Judge Rorbath~
+@1831 =~Tourist Guide~
+@1832 =~Red Wizard~
+@1833 =~Plink - you seem to have done something right.~
+@1834 =~When you place Szass Tam's hand to the right scales some heave machinery starts to rumble below the room. All of a sudden...~
+@1835 =~Auctioneer~
+@1836 =~The shark that ate my wife - thank you, mate!~
+@1837 =~Private~
+@1838 =~Sharkey's Guestbook
+
+Volo was here.
+
+...Naronguth, too, haha!~
+@1839 =~Alyssa of Umberlee~
+@1840 =~Water Elemental~
+@1841 =~Shabella the Pale~
+@1842 =~Lizard King~
+@1843 =~You are sure you entered a house with no second floor. The stairs must be an illusion.~
+@1844 =~Colano's Pass~
+@1845 =~This paper should give you access to the compounds of the Guild of Foreign Trade  in the eastern part of the Bezantur harbour.~
+@1846 =~The inside is dark and dirty. It is used as slave quarter.~
+@1847 =~Baylan Gael~
+@1848 =~Auril's Frostmart~
+@1849 =~Auril's Icy Breath~
+@1850 =~Samas Kul~
+@1851 =~This entrance needs to be opened from the other side.~
+@1852 =~Court House~
+@1853 =~Caravanserai~
+@1854 =~Arcane Archive~
+@1855 =~Citadel~
+@1856 =~Temple of Ilmater~
+@1857 =~District Attorney~
+@1858 =~Mage Tower~
+@1859 =~Temple of Auril~
+@1860 =~Brewery~
+@1861 =~Legion Headquarters~
+@1862 =~Saemon's ship~
+@1863 =~Treasury~
+@1864 =~Red Wizard~
+@1865 =~Drow Archmage~
+@1866 =~Yuan-Ti Magician~
+@1867 =~Shadow Thief Mage~
+@1868 =~Banned Apprentice~
+@1869 =~Duergar Mage~
+@1870 =~Gith Mage~
+@1871 =~Tanar'ri Mage~
+@1872 =~The activities of the multitude of mages in the area seem to have an impact on Sandrah's constitution.~
+@1873 =~Reception statement by Autharch Ithrash.
+I have taken the lantern confiscated from the Red Hoods to study it closer at home tonight. It seems to be the key for something. I will return the artefact by tomorrow.
+Heavy seal with the letter *I*~
+@1874 =~Autharch Ithrash~
+@1875 =~Red Hood Wizard~
+@1876 =~Red Hood Fighter~
+@1877 =~Red Hood Cleric~
+@1878 =~Escaped Slave~
+@1879 =~Red Hooded Knight~
+@1880 =~Mask reminds you of your task to retrieve his items~
+@1881 =~Honeymoon begins, darling!~
+@1882 =~The magic protecting the cave entrance seems to radiate from the statues in the area.~
+@1883 =~A glance at the cargo lets you know why Saemon takes the risk of such a long journey. It must be worth more than one fortune.~
+@1884 =~Old Barn~
+@1885 =~All types and potions for the care of wings and feathers, not usable for your party.~
+@1886 =~Kuo-Toa prince~
+@1887 =~Water Dragon~
+@1888 =~The First Victory
+
+With the destruction of Xephistagoras and his academy of spellcasters we have dealt the phalanx of our enemies the first crucial blow. The mages were used to draw as much magical energy from the Weave at one time as possible, in order to weaken the Goddess of All Magic significantly when her support was most needed. 
+
+We have discovered that this part of our enemies' operations was the responsibility of the Storm Lord Talos. After our success, the Overlord AO himself forbids any further involvement of Talos in the current challenge.
+
+Sandrah used the moment to request AO to make Talos' ban from the Primary Plane a permanent one. I hope she has not over stepped her demands here and angered AO against us.
+
+Still, even with Talos and Xephistagoras gone, our opponents stay strong and we will consult Midnight at Waterdeep to find out how we probably may neutralise another member of the phalanx.~
+@1889 =~Kelemvor~
+@1890 =~Netheril Lieutenant~
+@1891 =~Undead Samurai~
+@1892 =~Larloch's Imp~
+@1893 =~Larloch's Milldog~
+@1894 =~A strong magical fence forces you back. Sandrah whispers *Larloch*.~
+@1895 =~You feel a strong magical force nearby. Sandrah whispers *Larloch*.~
+@1896 =~East to Warlock's Crypt
+        South to Waterdeep~
+@1897 =~Holy Symbol of Shar~
+@1898 =~This powerful symbol is given only to the most devoted followers of the dark goddess.~
+@1899 =~Khalindra's flower~
+@1900 =~Sandrah's mother had always loved nature and the living things during her mortal life. The flower she has given her daughter for the journey through Kelemvor's Realm will allow you to destroy those dead enemies who would take the chance for revenge for the death you brought them in mortal battles.~
+@1901 =~This powerful symbol is given only to the most devoted followers of the dark goddess.
+This specific one has a sequence of numbers written on it that looks like a secret code.~
+@1902 =~Priestess of Shar~
+@1903 =~Look what she dropped, <CHARNAME>!~
+@1904 =~Another Victory
+
+Our visit to Kelemvor has brought another mighty supporter to our side. Even if the Lord of the End of Everything does never ally with anyone and will not openly fight at our side, my companion Mystra still claims that we have made a major step forward.
+
+She has cleverly pointed out the threat coming from Velsharoon and Szass Tam towards the power of Kelemvor's dominion. She is sure that the god will act very soon against his unwanted competitors thus providing a second front that our enemies now have to face.
+
+It is time now to visit Wheloon and the temple there to deal with another member of the Phalanx, the Mistress of the Shadow Weave, Shar.~
+@1905 =~You hear a deep snorting from below. A mighty *watchdog* guards the entrance to Larloch's tower - he or she is asleep at the moment.~
+@1906 =~A neat newly restored house~
+@1907 =~The new temple will open at summer solstice~
+@1908 =~Welcome to Wheloon~
+@1909 =~Welcome to Cormyr~
+@1910 =~The road leads to newly sown fields~
+@1911 =~Nightcloak~
+@1912 =~Blade of Despair~
+@1913 =~Raise your hands, brothers! Praise the Nightsinger!~
+@1914 =~Shar... Shar! Lead us to eternal darkness. Lead us to the source of evil...~
+@1915 =~Lead us to loss, our Lady...~
+@1916 =~Here they are! Sacrifice their essence to the Shadow Weave!~
+@1917 =~Aid me, my Dark Goddess!~
+@1918 =~Injured Nun~
+@1919 =~Shaalee~
+@1920 =~Symbol Board~
+@1921 =~The Simbul~
+@1922 =~This gem expels an enormous power of unknown origin. Pelligram rejects anyone to come close enough for an inspection. She insists that you take this object to Midnight in Waterdeep.~
+@1923 =~Dark Moon Priest~
+@1924 =~Deheriana~
+@1925 =~Lerabi~
+@1926 =~Broken furniture and even weapons have been hastily heaped into a niche - the signs of a recent quarrel or even a fight.~
+@1927 =~The area beyond is completely destroyed from the Weave's eruption. There is no chance to enter or find anything in the void created by the fight.~
+@1928 =~The Death of a Goddess
+
+You still cannot believe it - your beloved Sandrah is no more.
+
+Betrayed by Larloch and trapped by the Dark Goddess Shar, the keeper of the true Weave was defeated and killed. You are alone now in your struggle against the phalanx of gods and mortals who want your downfall.
+
+Almost alone. Sandrah's faithful servant Pelligram has given up her disguise and come to your side to aid in this dark hour. And help is what you need now.
+
+You can only anticipate what your own private loss may mean for Faerun and even for the other planes. With the True Weave under control of Shar, the Lady of Loss has now control over all magic - or at least she thinks she has. The death of Mystra will cause a spell plague in the near future - the power of all gods who depend on the Weave is in peril, including your own.
+
+Pelligram has reminded you of some words Sandrah had left for you shortly before and maybe in anticipation of her fate. You are to retrieve some insignia of Mystra and bring them to Midnight in Waterdeep together with some unknown element that according to Sandrah *will find me*.~
+@1929 =~The Death of a Goddess
+
+Betrayed by Larloch and trapped by the Dark Goddess Shar, the keeper of the true Weave was defeated and killed. You are alone now in your struggle against the phalanx of gods and mortals that who your downfall.
+Sandrah's faithful servant Pelligram has given up her disguise and come to your side to aid in this dark hour. And help is what you need now.
+You can only anticipate what your own private loss may mean for Faerun and even for the other planes. With the True Weave under control of Shar, the Lady of Loss has now control over all magic - or at least she thinks she has. The death of Mystra will cause a spell plague in the near future - the power of all gods who depend on the Weave is in peril, including your own.
+Pelligram has reminded you of some words Sandrah had left for you shortly before and maybe in anticipation of her fate. You are to retrieve some insignia of Mystra and bring them to Midnight in Waterdeep together with some unknown element that according to Sandrah *will find you*.~
+@1930 =~The Simbul has been given into my care by Mystra herself.~
+@1931 =~Do not be careless, we need this item like nothing else.~
+@1932 =~Thalantyr's Chicken~
+@1933 =~Priest of Talos~
+@1934 =~Priestess of Eilistraee~
+@1935 =~Symbol of Mystra~
+@1936 =~Mystra's Artefact~
+@1937 =~One of the magical items Sandrah has requested you to collect and to bring to Midnight at Waterdeep.~
+@1938 =~Priest of Cyric~
+@1939 =~A Goddess Reappears
+
+I hold Sandrah in my arms again!!
+
+Mystra and her Chosen, Pelligram and Larloch, have fooled everyone including myself. In fact, my belief in her killing by Shar and my despair over it were part of the ploy. They have staged the whole Spell Plague to cut off our enemies' phalanx from their magic resources and to weaken the Shadow Weave. At the same time pressure is put on the alliance of our foe and cracks begin to show as tension between them grows, each one shifting blame to the other and anticipating betrayal.
+
+But my companion has more in mind than just winning the current battle. The Spell Plague has caused already many gods of the Pantheon a significant loss in influence, power and followers on our home plane, the Prime. Sandrah sees a chance in this development - the mortals will seek out other resources to compensate for the loss of magic. Thus science and inventions will become more important, knowledge and wisdom will replace blind faith.
+
+For the time being Sandrah, my love, is alive while Mystra stays hidden, considered dead by many.
+
+Sandrah has made a promise to herself, her sister and her home plane that the current crisis will be the last time the gods will use Faerun as the playground for their endless quarrels. She never forgot our own suffering as mortals from the whims of the celestials.
+
+In the end she had accepted the role of a goddess for just that purpose - to emancipate the mortals from the reign of the gods.~
+@1940 =~A Goddess Reappears
+
+Mystra and her Chosen, Pelligram and Larloch, have fooled everyone including myself. In fact, my belief in her killing by Shar and my despair over it were part of the ploy. They have staged the whole Spell Plague to cut off our enemies' phalanx from their magic resources and to weaken the Shadow Weave. At the same time pressure is put on the alliance of our foe and cracks begin to show as tension between them grows, each one shifting blame to the other and anticipating betrayal.
+But my companion has more in mind than just winning the current battle. The Spell Plague has caused already many gods of the Pantheon a significant loss in influence, power and followers on our home plane, the Prime. Sandrah sees a chance in this development - the mortals will seek out other resources to compensate for the loss of magic. Thus science and inventions will become more important, knowledge and wisdom will replace blind faith.
+For the time being Sandrah, my love, is alive while Mystra stays hidden, considered dead by many.
+Sandrah has made a promise to herself, her sister and her home plane that the current crisis will be the last time the gods will use Faerun as the playground for their endless quarrels. She never forgot our own suffering as mortals from the whims of the celestials.
+In the end she had accepted the role of a goddess for just that purpose - to emancipate the mortals from the reign of the gods.~
+@1941 =~The Vaunted's End
+
+Our earlier visit to Kelemvor, the God of the End of Everything, has produced its result today. Kelemvor has reacted to Velsharoon's activities to help in the production of undead creatures in support of Szass Tam's armies. The dead souls misused by the Necromancer are claimed by Kelemvor as belonging to his realm and their undead persistence on the Primary Plane unbalances the order of the planes.
+
+In a battle at the old Firewine bridge Velsharoon has been defeated with the little help our party could provide. 
+
+Sandrah's assessment to use Kelemvor as an unofficial supporter to our quest was correct and another member of the enemy phalanx has thus be eliminated.
+
+For us it becomes now time to return to Thay for the final confrontation with the remaining opponents, Shar, Cyric - and Szass Tam.~
+@1942 =~The Vaunted's End
+
+Our earlier visit to Kelemvor, the God of the End of Everything, has produced its result. Kelemvor has reacted to Velsharoon's activities to help in the production of undead creatures in support of Szass Tam's armies. The dead souls misused by the Necromancer are claimed by Kelemvor as belonging to his realm and their undead persistence on the Primary Plane unbalance the order of the planes.
+In a battle at the old Firewine bridge Velsharoon has been defeated and another member of the enemy phalanx has thus be eliminated.~
+@1943 =~The Phalanx becomes weaker
+After Velsharoon's defeat it becomes time to return to Thay for the final confrontation with the remaining opponents, Shar, Cyric - and Szass Tam.~
+@1944 =~Ancient Treant~
+@1945 =~Netheril Admiral~
+@1946 =~The Citadel
+
+The Citadel was already carved into the peak of one of the highest mountains in the Thay Mount when the first humans explored this strange and marvellous region shortly after Netheril's fall. The identity of the place's original owners has been lost in the swirls of time, but murals and carvings found in its lowest halls depict an advanced lizardfolk civilization destroyed so long ago as to be forgotten.
+
+It is possible that the lizardfolk of the Surmarsh are descendants of this ancient people, but if so, their fall from grace was particularly hard. The primitive lizardfolk would not have the first idea how to go about creating such an amazing place.
+
+The Citadel has long been off-limits to the Thayan people. Foreigners are not even supposed to be told of its existence. In earlier years, the Red Wizards sent expeditions into the place to explore as much of it as they could. Some returned with treasure, including gold, artwork, and even powerful magic items. However, more often than not, the parties of explorers never returned at all. 
+
+One of the more successful ventures retrieved a tome that describes the lower levels of the Citadel in detail - A portion of the place, known as the Paths of the Doomed, is a maze of tunnels occupied by all sorts of monsters but also is said to contain artefacts of ancient craft and knowledge and a large amount of tomes revealing the knowledge and spellcraft of the Citadel's original inhabitants.
+
+Zulkir Szass Tam has confiscated all books found in the Citadel for his own studies, and few outside of his direct circle of peers have ever actually seen any, much less read from them. It is however clear that Szass Tam in this way has access to the most ancient and powerful arcane knowledge existing on the Primary Plane.~
+@1947 =~During the transport you have felt a slight disturbance, a suction that altered your course just a little bit. As you look around, you see why.~
+@1948 =~Overlord Ao~
+@1949 =~Priest of Tempus~
+@1950 =~Shar's temple has been destroyed by the energy burst of bringing a part of the True Weave and the Shadow Weave together.~
+@1951 =~The Goddess Shar is hardly recognisable in the burned and ash covered statue.~
+@1952 =~The passage to the walled slave quarters in the slums has collapsed under the power of the recent explosions.~
+@1953 =~Godsbane~
+@1954 =~Godsbane was the sword form assumed by Mask during the Time of Troubles. He would eventually come to be wielded by the then-mortal Cyric, who acquired the sword by murdering a halfling named Sneakabout, who in turn killed the former wielder of the sword.
+Cyric named the sword "Godsbane" because while he was a mortal, he used it to slay Bhaal (then Lord of Murder), and after becoming a deity, he used it to kill Leira, Lady of Deception.
+The soon-to-become Prince of Lies also used it to kill Kelemvor Lyonsbane while atop Blackstaff Tower to usurp his place at the heroine Midnight's side and in her bed.
+Even without Mask's presence inside the weapon it is powerful enough in Cyric's hands as he has gained the portfolio of intrigue, along with shadowy characteristics. For this, Mask hates Cyric, and he continuously plots ways to recover his lost portfolio.~
+@1955 =~Young Midnight~
+@1956 =~A snorting, almost a thunder, comes from below. The sleeping watchdog who guards the door below to Larloch's tower must be an enormous creature.~
+@1957 =~Is is the impact of the wine or the exhaustion after the battle?
+
+You start to feel dizzy and tired and the conversation around you fades from your senses. You feel your glass tumbling from your grip but you do not hear the sound as it breaks on the tiles below. 
+
+The last thing you see is one of your companions slowly gliding to the ground next to you - then there is only darkness.
+
+
+
+
+
+The ground below you is damp, cold, and hard as you slowly come to your senses.~
+@1958 =~Very ancient carvings~
+@1959 =~Dead wizard in a richly embroidered red gown~
+@1960 =~Statue of a lizard creature~
+@1961 =~The withered tree looks as old as the Citadel itself~
+@1962 =~Operator Manual~
+@1963 =~The book contains instructions how to operate drilling machines like they might have been used when building the Citadel into the Thay Mount.
+
+...The start-up process requires three portions of coal before you can activate the machine with the handle.~
+@1964 =~Everywhere you find the traces of former failed expeditions into the Citadel~
+@1965 =~Faces of an unknown race stare at you~
+@1966 =~The creatures buried here ages ago were not humanoid~
+@1967 =~Enslaved Mechanic~
+@1968 =~The well-guarded tomb shows signs of an unknown very advanced technology~
+@1969 =~The head of the drill is spiked with the hardest white diamonds. If you could set the machine into motion it would cut through the rocks like a knife cuts through butter.~
+@1970 =~The machine control board is missing a handle to activate it.~
+@1971 =~The handle fits into the control board.~
+@1972 =~Regardless of which way you turn the handle, the machine does not react.~
+@1973 =~The machine hums lowly. As you turn the switch the humming grows into a howling and the drill begins to operate...~
+@1974 =~The drill slowly moves forward. A moment later the impenetrable wall bursts into a shower of small pebbles.~
+@1975 =~Chain Lock Key~
+@1976 =~You must get nearer to the machine to access the controls.~
+@1977 =~Part of the ancient transport system of the Citadel~
+@1978 =~The disgusting remains of an extensive meal~
+@1979 =~There are no more books on any of the shelves~
+@1980 =~A fake door~
+@1981 =~Mystra's Cold Finger~
+@1982 =~Mystra's Last Word~
+@1983 =~Damned Gods, damned Mystra, I will not...~
+@1984 =~The Final Showdown
+
+After Szass Tam's defeat the phalanx of yours and Sandrah's enemies is destroyed. Thay is now free to be restored by the Red Hoods and their new leaders Edwin and Candrella.
+
+Only the Great Puppeteer who pulled all the strings in this play has made his usual escape from the battlefield. 
+Cyric, the Prince of Lies, has not yet accepted his failure and the ban from the Primary Plane decreed by the Overlord.
+
+The mad god still tries to get the Bhaal essence he thinks you possess to rule the throne of the god of murder. To blackmail you and Sandrah he has kidnapped his former lover, Sandrah's grandmother Midnight.
+
+From her historic knowledge and Cyric's mortal curriculum vitae Sandrah has deducted that Cyric will await you with his hostage at the former Blackstaff Tower.~
+@1985 =~Drizzt's and Midnight's house is deserted. Cyric has been here already.~
+@1986 =~The cave entry is protected by a magic force field~
+@1987 =~The Final Victory
+
+What appeared to be a large power struggle between old and new Gods over the Realms and the Pantheon has finally found its - unexpected - end.
+
+Those deities who have plotted against Mystra and me have been defeated and are banned from the Prime for all times by the Overlord. 
+In hindsight it appears that they have all been tools used to establish a new order in Celestia and on Faerun.
+
+Sandrah has staged Mystra's death and the spell plague to permanently reduce the impact of the gods on the mortals. She even used the Overlord AO himself to play his lines and made him punish the aggressors.
+
+Sandrah expects that the influence of the Gods will start to vanish over the next decades and centuries. The mortals of the Prime will soon realize their chance to shape their existence more freely - magic will make room for science, inventions will replace magical items provided by the celestials.
+
+The mortal Sandrah had accepted her role as a Goddess to emancipate the mortals from being the toys of a bunch of selfish and irresponsible gods. 
+
+This will remain the legacy of Mystra - or shall I say Sandrah of Waterdeep?~
+@1988 =~The Final Victory
+
+What appeared to be a large power struggle between old and new Gods over the Realms and the Pantheon has finally found its - unexpected - end.
+Those deities that have plotted against Mystra and me have been defeated and are banned from the Prime for all times by the Overlord. In hindsight it appears that they have all been tools used to establish a new order in Celestia and on Faerun.
+Sandrah has staged Mystra's death and the spell plague to permanently reduce the impact of the gods on the mortals. She even used the Overlord AO himself to play his lines and made him punish the aggressors.
+Sandrah expects that the influence of the Gods will start to vanish over the next decades and centuries. The mortals of the Prime will soon realize their chance to shape their existence more freely - magic will make room for science, inventions will replace magical items provided by the celestials.
+The mortal Sandrah had accepted her role as a Goddess to emancipate the mortals from being the toys of a bunch of selfish and irresponsible gods.
+
+We have a couple of days left on Faerun before we must return to Celestia.
+Sandrah proposes to travel one last time to the Friendly Arm Inn to say goodbye to our friends and companions and celebrate our success.~
+@1989 =~Argonsan~
+@1990 =~Pelligram and her Solar, Argonsan, stayed on the Prime after <CHARNAME> and Mystra had defeated Cyric and Szass Tam.
+For a while the couple joined with another Chosen of Mystra, Candrella, to eliminate the remaining red and cowled wizards and to create the new Nation of Thay.
+Later they were reported to be involved to solve numerous crisis throughout the Realms, sometimes in union with Elminster.
+Those who believed that the Goddess of All Magic was dead and slain by Shar and Cyric spread the rumour that the Simbul was holding some of the powers of the Weave herself.
+Argonsan's and Pelligram's epic adventures are the tale for another day.~
+@1991 =~Isobel and Giran travelled first to the Stormhorns and then to Beregost. They received the blessings of their parents and in the spring following their adventure with Sandrah and you, they were married at the Temple of the Morning Lord.
+They settled down at Waterdeep where Isobel aided her stepmother Imoen's charity work - the rich of the town were often subject to nightly visits of a hooded thief who relieved them of some unnecessary *extras* that were afterwards distributed to the poor.
+When the question of Shauhana's successor came up in later years, Giran encouraged and promoted Welrick's son Farngiel to become the new Clan Orc leader. He himself followed Shar-Teel Dosan as Commander of the Forces when the former Wildcat retired from her duties to spend her life as a happy grandmother.~ 
+@1992 =~Isobel returned to Beregost and for a while accompanied her stepfather's caravans across the Realms. At several occasions she visited the Stormhorns and the old friendship with Shauhana and Minsc's adopted son Giran - once an orphan from Beregost himself - was renewed. Friendship grew into love.
+They received the blessings of their parents and in the second spring following the adventure with Sandrah and you, they were married at the Temple of the Morning Lord.
+They settled down at Waterdeep where Isobel aided her stepmother Imoen's charity work - the rich of the town were often subject to nightly visits of a hooded thief who relieved them of some unnecessary *extras* that were afterwards distributed to the poor. 
+When the question of Shauhana's successor came up in later years, Giran encouraged and promoted Welrick's son Farngiel to become the new Clan Orc leader. He himself followed Shar-Teel Dosan as Commander of the Forces when the former Wildcat retired from her duties to spend her life as a happy grandmother.~
+@1993 =~Giran returned to the Stormhorns and for a while fought again at his stepfather Minsk's side. From time to time he met with Isobel, the orphan girl from Beregost, later adopted by Imoen and Henning, who accompanied her stepfather's caravans across the Realms. At several occasions she visited the Stormhorns and the old friendship with Giran - once an orphan from Beregost himself - was renewed. Friendship grew into love.
+They received the blessings of their parents and in the second spring following the adventure with Sandrah and you, they were married at the Temple of the Morning Lord.
+They settled down at Waterdeep where Isobel aided her stepmother Imoen's charity work - the rich of the town were often subject to nightly visits of a hooded thief who relieved them of some unnecessary *extras* that were afterwards distributed to the poor. 
+When the question of Shauhana's successor came up in later years, Giran encouraged and promoted Welrick's son Farngiel to become the new Clan Orc leader. He himself followed Shar-Teel Dorsan as Commander of the Forces when the former Wildcat retired from her duties to spend her life as a happy grandmother.~
+@1994 =~Melicamp was one of the few sorcerers who knew that Mystra was still alive. His training and acquaintance with the goddess had provided him with the insight and skills to further improve his usage of the Weave.
+Melicamp settled in the Sharp Teeth Wood and claimed the attempted Academy left behind by Xephistagoras. He assembled not only mages but also scientist of all sorts to study the nature of the multiverse and the Weave that flows all around everything.
+Among those attracted by the Academy that held Mystra's true heritage for the Realms, was the nun Leyala. Often she and Melicamp meditated together and taught each other the skills to fully concentrate to control one's own body and mind as well as the weave around them, be it in combat or in spellcasting.
+As an ambassador of Love and Hope, Leyala improved Melicamp's skills in another area as well...
+Melicamp's University still exists centuries after the founder's death and is headed by a great granddaughter of the legendary couple Melicamp and Leyala.~
+@1995 =~Leyala was busy to set up a number of Temples for Love and Hope all over the Realms, including Bezantur in Thay. While other gods lost influence on the Prime just like Sandrah had foreseen it, <CHARNAME> gained new followers rapidly.
+Later she went to the Sharp Teeth Wood where the sorcerer Melicamp had settled and had claimed the vacated Academy left behind by Xephistagoras. Melicamp was one of the few sorcerers who knew that Mystra was still alive. His training and acquaintance with the goddess had provided him with the insight and skills to further improve his usage of the Weave. He assembled not only mages but also scientist of all sorts to study the nature of the multiverse and the Weave that flows all around everything.
+Leyala was attracted by the university that held Mystra's true heritage for the Realms, (or was she attracted by its founder?) Often she and Melicamp meditated together and taught each other the skills to fully concentrate to control one's own body and mind as well as the weave around them, be it in combat or in spellcasting.
+As an ambassador of Love and Hope, Leyala improved Melicamp's skills in another area as well...
+Melicamp's University still exists centuries after the founder's death and is headed by a great granddaughter of the legendary couple Melicamp and Leyala.~
+@1996 =~When you and Sandrah returned to Celestia, the Goddess of All Magic made no attempts to dismiss the rumours about her death and the spell plague. Instead she provided just enough of the Weave's energy to AO and the realm's of the other gods to guarantee their further existence - exactly like she had promised to the Overlord.
+After several fruitless attempts by AO and other deities to change Mystra's attitude, the growling gods finally had to accept the status quo. No alliance could threaten the combined powers of Mystra and <CHARNAME>.
+You and her frequently changed to your former mortal avatars - to make love but also to adventure through the Realms incognito from time to time...~
+@1997 =~L'Urieet~
+@1998 =~You first met L'Urieet Yantyrr in Tethir after you had defeated her mother in the fight over the Throne of Bhaal. The drow Sendai was one of the Five, those Bhaalspawns that had united their forces against you at that time. L'Urieet had neither sympathy for her mother's ambition to become the new Goddess of Murder nor for the drow lifestyle in general and was happy when you freed her and sent her to the Undermountain enclave of Qilandrha.~
+@1999 =~Shyntlara~
+@2000 =~Lolth's Revenge Spider~
+@2001 =~This is not over - I will return.~
+@2002 =~Your magical transport has attracted your enemy's attention~
+@2003 =~The sea cruise is calm and smooth and the fresh breezes clear your mind and revive the spirits of your whole company.
+
+Your companions stroll the decks leisurely and you observe different couples and groups gather in talk and play over time. What happens when the stars light the whispering waves you can only guess.
+
+You sigh as the docks of Athkatla come into sight and the mainland with all its problems and struggles receives you again.~
+@2004 =~Tethir Road~
+@2005 =~Anne Glort~
+@2006 =~Sharlenia~
+@2007 =~Sir Sarles~
+@2008 =~Curator Jorklar~
+@2009 =~Ancient Scroll~
+@2010 =~The lower half of a scroll. According to Sandrah's analysis it is written in the old scripture of Netheril.~
+@2011 =~The upper half of a scroll. According to Sandrah's analysis it is written in the old scripture of Netheril.~
+@2012 =~SARN!  SREEN!  THALACKZ'HIND!  QUARVAL-SHARESS ORTHAE SSUSSUN ELGG!~
+@2013 =~Caution!! Military restricted area, Rashemen border zone~
+@2014 =~It would be unsafe to enter here without a ranger's advice~
+@2015 =~Lolth magic has sealed the remaining drow citizens inside their houses~
+@2016 =~The former Aboleth tank stills reeks like fouled fish~
+@2017 =~Karsus' Pocket Academy~
+@2018 =~This magical paper stack can be expanded by its users into Faerun's most comprehensive library. Rooms full of books deal with nearly every topic regarding art, science, magic or practical issues like agriculture and medicine. With this wisdom Melicamp is ready to establish his Academy in the Sharp Wood Forest.~
+@2019 =~After Lolth's avatar had been defeated in Ust Natha, L'Urieet departed from <CHARNAME>'s company to stay in the Underdark. She already was an excellent fighter and general due to the training from her mother Sendai, and she defended the *First City of Free Drow* against a number of attacks from other drow capitals still following the Spider Queen.
+After the victorious defeat of Menzoberranzan's two year siege of Ust Natha, the city became a beacon of hope and resistance for many drow, the example that life outside of Lolth's deadly shadow was possible. The city closed all temples and was the first in Faerun that had a society free of all religions, based on logic, rules and science.
+When L'Urieet succeeded matron Imrae - one of the few drow rulers to die of a natural death after a long life - she established friendly contacts with Undermountain but without letting Eilistraee's faith infiltrate her domain.
+Another novelty in a drow matron was her lifetime acquaintance with a single male, the drow bard Nyabalt, loving father to the couples four children and ambassador of the new drow society which like a virus began to infiltrate the major cities of the Underdark over the next decades.~
+@2020 =~Corrupt Knight~
+@2021 =~The liquid is empty...I cannot go on.~
+@2022 =~Sandrah Clone~
+@2023 =~Karsus' Librarian~
+@2024 =~History of Faerun~
+@2025 =~A copy of Elminster's encyclopaedia that Sandrah of Waterdeep had carried and amended during her travels and adventures through Faerun. An epic collection of knowledge and lore.~
+@2026 =~Gorion's Grave~
+@2027 =~Gorion of Candlekeep~
+@2028 =~Lonk the Sane~
+@2029 =~After Desharik's end it is not a big problem to clear Brynnlaw from the remaining pirates and hire some honest seamen to return to Athkatla with the two rescued girls.
+
+Saemon is more than happy to hold Shaleij in his arms again. The couple asks Leyala to celebrate their wedding ceremony in the name of Love and Hope in the near future. 
+
+Meanwhile Saemon arranges with the Council of Amn to restore peace on the island and take it under full control for the city again. Nalia agrees and appoints Saemon as Governor of Brynnlaw and Council member of Athkatla.~
+@2030 =~Pirate Mage Leader~
+@2031 =~To Wheloon~
+@2032 =~Mur'neth~
+@2033 =~The atmosphere of this room sizzles with magic energy~
+@2034 =~Lens of Spectro Analysis~
+@2035 =~According to an inscription on the handle this item belongs to the mage Thalatyr.~
+@2036 =~Found Me! Must run, hide shiny, call friends!~
+@2037= ~Poisonous Wyvern~
+@2038= ~Green Abishai~
+@2039= ~Velsharoon's Staff~
+@2040= ~Velsharoon's Cloak~
+@2041= ~Velemir Rielev~
+@2042 =~Mystra's Elemental~
+@2043 =~Salamander King~
+@2044 =~Clones and an old *Friend* 
+
+Thalantyr and Sandrah have shed some light on the nature of the strange dead creatures found in the Stormhorns - someone is producing clones in significant numbers. How, why, and who is something we need to find out.
+The trail leads to some old acquaintances from our adventuring days - the self-declared collector Nerkio - and Irenicus.
+We need to find one and the other.~
+@2045 =~Sir Ajantis Ilvastarr~
+@2046 =~Izzy's Quest
+
+One of Imoen's orphan girls, Sharlenia, has gown up and left the orphanage recently to accompany a shadow thief. Rhobald of Athkatla. Izzy has been tasked by her stepmother to inquire about the girl and to assure all is well with her in Amn. Izzy suggest to pay a visit to Rhobald's mother in the Bridge District in the near future.~
+@2047 =~Izzy's Quest
+
+We have learned that Sharlenia and her boyfriend have left Amn with destination Thay. You wonder if Izzy will be able to find out more about her *sister* over time.~
+@2048 =~Izzy's Quest
+
+Some disturbing news about Izzy's *half-sister* Sharlenia and her boyfriend Rhobald - the pair has made it to Bezantur in Thay but obviously have got into trouble with one of the most powerful and dangerous men in this town, Samas Kul.
+He seems to be a man we will have to face in our mission anyway sooner or later...~
+@2049 =~Clones and an old *Friend*
+
+The visit to Irenicus has provided a number of interesting insights.
+
+First - Our old enemy #1 has turned into a scientific researcher - and a family man, obviously father to little Quayle and soon-to-be husband of no other than the flying elf Aerie. He was helpful but obviously not involved in the plot against me and Mystra.
+Second - The knowledge to produce Clones in large quantity requires very ancient knowledge and the access to those old sources. The red wizards as well as the names Halruaa and Nesseril were mentioned by Irenicus and Sandrah.
+Third - The only trail left to follow is that of Nerkio, alias The Collector. Either some Shadow Thief Fence or some graveyard may be a point to start inquiries about him.~
+@2050 =~Clones and an old *Friend*
+
+We found a promising hint as to where *The Collector* may be found. There is an ancient graveyard at Waterdeep just east of Mystra's Temple which has a connection to Halaster's old catacombs in Undermountain. Several conditions make it the ideal place for the activities of our target.~
+@2051 =~Block of Ice~
+@2052 =~Ice, useful in a variety of cooling applications, is valued in many cities throughout the Realms because of its limited availability.  Taverns, festhalls, butchers, and fishmongers pay merchants well for fresh, clean ice which they use to cool meats, alcoholic beverages, and a number of other perishable products.  ~
+@2053 =~Ghotal's Summer Camp
+
+The hunt for the Collector has somehow ended in a dead end, at least for the moment. It is time now to join our allies and exchange reports at the meeting point in the Neutral Zone, a place referred to as the *Summer Camp*.~
+@2054 =~Midnight~
+@2055 =~Ghotal's Summer Camp
+
+Wallrick, the adjutant of Shauhana, has reached us with alerting news. The Vaunted lich Velsharoon and his undead army have attacked the conference at the summer camp. Our friends and allies are trapped somewhere at the lower levels of the camp while the lich controls the surface and upper regions. How long Shauhana, Shar-Teel and the others can defend their position is unclear - we need to hurry to their rescue urgently while Wallrick will organise an orc attack against Velsharoon's thralls on the surface.~
+@2056 =~A Phalanx of Foe
+
+We have defeated an attack of the Lich-Lord Velsharoon on our mortal friends. Taking into account this and some other recent events it seems that a large assembly of enemies has forged an alliance against Mystra and the Deity of Love and Hope I have become.
+Aside from Velsharoon, there is Talos playing a role, obviously Cyric, but also mortal players like the red wizards of Thay now in league with the cowled wizards expelled from Athkatla.
+Sandrah is sure that we have not yet discovered the names of all involved.
+What is clear, however, is that we need to act fast and our next step is a journey to Ravencrest, south of Amkethran.~
+@2057  = ~The Seal To Thay
+
+We have found the Seal that Sandrah's ancestress Cerameon has once closed with her hammer and sacrificing her right hand to achieve it. It seems the only way to open it again is with that famous hammer itself which was buried with its owner.
+The grave of the famous heroine is at Mornbryn's Shield on the River Surbrin - a small village between Eversuit and Teziir.~
+@2058  = ~The Seal To Thay
+
+The hammer to open the seal and to travel into the homeland of our enemies is in our possession now. The next step of our journey is the return to the monastery of Ravencrest - and then onwards to where the sealed portal may lead us.~
+@2059  = ~L'Urieet and Lolth
+
+The Drow goddess Lolth cannot allow any drow to escape from her regime. It would encourage others, it would be an example that the fear by which she holds the dark elves enslaved can be overcome.
+My companion L'Urieet has encountered an unpleasant visit from the Spider Queen's representative but our joint forces have driven the assassin away. It is to be feared that this visit may not be the last of its kind. Lolth will attempt to catch L'Urieet and judge her in the Underdark.~
+
+@2060 =~Journey to Thay
+
+We have passed the ancient seal and used a transport system as old as Netheril to travel into the heart of Thay. Our journey has brought us to an old temple located below the city of Bezantur.~
+
+@2061 =~A Helping Hand
+
+In an operating manual for the ancient transport system between Thay and the Sword Coast we found an important hint. Two things are required to activate the system. One is a Symbol of Velsharoon, one of which we found with Sarevok at Candlekeep - the other is the right hand of the *master* to touch the scales. Sandrah assumes that the master meant here is no other than the Thayan Ruler and Red Wizard Lich Szass Tam, the creature of the Prime we suspect to be the *(im)mortal* mastermind behind the intrigue against us.
+It may need quite some persuasion to have Szass Tam touch the scales of the transporter in our presence...~
+@2062 =~Journey to Thay
+
+Some information we have gathered so far about Thay
+Neither Mystra nor myself, <CHARNAME> of Love and Hope, are deities worshipped here. Cyric has become powerful recently and also Mask. The Waterbitch is worshipped in Thay as well as Tempus - but most power lies within the Red Wizards themselves and especially old arcane knowledge controlled by their most important representative - Szass Tam.
+There is an opposition however, the Red Hoods. One of Mystra's chosen, a woman named Candrella, is in their ranks. Sandrah claims that the Red Hoods may soon learn about our presence and will seek our contact.
+We should stay incognito and explore the town thoroughly.~
+@2063 =~Journey to Thay
+
+One name that has come up already multiple times during our short stay in Bezantur is that of our old acquaintance Edwin Odesseiron. He - or rather his family - seems to play a special role in this town and thereby probably also in the current proceedings we are involved in. Whether he will turn up as friend or foe during our stay remains to be seen.~
+@2064 =~Working for the Shadow Thieves Again
+
+The guild of Shabella the Pale in Bezantur has knowledge through their protector Mask about mine and Sandrah's identity. They promise to respect our incognito as long as we co-operate with them. Our task is to retrieve two artefacts of Mask from a man named Samas Kul, the Leader of the Guild of Foreign Trade. This guild resides in a highly protected compound in the Eastern Harbour which will not be easily accessible.~
+@2065 =~Elite Guardian~
+@2066 =~Giran's Quest
+
+Right in the heart of Thay, Giran has spotted a little clan orc boy scouting. When we followed the trace, we overheard a conversation of slavers obviously intending to capture and enslave some Clan Orc party which may have left the Stormhorns for whatever reason and made it to the boundary between Thay and Rashemen.~
+@2067 =~Giran's Quest
+
+Giran told us that not all Clan Orcs were happy to follow his mother's reign in the Stormhorns. Gathlenk's son Nildjek some time ago has left Clan Orc land with a group of such Orcs to find a new home somewhere else. It may be those renegades that are now endangered.
+Even if those Orcs may be at odds with Shauhana, Giran considers them kin and not to be left in the hands of Thayan slavers. We may get a chance to intervene but I also cannot endanger our own mission.~
+@2068 =~Giran's Quest
+
+The trace to the missing Orcs leads to the border area between Thay and Rashemeen which is accessible from the north eastern edge of the Foreign Trade Guild area.~
+@2069 =~Journey to Thay
+
+The way to the Red Hoods leads through the mausoleum on the Odesseiron estate - a strange coincidence, if it really is one. We received part of a key from Candrella but the second part is in the hand of the enemy, this time the almighty Autharch and Legion Commander Ithrash. He has confiscated the item we need and probably inspects it in the Court Building or some other forbidden area.~
+@2070 =~Green Slime King~
+@2071 =~The Cloak of Mask is the perfect item for a thief. The former owner should have put an enchantment for backstab. He his no longer breathing air and the cloak has a new owner. Such as life of a thief in a guild.
+
+STATISTICS:
+
+Special:  Non-detectable by magical means such as detect invisibility and scrying.~
+@2072 =~Cloak of Mask~
+@2073 =~Working for the Shadow Thieves Again
+
+We have regained the Cloak of Mask, one of the items that Shabella the Pale needs us to retrieve.~
+@2074 =~Working for the Shadow Thieves Again
+
+We have regained a Sword of Mask, one of the items that Shabella the Pale needs us to retrieve.~
+@2075 =~A Phalanx of Foe
+
+Our meeting with Trademaster Samas Kul has given us a number of new details about our situation in Thay and the phalanx we face on the Prime.
+Szass Tam plays a key role, just like we already suspected, even if not all of Thay supports him. Shar, Talos, Cyric, Velsharoon and the cowled wizards have all been confirmed to be part of the plot. And another old enemy has turned up again - Xephistagoras.
+Sandrah is quite concerned about his involvement as it seems that he has established himself directly on the Sword Coast. In the old Bhaal temple of the Black Hand he is reported to assemble hundreds of mages and sorcerers to draw power from the Weave - this way being able to weaken Mystra on command.~
+@2076 =~Working for the Shadow Thieves Again
+
+All items required by Shabella are now in our possession. To deliver them, means to remove the threat of our de-masking in Thay. Nevertheless, I am well aware that it is probably a trap of the Shadow Thieves that awaits us.~
+@2077 =~Journey to Thay
+
+Light at the end of the tunnel and a big surprise.
+We have finally met the leader of the Red Hoods and Candrella's husband - it is no other than Edwin Odesseiron.
+After his return from the Sword Coast and Amn some years ago he found himself a wanted man in Thay and his family extinguished by Szass Tam's regime. Instead of a wealthy life at the head of his family he found himself an outlaw. He was met by Candrella and Colano and soon found a new career with the Red Hoods who were in need of leadership at that time.
+The liberation of Thay however is only possible with our common enemy Szass Tam out of the way. The Zulkir has unlimited resources and magical powers from his mysterious *Citadel*. 
+We are not yet ready to strike and face Szass Tam directly. Instead, we need to weaken the phalanx of his allies and at the same time find some powerful supporters for our own side. To achieve both, we need to return to the Sword Coast at this time.The Red Hoods will arrange for our journey back. We are to meet our allies in a private back room at Sharkey's in town.~
+@2078 =~Journey to Thay
+
+Light at the end of the tunnel and a big surprise.
+We have finally met the leader of the Red Hoods and Candrella's husband - it is no other than Edwin Odesseiron.
+After his return from the Sword Coast and Amn some years ago he found himself a wanted man in Thay and his family extinguished by Szass Tam's regime. Instead of a wealthy life at the head of his family he found himself an outlaw. He was met by Candrella and Colano and soon found a new career with the Red Hoods who were in need of leadership at that time.
+The liberation of Thay however is only possible with our common enemy Szass Tam out of the way. The Zulkir has unlimited resources and magical powers from his mysterious *Citadel*. 
+We are not yet ready to strike and face Szass Tam directly. Instead, we need to weaken the phalanx of his allies and at the same time find some powerful supporters for our own side. To achieve both, we need to return to the Sword Coast at this time.~
+@2079 =~A Phalanx of Foe
+
+Several tasks lie ahead of us once we are back on the Sword Coast.
+One is to eliminate Xephistagoras at the old Bhaal temple in the Wood of Sharp Teeth.
+Second is to consult with Midnight at Waterdeep on a plan Sandrah is currently developing.
+Third is to find and encourage some own allies who are able and determined to neutralise one or other of Szass Tam's conspirators.~
+@2080 =~Leyala's Quest
+
+Leyala has wed two elves who cannot be more different in character but still bound together by the power of love - Joneleth Irenicus, the former Exile, and the Avariel Aerie.
+Further tasks for your little ambassador of love may lay ahead in near future, just think of the old bastard-gone-soft Saemon and his black pearl Shaleij...~
+@2081 =~A Phalanx of Foe
+
+The picture of whom we have to face in this intrigue has become a little clearer by now. With Sandrah's and Midnight's help and lore we are now able to start planning on how to oppose the phalanx.
+- Talos has been suspended by AO himself after we eliminated his puppet Xephistagoras.
+- Velsharoon's activities are despised most of all by Kelemvor , once Kelemvor Lyonsbane in mortal life and Midnight's former lover, now the God of the Death. He is a candidate for an ally. Midnight will use her old connections to contact him.
+- The best weapon against a Lich is a Lich, the weapon against a Lich of the calibre of Szass Tam is hard to find, but Larloch, the Shadow King, may be capable - and he is a follower of Mystra, still.
+- Shar is the foe my companion Sandrah, alias Mystra, has to face herself.
+- Cyric, well, we need to see about him. His hatred against his granddaughter and Mystra is as deep as his hatred against the one who *stole* Bhaal's essence.~
+@2082 =~Leyala's Quest
+
+We - respectively Leyala - have received a call for help. The shadow thieves of Athkatla are worried about their Boss Saemon. His lovely Shaleij seems to be missing for a couple of days already. As none of the thieves dares to intrude into Saemon's private life, they count on my nun to be able to solve whatever issue exists between the two.
+Leyala asks me to accompany her to the docks to find out more.~
+@2083 =~Leyala's Quest
+
+She is as smart as she is beautiful - my little nun Leyala is a true detective and counsellor. Even if the issue between Saemon and Shaleij has nothing to do with a love crisis but is rather a kidnapping, my companion has solved the first part of the problem perfectly with her interviews. We know that Saemon's old rival Desharik of Brynnlaw is the culprit and Leyala has even managed to keep Saemon from a forceful frontal attack on the island which would only endanger Shaleij.
+We need to seek out Nib Jansen and charter his sky ship to reach the formerly dreaded asylum secretly via air.~
+@2084 =~A Phalanx of Foe
+
+Our visit to Larloch has provided us with further insight and a strange ally.
+The goddess Shar had already visited the Shadow King to win him to her side with the prospect of access to the Shadow Weave. But Mystra could finally convince him to stand by her and the True Weave. However, Larloch is supposed to play a charade on Shar and to meet with her pretending his agreement to her suggestions. We plan to attend this meeting as well - uninvited.
+For this reason we are to travel to the meeting place in Wheloon, a town with a Mystra temple that lies east of Mornbryn's Shield and can be reached from that town.
+Sandrah is suspicious about that temple already which has been proposed by Shar to meet Larloch and suggests that we explore the place thoroughly ahead of the rendezvous.~
+@2085  = ~L'Urieet and Lolth
+
+L'Urieet has been captured by an assassin of the Spider Queen!
+Lolth did not accept my companion's choice of a free life away from her domination of the Underdark. During a fierce battle, her assassin Shyntlara has managed with her magic and cohorts to separate L'Urieet from our company and secure her to the Underdark where she is supposed to wait for Lolth's trial.
+Shyntlara carelessly mentioned Ust Natha, the drow town we had visited long time ago in pursuit of Irenicus.
+Of course we cannot tolerate Lolth's action, even if another powerful enemy is the last thing we need at this time. We cannot leave a companion in peril!~
+@2086  = ~L'Urieet and Lolth
+
+Lolth's blind wraith seems to work for us and against herself. L'Urieet's father was the same Captain Egeissag we defeated in Sendai's service once and he was a brother of Imrae, the ruling matron of Ust Natha. Lolth rages against the whole city, she has either killed the citizens or sealed them into their houses. She resides in the temple where she also holds her prisoners.
+Sandrah has agreed with Imrae to access the temple with a trick rather than by open force. We are to meet the matron near the temple where she will deliver us as a *sacrifice* to Lolth and thus get us inside.~
+@2087 =~The Citadel
+
+We have returned to Thay and it seems with Shar now out of the way it is time to face the heads of the conspiracy directly - Szass Tam and Cyric.
+Our target is the legendary Citadel in the Thay Mounts. Nobody knows where it is nor how to access it, other than with the help of Szass Tam himself.
+
+Candrella and Sandrah have a plan to lure the Zulkir out from his hideout by removing his local representative Autharch Ithrash. To prepare the trap for our opponents a bait is needed - Sandrah and myself. The Red Hoods will forge a betrayal and Edwin will try to lead Ithrash out to the estate to capture us.~
+@2088 =~Melicamp's Quest
+
+Melicamp's relationship with Thalantyr goes deeper than the *permanent apprentice* was aware of. The old mage cared for the young sorcerer in a way that reminds of Gorion's care for <CHARNAME>. He came to say goodbye to his apprentice when we set out for Thay.
+Thalantyr reminded Melicamp to keep a lookout for old Netheril scrolls that may be found in Thay.~
+@2089 =~Melicamp's Quest
+
+We found a part of an old Netheril scroll. Sandrah and Melicamp are sure that there is more to be found in the future and they hold a trace of what Thalantyr was referring to when he said goodbye to his apprentice.~
+@2090 =~Melicamp's Quest
+
+It seems we found enough old material from Netheril for Sandrah and Melicamp to study and probably reveal some ancient arcane knowledge. We need a peaceful place to rest and research in the near future.~
+@2091 =~A Helping Hand
+
+We have the hand that operates the ancient transport system that threatens the Sword Coast and also allows us access to the Citadel. In a clean and painful operation, Sandrah has acted quickly and cold blooded to separate the hand from its former owner Szass Tam.
+With the bloody trophy we can make our way to the portal beneath the old Bhaal temple on the Odesseiron estate and from there into the Citadel.~
+@2092 =~Melicamp's Quest
+
+The studies of my companions have given us an idea of what treasure of wisdom we might find inside the Citadel - Karsus' Pocket Library, an object containing knowledge greater than any known in Faerun. What Melicamp has in mind is to share this wisdom with everybody else by founding a university for learning and teaching, where each student will find the answers to his specific needs.~
+@2093 =~A Revelation
+
+Before our mastermind enemy Cyric once again made his hasted departure from the final battlefield - abandoning his ally Szass Tam behind - he issued another threat. He is not yet defeated, instead it seems that his former lover Midnight may be his next target.~
+@2094 =~A Revelation
+
+Cyric captured Midnight, his former lover and the former goddess Mystra. He keeps her as his hostage to exchange her for the essence of Bhaal he thinks is his to own. He seems to be unaware that the essence has long been destroyed and purified to create the new portfolio of Love and Hope, unusable by him.
+Sandrah presumes that the place to find him will be Blackstaff Tower, a place on the Sword Coast that is long deserted and last found to be a gnoll stronghold meanwhile.~
+@2095 =~You have given up this ability with your ascension.~
+@2096 =~Caravan Guard~
+@2097 =~Cloak~
+@2098 =~Dead~
+@2099 =~Lantern~
+@3000 =~Handbook~
+@3001 =~Boola~
+@3002 =~Norreq~
+@3003 =~Hartleff~
+@3004 =~Nildjek~
+@3005 =~Pelligram~
+@3006 =~Khalindra~
+@3007 =~Larloch~
+@3008 =~Imp~
+@3009 =~Cormyrian~
+@3010 =~Lerabi~
+@3011 =~Lolth~
+@3012 =~Avariel~
+@3013 =~Avariela~
+@3014 =~Shaleij~
+@3015 =~Librarian~
+@3016 =~Sharkey~
+@3017 =~Colano~
+@3018 =~Miqueli~
+@3019 =~Lorcos~
+@3020 =~Escorte~
+@3021 =~Candrella~
+@3022 =~Lucinda~
+@3023 =~Balowol~
+@3024 =~Rarnott~
+@3025 =~Iylos~
+@3026 =~Ranani~
+@3027 =~Officer~
+@3028 =~Shar~
+@3029 =~Marinda~
+@3030 =~Salith~
+@3031 =~Porley~
+@3032 =~Leyala~
+@3033 =~Giran~
+@3034 =~Isobel~
+@3035 =~Izzy~

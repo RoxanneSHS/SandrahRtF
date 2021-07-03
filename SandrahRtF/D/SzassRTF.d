@@ -4,9 +4,9 @@ IF~ Global("Meet1","RTF903",1)~THEN CVSzas BezSurpr1
 =@1
 DO~SetGlobal("Meet1","RTF903",2)~
 ==CVSan25J@2
-==CVSzas~Your goddess surely misjudges once again what is really going on - to send YOU and this ragged band of fledgling adventurers!! I can surely leave your elimination to the authorities of Bezantur. False alert it seems.~[OH93453]
+==CVSzas@3
 ==CVSan25J@4
-==CVSzas~HAHAHA, Goddess of all Mystic...HAHAHAHA...~[OH93468]
+==CVSzas@5
 DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
 CHAIN
