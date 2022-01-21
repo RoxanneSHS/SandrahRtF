@@ -112,7 +112,7 @@ IF~~THEN SanMyst Velsh6
 @65
 DO~SetGlobal("VelshIn","LOCALS",2)~
 ==CVSan25J@66
-= @67
+==SanMyst@67
 ==CVSan25J@68
 ==SanMyst@69
 END
