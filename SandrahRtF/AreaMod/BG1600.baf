@@ -1,7 +1,8 @@
 IF
 Global("RTCloakwood","GLOBAL",2)
 THEN
-RESPONSE #100
+RESPONSE #100   
+SetGlobal("RTCloakwood","GLOBAL",3)
 StartCutSceneMode()
 CreateCreature("coksmth",[1918.1076],13)
 CreateCreature("Wyvgre01",[2047.1946],0)
@@ -11,12 +12,11 @@ Wait(1)
 ActionOverride("Coksmth",CreateItem("ImoSlHP1",0,0,0))
 ActionOverride("Coksmth",FillSlot(SLOT_AMULET))
 EndCutSceneMode()
-SetGlobal("RTCloakwood","GLOBAL",3)
 END
 
 IF
 Global("RTCloakwood","GLOBAL",3)
-HPLT("coksmth",50)
+HPPercentLT("coksmth",50)
 THEN
 RESPONSE #100
 SetGlobal("RTCloakwood","GLOBAL",4)

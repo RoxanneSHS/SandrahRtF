@@ -30,7 +30,7 @@ EndCutSceneMode()
 DestroySelf()~ EXIT
 
 CHAIN
-IF WEIGHT #-2~ Global("RTCloakwood","GLOBAL",3) See([PC]) Allegiance(Myself,NEUTRAL) ~THEN Coksmth ReturnClkw
+IF WEIGHT #-2~ GlobalGT("RTCloakwood","GLOBAL",1) See([PC]) Allegiance(Myself,NEUTRAL) ~THEN Coksmth ReturnClkw
 @6
 DO~Enemy()~
 END
