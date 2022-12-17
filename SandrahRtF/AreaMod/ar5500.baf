@@ -17,6 +17,18 @@ CreateCreature("RTMoun",[3619.2553],7)
 END
 
 IF
+GlobalGT("SanRTFPlot2","GLOBAL",1)
+Global("RTPeace","ar5500",0)  // Amkethran
+THEN
+RESPONSE #100
+SetGlobal("RTPeace","ar5500",1)
+SetGlobal("AMmerccap","ar5500",99)
+SetGlobal("AMmonkcap","ar5500",99)
+SetGlobal("Ammonkenemy","Global",10)
+SetGlobal("Ammercenemy","Global",10)
+END
+
+IF
 Global("Guide","ar5500",6)
 THEN
 RESPONSE #100

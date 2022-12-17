@@ -1,0 +1,10 @@
+IF
+GlobalGT("SanRTFPlot2","GLOBAL",1)
+Allegiance(Myself,ENEMY)
+OR(2)
+AreaCheck("ar5500")
+AreaCheck("ar5501")
+THEN
+RESPONSE #100
+EscapeArea()
+END

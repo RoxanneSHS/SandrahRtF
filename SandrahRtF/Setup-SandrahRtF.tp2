@@ -3659,6 +3659,10 @@ EXTEND_TOP
 ~Thalantr.bcs~ ~SandrahRTF/Mods/ThalaMeli.baf~
 EXTEND_TOP
 ~Faldorn_.bcs~ ~SandrahRTF/Baf/RTFaldorn.baf~
+EXTEND_TOP
+~deadbalt.bcs~ ~SandrahRTF/AreaMod/AmPeace.baf~
+EXTEND_TOP
+~ammerc.bcs~ ~SandrahRTF/AreaMod/AmPeace.baf~
 
 EXTEND_BOTTOM
 ~ar60pb.bcs~ ~SandrahRTF/Mods/ar60pbY.baf~
