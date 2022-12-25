@@ -15,7 +15,7 @@ RealGlobalTimerExpired("RTMaskP","GLOBAL")
 THEN
 RESPONSE #100
 DisplayString(Player1,@1880)
-RealSetGlobalTimer("RTMaskP","GLOBAL",660)
+RealSetGlobalTimer("RTMaskP","GLOBAL",3660)
 Wait(1)
 CreateCreatureObjectOffset("CVAssast",Player1,[100.100])
 CreateCreatureObjectOffset("CVAssasv",Player1,[-100.-100])
