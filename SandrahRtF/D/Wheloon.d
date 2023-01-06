@@ -64,7 +64,7 @@ IF~AreaCheck("RTF130")~THEN RTYouSha Outs1
 ==RTYouSha@17
 =@18
 ==CVSan25J@19
-==RTYouSha@20DO~EscapeArea()~EXIT
+==RTYouSha@20DO~OpenDoor("Door08") EscapeArea()~EXIT
 
 CHAIN
 IF~AreaCheck("RTF139") Global("Shaheal","RTF139",0)~THEN RTYouSha Ins1
