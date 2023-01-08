@@ -45,6 +45,14 @@ Unlock("Door01")
 END
 
 IF
+Global("LouCap","rtf075",2)
+THEN
+RESPONSE #100
+SetGlobal("LouCap","rtf075",3)
+ActionOverride("RTLouUD",ReallyForceSpell(Myself,DRYAD_TELEPORT)) 
+END
+
+IF
 InParty("CVSandr")
 Global("PelligFollow","GLOBAL",1)
 !InActiveArea("pellig")

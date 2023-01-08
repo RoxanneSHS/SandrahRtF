@@ -51,3 +51,12 @@ ActionOverride("CVsandr",RemoveSpellRES("Sanwdre"))
 Continue()
 END
 
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("shauorcHostile","GLOBAL",1)
+Delay(20)
+THEN
+RESPONSE #100
+SetGlobal("shauorcHostile","GLOBAL",0)
+END
+
