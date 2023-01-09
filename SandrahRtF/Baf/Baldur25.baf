@@ -60,3 +60,11 @@ RESPONSE #100
 SetGlobal("shauorcHostile","GLOBAL",0)
 END
 
+IF
+Global("bdtgaze","GLOBAL",1)
+GlobalGT("Chapter","Global",27)
+THEN
+RESPONSE #100
+SetGlobal("bdtgaze","GLOBAL",0)
+END
+
