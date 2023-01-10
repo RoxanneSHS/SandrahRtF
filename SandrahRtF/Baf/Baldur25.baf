@@ -3,6 +3,7 @@ OnCreation()
 GlobalGT("SanBeginRTF","GLOBAL",1)
 THEN
 RESPONSE #100
+SetGlobal("GavePocketPlane","GLOBAL",0)
 ActionOverride(Player1,RemoveSpellRES("spin649"))
 ActionOverride(Player1,RemoveSpellRES("spin822"))
 Continue()
