@@ -8,3 +8,11 @@ TriggerActivation("ToRTF",TRUE)
 TriggerActivation("NEInfo1",FALSE)
 TriggerActivation("NEInfo2",FALSE)
 END
+
+IF
+Global("barrack","CVRoa2",0)
+THEN
+RESPONSE #100
+SetGlobal("barrack","CVRoa2",1)
+OpenDoor("Door03")
+END
