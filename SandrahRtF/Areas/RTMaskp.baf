@@ -2,6 +2,8 @@ IF
 GlobalTimerExpired("RTMaskplotT","GLOBAL")
 GlobalGT("RTMaskplot","GLOBAL",0)
 GlobalLT("RTMaskplot","GLOBAL",5)
+!PartyHasItem("Comc03")
+!PartyHasItem("SW1H58")
 THEN
 RESPONSE #100
 SetGlobal("RTMaskplot","GLOBAL",20)
@@ -15,7 +17,7 @@ RealGlobalTimerExpired("RTMaskP","GLOBAL")
 THEN
 RESPONSE #100
 DisplayString(Player1,@1880)
-RealSetGlobalTimer("RTMaskP","GLOBAL",660)
+RealSetGlobalTimer("RTMaskP","GLOBAL",3660)
 Wait(1)
 CreateCreatureObjectOffset("CVAssast",Player1,[100.100])
 CreateCreatureObjectOffset("CVAssasv",Player1,[-100.-100])

@@ -126,6 +126,22 @@ CreateCreature("RTCandre",[4496.1781],4)
 END
 
 IF
+!Global("SLAVES_FREE_1","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SLAVES_FREE_1","GLOBAL",0)
+END
+
+IF
+GlobalGT("GuardOd","RTF070",0)
+GlobalLT("GuardOd","RTF070",4)
+!InMyArea("RTTHKN")
+THEN
+RESPONSE #100
+SetGlobal("GuardOd","RTF070",4)
+END
+
+IF
 InParty("CVSandr")
 Global("PelligFollow","GLOBAL",1)
 !InActiveArea("pellig")

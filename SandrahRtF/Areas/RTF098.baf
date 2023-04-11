@@ -7,6 +7,14 @@ TriggerActivation("up2",FALSE)
 END
 
 IF
+GlobalGT("SanRTFPlot3","GLOBAL",6)
+InMyArea("RTSharl")
+THEN
+RESPONSE #100
+ActionOverride("RTSharl",DestroySelf())
+END
+
+IF
 Global("Exits","RTF098",1)
 GlobalGT("SanRTFPlot3","GLOBAL",6)
 THEN

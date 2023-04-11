@@ -3,6 +3,7 @@ OnCreation()
 GlobalGT("SanBeginRTF","GLOBAL",1)
 THEN
 RESPONSE #100
+SetGlobal("GavePocketPlane","GLOBAL",0)
 ActionOverride(Player1,RemoveSpellRES("spin649"))
 ActionOverride(Player1,RemoveSpellRES("spin822"))
 Continue()
@@ -49,5 +50,22 @@ ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
 ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
 ActionOverride("CVsandr",RemoveSpellRES("Sanwdre"))
 Continue()
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("shauorcHostile","GLOBAL",1)
+Delay(20)
+THEN
+RESPONSE #100
+SetGlobal("shauorcHostile","GLOBAL",0)
+END
+
+IF
+Global("bdtgaze","GLOBAL",1)
+GlobalGT("Chapter","Global",27)
+THEN
+RESPONSE #100
+SetGlobal("bdtgaze","GLOBAL",0)
 END
 

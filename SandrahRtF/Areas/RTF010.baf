@@ -75,7 +75,7 @@ SetGlobal("CreWave","RTF010",5)
 END
 
 IF
-Global("CreWave","RTF010",6)
+GlobalLT("CreWave","RTF010",7)
 PartyHasItem("CVRTFHM")
 Delay(12)
 THEN

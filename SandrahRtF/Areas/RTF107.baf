@@ -7,6 +7,8 @@ Continue()
 END
 
 IF
+OR(2)
+Global("RTMaskplot","GLOBAL",20)
 Global("RTMaskplot","GLOBAL",1)
 PartyHasItem("Comc03")
 PartyHasItem("SW1H58")
@@ -16,6 +18,8 @@ SetGlobal("RTMaskplot","GLOBAL",2)
 END
 
 IF
+OR(2)
+Global("RTMaskplot","GLOBAL",20)
 Global("RTMaskplot","GLOBAL",1)
 !PartyHasItem("Comc03")
 PartyHasItem("SW1H58")

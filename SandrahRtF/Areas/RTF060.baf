@@ -101,12 +101,12 @@ Global("RTColan","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("RTColan","GLOBAL",1)
-RealSetGlobalTimer("Colano1","RTF060",90)
+RealSetGlobalTimer("Colano1","Global",90)
 END
 
 IF
 Global("RTColan","GLOBAL",1)
-RealGlobalTimerExpired("Colano1","RTF060")
+RealGlobalTimerExpired("Colano1","Global")
 THEN
 RESPONSE #100
 SetGlobal("RTColan","GLOBAL",2)
