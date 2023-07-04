@@ -34,3 +34,11 @@ RESPONSE #100
 SetGlobal("RTFBreMove","GLOBAL",1)
 CreateCreature("acbre25",[4291.1926],6)
 END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+InMyArea("Feldane")
+THEN
+RESPONSE #100
+ActionOverride("Feldane",DestroySelf())
+END
