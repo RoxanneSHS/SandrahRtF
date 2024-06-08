@@ -3808,3 +3808,10 @@ LPF fj_are_structure
     fj_structure_type = entrance
     fj_name           = Out001
   END
+  
+APPEND ~mastarea.2da~
+~RTF038  value
+RTF030  value
+RTF050  value
+TOT006  value ~
+UNLESS ~RTF038~

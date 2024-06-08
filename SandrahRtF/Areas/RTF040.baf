@@ -54,3 +54,12 @@ THEN
 RESPONSE #100
 ChangeEnemyAlly("haiass",CONTROLLED)
 END
+
+IF
+!PartyHasItem("RTMoBad")  
+GlobalLT("RTMons1","RTF040",5)
+!InMyArea("RTMonkH")
+THEN
+RESPONSE #100
+CreateCreature("RTMonkH",[600.600],8)
+END
