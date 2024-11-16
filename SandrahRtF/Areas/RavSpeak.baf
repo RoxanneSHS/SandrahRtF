@@ -1,5 +1,8 @@
 IF
+OR(3)
 IsOverMe("CVSandr")
+IsOverMe("Leyala")
+IsOverMe(Player1)
 Global("RTMons1","RTF040",0)
 THEN
 RESPONSE #100
