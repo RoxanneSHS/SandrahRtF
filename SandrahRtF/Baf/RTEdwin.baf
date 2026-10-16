@@ -574,7 +574,7 @@ END
 
 IF 
 Global("EdBattlIt","LOCALS",1)
-	Heard([GOODCUTOFF],POISONED_200)
+	Heard([GOODCUTOFF],POISONED)
 	HaveSpell(CLERIC_RESURRECTION)
 	!HasBounceEffects(LastHeardBy(Myself))
 	!StateCheck(LastHeardBy(Myself),STATE_INVISIBLE)
@@ -590,7 +590,7 @@ END
 
 IF 
 Global("EdBattlIt","LOCALS",1)
-	Heard([GOODCUTOFF],POISONED_200)
+	Heard([GOODCUTOFF],POISONED)
 	HaveSpell(CLERIC_HEAL)
 	!HasBounceEffects(LastHeardBy(Myself))
 	!StateCheck(LastHeardBy(Myself),STATE_INVISIBLE)
@@ -606,7 +606,7 @@ END
 
 IF 
 Global("EdBattlIt","LOCALS",1)
-	Heard([GOODCUTOFF],POISONED_200)
+	Heard([GOODCUTOFF],POISONED)
 	HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
 	!HasBounceEffects(LastHeardBy(Myself))
 	!StateCheck(LastHeardBy(Myself),STATE_INVISIBLE)
@@ -622,7 +622,7 @@ END
 
 IF 
 Global("EdBattlIt","LOCALS",1)
-	Heard([GOODCUTOFF],POISONED_200)
+	Heard([GOODCUTOFF],POISONED)
 	HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
 	!HasBounceEffects(LastHeardBy(Myself))
 	!StateCheck(LastHeardBy(Myself),STATE_INVISIBLE)
