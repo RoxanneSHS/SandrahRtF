@@ -4,8 +4,8 @@ GlobalGT("SanBeginRTF","GLOBAL",1)
 THEN
 RESPONSE #100
 SetGlobal("GavePocketPlane","GLOBAL",0)
-ActionOverride(Player1,RemoveSpellRES("spin649",Player1))
-ActionOverride(Player1,RemoveSpellRES("spin822",Player1))
+ActionOverride(Player1,RemoveSpellRES("spin649"))
+ActionOverride(Player1,RemoveSpellRES("spin822"))
 Continue()
 END
 
@@ -23,8 +23,8 @@ GlobalGT("SanBeginRTF","GLOBAL",1)
 PartyRested()
 THEN
 RESPONSE #100
-ActionOverride(Player1,RemoveSpellRES("spin649",Player1))
-ActionOverride(Player1,RemoveSpellRES("spin822",Player1))
+ActionOverride(Player1,RemoveSpellRES("spin649"))
+ActionOverride(Player1,RemoveSpellRES("spin822"))
 Continue()
 END
 
@@ -33,10 +33,10 @@ OnCreation()
 Global("SanToTRRepl","GLOBAL",6)
 THEN
 RESPONSE #100
-ActionOverride("CVsandr",RemoveSpellRES("Sanwdho",Myself))
-ActionOverride("CVsandr",RemoveSpellRES("Sanwdho",Myself))
-ActionOverride("CVsandr",RemoveSpellRES("Sanwdho",Myself))
-ActionOverride("CVsandr",RemoveSpellRES("Sanwdre",Myself))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdre"))
 Continue()
 END
 
@@ -45,10 +45,10 @@ Global("SanToTRRepl","GLOBAL",6)
 PartyRested()
 THEN
 RESPONSE #100
-ActionOverride("CVsandr",RemoveSpellRES("Sanwdho",Myself))
-ActionOverride("CVsandr",RemoveSpellRES("Sanwdho",Myself))
-ActionOverride("CVsandr",RemoveSpellRES("Sanwdho",Myself))
-ActionOverride("CVsandr",RemoveSpellRES("Sanwdre",Myself))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdho"))
+ActionOverride("CVsandr",RemoveSpellRES("Sanwdre"))
 Continue()
 END
 
