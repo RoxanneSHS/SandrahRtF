@@ -63,7 +63,7 @@ END
 
 IF
 Global("bdtgaze","GLOBAL",1)
-GlobalGT("Chapter","Global",27)
+GlobalGT("Chapter","GLOBAL",27)
 THEN
 RESPONSE #100
 SetGlobal("bdtgaze","GLOBAL",0)
